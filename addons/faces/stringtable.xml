@@ -300,13 +300,13 @@
             <English>Doukas US Stripes</English>
             <German>Doukas US Streifen</German>
         </Key>
-        <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWTarn">
-            <English>Name BW Camouflage</English>
-            <German>Name BW Tarn</German>
-        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWStripes">
             <English>Name BW Stripes</English>
             <German>Name BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWTarn">
+            <English>Name BW Camouflage</English>
+            <German>Name BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Black">
             <English>Name Black</English>
@@ -328,13 +328,13 @@
             <English>Name US Stripes</English>
             <German>Name US Streifen</German>
         </Key>
-        <Key ID="STR_CFR_Faces_GreekHead_A3_07_BWTarn">
-            <English>Name7 BW Camouflage</English>
-            <German>Name7 BW Tarn</German>
-        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_BWStripes">
             <English>Name7 BW Stripes</English>
             <German>Name7 BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_07_BWTarn">
+            <English>Name7 BW Camouflage</English>
+            <German>Name7 BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_Black">
             <English>Name7 Black</English>
@@ -356,13 +356,13 @@
             <English>Name7 US Stripes</English>
             <German>Name7 US Streifen</German>
         </Key>
-        <Key ID="STR_CFR_Faces_GreekHead_A3_08_BWTarn">
-            <English>Name8 BW Camouflage</English>
-            <German>Name8 BW Tarn</German>
-        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_BWStripes">
             <English>Name8 BW Stripes</English>
             <German>Name8 BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_08_BWTarn">
+            <English>Name8 BW Camouflage</English>
+            <German>Name8 BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_Black">
             <English>Name8 Black</English>
@@ -384,13 +384,13 @@
             <English>Name8 US Stripes</English>
             <German>Name8 US Streifen</German>
         </Key>
-        <Key ID="STR_CFR_Faces_GreekHead_A3_09_BWTarn">
-            <English>Name9 BW Camouflage</English>
-            <German>Name9 BW Tarn</German>
-        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_BWStripes">
             <English>Name9 BW Stripes</English>
             <German>Name9 BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_09_BWTarn">
+            <English>Name9 BW Camouflage</English>
+            <German>Name9 BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Black">
             <English>Name9 Black</English>
