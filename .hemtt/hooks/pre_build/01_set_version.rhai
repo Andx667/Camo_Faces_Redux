@@ -1,7 +1,7 @@
 let modcpp = HEMTT_VFS.join("mod.cpp")
     .open_file()
     .read();
-modcpp.replace("0.0.0",
+modcpp.replace("{version}",
     HEMTT.project()
     .version()
     .to_string_short()
