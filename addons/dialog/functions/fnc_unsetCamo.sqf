@@ -18,7 +18,7 @@
 
 params [
     ["_unit", player, [player]],
-    ["_face", face _unit, ""]
+    ["_face", face player, []]
 ];
 TRACE_1("fnc_unsetCamo",_this);
 

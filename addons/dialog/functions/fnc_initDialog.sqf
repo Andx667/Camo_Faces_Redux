@@ -21,9 +21,9 @@ TRACE_1("fnc_initDialog",_this);
 disableSerialization;
 
 // set texture for day or night
-_hour = date select 3;
-_box = _display displayCtrl 4961;
-_notepad = _display displayCtrl 4966;
+private _hour = date select 3;
+private _box = _display displayCtrl 4961;
+private _notepad = _display displayCtrl 4966;
 
 //ToDo Fix
 if (_hour > 21 || _hour < 6) then {
@@ -36,9 +36,9 @@ if (_hour > 21 || _hour < 6) then {
 };
 
 // deactivate button
-_button1 = _display displayCtrl 5362;
-_button2 = _display displayCtrl 5363;
-_button3 = _display displayCtrl 5364;
+private _button1 = _display displayCtrl 5362;
+private _button2 = _display displayCtrl 5363;
+private _button3 = _display displayCtrl 5364;
 
 _button1 ctrlEnable false; // as long as not all items are unequipped and options are choosen
 _button2 ctrlEnable false; // as long as not all items are unequipped and options are choosen
@@ -48,13 +48,13 @@ _button3 ctrlEnable false; // as long as not all items are unequipped and option
 	picture color and button function
 */
 // controls for pictures
-_backHelmet = _display displayCtrl 4862;
-_backGoggles = _display displayCtrl 4863;
-_backNV = _display displayCtrl 4864;
+private _backHelmet = _display displayCtrl 4862;
+private _backGoggles = _display displayCtrl 4863;
+private _backNV = _display displayCtrl 4864;
 
 // colors
-_red = [1, 0, 0, 0.6];
-_green = [0, 1, 0, 0.6];
+private _red = [1, 0, 0, 0.6];
+private _green = [0, 1, 0, 0.6];
 
 // check if player has helmet, googles, nv equipped
 if (headgear player == "") then {
@@ -84,10 +84,10 @@ if (hmd player == "") then {
 /*
 	fill first listbox
 */
-_listBox_Side = _display displayCtrl 5262;
+private _listBox_Side = _display displayCtrl 5262;
 lbClear _listBox_Side;
 
-_camolist = call EFUNC(common,getCountryOptions);
+private _camolist = call EFUNC(common,getCountryOptions);
 
 // proof return value
 // no option

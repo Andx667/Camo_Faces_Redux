@@ -43,7 +43,7 @@ GVAR(faces_usflash) = ["PersianHead_A3_01_cfaces_USFlash","PersianHead_A3_02_cfa
 
 
 {
-  _face = _x getVariable [QGVAR(face), ""];
+  private _face = _x getVariable [QGVAR(face), ""];
   if (_face != "") then {
     _x setFace _face;
   };

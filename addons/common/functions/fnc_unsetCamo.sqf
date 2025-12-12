@@ -19,6 +19,8 @@
 params ["_unit","_face"];
 TRACE_1("fnc_unsetCamo",_this);
 
+private _ns = "";
+
 //Das Abtarnen
 if (_face in GVAR(faces_bwtarn)) then {
     _ns = [_face, 0, -14] call BIS_fnc_trimString; //_unit setface _ns;

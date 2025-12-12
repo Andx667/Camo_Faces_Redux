@@ -54,38 +54,38 @@ class GVAR(AsianHead_A3_01_USFlash): GVAR(AsianHead_A3_01_BWTarn) {
 };
 class GVAR(AsianHead_A3_02_BWTarn): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_02_BWTarn);
-    texture = QPATHTOF(data\BWTarn\AsHA302\m_asian_01_co.paa);
-    material = QPATHTOF(data\BWTarn\AsHA302\m_asian_01.rvmat);
-    materialWounded1 = QPATHTOF(data\BWTarn\AsHA301\m_Asian_02_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\BWTarn\AsHA301\m_Asian_021_injury.rvmat);
+    texture = QPATHTOF(data\bwtarn\AsHA302\m_asian_02_co.paa);
+    material = QPATHTOF(data\bwtarn\AsHA302\m_asian_02.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\AsHA302\m_asian_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\AsHA302\m_asian_02_injury.rvmat);
 };
 class GVAR(AsianHead_A3_02_BWStripes): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_02_BWStripes);
-    texture = QPATHTOF(data\BWStripes\AsHA302\m_asian_02_co.paa);
-    material = QPATHTOF(data\BWStripes\AsHA302\m_asian_02.rvmat);
-    materialWounded1 = QPATHTOF(data\BWStripes\AsHA302\m_Asian_02_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\BWStripes\AsHA302\m_Asian_02_injury.rvmat);
+    texture = QPATHTOF(data\bwstripes\AsHA302\m_asian_02_co.paa);
+    material = QPATHTOF(data\bwstripes\AsHA302\m_asian_02.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\AsHA302\m_asian_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\AsHA302\m_asian_02_injury.rvmat);
 };
 class GVAR(AsianHead_A3_02_Black): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_02_Black);
-    texture = QPATHTOF(data\Black\AsHA302\m_asian_02_co.paa);
-    material = QPATHTOF(data\Black\AsHA302\m_asian_02.rvmat);
-    materialWounded1 = QPATHTOF(data\Black\AsHA302\m_Asian_02_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\Black\AsHA302\m_Asian_02_injury.rvmat);
+    texture = QPATHTOF(data\black\AsHA302\m_asian_02_co.paa);
+    material = QPATHTOF(data\black\AsHA302\m_asian_02.rvmat);
+    materialWounded1 = QPATHTOF(data\black\AsHA302\m_asian_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\AsHA302\m_asian_02_injury.rvmat);
 };
 class GVAR(AsianHead_A3_02_Serbian): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_02_Serbian);
-    texture = QPATHTOF(data\Serbian\AsHA302\m_asian_02_co.paa);
-    material = QPATHTOF(data\Serbian\AsHA302\m_asian_02.rvmat);
-    materialWounded1 = QPATHTOF(data\Serbian\AsHA301\m_Asian_02_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\Serbian\AsHA301\m_Asian_02_injury.rvmat);
+    texture = QPATHTOF(data\serbian\AsHA302\m_asian_02_co.paa);
+    material = QPATHTOF(data\serbian\AsHA302\m_asian_02.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\AsHA302\m_asian_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\AsHA302\m_asian_02_injury.rvmat);
 };
 class GVAR(AsianHead_A3_02_USStripes): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_02_USStripes);
-    texture = QPATHTOF(data\USStripes\AsHA302\m_asian_02_co.paa);
-    material = QPATHTOF(data\USStripes\AsHA302\m_asian_02.rvmat);
-    materialWounded1 = QPATHTOF(data\USStripes\AsHA302\m_Asian_02_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\USStripes\AsHA302\m_Asian_02_injury.rvmat);
+    texture = QPATHTOF(data\usstripes\AsHA302\m_asian_02_co.paa);
+    material = QPATHTOF(data\usstripes\AsHA302\m_asian_02.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\AsHA302\m_asian_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\AsHA302\m_asian_02_injury.rvmat);
 };
 class GVAR(AsianHead_A3_02_USStains): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_02_USStains);
@@ -103,10 +103,10 @@ class GVAR(AsianHead_A3_02_USFlash): GVAR(AsianHead_A3_01_BWTarn) {
 };
 class GVAR(AsianHead_A3_03_BWTarn): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_03_BWTarn);
-    texture = QPATHTOF(data\usflash\AsHA303\m_asian_03_co.paa);
-    material = QPATHTOF(data\usflash\AsHA303\m_asian_03.rvmat);
-    materialWounded1 = QPATHTOF(data\usflash\AsHA303\m_asian_03_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\usflash\AsHA303\m_asian_03_injury.rvmat);
+    texture = QPATHTOF(data\bwtarn\AsHA303\m_asian_03_co.paa);
+    material = QPATHTOF(data\bwtarn\AsHA303\m_asian_03.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\AsHA303\m_asian_03_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\AsHA303\m_asian_03_injury.rvmat);
 };
 class GVAR(AsianHead_A3_03_BWStripes): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_03_BWStripes);

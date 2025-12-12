@@ -23,10 +23,10 @@ disableSerialization;
 
 // lb actions
 // controls for pictures
-_face = (face player);
+private _face = (face player);
 
 if (!GVAR(hasHelmet) && !GVAR(hasGoggles) && !GVAR(hasNV) && _face in GVAR(faces)) then { //ToDo change check to local variable on player (or something better)
 	// allow first button
-	_button1 = (findDisplay 311) displayCtrl 5362;
+	private _button1 = (findDisplay 311) displayCtrl 5362;
 	_button1 ctrlEnable true;
 };

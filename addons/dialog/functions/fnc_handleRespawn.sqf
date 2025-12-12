@@ -19,7 +19,7 @@ params ["_unit"];
 TRACE_1("fnc_handleRespawn",_this);
 
 waitUntil {alive player};
-_face = _unit getVariable [QGVAR(Face), ""];
+private _face = _unit getVariable [QGVAR(Face), ""];
 
 hint _face;
 
