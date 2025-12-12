@@ -20,44 +20,40 @@ params ["_unit","_face"];
 TRACE_1("fnc_unsetCamo",_this);
 
 private _ns = "";
+private _suffix = "";
 
-//Das Abtarnen
+// Determine which suffix to remove
 if (_face in GVAR(faces_bwtarn)) then {
-    _ns = [_face, 0, -14] call BIS_fnc_trimString; //_unit setface _ns;
-    //[-2, {unit setface ns}] call CBA_fnc_globalExecute;
-    [[_unit,_ns], "setFace", true, false] call BIS_fnc_mp;
-    _unit setVariable [QGVAR(face), _ns, true];
-    hint "Tarnung abgelegt";
+    _suffix = "_cfaces_BWTarn";
 } else {
     if (_face in GVAR(faces_black)) then {
-            _ns = [_face, 0, -13] call BIS_fnc_trimString; //_unit setface _ns;
-            //[-2, {unit setface ns}] call CBA_fnc_globalExecute;
-        [[_unit,_ns], "setFace", true, false] call BIS_fnc_mp;
-            _unit setVariable [QGVAR(face), _ns, true];
-            hint "Tarnung abgelegt";
+        _suffix = "_cfaces_Black";
     } else {
-        if (_face in GVAR(faces_bwstripes) || _face in GVAR(faces_usstripe)) then {
-                _ns = [_face, 0, -17] call BIS_fnc_trimString; //_unit setface _ns;
-                [[_unit,_ns], "setFace", true, false] call BIS_fnc_mp;
-                _unit setVariable [QGVAR(face), _ns, true];
-                //[-2, {unit setface ns}] call CBA_fnc_globalExecute;
-                hint "Tarnung abgelegt";
+        if (_face in GVAR(faces_bwstripes) || _face in GVAR(faces_usstripes)) then {
+            _suffix = "_cfaces_BWStripes";
+            if (_face in GVAR(faces_usstripes)) then {
+                _suffix = "_cfaces_USStripes";
+            };
         } else {
-            if (_face in GVAR(faces_serbian) || _face in GVAR(faces_usflash)) then {
-                _ns = [_face, 0, -15] call BIS_fnc_trimString; //_unit setface _ns;
-            [[_unit,_ns], "setFace", true, false] call BIS_fnc_mp;
-                _unit setVariable [QGVAR(face), _ns, true];
-                //[-2, {unit setface ns}] call CBA_fnc_globalExecute;
-                hint "Tarnung abgelegt";
+            if (_face in GVAR(faces_serbian)) then {
+                _suffix = "_cfaces_Serbian";
             } else {
-                if (_face in GVAR(faces_usstains)) then {
-                    _ns = [_face, 0, -16] call BIS_fnc_trimString; //_unit setface _ns;
-                    [[_unit,_ns], "setFace", true, false] call BIS_fnc_mp;
-                    _unit setVariable [QGVAR(face), _ns, true];
-                    //[-2, {unit setface ns}] call CBA_fnc_globalExecute;
-                    hint "Tarnung abgelegt";
+                if (_face in GVAR(faces_usflash)) then {
+                    _suffix = "_cfaces_USFlash";
+                } else {
+                    if (_face in GVAR(faces_usstains)) then {
+                        _suffix = "_cfaces_USStains";
+                    };
                 };
             };
         };
     };
+};
+
+// Remove the suffix
+if (_suffix != "") then {
+    _ns = [_face, 0, -(count _suffix)] call BIS_fnc_trimString;
+    [[_unit,_ns], "setFace", true, false] call BIS_fnc_mp;
+    _unit setVariable [QGVAR(face), _ns, true];
+    hint "Tarnung abgelegt";
 };
