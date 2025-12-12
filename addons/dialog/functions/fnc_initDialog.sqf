@@ -1,16 +1,16 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Initializes the camouflage application dialog with controls and listboxes.
  *
  * Arguments:
- * 0: DISPLAY <DISPLAY>
+ * 0: Display <DISPLAY>
  *
  * Return Value:
  * None
  *
  * Example:
- * [my_display] call cfr_dialog_fnc_initDialog
+ * [_display] call cfr_dialog_fnc_initDialog
  *
  * Public: No
  */

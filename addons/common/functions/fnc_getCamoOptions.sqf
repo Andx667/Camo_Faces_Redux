@@ -1,13 +1,13 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Gets the available camouflage options for the current player's face based on the selected camo scheme.
  *
  * Arguments:
  * 0: Selected Camo Scheme <STRING>
  *
  * Return Value:
- * List of available Camos <ARRAY>
+ * List of available camouflage options <ARRAY of ARRAY> - Each element is [Display Name, Data String]
  *
  * Example:
  * ["bw_select"] call cfr_common_fnc_getCamoOptions

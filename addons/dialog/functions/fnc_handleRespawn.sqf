@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Restores the unit's camouflage face after respawn.
  *
  * Arguments:
  * 0: Unit <OBJECT>

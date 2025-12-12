@@ -1,17 +1,17 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Removes the camouflage face from a unit via the dialog system.
  *
  * Arguments:
  * 0: Unit (default: player) <OBJECT>
- * 1: Camoface <STRING>
+ * 1: Current face (default: player's face) <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, camofaces] call cfr_dialog_fnc_unsetCamo
+ * [player, "PersianHead_A3_01_cfaces_BWTarn"] call cfr_dialog_fnc_unsetCamo
  *
  * Public: No
  */

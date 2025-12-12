@@ -1,10 +1,10 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Handles the progressive application of camouflage layers in the camo dialog.
  *
  * Arguments:
- * 0: Level <NUMBER>
+ * 0: Application level (1-3) <NUMBER>
  *
  * Return Value:
  * None

@@ -1,16 +1,16 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Gets the available country-specific facepaint options based on items in the unit's uniform.
  *
  * Arguments:
  * 0: Unit <OBJECT>
  *
  * Return Value:
- * List of available Camos <ARRAY>
+ * List of available country facepaint options <ARRAY of ARRAY> - Each element is [Display Name, Selection String]
  *
  * Example:
- * [player] call cfr_common_fnc_countryOptions
+ * [player] call cfr_common_fnc_getCountryOptions
  *
  * Public: No
  */

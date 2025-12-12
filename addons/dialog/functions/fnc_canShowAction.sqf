@@ -1,13 +1,13 @@
 #include "..\script_component.hpp"
 /*
- * Authors: You
- * Description.
+ * Author: Andx
+ * Checks if the unit can access the camouflage dialog action.
  *
  * Arguments:
  * 0: Unit <OBJECT>
  *
  * Return Value:
- * BOOLEAN
+ * Can show action <BOOL>
  *
  * Example:
  * [player] call cfr_dialog_fnc_canShowAction

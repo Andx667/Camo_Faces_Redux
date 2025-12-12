@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Initializes the CFR mod by setting up all available face variants and restoring saved faces.
  *
  * Arguments:
  * None

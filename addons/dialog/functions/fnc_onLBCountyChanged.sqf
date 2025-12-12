@@ -1,17 +1,17 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Handles country selection changes in the dialog listbox and populates available camo patterns.
  *
  * Arguments:
- * 0: Button <BUTTON>
- * 1: Selected Item <STRING>
+ * 0: Listbox control <CONTROL>
+ * 1: Selected item index <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [my_button] call cfr_dialog_fnc_onLBCountyChanged
+ * [_lbCountry, 0] call cfr_dialog_fnc_onLBCountyChanged
  *
  * Public: No
  */

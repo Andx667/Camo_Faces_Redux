@@ -1,17 +1,17 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Applies a camouflage face texture to a unit.
  *
  * Arguments:
  * 0: Unit <OBJECT>
- * 1: Face <STRING>
+ * 1: Camo variant suffix <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "BW_stripe"] call cfr_common_fnc_setCamo
+ * [player, "cfaces_BWStripes"] call cfr_common_fnc_setCamo
  *
  * Public: No
  */

@@ -1,17 +1,17 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Handles camo pattern selection changes in the dialog listbox.
  *
  * Arguments:
- * 0: Button <BUTTON>
- * 1: Selected Item <STRING>
+ * 0: Listbox control <CONTROL>
+ * 1: Selected item index <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [my_button] call cfr_dialog_fnc_onLBCamoChange
+ * [_lbCamo, 0] call cfr_dialog_fnc_onLBCamoChanged
  *
  * Public: No
  */

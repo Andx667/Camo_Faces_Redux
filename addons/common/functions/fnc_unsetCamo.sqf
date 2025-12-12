@@ -1,17 +1,17 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Removes camouflage face texture from a unit and restores their original face.
  *
  * Arguments:
  * 0: Unit <OBJECT>
- * 1: Face <STRING>
+ * 1: Current camo face <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "camoface"] call cfr_common_fnc_unsetCamo
+ * [player, "PersianHead_A3_01_cfaces_BWTarn"] call cfr_common_fnc_unsetCamo
  *
  * Public: No
  */

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Authors: Andx, Sk3y
- * Description.
+ * Author: Andx, Sk3y
+ * Opens the camouflage application dialog.
  *
  * Arguments:
  * None
