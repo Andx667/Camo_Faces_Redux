@@ -25,14 +25,13 @@ private _hour = date select 3;
 private _box = _display displayCtrl 4961;
 private _notepad = _display displayCtrl 4966;
 
-//ToDo Fix
 if (_hour > 21 || _hour < 6) then {
-	_box ctrlSetText QPATHTOF(data\UI\box_night.paa);
-	_notepad ctrlSetText QPATHTOF(data\UI\notepad_night.paa);
+	_box ctrlSetText QPATHTOF2(data\UI\box_night.paa);
+	_notepad ctrlSetText QPATHTOF2(data\UI\notepad_night.paa);
 
 } else {
-	_box ctrlSetText QPATHTOF(data\UI\box.paa);
-	_notepad ctrlSetText QPATHTOF(data\UI\notepad.paa);
+	_box ctrlSetText QPATHTOF2(data\UI\box.paa);
+	_notepad ctrlSetText QPATHTOF2(data\UI\notepad.paa);
 };
 
 // deactivate button
