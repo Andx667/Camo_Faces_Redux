@@ -1,7 +1,7 @@
 // Global toggles for caching/logging
 // #define DISABLE_COMPILE_CACHE
 // #define DEBUG_MODE_FULL
-#define DEBUG_SYNCHRONOUS
+// DEBUG_SYNCHRONOUS is defined unconditionally by ACE3's own script_macros.hpp - not redefined here.
 
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
@@ -34,10 +34,8 @@
     #define PREP_RECOMPILE_START    if (isNil "cfr_fnc_recompile") then {cfr_recompiles = []; cfr_fnc_recompile = {{call _x} forEach cfr_recompiles;}}; private _recomp = {
     #define PREP_RECOMPILE_END      }; call _recomp; cfr_recompiles pushBack _recomp;
 #else
-    #define LINKFUNC(x) FUNC(x)
+    // LINKFUNC / PREP_RECOMPILE_START / PREP_RECOMPILE_END already match ACE3's script_debug.hpp for this branch - not redefined here.
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
-    #define PREP_RECOMPILE_START ; /* disabled */
-    #define PREP_RECOMPILE_END ; /* disabled */
 #endif
 
 #define WEAP_XX(WEAP, COUNT) class DOUBLES(_xx,WEAP) { \
@@ -76,16 +74,5 @@
 // Statements and conditions
 #define CLAMP(var1,lower,upper) (lower max (var1 min upper))
 
-// Weapon types
-#define TYPE_WEAPON_PRIMARY 1
-#define TYPE_WEAPON_HANDGUN 2
-#define TYPE_WEAPON_SECONDARY 4
-// Magazine types
-#define TYPE_MAGAZINE_HANDGUN_AND_GL 16 // mainly
-#define TYPE_MAGAZINE_PRIMARY_AND_THROW 256
-#define TYPE_MAGAZINE_SECONDARY_AND_PUT 512 // mainly
-#define TYPE_MAGAZINE_MISSILE 768
-// More types
-#define TYPE_BINOCULAR_AND_NVG 4096
-#define TYPE_WEAPON_VEHICLE 65536
-#define TYPE_ITEM 131072
+// Weapon/magazine/item TYPE_* constants (TYPE_WEAPON_PRIMARY, TYPE_MAGAZINE_PRIMARY_AND_THROW, etc.)
+// are provided by ACE3's own script_macros.hpp - ACE is authoritative for these, not redefined here.
