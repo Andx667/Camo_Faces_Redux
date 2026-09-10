@@ -1,8 +1,6 @@
 //Persian Heads
-// TODO: inherits from Default, unlike every other ethnicity (White/Asian/African/Greek),
-// which inherit from their real vanilla head class (e.g. WhiteHead_01). Check whether this
-// should inherit from PersianHead_A3_01 instead.
-class GVAR(PersianHead_A3_01_BWTarn): Default {
+class PersianHead_A3_01;
+class GVAR(PersianHead_A3_01_BWTarn): PersianHead_A3_01 {
     author = AUTHOR;
     displayname = CSTRING(PersianHead_A3_01_BWTarn);
     texture = QPATHTOF(data\bwtarn\PHA301\m_persian_01_co.paa);

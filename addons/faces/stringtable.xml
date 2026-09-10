@@ -300,118 +300,117 @@
             <English>Doukas US Stripes</English>
             <German>Doukas US Streifen</German>
         </Key>
-        <!-- TODO: GreekHead_A3_06 through _09 still use placeholder names (Name/Name7/Name8/Name9) - replace with real character names -->
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWStripes">
-            <English>Name BW Stripes</English>
-            <German>Name BW Streifen</German>
+            <English>Efthimiou BW Stripes</English>
+            <German>Efthimiou BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWTarn">
-            <English>Name BW Camouflage</English>
-            <German>Name BW Tarn</German>
+            <English>Efthimiou BW Camouflage</English>
+            <German>Efthimiou BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Black">
-            <English>Name Black</English>
-            <German>Name Schwarz</German>
+            <English>Efthimiou Black</English>
+            <German>Efthimiou Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Serbian">
-            <English>Name Serbian</English>
-            <German>Name Serbisch</German>
+            <English>Efthimiou Serbian</English>
+            <German>Efthimiou Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_USFlash">
-            <English>Name US Flash</English>
-            <German>Name US Sprüh</German>
+            <English>Efthimiou US Flash</English>
+            <German>Efthimiou US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_USStains">
-            <English>Name US Stains</English>
-            <German>Name US Flecken</German>
+            <English>Efthimiou US Stains</English>
+            <German>Efthimiou US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_USStripes">
-            <English>Name US Stripes</English>
-            <German>Name US Streifen</German>
+            <English>Efthimiou US Stripes</English>
+            <German>Efthimiou US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_BWStripes">
-            <English>Name7 BW Stripes</English>
-            <German>Name7 BW Streifen</German>
+            <English>Fotiou BW Stripes</English>
+            <German>Fotiou BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_BWTarn">
-            <English>Name7 BW Camouflage</English>
-            <German>Name7 BW Tarn</German>
+            <English>Fotiou BW Camouflage</English>
+            <German>Fotiou BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_Black">
-            <English>Name7 Black</English>
-            <German>Name7 Schwarz</German>
+            <English>Fotiou Black</English>
+            <German>Fotiou Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_Serbian">
-            <English>Name7 Serbian</English>
-            <German>Name7 Serbisch</German>
+            <English>Fotiou Serbian</English>
+            <German>Fotiou Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_USFlash">
-            <English>Name7 US Flash</English>
-            <German>Name7 US Sprüh</German>
+            <English>Fotiou US Flash</English>
+            <German>Fotiou US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_USStains">
-            <English>Name7 US Stains</English>
-            <German>Name7 US Flecken</German>
+            <English>Fotiou US Stains</English>
+            <German>Fotiou US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_USStripes">
-            <English>Name7 US Stripes</English>
-            <German>Name7 US Streifen</German>
+            <English>Fotiou US Stripes</English>
+            <German>Fotiou US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_BWStripes">
-            <English>Name8 BW Stripes</English>
-            <German>Name8 BW Streifen</German>
+            <English>Georgiou BW Stripes</English>
+            <German>Georgiou BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_BWTarn">
-            <English>Name8 BW Camouflage</English>
-            <German>Name8 BW Tarn</German>
+            <English>Georgiou BW Camouflage</English>
+            <German>Georgiou BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_Black">
-            <English>Name8 Black</English>
-            <German>Name8 Schwarz</German>
+            <English>Georgiou Black</English>
+            <German>Georgiou Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_Serbian">
-            <English>Name8 Serbian</English>
-            <German>Name8 Serbisch</German>
+            <English>Georgiou Serbian</English>
+            <German>Georgiou Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_USFlash">
-            <English>Name8 US Flash</English>
-            <German>Name8 US Sprüh</German>
+            <English>Georgiou US Flash</English>
+            <German>Georgiou US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_USStains">
-            <English>Name8 US Stains</English>
-            <German>Name8 US Flecken</German>
+            <English>Georgiou US Stains</English>
+            <German>Georgiou US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_USStripes">
-            <English>Name8 US Stripes</English>
-            <German>Name8 US Streifen</German>
+            <English>Georgiou US Stripes</English>
+            <German>Georgiou US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_BWStripes">
-            <English>Name9 BW Stripes</English>
-            <German>Name9 BW Streifen</German>
+            <English>Chatzis BW Stripes</English>
+            <German>Chatzis BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_BWTarn">
-            <English>Name9 BW Camouflage</English>
-            <German>Name9 BW Tarn</German>
+            <English>Chatzis BW Camouflage</English>
+            <German>Chatzis BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Black">
-            <English>Name9 Black</English>
-            <German>Name9 Schwarz</German>
+            <English>Chatzis Black</English>
+            <German>Chatzis Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Serbian">
-            <English>Name9 Serbian</English>
-            <German>Name9 Serbisch</German>
+            <English>Chatzis Serbian</English>
+            <German>Chatzis Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_USFlash">
-            <English>Name9 US Flash</English>
-            <German>Name9 US Sprüh</German>
+            <English>Chatzis US Flash</English>
+            <German>Chatzis US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_USStains">
-            <English>Name9 US Stains</English>
-            <German>Name9 US Flecken</German>
+            <English>Chatzis US Stains</English>
+            <German>Chatzis US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_USStripes">
-            <English>Name9 US Stripes</English>
-            <German>Name9 US Streifen</German>
+            <English>Chatzis US Stripes</English>
+            <German>Chatzis US Streifen</German>
         </Key>
         <!-- Persian Heads -->
         <Key ID="STR_CFR_Faces_PersianHead_A3_01_BWStripes">
