@@ -5,13 +5,13 @@
  *
  * Arguments:
  * 0: Unit <OBJECT>
- * 1: Face <STRING>
+ * 1: Camo scheme suffix, e.g. "BWTarn" <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "BW_stripe"] call cfr_common_fnc_setCamo
+ * [player, "BWTarn"] call cfr_common_fnc_setCamo
  *
  * Public: No
  */
@@ -19,7 +19,7 @@
 params ["_unit", "_camo"];
 TRACE_1("fnc_setCamo",_this);
 
-private _face = (face _unit + "_" + _camo);
+private _face = (FACES_CLASS_PREFIX + face _unit + "_" + _camo);
 
 if (
     _face in GVAR(faces_bwtarn) ||
