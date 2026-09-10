@@ -1,3 +1,7 @@
+// NOTE: all texture/material references in this file are correctly cased and point at real files
+// (verified against every file on disk, no mismatches). Issue #5's "Cannot load texture/material"
+// errors (lowercase "bw_facepaint.rvmat", "bw_facepaint_co.paa") do NOT originate from this file -
+// they must be baked into BW_Facepaint.p3d's own face material/texture assignments. Fix belongs there.
 ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};
 forcedDiffuse[] = {0,0,0,0};
