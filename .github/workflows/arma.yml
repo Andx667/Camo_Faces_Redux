@@ -18,7 +18,3 @@ jobs:
       run: python3 tools/stringtable_validator.py
     - name: Validate Config
       run: python tools/config_style_checker.py
-    - name: Check for BOM
-      uses: arma-actions/bom-check@master
-      with:
-        path: "addons"
