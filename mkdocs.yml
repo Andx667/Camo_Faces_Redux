@@ -1,0 +1,62 @@
+site_name: Camo Faces Redux
+site_description: An Arma 3 mod that lets players camouflage their faces during missions.
+site_url: https://andx667.github.io/CamoFacesRedux/
+repo_name: Andx667/CamoFacesRedux
+repo_url: https://github.com/Andx667/CamoFacesRedux
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Components:
+      - components/index.md
+      - Main: components/main.md
+      - Common: components/common.md
+      - Dialog: components/dialog.md
+      - Faces: components/faces.md
+      - Items: components/items.md
+  - Contributing: contributing.md
+  - License: license.md

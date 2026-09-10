@@ -15,3 +15,6 @@ Exports/
 *.zip
 *.pbo
 *.sqfc
+
+# mkdocs
+site/
