@@ -1,4 +1,7 @@
 //Persian Heads
+// TODO: inherits from Default, unlike every other ethnicity (White/Asian/African/Greek),
+// which inherit from their real vanilla head class (e.g. WhiteHead_01). Check whether this
+// should inherit from PersianHead_A3_01 instead.
 class GVAR(PersianHead_A3_01_BWTarn): Default {
     author = AUTHOR;
     displayname = CSTRING(PersianHead_A3_01_BWTarn);

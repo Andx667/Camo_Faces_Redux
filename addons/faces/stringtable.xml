@@ -300,6 +300,7 @@
             <English>Doukas US Stripes</English>
             <German>Doukas US Streifen</German>
         </Key>
+        <!-- TODO: GreekHead_A3_06 through _09 still use placeholder names (Name/Name7/Name8/Name9) - replace with real character names -->
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWStripes">
             <English>Name BW Stripes</English>
             <German>Name BW Streifen</German>
