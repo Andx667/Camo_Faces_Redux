@@ -20,37 +20,34 @@ TRACE_1("fnc_applyCamo",_this);
 
 disableSerialization;
 
-// give next button free or set camo face
+// button "action" code runs unscheduled, so a blocking sleep is not legal here -
+// delay the follow-up work with CBA_fnc_waitAndExec instead
 switch (_level) do {
 	case 1: {
-		// allow second button
-		hint "applying layer one...";
-		sleep 2;
-		private _button2 = (findDisplay 311) displayCtrl 5363;
-		_button2 ctrlEnable true;
-		hint "done!";
+		hint (localize LSTRING(applyingLayer1));
+		[{
+			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable true;
+			hint (localize LSTRING(layerDone));
+		}, [], 2] call CBA_fnc_waitAndExec;
 	};
 
 	case 2: {
-		// allow second button
-		hint "applying layer two...";
-		sleep 2;
-		private _button3 = (findDisplay 311) displayCtrl 5364;
-		_button3 ctrlEnable true;
-		hint "done!";
+		hint (localize LSTRING(applyingLayer2));
+		[{
+			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable true;
+			hint (localize LSTRING(layerDone));
+		}, [], 2] call CBA_fnc_waitAndExec;
 	};
 
 	case 3: {
-		hint "applying layer three...";
-		sleep 2;
-		private _lbCamo = (findDisplay 311) displayCtrl 5263;
-		[player, (_lbCamo lbData (lbCurSel _lbCamo))] call EFUNC(common,setCamo);
-		hint "camo face applied";
-		private _d_button1 = (findDisplay 311) displayCtrl 5362;
-		private _d_button2 = (findDisplay 311) displayCtrl 5363;
-		private _d_button3 = (findDisplay 311) displayCtrl 5364;
-		_d_button1 ctrlEnable false;
-		_d_button2 ctrlEnable false;
-		_d_button3 ctrlEnable false;
+		hint (localize LSTRING(applyingLayer3));
+		[{
+			private _lbCamo = (findDisplay IDD_DIALOG) displayCtrl IDC_LISTBOX_CAMOFACE;
+			[player, (_lbCamo lbData (lbCurSel _lbCamo))] call EFUNC(common,setCamo);
+
+			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER1) ctrlEnable false;
+			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable false;
+			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable false;
+		}, [], 2] call CBA_fnc_waitAndExec;
 	};
 };

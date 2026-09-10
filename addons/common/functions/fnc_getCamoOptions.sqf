@@ -18,45 +18,39 @@
 params ["_select"];
 TRACE_1("fnc_getCamoOptions",_this);
 
-//ToDO Refactor Logic for Face Selection
+//ToDo Refactor Logic for Face Selection
 private _selected = [];
+private _face = face player;
 
-if (face player in GVAR(faces)) then {
+if (_face in GVAR(all_faces)) then {
 
 	if (_select == "bw_select") then {
-		if ((face player + '_cfaces_BWTarn') in GVAR(faces_bwtarn)) then {
-			private _bw_tarn = [localize "STR_Camofaces_BWTarn","cfaces_BWTarn"];
-			_selected pushBack _bw_tarn;
+		if ((_face + "_cfaces_BWTarn") in GVAR(faces_bwtarn)) then {
+			_selected pushBack [localize LSTRING(camo_bwtarn), "cfaces_BWTarn"];
 		};
-		if ((face player + '_cfaces_Black') in GVAR(faces_black)) then {
-			private _bw_stripes = [localize "STR_Camofaces_Night","cfaces_Black"];
-			_selected pushBack _bw_stripes;
+		if ((_face + "_cfaces_Black") in GVAR(faces_black)) then {
+			_selected pushBack [localize LSTRING(camo_black), "cfaces_Black"];
 		};
-		if ((face player + '_cfaces_BWStripes') in GVAR(faces_bwstripes)) then {
-			private _bw_stripes = [localize "STR_Camofaces_Stripes","cfaces_BWStripes"];
-			_selected pushBack _bw_stripes;
+		if ((_face + "_cfaces_BWStripes") in GVAR(faces_bwstripes)) then {
+			_selected pushBack [localize LSTRING(camo_bwstripes), "cfaces_BWStripes"];
 		};
 	};
 
 	if (_select == "serbian_select") then {
-		if ((face player + '_cfaces_Serbian') in GVAR(faces_serbian)) then {
-			private _serbian_tarn = [localize "STR_Camofaces_Serbian","cfaces_Serbian"];
-			_selected pushBack _serbian_tarn;
+		if ((_face + "_cfaces_Serbian") in GVAR(faces_serbian)) then {
+			_selected pushBack [localize LSTRING(camo_serbian), "cfaces_Serbian"];
 		};
 	};
 
 	if (_select == "us_select") then {
-		if ((face player + '_cfaces_USStripes') in GVAR(faces_usstripes)) then {
-			private _us_stripes = [localize "STR_Camofaces_USStripes","cfaces_USStripes"];
-			_selected pushBack _us_stripes;
+		if ((_face + "_cfaces_USStripes") in GVAR(faces_usstripes)) then {
+			_selected pushBack [localize LSTRING(camo_usstripes), "cfaces_USStripes"];
 		};
-		if ((face player + '_cfaces_USStains') in GVAR(faces_usstains)) then {
-			private _us_stains = [localize "STR_Camofaces_USStains","cfaces_USStains"];
-			_selected pushBack _us_stains;
+		if ((_face + "_cfaces_USStains") in GVAR(faces_usstains)) then {
+			_selected pushBack [localize LSTRING(camo_usstains), "cfaces_USStains"];
 		};
-		if ((face player + '_cfaces_USFlash') in GVAR(faces_usflash)) then {
-			private _us_flash = [localize "STR_Camofaces_USFlash","cfaces_USFlash"];
-			_selected pushBack _us_flash;
+		if ((_face + "_cfaces_USFlash") in GVAR(faces_usflash)) then {
+			_selected pushBack [localize LSTRING(camo_usflash), "cfaces_USFlash"];
 		};
 	};
 

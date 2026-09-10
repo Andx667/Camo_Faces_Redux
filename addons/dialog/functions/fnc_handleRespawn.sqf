@@ -18,11 +18,10 @@
 params ["_unit"];
 TRACE_1("fnc_handleRespawn",_this);
 
-waitUntil {alive player};
-private _face = _unit getVariable [QGVAR(Face), ""];
+waitUntil {alive _unit};
 
-hint _face;
+private _face = _unit getVariable [QGVAR(face), ""];
 
 if (_face != "") then {
-	[_unit, format ["{_this setFace '%1'}", _face]] call jgkp_camofaces_fnc_execRemoteFnc; //ToDo Rework
+	[QEGVAR(common,setFace), [_unit, _face]] call CBA_fnc_globalEvent;
 };

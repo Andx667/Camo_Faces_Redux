@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Authors: You
+ * Authors: Andx, Sk3y
  * Description.
  *
  * Arguments:
@@ -16,23 +16,25 @@
  */
 
 params ["_player"];
-TRACE_1("fnc_showAction",_this);
+TRACE_1("fnc_canShowAction",_this);
+
+private _face = face _player;
 
 if (
     (
-    face _player in GVAR(faces) ||
-    face _player in GVAR(faces_bwtarn) ||
-    face _player in GVAR(faces_black) ||
-    face _player in GVAR(faces_bwstripes) ||
-    face _player in GVAR(faces_serbian) ||
-    face _player in GVAR(faces_usstripes) ||
-    face _player in GVAR(faces_usstains) ||
-    face _player in GVAR(faces_usflash)
+        _face in GVAR(all_faces) ||
+        _face in GVAR(faces_bwtarn) ||
+        _face in GVAR(faces_black) ||
+        _face in GVAR(faces_bwstripes) ||
+        _face in GVAR(faces_serbian) ||
+        _face in GVAR(faces_usstripes) ||
+        _face in GVAR(faces_usstains) ||
+        _face in GVAR(faces_usflash)
     ) && (
-        'BW_Facepaint' in uniformItems _player ||
-        'US_Facepaint' in uniformItems _player ||
-        'Serbian_Facepaint' in uniformItems _player
-        )
-        ) exitWith {true;};
+        EGVAR(items,BW_Facepaint) in uniformItems _player ||
+        EGVAR(items,US_Facepaint) in uniformItems _player ||
+        EGVAR(items,Serbian_Facepaint) in uniformItems _player
+    )
+) exitWith {true};
 
 false;

@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CFR">
     <Package name="Common">
+        <Key ID="STR_CFR_Common_camoApplied">
+            <English>Camouflage applied</English>
+            <German>Tarnung aufgelegt</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camoRemoved">
+            <English>Camouflage removed</English>
+            <German>Tarnung abgelegt</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_black">
+            <English>Night Camouflage</English>
+            <German>Nacht Tarnung</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_bwstripes">
+            <English>BW Stripes</English>
+            <German>BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_bwtarn">
+            <English>BW Camouflage</English>
+            <German>BW Tarnung</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_serbian">
+            <English>Serbian Camouflage</English>
+            <German>Serbische Tarnung</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_usflash">
+            <English>US Flash</English>
+            <German>US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_usstains">
+            <English>US Stains</English>
+            <German>US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_usstripes">
+            <English>US Stripes</English>
+            <German>US Streifen</German>
+        </Key>
         <Key ID="STR_CFR_Common_displayName">
             <English>Common</English>
+        </Key>
+        <Key ID="STR_CFR_Common_invalidFace">
+            <English>This face cannot be camouflaged</English>
+            <German>Dieses Gesicht kann nicht getarnt werden</German>
         </Key>
     </Package>
 </Project>

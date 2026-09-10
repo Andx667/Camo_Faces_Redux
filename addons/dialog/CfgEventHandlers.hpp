@@ -10,7 +10,7 @@ class Extended_PreInit_EventHandlers {
     };
 };
 
-class Extended_Repsawn_EventHandlers {
+class Extended_Respawn_EventHandlers {
     class ADDON {
         respawn = QUOTE(call FUNC(handleRespawn));
     };

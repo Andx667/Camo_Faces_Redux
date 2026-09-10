@@ -4,31 +4,29 @@
  * Description.
  *
  * Arguments:
- * 0: Button <BUTTON>
- * 1: Selected Item <STRING>
+ * 0: Country Listbox <CONTROL>
+ * 1: Selected Index <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [my_button] call cfr_dialog_fnc_onLBCountyChanged
+ * [my_listbox, 0] call cfr_dialog_fnc_onLBCountryChanged
  *
  * Public: No
  */
 
 params ["_lbCountry", "_selItem"];
-TRACE_1("fnc_onLBCountyChanged",_this);
-
+TRACE_1("fnc_onLBCountryChanged",_this);
 
 disableSerialization;
 
-// lb actions
-private _lbCamo = (findDisplay 311) displayCtrl 5263;
+private _lbCamo = (findDisplay IDD_DIALOG) displayCtrl IDC_LISTBOX_CAMOFACE;
 
-//first clear box
+// clear the camo listbox before repopulating it
 lbClear _lbCamo;
 
-// fill with options
+// fill with camo options available for the selected country
 private _camoOptions = [(_lbCountry lbData _selItem)] call EFUNC(common,getCamoOptions);
 
 {

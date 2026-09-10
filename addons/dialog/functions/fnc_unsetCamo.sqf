@@ -18,15 +18,20 @@
 
 params [
     ["_unit", player, [player]],
-    ["_face", face player, []]
+    ["_face", face player, [""]]
 ];
 TRACE_1("fnc_unsetCamo",_this);
 
-if (_face in GVAR(faces_bwtarn) || _face in GVAR(faces_black) || _face in GVAR(faces_bwstripes) ||
- _face in GVAR(faces_serbian) || _face in GVAR(faces_usstripes) || _face in GVAR(faces_usflash) ||
- _face in GVAR(faces_usstains)) then {
+if (
+    _face in GVAR(faces_bwtarn) ||
+    _face in GVAR(faces_black) ||
+    _face in GVAR(faces_bwstripes) ||
+    _face in GVAR(faces_serbian) ||
+    _face in GVAR(faces_usstripes) ||
+    _face in GVAR(faces_usflash) ||
+    _face in GVAR(faces_usstains)
+) then {
 	[_unit, _face] call EFUNC(common,unsetCamo);
-	hint "camo face removed";
 } else {
-	hint "no camo face applied";
+	hint (localize LSTRING(noCamoApplied));
 };

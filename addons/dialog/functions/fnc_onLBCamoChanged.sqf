@@ -4,29 +4,28 @@
  * Description.
  *
  * Arguments:
- * 0: Button <BUTTON>
- * 1: Selected Item <STRING>
+ * 0: Camoface Listbox <CONTROL>
+ * 1: Selected Index <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [my_button] call cfr_dialog_fnc_onLBCamoChange
+ * [my_listbox, 0] call cfr_dialog_fnc_onLBCamoChanged
  *
  * Public: No
  */
 
-params ["_lbCountry","_selItem"];
-TRACE_1("fnc_onLBCamoChange",_this);
+params ["_lbCamo","_selItem"];
+TRACE_1("fnc_onLBCamoChanged",_this);
 
 disableSerialization;
 
-// lb actions
-// controls for pictures
+// only allow starting to apply camo once all headgear is removed and the face is one we can camo
 private _face = (face player);
 
-if (!GVAR(hasHelmet) && !GVAR(hasGoggles) && !GVAR(hasNV) && _face in GVAR(faces)) then { //ToDo change check to local variable on player (or something better)
+if (!GVAR(hasHelmet) && !GVAR(hasGoggles) && !GVAR(hasNV) && _face in GVAR(all_faces)) then {
 	// allow first button
-	private _button1 = (findDisplay 311) displayCtrl 5362;
+	private _button1 = (findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER1;
 	_button1 ctrlEnable true;
 };

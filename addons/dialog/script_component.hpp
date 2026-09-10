@@ -9,6 +9,29 @@
 #include "\z\cfr\addons\main\script_macros.hpp"
 
 ///////////////////////////////////////////////////////////////////////////
+/// Dialog & control IDs
+///////////////////////////////////////////////////////////////////////////
+
+#define IDD_DIALOG           311
+
+#define IDC_PICTURE_BOX      4961
+#define IDC_PICTURE_NOTEPAD  4966
+#define IDC_TEXT_HELMET      4862
+#define IDC_PICTURE_HELMET   4963
+#define IDC_TEXT_GOGGLES     4863
+#define IDC_PICTURE_GOGGLES  4964
+#define IDC_TEXT_NV          4864
+#define IDC_PICTURE_NV       4965
+#define IDC_RTT_MIRROR       4967
+
+#define IDC_LISTBOX_COUNTRY  5262
+#define IDC_LISTBOX_CAMOFACE 5263
+#define IDC_BUTTON_LAYER1    5362
+#define IDC_BUTTON_LAYER2    5363
+#define IDC_BUTTON_LAYER3    5364
+#define IDC_BUTTON_UNCAMO    5365
+
+///////////////////////////////////////////////////////////////////////////
 /// Styles
 ///////////////////////////////////////////////////////////////////////////
 

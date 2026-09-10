@@ -28,12 +28,11 @@ if (
     _face in GVAR(faces_usstripes) ||
     _face in GVAR(faces_serbian) ||
     _face in GVAR(faces_usflash) ||
-    _face in GVAR(faces_usstains)) then {
-
-	[[_unit,_face], "setFace", true, false] call BIS_fnc_mp;
+    _face in GVAR(faces_usstains)
+) then {
+	[QGVAR(setFace), [_unit, _face]] call CBA_fnc_globalEvent;
 	_unit setVariable [QGVAR(face), _face, true];
-	hint "Tarnung aufgelegt";
-
+	hint (localize LSTRING(camoApplied));
 } else {
-	hint "This Face is not possible!";
-}
+	hint (localize LSTRING(invalidFace));
+};

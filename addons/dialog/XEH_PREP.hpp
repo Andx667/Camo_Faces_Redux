@@ -1,8 +1,9 @@
 PREP(applyCamo);
 PREP(canShowAction);
+PREP(closeDialog);
 PREP(handleRespawn);
 PREP(initDialog);
 PREP(onLBCamoChanged);
-PREP(onLBCountyChanged);
+PREP(onLBCountryChanged);
 PREP(startDialog);
 PREP(unsetCamo);

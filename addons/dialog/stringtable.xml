@@ -5,9 +5,29 @@
             <English>Camo Faces</English>
             <German>Camo Faces</German>
         </Key>
+        <Key ID="STR_CFR_Dialog_applyingLayer1">
+            <English>Applying layer one...</English>
+            <German>Trage Schicht eins auf...</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_applyingLayer2">
+            <English>Applying layer two...</English>
+            <German>Trage Schicht zwei auf...</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_applyingLayer3">
+            <English>Applying layer three...</English>
+            <German>Trage Schicht drei auf...</German>
+        </Key>
         <Key ID="STR_CFR_Dialog_displayName">
             <English>Dialog</English>
             <German>Dialog</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_layerDone">
+            <English>Done!</English>
+            <German>Fertig!</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_noCamoApplied">
+            <English>No camo face applied</English>
+            <German>Keine Tarnung aufgetragen</German>
         </Key>
         <Key ID="STR_CFR_Dialog_noOption">
             <English>No Option</English>
