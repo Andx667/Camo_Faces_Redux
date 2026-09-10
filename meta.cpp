@@ -1,4 +1,4 @@
 protocol = 1;
-publishedid = MOD_ID;
+publishedid = 1643238133;
 name = "Camo Faces Redux";
-timestamp = 5250140732737923549;
+timestamp = 0;

@@ -3,7 +3,7 @@ name: Release Drafter
 on:
   push:
     branches:
-    - master
+    - main
     - release-drafter  # for testing edits to this configuration
 
 jobs:

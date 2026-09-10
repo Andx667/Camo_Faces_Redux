@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup HEMTT
       uses: arma-actions/hemtt@v1
 
-    - name: Build TTT Mod Release
+    - name: Build CFR Mod Release
       run: hemtt release
 
     - name: Upload to release
@@ -22,6 +22,6 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: releases/cfr-latest.zip
-        asset_name: ttt-$tag.zip
+        asset_name: cfr-$tag.zip
         tag: ${{ github.ref }}
         overwrite: true
