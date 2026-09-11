@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CFR">
+    <Package name="Compat_Zen">
+        <Key ID="STR_CFR_Compat_Zen_applyRandom">
+            <English>Apply Random Camouflage</English>
+            <German>Zufällige Tarnung auftragen</German>
+        </Key>
+        <Key ID="STR_CFR_Compat_Zen_menuName">
+            <English>Camouflage</English>
+            <German>Tarnung</German>
+        </Key>
+        <Key ID="STR_CFR_Compat_Zen_randomApplied">
+            <English>Applied random camouflage to %1/%2 unit(s)</English>
+            <German>Zufällige Tarnung auf %1/%2 Einheit(en) aufgetragen</German>
+        </Key>
+        <Key ID="STR_CFR_Compat_Zen_removeApplied">
+            <English>Removed camouflage from %1 unit(s)</English>
+            <German>Tarnung von %1 Einheit(en) entfernt</German>
+        </Key>
+        <Key ID="STR_CFR_Compat_Zen_removeCamo">
+            <English>Remove Camouflage</English>
+            <German>Tarnung entfernen</German>
+        </Key>
+        <Key ID="STR_CFR_Compat_Zen_settingCategory">
+            <English>Zeus Enhanced</English>
+            <German>Zeus Enhanced</German>
+        </Key>
+        <Key ID="STR_CFR_Compat_Zen_settingEnabled_name">
+            <English>Enable Camouflage Context Actions</English>
+            <German>Tarnungs-Kontextaktionen aktivieren</German>
+        </Key>
+        <Key ID="STR_CFR_Compat_Zen_settingEnabled_tooltip">
+            <English>When enabled, a "Camouflage" entry is added to ZEN's context menu for applying/removing camo on selected units. Only affects your own Zeus interface.</English>
+            <German>Wenn aktiviert, wird dem Kontextmenü von ZEN ein Eintrag "Tarnung" hinzugefügt, um bei ausgewählten Einheiten Tarnung aufzutragen/zu entfernen. Betrifft nur deine eigene Zeus-Oberfläche.</German>
+        </Key>
+    </Package>
+</Project>

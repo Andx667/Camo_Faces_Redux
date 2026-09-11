@@ -9,3 +9,4 @@ Camo Faces Redux follows the standard ACE-style addon layout: functionality is s
 | [Dialog](dialog.md) | `cfr_dialog` | The in-game UI for choosing and applying camo |
 | [Faces](faces.md) | `cfr_faces` | The camouflaged face variants and textures |
 | [Items](items.md) | `cfr_items` | The facepaint inventory items and their box |
+| [Zeus Enhanced Compat](compat_zen.md) | `cfr_compat_zen` | Optional: lets a Zeus curator apply/remove camo from ZEN's context menu |

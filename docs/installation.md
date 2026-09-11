@@ -9,6 +9,8 @@ Camo Faces Redux depends on:
 
 Both must be loaded **before** Camo Faces Redux.
 
+Optionally, [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) (ZEN) enables a Zeus context-menu integration (see [Usage](usage.md)) — no configuration needed, it activates automatically if ZEN is also loaded.
+
 ## Players
 
 1. Subscribe to the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=MOD_ID), or download a release from the [Releases](https://github.com/Andx667/CamoFacesRedux/releases) page.
