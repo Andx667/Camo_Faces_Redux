@@ -3,6 +3,7 @@ hemtt.exe
 .hemtt/missions/~*
 .hemttout/
 releases/
+.hemttprivatekey
 
 # Textures
 Exports/

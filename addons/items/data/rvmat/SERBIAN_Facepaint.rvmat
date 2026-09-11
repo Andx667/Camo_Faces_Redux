@@ -1,25 +1,19 @@
-// NOTE: all texture/material references in this file are correctly cased and point at real files
-// (verified against every file on disk, no mismatches). Issue #5's "Cannot load texture/material"
-// errors (lowercase "bw_facepaint.rvmat", "bw_facepaint_co.paa") do NOT originate from this file -
-// they must be baked into BW_Facepaint.p3d's own face material/texture assignments. Fix belongs there.
+// NOTE: unlike BW_Facepaint/US_Facepaint, addons/items/data/tex only has SERBIAN_Facepaint_co.paa -
+// no _nohq (normal) or _smdi (specular) textures exist for the Serbian variant yet. Stage1 and Stage5
+// are omitted below rather than pointing at nonexistent files (both source rvmats already omit Stage4
+// the same way, so a missing stage is a normal pattern here, not an error). Author matching _nohq/_smdi
+// textures later if Serbian needs the same normal/specular detail as BW/US, then add Stage1/Stage5 back
+// following those two files' pattern.
+// Specular values below are copied from US_Facepaint.rvmat as a placeholder, since SERBIAN_Facepaint.p3d
+// was evidently cloned from US_Facepaint.p3d (see TODO-p3d.md) - revisit once real textures exist.
 ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};
 forcedDiffuse[] = {0,0,0,0};
 emmisive[] = {0,0,0,1};
-specular[] = {0.15,0.15,0.15,1};
-specularPower = 7;
+specular[] = {0.4,0.4,0.4,1};
+specularPower = 4;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
-class Stage1 {
-    texture = "z\cfr\addons\items\data\tex\BW_Facepaint_nohq.paa";
-    uvSource = "tex";
-    class uvTransform {
-        aside[] = {1,0,0};
-        up[] = {0,1,0};
-        dir[] = {0,0,0};
-        pos[] = {0,0,0};
-    };
-};
 class Stage2 {
     texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
     uvSource = "tex";
@@ -32,16 +26,6 @@ class Stage2 {
 };
 class Stage3 {
     texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
-    uvSource = "tex";
-    class uvTransform {
-        aside[] = {1,0,0};
-        up[] = {0,1,0};
-        dir[] = {0,0,0};
-        pos[] = {0,0,0};
-    };
-};
-class Stage5 {
-    texture = "z\cfr\addons\items\data\tex\BW_Facepaint_smdi.paa";
     uvSource = "tex";
     class uvTransform {
         aside[] = {1,0,0};
