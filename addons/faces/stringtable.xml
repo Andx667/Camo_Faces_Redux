@@ -1086,8 +1086,5 @@
             <English>O'Smith US Stripes</English>
             <German>O'Smith US Streifen</German>
         </Key>
-        <Key ID="STR_CFR_Faces_displayName">
-            <English>Faces</English>
-        </Key>
     </Package>
 </Project>

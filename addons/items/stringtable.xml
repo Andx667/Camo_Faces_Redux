@@ -13,10 +13,6 @@
             <English>BW Facepaint</English>
             <German>BW Tarnschminke</German>
         </Key>
-        <Key ID="STR_CFR_Items_displayName">
-            <English>Items</English>
-            <German>Gegenstände</German>
-        </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_descriptionshort">
             <English>Used by the Serbian Armed Forces</English>
             <German>Benutzt von den Serbischen Streitkräften</German>

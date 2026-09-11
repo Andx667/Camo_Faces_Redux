@@ -17,10 +17,6 @@
             <English>Applying layer three...</English>
             <German>Trage Schicht drei auf...</German>
         </Key>
-        <Key ID="STR_CFR_Dialog_displayName">
-            <English>Dialog</English>
-            <German>Dialog</German>
-        </Key>
         <Key ID="STR_CFR_Dialog_layerDone">
             <English>Done!</English>
             <German>Fertig!</German>

@@ -37,9 +37,6 @@
             <English>US Stripes</English>
             <German>US Streifen</German>
         </Key>
-        <Key ID="STR_CFR_Common_displayName">
-            <English>Common</English>
-        </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>
             <German>Dieses Gesicht kann nicht getarnt werden</German>
