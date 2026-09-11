@@ -18,7 +18,7 @@
             <German>Benutzt von den Serbischen Streitkräften</German>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_displayname">
-            <English>Serbian Facepaint Sticks</English>
+            <English>Serbian Facepaint</English>
             <German>Serbische Tarnschminke</German>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_descriptionshort">
@@ -26,7 +26,7 @@
             <German>Benutzt von den US Streikräften</German>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_displayname">
-            <English>US Facepaint Sticks</English>
+            <English>US Facepaint</English>
             <German>US Tarnschminke</German>
         </Key>
     </Package>
