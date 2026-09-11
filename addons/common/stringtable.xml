@@ -37,6 +37,10 @@
             <English>US Stripes</English>
             <German>US Streifen</German>
         </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla">
+            <English>Vanilla Camouflage</English>
+            <German>Original-Tarnung</German>
+        </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>
             <German>Dieses Gesicht kann nicht getarnt werden</German>

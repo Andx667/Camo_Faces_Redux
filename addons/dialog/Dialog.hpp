@@ -14,28 +14,28 @@ class GVAR(Dialog) {
     controls[] = {"RscListbox_Country","RscListbox_Camoface","RscSTRucturedText_Helm","RscSTRucturedText_Brille","RscSTRucturedText_NV","RscPicture_Helm","RscPicture_Brille","RscPicture_NV","RscButton_MakeUp_Layer1","RscButton_MakeUp_Layer2","RscButton_MakeUp_Layer3","RscButton_UnCamo","RscButton_RTT"};
     class RscPicture_BackgroundBox: RscPicture {
         idc = IDC_PICTURE_BOX;
-        x = "0 * (0.025)+ (0)";
-        y = "(5 * (0.04)+ (0))";
-        w = "(40 * (0.025)) * (0.8)";
-        h = "(25 * (0.04)) * (0.8)";
+        x = 0 * (0.025)+ (0);
+        y = (5 * (0.04)+ (0));
+        w = (40 * (0.025)) * (0.8);
+        h = (25 * (0.04)) * (0.8);
         moving = 1;
         tooltip = "";
     };
     class RscPicture_BackgroundNotepad: RscPicture {
         idc = IDC_PICTURE_NOTEPAD;
-        x = "((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)";
-        y = "0 * (0.04)+ (0)";
-        w = "35 * (0.025)";
-        h = "28 * (0.04)";
+        x = ((0 * (0.025)+ (0)+ 37 * (0.025))*0.8);
+        y = 0 * (0.04)+ (0);
+        w = 35 * (0.025);
+        h = 28 * (0.04);
         tooltip = "";
     };
     class RscListbox_Country: RscListbox {
         idc = IDC_LISTBOX_COUNTRY;
         text = "";
-        x = "(((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 8*(0.025))";
-        y = "3.2 * (0.04)+ (0)";
-        w = "9 * (0.025)";
-        h = "6 * (0.04)";
+        x = (((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 8*(0.025));
+        y = 3.2 * (0.04)+ (0);
+        w = 9 * (0.025);
+        h = 6 * (0.04);
         font = "EtelkaMonospacePro";
         sizeEx = 0.03;
         rowHeight = 0.05;
@@ -52,10 +52,10 @@ class GVAR(Dialog) {
     class RscListbox_Camoface: RscListbox {
         idc = IDC_LISTBOX_CAMOFACE;
         text = "";
-        x = "(((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 19*(0.025))";
-        y = "3.2 * (0.04)+ (0)";
-        w = "9 * (0.025)";
-        h = "6 * (0.04)";
+        x = (((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 19*(0.025));
+        y = 3.2 * (0.04)+ (0);
+        w = 9 * (0.025);
+        h = 6 * (0.04);
         font = "EtelkaMonospacePro";
         sizeEx = 0.03;
         rowHeight = 0.05;
@@ -72,61 +72,61 @@ class GVAR(Dialog) {
     class RscSTRucturedText_Helm: RscStructuredText {
         idc = IDC_TEXT_HELMET;
         text = "";
-        x = "((1.7)+1) * (0.025)+ (0)";
-        y = "(4.9 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0))";
-        w = "(9 * 0.8) * (0.025)";
-        h = "(3.5 * 0.8) * (0.04)";
+        x = ((1.7)+1) * (0.025)+ (0);
+        y = (4.9 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
+        w = (9 * 0.8) * (0.025);
+        h = (3.5 * 0.8) * (0.04);
     };
     class RscPicture_Helm: RscPicture {
         idc = IDC_PICTURE_HELMET;
         text = QPATHTOF(data\UI\indicator_helmet.paa);
-        x = "((1.7)+0.1) * (0.025)+ (0)";
-        y = "(4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0))";
-        w = "(8.5 * (1.2)) * (0.025)";
-        h = "(3.5 * (1.2)) * (0.04)";
+        x = ((1.7)+0.1) * (0.025)+ (0);
+        y = (4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
+        w = (8.5 * (1.2)) * (0.025);
+        h = (3.5 * (1.2)) * (0.04);
         tooltip = "red means you still wear a helmet";
     };
     class RscSTRucturedText_Brille: RscStructuredText {
         idc = IDC_TEXT_GOGGLES;
         text = "";
-        x = "((1.7)+13) * (0.025)+ (0)";
-        y = "(4.9 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0))";
-        w = "(7.1 * 0.8) * (0.025)";
-        h = "(3.5 * 0.8) * (0.04)";
+        x = ((1.7)+13) * (0.025)+ (0);
+        y = (4.9 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
+        w = (7.1 * 0.8) * (0.025);
+        h = (3.5 * 0.8) * (0.04);
     };
     class RscPicture_Brille: RscPicture {
         idc = IDC_PICTURE_GOGGLES;
         text = QPATHTOF(data\UI\indicator_goggles.paa);
-        x = "((1.7)+9.5)* (0.025)+ (0)";
-        y = "(4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0))";
-        w = "(8.5 * (1.2)) * (0.025)";
-        h = "(3.5 * (1.2)) * (0.04)";
+        x = ((1.7)+9.5)* (0.025)+ (0);
+        y = (4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
+        w = (8.5 * (1.2)) * (0.025);
+        h = (3.5 * (1.2)) * (0.04);
         tooltip = "red means you still wear glasses";
     };
     class RscSTRucturedText_NV: RscStructuredText {
         idc = IDC_TEXT_NV;
         text = "";
-        x = "((1.7)+21.5) * (0.025)+ (0)";
-        y = "(4.9 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0))";
-        w = "(6 * 0.8) * (0.025)";
-        h = "(3.5 * 0.8) * (0.04)";
+        x = ((1.7)+21.5) * (0.025)+ (0);
+        y = (4.9 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
+        w = (6 * 0.8) * (0.025);
+        h = (3.5 * 0.8) * (0.04);
     };
     class RscPicture_NV: RscPicture {
         idc = IDC_PICTURE_NV;
         text = QPATHTOF(data\UI\indicator_nv.paa);
-        x = "((1.7)+20) * (0.025)+ (0)";
-        y = "(4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0))";
-        w = "(8.5 * (1.2)) * (0.025)";
-        h = "(3.5 * (1.2)) * (0.04)";
+        x = ((1.7)+20) * (0.025)+ (0);
+        y = (4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
+        w = (8.5 * (1.2)) * (0.025);
+        h = (3.5 * (1.2)) * (0.04);
         tooltip = "red means you still use a night vision gear";
     };
     class RscButton_MakeUp_Layer1: RscButton {
         idc = IDC_BUTTON_LAYER1;
         text = "";
-        x = "(((1.7)+0.4) * (0.025)+ (0)) * (0.8)";
-        y = "(13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
-        w = "(11 * (0.025)) * (0.8)";
-        h = "(7.5 * (0.04)) * (0.8)";
+        x = (((1.7)+0.4) * (0.025)+ (0)) * (0.8);
+        y = (13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0));
+        w = (11 * (0.025)) * (0.8);
+        h = (7.5 * (0.04)) * (0.8);
         action = QUOTE([1] call FUNC(applyCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
@@ -144,10 +144,10 @@ class GVAR(Dialog) {
     class RscButton_MakeUp_Layer2: RscButton {
         idc = IDC_BUTTON_LAYER2;
         text = "";
-        x = "(((1.7)+12.8) * (0.025)+ (0)) * (0.8)";
-        y = "(13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
-        w = "(11 * (0.025)) * (0.8)";
-        h = "(7.5 * (0.04)) * (0.8)";
+        x = (((1.7)+12.8) * (0.025)+ (0)) * (0.8);
+        y = (13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0));
+        w = (11 * (0.025)) * (0.8);
+        h = (7.5 * (0.04)) * (0.8);
         action = QUOTE([2] call FUNC(applyCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
@@ -165,10 +165,10 @@ class GVAR(Dialog) {
     class RscButton_MakeUp_Layer3: RscButton {
         idc = IDC_BUTTON_LAYER3;
         text = "";
-        x = "(((1.7)+25.3) * (0.025)+ (0)) * (0.8)";
-        y = "(13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
-        w = "(11 * (0.025)) * (0.8)";
-        h = "(7.5 * (0.04)) * (0.8)";
+        x = (((1.7)+25.3) * (0.025)+ (0)) * (0.8);
+        y = (13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0));
+        w = (11 * (0.025)) * (0.8);
+        h = (7.5 * (0.04)) * (0.8);
         action = QUOTE([3] call FUNC(applyCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
@@ -186,10 +186,10 @@ class GVAR(Dialog) {
     class RscButton_UnCamo: RscButton {
         idc = IDC_BUTTON_UNCAMO;
         text = "";
-        x = "(((1.7)+1.8) * (0.025)+ (0)) * (0.8)";
-        y = "(21.8 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
-        w = "(33 * (0.025)) * (0.8)";
-        h = "(2 * (0.04)) * (0.8)";
+        x = (((1.7)+1.8) * (0.025)+ (0)) * (0.8);
+        y = (21.8 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0));
+        w = (33 * (0.025)) * (0.8);
+        h = (2 * (0.04)) * (0.8);
         action = QUOTE([] call FUNC(unsetCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
@@ -207,10 +207,10 @@ class GVAR(Dialog) {
     class RscButton_RTT: RscPicture    {
         idc = IDC_RTT_MIRROR;
         text = "#(argb,512,512,3)r2t(camofacesmirror,1)";
-        x = "((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 18.2 * (0.025)";
-        y = "11.2 * (0.04)+ (0)";
-        w = "((11 * (0.025)) * (0.8))*1.05";
-        h = "((7.5 * (0.04)) * (0.8))*1.05";
+        x = ((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 18.2 * (0.025);
+        y = 11.2 * (0.04)+ (0);
+        w = ((11 * (0.025)) * (0.8))*1.05;
+        h = ((7.5 * (0.04)) * (0.8))*1.05;
         tooltip = "";
     };
 };
