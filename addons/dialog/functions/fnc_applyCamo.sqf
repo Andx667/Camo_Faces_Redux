@@ -29,6 +29,7 @@ switch (_level) do {
 		hint (localize LSTRING(applyingLayer1));
 		[{
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable true;
+			hint (localize LSTRING(layerDone));
 		}, [], 2] call CBA_fnc_waitAndExecute;
 	};
 
@@ -36,6 +37,7 @@ switch (_level) do {
 		hint (localize LSTRING(applyingLayer2));
 		[{
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable true;
+			hint (localize LSTRING(layerDone));
 		}, [], 2] call CBA_fnc_waitAndExecute;
 	};
 
