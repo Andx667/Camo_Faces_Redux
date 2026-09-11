@@ -1,7 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Removes camouflage from a unit, restoring whichever base face the unit's current camo face pairs
+ * with. Public API - safe to call from other mods/missions. See addons/common/README.md for the
+ * cfr_common_camoRemoved event this raises on success.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -13,11 +15,16 @@
  * Example:
  * [player, "camoface"] call cfr_common_fnc_unsetCamo
  *
- * Public: No
+ * Public: Yes
  */
 
-params ["_unit", "_face"];
+params [
+	["_unit", objNull, [objNull]],
+	["_face", "", [""]]
+];
 TRACE_1("fnc_unsetCamo",_this);
+
+if (isNull _unit) exitWith {};
 
 // reverse lookup: find whichever scheme's pairs has a camo value matching the current face, and
 // return its paired base face - no string/suffix manipulation needed since GVAR(schemes) already
