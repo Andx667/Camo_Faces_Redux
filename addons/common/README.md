@@ -21,6 +21,10 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 
 Applying or removing a face is synchronized across the network through a `cfr_common_setFace` CBA event (handler registered in `XEH_postInit.sqf`) rather than calling `setFace` directly — this keeps every client's view of a unit's face consistent, and avoids relying on banned commands (`spawn`, `execVM`, `remoteExec` — see `.hemtt/lints.toml`).
 
+## Public API events
+
+`fnc_setCamo`/`fnc_unsetCamo` also broadcast two CBA events, `cfr_common_camoApplied`/`cfr_common_camoRemoved`, for other mods/missions to hook into — see [docs/api.md](../../docs/api.md) for the full reference. Both fire only on successful apply/removal (not on a rejected attempt), broadcast the same way as the internal `setFace` event (every machine, regardless of who triggered it), and share the same `[unit, schemeId, oldFace, newFace]` shape.
+
 ## Global variables
 
 `fnc_init` builds these once on mission start:

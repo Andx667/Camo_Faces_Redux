@@ -23,18 +23,23 @@ TRACE_1("fnc_unsetCamo",_this);
 // return its paired base face - no string/suffix manipulation needed since GVAR(schemes) already
 // stores both ends of the pair
 private _baseFace = "";
+private _schemeId = "";
 
 {
-	_x params ["", "_pairs"];
+	_x params ["_id", "_pairs"];
 	private _pairIdx = _pairs findIf {(_x select 1) == _face};
 	if (_pairIdx != -1) exitWith {
 		_baseFace = (_pairs select _pairIdx) select 0;
+		_schemeId = _id;
 	};
 } forEach GVAR(schemes);
 
 if (_baseFace != "") then {
 	[QGVAR(setFace), [_unit, _baseFace]] call CBA_fnc_globalEvent;
 	_unit setVariable [QGVAR(face), _baseFace, true];
+	// public API event - see docs/api.md. [unit, schemeId, oldFace, newFace], same shape/broadcast as
+	// camoApplied in fnc_setCamo.sqf
+	[QGVAR(camoRemoved), [_unit, _schemeId, _face, _baseFace]] call CBA_fnc_globalEvent;
 	hint (localize LSTRING(camoRemoved));
 } else {
 	hint (localize LSTRING(invalidFace));
