@@ -34,6 +34,9 @@ if (_schemeIdx != -1) then {
 if (_targetFace != "") then {
 	[QGVAR(setFace), [_unit, _targetFace]] call CBA_fnc_globalEvent;
 	_unit setVariable [QGVAR(face), _targetFace, true];
+	// public API event - see docs/api.md. [unit, schemeId, oldFace, newFace], broadcast the same way
+	// as the internal setFace event, so other mods see it on every machine regardless of who applied it
+	[QGVAR(camoApplied), [_unit, _camo, _face, _targetFace]] call CBA_fnc_globalEvent;
 	hint (localize LSTRING(camoApplied));
 } else {
 	hint (localize LSTRING(invalidFace));

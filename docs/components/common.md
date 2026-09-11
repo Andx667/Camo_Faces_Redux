@@ -16,3 +16,5 @@ Functionality shared between addons — the core logic behind applying and remov
 `GVAR(schemes)` is a data table, not per-scheme hardcoded logic — every function above reads from it rather than branching on scheme name. The "Vanilla" scheme (BI's own Marksmen DLC camo faces) is appended to it only if `isDLCAvailable 332350` is true, so it's automatically absent everywhere for players without that DLC.
 
 Applying and removing a face is synchronized across the network through a `cfr_common_setFace` CBA event (registered in `XEH_postInit.sqf`), rather than calling `setFace` directly — this keeps all clients' understanding of a unit's face in sync.
+
+`fnc_setCamo`/`fnc_unsetCamo` also broadcast public `cfr_common_camoApplied`/`cfr_common_camoRemoved` CBA events on success, for other mods to hook into — see [API](../api.md).
