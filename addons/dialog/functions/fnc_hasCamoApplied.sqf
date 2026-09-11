@@ -20,14 +20,4 @@
 params [["_unit", ACE_player, [ACE_player]]];
 TRACE_1("fnc_hasCamoApplied",_this);
 
-private _face = face _unit;
-
-(
-    _face in EGVAR(common,faces_bwtarn) ||
-    _face in EGVAR(common,faces_black) ||
-    _face in EGVAR(common,faces_bwstripes) ||
-    _face in EGVAR(common,faces_serbian) ||
-    _face in EGVAR(common,faces_usstripes) ||
-    _face in EGVAR(common,faces_usflash) ||
-    _face in EGVAR(common,faces_usstains)
-);
+[face _unit] call EFUNC(common,isCamoFace);

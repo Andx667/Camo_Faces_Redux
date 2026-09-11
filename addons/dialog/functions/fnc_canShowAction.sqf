@@ -20,21 +20,8 @@ TRACE_1("fnc_canShowAction",_this);
 
 private _face = face _player;
 
-private _faceKnown = (
-    _face in EGVAR(common,all_faces) ||
-    _face in EGVAR(common,faces_bwtarn) ||
-    _face in EGVAR(common,faces_black) ||
-    _face in EGVAR(common,faces_bwstripes) ||
-    _face in EGVAR(common,faces_serbian) ||
-    _face in EGVAR(common,faces_usstripes) ||
-    _face in EGVAR(common,faces_usstains) ||
-    _face in EGVAR(common,faces_usflash)
-);
-private _hasItem = (
-    QEGVAR(items,BW_Facepaint) in uniformItems _player ||
-    QEGVAR(items,US_Facepaint) in uniformItems _player ||
-    QEGVAR(items,Serbian_Facepaint) in uniformItems _player
-);
+private _faceKnown = (_face in EGVAR(common,all_faces)) || ([_face] call EFUNC(common,isCamoFace));
+private _hasItem = (GVAR(itemClasses) findIf {_x in uniformItems _player}) != -1;
 
 if (_faceKnown && _hasItem) exitWith {true};
 

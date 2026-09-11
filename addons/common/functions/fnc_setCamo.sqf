@@ -21,15 +21,7 @@ TRACE_1("fnc_setCamo",_this);
 
 private _face = (FACES_CLASS_PREFIX + face _unit + "_" + _camo);
 
-if (
-    _face in GVAR(faces_bwtarn) ||
-    _face in GVAR(faces_black) ||
-    _face in GVAR(faces_bwstripes) ||
-    _face in GVAR(faces_usstripes) ||
-    _face in GVAR(faces_serbian) ||
-    _face in GVAR(faces_usflash) ||
-    _face in GVAR(faces_usstains)
-) then {
+if ([_face] call FUNC(isCamoFace)) then {
 	[QGVAR(setFace), [_unit, _face]] call CBA_fnc_globalEvent;
 	_unit setVariable [QGVAR(face), _face, true];
 	hint (localize LSTRING(camoApplied));

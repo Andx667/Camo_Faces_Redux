@@ -69,8 +69,8 @@ class CfgVehicles {
                 };
                 class GVAR(Action_Remove) {
                     displayName = CSTRING(removeCamoAction);
-                    condition = QUOTE(call FUNC(hasCamoApplied));
-                    statement = QUOTE(call FUNC(unsetCamo));
+                    condition = QUOTE([] call FUNC(hasCamoApplied));
+                    statement = QUOTE([] call FUNC(unsetCamo));
                     showDisabled = 0;
                     icon = QPATHTOEF(common,data\UI\Icon_camooff_ca.paa);
                 };

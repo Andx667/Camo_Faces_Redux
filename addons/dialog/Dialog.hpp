@@ -190,7 +190,7 @@ class GVAR(Dialog) {
         y = "(21.8 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
         w = "(33 * (0.025)) * (0.8)";
         h = "(2 * (0.04)) * (0.8)";
-        action = QUOTE(call FUNC(unsetCamo));
+        action = QUOTE([] call FUNC(unsetCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;

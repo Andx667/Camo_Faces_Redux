@@ -28,31 +28,29 @@ TRACE_1("fnc_canApplyScheme",_this);
 // "cfr_faces_" hardcoded rather than using cfr_common's FACES_CLASS_PREFIX macro - that macro is
 // only defined in addons/common/script_component.hpp, which this (dialog) component doesn't include,
 // so it wasn't expanding here and reached runtime as an undefined bareword variable.
-private _faceList = switch (_camoSuffix) do {
-    case "BWTarn": { EGVAR(common,faces_bwtarn) };
-    case "Black": { EGVAR(common,faces_black) };
-    case "BWStripes": { EGVAR(common,faces_bwstripes) };
-    case "Serbian": { EGVAR(common,faces_serbian) };
-    case "USStripes": { EGVAR(common,faces_usstripes) };
-    case "USStains": { EGVAR(common,faces_usstains) };
-    case "USFlash": { EGVAR(common,faces_usflash) };
-    default { [] };
+//
+// faceList/itemClass are looked up together (one entry per scheme) rather than via two separate
+// switches keyed on the same suffix, so the pairing can't drift out of sync with itself. An
+// unrecognized suffix resolves to an empty face list and empty item class, which safely fails every
+// check below rather than silently falling through to a wrong item (as a per-field default would).
+private _scheme = switch (_camoSuffix) do {
+    case "BWTarn": { [EGVAR(common,faces_bwtarn), QEGVAR(items,BW_Facepaint)] };
+    case "Black": { [EGVAR(common,faces_black), QEGVAR(items,BW_Facepaint)] };
+    case "BWStripes": { [EGVAR(common,faces_bwstripes), QEGVAR(items,BW_Facepaint)] };
+    case "Serbian": { [EGVAR(common,faces_serbian), QEGVAR(items,Serbian_Facepaint)] };
+    case "USStripes": { [EGVAR(common,faces_usstripes), QEGVAR(items,US_Facepaint)] };
+    case "USStains": { [EGVAR(common,faces_usstains), QEGVAR(items,US_Facepaint)] };
+    case "USFlash": { [EGVAR(common,faces_usflash), QEGVAR(items,US_Facepaint)] };
+    default { [[], ""] };
 };
-
-private _itemClass = switch (_camoSuffix) do {
-    case "BWTarn";
-    case "Black";
-    case "BWStripes": { QEGVAR(items,BW_Facepaint) };
-    case "Serbian": { QEGVAR(items,Serbian_Facepaint) };
-    default { QEGVAR(items,US_Facepaint) };
-};
+_scheme params ["_faceList", "_itemClass"];
 
 private _face = face ACE_player;
 
+// no separate "_face in EGVAR(common,all_faces)" check - _faceList is itself built from all_faces
+// (see fnc_init.sqf), so the scheme-membership check below already implies it
 (
     _itemClass in uniformItems ACE_player
-) && (
-    _face in EGVAR(common,all_faces)
 ) && (
     ("cfr_faces_" + _face + "_" + _camoSuffix) in _faceList
 ) && (

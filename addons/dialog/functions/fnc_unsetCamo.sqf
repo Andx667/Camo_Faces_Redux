@@ -22,15 +22,7 @@ params [
 ];
 TRACE_1("fnc_unsetCamo",_this);
 
-if (
-    _face in EGVAR(common,faces_bwtarn) ||
-    _face in EGVAR(common,faces_black) ||
-    _face in EGVAR(common,faces_bwstripes) ||
-    _face in EGVAR(common,faces_serbian) ||
-    _face in EGVAR(common,faces_usstripes) ||
-    _face in EGVAR(common,faces_usflash) ||
-    _face in EGVAR(common,faces_usstains)
-) then {
+if ([_face] call EFUNC(common,isCamoFace)) then {
 	[_unit, _face] call EFUNC(common,unsetCamo);
 } else {
 	hint (localize LSTRING(noCamoApplied));
