@@ -25,5 +25,4 @@ The project is entirely open-source and any contributions are welcome — see [C
 
 - [Installation](installation.md) — how to get the mod running alongside CBA and ACE3
 - [Usage](usage.md) — how to apply and remove camouflage in-game
-- [API](api.md) — CBA events other mods/missions can hook into
 - [Components](components/index.md) — a tour of the addons that make up the mod

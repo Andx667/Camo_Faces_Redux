@@ -51,7 +51,6 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Usage: usage.md
-  - API: api.md
   - Components:
       - components/index.md
       - Main: components/main.md

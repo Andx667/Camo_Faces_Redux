@@ -37,9 +37,9 @@ private _schemeId = "";
 if (_baseFace != "") then {
 	[QGVAR(setFace), [_unit, _baseFace]] call CBA_fnc_globalEvent;
 	_unit setVariable [QGVAR(face), _baseFace, true];
-	// public API event - see docs/api.md. [unit, schemeId, oldFace, newFace], same shape/broadcast as
-	// camoApplied in fnc_setCamo.sqf
-	[QGVAR(camoRemoved), [_unit, _schemeId, _face, _baseFace]] call CBA_fnc_globalEvent;
+	// public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
+	// setFace event above) - same shape/scope as camoApplied in fnc_setCamo.sqf
+	[QGVAR(camoRemoved), [_unit, _schemeId, _face, _baseFace]] call CBA_fnc_localEvent;
 	hint (localize LSTRING(camoRemoved));
 } else {
 	hint (localize LSTRING(invalidFace));

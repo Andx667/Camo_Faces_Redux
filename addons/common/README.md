@@ -23,7 +23,19 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 ## Public API events
 
-`fnc_setCamo`/`fnc_unsetCamo` also broadcast two CBA events, `cfr_common_camoApplied`/`cfr_common_camoRemoved`, for other mods/missions to hook into — see [docs/api.md](../../docs/api.md) for the full reference. Both fire only on successful apply/removal (not on a rejected attempt), broadcast the same way as the internal `setFace` event (every machine, regardless of who triggered it), and share the same `[unit, schemeId, oldFace, newFace]` shape.
+`fnc_setCamo`/`fnc_unsetCamo` raise two CBA events for other mods/missions to hook into, both only on a successful apply/removal (never on a rejected attempt), both via `CBA_fnc_localEvent` — i.e. only on the machine that actually ran `fnc_setCamo`/`fnc_unsetCamo` (typically whichever client is applying/removing its own camo), unlike the internal `cfr_common_setFace` event above, which is a `CBA_fnc_globalEvent` broadcast to every machine:
+
+- `cfr_common_camoApplied` — `[unit, schemeId, oldFace, newFace]`, raised by `fnc_setCamo` after a camo face is applied
+- `cfr_common_camoRemoved` — `[unit, schemeId, oldFace, newFace]`, raised by `fnc_unsetCamo` after a camo face is removed, restoring the base face
+
+```sqf
+[QGVAR(camoApplied), {
+    params ["_unit", "_schemeId", "_oldFace", "_newFace"];
+    // ...
+}] call CBA_fnc_addEventHandler;
+```
+
+`schemeId` matches the `schemeId` column of `GVAR(schemes)` below (e.g. `"BWTarn"`, `"Serbian"`, `"Vanilla"`).
 
 ## Global variables
 
