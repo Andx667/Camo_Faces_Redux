@@ -16,3 +16,7 @@ Open the dialog again (the self-action also shows while camo is currently applie
 
 - The dialog shows a live mirror preview of your face while it's open.
 - Your applied camo face is remembered per-unit and reapplied automatically on respawn.
+
+## As Zeus (optional)
+
+If [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) is also loaded, right-clicking a unit brings up a **Camouflage** entry in the context menu — see [Zeus Enhanced Compat](components/compat_zen.md).

@@ -58,5 +58,6 @@ nav:
       - Dialog: components/dialog.md
       - Faces: components/faces.md
       - Items: components/items.md
+      - Zeus Enhanced Compat: components/compat_zen.md
   - Contributing: contributing.md
   - License: license.md

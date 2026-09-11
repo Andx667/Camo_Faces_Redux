@@ -20,6 +20,7 @@ The project is entirely open-source and any contributions are welcome — see [C
     - US Flash
     - US Stains
 - Adds an inventory item needed to camouflage your face
+- Optional [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) integration for applying/removing camo as a curator
 
 ## Getting Started
 
