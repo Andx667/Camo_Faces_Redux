@@ -21,10 +21,6 @@
             <English>Interaction Method</English>
             <German>Interaktionsmethode</German>
         </Key>
-        <Key ID="STR_CFR_Dialog_layerDone">
-            <English>Done!</English>
-            <German>Fertig!</German>
-        </Key>
         <Key ID="STR_CFR_Dialog_noCamoApplied">
             <English>No camo face applied</English>
             <German>Keine Tarnung aufgetragen</German>

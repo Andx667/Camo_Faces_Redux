@@ -20,14 +20,15 @@ TRACE_1("fnc_applyCamo",_this);
 
 disableSerialization;
 
-// button "action" code runs unscheduled, so a blocking sleep is not legal here -
-// delay the follow-up work with CBA_fnc_waitAndExecute instead
+// ace_common_fnc_progressBar unconditionally calls "closeDialog 0" before drawing its own bar,
+// regardless of its "_dialog" argument - it cannot be used while GVAR(Dialog) stays open, so the
+// dialog flow keeps its original blind CBA_fnc_waitAndExecute delay (button "action" code runs
+// unscheduled, so a blocking sleep is not legal here) instead of a visible progress bar.
 switch (_level) do {
 	case 1: {
 		hint (localize LSTRING(applyingLayer1));
 		[{
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable true;
-			hint (localize LSTRING(layerDone));
 		}, [], 2] call CBA_fnc_waitAndExecute;
 	};
 
@@ -35,7 +36,6 @@ switch (_level) do {
 		hint (localize LSTRING(applyingLayer2));
 		[{
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable true;
-			hint (localize LSTRING(layerDone));
 		}, [], 2] call CBA_fnc_waitAndExecute;
 	};
 
