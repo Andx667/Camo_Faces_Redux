@@ -57,11 +57,15 @@ if (count _applicable == 1) then {
 	} forEach EGVAR(common,schemes);
 } else {
 	if (count _applicable > 1) then {
+		// _args here IS the units array (one single argument), unlike the per-scheme action above where
+		// _args is itself a params array ([_unit, _schemeId]) - so it has to be wrapped in one more
+		// array at the call site, or fnc_applyRandomCamo's own "params [\"_units\"]" would unpack the
+		// array's first element (a unit object) as _units instead of the whole array
 		private _action = [
 			"RandomCamo",
 			localize LSTRING(applyRandom),
 			ICON_CAMOUFLAGE,
-			{_args call FUNC(applyRandomCamo)},
+			{[_args] call FUNC(applyRandomCamo)},
 			{true},
 			_applicable
 		] call zen_context_menu_fnc_createAction;
@@ -76,7 +80,7 @@ if (_camoUnits isNotEqualTo []) then {
 		"RemoveCamo",
 		localize LSTRING(removeCamo),
 		ICON_CAMOUFLAGE,
-		{_args call FUNC(removeCamo)},
+		{[_args] call FUNC(removeCamo)},
 		{true},
 		_camoUnits
 	] call zen_context_menu_fnc_createAction;
