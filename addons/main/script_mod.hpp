@@ -1,6 +1,6 @@
 #define MAINPREFIX z
 #define PREFIX cfr
-#define MOD_NAME Camo Faces Redux
+#define MOD_NAME Camo Faces Redux [Beta]
 #define AUTHOR "Andx"
 
 #define REQUIRED_VERSION 2.18

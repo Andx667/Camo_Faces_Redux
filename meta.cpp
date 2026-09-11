@@ -1,4 +1,4 @@
 protocol = 1;
-publishedid = 1643238133;
-name = "Camo Faces Redux";
+publishedid = 0;
+name = "Camo Faces Redux [Beta]";
 timestamp = 0;

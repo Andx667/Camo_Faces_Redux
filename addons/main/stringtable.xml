@@ -2,8 +2,8 @@
 <Project name="CFR">
     <Package name="Main">
         <Key ID="STR_CFR_Main_Name">
-            <English>Camo Faces Redux</English>
-            <German>Camo Faces Redux</German>
+            <English>Camo Faces Redux [Beta]</English>
+            <German>Camo Faces Redux [Beta]</German>
         </Key>
         <Key ID="STR_CFR_Main_url">
             <English>https://github.com/Andx667/CamoFacesRedux</English>
