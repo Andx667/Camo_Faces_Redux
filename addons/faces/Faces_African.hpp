@@ -17,7 +17,7 @@ class GVAR(AfricanHead_01_Serbian): GVAR(AfricanHead_01_BWTarn) {
 };
 class GVAR(AfricanHead_01_USStripes): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_01_USStripes);
-    texture = QPATHTOF(data\usstripes\AH01);
+    texture = QPATHTOF(data\usstripes\AH01\m_african_01_co.paa);
 };
 class GVAR(AfricanHead_01_USStains): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_01_USStains);
