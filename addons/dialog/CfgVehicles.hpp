@@ -67,6 +67,13 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOEF(common,data\UI\Icon_usflash_ca.paa);
                 };
+                class GVAR(Action_Vanilla) {
+                    displayName = ECSTRING(common,camo_vanilla);
+                    condition = QUOTE(['Vanilla'] call FUNC(canApplyScheme));
+                    statement = QUOTE(['Vanilla'] call FUNC(applyCamoAction));
+                    showDisabled = 0;
+                    icon = QPATHTOEF(common,data\UI\Icon_camoon_ca.paa);
+                };
                 class GVAR(Action_Remove) {
                     displayName = CSTRING(removeCamoAction);
                     condition = QUOTE([] call FUNC(hasCamoApplied));

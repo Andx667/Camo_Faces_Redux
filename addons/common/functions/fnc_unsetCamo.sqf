@@ -19,31 +19,23 @@
 params ["_unit", "_face"];
 TRACE_1("fnc_unsetCamo",_this);
 
-// each camo variant is "<FACES_CLASS_PREFIX><BaseFace>_<Suffix>"; find which
-// list matches and strip the prefix and suffix back off to recover the base face
-private _camoSuffixes = [
-    [GVAR(faces_bwtarn), "_BWTarn"],
-    [GVAR(faces_black), "_Black"],
-    [GVAR(faces_bwstripes), "_BWStripes"],
-    [GVAR(faces_usstripes), "_USStripes"],
-    [GVAR(faces_serbian), "_Serbian"],
-    [GVAR(faces_usflash), "_USFlash"],
-    [GVAR(faces_usstains), "_USStains"]
-];
-
+// reverse lookup: find whichever scheme's pairs has a camo value matching the current face, and
+// return its paired base face - no string/suffix manipulation needed since GVAR(schemes) already
+// stores both ends of the pair
 private _baseFace = "";
 
 {
-    _x params ["_faceList", "_suffix"];
-    if (_face in _faceList) exitWith {
-        _baseFace = _face select [count FACES_CLASS_PREFIX, (count _face) - (count FACES_CLASS_PREFIX) - (count _suffix)];
-    };
-} forEach _camoSuffixes;
+	_x params ["", "_pairs"];
+	private _pairIdx = _pairs findIf {(_x select 1) == _face};
+	if (_pairIdx != -1) exitWith {
+		_baseFace = (_pairs select _pairIdx) select 0;
+	};
+} forEach GVAR(schemes);
 
 if (_baseFace != "") then {
-    [QGVAR(setFace), [_unit, _baseFace]] call CBA_fnc_globalEvent;
-    _unit setVariable [QGVAR(face), _baseFace, true];
-    hint (localize LSTRING(camoRemoved));
+	[QGVAR(setFace), [_unit, _baseFace]] call CBA_fnc_globalEvent;
+	_unit setVariable [QGVAR(face), _baseFace, true];
+	hint (localize LSTRING(camoRemoved));
 } else {
-    hint (localize LSTRING(invalidFace));
+	hint (localize LSTRING(invalidFace));
 };
