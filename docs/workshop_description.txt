@@ -1,0 +1,50 @@
+[h1]Camo Faces Redux [Beta][/h1]
+
+[b]Camo Faces Redux[/b] (CFR) lets players camouflage their faces during Arma 3 missions. It's a rewrite of the original [url=https://steamcommunity.com/sharedfiles/filedetails/?id=346665985]Camofaces[/url] mod by Sk3y and Feldhobel.
+
+This is a [b]beta[/b] release. Things are functional and tested, but expect rough edges and the occasional bug — please report anything you find on GitHub (link below).
+
+[h1]Requirements[/h1]
+
+[list]
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=450814997]CBA_A3[/url]
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=463939057]ACE3[/url]
+[/list]
+
+[h1]Features[/h1]
+
+Adds camo face variants for many of the base game's faces, in multiple schemes:
+
+[list]
+[*] Bundeswehr Camouflage
+[*] Bundeswehr Stripes
+[*] Serbian Camouflage
+[*] Black (night camouflage)
+[*] US Stripes
+[*] US Flash
+[*] US Stains
+[/list]
+
+Includes inventory items needed to apply each camo scheme, and a supply box stocked with all three.
+
+[h1]How to Use[/h1]
+
+Add a facepaint item to your uniform, then use ACE's self-interaction menu on yourself to open the Camo Faces dialog and apply or remove camouflage.
+
+There's also a CBA setting to switch to a leaner, dialog-free flow: enable it and the self-interaction menu instead expands directly into one action per camo scheme, plus a remove action — no dialog required.
+
+[h1]Source & Issues[/h1]
+
+Camo Faces Redux is fully open-source. Bug reports, feature requests, and contributions are all welcome.
+
+[url=https://github.com/Andx667/CamoFacesRedux]GitHub Repository[/url]
+[url=https://github.com/Andx667/CamoFacesRedux/issues]Report an Issue[/url]
+
+[h1]Credits[/h1]
+
+[list]
+[*] Original mod: Sk3y, Feldhobel
+[*] Rewrite: Andx
+[/list]
+
+Licensed under [url=https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE.md]APL-ND[/url].
