@@ -23,13 +23,13 @@ params [
 TRACE_1("fnc_unsetCamo",_this);
 
 if (
-    _face in GVAR(faces_bwtarn) ||
-    _face in GVAR(faces_black) ||
-    _face in GVAR(faces_bwstripes) ||
-    _face in GVAR(faces_serbian) ||
-    _face in GVAR(faces_usstripes) ||
-    _face in GVAR(faces_usflash) ||
-    _face in GVAR(faces_usstains)
+    _face in EGVAR(common,faces_bwtarn) ||
+    _face in EGVAR(common,faces_black) ||
+    _face in EGVAR(common,faces_bwstripes) ||
+    _face in EGVAR(common,faces_serbian) ||
+    _face in EGVAR(common,faces_usstripes) ||
+    _face in EGVAR(common,faces_usflash) ||
+    _face in EGVAR(common,faces_usstains)
 ) then {
 	[_unit, _face] call EFUNC(common,unsetCamo);
 } else {

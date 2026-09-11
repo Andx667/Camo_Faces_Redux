@@ -41,7 +41,7 @@ class Stage2
 };
 class Stage3
 {
-    texture = "jgkp_camofaces\Heads\bwstripes\WH21\m_white_21_co.paa";
+    texture = "z\cfr\addons\faces\data\bwstripes\WH21\m_white_21_co.paa";
     uvSource = "tex";
     class uvTransform
     {

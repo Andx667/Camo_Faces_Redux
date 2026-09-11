@@ -41,7 +41,7 @@ class Stage2
 };
 class Stage3
 {
-    texture = "jgkp_camofaces\Heads\usstripes\AsHA302\m_asian_02_co.paa";
+    texture = "z\cfr\addons\faces\data\usstripes\AsHA302\m_asian_02_co.paa";
     uvSource = "tex";
     class uvTransform
     {

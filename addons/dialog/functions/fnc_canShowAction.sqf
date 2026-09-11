@@ -20,21 +20,22 @@ TRACE_1("fnc_canShowAction",_this);
 
 private _face = face _player;
 
-if (
-    (
-        _face in GVAR(all_faces) ||
-        _face in GVAR(faces_bwtarn) ||
-        _face in GVAR(faces_black) ||
-        _face in GVAR(faces_bwstripes) ||
-        _face in GVAR(faces_serbian) ||
-        _face in GVAR(faces_usstripes) ||
-        _face in GVAR(faces_usstains) ||
-        _face in GVAR(faces_usflash)
-    ) && (
-        EGVAR(items,BW_Facepaint) in uniformItems _player ||
-        EGVAR(items,US_Facepaint) in uniformItems _player ||
-        EGVAR(items,Serbian_Facepaint) in uniformItems _player
-    )
-) exitWith {true};
+private _faceKnown = (
+    _face in EGVAR(common,all_faces) ||
+    _face in EGVAR(common,faces_bwtarn) ||
+    _face in EGVAR(common,faces_black) ||
+    _face in EGVAR(common,faces_bwstripes) ||
+    _face in EGVAR(common,faces_serbian) ||
+    _face in EGVAR(common,faces_usstripes) ||
+    _face in EGVAR(common,faces_usstains) ||
+    _face in EGVAR(common,faces_usflash)
+);
+private _hasItem = (
+    QEGVAR(items,BW_Facepaint) in uniformItems _player ||
+    QEGVAR(items,US_Facepaint) in uniformItems _player ||
+    QEGVAR(items,Serbian_Facepaint) in uniformItems _player
+);
+
+if (_faceKnown && _hasItem) exitWith {true};
 
 false;

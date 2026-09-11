@@ -21,14 +21,14 @@ TRACE_1("fnc_applyCamo",_this);
 disableSerialization;
 
 // button "action" code runs unscheduled, so a blocking sleep is not legal here -
-// delay the follow-up work with CBA_fnc_waitAndExec instead
+// delay the follow-up work with CBA_fnc_waitAndExecute instead
 switch (_level) do {
 	case 1: {
 		hint (localize LSTRING(applyingLayer1));
 		[{
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable true;
 			hint (localize LSTRING(layerDone));
-		}, [], 2] call CBA_fnc_waitAndExec;
+		}, [], 2] call CBA_fnc_waitAndExecute;
 	};
 
 	case 2: {
@@ -36,7 +36,7 @@ switch (_level) do {
 		[{
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable true;
 			hint (localize LSTRING(layerDone));
-		}, [], 2] call CBA_fnc_waitAndExec;
+		}, [], 2] call CBA_fnc_waitAndExecute;
 	};
 
 	case 3: {
@@ -48,6 +48,6 @@ switch (_level) do {
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER1) ctrlEnable false;
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable false;
 			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable false;
-		}, [], 2] call CBA_fnc_waitAndExec;
+		}, [], 2] call CBA_fnc_waitAndExecute;
 	};
 };

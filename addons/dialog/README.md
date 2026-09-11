@@ -14,7 +14,7 @@ The graphical interface for choosing and applying camouflage. All textures used 
 2. `fnc_startDialog` opens the dialog (`GVAR(Dialog)`, `Dialog.hpp`); `fnc_initDialog` sets it up — checking equipped headgear/goggles/NV, populating the country listbox via `cfr_common`'s `fnc_getCountryOptions`, and starting a live mirror camera.
 3. Selecting a country (`fnc_onLBCountryChanged`) populates the camo-pattern listbox via `cfr_common`'s `fnc_getCamoOptions`.
 4. Selecting a camo pattern (`fnc_onLBCamoChanged`) unlocks the first "apply layer" button, once all headgear is removed.
-5. `fnc_applyCamo` walks through the three layer buttons (each with a short delay via `CBA_fnc_waitAndExec`); the final layer calls into `cfr_common`'s `fnc_setCamo`.
+5. `fnc_applyCamo` walks through the three layer buttons (each with a short delay via `CBA_fnc_waitAndExecute`); the final layer calls into `cfr_common`'s `fnc_setCamo`.
 6. `fnc_unsetCamo` (this addon) validates the current face before handing off to `cfr_common`'s `fnc_unsetCamo` to remove it.
 7. `fnc_closeDialog` cleans up the mirror camera when the dialog closes (`onunload`).
 8. `fnc_handleRespawn` (`Extended_Respawn_EventHandlers`) reapplies a unit's saved camo face after respawning.

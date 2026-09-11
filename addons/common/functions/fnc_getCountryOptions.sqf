@@ -20,16 +20,16 @@ TRACE_1("fnc_getCountryOptions",_this);
 
 private _camolist = [];
 
-if (EGVAR(items,BW_Facepaint) in uniformItems _unit) then {
-	_camolist pushBack [ELSTRING(items,bw_facepaint_displayname), "bw_select"];
+if (QEGVAR(items,BW_Facepaint) in uniformItems _unit) then {
+	_camolist pushBack [localize ELSTRING(items,bw_facepaint_displayname), "bw_select"];
 };
 
-if (EGVAR(items,Serbian_Facepaint) in uniformItems _unit) then {
-	_camolist pushBack [ELSTRING(items,serbian_facepaint_displayname), "serbian_select"];
+if (QEGVAR(items,Serbian_Facepaint) in uniformItems _unit) then {
+	_camolist pushBack [localize ELSTRING(items,serbian_facepaint_displayname), "serbian_select"];
 };
 
-if (EGVAR(items,US_Facepaint) in uniformItems _unit) then {
-	_camolist pushBack [ELSTRING(items,us_facepaint_displayname), "us_select"];
+if (QEGVAR(items,US_Facepaint) in uniformItems _unit) then {
+	_camolist pushBack [localize ELSTRING(items,us_facepaint_displayname), "us_select"];
 };
 
 // return value

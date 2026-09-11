@@ -41,7 +41,7 @@ class Stage2
 };
 class Stage3
 {
-    texture = "jgkp_camofaces\Heads\usstains\WH08\m_white_08_co.paa";
+    texture = "z\cfr\addons\faces\data\usstains\WH08\m_white_08_co.paa";
     uvSource = "tex";
     class uvTransform
     {

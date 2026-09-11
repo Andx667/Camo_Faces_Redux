@@ -127,7 +127,7 @@ class GVAR(Dialog) {
         y = "(13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
         w = "(11 * (0.025)) * (0.8)";
         h = "(7.5 * (0.04)) * (0.8)";
-        action = "[1] call EFUNC(common,applyCamo);";
+        action = QUOTE([1] call FUNC(applyCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;
@@ -148,7 +148,7 @@ class GVAR(Dialog) {
         y = "(13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
         w = "(11 * (0.025)) * (0.8)";
         h = "(7.5 * (0.04)) * (0.8)";
-        action = "[2] call EFUNC(common,applyCamo);";
+        action = QUOTE([2] call FUNC(applyCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;
@@ -169,7 +169,7 @@ class GVAR(Dialog) {
         y = "(13.4 * (0.04)+ (0)) * (0.8)+ (5 * (0.04)+ (0))";
         w = "(11 * (0.025)) * (0.8)";
         h = "(7.5 * (0.04)) * (0.8)";
-        action = "[3] call EFUNC(common,applyCamo);";
+        action = QUOTE([3] call FUNC(applyCamo));
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;

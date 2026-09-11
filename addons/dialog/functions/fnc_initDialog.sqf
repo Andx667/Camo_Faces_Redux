@@ -86,12 +86,12 @@ if (hmd player == "") then {
 private _listBox_Side = _display displayCtrl IDC_LISTBOX_COUNTRY;
 lbClear _listBox_Side;
 
-private _camolist = call EFUNC(common,getCountryOptions);
+private _camolist = [player] call EFUNC(common,getCountryOptions);
 
 // proof return value
 // no option
 if (count _camolist == 0) then {
-	_listBox_Side lbAdd (LSTRING(noOption));
+	_listBox_Side lbAdd (localize LSTRING(noOption));
 } else {
 	// fill notepad with options returned by function
 	{
