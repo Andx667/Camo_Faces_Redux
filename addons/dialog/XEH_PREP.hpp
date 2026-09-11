@@ -1,5 +1,6 @@
 PREP(applyCamo);
 PREP(applyCamoAction);
+PREP(applyCamoLayer);
 PREP(canApplyScheme);
 PREP(canShowAction);
 PREP(closeDialog);
