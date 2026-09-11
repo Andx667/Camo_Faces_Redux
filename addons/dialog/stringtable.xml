@@ -17,6 +17,10 @@
             <English>Applying layer three...</English>
             <German>Trage Schicht drei auf...</German>
         </Key>
+        <Key ID="STR_CFR_Dialog_displayName">
+            <English>Interaction Method</English>
+            <German>Interaktionsmethode</German>
+        </Key>
         <Key ID="STR_CFR_Dialog_layerDone">
             <English>Done!</English>
             <German>Fertig!</German>
@@ -28,6 +32,18 @@
         <Key ID="STR_CFR_Dialog_noOption">
             <English>No Option</English>
             <German>Keine Option</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_removeCamoAction">
+            <English>Remove Camo Face Paint</English>
+            <German>Tarnschminke entfernen</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_settingUseAceActions_name">
+            <English>Use ACE Actions Instead of Dialog</English>
+            <German>ACE-Aktionen statt Dialog verwenden</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_settingUseAceActions_tooltip">
+            <English>When enabled, applying and removing camo face paint is done through individual ACE self-interaction actions instead of opening the Camo Faces dialog.</English>
+            <German>Wenn aktiviert, wird Tarnschminke über einzelne ACE-Eigeninteraktionen statt über den Camo-Faces-Dialog aufgetragen und entfernt.</German>
         </Key>
     </Package>
 </Project>
