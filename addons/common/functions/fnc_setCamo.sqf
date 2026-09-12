@@ -1,7 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Applies a camo scheme to a unit, if the unit's current face has a variant under that scheme.
+ * Public API - safe to call from other mods/missions. See addons/common/README.md for the
+ * cfr_common_camoApplied event this raises on success.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -13,11 +15,16 @@
  * Example:
  * [player, "BWTarn"] call cfr_common_fnc_setCamo
  *
- * Public: No
+ * Public: Yes
  */
 
-params ["_unit", "_camo"];
+params [
+	["_unit", objNull, [objNull]],
+	["_camo", "", [""]]
+];
 TRACE_1("fnc_setCamo",_this);
+
+if (isNull _unit) exitWith {};
 
 private _face = face _unit;
 private _targetFace = "";
