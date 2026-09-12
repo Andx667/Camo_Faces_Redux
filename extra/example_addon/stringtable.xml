@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project name="CFR">
-    <Package name="Example_Addon">
-        <Key ID="STR_CFR_Example_Addon_displayName">
-            <English>Addon Name</English>
-        </Key>
-    </Package>
-</Project>
