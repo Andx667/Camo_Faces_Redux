@@ -33,6 +33,12 @@ if (QEGVAR(items,US_Facepaint) in _uniformItems) then {
     _camolist pushBack [localize ELSTRING(items,us_facepaint_displayname), "us_select"];
 };
 
+// PROTOTYPE: EyeBlack has its own dedicated item and only one color, so it gets its own
+// top-level category here instead of being nested under one of the 3 military countries
+if (QEGVAR(items,EyeBlack_Facepaint) in _uniformItems) then {
+    _camolist pushBack [localize ELSTRING(items,eyeblack_facepaint_displayname), "eyeblack_select"];
+};
+
 // Vanilla isn't tied to one specific item (any of the 3 unlocks it) and is only present in
 // GVAR(schemes) at all if the Marksmen DLC is available - both checked via the scheme's own row,
 // so this naturally disappears with no extra DLC-specific logic here

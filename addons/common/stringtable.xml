@@ -21,6 +21,10 @@
             <English>BW Camouflage</English>
             <German>BW Tarnung</German>
         </Key>
+        <Key ID="STR_CFR_Common_camo_eyeblack">
+            <English>Eye Black (Prototype)</English>
+            <German>Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Common_camo_serbian">
             <English>Serbian Camouflage</English>
             <German>Serbische Tarnung</German>

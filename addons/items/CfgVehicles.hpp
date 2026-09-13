@@ -12,6 +12,7 @@ class CfgVehicles {
             MACRO_ADDITEM(GVAR(US_Facepaint),30);
             MACRO_ADDITEM(GVAR(BW_Facepaint),30);
             MACRO_ADDITEM(GVAR(SERBIAN_Facepaint),30);
+            MACRO_ADDITEM(GVAR(EyeBlack_Facepaint),30);
         };
     };
 };

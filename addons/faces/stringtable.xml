@@ -10,6 +10,10 @@
             <English>Williams BW Camouflage</English>
             <German>Williams BW Tarn</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AfricanHead_01_EyeBlack">
+            <English>Williams Eye Black (Prototype)</English>
+            <German>Williams Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AfricanHead_01_Serbian">
             <English>Williams Serbian</English>
             <German>Williams Serbisch</German>
@@ -34,6 +38,10 @@
             <English>Hasan BW Camouflage</English>
             <German>Hasan BW Tarn</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AfricanHead_02_EyeBlack">
+            <English>Hasan Eye Black (Prototype)</English>
+            <German>Hasan Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AfricanHead_02_Serbian">
             <English>Hasan Serbian</English>
             <German>Hasan Serbisch</German>
@@ -57,6 +65,10 @@
         <Key ID="STR_CFR_Faces_AfricanHead_03_BWTarn">
             <English>Jesus BW Camouflage</English>
             <German>Jesus BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AfricanHead_03_EyeBlack">
+            <English>Jesus Eye Black (Prototype)</English>
+            <German>Jesus Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_AfricanHead_03_Serbian">
             <English>Jesus Serbian</English>
@@ -87,6 +99,10 @@
             <English>Ximi Black</English>
             <German>Ximi Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_01_EyeBlack">
+            <English>Ximi Eye Black (Prototype)</English>
+            <German>Ximi Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AsianHead_A3_01_Serbian">
             <English>Ximi Serbian</English>
             <German>Ximi Serbisch</German>
@@ -115,6 +131,10 @@
             <English>Jeong Black</English>
             <German>Jeong Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_02_EyeBlack">
+            <English>Jeong Eye Black (Prototype)</English>
+            <German>Jeong Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AsianHead_A3_02_Serbian">
             <English>Jeong Serbian</English>
             <German>Jeong Serbisch</German>
@@ -142,6 +162,10 @@
         <Key ID="STR_CFR_Faces_AsianHead_A3_03_Black">
             <English>Tung Black</English>
             <German>Tung Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_03_EyeBlack">
+            <English>Tung Eye Black (Prototype)</English>
+            <German>Tung Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_AsianHead_A3_03_Serbian">
             <English>Tung Serbian</English>
@@ -172,6 +196,10 @@
             <English>Athanasiadis Black</English>
             <German>Athanasiadis Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_01_EyeBlack">
+            <English>Athanasiadis Eye Black (Prototype)</English>
+            <German>Athanasiadis Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_01_Serbian">
             <English>Athanasiadis Serbian</English>
             <German>Athanasiadis Serbisch</German>
@@ -199,6 +227,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_02_Black">
             <English>Baros Black</English>
             <German>Baros Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_02_EyeBlack">
+            <English>Baros Eye Black (Prototype)</English>
+            <German>Baros Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_02_Serbian">
             <English>Baros Serbian</English>
@@ -228,6 +260,10 @@
             <English>Constantinou Black</English>
             <German>Constantinou Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_03_EyeBlack">
+            <English>Constantinou Eye Black (Prototype)</English>
+            <German>Constantinou Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_03_Serbian">
             <English>Constantinou Serbian</English>
             <German>Constantinou Serbisch</German>
@@ -255,6 +291,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_04_Black">
             <English>Costas Black</English>
             <German>Costas Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_04_EyeBlack">
+            <English>Costas Eye Black (Prototype)</English>
+            <German>Costas Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_04_Serbian">
             <English>Costas Serbian</English>
@@ -284,6 +324,10 @@
             <English>Doukas Black</English>
             <German>Doukas Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_05_EyeBlack">
+            <English>Doukas Eye Black (Prototype)</English>
+            <German>Doukas Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_05_Serbian">
             <English>Doukas Serbian</English>
             <German>Doukas Serbisch</German>
@@ -311,6 +355,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Black">
             <English>Efthimiou Black</English>
             <German>Efthimiou Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_06_EyeBlack">
+            <English>Efthimiou Eye Black (Prototype)</English>
+            <German>Efthimiou Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Serbian">
             <English>Efthimiou Serbian</English>
@@ -340,6 +388,10 @@
             <English>Fotiou Black</English>
             <German>Fotiou Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_07_EyeBlack">
+            <English>Fotiou Eye Black (Prototype)</English>
+            <German>Fotiou Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_Serbian">
             <English>Fotiou Serbian</English>
             <German>Fotiou Serbisch</German>
@@ -368,6 +420,10 @@
             <English>Georgiou Black</English>
             <German>Georgiou Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_08_EyeBlack">
+            <English>Georgiou Eye Black (Prototype)</English>
+            <German>Georgiou Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_Serbian">
             <English>Georgiou Serbian</English>
             <German>Georgiou Serbisch</German>
@@ -395,6 +451,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Black">
             <English>Chatzis Black</English>
             <German>Chatzis Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_09_EyeBlack">
+            <English>Chatzis Eye Black (Prototype)</English>
+            <German>Chatzis Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Serbian">
             <English>Chatzis Serbian</English>
@@ -425,6 +485,10 @@
             <English>Bahadur Black</English>
             <German>Bahadur Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_PersianHead_A3_01_EyeBlack">
+            <English>Bahadur Eye Black (Prototype)</English>
+            <German>Bahadur Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_PersianHead_A3_01_Serbian">
             <English>Bahadur Serbian</English>
             <German>Bahadur Serbisch</German>
@@ -453,6 +517,10 @@
             <English>Jalali Black</English>
             <German>Jalali Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_PersianHead_A3_02_EyeBlack">
+            <English>Jalali Eye Black (Prototype)</English>
+            <German>Jalali Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_PersianHead_A3_02_Serbian">
             <English>Jalali Serbian</English>
             <German>Jalali Serbisch</German>
@@ -480,6 +548,10 @@
         <Key ID="STR_CFR_Faces_PersianHead_A3_03_Black">
             <English>Sabet Black</English>
             <German>Sabet Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_PersianHead_A3_03_EyeBlack">
+            <English>Sabet Eye Black (Prototype)</English>
+            <German>Sabet Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_PersianHead_A3_03_Serbian">
             <English>Sabet Serbian</English>
@@ -510,6 +582,10 @@
             <English>Bayh Black</English>
             <German>Bayh Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_01_EyeBlack">
+            <English>Bayh Eye Black (Prototype)</English>
+            <German>Bayh Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_01_Serbian">
             <English>Bayh Serbian</English>
             <German>Bayh Serbisch</German>
@@ -537,6 +613,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_02_Black">
             <English>Burr Black</English>
             <German>Burr Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_02_EyeBlack">
+            <English>Burr Eye Black (Prototype)</English>
+            <German>Burr Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_02_Serbian">
             <English>Burr Serbian</English>
@@ -566,6 +646,10 @@
             <English>Coburn Black</English>
             <German>Coburn Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_03_EyeBlack">
+            <English>Coburn Eye Black (Prototype)</English>
+            <German>Coburn Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_03_Serbian">
             <English>Coburn Serbian</English>
             <German>Coburn Serbisch</German>
@@ -593,6 +677,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_04_Black">
             <English>Collins Black</English>
             <German>Collins Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_04_EyeBlack">
+            <English>Collins Eye Black (Prototype)</English>
+            <German>Collins Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_04_Serbian">
             <English>Collins Serbian</English>
@@ -622,6 +710,10 @@
             <English>Campbell Black</English>
             <German>Campbell Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_05_EyeBlack">
+            <English>Campbell Eye Black (Prototype)</English>
+            <German>Campbell Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_05_Serbian">
             <English>Campbell Serbian</English>
             <German>Campbell Serbisch</German>
@@ -649,6 +741,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_06_Black">
             <English>Dayton Black</English>
             <German>Dayton Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_06_EyeBlack">
+            <English>Dayton Eye Black (Prototype)</English>
+            <German>Dayton Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_06_Serbian">
             <English>Dayton Serbian</English>
@@ -678,6 +774,10 @@
             <English>Dorgan Black</English>
             <German>Dorgan Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_07_EyeBlack">
+            <English>Dorgan Eye Black (Prototype)</English>
+            <German>Dorgan Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_07_Serbian">
             <English>Dorgan Serbian</English>
             <German>Dorgan Serbisch</German>
@@ -705,6 +805,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_08_Black">
             <English>Halliwell Black</English>
             <German>Halliwell Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_08_EyeBlack">
+            <English>Halliwell Eye Black (Prototype)</English>
+            <German>Halliwell Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_08_Serbian">
             <English>Halliwell Serbian</English>
@@ -734,6 +838,10 @@
             <English>Johnson Black</English>
             <German>Johnson Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_09_EyeBlack">
+            <English>Johnson Eye Black (Prototype)</English>
+            <German>Johnson Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_09_Serbian">
             <English>Johnson Serbian</English>
             <German>Johnson Serbisch</German>
@@ -761,6 +869,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_10_Black">
             <English>Martinez Black</English>
             <German>Martinez Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_10_EyeBlack">
+            <English>Martinez Eye Black (Prototype)</English>
+            <German>Martinez Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_10_Serbian">
             <English>Martinez Serbian</English>
@@ -790,6 +902,10 @@
             <English>Kirby Black</English>
             <German>Kirby Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_11_EyeBlack">
+            <English>Kirby Eye Black (Prototype)</English>
+            <German>Kirby Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_11_Serbian">
             <English>Kirby Serbian</English>
             <German>Kirby Serbisch</German>
@@ -817,6 +933,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_12_Black">
             <English>Reed Black</English>
             <German>Reed Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_12_EyeBlack">
+            <English>Reed Eye Black (Prototype)</English>
+            <German>Reed Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_12_Serbian">
             <English>Reed Serbian</English>
@@ -846,6 +966,10 @@
             <English>Santorum Black</English>
             <German>Santorum Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_13_EyeBlack">
+            <English>Santorum Eye Black (Prototype)</English>
+            <German>Santorum Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_13_Serbian">
             <English>Santorum Serbian</English>
             <German>Santorum Serbisch</German>
@@ -873,6 +997,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_14_Black">
             <English>Smith Black</English>
             <German>Smith Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_14_EyeBlack">
+            <English>Smith Eye Black (Prototype)</English>
+            <German>Smith Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_14_Serbian">
             <English>Smith Serbian</English>
@@ -902,6 +1030,10 @@
             <English>Snowe Black</English>
             <German>Snowe Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_15_EyeBlack">
+            <English>Snowe Eye Black (Prototype)</English>
+            <German>Snowe Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_15_Serbian">
             <English>Snowe Serbian</English>
             <German>Snowe Serbisch</German>
@@ -929,6 +1061,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_16_Black">
             <English>Kelly Black</English>
             <German>Kelly Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_16_EyeBlack">
+            <English>Kelly Eye Black (Prototype)</English>
+            <German>Kelly Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_16_Serbian">
             <English>Kelly Serbian</English>
@@ -958,6 +1094,10 @@
             <English>O'Connor Black</English>
             <German>O'Connor Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_17_EyeBlack">
+            <English>O'Connor Eye Black (Prototype)</English>
+            <German>O'Connor Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_17_Serbian">
             <English>O'Connor Serbian</English>
             <German>O'Connor Serbisch</German>
@@ -985,6 +1125,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_18_Black">
             <English>Byrne Black</English>
             <German>Byrne Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_18_EyeBlack">
+            <English>Byrne Eye Black (Prototype)</English>
+            <German>Byrne Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_18_Serbian">
             <English>Byrne Serbian</English>
@@ -1014,6 +1158,10 @@
             <English>O'Brien Black</English>
             <German>O'Brien Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_19_EyeBlack">
+            <English>O'Brien Eye Black (Prototype)</English>
+            <German>O'Brien Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_19_Serbian">
             <English>O'Brien Serbian</English>
             <German>O'Brien Serbisch</German>
@@ -1042,6 +1190,10 @@
             <English>Walsh Black</English>
             <German>Walsh Schwarz</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_20_EyeBlack">
+            <English>Walsh Eye Black (Prototype)</English>
+            <German>Walsh Augenschwarz (Prototyp)</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_20_Serbian">
             <English>Walsh Serbian</English>
             <German>Walsh Serbisch</German>
@@ -1069,6 +1221,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_21_Black">
             <English>O'Smith Black</English>
             <German>O'Smith Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_21_EyeBlack">
+            <English>O'Smith Eye Black (Prototype)</English>
+            <German>O'Smith Augenschwarz (Prototyp)</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_Serbian">
             <English>O'Smith Serbian</English>

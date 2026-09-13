@@ -77,3 +77,17 @@ class GVAR(AfricanHead_03_USFlash): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_03_USFlash);
     texture = QPATHTOF(data\usflash\AH03\m_african_03_co.paa);
 };
+
+// PROTOTYPE: EyeBlack rollout
+class GVAR(AfricanHead_01_EyeBlack): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(AfricanHead_01_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\AH01\m_african_01_co.paa);
+};
+class GVAR(AfricanHead_02_EyeBlack): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(AfricanHead_02_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\AH02\m_african_02_co.paa);
+};
+class GVAR(AfricanHead_03_EyeBlack): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(AfricanHead_03_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\AH03\m_african_03_co.paa);
+};

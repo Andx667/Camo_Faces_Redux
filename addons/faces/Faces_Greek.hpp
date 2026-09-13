@@ -450,3 +450,68 @@ class GVAR(GreekHead_A3_09_USFlash): GVAR(GreekHead_A3_01_BWTarn) {
     materialWounded1 = QPATHTOF(data\usflash\WH05\m_white_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\WH05\m_white_05_injury.rvmat);
 };
+
+// PROTOTYPE: EyeBlack rollout
+class GVAR(GreekHead_A3_01_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_01_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\GkHA301\m_greek_01_co.paa);
+    material = QPATHTOF(data\eyeblack\GkHA301\m_greek_01.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\GkHA301\m_greek_01_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\GkHA301\m_greek_01_injury.rvmat);
+};
+class GVAR(GreekHead_A3_02_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_02_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\GkHA302\m_greek_02_co.paa);
+    material = QPATHTOF(data\eyeblack\GkHA302\m_greek_02.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\GkHA302\m_greek_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\GkHA302\m_greek_02_injury.rvmat);
+};
+class GVAR(GreekHead_A3_03_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_03_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\GkHA303\m_greek_03_co.paa);
+    material = QPATHTOF(data\eyeblack\GkHA303\m_greek_03.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\GkHA303\m_greek_03_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\GkHA303\m_greek_03_injury.rvmat);
+};
+class GVAR(GreekHead_A3_04_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_04_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\GkHA304\m_greek_04_co.paa);
+    material = QPATHTOF(data\eyeblack\GkHA304\m_greek_04.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\GkHA304\m_greek_04_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\GkHA304\m_greek_04_injury.rvmat);
+};
+class GVAR(GreekHead_A3_05_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_05_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH01\m_white_01_co.paa);
+    material = QPATHTOF(data\eyeblack\WH01\m_white_01.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\WH01\m_white_01_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\WH01\m_white_01_injury.rvmat);
+};
+class GVAR(GreekHead_A3_06_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_06_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH02\m_white_02_co.paa);
+    material = QPATHTOF(data\eyeblack\WH02\m_white_02.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\WH02\m_white_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\WH02\m_white_02_injury.rvmat);
+};
+class GVAR(GreekHead_A3_07_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_07_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH03\m_white_03_co.paa);
+    material = QPATHTOF(data\eyeblack\WH03\m_white_03.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\WH03\m_white_03_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\WH03\m_white_03_injury.rvmat);
+};
+class GVAR(GreekHead_A3_08_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_08_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH04\m_white_04_co.paa);
+    material = QPATHTOF(data\eyeblack\WH04\m_white_04.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\WH04\m_white_04_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\WH04\m_white_04_injury.rvmat);
+};
+class GVAR(GreekHead_A3_09_EyeBlack): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_09_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH05\m_white_05_co.paa);
+    material = QPATHTOF(data\eyeblack\WH05\m_white_05.rvmat);
+    materialWounded1 = QPATHTOF(data\eyeblack\WH05\m_white_05_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\eyeblack\WH05\m_white_05_injury.rvmat);
+};

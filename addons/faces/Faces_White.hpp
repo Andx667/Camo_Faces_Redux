@@ -31,6 +31,12 @@ class GVAR(WhiteHead_01_USFlash): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_01_USFlash);
     texture = QPATHTOF(data\usflash\WH01\m_white_01_co.paa);
 };
+// PROTOTYPE: EyeBlack scheme - see GVAR(schemes) in cfr_common/functions/fnc_init.sqf and its own
+// dedicated item (cfr_items_eyeblack_facepaint) for why this is still flagged prototype
+class GVAR(WhiteHead_01_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_01_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH01\m_white_01_co.paa);
+};
 
 class GVAR(WhiteHead_02_BWTarn): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_02_BWTarn);
@@ -613,4 +619,86 @@ class GVAR(WhiteHead_21_USStains): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_21_USFlash): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_21_USFlash);
     texture = QPATHTOF(data\usflash\WH21\m_white_21_co.paa);
+};
+
+// PROTOTYPE: EyeBlack rollout
+class GVAR(WhiteHead_02_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_02_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH02\m_white_02_co.paa);
+};
+class GVAR(WhiteHead_03_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_03_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH03\m_white_03_co.paa);
+};
+class GVAR(WhiteHead_04_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_04_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH04\m_white_04_co.paa);
+};
+class GVAR(WhiteHead_05_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_05_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH05\m_white_05_co.paa);
+};
+class GVAR(WhiteHead_06_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_06_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH06\m_white_06_co.paa);
+};
+class GVAR(WhiteHead_07_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_07_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH07\m_white_07_co.paa);
+};
+class GVAR(WhiteHead_08_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_08_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH08\m_white_08_co.paa);
+};
+class GVAR(WhiteHead_09_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_09_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH09\m_white_09_co.paa);
+};
+class GVAR(WhiteHead_10_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_10_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH10\m_white_10_co.paa);
+};
+class GVAR(WhiteHead_11_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_11_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH11\m_white_11_co.paa);
+};
+class GVAR(WhiteHead_12_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_12_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH12\m_white_12_co.paa);
+};
+class GVAR(WhiteHead_13_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_13_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH13\m_white_13_co.paa);
+};
+class GVAR(WhiteHead_14_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_14_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH14\m_white_14_co.paa);
+};
+class GVAR(WhiteHead_15_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_15_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH15\m_white_15_co.paa);
+};
+class GVAR(WhiteHead_16_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_16_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH16\m_white_16_co.paa);
+};
+class GVAR(WhiteHead_17_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_17_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH17\m_white_17_co.paa);
+};
+class GVAR(WhiteHead_18_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_18_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH18\m_white_18_co.paa);
+};
+class GVAR(WhiteHead_19_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_19_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH19\m_white_19_co.paa);
+};
+class GVAR(WhiteHead_20_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_20_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH20\m_white_20_co.paa);
+};
+class GVAR(WhiteHead_21_EyeBlack): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_21_EyeBlack);
+    texture = QPATHTOF(data\eyeblack\WH21\m_white_21_co.paa);
 };

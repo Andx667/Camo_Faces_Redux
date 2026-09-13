@@ -26,4 +26,13 @@ class CfgWeapons {
         picture = QPATHTOF(data\UI\gear_BW_Facepaint.paa);
         model = QPATHTOF(data\BW_Facepaint.p3d);
     };
+    // PROTOTYPE: EyeBlack lives outside the military camo schemes, so it gets its own item rather
+    // than piggybacking on BW/Serbian/US - reuses the BW model/icon as a placeholder, no dedicated
+    // art yet
+    class GVAR(EyeBlack_Facepaint): GVAR(US_Facepaint) {
+        displayName = CSTRING(EyeBlack_Facepaint_DisplayName);
+        descriptionShort = CSTRING(EyeBlack_Facepaint_descriptionShort);
+        picture = QPATHTOF(data\UI\gear_BW_Facepaint.paa);
+        model = QPATHTOF(data\BW_Facepaint.p3d);
+    };
 };
