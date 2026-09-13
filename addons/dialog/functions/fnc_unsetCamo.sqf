@@ -23,7 +23,7 @@ params [
 TRACE_1("fnc_unsetCamo",_this);
 
 if ([_face] call EFUNC(common,isCamoFace)) then {
-	[_unit, _face] call EFUNC(common,unsetCamo);
+    [_unit, _face] call EFUNC(common,unsetCamo);
 } else {
-	hint (localize LSTRING(noCamoApplied));
+    hint (localize LSTRING(noCamoApplied));
 };

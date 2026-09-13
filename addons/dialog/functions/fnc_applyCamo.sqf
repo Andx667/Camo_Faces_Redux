@@ -25,31 +25,31 @@ disableSerialization;
 // dialog flow keeps its original blind CBA_fnc_waitAndExecute delay (button "action" code runs
 // unscheduled, so a blocking sleep is not legal here) instead of a visible progress bar.
 switch (_level) do {
-	case 1: {
-		hint (localize LSTRING(applyingLayer1));
-		[{
-			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable true;
-			hint (localize LSTRING(layerDone));
-		}, [], 2] call CBA_fnc_waitAndExecute;
-	};
+    case 1: {
+        hint (localize LSTRING(applyingLayer1));
+        [{
+            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable true;
+            hint (localize LSTRING(layerDone));
+        }, [], 2] call CBA_fnc_waitAndExecute;
+    };
 
-	case 2: {
-		hint (localize LSTRING(applyingLayer2));
-		[{
-			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable true;
-			hint (localize LSTRING(layerDone));
-		}, [], 2] call CBA_fnc_waitAndExecute;
-	};
+    case 2: {
+        hint (localize LSTRING(applyingLayer2));
+        [{
+            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable true;
+            hint (localize LSTRING(layerDone));
+        }, [], 2] call CBA_fnc_waitAndExecute;
+    };
 
-	case 3: {
-		hint (localize LSTRING(applyingLayer3));
-		[{
-			private _lbCamo = (findDisplay IDD_DIALOG) displayCtrl IDC_LISTBOX_CAMOFACE;
-			[player, (_lbCamo lbData (lbCurSel _lbCamo))] call EFUNC(common,setCamo);
+    case 3: {
+        hint (localize LSTRING(applyingLayer3));
+        [{
+            private _lbCamo = (findDisplay IDD_DIALOG) displayCtrl IDC_LISTBOX_CAMOFACE;
+            [player, (_lbCamo lbData (lbCurSel _lbCamo))] call EFUNC(common,setCamo);
 
-			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER1) ctrlEnable false;
-			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable false;
-			((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable false;
-		}, [], 2] call CBA_fnc_waitAndExecute;
-	};
+            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER1) ctrlEnable false;
+            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable false;
+            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable false;
+        }, [], 2] call CBA_fnc_waitAndExecute;
+    };
 };

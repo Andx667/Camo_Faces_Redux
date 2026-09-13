@@ -19,7 +19,7 @@ params ["_units"];
 TRACE_1("fnc_removeCamo",_this);
 
 {
-	[_x, face _x] call EFUNC(common,unsetCamo);
+    [_x, face _x] call EFUNC(common,unsetCamo);
 } forEach _units;
 
 hint format [localize LSTRING(removeApplied), count _units];

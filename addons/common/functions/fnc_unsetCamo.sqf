@@ -19,8 +19,8 @@
  */
 
 params [
-	["_unit", objNull, [objNull]],
-	["_face", "", [""]]
+    ["_unit", objNull, [objNull]],
+    ["_face", "", [""]]
 ];
 TRACE_1("fnc_unsetCamo",_this);
 
@@ -33,21 +33,21 @@ private _baseFace = "";
 private _schemeId = "";
 
 {
-	_x params ["_id", "_pairs"];
-	private _pairIdx = _pairs findIf {(_x select 1) == _face};
-	if (_pairIdx != -1) exitWith {
-		_baseFace = (_pairs select _pairIdx) select 0;
-		_schemeId = _id;
-	};
+    _x params ["_id", "_pairs"];
+    private _pairIdx = _pairs findIf {(_x select 1) == _face};
+    if (_pairIdx != -1) exitWith {
+        _baseFace = (_pairs select _pairIdx) select 0;
+        _schemeId = _id;
+    };
 } forEach GVAR(schemes);
 
 if (_baseFace != "") then {
-	[QGVAR(setFace), [_unit, _baseFace]] call CBA_fnc_globalEvent;
-	_unit setVariable [QGVAR(face), _baseFace, true];
-	// public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
-	// setFace event above) - same shape/scope as camoApplied in fnc_setCamo.sqf
-	[QGVAR(camoRemoved), [_unit, _schemeId, _face, _baseFace]] call CBA_fnc_localEvent;
-	hint (localize LSTRING(camoRemoved));
+    [QGVAR(setFace), [_unit, _baseFace]] call CBA_fnc_globalEvent;
+    _unit setVariable [QGVAR(face), _baseFace, true];
+    // public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
+    // setFace event above) - same shape/scope as camoApplied in fnc_setCamo.sqf
+    [QGVAR(camoRemoved), [_unit, _schemeId, _face, _baseFace]] call CBA_fnc_localEvent;
+    hint (localize LSTRING(camoRemoved));
 } else {
-	hint (localize LSTRING(invalidFace));
+    hint (localize LSTRING(invalidFace));
 };

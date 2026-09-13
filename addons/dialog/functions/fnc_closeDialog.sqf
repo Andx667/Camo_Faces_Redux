@@ -19,6 +19,6 @@ params [];
 TRACE_1("fnc_closeDialog",_this);
 
 if (!isNil QGVAR(mirrorCam)) then {
-	deleteVehicle GVAR(mirrorCam);
-	GVAR(mirrorCam) = nil;
+    deleteVehicle GVAR(mirrorCam);
+    GVAR(mirrorCam) = nil;
 };
