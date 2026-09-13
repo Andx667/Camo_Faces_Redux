@@ -11,8 +11,10 @@ git_hash = 0
 include = [
     "mod.cpp",
     "meta.cpp",
-    "logo_cfr.png",
-    "logo_cfr_ca.paa",
+    "img/cfr_icon.png",
+    "img/cfr_icon_ca.paa",
+    "img/cfr_logo.png",
+    "img/cfr_logo_ca.paa",
     "LICENSE.md",
     "README.md",
     "authors.txt",

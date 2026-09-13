@@ -1,6 +1,6 @@
 # Camo Faces Redux
 
-![Camo Faces Redux Logo](https://github.com/Andx667/CamoFacesRedux/blob/main/logo_cfr.png)
+![Camo Faces Redux Logo](https://github.com/Andx667/CamoFacesRedux/blob/main/img/cfr_logo.png)
 
 <p align="center">
     <a href="https://github.com/Andx667/CamoFacesRedux/issues">
