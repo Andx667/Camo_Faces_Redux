@@ -1,7 +1,12 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Builds GVAR(all_faces)/GVAR(schemes) (see comments below). Called from XEH_preInit rather than
+ * XEH_postInit specifically so this data exists before any mission entity - and therefore before any
+ * unit's init field - runs; postInit is guaranteed to fire after init fields, which used to make
+ * cfr_common_fnc_setCamo/fnc_unsetCamo fail every time when called directly from one. The per-unit
+ * saved-camo reapply (which does need units to already exist) stays in XEH_postInit instead - see
+ * that file.
  *
  * Arguments:
  * None
@@ -109,10 +114,3 @@ if (isDLCAvailable 332350) then {
         "camo_vanilla"
     ];
 };
-
-{
-    private _face = _x getVariable [QGVAR(face), ""];
-    if (_face != "") then {
-        _x setFace _face;
-    };
-} forEach (allUnits + allDead);

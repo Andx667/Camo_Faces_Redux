@@ -26,6 +26,12 @@ TRACE_1("fnc_unsetCamo",_this);
 
 if (isNull _unit) exitWith {};
 
+// see fnc_setCamo.sqf for why this self-defer exists - a safety net, not the primary fix, since this
+// also reads GVAR(schemes)
+if (isNil QGVAR(schemes)) exitWith {
+    [FUNC(unsetCamo), _this] call CBA_fnc_execNextFrame;
+};
+
 // reverse lookup: find whichever scheme's pairs has a camo value matching the current face, and
 // return its paired base face - no string/suffix manipulation needed since GVAR(schemes) already
 // stores both ends of the pair
@@ -41,13 +47,17 @@ private _schemeId = "";
     };
 } forEach GVAR(schemes);
 
+// see fnc_setCamo.sqf's _hintOwner for why this guard exists - without it, unsetting camo on a
+// non-player unit (e.g. AI from a script) would pop the hint on this machine's own player instead
+private _hintOwner = _unit == player;
+
 if (_baseFace != "") then {
     [QGVAR(setFace), [_unit, _baseFace]] call CBA_fnc_globalEvent;
     _unit setVariable [QGVAR(face), _baseFace, true];
     // public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
     // setFace event above) - same shape/scope as camoApplied in fnc_setCamo.sqf
     [QGVAR(camoRemoved), [_unit, _schemeId, _face, _baseFace]] call CBA_fnc_localEvent;
-    hint (localize LSTRING(camoRemoved));
+    if (_hintOwner) then { hint (localize LSTRING(camoRemoved)); };
 } else {
-    hint (localize LSTRING(invalidFace));
+    if (_hintOwner) then { hint (localize LSTRING(invalidFace)); };
 };
