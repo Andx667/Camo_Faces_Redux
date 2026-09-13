@@ -34,7 +34,10 @@ class GVAR(Dialog) {
         text = "";
         x = (((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 8*(0.025));
         y = 3.2 * (0.04)+ (0);
-        w = 9 * (0.025);
+        // widened from 9 to 10.5 units (still leaves a 0.5-unit gap before RscListbox_Camoface at
+        // offset 19) to fit the longest entry, "Vanilla Camouflage" - the previous width clipped
+        // every entry longer than "BW Facepaint"
+        w = 10.5 * (0.025);
         h = 6 * (0.04);
         font = "EtelkaMonospacePro";
         sizeEx = 0.03;

@@ -25,6 +25,10 @@
             <English>Serbian Camouflage</English>
             <German>Serbische Tarnung</German>
         </Key>
+        <Key ID="STR_CFR_Common_camo_serbian_short">
+            <English>Serbian Camo</English>
+            <German>Serb. Tarnung</German>
+        </Key>
         <Key ID="STR_CFR_Common_camo_usflash">
             <English>US Flash</English>
             <German>US Sprüh</German>
@@ -40,6 +44,10 @@
         <Key ID="STR_CFR_Common_camo_vanilla">
             <English>Vanilla Camouflage</English>
             <German>Original-Tarnung</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla_short">
+            <English>Camo</English>
+            <German>Tarnung</German>
         </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>

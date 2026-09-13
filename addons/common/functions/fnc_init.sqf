@@ -77,14 +77,15 @@ GVAR(vanillaCamoFacePairs) = [
 // Each row is [schemeId, pairs, itemClasses, stringKey]:
 //   - pairs: [[baseFace, camoFace], ...] - which base face becomes which camo face under this scheme
 //   - itemClasses: array of facepaint item classnames that unlock this scheme (almost always one
-//     entry, except Vanilla which accepts any of the three)
+//     entry, except Black and Vanilla, which accept any of the three - Black is a pure color-shift,
+//     not tied to a specific pattern, so any facepaint item should unlock it)
 //   - stringKey: this component's stringtable key suffix for the scheme's display name
 // The 7 core schemes are always present. pairs are derived from GVAR(all_faces) the same way as
 // before (just keeping the base face alongside the result instead of discarding it), so they can't
 // drift out of sync with the base face list.
 GVAR(schemes) = [
     ["BWTarn", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_BWTarn"]}), [QEGVAR(items,BW_Facepaint)], "camo_bwtarn"],
-    ["Black", ((GVAR(all_faces) - GVAR(faces_african)) apply {[_x, FACES_CLASS_PREFIX + _x + "_Black"]}), [QEGVAR(items,BW_Facepaint)], "camo_black"],
+    ["Black", ((GVAR(all_faces) - GVAR(faces_african)) apply {[_x, FACES_CLASS_PREFIX + _x + "_Black"]}), [QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)], "camo_black"],
     ["BWStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_BWStripes"]}), [QEGVAR(items,BW_Facepaint)], "camo_bwstripes"],
     ["Serbian", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_Serbian"]}), [QEGVAR(items,Serbian_Facepaint)], "camo_serbian"],
     ["USStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USStripes"]}), [QEGVAR(items,US_Facepaint)], "camo_usstripes"],

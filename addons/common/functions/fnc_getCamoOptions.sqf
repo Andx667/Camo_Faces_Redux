@@ -29,13 +29,21 @@ if (_face in GVAR(all_faces)) then {
     // stringtable linter can't trace this concatenation back to a static key and will warn about it
     // (L-L02M, "missing keys in use") - every stringKey in GVAR(schemes) is a real, verified key in
     // stringtable.xml (camo_bwtarn, camo_black, camo_bwstripes, camo_serbian, camo_usstripes,
-    // camo_usstains, camo_usflash, camo_vanilla); this is a false positive, not a real missing key.
+    // camo_usstains, camo_usflash, camo_vanilla, camo_serbian_short, camo_vanilla_short); this is a
+    // false positive, not a real missing key.
     private _strPrefix = QUOTE(DOUBLES(STR,ADDON)) + "_";
 
+    // The notebook's pattern list (this function) is narrow, so a couple of schemes get a shorter
+    // label here than their shared GVAR(schemes) stringKey - which stays unshortened for other
+    // consumers (ACE self-actions, ZEN context menu) that have more room to display it.
+    private _shortStringKeys = [["Serbian", "camo_serbian_short"], ["Vanilla", "camo_vanilla_short"]];
+
+    // "Black" isn't tied to one specific item like the others - it's offered under every country
+    // selection so it's reachable with whichever facepaint item the player actually has equipped
     private _schemeIds = switch (_select) do {
-        case "bw_select": { ["BWTarn", "Black", "BWStripes"] };
-        case "serbian_select": { ["Serbian"] };
-        case "us_select": { ["USStripes", "USStains", "USFlash"] };
+        case "bw_select": { ["BWTarn", "BWStripes", "Black"] };
+        case "serbian_select": { ["Serbian", "Black"] };
+        case "us_select": { ["USStripes", "USStains", "USFlash", "Black"] };
         case "vanilla_select": { ["Vanilla"] };
         default { [] };
     };
@@ -45,6 +53,10 @@ if (_face in GVAR(all_faces)) then {
         private _schemeIdx = GVAR(schemes) findIf {(_x select 0) == _schemeId};
         if (_schemeIdx != -1) then {
             (GVAR(schemes) select _schemeIdx) params ["", "_pairs", "", "_stringKey"];
+
+            private _shortKeyIdx = _shortStringKeys findIf {(_x select 0) == _schemeId};
+            if (_shortKeyIdx != -1) then {_stringKey = (_shortStringKeys select _shortKeyIdx) select 1;};
+
             if ((_pairs findIf {(_x select 0) == _face}) != -1) then {
                 _selected pushBack [localize (_strPrefix + _stringKey), _schemeId];
             };
