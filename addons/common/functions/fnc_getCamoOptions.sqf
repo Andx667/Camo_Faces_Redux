@@ -32,10 +32,12 @@ if (_face in GVAR(all_faces)) then {
     // camo_usstains, camo_usflash, camo_vanilla); this is a false positive, not a real missing key.
     private _strPrefix = QUOTE(DOUBLES(STR,ADDON)) + "_";
 
+    // "Black" isn't tied to one specific item like the others - it's offered under every country
+    // selection so it's reachable with whichever facepaint item the player actually has equipped
     private _schemeIds = switch (_select) do {
-        case "bw_select": { ["BWTarn", "Black", "BWStripes"] };
-        case "serbian_select": { ["Serbian"] };
-        case "us_select": { ["USStripes", "USStains", "USFlash"] };
+        case "bw_select": { ["BWTarn", "BWStripes", "Black"] };
+        case "serbian_select": { ["Serbian", "Black"] };
+        case "us_select": { ["USStripes", "USStains", "USFlash", "Black"] };
         case "vanilla_select": { ["Vanilla"] };
         default { [] };
     };

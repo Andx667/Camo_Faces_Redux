@@ -53,7 +53,7 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 - `schemeId` — e.g. `"BWTarn"`, `"Vanilla"` — the string passed to `fnc_setCamo`/`fnc_canApplyScheme` and used as ACE action/dialog data
 - `pairs` — `[[baseFace, camoFace], ...]`, which base face becomes which camo face under this scheme
-- `itemClasses` — facepaint item classname(s) that unlock this scheme; always an array, even though every scheme but Vanilla only has one entry (Vanilla accepts any of the three)
+- `itemClasses` — facepaint item classname(s) that unlock this scheme; always an array, even though most schemes only have one entry (`Black` and `Vanilla` accept any of the three, since Black is a pure color-shift not tied to a specific pattern)
 - `stringKey` — this component's stringtable key suffix for the scheme's display name (e.g. `"camo_bwtarn"` → `STR_CFR_Common_camo_bwtarn`)
 
 The 7 core schemes' `pairs` are *derived* from `GVAR(all_faces)` (via `FACES_CLASS_PREFIX`, defined in `script_component.hpp`) rather than hand-maintained separately, so they can't drift out of sync with the base face list. The `Vanilla` row is different: BI's vanilla camo classnames don't follow a suffix pattern (`CamoHead_White_01_F`, not `WhiteHead_01_something`), so its pairs come from the explicit `GVAR(vanillaCamoFacePairs)` table instead — and the row is only appended to `GVAR(schemes)` at all if `isDLCAvailable 332350` (Marksmen) is true. Every consumer just reads `GVAR(schemes)`, so on a client without Marksmen, `Vanilla` is completely and automatically absent everywhere (dialog country list, ACE actions, apply/remove) with no DLC-specific logic anywhere else in the mod.
