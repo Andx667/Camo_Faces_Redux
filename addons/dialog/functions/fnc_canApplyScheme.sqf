@@ -29,14 +29,14 @@ private _result = false;
 
 private _schemeIdx = EGVAR(common,schemes) findIf {(_x select 0) == _camoSuffix};
 if (_schemeIdx != -1) then {
-	(EGVAR(common,schemes) select _schemeIdx) params ["", "_pairs", "_itemClasses"];
-	_result = (
-		(_itemClasses findIf {_x in uniformItems ACE_player}) != -1
-	) && (
-		(_pairs findIf {(_x select 0) == _face}) != -1
-	) && (
-		headgear ACE_player == "" && goggles ACE_player == "" && hmd ACE_player == ""
-	);
+    (EGVAR(common,schemes) select _schemeIdx) params ["", "_pairs", "_itemClasses"];
+    _result = (
+        (_itemClasses findIf {_x in uniformItems ACE_player}) != -1
+    ) && (
+        (_pairs findIf {(_x select 0) == _face}) != -1
+    ) && (
+        headgear ACE_player == "" && goggles ACE_player == "" && hmd ACE_player == ""
+    );
 };
 
 _result;

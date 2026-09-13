@@ -4,6 +4,6 @@ class CfgFactionClasses {
         displayName = CSTRING(name);
         priority = 2;
         side = 7;
-        icon = QPATHTOEF(common,data\logo_cfr_ca.paa);
+        icon = QPATHTOEF(common,data\cfr_icon_ca.paa);
     };
 };

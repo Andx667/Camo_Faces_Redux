@@ -23,5 +23,5 @@ waitUntil {alive _unit};
 private _face = _unit getVariable [QGVAR(face), ""];
 
 if (_face != "") then {
-	[QEGVAR(common,setFace), [_unit, _face]] call CBA_fnc_globalEvent;
+    [QEGVAR(common,setFace), [_unit, _face]] call CBA_fnc_globalEvent;
 };

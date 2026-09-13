@@ -23,10 +23,10 @@ TRACE_1("fnc_isCamoFace",_this);
 private _found = false;
 
 {
-	_x params ["", "_pairs"];
-	if ((_pairs findIf {(_x select 1) == _face}) != -1) exitWith {
-		_found = true;
-	};
+    _x params ["", "_pairs"];
+    if ((_pairs findIf {(_x select 1) == _face}) != -1) exitWith {
+        _found = true;
+    };
 } forEach GVAR(schemes);
 
 _found;

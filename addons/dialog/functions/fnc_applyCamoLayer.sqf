@@ -29,30 +29,30 @@ params ["_camo", "_layer"];
 TRACE_1("fnc_applyCamoLayer",_this);
 
 private _titleKey = switch (_layer) do {
-	case 1: { LSTRING(applyingLayer1) };
-	case 2: { LSTRING(applyingLayer2) };
-	default { LSTRING(applyingLayer3) };
+    case 1: { LSTRING(applyingLayer1) };
+    case 2: { LSTRING(applyingLayer2) };
+    default { LSTRING(applyingLayer3) };
 };
 
 private _onFinish = if (_layer >= 3) then {
-	{
-		params ["_args"];
-		_args params ["_camo"];
-		[ACE_player, _camo] call EFUNC(common,setCamo);
-	}
+    {
+        params ["_args"];
+        _args params ["_camo"];
+        [ACE_player, _camo] call EFUNC(common,setCamo);
+    }
 } else {
-	{
-		params ["_args"];
-		_args params ["_camo", "_layer"];
-		[_camo, _layer + 1] call FUNC(applyCamoLayer);
-	}
+    {
+        params ["_args"];
+        _args params ["_camo", "_layer"];
+        [_camo, _layer + 1] call FUNC(applyCamoLayer);
+    }
 };
 
 [
-	2,
-	[_camo, _layer],
-	_onFinish,
-	{ hint (localize ELSTRING(common,invalidFace)); },
-	localize _titleKey,
-	{ params ["_args"]; _args call FUNC(canApplyScheme); }
+    2,
+    [_camo, _layer],
+    _onFinish,
+    { hint (localize ELSTRING(common,invalidFace)); },
+    localize _titleKey,
+    { params ["_args"]; _args call FUNC(canApplyScheme); }
 ] call ace_common_fnc_progressBar;

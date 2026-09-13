@@ -22,13 +22,13 @@ TRACE_1("fnc_applyRandomCamo",_this);
 private _applied = 0;
 
 {
-	private _face = face _x;
-	private _schemeIds = (EGVAR(common,schemes) select {(_x select 1) findIf {(_x select 0) == _face} != -1}) apply {_x select 0};
+    private _face = face _x;
+    private _schemeIds = (EGVAR(common,schemes) select {(_x select 1) findIf {(_x select 0) == _face} != -1}) apply {_x select 0};
 
-	if (_schemeIds isNotEqualTo []) then {
-		[_x, selectRandom _schemeIds] call EFUNC(common,setCamo);
-		_applied = _applied + 1;
-	};
+    if (_schemeIds isNotEqualTo []) then {
+        [_x, selectRandom _schemeIds] call EFUNC(common,setCamo);
+        _applied = _applied + 1;
+    };
 } forEach _units;
 
 hint format [localize LSTRING(randomApplied), _applied, count _units];

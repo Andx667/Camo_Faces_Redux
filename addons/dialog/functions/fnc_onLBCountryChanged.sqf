@@ -30,8 +30,8 @@ lbClear _lbCamo;
 private _camoOptions = [(_lbCountry lbData _selItem)] call EFUNC(common,getCamoOptions);
 
 {
-	// text
-	_lbCamo lbAdd (_x select 0);
-	// data
-	_lbCamo lbSetData [_forEachIndex, (_x select 1)];
+    // text
+    _lbCamo lbAdd (_x select 0);
+    // data
+    _lbCamo lbSetData [_forEachIndex, (_x select 1)];
 } forEach _camoOptions;
