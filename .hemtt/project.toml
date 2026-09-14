@@ -7,6 +7,10 @@ mainprefix = "z"
 path = "addons/main/script_version.hpp"
 git_hash = 0
 
+[hemtt.publish]
+description = "workshop/steam_description.md"
+changelog = "CHANGELOG.md"
+
 [files]
 include = [
     "mod.cpp",
@@ -15,7 +19,7 @@ include = [
     "img/cfr_icon_ca.paa",
     "img/cfr_logo.png",
     "img/cfr_logo_ca.paa",
-    "LICENSE.md",
+    "LICENSE",
     "README.md",
     "authors.txt",
 ]

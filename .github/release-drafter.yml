@@ -1,0 +1,50 @@
+branches:
+  - main
+
+# The version isn't resolved from PR labels — script_version.hpp and the
+# git tag created at release time are the source of truth. Retitle/retag
+# this draft to match before publishing.
+name-template: 'Unreleased'
+tag-template: 'unreleased'
+
+sort-by: title # sort alphabetically
+sort-direction: ascending
+
+# Category names match Keep a Changelog (https://keepachangelog.com/en/1.1.0/)
+# so a drafted release's notes group changes the same way CHANGELOG.md does.
+categories:
+  - title: 'Added'
+    labels:
+      - 'changelog/added'
+  - title: 'Changed'
+    labels:
+      - 'changelog/changed'
+  - title: 'Deprecated'
+    labels:
+      - 'changelog/deprecated'
+  - title: 'Removed'
+    labels:
+      - 'changelog/removed'
+  - title: 'Fixed'
+    labels:
+      - 'changelog/fixed'
+  - title: 'Security'
+    labels:
+      - 'changelog/security'
+
+exclude-labels:
+  - 'ignore-changelog'
+  - 'tools'
+  - 'documentation'
+
+change-template: '* $TITLE (#$NUMBER) by $AUTHOR'
+template: |
+  _Requires [CBA_A3](https://github.com/CBATeam/CBA_A3) and [ACE3](https://github.com/acemod/ACE3)._
+
+  ## Summary
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS

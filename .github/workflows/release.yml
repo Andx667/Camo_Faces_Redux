@@ -1,0 +1,36 @@
+# This action will use hemtt release to build and sign the mod, then
+# attach the resulting zip to the GitHub release.
+#
+# Steam Workshop publishing is handled separately via `hemtt publish`
+# (https://hemtt.dev), not by this workflow.
+
+name: Release
+
+on:
+  release:
+    types: released
+
+permissions:
+  contents: write
+
+jobs:
+  release-addon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v4
+
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+
+      - name: Run HEMTT build
+        run: hemtt release
+
+      - name: Upload release to GitHub
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: releases/cfr-latest.zip
+          asset_name: cfr-${{ github.ref_name }}.zip
+          tag: ${{ github.ref }}
+          overwrite: true
