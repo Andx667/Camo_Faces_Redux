@@ -1,7 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Builds GVAR(all_faces), GVAR(faces_african), and GVAR(schemes) - the single shared source of
+ * truth every consumer (apply/remove, dialog UI, ACE self-actions, the ZEN compat layer) reads
+ * camo scheme data from - deriving each scheme's base-face/camo-face pairs from GVAR(all_faces)
+ * so they can't drift out of sync with it. Also appends the Vanilla scheme if the Marksmen DLC is
+ * available, and reapplies every unit's/corpse's saved camo face on mission (re)start.
  *
  * Arguments:
  * None
@@ -90,7 +94,11 @@ GVAR(schemes) = [
     ["Serbian", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_Serbian"]}), [QEGVAR(items,Serbian_Facepaint)], "camo_serbian"],
     ["USStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USStripes"]}), [QEGVAR(items,US_Facepaint)], "camo_usstripes"],
     ["USStains", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USStains"]}), [QEGVAR(items,US_Facepaint)], "camo_usstains"],
-    ["USFlash", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USFlash"]}), [QEGVAR(items,US_Facepaint)], "camo_usflash"]
+    ["USFlash", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USFlash"]}), [QEGVAR(items,US_Facepaint)], "camo_usflash"],
+    // SnowStripes - green base w/ white diagonal stripes. Has its own dedicated item
+    // (GVAR(SnowStripes_Facepaint)) so its notebook dialog can show the white-swatch "snow"
+    // paint-box variant instead of the shared brown one (see fnc_onLBCountryChanged.sqf).
+    ["SnowStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_SnowStripes"]}), [QEGVAR(items,SnowStripes_Facepaint)], "camo_snowstripes"]
 ];
 
 // Vanilla is appended only if the Marksmen DLC (Steam App ID 332350) is actually available - every
@@ -105,10 +113,3 @@ if (isDLCAvailable 332350) then {
         "camo_vanilla"
     ];
 };
-
-{
-    private _face = _x getVariable [QGVAR(face), ""];
-    if (_face != "") then {
-        _x setFace _face;
-    };
-} forEach (allUnits + allDead);

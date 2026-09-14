@@ -77,3 +77,17 @@ class GVAR(AfricanHead_03_USFlash): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_03_USFlash);
     texture = QPATHTOF(data\usflash\AH03\m_african_03_co.paa);
 };
+
+// SnowStripes rollout
+class GVAR(AfricanHead_01_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(AfricanHead_01_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\AH01\m_african_01_co.paa);
+};
+class GVAR(AfricanHead_02_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(AfricanHead_02_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\AH02\m_african_02_co.paa);
+};
+class GVAR(AfricanHead_03_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(AfricanHead_03_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\AH03\m_african_03_co.paa);
+};

@@ -1,7 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Extended_Respawn_EventHandlers hook (CfgEventHandlers.hpp): waits for the respawned unit to be
+ * alive, then reapplies its previously-saved camo face (if any) via the shared cfr_common_setFace
+ * CBA event - the same mechanism fnc_init.sqf uses on mission start.
  *
  * Arguments:
  * 0: Unit <OBJECT>

@@ -21,6 +21,14 @@
             <English>Serbian Facepaint</English>
             <German>Serbische Tarnschminke</German>
         </Key>
+        <Key ID="STR_CFR_Items_snowstripes_facepaint_descriptionshort">
+            <English>A stick of white/green grease paint</English>
+            <German>Ein Stift weiß-grüne Schminke</German>
+        </Key>
+        <Key ID="STR_CFR_Items_snowstripes_facepaint_displayname">
+            <English>Snow Stripes Facepaint</English>
+            <German>Schneestreifen-Tarnschminke</German>
+        </Key>
         <Key ID="STR_CFR_Items_us_facepaint_descriptionshort">
             <English>Used by the US Armed Forces</English>
             <German>Benutzt von den US Streikräften</German>

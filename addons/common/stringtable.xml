@@ -29,6 +29,10 @@
             <English>Serbian Camo</English>
             <German>Serb. Tarnung</German>
         </Key>
+        <Key ID="STR_CFR_Common_camo_snowstripes">
+            <English>Snow Stripes</English>
+            <German>Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Common_camo_usflash">
             <English>US Flash</English>
             <German>US Sprüh</German>

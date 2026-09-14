@@ -10,7 +10,7 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 
 | Function | Arguments | Description |
 | --- | --- | --- |
-| `fnc_init` | none | Builds `GVAR(all_faces)`/`GVAR(schemes)` (see below) and reapplies every unit's saved camo face on mission init |
+| `fnc_init` | none | Builds `GVAR(all_faces)`/`GVAR(schemes)` (see below); called from `XEH_preInit` so this data exists before any mission entity - and therefore before any unit's init field - runs (`fnc_setCamo`/`fnc_unsetCamo` also self-defer a frame via `CBA_fnc_waitAndExecute` if called before this has run, as a safety net) |
 | `fnc_getCountryOptions` | `[unit]` | Returns which camo schemes (BW / Serbian / US / Vanilla) a unit can use, based on which facepaint item(s) it's carrying |
 | `fnc_getCamoOptions` | `[scheme]` | Returns the specific camo patterns available within a scheme, for the calling player's current base face |
 | `fnc_setCamo` | `[unit, camo]` | Applies a camo face to a unit if the combination is valid, and hints the result |
@@ -58,4 +58,4 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 The 7 core schemes' `pairs` are *derived* from `GVAR(all_faces)` (via `FACES_CLASS_PREFIX`, defined in `script_component.hpp`) rather than hand-maintained separately, so they can't drift out of sync with the base face list. The `Vanilla` row is different: BI's vanilla camo classnames don't follow a suffix pattern (`CamoHead_White_01_F`, not `WhiteHead_01_something`), so its pairs come from the explicit `GVAR(vanillaCamoFacePairs)` table instead — and the row is only appended to `GVAR(schemes)` at all if `isDLCAvailable 332350` (Marksmen) is true. Every consumer just reads `GVAR(schemes)`, so on a client without Marksmen, `Vanilla` is completely and automatically absent everywhere (dialog country list, ACE actions, apply/remove) with no DLC-specific logic anywhere else in the mod.
 
-Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `fnc_init` (on mission start) and `cfr_dialog`'s `fnc_handleRespawn` (on respawn) can reapply it.
+Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `cfr_dialog`'s `fnc_handleRespawn` (on respawn) can reapply it.

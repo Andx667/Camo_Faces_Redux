@@ -14,6 +14,10 @@
             <English>Williams Serbian</English>
             <German>Williams Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AfricanHead_01_SnowStripes">
+            <English>Williams Snow Stripes</English>
+            <German>Williams Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AfricanHead_01_USFlash">
             <English>Williams US Flash</English>
             <German>Williams US Sprüh</German>
@@ -38,6 +42,10 @@
             <English>Hasan Serbian</English>
             <German>Hasan Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AfricanHead_02_SnowStripes">
+            <English>Hasan Snow Stripes</English>
+            <German>Hasan Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AfricanHead_02_USFlash">
             <English>Hasan US Flash</English>
             <German>Hasan US Sprüh</German>
@@ -61,6 +69,10 @@
         <Key ID="STR_CFR_Faces_AfricanHead_03_Serbian">
             <English>Jesus Serbian</English>
             <German>Jesus Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AfricanHead_03_SnowStripes">
+            <English>Jesus Snow Stripes</English>
+            <German>Jesus Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_AfricanHead_03_USFlash">
             <English>Jesus US Flash</English>
@@ -91,6 +103,10 @@
             <English>Ximi Serbian</English>
             <German>Ximi Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_01_SnowStripes">
+            <English>Ximi Snow Stripes</English>
+            <German>Ximi Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AsianHead_A3_01_USFlash">
             <English>Ximi US Flash</English>
             <German>Ximi US Sprüh</German>
@@ -119,6 +135,10 @@
             <English>Jeong Serbian</English>
             <German>Jeong Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_02_SnowStripes">
+            <English>Jeong Snow Stripes</English>
+            <German>Jeong Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_AsianHead_A3_02_USFlash">
             <English>Jeong US Flash</English>
             <German>Jeong US Sprüh</German>
@@ -146,6 +166,10 @@
         <Key ID="STR_CFR_Faces_AsianHead_A3_03_Serbian">
             <English>Tung Serbian</English>
             <German>Tung Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_03_SnowStripes">
+            <English>Tung Snow Stripes</English>
+            <German>Tung Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_AsianHead_A3_03_USFlash">
             <English>Tung US Flash</English>
@@ -176,6 +200,10 @@
             <English>Athanasiadis Serbian</English>
             <German>Athanasiadis Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_01_SnowStripes">
+            <English>Athanasiadis Snow Stripes</English>
+            <German>Athanasiadis Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_01_USFlash">
             <English>Athanasiadis US Flash</English>
             <German>Athanasiadis US Sprüh</German>
@@ -203,6 +231,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_02_Serbian">
             <English>Baros Serbian</English>
             <German>Baros Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_02_SnowStripes">
+            <English>Baros Snow Stripes</English>
+            <German>Baros Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_02_USFlash">
             <English>Baros US Flash</English>
@@ -232,6 +264,10 @@
             <English>Constantinou Serbian</English>
             <German>Constantinou Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_03_SnowStripes">
+            <English>Constantinou Snow Stripes</English>
+            <German>Constantinou Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_03_USFlash">
             <English>Constantinou US Flash</English>
             <German>Constantinou US Sprüh</German>
@@ -259,6 +295,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_04_Serbian">
             <English>Costas Serbian</English>
             <German>Costas Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_04_SnowStripes">
+            <English>Costas Snow Stripes</English>
+            <German>Costas Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_04_USFlash">
             <English>Costas US Flash</English>
@@ -288,6 +328,10 @@
             <English>Doukas Serbian</English>
             <German>Doukas Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_05_SnowStripes">
+            <English>Doukas Snow Stripes</English>
+            <German>Doukas Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_05_USFlash">
             <English>Doukas US Flash</English>
             <German>Doukas US Sprüh</German>
@@ -315,6 +359,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Serbian">
             <English>Efthimiou Serbian</English>
             <German>Efthimiou Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_06_SnowStripes">
+            <English>Efthimiou Snow Stripes</English>
+            <German>Efthimiou Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_USFlash">
             <English>Efthimiou US Flash</English>
@@ -344,6 +392,10 @@
             <English>Fotiou Serbian</English>
             <German>Fotiou Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_07_SnowStripes">
+            <English>Fotiou Snow Stripes</English>
+            <German>Fotiou Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_USFlash">
             <English>Fotiou US Flash</English>
             <German>Fotiou US Sprüh</German>
@@ -372,6 +424,10 @@
             <English>Georgiou Serbian</English>
             <German>Georgiou Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_08_SnowStripes">
+            <English>Georgiou Snow Stripes</English>
+            <German>Georgiou Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_USFlash">
             <English>Georgiou US Flash</English>
             <German>Georgiou US Sprüh</German>
@@ -399,6 +455,10 @@
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Serbian">
             <English>Chatzis Serbian</English>
             <German>Chatzis Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_09_SnowStripes">
+            <English>Chatzis Snow Stripes</English>
+            <German>Chatzis Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_USFlash">
             <English>Chatzis US Flash</English>
@@ -429,6 +489,10 @@
             <English>Bahadur Serbian</English>
             <German>Bahadur Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_PersianHead_A3_01_SnowStripes">
+            <English>Bahadur Snow Stripes</English>
+            <German>Bahadur Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_PersianHead_A3_01_USFlash">
             <English>Bahadur US Flash</English>
             <German>Bahadur US Sprüh</German>
@@ -457,6 +521,10 @@
             <English>Jalali Serbian</English>
             <German>Jalali Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_PersianHead_A3_02_SnowStripes">
+            <English>Jalali Snow Stripes</English>
+            <German>Jalali Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_PersianHead_A3_02_USFlash">
             <English>Jalali US Flash</English>
             <German>Jalali US Sprüh</German>
@@ -484,6 +552,10 @@
         <Key ID="STR_CFR_Faces_PersianHead_A3_03_Serbian">
             <English>Sabet Serbian</English>
             <German>Sabet Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_PersianHead_A3_03_SnowStripes">
+            <English>Sabet Snow Stripes</English>
+            <German>Sabet Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_PersianHead_A3_03_USFlash">
             <English>Sabet US Flash</English>
@@ -514,6 +586,10 @@
             <English>Bayh Serbian</English>
             <German>Bayh Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_01_SnowStripes">
+            <English>Bayh Snow Stripes</English>
+            <German>Bayh Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_01_USFlash">
             <English>Bayh US Flash</English>
             <German>Bayh US Sprüh</German>
@@ -541,6 +617,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_02_Serbian">
             <English>Burr Serbian</English>
             <German>Burr Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_02_SnowStripes">
+            <English>Burr Snow Stripes</English>
+            <German>Burr Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_02_USFlash">
             <English>Burr US Flash</English>
@@ -570,6 +650,10 @@
             <English>Coburn Serbian</English>
             <German>Coburn Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_03_SnowStripes">
+            <English>Coburn Snow Stripes</English>
+            <German>Coburn Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_03_USFlash">
             <English>Coburn US Flash</English>
             <German>Coburn US Sprüh</German>
@@ -597,6 +681,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_04_Serbian">
             <English>Collins Serbian</English>
             <German>Collins Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_04_SnowStripes">
+            <English>Collins Snow Stripes</English>
+            <German>Collins Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_04_USFlash">
             <English>Collins US Flash</English>
@@ -626,6 +714,10 @@
             <English>Campbell Serbian</English>
             <German>Campbell Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_05_SnowStripes">
+            <English>Campbell Snow Stripes</English>
+            <German>Campbell Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_05_USFlash">
             <English>Campbell US Flash</English>
             <German>Campbell US Sprüh</German>
@@ -653,6 +745,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_06_Serbian">
             <English>Dayton Serbian</English>
             <German>Dayton Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_06_SnowStripes">
+            <English>Dayton Snow Stripes</English>
+            <German>Dayton Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_06_USFlash">
             <English>Dayton US Flash</English>
@@ -682,6 +778,10 @@
             <English>Dorgan Serbian</English>
             <German>Dorgan Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_07_SnowStripes">
+            <English>Dorgan Snow Stripes</English>
+            <German>Dorgan Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_07_USFlash">
             <English>Dorgan US Flash</English>
             <German>Dorgan US Sprüh</German>
@@ -709,6 +809,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_08_Serbian">
             <English>Halliwell Serbian</English>
             <German>Halliwell Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_08_SnowStripes">
+            <English>Halliwell Snow Stripes</English>
+            <German>Halliwell Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_08_USFlash">
             <English>Halliwell US Flash</English>
@@ -738,6 +842,10 @@
             <English>Johnson Serbian</English>
             <German>Johnson Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_09_SnowStripes">
+            <English>Johnson Snow Stripes</English>
+            <German>Johnson Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_09_USFlash">
             <English>Johnson US Flash</English>
             <German>Johnson US Sprüh</German>
@@ -765,6 +873,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_10_Serbian">
             <English>Martinez Serbian</English>
             <German>Martinez Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_10_SnowStripes">
+            <English>Martinez Snow Stripes</English>
+            <German>Martinez Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_10_USFlash">
             <English>Martinez US Flash</English>
@@ -794,6 +906,10 @@
             <English>Kirby Serbian</English>
             <German>Kirby Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_11_SnowStripes">
+            <English>Kirby Snow Stripes</English>
+            <German>Kirby Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_11_USFlash">
             <English>Kirby US Flash</English>
             <German>Kirby US Sprüh</German>
@@ -821,6 +937,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_12_Serbian">
             <English>Reed Serbian</English>
             <German>Reed Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_12_SnowStripes">
+            <English>Reed Snow Stripes</English>
+            <German>Reed Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_12_USFlash">
             <English>Reed US Flash</English>
@@ -850,6 +970,10 @@
             <English>Santorum Serbian</English>
             <German>Santorum Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_13_SnowStripes">
+            <English>Santorum Snow Stripes</English>
+            <German>Santorum Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_13_USFlash">
             <English>Santorum US Flash</English>
             <German>Santorum US Sprüh</German>
@@ -877,6 +1001,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_14_Serbian">
             <English>Smith Serbian</English>
             <German>Smith Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_14_SnowStripes">
+            <English>Smith Snow Stripes</English>
+            <German>Smith Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_14_USFlash">
             <English>Smith US Flash</English>
@@ -906,6 +1034,10 @@
             <English>Snowe Serbian</English>
             <German>Snowe Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_15_SnowStripes">
+            <English>Snowe Snow Stripes</English>
+            <German>Snowe Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_15_USFlash">
             <English>Snowe US Flash</English>
             <German>Snowe US Sprüh</German>
@@ -933,6 +1065,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_16_Serbian">
             <English>Kelly Serbian</English>
             <German>Kelly Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_16_SnowStripes">
+            <English>Kelly Snow Stripes</English>
+            <German>Kelly Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_16_USFlash">
             <English>Kelly US Flash</English>
@@ -962,6 +1098,10 @@
             <English>O'Connor Serbian</English>
             <German>O'Connor Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_17_SnowStripes">
+            <English>O'Connor Snow Stripes</English>
+            <German>O'Connor Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_17_USFlash">
             <English>O'Connor US Flash</English>
             <German>O'Connor US Sprüh</German>
@@ -989,6 +1129,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_18_Serbian">
             <English>Byrne Serbian</English>
             <German>Byrne Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_18_SnowStripes">
+            <English>Byrne Snow Stripes</English>
+            <German>Byrne Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_18_USFlash">
             <English>Byrne US Flash</English>
@@ -1018,6 +1162,10 @@
             <English>O'Brien Serbian</English>
             <German>O'Brien Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_19_SnowStripes">
+            <English>O'Brien Snow Stripes</English>
+            <German>O'Brien Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_19_USFlash">
             <English>O'Brien US Flash</English>
             <German>O'Brien US Sprüh</German>
@@ -1046,6 +1194,10 @@
             <English>Walsh Serbian</English>
             <German>Walsh Serbisch</German>
         </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_20_SnowStripes">
+            <English>Walsh Snow Stripes</English>
+            <German>Walsh Schneestreifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_20_USFlash">
             <English>Walsh US Flash</English>
             <German>Walsh US Sprüh</German>
@@ -1073,6 +1225,10 @@
         <Key ID="STR_CFR_Faces_WhiteHead_21_Serbian">
             <English>O'Smith Serbian</English>
             <German>O'Smith Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_21_SnowStripes">
+            <English>O'Smith Snow Stripes</English>
+            <German>O'Smith Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_USFlash">
             <English>O'Smith US Flash</English>

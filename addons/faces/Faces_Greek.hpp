@@ -450,3 +450,68 @@ class GVAR(GreekHead_A3_09_USFlash): GVAR(GreekHead_A3_01_BWTarn) {
     materialWounded1 = QPATHTOF(data\usflash\WH05\m_white_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\WH05\m_white_05_injury.rvmat);
 };
+
+// SnowStripes rollout
+class GVAR(GreekHead_A3_01_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_01_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\GkHA301\m_greek_01_co.paa);
+    material = QPATHTOF(data\snowstripes\GkHA301\m_greek_01.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\GkHA301\m_greek_01_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\GkHA301\m_greek_01_injury.rvmat);
+};
+class GVAR(GreekHead_A3_02_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_02_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\GkHA302\m_greek_02_co.paa);
+    material = QPATHTOF(data\snowstripes\GkHA302\m_greek_02.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\GkHA302\m_greek_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\GkHA302\m_greek_02_injury.rvmat);
+};
+class GVAR(GreekHead_A3_03_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_03_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\GkHA303\m_greek_03_co.paa);
+    material = QPATHTOF(data\snowstripes\GkHA303\m_greek_03.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\GkHA303\m_greek_03_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\GkHA303\m_greek_03_injury.rvmat);
+};
+class GVAR(GreekHead_A3_04_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_04_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\GkHA304\m_greek_04_co.paa);
+    material = QPATHTOF(data\snowstripes\GkHA304\m_greek_04.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\GkHA304\m_greek_04_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\GkHA304\m_greek_04_injury.rvmat);
+};
+class GVAR(GreekHead_A3_05_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_05_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH01\m_white_01_co.paa);
+    material = QPATHTOF(data\snowstripes\WH01\m_white_01.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH01\m_white_01_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH01\m_white_01_injury.rvmat);
+};
+class GVAR(GreekHead_A3_06_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_06_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH02\m_white_02_co.paa);
+    material = QPATHTOF(data\snowstripes\WH02\m_white_02.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH02\m_white_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH02\m_white_02_injury.rvmat);
+};
+class GVAR(GreekHead_A3_07_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_07_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH03\m_white_03_co.paa);
+    material = QPATHTOF(data\snowstripes\WH03\m_white_03.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH03\m_white_03_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH03\m_white_03_injury.rvmat);
+};
+class GVAR(GreekHead_A3_08_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_08_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH04\m_white_04_co.paa);
+    material = QPATHTOF(data\snowstripes\WH04\m_white_04.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH04\m_white_04_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH04\m_white_04_injury.rvmat);
+};
+class GVAR(GreekHead_A3_09_SnowStripes): GVAR(GreekHead_A3_01_BWTarn) {
+    displayname = CSTRING(GreekHead_A3_09_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH05\m_white_05_co.paa);
+    material = QPATHTOF(data\snowstripes\WH05\m_white_05.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH05\m_white_05_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH05\m_white_05_injury.rvmat);
+};

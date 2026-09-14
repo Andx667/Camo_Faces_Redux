@@ -26,6 +26,16 @@ TRACE_1("fnc_setCamo",_this);
 
 if (isNull _unit) exitWith {};
 
+// GVAR(schemes) is built by fnc_init, called from cfr_common's XEH_preInit specifically so it's
+// ready before any mission entity - and therefore any unit's init field - can run (see fnc_init.sqf).
+// This check should therefore never actually trigger; it's a safety net in case some other caller
+// still manages to run even earlier than that (e.g. another addon's own preInit). Self-defer one
+// frame rather than fail with "invalid face" so such callers don't have to know about the ordering
+// or wrap every call themselves.
+if (isNil QGVAR(schemes)) exitWith {
+    [FUNC(setCamo), _this] call CBA_fnc_execNextFrame;
+};
+
 private _face = face _unit;
 private _targetFace = "";
 
@@ -38,13 +48,20 @@ if (_schemeIdx != -1) then {
     };
 };
 
+// hint is feedback for whoever just changed their OWN face (the only way this mod's own dialog/ACE
+// self-action ever calls this, always with ACE_player) - it always runs on whichever machine executes
+// this function, so without this guard, scripting fnc_setCamo onto other units (e.g. AI from a unit's
+// init field) would incorrectly pop the hint on that machine's own player, not the (non-existent)
+// player controlling the target unit
+private _hintOwner = _unit == player;
+
 if (_targetFace != "") then {
     [QGVAR(setFace), [_unit, _targetFace]] call CBA_fnc_globalEvent;
     _unit setVariable [QGVAR(face), _targetFace, true];
     // public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
     // setFace event above) - only fires on this machine, i.e. whichever client is applying its own camo
     [QGVAR(camoApplied), [_unit, _camo, _face, _targetFace]] call CBA_fnc_localEvent;
-    hint (localize LSTRING(camoApplied));
+    if (_hintOwner) then { hint (localize LSTRING(camoApplied)); };
 } else {
-    hint (localize LSTRING(invalidFace));
+    if (_hintOwner) then { hint (localize LSTRING(invalidFace)); };
 };

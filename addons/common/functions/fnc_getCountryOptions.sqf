@@ -1,7 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Returns which country/group selections (BW/Serbian/US, plus Vanilla if the Marksmen DLC row is
+ * present in GVAR(schemes)) a unit's currently equipped facepaint items unlock, as
+ * [displayName, selectId] pairs for the dialog's country listbox. Vanilla isn't tied to one
+ * specific item - any of the three unlocks it - so it's checked separately via the scheme's own
+ * itemClasses row instead of the per-item checks used for the other three.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -31,6 +35,14 @@ if (QEGVAR(items,Serbian_Facepaint) in _uniformItems) then {
 
 if (QEGVAR(items,US_Facepaint) in _uniformItems) then {
     _camolist pushBack [localize ELSTRING(items,us_facepaint_displayname), "us_select"];
+};
+
+// SnowStripes has its own dedicated item and only one color, so it gets its own top-level
+// category here instead of being nested under one of the 3 military countries - also what lets
+// fnc_onLBCountryChanged.sqf tell it apart from the other schemes to swap in the white-swatch
+// paint-box texture instead of the shared brown one
+if (QEGVAR(items,SnowStripes_Facepaint) in _uniformItems) then {
+    _camolist pushBack [localize ELSTRING(items,snowstripes_facepaint_displayname), "snow_select"];
 };
 
 // Vanilla isn't tied to one specific item (any of the 3 unlocks it) and is only present in

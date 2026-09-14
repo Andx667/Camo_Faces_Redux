@@ -1,7 +1,8 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * ACE self-action statement for the "Camo Faces" menu entry (CfgVehicles.hpp, gated by
+ * fnc_canShowAction.sqf): opens the dialog.
  *
  * Arguments:
  * None

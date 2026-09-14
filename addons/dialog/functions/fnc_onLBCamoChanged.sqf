@@ -1,7 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * onLBSelChanged handler for the camo-pattern listbox (Dialog.hpp). Unlocks the first apply-layer
+ * button once all headgear/goggles/NV are confirmed removed (fnc_initDialog.sqf's GVAR(hasHelmet)/
+ * GVAR(hasGoggles)/GVAR(hasNV)) and the player's face is a known base face.
  *
  * Arguments:
  * 0: Camoface Listbox <CONTROL>

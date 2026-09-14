@@ -1,7 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * onload handler for GVAR(Dialog) (Dialog.hpp). Sets the day/night notepad textures, disables the
+ * 3 apply-layer buttons, colors the helmet/goggles/NV indicators based on what the player currently
+ * has equipped, populates the country listbox via cfr_common's fnc_getCountryOptions, and
+ * (re)creates the mirror camera that live-previews the player's face - cleaned up again by
+ * fnc_closeDialog.sqf on onunload.
  *
  * Arguments:
  * 0: DISPLAY <DISPLAY>
@@ -20,19 +24,19 @@ TRACE_1("fnc_initDialog",_this);
 
 disableSerialization;
 
-// set texture for day or night
+// set texture for day or night - GVAR(isNight) is stashed so fnc_onLBCountryChanged.sqf can
+// reuse it without recomputing, same as the box/notepad controls being looked up once here
 private _hour = date select 3;
 private _box = _display displayCtrl IDC_PICTURE_BOX;
 private _notepad = _display displayCtrl IDC_PICTURE_NOTEPAD;
+GVAR(isNight) = _hour > 21 || _hour < 6;
 
-if (_hour > 21 || _hour < 6) then {
-    _box ctrlSetText QPATHTOF2(data\UI\box_night.paa);
-    _notepad ctrlSetText QPATHTOF2(data\UI\notepad_night.paa);
-
-} else {
-    _box ctrlSetText QPATHTOF2(data\UI\box.paa);
-    _notepad ctrlSetText QPATHTOF2(data\UI\notepad.paa);
-};
+// no country is selected yet at this point (see fnc_onLBCountryChanged.sqf for the SnowStripes
+// white-swatch box swap, which is keyed off the selected country/scheme, not just whether the
+// player happens to be carrying the item), so the box starts on the default brown texture
+// regardless of what's in the player's uniform
+_box ctrlSetText ([QPATHTOF2(data\UI\box.paa), QPATHTOF2(data\UI\box_night.paa)] select GVAR(isNight));
+_notepad ctrlSetText ([QPATHTOF2(data\UI\notepad.paa), QPATHTOF2(data\UI\notepad_night.paa)] select GVAR(isNight));
 
 // deactivate button
 private _button1 = _display displayCtrl IDC_BUTTON_LAYER1;
