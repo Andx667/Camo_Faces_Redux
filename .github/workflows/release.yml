@@ -1,17 +1,10 @@
-# This action will use hemtt release to build the mod and attach the
-# resulting zip to the GitHub release.
+# This action will use hemtt release to build and sign the mod, then
+# attach the resulting zip to the GitHub release.
 #
 # Steam Workshop publishing is handled separately via `hemtt publish`
 # (https://hemtt.dev), not by this workflow.
-#
-# How to use
-#
-# 1. Update the FOLDER Variable and remove the #
 
 name: Release
-
-env:
-  FOLDER: '@cfr'
 
 on:
   release:
@@ -24,29 +17,20 @@ jobs:
   release-addon:
     runs-on: ubuntu-latest
     steps:
-        - name: Set VERSION env
-          run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV
+      - name: Checkout the source code
+        uses: actions/checkout@v4
 
-        - name: Checkout the source code
-          uses: actions/checkout@v4
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
 
-        - name: Setup HEMTT
-          uses: arma-actions/hemtt@v1
+      - name: Run HEMTT build
+        run: hemtt release
 
-        - name: Run HEMTT build
-          run: hemtt release --no-archive
-
-        - name: Move release to releases folder
-          run:
-            version="${{ github.event.release.tag_name }}"
-            mv .hemttout/release "${{ env.FOLDER }}-${{ env.VERSION }}"
-
-        - name: Zip release
-          run: zip -r "${{ env.FOLDER }}-${{ env.VERSION }}.zip" ./${{ env.FOLDER }}-${{ env.VERSION }}
-
-        - name: Update Release with Files
-          uses: softprops/action-gh-release@v1
-          with:
-            files: ./${{ env.FOLDER }}-${{ env.VERSION }}.zip
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload release to GitHub
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: releases/cfr-latest.zip
+          asset_name: cfr-${{ github.ref_name }}.zip
+          tag: ${{ github.ref }}
+          overwrite: true
