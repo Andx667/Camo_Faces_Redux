@@ -1,44 +1,45 @@
 branches:
   - main
 
-name-template: 'Version $RESOLVED_VERSION'
-tag-template: 'v$RESOLVED_VERSION'
+# The version isn't resolved from PR labels — script_version.hpp and the
+# git tag created at release time are the source of truth. Retitle/retag
+# this draft to match before publishing.
+name-template: 'Unreleased'
+tag-template: 'unreleased'
 
 sort-by: title # sort alphabetically
 sort-direction: ascending
 
+# Categories match Keep a Changelog (https://keepachangelog.com/en/1.1.0/)
+# exactly, so a drafted release's notes and CHANGELOG.md read the same way.
 categories:
-  - title: '### NEW:'
+  - title: '### Added'
     labels:
-      - 'pr/feature'
-  - title: '### FIXED:'
+      - 'changelog/added'
+  - title: '### Changed'
     labels:
-      - 'pr/bug-fix'
-  - title: '### IMPROVED:'
+      - 'changelog/changed'
+  - title: '### Deprecated'
     labels:
-      - 'pr/enhancement'
-      - 'pr/optimization'
-  - title: '### CHANGED:'
+      - 'changelog/deprecated'
+  - title: '### Removed'
     labels:
-      - 'pr/cleanup'
-      - 'pr/change'
-  - title: '### SETTINGS:'
+      - 'changelog/removed'
+  - title: '### Fixed'
     labels:
-      - 'pr/setting'
-  - title: '### TRANSLATIONS:'
+      - 'changelog/fixed'
+  - title: '### Security'
     labels:
-      - 'pr/translation'
-  - title: '### DOCUMENTATION:'
-    labels:
-      - 'pr/documentation'
+      - 'changelog/security'
 
 exclude-labels:
   - 'ignore-changelog'
   - 'tools'
+  - 'documentation'
 
 change-template: '* $TITLE (#$NUMBER) by $AUTHOR'
 template: |
-  _Requires the latest Version of [CBA](https://github.com/CBATeam/CBA_A3) and [ACE](https://github.com/acemod/ACE3)._
+  _Requires [CBA_A3](https://github.com/CBATeam/CBA_A3) and [ACE3](https://github.com/acemod/ACE3)._
 
   ## Summary
 
@@ -50,31 +51,9 @@ template: |
 
   $CONTRIBUTORS
 
-# PRs with the label target/next-arma trigger a bump of the Major version
-# most others trigger a bump of the Minor version
-# PRs with the label pr/bug-fix trigger a bump of the Patch version
-version-resolver:
-  major:
-    labels:
-      - "target/next-arma"
-  minor:
-    labels:
-      - "pr/feature"
-      - "pr/cleanup"
-      - "pr/change"
-      - "pr/enhancement"
-      - "pr/optimization"
-      - "pr/setting"
-      - 'pr/translation'
-  patch:
-    labels:
-      - "pr/documentation"
-      - "pr/bug-fix"
-  default: patch
-
 replacers:
   # Category titles
   # Release Drafter automatically makes the category as ## Heading
   # and we want them as ### Heading
-  - search: '/\#\# (\#\#\# (NEW|FIXED|IMPROVED|CHANGED|SETTINGS|TRANSLATIONS|DOCUMENTATION):)/g'
+  - search: '/\#\# (\#\#\# (Added|Changed|Deprecated|Removed|Fixed|Security))/g'
     replace: '$1'
