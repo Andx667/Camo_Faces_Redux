@@ -1,8 +1,11 @@
 branches:
   - main
 
-name-template: 'Version $RESOLVED_VERSION'
-tag-template: 'v$RESOLVED_VERSION'
+# The version isn't resolved from PR labels — script_version.hpp and the
+# git tag created at release time are the source of truth. Retitle/retag
+# this draft to match before publishing.
+name-template: 'Unreleased'
+tag-template: 'unreleased'
 
 sort-by: title # sort alphabetically
 sort-direction: ascending
@@ -47,25 +50,6 @@ template: |
   ## Contributors
 
   $CONTRIBUTORS
-
-# target/next-arma triggers a Major bump (breaking Arma-version support
-# change); Removed items are treated as breaking too. Added/Changed/
-# Deprecated trigger Minor; Fixed/Security trigger Patch.
-version-resolver:
-  major:
-    labels:
-      - 'target/next-arma'
-      - 'changelog/removed'
-  minor:
-    labels:
-      - 'changelog/added'
-      - 'changelog/changed'
-      - 'changelog/deprecated'
-  patch:
-    labels:
-      - 'changelog/fixed'
-      - 'changelog/security'
-  default: patch
 
 replacers:
   # Category titles
