@@ -7,34 +7,32 @@ tag-template: 'v$RESOLVED_VERSION'
 sort-by: title # sort alphabetically
 sort-direction: ascending
 
+# Categories match Keep a Changelog (https://keepachangelog.com/en/1.1.0/)
+# exactly, so a drafted release's notes and CHANGELOG.md read the same way.
 categories:
-  - title: '### NEW:'
+  - title: '### Added'
     labels:
-      - 'pr/feature'
-  - title: '### FIXED:'
+      - 'changelog/added'
+  - title: '### Changed'
     labels:
-      - 'pr/bug-fix'
-  - title: '### IMPROVED:'
+      - 'changelog/changed'
+  - title: '### Deprecated'
     labels:
-      - 'pr/enhancement'
-      - 'pr/optimization'
-  - title: '### CHANGED:'
+      - 'changelog/deprecated'
+  - title: '### Removed'
     labels:
-      - 'pr/cleanup'
-      - 'pr/change'
-  - title: '### SETTINGS:'
+      - 'changelog/removed'
+  - title: '### Fixed'
     labels:
-      - 'pr/setting'
-  - title: '### TRANSLATIONS:'
+      - 'changelog/fixed'
+  - title: '### Security'
     labels:
-      - 'pr/translation'
-  - title: '### DOCUMENTATION:'
-    labels:
-      - 'pr/documentation'
+      - 'changelog/security'
 
 exclude-labels:
   - 'ignore-changelog'
   - 'tools'
+  - 'documentation'
 
 change-template: '* $TITLE (#$NUMBER) by $AUTHOR'
 template: |
@@ -50,31 +48,28 @@ template: |
 
   $CONTRIBUTORS
 
-# PRs with the label target/next-arma trigger a bump of the Major version
-# most others trigger a bump of the Minor version
-# PRs with the label pr/bug-fix trigger a bump of the Patch version
+# target/next-arma triggers a Major bump (breaking Arma-version support
+# change); Removed items are treated as breaking too. Added/Changed/
+# Deprecated trigger Minor; Fixed/Security trigger Patch.
 version-resolver:
   major:
     labels:
-      - "target/next-arma"
+      - 'target/next-arma'
+      - 'changelog/removed'
   minor:
     labels:
-      - "pr/feature"
-      - "pr/cleanup"
-      - "pr/change"
-      - "pr/enhancement"
-      - "pr/optimization"
-      - "pr/setting"
-      - 'pr/translation'
+      - 'changelog/added'
+      - 'changelog/changed'
+      - 'changelog/deprecated'
   patch:
     labels:
-      - "pr/documentation"
-      - "pr/bug-fix"
+      - 'changelog/fixed'
+      - 'changelog/security'
   default: patch
 
 replacers:
   # Category titles
   # Release Drafter automatically makes the category as ## Heading
   # and we want them as ### Heading
-  - search: '/\#\# (\#\#\# (NEW|FIXED|IMPROVED|CHANGED|SETTINGS|TRANSLATIONS|DOCUMENTATION):)/g'
+  - search: '/\#\# (\#\#\# (Added|Changed|Deprecated|Removed|Fixed|Security))/g'
     replace: '$1'
