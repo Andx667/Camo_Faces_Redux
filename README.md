@@ -6,8 +6,8 @@
     <a href="https://github.com/Andx667/CamoFacesRedux/issues">
         <img src="https://img.shields.io/github/issues-raw/Andx667/CamoFacesRedux.svg?style=flat-square&label=Issues" alt="Camo Faces Redux Issues">
     </a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=MOD_ID">
-        <img src="https://img.shields.io/steam/downloads/MOD_ID.svg?style=flat-square&label=Downloads" alt="Camo Faces Redux Downloads">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3799682446">
+        <img src="https://img.shields.io/steam/downloads/3799682446.svg?style=flat-square&label=Downloads" alt="Camo Faces Redux Downloads">
     </a>
     <a href="https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Camo Faces Redux License">
