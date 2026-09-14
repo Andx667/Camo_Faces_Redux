@@ -17,16 +17,16 @@
     <img src="https://img.shields.io/github/actions/workflow/status/Andx667/CamoFacesRedux/arma.yml?style=flat-square&label=Validate" alt="Validate">
 </p>
 
-__Requires the latest version of [CBA A3](https://github.com/CBATeam/CBA_A3/releases/latest) and [ACE3](https://github.com/acemod/ACE3).__
+__Requires__ [CBA_A3](https://github.com/CBATeam/CBA_A3) and [ACE3](https://github.com/acemod/ACE3).
 
 __Camo Faces Redux__ (CFR) gives players the possibility to camouflage their faces during Arma 3 Missions. It builds on the previous work by Sk3y and Feldhobel in the mod [Camofaces](https://steamcommunity.com/sharedfiles/filedetails/?id=346665985&searchtext=camo+faces).
 
 The project is entirely __open-source__ and any contributions are welcome.
 
-Project Discord: <https://discord.gg/kGRnhbNh5>
 Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3799682446>
+Discord: <https://discord.gg/kGRnhbNh5>
 
-## Core Features
+## Features
 
 - Adds Camo Faces Variants of many Base Game Faces in multiple variants
   - Bundeswehr Camouflage
@@ -40,7 +40,7 @@ Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=37996824
 
 ## Contributing
 
-For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
+For new contributors, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
 
 ## License
 
