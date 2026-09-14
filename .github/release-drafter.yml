@@ -1,6 +1,5 @@
 branches:
-  - master
-  - release-drafter  # for testing edits to this configuration
+  - main
 
 name-template: 'Version $RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
