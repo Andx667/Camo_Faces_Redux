@@ -19,7 +19,7 @@ include = [
     "img/cfr_icon_ca.paa",
     "img/cfr_logo.png",
     "img/cfr_logo_ca.paa",
-    "LICENSE.md",
+    "LICENSE",
     "README.md",
     "authors.txt",
 ]

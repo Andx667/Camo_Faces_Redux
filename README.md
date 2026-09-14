@@ -44,4 +44,4 @@ For new contributors, see the [Contributing Setup & Guidelines](./.github/CONTRI
 
 ## License
 
-Camo Faces Redux is licensed under [APL-ND](./LICENSE.md).
+Camo Faces Redux is licensed under [APL-ND](./LICENSE).

@@ -42,7 +42,7 @@ Camo Faces Redux is fully open-source. Bug reports, feature requests, and contri
 - Original mod: Sk3y, Feldhobel
 - Rewrite: Andx
 
-Licensed under [APL-ND](https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE.md).
+Licensed under [APL-ND](https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE).
 
 ---
 
