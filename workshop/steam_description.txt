@@ -39,6 +39,7 @@ Camo Faces Redux is fully open-source. Bug reports, feature requests, and contri
 
 [url=https://github.com/Andx667/CamoFacesRedux]GitHub Repository[/url]
 [url=https://github.com/Andx667/CamoFacesRedux/issues]Report an Issue[/url]
+[url=https://discord.gg/kGRnhbNh5]Discord[/url]
 
 [h1]Credits[/h1]
 
@@ -48,3 +49,7 @@ Camo Faces Redux is fully open-source. Bug reports, feature requests, and contri
 [/list]
 
 Licensed under [url=https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE.md]APL-ND[/url].
+
+---
+
+Suchst du eine deutschsprachige Arma3 und Reforger Community? -> https://tacticalteam.de/mitmachen
