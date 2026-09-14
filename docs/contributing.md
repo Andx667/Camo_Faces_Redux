@@ -29,4 +29,4 @@ python tools/stringtable_validator.py
 python tools/config_style_checker.py
 ```
 
-These mirror the checks run in CI (`.github/workflows/hemtt.yml` and `arma.yml`).
+These mirror the checks run in CI (`.github/workflows/check.yml` and `validate.yml`).

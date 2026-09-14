@@ -13,8 +13,8 @@
         <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Camo Faces Redux License">
     </a>
     <br>
-    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/CamoFacesRedux/hemtt.yml?style=flat-square&label=HEMTT" alt="HEMTT">
-    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/CamoFacesRedux/arma.yml?style=flat-square&label=Validate" alt="Validate">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/CamoFacesRedux/check.yml?style=flat-square&label=Check" alt="Check">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/CamoFacesRedux/validate.yml?style=flat-square&label=Validate" alt="Validate">
 </p>
 
 __Requires__ [CBA_A3](https://github.com/CBATeam/CBA_A3) and [ACE3](https://github.com/acemod/ACE3).
