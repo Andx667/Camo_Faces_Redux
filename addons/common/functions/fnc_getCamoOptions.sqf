@@ -1,10 +1,14 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Returns the camo schemes available under a given country/group selection (see
+ * fnc_getCountryOptions.sqf) that the player's current base face actually has a variant for, as
+ * [displayName, schemeId] pairs for the dialog's camo-pattern listbox. Only offers options while
+ * the player's face is a known, un-camo'd base face - switching camo schemes directly isn't
+ * supported, the current one has to be removed first.
  *
  * Arguments:
- * 0: Selected Camo Scheme <STRING>
+ * 0: Selected Country/Group <STRING>
  *
  * Return Value:
  * List of available Camos <ARRAY>

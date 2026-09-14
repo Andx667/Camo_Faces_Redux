@@ -1,12 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Builds GVAR(all_faces)/GVAR(schemes) (see comments below). Called from XEH_preInit rather than
- * XEH_postInit specifically so this data exists before any mission entity - and therefore before any
- * unit's init field - runs; postInit is guaranteed to fire after init fields, which used to make
- * cfr_common_fnc_setCamo/fnc_unsetCamo fail every time when called directly from one. The per-unit
- * saved-camo reapply (which does need units to already exist) stays in XEH_postInit instead - see
- * that file.
+ * Builds GVAR(all_faces), GVAR(faces_african), and GVAR(schemes) - the single shared source of
+ * truth every consumer (apply/remove, dialog UI, ACE self-actions, the ZEN compat layer) reads
+ * camo scheme data from - deriving each scheme's base-face/camo-face pairs from GVAR(all_faces)
+ * so they can't drift out of sync with it. Also appends the Vanilla scheme if the Marksmen DLC is
+ * available, and reapplies every unit's/corpse's saved camo face on mission (re)start.
  *
  * Arguments:
  * None

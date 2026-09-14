@@ -1,7 +1,10 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Drives one step of the dialog's layered "apply camo" button sequence (see Dialog.hpp /
+ * fnc_initDialog.sqf). Layers 1 and 2 just hint and, after a short non-blocking delay, unlock the
+ * next layer's button; layer 3 calls cfr_common's fnc_setCamo with the pattern selected in the
+ * camo-pattern listbox, then locks all three buttons again.
  *
  * Arguments:
  * 0: Level <NUMBER>

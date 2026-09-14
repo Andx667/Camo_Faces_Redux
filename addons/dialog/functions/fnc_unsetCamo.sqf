@@ -1,7 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * "Remove camo" button handler (Dialog.hpp). Thin wrapper around cfr_common's fnc_unsetCamo: only
+ * forwards to it (and hints accordingly) if the given/current face is actually one of this mod's
+ * camo faces, per cfr_common's fnc_isCamoFace.
  *
  * Arguments:
  * 0: Unit (default: player) <OBJECT>

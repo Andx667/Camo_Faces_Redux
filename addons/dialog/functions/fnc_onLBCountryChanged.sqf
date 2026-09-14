@@ -1,7 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * onLBSelChanged handler for the country listbox (Dialog.hpp). Repopulates the camo-pattern
+ * listbox with whatever cfr_common's fnc_getCamoOptions returns for the newly selected
+ * country/group.
  *
  * Arguments:
  * 0: Country Listbox <CONTROL>

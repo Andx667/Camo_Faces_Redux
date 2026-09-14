@@ -1,7 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * onload handler for GVAR(Dialog) (Dialog.hpp). Sets the day/night notepad textures, disables the
+ * 3 apply-layer buttons, colors the helmet/goggles/NV indicators based on what the player currently
+ * has equipped, populates the country listbox via cfr_common's fnc_getCountryOptions, and
+ * (re)creates the mirror camera that live-previews the player's face - cleaned up again by
+ * fnc_closeDialog.sqf on onunload.
  *
  * Arguments:
  * 0: DISPLAY <DISPLAY>

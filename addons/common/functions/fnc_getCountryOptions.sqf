@@ -1,7 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Description.
+ * Returns which country/group selections (BW/Serbian/US, plus Vanilla if the Marksmen DLC row is
+ * present in GVAR(schemes)) a unit's currently equipped facepaint items unlock, as
+ * [displayName, selectId] pairs for the dialog's country listbox. Vanilla isn't tied to one
+ * specific item - any of the three unlocks it - so it's checked separately via the scheme's own
+ * itemClasses row instead of the per-item checks used for the other three.
  *
  * Arguments:
  * 0: Unit <OBJECT>
