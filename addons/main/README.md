@@ -19,7 +19,7 @@ The main addon for Camo Faces Redux. It carries no gameplay logic of its own —
 | --- | --- |
 | `script_mod.hpp` | `MAINPREFIX`/`PREFIX`/`AUTHOR`/mod name/version macros; included by every component before `script_macros.hpp` |
 | `script_macros.hpp` | Pulls in CBA's and ACE's macro sets, then adds this mod's own (`PATHTOF2`/`QPATHTOF2`, the `PREP`/`PREP_RECOMPILE_*` compile-cache switch, cargo/weapon/magazine helper macros) |
-| `script_version.hpp` | `MAJOR`/`MINOR`/`PATCH`/`BUILD` version numbers |
+| `script_version.hpp` | `MAJOR`/`MINOR`/`PATCH` version numbers |
 | `CfgSettings.hpp` | CBA Versioning integration and the `cba_main` version dependency |
 | `CfgEditorSubCategories.hpp` | The **CFR** Zeus/Eden editor sub-category, referenced by `cfr_items`' box |
 | `CfgFactionClasses.hpp` | The **CFR** faction, referenced by `cfr_items`' box |
