@@ -39,13 +39,13 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOEF(common,data\UI\Icon_bwstripes_ca.paa);
                 };
-                // PROTOTYPE: EyeBlack - WhiteHead_01 art only, gated on its own EyeBlack_Facepaint
-                // item (see GVAR(schemes) in fnc_init.sqf); reuses the Black scheme's icon as a
-                // placeholder, no dedicated icon yet
-                class GVAR(Action_EyeBlack) {
-                    displayName = ECSTRING(common,camo_eyeblack);
-                    condition = QUOTE(['EyeBlack'] call FUNC(canApplyScheme));
-                    statement = QUOTE(['EyeBlack'] call FUNC(applyCamoAction));
+                // SnowStripes - gated on its own SnowStripes_Facepaint item (see GVAR(schemes) in
+                // fnc_init.sqf); reuses the Black scheme's icon as a placeholder, no dedicated
+                // icon yet
+                class GVAR(Action_SnowStripes) {
+                    displayName = ECSTRING(common,camo_snowstripes);
+                    condition = QUOTE(['SnowStripes'] call FUNC(canApplyScheme));
+                    statement = QUOTE(['SnowStripes'] call FUNC(applyCamoAction));
                     showDisabled = 0;
                     icon = QPATHTOEF(common,data\UI\Icon_black_ca.paa);
                 };

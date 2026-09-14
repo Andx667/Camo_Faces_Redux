@@ -20,7 +20,7 @@ class CfgPatches {
             QGVAR(US_Facepaint),
             QGVAR(BW_Facepaint),
             QGVAR(SERBIAN_Facepaint),
-            QGVAR(EyeBlack_Facepaint),
+            QGVAR(SnowStripes_Facepaint),
         };
         VERSION_CONFIG;
     };

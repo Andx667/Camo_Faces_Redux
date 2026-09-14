@@ -152,25 +152,25 @@ class GVAR(PersianHead_A3_03_USFlash): GVAR(PersianHead_A3_01_BWTarn) {
     materialWounded2 = QPATHTOF(data\usflash\PHA303\m_persian_03_injury.rvmat);
 };
 
-// PROTOTYPE: EyeBlack rollout
-class GVAR(PersianHead_A3_01_EyeBlack): GVAR(PersianHead_A3_01_BWTarn) {
-    displayname = CSTRING(PersianHead_A3_01_EyeBlack);
-    texture = QPATHTOF(data\eyeblack\PHA301\m_persian_01_co.paa);
-    material = QPATHTOF(data\eyeblack\PHA301\m_persian_01.rvmat);
-    materialWounded1 = QPATHTOF(data\eyeblack\PHA301\m_persian_01_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\eyeblack\PHA301\m_persian_01_injury.rvmat);
+// SnowStripes rollout
+class GVAR(PersianHead_A3_01_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
+    displayname = CSTRING(PersianHead_A3_01_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\PHA301\m_persian_01_co.paa);
+    material = QPATHTOF(data\snowstripes\PHA301\m_persian_01.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\PHA301\m_persian_01_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\PHA301\m_persian_01_injury.rvmat);
 };
-class GVAR(PersianHead_A3_02_EyeBlack): GVAR(PersianHead_A3_01_BWTarn) {
-    displayname = CSTRING(PersianHead_A3_02_EyeBlack);
-    texture = QPATHTOF(data\eyeblack\PHA302\m_persian_02_co.paa);
-    material = QPATHTOF(data\eyeblack\PHA302\m_persian_02.rvmat);
-    materialWounded1 = QPATHTOF(data\eyeblack\PHA302\m_persian_02_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\eyeblack\PHA302\m_persian_02_injury.rvmat);
+class GVAR(PersianHead_A3_02_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
+    displayname = CSTRING(PersianHead_A3_02_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\PHA302\m_persian_02_co.paa);
+    material = QPATHTOF(data\snowstripes\PHA302\m_persian_02.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\PHA302\m_persian_02_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\PHA302\m_persian_02_injury.rvmat);
 };
-class GVAR(PersianHead_A3_03_EyeBlack): GVAR(PersianHead_A3_01_BWTarn) {
-    displayname = CSTRING(PersianHead_A3_03_EyeBlack);
-    texture = QPATHTOF(data\eyeblack\PHA303\m_persian_03_co.paa);
-    material = QPATHTOF(data\eyeblack\PHA303\m_persian_03.rvmat);
-    materialWounded1 = QPATHTOF(data\eyeblack\PHA303\m_persian_03_injury.rvmat);
-    materialWounded2 = QPATHTOF(data\eyeblack\PHA303\m_persian_03_injury.rvmat);
+class GVAR(PersianHead_A3_03_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
+    displayname = CSTRING(PersianHead_A3_03_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\PHA303\m_persian_03_co.paa);
+    material = QPATHTOF(data\snowstripes\PHA303\m_persian_03.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\PHA303\m_persian_03_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\PHA303\m_persian_03_injury.rvmat);
 };

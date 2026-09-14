@@ -34,7 +34,7 @@ if (_face in GVAR(all_faces)) then {
     // (L-L02M, "missing keys in use") - every stringKey in GVAR(schemes) is a real, verified key in
     // stringtable.xml (camo_bwtarn, camo_black, camo_bwstripes, camo_serbian, camo_usstripes,
     // camo_usstains, camo_usflash, camo_vanilla, camo_serbian_short, camo_vanilla_short,
-    // camo_eyeblack); this is a false positive, not a real missing key.
+    // camo_snowstripes); this is a false positive, not a real missing key.
     private _strPrefix = QUOTE(DOUBLES(STR,ADDON)) + "_";
 
     // The notebook's pattern list (this function) is narrow, so a couple of schemes get a shorter
@@ -49,9 +49,9 @@ if (_face in GVAR(all_faces)) then {
         case "serbian_select": { ["Serbian", "Black"] };
         case "us_select": { ["USStripes", "USStains", "USFlash", "Black"] };
         case "vanilla_select": { ["Vanilla"] };
-        // PROTOTYPE: EyeBlack - its own category (see fnc_getCountryOptions.sqf), only one color so
+        // SnowStripes - own category, own item (see fnc_getCountryOptions.sqf), only one color so
         // no "Black" fallback needed alongside it like the military categories above
-        case "eyeblack_select": { ["EyeBlack"] };
+        case "snow_select": { ["SnowStripes"] };
         default { [] };
     };
 

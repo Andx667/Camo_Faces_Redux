@@ -13,14 +13,6 @@
             <English>BW Facepaint</English>
             <German>BW Tarnschminke</German>
         </Key>
-        <Key ID="STR_CFR_Items_eyeblack_facepaint_descriptionshort">
-            <English>A stick of black grease paint - prototype item</English>
-            <German>Ein Stift schwarze Schminke - Prototyp-Gegenstand</German>
-        </Key>
-        <Key ID="STR_CFR_Items_eyeblack_facepaint_displayname">
-            <English>Eye Black (Prototype)</English>
-            <German>Augenschwarz (Prototyp)</German>
-        </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_descriptionshort">
             <English>Used by the Serbian Armed Forces</English>
             <German>Benutzt von den Serbischen Streitkräften</German>
@@ -28,6 +20,14 @@
         <Key ID="STR_CFR_Items_serbian_facepaint_displayname">
             <English>Serbian Facepaint</English>
             <German>Serbische Tarnschminke</German>
+        </Key>
+        <Key ID="STR_CFR_Items_snowstripes_facepaint_descriptionshort">
+            <English>A stick of white/green grease paint</English>
+            <German>Ein Stift weiß-grüne Schminke</German>
+        </Key>
+        <Key ID="STR_CFR_Items_snowstripes_facepaint_displayname">
+            <English>Snow Stripes Facepaint</English>
+            <German>Schneestreifen-Tarnschminke</German>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_descriptionshort">
             <English>Used by the US Armed Forces</English>

@@ -95,10 +95,10 @@ GVAR(schemes) = [
     ["USStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USStripes"]}), [QEGVAR(items,US_Facepaint)], "camo_usstripes"],
     ["USStains", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USStains"]}), [QEGVAR(items,US_Facepaint)], "camo_usstains"],
     ["USFlash", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USFlash"]}), [QEGVAR(items,US_Facepaint)], "camo_usflash"],
-    // PROTOTYPE: EyeBlack (football-style eye-black stripes) - lives outside the BW/Serbian/US
-    // military schemes, so it has its own dedicated item rather than accepting any of the three
-    // facepaint items. Rolled out to all base faces same as every other scheme above.
-    ["EyeBlack", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_EyeBlack"]}), [QEGVAR(items,EyeBlack_Facepaint)], "camo_eyeblack"]
+    // SnowStripes - green base w/ white diagonal stripes. Has its own dedicated item
+    // (GVAR(SnowStripes_Facepaint)) so its notebook dialog can show the white-swatch "snow"
+    // paint-box variant instead of the shared brown one (see fnc_onLBCountryChanged.sqf).
+    ["SnowStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_SnowStripes"]}), [QEGVAR(items,SnowStripes_Facepaint)], "camo_snowstripes"]
 ];
 
 // Vanilla is appended only if the Marksmen DLC (Steam App ID 332350) is actually available - every
