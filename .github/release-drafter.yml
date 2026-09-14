@@ -10,25 +10,25 @@ tag-template: 'unreleased'
 sort-by: title # sort alphabetically
 sort-direction: ascending
 
-# Categories match Keep a Changelog (https://keepachangelog.com/en/1.1.0/)
-# exactly, so a drafted release's notes and CHANGELOG.md read the same way.
+# Category names match Keep a Changelog (https://keepachangelog.com/en/1.1.0/)
+# so a drafted release's notes group changes the same way CHANGELOG.md does.
 categories:
-  - title: '### Added'
+  - title: 'Added'
     labels:
       - 'changelog/added'
-  - title: '### Changed'
+  - title: 'Changed'
     labels:
       - 'changelog/changed'
-  - title: '### Deprecated'
+  - title: 'Deprecated'
     labels:
       - 'changelog/deprecated'
-  - title: '### Removed'
+  - title: 'Removed'
     labels:
       - 'changelog/removed'
-  - title: '### Fixed'
+  - title: 'Fixed'
     labels:
       - 'changelog/fixed'
-  - title: '### Security'
+  - title: 'Security'
     labels:
       - 'changelog/security'
 
@@ -43,17 +43,8 @@ template: |
 
   ## Summary
 
-  ## Changelog
-
   $CHANGES
 
   ## Contributors
 
   $CONTRIBUTORS
-
-replacers:
-  # Category titles
-  # Release Drafter automatically makes the category as ## Heading
-  # and we want them as ### Heading
-  - search: '/\#\# (\#\#\# (Added|Changed|Deprecated|Removed|Fixed|Security))/g'
-    replace: '$1'
