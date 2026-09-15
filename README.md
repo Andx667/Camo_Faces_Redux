@@ -24,7 +24,7 @@ __Camo Faces Redux__ (CFR) gives players the possibility to camouflage their fac
 The project is entirely __open-source__ and any contributions are welcome.
 
 Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3799682446>
-Discord: <https://discord.gg/kGRnhbNh5>
+Discord: <https://discord.gg/ag4v6kxYAa>
 
 ## Features
 
