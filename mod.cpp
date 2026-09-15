@@ -8,3 +8,4 @@ logo = "img\cfr_icon_ca.paa";
 logoOver = "img\cfr_icon_ca.paa";
 actionName = "GitHub";
 action = "https://github.com/Andx667/CamoFacesRedux";
+dlcColor[] = { 0.42, 0.40, 0.00, 1 }; // Olive/khaki (RGBA) — color used for DLC stripes and backgrounds
