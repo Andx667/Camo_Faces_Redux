@@ -35,7 +35,7 @@ Camo Faces Redux is fully open-source. Bug reports, feature requests, and contri
 
 [GitHub Repository](https://github.com/Andx667/CamoFacesRedux)
 [Report an Issue](https://github.com/Andx667/CamoFacesRedux/issues)
-[Discord](https://discord.gg/kGRnhbNh5)
+[Discord](https://discord.gg/ag4v6kxYAa)
 
 # Credits
 
