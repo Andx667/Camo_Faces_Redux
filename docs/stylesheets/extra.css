@@ -1,0 +1,16 @@
+/* Camo Faces Redux brand color: olive/khaki. */
+:root {
+  --md-primary-fg-color: #6B6600;
+  --md-primary-fg-color--light: #A8A000;
+  --md-primary-fg-color--dark: #383500;
+}
+
+/* Darker in light mode (reads on a near-white page), brighter khaki in
+   dark mode (reads against the dark slate background). */
+[data-md-color-scheme="default"] {
+  --md-accent-fg-color: #6B6600;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #C9C24D;
+}
