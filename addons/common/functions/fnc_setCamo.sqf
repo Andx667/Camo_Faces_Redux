@@ -62,6 +62,22 @@ if (_targetFace != "") then {
     // setFace event above) - only fires on this machine, i.e. whichever client is applying its own camo
     [QGVAR(camoApplied), [_unit, _camo, _face, _targetFace]] call CBA_fnc_localEvent;
     if (_hintOwner) then { hint (localize LSTRING(camoApplied)); };
+
+    // Real camo paint wears off over time (rain, sweat, ...) - GVAR(wearOffTime) (CBA setting, see
+    // XEH_preInit.sqf) is -1 by default, meaning disabled. Scheduled locally on this machine only
+    // (same as the hint/event above), so it won't survive this machine disconnecting before expiry;
+    // the getVariable check on fire confirms _unit is still wearing exactly this face, so an earlier
+    // timer can't clobber a face the unit has since changed away from (e.g. camo reapplied, or already
+    // removed)
+    private _wearOffMinutes = GVAR(wearOffTime);
+    if (_wearOffMinutes > 0) then {
+        [{
+            params ["_unit", "_face"];
+            if (!isNull _unit && {(_unit getVariable [QGVAR(face), ""]) == _face}) then {
+                [_unit, _face] call FUNC(unsetCamo);
+            };
+        }, [_unit, _targetFace], _wearOffMinutes * 60] call CBA_fnc_waitAndExecute;
+    };
 } else {
     if (_hintOwner) then { hint (localize LSTRING(invalidFace)); };
 };

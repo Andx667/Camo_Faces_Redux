@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Configurable camo wear-off timer: a CBA setting (slider, -1 to 240 minutes, default -1/disabled) that automatically restores a unit's original face a set number of minutes after camo is applied, simulating it fading from rain, sweat, or time
+
 ## [0.9.3] - 2026-09-13
 
 ### Changed

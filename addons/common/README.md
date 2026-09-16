@@ -13,10 +13,16 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 | `fnc_init` | none | Builds `GVAR(all_faces)`/`GVAR(schemes)` (see below); called from `XEH_preInit` so this data exists before any mission entity - and therefore before any unit's init field - runs (`fnc_setCamo`/`fnc_unsetCamo` also self-defer a frame via `CBA_fnc_waitAndExecute` if called before this has run, as a safety net) |
 | `fnc_getCountryOptions` | `[unit]` | Returns which camo schemes (BW / Serbian / US / Vanilla) a unit can use, based on which facepaint item(s) it's carrying |
 | `fnc_getCamoOptions` | `[scheme]` | Returns the specific camo patterns available within a scheme, for the calling player's current base face |
-| `fnc_setCamo` | `[unit, camo]` | Applies a camo face to a unit if the combination is valid, and hints the result |
+| `fnc_setCamo` | `[unit, camo]` | Applies a camo face to a unit if the combination is valid, and hints the result; also schedules automatic wear-off if enabled (see Settings below) |
 | `fnc_unsetCamo` | `[unit, face]` | Reverses whichever scheme the unit's current camo face belongs to, restoring its base face |
 | `fnc_isCamoFace` | `[face]` | Checks whether a face classname is one of this mod's camo variants, under any scheme — shared predicate used by `fnc_setCamo`, `cfr_dialog`'s `fnc_canShowAction`, and both `fnc_unsetCamo` files |
 | `fnc_getSchemeDisplayName` | `[schemeId]` | Returns a camo scheme's localized display name — used by `cfr_compat_zen`'s dynamic ZEN context menu |
+
+## Settings
+
+A CBA setting, **Camo Wear-off Time (Minutes)** (slider, -1 to 240, default -1), controls whether camo automatically fades back to the unit's original face after a set number of minutes - simulating real-world wear from rain, sweat, and time. -1 disables it (the default). Unlike `cfr_dialog`'s/`cfr_compat_zen`'s per-client UI toggles, this is registered with `isGlobal` 1 so every client shares the same value, since `fnc_setCamo` reads it locally when scheduling the timer.
+
+The timer is scheduled (via `CBA_fnc_waitAndExecute`) on whichever machine called `fnc_setCamo`, and re-checks the unit's current camo face before removing it, so a stale timer can never clobber camo re-applied (or already removed) since it was scheduled.
 
 ## Networking
 
