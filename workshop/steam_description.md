@@ -23,11 +23,18 @@ Adds camo face variants for many of the base game's faces, in multiple schemes:
 
 Includes inventory items needed to apply each camo scheme, and a supply box stocked with all three.
 
+Includes a compatibility addon for Zeus Enhanced to apply camo faces to players and AI units.
+
 # How to Use
 
 Add a facepaint item to your uniform, then use ACE's self-interaction menu on yourself to open the Camo Faces dialog and apply or remove camouflage.
 
 There's also a CBA setting to switch to a leaner, dialog-free flow: enable it and the self-interaction menu instead expands directly into one action per camo scheme, plus a remove action — no dialog required.
+
+# Credits
+
+- Original mod: Sk3y, Feldhobel
+- Rewrite: Andx
 
 # Source & Issues
 
@@ -35,15 +42,11 @@ Camo Faces Redux is fully open-source. Bug reports, feature requests, and contri
 
 [GitHub Repository](https://github.com/Andx667/CamoFacesRedux)
 [Report an Issue](https://github.com/Andx667/CamoFacesRedux/issues)
+[Documentation](https://andx667.github.io/CamoFacesRedux/)
 [Discord](https://discord.gg/ag4v6kxYAa)
-
-# Credits
-
-- Original mod: Sk3y, Feldhobel
-- Rewrite: Andx
 
 Licensed under [APL-ND](https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE).
 
 ---
 
-Suchst du eine deutschsprachige Arma3 und Reforger Community? -> https://tacticalteam.de/mitmachen
+Suchst du eine deutschsprachige Arma3 und Reforger Community? -> [tacticalteam.de/mitmachen](https://tacticalteam.de/mitmachen)
