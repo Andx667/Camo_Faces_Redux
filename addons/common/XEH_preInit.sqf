@@ -18,6 +18,6 @@ private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
     QGVAR(wearOffTime), "SLIDER",
     [LLSTRING(settingWearOffTime_name), LLSTRING(settingWearOffTime_tooltip)],
     _category,
-    [-1, 240, -1, 0],
+    [0, 240, 0, 0],
     1
 ] call CBA_fnc_addSetting;
