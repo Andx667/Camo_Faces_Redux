@@ -60,7 +60,13 @@ GVAR(faces_noBlack) = ["AfricanHead_01","AfricanHead_02","AfricanHead_03",
 // vanilla BI-authored camo faces (Marksmen DLC) - one real, pre-existing CfgFaces variant per base
 // face, named completely differently from the base (CamoHead_<Race>_<NN>_F, not a suffix pattern),
 // so unlike the schemes below this can't be derived by string concatenation and has to be an
-// explicit pair table
+// explicit pair table.
+// These are NOT the same thing as the arid/lush/semi-arid faces further down, even though both
+// come from Marksmen: a CamoHead_* face keeps the plain face texture and gets its camo from a
+// shared mask (m_camo_mc.paa) in the material's second stage, which is why one generic pattern
+// covers all 39 faces and why its identityTypes span every environment. The arid/lush/semi-arid
+// faces instead have camo baked into their own textures, one per environment, and exist for only
+// three faces. Four distinct looks, not duplicates.
 GVAR(vanillaCamoFacePairs) = [
     ["PersianHead_A3_01", "CamoHead_Persian_01_F"],
     ["PersianHead_A3_02", "CamoHead_Persian_02_F"],

@@ -46,8 +46,8 @@
             <German>US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla">
-            <English>Vanilla Camouflage</English>
-            <German>Original-Tarnung</German>
+            <English>Vanilla Camouflage (Standard)</English>
+            <German>Original-Tarnung (Standard)</German>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_arid">
             <English>Vanilla Camouflage (Arid)</English>
@@ -74,8 +74,8 @@
             <German>Tarnung (Halbtrocken)</German>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_short">
-            <English>Camo</English>
-            <German>Tarnung</German>
+            <English>Camo (Standard)</English>
+            <German>Tarnung (Standard)</German>
         </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>
