@@ -59,3 +59,12 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 The 7 core schemes' `pairs` are *derived* from `GVAR(all_faces)` (via `FACES_CLASS_PREFIX`, defined in `script_component.hpp`) rather than hand-maintained separately, so they can't drift out of sync with the base face list. The `Vanilla` row is different: BI's vanilla camo classnames don't follow a suffix pattern (`CamoHead_White_01_F`, not `WhiteHead_01_something`), so its pairs come from the explicit `GVAR(vanillaCamoFacePairs)` table instead — and the row is only appended to `GVAR(schemes)` at all if `isDLCAvailable 332350` (Marksmen) is true. Every consumer just reads `GVAR(schemes)`, so on a client without Marksmen, `Vanilla` is completely and automatically absent everywhere (dialog country list, ACE actions, apply/remove) with no DLC-specific logic anywhere else in the mod.
 
 Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `cfr_dialog`'s `fnc_handleRespawn` (on respawn) can reapply it.
+
+## CBA Extended Loadout
+
+`XEH_postInit.sqf` also hooks CBA's Extended Loadout framework (`CBA_fnc_getLoadout`/`CBA_fnc_setLoadout`) so a unit's camo face rides along whenever something exports or imports a loadout through it (e.g. ACE Arsenal's loadout export, or a mission's own loadout persistence) - the unit-variable + reapply loop above only covers respawn/JIP on the *same* unit, not that round trip:
+
+- `CBA_loadoutGet` — writes `GVAR(face)` into the `extendedInfo` hashMap if the unit has a camo face applied
+- `CBA_loadoutSet` — reads it back and reapplies it via the same `cfr_common_setFace` networked event `fnc_setCamo`/`fnc_unsetCamo` use, rather than calling `setFace` directly
+
+Both are `CBA_fnc_localEvent`s fired by CBA's `addons/loadout` component, only on whichever machine actually calls `CBA_fnc_getLoadout`/`CBA_fnc_setLoadout` — no `requiredAddons` entry is needed for this, since listening to a CBA event doesn't require the firing component to be explicitly declared.
