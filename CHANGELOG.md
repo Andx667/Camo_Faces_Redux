@@ -9,21 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Camouflage for 46 faces added by later DLCs, bringing the total from 39 to 85: Apex (the nine Tanoan heads and Asian 04-07), Contact (the Livonian and Russian heads, plus White 24-32), Laws of War (Greek 11-14 and White 23), Tac-Ops Mission Pack (Barklem, Mavros and Sturrock) and Tanks (Ioannou). Each DLC's faces only appear for players who actually own it, using the same availability check the Vanilla scheme already uses for Marksmen. This roughly triples the mod's install size (textures alone grow from ~115 MB to ~310 MB) since every new head needs its own texture per scheme
-- Camouflage for Barklem, Mavros, Sturrock (Tac-Ops Mission Pack) and Ioannou (Tanks). These are named campaign personas, but their `CfgFaces` classes are ordinary, non-disabled heads underneath, so a mission can put any unit in one of these faces regardless of who owns the DLC - unlike the other DLC faces above, camo for them wasn't optional to skip
-- Marksmen's three environment-specific camo faces — arid, lush and semi-arid — are now selectable alongside the Vanilla scheme. Bohemia authored these for only three faces, so they are offered to `PersianHead_A3_01`, `GreekHead_A3_02` and `WhiteHead_11` and hidden for everyone else
-- Snow Stripes listed in the camo scheme table in the faces component documentation, which had been missing it
+- Camouflage for 46 faces added by later DLCs, bringing the total from 39 to 85: Apex (the nine Tanoan heads and Asian 04-07), Contact (the Livonian and Russian heads, plus White 24-32), Laws of War (Greek 11-14 and White 23), Tac-Ops Mission Pack (Barklem, Mavros and Sturrock) and Tanks (Ioannou). Most only appear for players who actually own the relevant DLC, the same way the Vanilla scheme already does for Marksmen owners - Barklem, Mavros, Sturrock and Ioannou are the exception: they're named campaign personas, but their faces are ordinary, non-disabled heads that any mission can put a unit in regardless of who owns the DLC, so camo for them isn't optional to skip. Night isn't offered on the African, Tanoan or Barklem heads, whose skin is dark enough that black paint reads as almost nothing. This roughly triples the mod's install size (textures alone grow from ~115 MB to ~310 MB)
+- Marksmen's three environment-specific camo faces — arid, lush and semi-arid — are now selectable alongside the renamed "Vanilla Camouflage (Standard)" scheme. Bohemia authored these for only three faces, so they are offered to `PersianHead_A3_01`, `GreekHead_A3_02` and `WhiteHead_11` and hidden for everyone else
 
 ### Fixed
 
-- Five camo faces were named after the wrong person. `GreekHead_A3_06` through `_09` and `WhiteHead_21` took their names from the heads whose textures they reuse rather than their own, so their camo variants appeared in the dialog under a different surname to the face itself — Gikas showed as Efthimiou, Christou as Fotiou, Kanelloupou as Georgiou, Savalas as Chatzis, and O'Sullivan as O'Smith
-- The dialog no longer offers the Vanilla category to a unit whose face has no vanilla camo variant, where it would previously open an empty pattern list. Vanilla's variants are Bohemia's own and exist only for the base game's original 39 faces
-- 21 of the DLC heads whose hairline differs from their group's base face (e.g. Old Man's grey hair) were only getting that hairline on their BW Camouflage variant. Every other scheme for those heads reverted to the group's base hairline instead, since the generator only restated the override once per head rather than on every scheme class
-
-### Changed
-
-- The plain Vanilla scheme is now named "Vanilla Camouflage (Standard)", so it reads as one of four peers rather than an unqualified leftover next to the arid/lush/semi-arid entries. It remains a distinct look: Bohemia applies it through a shared camo mask over the plain face texture, whereas the three environment variants have camo baked into their own textures
-- `cfr_common`'s `GVAR(faces_african)` is now `GVAR(faces_noBlack)`, since the Tanoan heads join the African ones in having no Night variant — black paint on skin that dark reads as almost nothing
+- Snow Stripes listed in the camo scheme table in the faces component documentation, which had been missing it
 
 ## [0.9.3] - 2026-09-13
 
