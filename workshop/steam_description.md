@@ -40,9 +40,9 @@ There's also a CBA setting to switch to a leaner, dialog-free flow: enable it an
 
 Camo Faces Redux is fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
-[GitHub Repository](https://github.com/Andx667/CamoFacesRedux)
-[Report an Issue](https://github.com/Andx667/CamoFacesRedux/issues)
-[Documentation](https://andx667.github.io/CamoFacesRedux/)
+[GitHub Repository](https://github.com/Andx667/CamoFacesRedux)  
+[Report an Issue](https://github.com/Andx667/CamoFacesRedux/issues)  
+[Documentation](https://andx667.github.io/CamoFacesRedux/)  
 [Discord](https://discord.gg/ag4v6kxYAa)
 
 Licensed under [APL-ND](https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE).
