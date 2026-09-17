@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Camouflage for 42 faces added by later DLCs, bringing the total from 39 to 81: Apex (the nine Tanoan heads and Asian 04-07), Contact (the Livonian and Russian heads, plus White 24-32) and Laws of War (Greek 11-14 and White 23). Each DLC's faces only appear for players who actually own it, using the same availability check the Vanilla scheme already uses for Marksmen
+- Snow Stripes listed in the camo scheme table in the faces component documentation, which had been missing it
+
+### Fixed
+
+- The dialog no longer offers the Vanilla category to a unit whose face has no vanilla camo variant, where it would previously open an empty pattern list. Vanilla's variants are Bohemia's own and exist only for the base game's original 39 faces
+
+### Changed
+
+- `cfr_common`'s `GVAR(faces_african)` is now `GVAR(faces_noBlack)`, since the Tanoan heads join the African ones in having no Night variant — black paint on skin that dark reads as almost nothing
+
 ## [0.9.3] - 2026-09-13
 
 ### Changed

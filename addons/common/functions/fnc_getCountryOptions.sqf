@@ -47,11 +47,16 @@ if (QEGVAR(items,SnowStripes_Facepaint) in _uniformItems) then {
 
 // Vanilla isn't tied to one specific item (any of the 3 unlocks it) and is only present in
 // GVAR(schemes) at all if the Marksmen DLC is available - both checked via the scheme's own row,
-// so this naturally disappears with no extra DLC-specific logic here
+// so this naturally disappears with no extra DLC-specific logic here.
+// The face check matters as well: Vanilla's pairs are BI's own CamoHead_* faces, which exist only
+// for the base game's original heads, so a unit on a DLC-added face has no Vanilla variant. Without
+// this the category would still be listed and then show an empty pattern list (the other three
+// categories can't hit that - every scheme they offer covers every face in GVAR(all_faces)).
 private _vanillaIdx = GVAR(schemes) findIf {(_x select 0) == "Vanilla"};
 if (_vanillaIdx != -1) then {
-    (GVAR(schemes) select _vanillaIdx) params ["", "", "_itemClasses"];
-    if ((_itemClasses findIf {_x in _uniformItems}) != -1) then {
+    (GVAR(schemes) select _vanillaIdx) params ["", "_pairs", "_itemClasses"];
+    private _face = face _unit;
+    if ((_itemClasses findIf {_x in _uniformItems}) != -1 && {(_pairs findIf {(_x select 0) == _face}) != -1}) then {
         _camolist pushBack [localize LSTRING(camo_vanilla), "vanilla_select"];
     };
 };

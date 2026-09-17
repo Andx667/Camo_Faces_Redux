@@ -700,3 +700,609 @@ class GVAR(WhiteHead_21_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_21_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH21\m_white_21_co.paa);
 };
+
+// White heads added by DLCs
+class GVAR(WhiteHead_24_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_24_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH24\m_capek_co.paa);
+    identityTypes[] = {};
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    material = QPATHTOF(data\bwtarn\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH24\m_capek_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_24_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_24_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH24\m_capek_co.paa);
+    material = QPATHTOF(data\bwstripes\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH24\m_capek_injury.rvmat);
+};
+class GVAR(WhiteHead_24_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_24_Black);
+    texture = QPATHTOF(data\black\WH24\m_capek_co.paa);
+    material = QPATHTOF(data\black\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH24\m_capek_injury.rvmat);
+};
+class GVAR(WhiteHead_24_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_24_Serbian);
+    texture = QPATHTOF(data\serbian\WH24\m_capek_co.paa);
+    material = QPATHTOF(data\serbian\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH24\m_capek_injury.rvmat);
+};
+class GVAR(WhiteHead_24_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_24_USStripes);
+    texture = QPATHTOF(data\usstripes\WH24\m_capek_co.paa);
+    material = QPATHTOF(data\usstripes\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH24\m_capek_injury.rvmat);
+};
+class GVAR(WhiteHead_24_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_24_USStains);
+    texture = QPATHTOF(data\usstains\WH24\m_capek_co.paa);
+    material = QPATHTOF(data\usstains\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH24\m_capek_injury.rvmat);
+};
+class GVAR(WhiteHead_24_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_24_USFlash);
+    texture = QPATHTOF(data\usflash\WH24\m_capek_co.paa);
+    material = QPATHTOF(data\usflash\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH24\m_capek_injury.rvmat);
+};
+class GVAR(WhiteHead_24_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_24_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH24\m_capek_co.paa);
+    material = QPATHTOF(data\snowstripes\WH24\m_capek.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH24\m_capek_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH24\m_capek_injury.rvmat);
+};
+
+class GVAR(WhiteHead_25_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_25_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH25\m_dillon_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH25\m_dillon_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_25_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_25_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH25\m_dillon_co.paa);
+    material = QPATHTOF(data\bwstripes\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH25\m_dillon_injury.rvmat);
+};
+class GVAR(WhiteHead_25_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_25_Black);
+    texture = QPATHTOF(data\black\WH25\m_dillon_co.paa);
+    material = QPATHTOF(data\black\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH25\m_dillon_injury.rvmat);
+};
+class GVAR(WhiteHead_25_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_25_Serbian);
+    texture = QPATHTOF(data\serbian\WH25\m_dillon_co.paa);
+    material = QPATHTOF(data\serbian\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH25\m_dillon_injury.rvmat);
+};
+class GVAR(WhiteHead_25_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_25_USStripes);
+    texture = QPATHTOF(data\usstripes\WH25\m_dillon_co.paa);
+    material = QPATHTOF(data\usstripes\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH25\m_dillon_injury.rvmat);
+};
+class GVAR(WhiteHead_25_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_25_USStains);
+    texture = QPATHTOF(data\usstains\WH25\m_dillon_co.paa);
+    material = QPATHTOF(data\usstains\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH25\m_dillon_injury.rvmat);
+};
+class GVAR(WhiteHead_25_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_25_USFlash);
+    texture = QPATHTOF(data\usflash\WH25\m_dillon_co.paa);
+    material = QPATHTOF(data\usflash\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH25\m_dillon_injury.rvmat);
+};
+class GVAR(WhiteHead_25_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_25_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH25\m_dillon_co.paa);
+    material = QPATHTOF(data\snowstripes\WH25\m_dillon.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH25\m_dillon_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH25\m_dillon_injury.rvmat);
+};
+
+class GVAR(WhiteHead_26_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_26_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH26\m_homewood_co.paa);
+    identityTypes[] = {};
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    material = QPATHTOF(data\bwtarn\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH26\m_homewood_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_26_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_26_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH26\m_homewood_co.paa);
+    material = QPATHTOF(data\bwstripes\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH26\m_homewood_injury.rvmat);
+};
+class GVAR(WhiteHead_26_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_26_Black);
+    texture = QPATHTOF(data\black\WH26\m_homewood_co.paa);
+    material = QPATHTOF(data\black\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH26\m_homewood_injury.rvmat);
+};
+class GVAR(WhiteHead_26_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_26_Serbian);
+    texture = QPATHTOF(data\serbian\WH26\m_homewood_co.paa);
+    material = QPATHTOF(data\serbian\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH26\m_homewood_injury.rvmat);
+};
+class GVAR(WhiteHead_26_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_26_USStripes);
+    texture = QPATHTOF(data\usstripes\WH26\m_homewood_co.paa);
+    material = QPATHTOF(data\usstripes\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH26\m_homewood_injury.rvmat);
+};
+class GVAR(WhiteHead_26_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_26_USStains);
+    texture = QPATHTOF(data\usstains\WH26\m_homewood_co.paa);
+    material = QPATHTOF(data\usstains\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH26\m_homewood_injury.rvmat);
+};
+class GVAR(WhiteHead_26_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_26_USFlash);
+    texture = QPATHTOF(data\usflash\WH26\m_homewood_co.paa);
+    material = QPATHTOF(data\usflash\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH26\m_homewood_injury.rvmat);
+};
+class GVAR(WhiteHead_26_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_26_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH26\m_homewood_co.paa);
+    material = QPATHTOF(data\snowstripes\WH26\m_homewood.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH26\m_homewood_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH26\m_homewood_injury.rvmat);
+};
+
+class GVAR(WhiteHead_27_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_27_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH27\m_kesson_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH27\m_kesson_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_27_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_27_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH27\m_kesson_co.paa);
+    material = QPATHTOF(data\bwstripes\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH27\m_kesson_injury.rvmat);
+};
+class GVAR(WhiteHead_27_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_27_Black);
+    texture = QPATHTOF(data\black\WH27\m_kesson_co.paa);
+    material = QPATHTOF(data\black\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH27\m_kesson_injury.rvmat);
+};
+class GVAR(WhiteHead_27_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_27_Serbian);
+    texture = QPATHTOF(data\serbian\WH27\m_kesson_co.paa);
+    material = QPATHTOF(data\serbian\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH27\m_kesson_injury.rvmat);
+};
+class GVAR(WhiteHead_27_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_27_USStripes);
+    texture = QPATHTOF(data\usstripes\WH27\m_kesson_co.paa);
+    material = QPATHTOF(data\usstripes\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH27\m_kesson_injury.rvmat);
+};
+class GVAR(WhiteHead_27_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_27_USStains);
+    texture = QPATHTOF(data\usstains\WH27\m_kesson_co.paa);
+    material = QPATHTOF(data\usstains\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH27\m_kesson_injury.rvmat);
+};
+class GVAR(WhiteHead_27_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_27_USFlash);
+    texture = QPATHTOF(data\usflash\WH27\m_kesson_co.paa);
+    material = QPATHTOF(data\usflash\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH27\m_kesson_injury.rvmat);
+};
+class GVAR(WhiteHead_27_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_27_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH27\m_kesson_co.paa);
+    material = QPATHTOF(data\snowstripes\WH27\m_kesson.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH27\m_kesson_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH27\m_kesson_injury.rvmat);
+};
+
+class GVAR(WhiteHead_28_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_28_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH28\m_kingsly_co.paa);
+    identityTypes[] = {};
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
+    material = QPATHTOF(data\bwtarn\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH28\m_kingsly_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_28_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_28_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH28\m_kingsly_co.paa);
+    material = QPATHTOF(data\bwstripes\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH28\m_kingsly_injury.rvmat);
+};
+class GVAR(WhiteHead_28_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_28_Black);
+    texture = QPATHTOF(data\black\WH28\m_kingsly_co.paa);
+    material = QPATHTOF(data\black\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH28\m_kingsly_injury.rvmat);
+};
+class GVAR(WhiteHead_28_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_28_Serbian);
+    texture = QPATHTOF(data\serbian\WH28\m_kingsly_co.paa);
+    material = QPATHTOF(data\serbian\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH28\m_kingsly_injury.rvmat);
+};
+class GVAR(WhiteHead_28_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_28_USStripes);
+    texture = QPATHTOF(data\usstripes\WH28\m_kingsly_co.paa);
+    material = QPATHTOF(data\usstripes\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH28\m_kingsly_injury.rvmat);
+};
+class GVAR(WhiteHead_28_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_28_USStains);
+    texture = QPATHTOF(data\usstains\WH28\m_kingsly_co.paa);
+    material = QPATHTOF(data\usstains\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH28\m_kingsly_injury.rvmat);
+};
+class GVAR(WhiteHead_28_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_28_USFlash);
+    texture = QPATHTOF(data\usflash\WH28\m_kingsly_co.paa);
+    material = QPATHTOF(data\usflash\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH28\m_kingsly_injury.rvmat);
+};
+class GVAR(WhiteHead_28_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_28_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH28\m_kingsly_co.paa);
+    material = QPATHTOF(data\snowstripes\WH28\m_kingsly.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH28\m_kingsly_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH28\m_kingsly_injury.rvmat);
+};
+
+class GVAR(WhiteHead_29_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_29_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH29\m_kruglikov_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH29\m_kruglikov_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_29_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_29_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH29\m_kruglikov_co.paa);
+    material = QPATHTOF(data\bwstripes\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH29\m_kruglikov_injury.rvmat);
+};
+class GVAR(WhiteHead_29_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_29_Black);
+    texture = QPATHTOF(data\black\WH29\m_kruglikov_co.paa);
+    material = QPATHTOF(data\black\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH29\m_kruglikov_injury.rvmat);
+};
+class GVAR(WhiteHead_29_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_29_Serbian);
+    texture = QPATHTOF(data\serbian\WH29\m_kruglikov_co.paa);
+    material = QPATHTOF(data\serbian\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH29\m_kruglikov_injury.rvmat);
+};
+class GVAR(WhiteHead_29_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_29_USStripes);
+    texture = QPATHTOF(data\usstripes\WH29\m_kruglikov_co.paa);
+    material = QPATHTOF(data\usstripes\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH29\m_kruglikov_injury.rvmat);
+};
+class GVAR(WhiteHead_29_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_29_USStains);
+    texture = QPATHTOF(data\usstains\WH29\m_kruglikov_co.paa);
+    material = QPATHTOF(data\usstains\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH29\m_kruglikov_injury.rvmat);
+};
+class GVAR(WhiteHead_29_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_29_USFlash);
+    texture = QPATHTOF(data\usflash\WH29\m_kruglikov_co.paa);
+    material = QPATHTOF(data\usflash\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH29\m_kruglikov_injury.rvmat);
+};
+class GVAR(WhiteHead_29_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_29_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH29\m_kruglikov_co.paa);
+    material = QPATHTOF(data\snowstripes\WH29\m_kruglikov.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH29\m_kruglikov_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH29\m_kruglikov_injury.rvmat);
+};
+
+class GVAR(WhiteHead_30_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_30_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH30\m_smolko_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH30\m_smolko_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_30_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_30_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH30\m_smolko_co.paa);
+    material = QPATHTOF(data\bwstripes\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH30\m_smolko_injury.rvmat);
+};
+class GVAR(WhiteHead_30_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_30_Black);
+    texture = QPATHTOF(data\black\WH30\m_smolko_co.paa);
+    material = QPATHTOF(data\black\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH30\m_smolko_injury.rvmat);
+};
+class GVAR(WhiteHead_30_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_30_Serbian);
+    texture = QPATHTOF(data\serbian\WH30\m_smolko_co.paa);
+    material = QPATHTOF(data\serbian\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH30\m_smolko_injury.rvmat);
+};
+class GVAR(WhiteHead_30_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_30_USStripes);
+    texture = QPATHTOF(data\usstripes\WH30\m_smolko_co.paa);
+    material = QPATHTOF(data\usstripes\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH30\m_smolko_injury.rvmat);
+};
+class GVAR(WhiteHead_30_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_30_USStains);
+    texture = QPATHTOF(data\usstains\WH30\m_smolko_co.paa);
+    material = QPATHTOF(data\usstains\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH30\m_smolko_injury.rvmat);
+};
+class GVAR(WhiteHead_30_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_30_USFlash);
+    texture = QPATHTOF(data\usflash\WH30\m_smolko_co.paa);
+    material = QPATHTOF(data\usflash\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH30\m_smolko_injury.rvmat);
+};
+class GVAR(WhiteHead_30_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_30_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH30\m_smolko_co.paa);
+    material = QPATHTOF(data\snowstripes\WH30\m_smolko.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH30\m_smolko_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH30\m_smolko_injury.rvmat);
+};
+
+class GVAR(WhiteHead_31_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_31_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH31\m_stype_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH31\m_stype_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_31_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_31_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH31\m_stype_co.paa);
+    material = QPATHTOF(data\bwstripes\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH31\m_stype_injury.rvmat);
+};
+class GVAR(WhiteHead_31_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_31_Black);
+    texture = QPATHTOF(data\black\WH31\m_stype_co.paa);
+    material = QPATHTOF(data\black\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH31\m_stype_injury.rvmat);
+};
+class GVAR(WhiteHead_31_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_31_Serbian);
+    texture = QPATHTOF(data\serbian\WH31\m_stype_co.paa);
+    material = QPATHTOF(data\serbian\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH31\m_stype_injury.rvmat);
+};
+class GVAR(WhiteHead_31_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_31_USStripes);
+    texture = QPATHTOF(data\usstripes\WH31\m_stype_co.paa);
+    material = QPATHTOF(data\usstripes\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH31\m_stype_injury.rvmat);
+};
+class GVAR(WhiteHead_31_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_31_USStains);
+    texture = QPATHTOF(data\usstains\WH31\m_stype_co.paa);
+    material = QPATHTOF(data\usstains\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH31\m_stype_injury.rvmat);
+};
+class GVAR(WhiteHead_31_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_31_USFlash);
+    texture = QPATHTOF(data\usflash\WH31\m_stype_co.paa);
+    material = QPATHTOF(data\usflash\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH31\m_stype_injury.rvmat);
+};
+class GVAR(WhiteHead_31_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_31_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH31\m_stype_co.paa);
+    material = QPATHTOF(data\snowstripes\WH31\m_stype.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH31\m_stype_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH31\m_stype_injury.rvmat);
+};
+
+class GVAR(WhiteHead_32_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_32_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH32\m_rudwell_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH32\m_rudwell_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_32_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_32_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH32\m_rudwell_co.paa);
+    material = QPATHTOF(data\bwstripes\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH32\m_rudwell_injury.rvmat);
+};
+class GVAR(WhiteHead_32_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_32_Black);
+    texture = QPATHTOF(data\black\WH32\m_rudwell_co.paa);
+    material = QPATHTOF(data\black\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH32\m_rudwell_injury.rvmat);
+};
+class GVAR(WhiteHead_32_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_32_Serbian);
+    texture = QPATHTOF(data\serbian\WH32\m_rudwell_co.paa);
+    material = QPATHTOF(data\serbian\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH32\m_rudwell_injury.rvmat);
+};
+class GVAR(WhiteHead_32_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_32_USStripes);
+    texture = QPATHTOF(data\usstripes\WH32\m_rudwell_co.paa);
+    material = QPATHTOF(data\usstripes\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH32\m_rudwell_injury.rvmat);
+};
+class GVAR(WhiteHead_32_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_32_USStains);
+    texture = QPATHTOF(data\usstains\WH32\m_rudwell_co.paa);
+    material = QPATHTOF(data\usstains\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH32\m_rudwell_injury.rvmat);
+};
+class GVAR(WhiteHead_32_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_32_USFlash);
+    texture = QPATHTOF(data\usflash\WH32\m_rudwell_co.paa);
+    material = QPATHTOF(data\usflash\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH32\m_rudwell_injury.rvmat);
+};
+class GVAR(WhiteHead_32_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_32_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH32\m_rudwell_co.paa);
+    material = QPATHTOF(data\snowstripes\WH32\m_rudwell.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH32\m_rudwell_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH32\m_rudwell_injury.rvmat);
+};
+
+class GVAR(WhiteHead_23_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(WhiteHead_23_BWTarn);
+    texture = QPATHTOF(data\bwtarn\WH23\m_white_22_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\bwtarn\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwtarn\WH23\m_white_22_injury.rvmat);
+    disabled = 0;
+};
+class GVAR(WhiteHead_23_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_23_BWStripes);
+    texture = QPATHTOF(data\bwstripes\WH23\m_white_22_co.paa);
+    material = QPATHTOF(data\bwstripes\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\bwstripes\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\bwstripes\WH23\m_white_22_injury.rvmat);
+};
+class GVAR(WhiteHead_23_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_23_Black);
+    texture = QPATHTOF(data\black\WH23\m_white_22_co.paa);
+    material = QPATHTOF(data\black\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\black\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\black\WH23\m_white_22_injury.rvmat);
+};
+class GVAR(WhiteHead_23_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_23_Serbian);
+    texture = QPATHTOF(data\serbian\WH23\m_white_22_co.paa);
+    material = QPATHTOF(data\serbian\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\serbian\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\serbian\WH23\m_white_22_injury.rvmat);
+};
+class GVAR(WhiteHead_23_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_23_USStripes);
+    texture = QPATHTOF(data\usstripes\WH23\m_white_22_co.paa);
+    material = QPATHTOF(data\usstripes\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\usstripes\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstripes\WH23\m_white_22_injury.rvmat);
+};
+class GVAR(WhiteHead_23_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_23_USStains);
+    texture = QPATHTOF(data\usstains\WH23\m_white_22_co.paa);
+    material = QPATHTOF(data\usstains\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\usstains\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usstains\WH23\m_white_22_injury.rvmat);
+};
+class GVAR(WhiteHead_23_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_23_USFlash);
+    texture = QPATHTOF(data\usflash\WH23\m_white_22_co.paa);
+    material = QPATHTOF(data\usflash\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\usflash\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\usflash\WH23\m_white_22_injury.rvmat);
+};
+class GVAR(WhiteHead_23_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(WhiteHead_23_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\WH23\m_white_22_co.paa);
+    material = QPATHTOF(data\snowstripes\WH23\m_white_22.rvmat);
+    materialWounded1 = QPATHTOF(data\snowstripes\WH23\m_white_22_injury.rvmat);
+    materialWounded2 = QPATHTOF(data\snowstripes\WH23\m_white_22_injury.rvmat);
+};

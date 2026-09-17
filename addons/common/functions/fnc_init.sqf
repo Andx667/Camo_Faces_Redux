@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Builds GVAR(all_faces), GVAR(faces_african), and GVAR(schemes) - the single shared source of
+ * Builds GVAR(all_faces), GVAR(faces_noBlack), and GVAR(schemes) - the single shared source of
  * truth every consumer (apply/remove, dialog UI, ACE self-actions, the ZEN compat layer) reads
  * camo scheme data from - deriving each scheme's base-face/camo-face pairs from GVAR(all_faces)
  * so they can't drift out of sync with it. Also appends the Vanilla scheme if the Marksmen DLC is
@@ -28,8 +28,34 @@ GVAR(all_faces) = ["PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03",
             "GreekHead_A3_01","GreekHead_A3_02","GreekHead_A3_03","GreekHead_A3_04","GreekHead_A3_05","GreekHead_A3_06","GreekHead_A3_07","GreekHead_A3_08","GreekHead_A3_09",
             "WhiteHead_01","WhiteHead_02","WhiteHead_03","WhiteHead_04","WhiteHead_05","WhiteHead_06","WhiteHead_07","WhiteHead_08","WhiteHead_09","WhiteHead_10","WhiteHead_11","WhiteHead_12","WhiteHead_13","WhiteHead_14","WhiteHead_15","WhiteHead_16","WhiteHead_17","WhiteHead_18","WhiteHead_19","WhiteHead_20","WhiteHead_21"];
 
-// African heads have no "Black" (night) camo variant defined in cfr_faces
-GVAR(faces_african) = ["AfricanHead_01", "AfricanHead_02", "AfricanHead_03"];
+// Faces added by DLCs released after the base game. Appended only when that DLC is actually
+// available, through the same isDLCAvailable gate the Vanilla scheme uses below: a client
+// without the DLC never gets those faces into GVAR(all_faces), so they vanish from every
+// consumer at once (dialog, ACE self-actions, ZEN compat) with no DLC-specific logic anywhere
+// else - exactly how the Vanilla row already behaves for players without Marksmen.
+{
+    _x params ["_appId", "_dlcFaces"];
+    if (isDLCAvailable _appId) then {
+        GVAR(all_faces) append _dlcFaces;
+    };
+} forEach [
+    // Apex. TanoanHead_A3_09 is the Old Man scenario's head: Old Man declares no appId of its
+    // own and its PBO ships inside Apex's folder, so it rides along with Apex's gate rather
+    // than being left ungated.
+    [395180, ["TanoanHead_A3_01","TanoanHead_A3_02","TanoanHead_A3_03","TanoanHead_A3_04","TanoanHead_A3_05","TanoanHead_A3_06","TanoanHead_A3_07","TanoanHead_A3_08","TanoanHead_A3_09",
+            "AsianHead_A3_04","AsianHead_A3_05","AsianHead_A3_06","AsianHead_A3_07"]],
+    // Contact
+    [1021790, ["WhiteHead_24","WhiteHead_25","WhiteHead_26","WhiteHead_27","WhiteHead_28","WhiteHead_29","WhiteHead_30","WhiteHead_31","WhiteHead_32",
+            "LivonianHead_1","LivonianHead_2","LivonianHead_3","LivonianHead_4","LivonianHead_5","LivonianHead_6","LivonianHead_7","LivonianHead_8","LivonianHead_9","LivonianHead_10",
+            "RussianHead_1","RussianHead_2","RussianHead_3","RussianHead_4","RussianHead_5"]],
+    // Laws of War
+    [571710, ["GreekHead_A3_11","GreekHead_A3_12","GreekHead_A3_13","GreekHead_A3_14","WhiteHead_23"]]
+];
+
+// Heads with no "Black" (night) camo variant in cfr_faces - black paint on skin this dark reads
+// as almost nothing, so neither the African nor the Tanoan heads have one
+GVAR(faces_noBlack) = ["AfricanHead_01","AfricanHead_02","AfricanHead_03",
+            "TanoanHead_A3_01","TanoanHead_A3_02","TanoanHead_A3_03","TanoanHead_A3_04","TanoanHead_A3_05","TanoanHead_A3_06","TanoanHead_A3_07","TanoanHead_A3_08","TanoanHead_A3_09"];
 
 // vanilla BI-authored camo faces (Marksmen DLC) - one real, pre-existing CfgFaces variant per base
 // face, named completely differently from the base (CamoHead_<Race>_<NN>_F, not a suffix pattern),
@@ -89,7 +115,7 @@ GVAR(vanillaCamoFacePairs) = [
 // drift out of sync with the base face list.
 GVAR(schemes) = [
     ["BWTarn", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_BWTarn"]}), [QEGVAR(items,BW_Facepaint)], "camo_bwtarn"],
-    ["Black", ((GVAR(all_faces) - GVAR(faces_african)) apply {[_x, FACES_CLASS_PREFIX + _x + "_Black"]}), [QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)], "camo_black"],
+    ["Black", ((GVAR(all_faces) - GVAR(faces_noBlack)) apply {[_x, FACES_CLASS_PREFIX + _x + "_Black"]}), [QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)], "camo_black"],
     ["BWStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_BWStripes"]}), [QEGVAR(items,BW_Facepaint)], "camo_bwstripes"],
     ["Serbian", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_Serbian"]}), [QEGVAR(items,Serbian_Facepaint)], "camo_serbian"],
     ["USStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_USStripes"]}), [QEGVAR(items,US_Facepaint)], "camo_usstripes"],

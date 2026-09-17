@@ -45,7 +45,7 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 | Variable | Contents |
 | --- | --- |
 | `GVAR(all_faces)` | Every base face classname this mod knows how to camouflage |
-| `GVAR(faces_african)` | The base heads with no "Black" (night) camo variant in [`cfr_faces`](../faces/README.md) |
+| `GVAR(faces_noBlack)` | The base heads with no "Black" (night) camo variant in [`cfr_faces`](../faces/README.md) — the African and Tanoan heads, whose skin is dark enough that black paint reads as almost nothing |
 | `GVAR(vanillaCamoFacePairs)` | `[baseFace, camoFace]` pairs for the vanilla, BI-authored camo faces from the Marksmen DLC (`CamoHead_<Race>_<NN>_F`) — one entry per base face, verified against Bohemia's own config |
 | `GVAR(schemes)` | The single source of truth every scheme consumer reads from — see below |
 
