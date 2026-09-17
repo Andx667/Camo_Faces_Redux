@@ -127,15 +127,38 @@ GVAR(schemes) = [
     ["SnowStripes", (GVAR(all_faces) apply {[_x, FACES_CLASS_PREFIX + _x + "_SnowStripes"]}), [QEGVAR(items,SnowStripes_Facepaint)], "camo_snowstripes"]
 ];
 
-// Vanilla is appended only if the Marksmen DLC (Steam App ID 332350) is actually available - every
-// consumer just reads GVAR(schemes), so if this row was never added, Vanilla is automatically and
-// completely invisible everywhere (UI, ACE actions, apply/remove) with no special-casing needed
-// anywhere else. The 7 core schemes above have no dependency on this check at all.
+// Marksmen also ships three environment-specific camo faces, but only as variants of three
+// particular base faces rather than one per face like the CamoHead_* set above. Each variant is
+// its own scheme row because a scheme's pairs map a base face to exactly one camo face, so one
+// base face can't offer three choices within a single row. Which base face each one is painted
+// over was confirmed by comparing the textures outside the painted area.
+GVAR(markCamoFaceSchemes) = [
+    ["VanillaArid", [
+        ["PersianHead_A3_01", "PersianHead_A3_04_a"],
+        ["GreekHead_A3_02", "GreekHead_A3_10_a"],
+        ["WhiteHead_11", "WhiteHead_22_a"]
+    ], "camo_vanilla_arid"],
+    ["VanillaLush", [
+        ["PersianHead_A3_01", "PersianHead_A3_04_l"],
+        ["GreekHead_A3_02", "GreekHead_A3_10_l"],
+        ["WhiteHead_11", "WhiteHead_22_l"]
+    ], "camo_vanilla_lush"],
+    ["VanillaSemiArid", [
+        ["PersianHead_A3_01", "PersianHead_A3_04_sa"],
+        ["GreekHead_A3_02", "GreekHead_A3_10_sa"],
+        ["WhiteHead_11", "WhiteHead_22_sa"]
+    ], "camo_vanilla_semiarid"]
+];
+
+// The vanilla rows are appended only if the Marksmen DLC (Steam App ID 332350) is actually
+// available - every consumer just reads GVAR(schemes), so if these rows were never added they are
+// automatically and completely invisible everywhere (UI, ACE actions, apply/remove) with no
+// special-casing needed anywhere else. The 8 core schemes above have no dependency on this check.
 if (isDLCAvailable 332350) then {
-    GVAR(schemes) pushBack [
-        "Vanilla",
-        GVAR(vanillaCamoFacePairs),
-        [QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)],
-        "camo_vanilla"
-    ];
+    private _anyFacepaint = [QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)];
+    GVAR(schemes) pushBack ["Vanilla", GVAR(vanillaCamoFacePairs), _anyFacepaint, "camo_vanilla"];
+    {
+        _x params ["_schemeId", "_pairs", "_stringKey"];
+        GVAR(schemes) pushBack [_schemeId, _pairs, _anyFacepaint, _stringKey];
+    } forEach GVAR(markCamoFaceSchemes);
 };

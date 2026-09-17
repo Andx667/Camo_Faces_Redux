@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Camouflage for 42 faces added by later DLCs, bringing the total from 39 to 81: Apex (the nine Tanoan heads and Asian 04-07), Contact (the Livonian and Russian heads, plus White 24-32) and Laws of War (Greek 11-14 and White 23). Each DLC's faces only appear for players who actually own it, using the same availability check the Vanilla scheme already uses for Marksmen
+- Marksmen's three environment-specific camo faces — arid, lush and semi-arid — are now selectable alongside the Vanilla scheme. Bohemia authored these for only three faces, so they are offered to `PersianHead_A3_01`, `GreekHead_A3_02` and `WhiteHead_11` and hidden for everyone else
 - Snow Stripes listed in the camo scheme table in the faces component documentation, which had been missing it
 
 ### Fixed

@@ -52,6 +52,8 @@ if (QEGVAR(items,SnowStripes_Facepaint) in _uniformItems) then {
 // for the base game's original heads, so a unit on a DLC-added face has no Vanilla variant. Without
 // this the category would still be listed and then show an empty pattern list (the other three
 // categories can't hit that - every scheme they offer covers every face in GVAR(all_faces)).
+// Checking the Vanilla row alone covers the category's other three schemes too: the environment
+// variants exist only for base faces, which all have a plain Vanilla variant as well.
 private _vanillaIdx = GVAR(schemes) findIf {(_x select 0) == "Vanilla"};
 if (_vanillaIdx != -1) then {
     (GVAR(schemes) select _vanillaIdx) params ["", "_pairs", "_itemClasses"];
