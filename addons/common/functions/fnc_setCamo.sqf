@@ -75,9 +75,11 @@ if (_hintOwner) then { hint (localize LSTRING(camoApplied)); };
 // XEH_preInit.sqf) is 0 by default, meaning disabled. Scheduled locally on this machine only (same
 // as the hint/event above), so it won't survive this machine disconnecting before expiry. Uses a
 // cancellable CBA_fnc_addPerFrameHandler (instead of CBA_fnc_waitAndExecute, which can't be
-// cancelled) so fnc_unsetCamo.sqf can kill this outright the moment camo comes off - applying a
-// *different* camo always removes the current one first (see fnc_canApplyScheme.sqf's gating), so
-// by the time a new timer is created here, any previous one for this unit is already gone.
+// cancelled) so fnc_unsetCamo.sqf can kill this outright the moment camo comes off - a second timer
+// for this unit can never get created on top of it: every scheme's pairs (see fnc_init.sqf) map from
+// the same shared set of base faces, never from another scheme's camo face, so once _targetFace above
+// is a camo face, _pairs findIf above can't match it in any scheme and this function exits early
+// (line 58) until fnc_unsetCamo.sqf runs and restores a base face.
 private _wearOffMinutes = GVAR(wearOffTime);
 if (_wearOffMinutes > 0) then {
     private _expiry = time + _wearOffMinutes * 60;
