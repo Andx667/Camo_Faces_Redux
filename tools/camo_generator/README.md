@@ -1,7 +1,7 @@
 # Camo generator
 
 Applies the mod's existing camo schemes to heads nobody painted by hand, and writes the config
-that goes with them. This is what produced the 42 DLC heads in `addons/faces`.
+that goes with them. This is what produced the 46 DLC heads in `addons/faces`.
 
 ## How it works
 
@@ -46,8 +46,9 @@ python validate.py names      # every camo face is named after its own head
 hemtt build
 ```
 
-`generate_config.py` **appends** to the pre-existing `Faces_White/Asian/Greek.hpp`, so it is not
-idempotent against them — `git checkout -- addons/faces` before re-running.
+`generate_config.py` **appends** to the pre-existing `Faces_White/Asian/Greek/African.hpp` (and
+skips any head already present in a group's file or the stringtable), so it is safe to re-run
+after adding more heads to `NEW` without reverting `addons/faces` first.
 
 ## Adding more heads
 
@@ -56,19 +57,25 @@ idempotent against them — `git checkout -- addons/faces` before re-running.
    the `isDLCAvailable` gate covers them.
 3. Run `resolve_vanilla.py` (needs `CFR_CONFIG_DUMP`) to refresh `data/names.json` and
    `data/vanilla_props.json`, then the pipeline above. `names.json` covers the hand-written heads
-   too, which is what lets `validate.py names` run offline.
+   too, which is what lets `validate.py names` run offline. If a head is a named campaign persona
+   (e.g. Barklem, Mavros), its display-name string may live in that DLC's `languagemissions_f_*`
+   PBO rather than its `language_f_*` one - add both to `LANG_PBOS` if names come back unresolved.
 
-Three things are easy to get wrong, and all three are handled by the scripts rather than by
+Four things are easy to get wrong, and all four are handled by the scripts rather than by
 assumption — worth knowing if you extend them:
 
 - **A head needs its own `.rvmat` only when its vanilla rvmat hardcodes a `_co` path** that has
   to be redirected. The African heads and `TanoanHead_A3_01` use a setup that takes the diffuse
   from the `CfgFaces` `texture` property instead, so they correctly ship none.
+- **A head can have its own base rvmat but no vanilla injury rvmat of its own**, inheriting the
+  wound material unchanged - true of Barklem, Mavros and Sturrock. `generate_config.py` checks
+  for the injury rvmat's own existence rather than assuming one exists whenever the base one does.
 - **Map paths must be read from each vanilla rvmat, never derived from the head's name.**
   `m_tanoan_01` reuses `m_african_03`'s normal and specular maps.
 - **A CFR camo class inherits its group's *first* head**, so anything the real head overrides
-  has to be restated or it is silently lost. 21 of the 42 heads needed their hairline textures
-  carried over; without it Old Man wears a bald Tanoan scalp instead of his grey hair.
+  has to be restated or it is silently lost. 21 of the 42 original DLC heads needed their
+  hairline textures carried over; without it Old Man wears a bald Tanoan scalp instead of his
+  grey hair.
 
 ## Files
 

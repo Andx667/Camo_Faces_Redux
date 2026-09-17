@@ -311,6 +311,34 @@
             <English>Wong US Stripes</English>
             <German>Wong US Streifen</German>
         </Key>
+        <Key ID="STR_CFR_Faces_Barklem_BWStripes">
+            <English>Barklem BW Stripes</English>
+            <German>Barklem BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_BWTarn">
+            <English>Barklem BW Camouflage</English>
+            <German>Barklem BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_Serbian">
+            <English>Barklem Serbian</English>
+            <German>Barklem Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_SnowStripes">
+            <English>Barklem Snow Stripes</English>
+            <German>Barklem Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_USFlash">
+            <English>Barklem US Flash</English>
+            <German>Barklem US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_USStains">
+            <English>Barklem US Stains</English>
+            <German>Barklem US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_USStripes">
+            <English>Barklem US Stripes</English>
+            <German>Barklem US Streifen</German>
+        </Key>
         <!-- Greek Heads -->
         <Key ID="STR_CFR_Faces_GreekHead_A3_01_BWStripes">
             <English>Athanasiadis BW Stripes</English>
@@ -728,6 +756,38 @@
             <English>Dimitrou US Stripes</English>
             <German>Dimitrou US Streifen</German>
         </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_BWStripes">
+            <English>Ioannou BW Stripes</English>
+            <German>Ioannou BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_BWTarn">
+            <English>Ioannou BW Camouflage</English>
+            <German>Ioannou BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_Black">
+            <English>Ioannou Black</English>
+            <German>Ioannou Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_Serbian">
+            <English>Ioannou Serbian</English>
+            <German>Ioannou Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_SnowStripes">
+            <English>Ioannou Snow Stripes</English>
+            <German>Ioannou Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_USFlash">
+            <English>Ioannou US Flash</English>
+            <German>Ioannou US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_USStains">
+            <English>Ioannou US Stains</English>
+            <German>Ioannou US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_USStripes">
+            <English>Ioannou US Stripes</English>
+            <German>Ioannou US Streifen</German>
+        </Key>
         <Key ID="STR_CFR_Faces_LivonianHead_10_BWStripes">
             <English>Rabinowicz BW Stripes</English>
             <German>Rabinowicz BW Streifen</German>
@@ -1048,6 +1108,38 @@
             <English>Zieliński US Stripes</English>
             <German>Zieliński US Streifen</German>
         </Key>
+        <Key ID="STR_CFR_Faces_Mavros_BWStripes">
+            <English>Mavros BW Stripes</English>
+            <German>Mavros BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_BWTarn">
+            <English>Mavros BW Camouflage</English>
+            <German>Mavros BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_Black">
+            <English>Mavros Black</English>
+            <German>Mavros Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_Serbian">
+            <English>Mavros Serbian</English>
+            <German>Mavros Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_SnowStripes">
+            <English>Mavros Snow Stripes</English>
+            <German>Mavros Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_USFlash">
+            <English>Mavros US Flash</English>
+            <German>Mavros US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_USStains">
+            <English>Mavros US Stains</English>
+            <German>Mavros US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_USStripes">
+            <English>Mavros US Stripes</English>
+            <German>Mavros US Streifen</German>
+        </Key>
         <!-- Persian Heads -->
         <Key ID="STR_CFR_Faces_PersianHead_A3_01_BWStripes">
             <English>Bahadur BW Stripes</English>
@@ -1304,6 +1396,38 @@
         <Key ID="STR_CFR_Faces_RussianHead_5_USStripes">
             <English>Yakhin US Stripes</English>
             <German>Yakhin US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_BWStripes">
+            <English>Sturrock BW Stripes</English>
+            <German>Sturrock BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_BWTarn">
+            <English>Sturrock BW Camouflage</English>
+            <German>Sturrock BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_Black">
+            <English>Sturrock Black</English>
+            <German>Sturrock Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_Serbian">
+            <English>Sturrock Serbian</English>
+            <German>Sturrock Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_SnowStripes">
+            <English>Sturrock Snow Stripes</English>
+            <German>Sturrock Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_USFlash">
+            <English>Sturrock US Flash</English>
+            <German>Sturrock US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_USStains">
+            <English>Sturrock US Stains</English>
+            <German>Sturrock US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_USStripes">
+            <English>Sturrock US Stripes</English>
+            <German>Sturrock US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_TanoanHead_A3_01_BWStripes">
             <English>Simo BW Stripes</English>

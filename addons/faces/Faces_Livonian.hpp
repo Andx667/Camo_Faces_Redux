@@ -254,6 +254,7 @@ class GVAR(LivonianHead_5_BWTarn): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_5_BWStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_5_BWStripes);
     texture = QPATHTOF(data\bwstripes\LvH05\m_livonianHead_5_co.paa);
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
     material = QPATHTOF(data\bwstripes\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\LvH05\m_livonianHead_5_injury.rvmat);
@@ -261,6 +262,7 @@ class GVAR(LivonianHead_5_BWStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_5_Black): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_5_Black);
     texture = QPATHTOF(data\black\LvH05\m_livonianHead_5_co.paa);
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
     material = QPATHTOF(data\black\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\black\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\black\LvH05\m_livonianHead_5_injury.rvmat);
@@ -268,6 +270,7 @@ class GVAR(LivonianHead_5_Black): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_5_Serbian): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_5_Serbian);
     texture = QPATHTOF(data\serbian\LvH05\m_livonianHead_5_co.paa);
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
     material = QPATHTOF(data\serbian\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\LvH05\m_livonianHead_5_injury.rvmat);
@@ -275,6 +278,7 @@ class GVAR(LivonianHead_5_Serbian): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_5_USStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_5_USStripes);
     texture = QPATHTOF(data\usstripes\LvH05\m_livonianHead_5_co.paa);
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
     material = QPATHTOF(data\usstripes\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\LvH05\m_livonianHead_5_injury.rvmat);
@@ -282,6 +286,7 @@ class GVAR(LivonianHead_5_USStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_5_USStains): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_5_USStains);
     texture = QPATHTOF(data\usstains\LvH05\m_livonianHead_5_co.paa);
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
     material = QPATHTOF(data\usstains\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\LvH05\m_livonianHead_5_injury.rvmat);
@@ -289,6 +294,7 @@ class GVAR(LivonianHead_5_USStains): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_5_USFlash): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_5_USFlash);
     texture = QPATHTOF(data\usflash\LvH05\m_livonianHead_5_co.paa);
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
     material = QPATHTOF(data\usflash\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\LvH05\m_livonianHead_5_injury.rvmat);
@@ -296,6 +302,7 @@ class GVAR(LivonianHead_5_USFlash): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_5_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_5_SnowStripes);
     texture = QPATHTOF(data\snowstripes\LvH05\m_livonianHead_5_co.paa);
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
     material = QPATHTOF(data\snowstripes\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH05\m_livonianHead_5_injury.rvmat);
@@ -316,6 +323,8 @@ class GVAR(LivonianHead_6_BWTarn): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_6_BWStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_6_BWStripes);
     texture = QPATHTOF(data\bwstripes\LvH06\m_livonianHead_6_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\bwstripes\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\LvH06\m_livonianHead_6_injury.rvmat);
@@ -323,6 +332,8 @@ class GVAR(LivonianHead_6_BWStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_6_Black): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_6_Black);
     texture = QPATHTOF(data\black\LvH06\m_livonianHead_6_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\black\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\black\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\black\LvH06\m_livonianHead_6_injury.rvmat);
@@ -330,6 +341,8 @@ class GVAR(LivonianHead_6_Black): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_6_Serbian): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_6_Serbian);
     texture = QPATHTOF(data\serbian\LvH06\m_livonianHead_6_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\serbian\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\LvH06\m_livonianHead_6_injury.rvmat);
@@ -337,6 +350,8 @@ class GVAR(LivonianHead_6_Serbian): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_6_USStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_6_USStripes);
     texture = QPATHTOF(data\usstripes\LvH06\m_livonianHead_6_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\usstripes\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\LvH06\m_livonianHead_6_injury.rvmat);
@@ -344,6 +359,8 @@ class GVAR(LivonianHead_6_USStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_6_USStains): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_6_USStains);
     texture = QPATHTOF(data\usstains\LvH06\m_livonianHead_6_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\usstains\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\LvH06\m_livonianHead_6_injury.rvmat);
@@ -351,6 +368,8 @@ class GVAR(LivonianHead_6_USStains): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_6_USFlash): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_6_USFlash);
     texture = QPATHTOF(data\usflash\LvH06\m_livonianHead_6_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\usflash\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\LvH06\m_livonianHead_6_injury.rvmat);
@@ -358,6 +377,8 @@ class GVAR(LivonianHead_6_USFlash): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_6_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_6_SnowStripes);
     texture = QPATHTOF(data\snowstripes\LvH06\m_livonianHead_6_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\snowstripes\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH06\m_livonianHead_6_injury.rvmat);
@@ -438,6 +459,8 @@ class GVAR(LivonianHead_8_BWTarn): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_8_BWStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_8_BWStripes);
     texture = QPATHTOF(data\bwstripes\LvH08\m_livonianHead_8_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\bwstripes\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\LvH08\m_livonianHead_8_injury.rvmat);
@@ -445,6 +468,8 @@ class GVAR(LivonianHead_8_BWStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_8_Black): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_8_Black);
     texture = QPATHTOF(data\black\LvH08\m_livonianHead_8_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\black\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\black\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\black\LvH08\m_livonianHead_8_injury.rvmat);
@@ -452,6 +477,8 @@ class GVAR(LivonianHead_8_Black): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_8_Serbian): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_8_Serbian);
     texture = QPATHTOF(data\serbian\LvH08\m_livonianHead_8_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\serbian\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\LvH08\m_livonianHead_8_injury.rvmat);
@@ -459,6 +486,8 @@ class GVAR(LivonianHead_8_Serbian): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_8_USStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_8_USStripes);
     texture = QPATHTOF(data\usstripes\LvH08\m_livonianHead_8_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\usstripes\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\LvH08\m_livonianHead_8_injury.rvmat);
@@ -466,6 +495,8 @@ class GVAR(LivonianHead_8_USStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_8_USStains): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_8_USStains);
     texture = QPATHTOF(data\usstains\LvH08\m_livonianHead_8_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\usstains\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\LvH08\m_livonianHead_8_injury.rvmat);
@@ -473,6 +504,8 @@ class GVAR(LivonianHead_8_USStains): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_8_USFlash): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_8_USFlash);
     texture = QPATHTOF(data\usflash\LvH08\m_livonianHead_8_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\usflash\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\LvH08\m_livonianHead_8_injury.rvmat);
@@ -480,6 +513,8 @@ class GVAR(LivonianHead_8_USFlash): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_8_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_8_SnowStripes);
     texture = QPATHTOF(data\snowstripes\LvH08\m_livonianHead_8_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_5_co.paa";
     material = QPATHTOF(data\snowstripes\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH08\m_livonianHead_8_injury.rvmat);
@@ -500,6 +535,8 @@ class GVAR(LivonianHead_9_BWTarn): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_9_BWStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_9_BWStripes);
     texture = QPATHTOF(data\bwstripes\LvH09\m_livonianHead_9_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\bwstripes\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\LvH09\m_livonianHead_9_injury.rvmat);
@@ -507,6 +544,8 @@ class GVAR(LivonianHead_9_BWStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_9_Black): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_9_Black);
     texture = QPATHTOF(data\black\LvH09\m_livonianHead_9_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\black\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\black\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\black\LvH09\m_livonianHead_9_injury.rvmat);
@@ -514,6 +553,8 @@ class GVAR(LivonianHead_9_Black): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_9_Serbian): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_9_Serbian);
     texture = QPATHTOF(data\serbian\LvH09\m_livonianHead_9_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\serbian\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\LvH09\m_livonianHead_9_injury.rvmat);
@@ -521,6 +562,8 @@ class GVAR(LivonianHead_9_Serbian): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_9_USStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_9_USStripes);
     texture = QPATHTOF(data\usstripes\LvH09\m_livonianHead_9_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\usstripes\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\LvH09\m_livonianHead_9_injury.rvmat);
@@ -528,6 +571,8 @@ class GVAR(LivonianHead_9_USStripes): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_9_USStains): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_9_USStains);
     texture = QPATHTOF(data\usstains\LvH09\m_livonianHead_9_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\usstains\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\LvH09\m_livonianHead_9_injury.rvmat);
@@ -535,6 +580,8 @@ class GVAR(LivonianHead_9_USStains): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_9_USFlash): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_9_USFlash);
     texture = QPATHTOF(data\usflash\LvH09\m_livonianHead_9_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\usflash\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\LvH09\m_livonianHead_9_injury.rvmat);
@@ -542,6 +589,8 @@ class GVAR(LivonianHead_9_USFlash): GVAR(LivonianHead_1_BWTarn) {
 class GVAR(LivonianHead_9_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     displayname = CSTRING(LivonianHead_9_SnowStripes);
     texture = QPATHTOF(data\snowstripes\LvH09\m_livonianHead_9_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\snowstripes\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH09\m_livonianHead_9_injury.rvmat);

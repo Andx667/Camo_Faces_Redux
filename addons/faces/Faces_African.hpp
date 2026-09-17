@@ -91,3 +91,43 @@ class GVAR(AfricanHead_03_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_03_SnowStripes);
     texture = QPATHTOF(data\snowstripes\AH03\m_african_03_co.paa);
 };
+
+// African heads added by DLCs
+class GVAR(Barklem_BWTarn): GVAR(AfricanHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(Barklem_BWTarn);
+    texture = QPATHTOF(data\bwtarn\Barklem\m_Barklem_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\Barklem\m_Barklem.rvmat);
+    disabled = 0;
+};
+class GVAR(Barklem_BWStripes): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(Barklem_BWStripes);
+    texture = QPATHTOF(data\bwstripes\Barklem\m_Barklem_co.paa);
+    material = QPATHTOF(data\bwstripes\Barklem\m_Barklem.rvmat);
+};
+class GVAR(Barklem_Serbian): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(Barklem_Serbian);
+    texture = QPATHTOF(data\serbian\Barklem\m_Barklem_co.paa);
+    material = QPATHTOF(data\serbian\Barklem\m_Barklem.rvmat);
+};
+class GVAR(Barklem_USStripes): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(Barklem_USStripes);
+    texture = QPATHTOF(data\usstripes\Barklem\m_Barklem_co.paa);
+    material = QPATHTOF(data\usstripes\Barklem\m_Barklem.rvmat);
+};
+class GVAR(Barklem_USStains): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(Barklem_USStains);
+    texture = QPATHTOF(data\usstains\Barklem\m_Barklem_co.paa);
+    material = QPATHTOF(data\usstains\Barklem\m_Barklem.rvmat);
+};
+class GVAR(Barklem_USFlash): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(Barklem_USFlash);
+    texture = QPATHTOF(data\usflash\Barklem\m_Barklem_co.paa);
+    material = QPATHTOF(data\usflash\Barklem\m_Barklem.rvmat);
+};
+class GVAR(Barklem_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
+    displayname = CSTRING(Barklem_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\Barklem\m_Barklem_co.paa);
+    material = QPATHTOF(data\snowstripes\Barklem\m_Barklem.rvmat);
+};

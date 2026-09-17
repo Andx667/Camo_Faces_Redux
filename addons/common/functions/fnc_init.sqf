@@ -49,12 +49,19 @@ GVAR(all_faces) = ["PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03",
             "LivonianHead_1","LivonianHead_2","LivonianHead_3","LivonianHead_4","LivonianHead_5","LivonianHead_6","LivonianHead_7","LivonianHead_8","LivonianHead_9","LivonianHead_10",
             "RussianHead_1","RussianHead_2","RussianHead_3","RussianHead_4","RussianHead_5"]],
     // Laws of War
-    [571710, ["GreekHead_A3_11","GreekHead_A3_12","GreekHead_A3_13","GreekHead_A3_14","WhiteHead_23"]]
+    [571710, ["GreekHead_A3_11","GreekHead_A3_12","GreekHead_A3_13","GreekHead_A3_14","WhiteHead_23"]],
+    // Tac-Ops Mission Pack. Barklem, Mavros and Sturrock are named campaign personas, but their
+    // CfgFaces classes are ordinary, non-disabled heads like any other - a mission can put a unit
+    // in one of these faces regardless of who owns the DLC, so they need camo too.
+    [744950, ["Barklem","Mavros","Sturrock"]],
+    // Tanks. Same reasoning as Tac-Ops above, for the one face it adds.
+    [798390, ["Ioannou"]]
 ];
 
 // Heads with no "Black" (night) camo variant in cfr_faces - black paint on skin this dark reads
-// as almost nothing, so neither the African nor the Tanoan heads have one
-GVAR(faces_noBlack) = ["AfricanHead_01","AfricanHead_02","AfricanHead_03",
+// as almost nothing, so neither the African nor the Tanoan heads have one. Barklem shares
+// AfricanHead_01's skin tone, so it joins them.
+GVAR(faces_noBlack) = ["AfricanHead_01","AfricanHead_02","AfricanHead_03","Barklem",
             "TanoanHead_A3_01","TanoanHead_A3_02","TanoanHead_A3_03","TanoanHead_A3_04","TanoanHead_A3_05","TanoanHead_A3_06","TanoanHead_A3_07","TanoanHead_A3_08","TanoanHead_A3_09"];
 
 // vanilla BI-authored camo faces (Marksmen DLC) - one real, pre-existing CfgFaces variant per base

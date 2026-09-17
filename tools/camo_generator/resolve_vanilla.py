@@ -41,6 +41,10 @@ LANG_PBOS = [
     "Enoch/Addons/language_f_enoch.pbo",
     "Orange/Addons/language_f_orange.pbo",
     "Orange/Addons/languagemissions_f_orange.pbo",
+    "Tacops/Addons/language_f_tacops.pbo",
+    "Tacops/Addons/languagemissions_f_tacops.pbo",
+    "Tank/Addons/language_f_tank.pbo",
+    "Tank/Addons/languagemissions_f_tank.pbo",
 ]
 CARRY = ["head", "textureHL", "materialHL", "textureHL2", "materialHL2"]
 

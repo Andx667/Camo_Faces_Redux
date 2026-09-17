@@ -205,6 +205,7 @@ class GVAR(TanoanHead_A3_05_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_05_BWStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_05_BWStripes);
     texture = QPATHTOF(data\bwstripes\TnHA305\m_tanoan_05_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_black_bald_co.paa";
     material = QPATHTOF(data\bwstripes\TnHA305\m_tanoan_05.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\TnHA305\m_tanoan_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\TnHA305\m_tanoan_05_injury.rvmat);
@@ -212,6 +213,7 @@ class GVAR(TanoanHead_A3_05_BWStripes): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_05_Serbian): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_05_Serbian);
     texture = QPATHTOF(data\serbian\TnHA305\m_tanoan_05_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_black_bald_co.paa";
     material = QPATHTOF(data\serbian\TnHA305\m_tanoan_05.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\TnHA305\m_tanoan_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\TnHA305\m_tanoan_05_injury.rvmat);
@@ -219,6 +221,7 @@ class GVAR(TanoanHead_A3_05_Serbian): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_05_USStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_05_USStripes);
     texture = QPATHTOF(data\usstripes\TnHA305\m_tanoan_05_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_black_bald_co.paa";
     material = QPATHTOF(data\usstripes\TnHA305\m_tanoan_05.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\TnHA305\m_tanoan_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\TnHA305\m_tanoan_05_injury.rvmat);
@@ -226,6 +229,7 @@ class GVAR(TanoanHead_A3_05_USStripes): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_05_USStains): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_05_USStains);
     texture = QPATHTOF(data\usstains\TnHA305\m_tanoan_05_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_black_bald_co.paa";
     material = QPATHTOF(data\usstains\TnHA305\m_tanoan_05.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\TnHA305\m_tanoan_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\TnHA305\m_tanoan_05_injury.rvmat);
@@ -233,6 +237,7 @@ class GVAR(TanoanHead_A3_05_USStains): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_05_USFlash): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_05_USFlash);
     texture = QPATHTOF(data\usflash\TnHA305\m_tanoan_05_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_black_bald_co.paa";
     material = QPATHTOF(data\usflash\TnHA305\m_tanoan_05.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\TnHA305\m_tanoan_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\TnHA305\m_tanoan_05_injury.rvmat);
@@ -240,6 +245,7 @@ class GVAR(TanoanHead_A3_05_USFlash): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_05_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_05_SnowStripes);
     texture = QPATHTOF(data\snowstripes\TnHA305\m_tanoan_05_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_black_bald_co.paa";
     material = QPATHTOF(data\snowstripes\TnHA305\m_tanoan_05.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA305\m_tanoan_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA305\m_tanoan_05_injury.rvmat);
@@ -421,6 +427,10 @@ class GVAR(TanoanHead_A3_09_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_09_BWStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_09_BWStripes);
     texture = QPATHTOF(data\bwstripes\TnHA309\m_old_man_co.paa);
+    textureHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
+    textureHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
     material = QPATHTOF(data\bwstripes\TnHA309\m_old_man.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\TnHA309\m_old_man_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\TnHA309\m_old_man_injury.rvmat);
@@ -428,6 +438,10 @@ class GVAR(TanoanHead_A3_09_BWStripes): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_09_Serbian): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_09_Serbian);
     texture = QPATHTOF(data\serbian\TnHA309\m_old_man_co.paa);
+    textureHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
+    textureHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
     material = QPATHTOF(data\serbian\TnHA309\m_old_man.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\TnHA309\m_old_man_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\TnHA309\m_old_man_injury.rvmat);
@@ -435,6 +449,10 @@ class GVAR(TanoanHead_A3_09_Serbian): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_09_USStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_09_USStripes);
     texture = QPATHTOF(data\usstripes\TnHA309\m_old_man_co.paa);
+    textureHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
+    textureHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
     material = QPATHTOF(data\usstripes\TnHA309\m_old_man.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\TnHA309\m_old_man_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\TnHA309\m_old_man_injury.rvmat);
@@ -442,6 +460,10 @@ class GVAR(TanoanHead_A3_09_USStripes): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_09_USStains): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_09_USStains);
     texture = QPATHTOF(data\usstains\TnHA309\m_old_man_co.paa);
+    textureHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
+    textureHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
     material = QPATHTOF(data\usstains\TnHA309\m_old_man.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\TnHA309\m_old_man_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\TnHA309\m_old_man_injury.rvmat);
@@ -449,6 +471,10 @@ class GVAR(TanoanHead_A3_09_USStains): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_09_USFlash): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_09_USFlash);
     texture = QPATHTOF(data\usflash\TnHA309\m_old_man_co.paa);
+    textureHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
+    textureHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
     material = QPATHTOF(data\usflash\TnHA309\m_old_man.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\TnHA309\m_old_man_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\TnHA309\m_old_man_injury.rvmat);
@@ -456,6 +482,10 @@ class GVAR(TanoanHead_A3_09_USFlash): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_09_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_09_SnowStripes);
     texture = QPATHTOF(data\snowstripes\TnHA309\m_old_man_co.paa);
+    textureHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
+    textureHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man_co.paa";
+    materialHL2 = "A3\Characters_F_Oldman\Heads\Data\hl_old_man.rvmat";
     material = QPATHTOF(data\snowstripes\TnHA309\m_old_man.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA309\m_old_man_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA309\m_old_man_injury.rvmat);

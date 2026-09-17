@@ -21,13 +21,16 @@ DLC_PBO = {
     "Oldman": "Expansion/Addons/characters_f_oldman.pbo",
     "Enoch": "Enoch/Addons/characters_f_enoch.pbo",
     "Orange": "Orange/Addons/characters_f_orange.pbo",
+    "Tacops": "Tacops/Addons/characters_f_tacops.pbo",
+    "Tank": "Tank/Addons/characters_f_tank.pbo",
     "Base": "Addons/characters_f.pbo",
     "EPB": "Addons/characters_f_epb.pbo",
 }
 
 # Steam App IDs, used by the isDLCAvailable gate in cfr_common's fnc_init.sqf. Old Man
 # declares no App ID of its own and ships inside Apex's folder, so it rides Apex's gate.
-APPID = {"Expansion": 395180, "Oldman": 395180, "Enoch": 1021790, "Orange": 571710}
+APPID = {"Expansion": 395180, "Oldman": 395180, "Enoch": 1021790, "Orange": 571710,
+         "Tacops": 744950, "Tank": 798390}
 
 NEW = {}
 
@@ -55,14 +58,23 @@ for i in range(11, 15):                                                     # La
     _add(f"GreekHead_A3_{i}", f"GreekHead_A3_{i}", f"GkHA3{i}", f"m_greek_{i}", "Orange", "Greek")
 _add("WhiteHead_23", "WhiteHead_23", "WH23", "m_white_22", "Orange", "White")
 
+# Tac-Ops Mission Pack and Tanks - named campaign personas, but ordinary non-disabled CfgFaces
+# heads underneath, reusing their DLC's own vanilla head model (AfricanHead_01/GreekHead_A3_01/
+# WhiteHead_01) rather than adding a new one.
+_add("Barklem", "Barklem", "Barklem", "m_Barklem", "Tacops", "African")
+_add("Mavros", "Mavros", "Mavros", "m_Mavros", "Tacops", "Greek")
+_add("Sturrock", "Sturrock", "Sturrock", "m_Sturrock", "Tacops", "White")
+_add("Ioannou", "Ioannou", "Ioannou", "m_Ioannou", "Tank", "Greek")
+
 # Black paint on skin this dark reads as almost nothing, which is why the mod ships no Black
-# variant for AfricanHead_01-03 either.
-NO_BLACK = {k for k in NEW if k.startswith("TanoanHead")}
+# variant for AfricanHead_01-03 either. Barklem shares AfricanHead_01's skin tone.
+NO_BLACK = {k for k in NEW if k.startswith("TanoanHead")} | {"Barklem"}
 
 # The head each group's CFR classes ultimately inherit from. A CFR camo class hangs off its
 # group's *first* face, so generate_config.py has to restate anything the real face overrides.
 GROUP_BASE = {"Tanoan": "TanoanHead_A3_01", "Livonian": "LivonianHead_1", "Russian": "RussianHead_1",
-              "White": "WhiteHead_01", "Asian": "AsianHead_A3_01", "Greek": "GreekHead_A3_01"}
+              "White": "WhiteHead_01", "Asian": "AsianHead_A3_01", "Greek": "GreekHead_A3_01",
+              "African": "AfricanHead_01"}
 
 # group -> (hpp file, class the group's first CFR class inherits; None = a brand-new file
 # whose first face inherits the vanilla head class directly)
@@ -73,6 +85,7 @@ GROUP_FILE = {
     "White":    ("Faces_White.hpp", "GVAR(WhiteHead_01_BWTarn)"),
     "Asian":    ("Faces_Asian.hpp", "GVAR(AsianHead_A3_01_BWTarn)"),
     "Greek":    ("Faces_Greek.hpp", "GVAR(GreekHead_A3_01_BWTarn)"),
+    "African":  ("Faces_African.hpp", "GVAR(AfricanHead_01_BWTarn)"),
 }
 
 # BWTarn first: it is the variant every other scheme's class inherits from.

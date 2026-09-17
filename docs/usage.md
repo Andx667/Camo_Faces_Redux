@@ -16,7 +16,7 @@ Open the dialog again (the self-action also shows while camo is currently applie
 
 - The dialog shows a live mirror preview of your face while it's open.
 - Your applied camo face is remembered per-unit and reapplied automatically on respawn.
-- Camouflage covers the base game's faces plus those added by Apex, Contact and Laws of War. DLC faces only show up if you own that DLC, so which patterns you're offered depends on the face you're wearing — see [Faces](components/faces.md).
+- Camouflage covers the base game's faces plus those added by Apex, Contact, Laws of War, Tac-Ops Mission Pack and Tanks. Most DLC faces only show up if you own that DLC, so which patterns you're offered depends on the face you're wearing — see [Faces](components/faces.md).
 
 ## As Zeus (optional)
 

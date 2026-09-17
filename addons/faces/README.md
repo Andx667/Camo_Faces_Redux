@@ -27,7 +27,7 @@ Adds the actual camouflaged face variants: a `CfgFaces` entry, texture, and mate
 | --- | --- | --- |
 | `bwtarn` | BW Camouflage | All |
 | `bwstripes` | BW Stripes | All |
-| `black` | Night | All except the African and Tanoan heads |
+| `black` | Night | All except heads with African skin tones (African, Tanoan, Barklem) |
 | `serbian` | Serbian | All |
 | `usstripes` | US Stripes | All |
 | `usstains` | US Stains | All |
@@ -36,7 +36,9 @@ Adds the actual camouflaged face variants: a `CfgFaces` entry, texture, and mate
 
 ## DLC heads
 
-Alongside the base game's 39 heads, the mod covers 42 heads added by later DLCs — Apex (Tanoan, plus Asian 04-07), Contact (Livonian, Russian, White 24-32) and Laws of War (Greek 11-14, White 23). Their `CfgFaces` classes are defined unconditionally, exactly as the Vanilla scheme already references BI's Marksmen `CamoHead_*` faces; ownership is enforced at runtime instead, by the `isDLCAvailable` gate in [`cfr_common`](../common/README.md)'s `fnc_init`, so a player without a given DLC never sees those faces offered anywhere.
+Alongside the base game's 39 heads, the mod covers 46 heads added by later DLCs — Apex (Tanoan, plus Asian 04-07), Contact (Livonian, Russian, White 24-32), Laws of War (Greek 11-14, White 23), Tac-Ops Mission Pack (Barklem, Mavros, Sturrock) and Tanks (Ioannou). Their `CfgFaces` classes are defined unconditionally, exactly as the Vanilla scheme already references BI's Marksmen `CamoHead_*` faces; ownership is enforced at runtime instead, by the `isDLCAvailable` gate in [`cfr_common`](../common/README.md)'s `fnc_init`, so a player without a given DLC never sees those faces offered anywhere.
+
+Barklem, Mavros, Sturrock and Ioannou are named campaign personas rather than generic soldiers, but their `CfgFaces` classes are ordinary, non-disabled heads underneath — a mission can put any unit in one of these faces regardless of who owns the DLC, so they get camo like every other head.
 
 Note that the `Vanilla` scheme cannot cover them: its pairs are BI's own `CamoHead_*` faces, which exist only for the base game's original 39 heads.
 
@@ -46,4 +48,4 @@ Note that the `Vanilla` scheme cannot cover them: its pairs are BI's own `CamoHe
 
 The camo schemes themselves — every pattern, its colours and its placement — were designed and painted by Sk3y and Feldhobel, who authored the textures and RVMATs for the base game's 39 heads.
 
-The textures for the 42 DLC heads were not painted by hand. Each scheme's paint layer was recovered from the shipped textures (modelling every pixel as `camo = base * (1 - alpha) + alpha * paint_colour`, then solving for `alpha` and the paint colour across all 34 authored reference faces) and composited onto the DLC heads' vanilla textures. This works because every `Man_A3` head shares one UV layout, so a scheme's artwork lands in exactly the same place on any face. Validated by reconstructing each authored face from the others: SnowStripes, the one scheme with a clean uncompressed source, comes back to within 0.17/255 of the original.
+The textures for the 46 DLC heads were not painted by hand. Each scheme's paint layer was recovered from the shipped textures (modelling every pixel as `camo = base * (1 - alpha) + alpha * paint_colour`, then solving for `alpha` and the paint colour across all 34 authored reference faces) and composited onto the DLC heads' vanilla textures. This works because every `Man_A3` head shares one UV layout, so a scheme's artwork lands in exactly the same place on any face. Validated by reconstructing each authored face from the others: SnowStripes, the one scheme with a clean uncompressed source, comes back to within 0.17/255 of the original.

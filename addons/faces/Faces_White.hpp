@@ -717,6 +717,8 @@ class GVAR(WhiteHead_24_BWTarn): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_24_BWStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_24_BWStripes);
     texture = QPATHTOF(data\bwstripes\WH24\m_capek_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\bwstripes\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\WH24\m_capek_injury.rvmat);
@@ -724,6 +726,8 @@ class GVAR(WhiteHead_24_BWStripes): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_24_Black): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_24_Black);
     texture = QPATHTOF(data\black\WH24\m_capek_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\black\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\black\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\black\WH24\m_capek_injury.rvmat);
@@ -731,6 +735,8 @@ class GVAR(WhiteHead_24_Black): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_24_Serbian): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_24_Serbian);
     texture = QPATHTOF(data\serbian\WH24\m_capek_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\serbian\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\WH24\m_capek_injury.rvmat);
@@ -738,6 +744,8 @@ class GVAR(WhiteHead_24_Serbian): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_24_USStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_24_USStripes);
     texture = QPATHTOF(data\usstripes\WH24\m_capek_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\usstripes\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\WH24\m_capek_injury.rvmat);
@@ -745,6 +753,8 @@ class GVAR(WhiteHead_24_USStripes): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_24_USStains): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_24_USStains);
     texture = QPATHTOF(data\usstains\WH24\m_capek_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\usstains\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\WH24\m_capek_injury.rvmat);
@@ -752,6 +762,8 @@ class GVAR(WhiteHead_24_USStains): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_24_USFlash): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_24_USFlash);
     texture = QPATHTOF(data\usflash\WH24\m_capek_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\usflash\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\WH24\m_capek_injury.rvmat);
@@ -759,6 +771,8 @@ class GVAR(WhiteHead_24_USFlash): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_24_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_24_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH24\m_capek_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_3_co.paa";
     material = QPATHTOF(data\snowstripes\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH24\m_capek_injury.rvmat);
@@ -839,6 +853,8 @@ class GVAR(WhiteHead_26_BWTarn): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_26_BWStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_26_BWStripes);
     texture = QPATHTOF(data\bwstripes\WH26\m_homewood_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
     material = QPATHTOF(data\bwstripes\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\WH26\m_homewood_injury.rvmat);
@@ -846,6 +862,8 @@ class GVAR(WhiteHead_26_BWStripes): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_26_Black): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_26_Black);
     texture = QPATHTOF(data\black\WH26\m_homewood_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
     material = QPATHTOF(data\black\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\black\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\black\WH26\m_homewood_injury.rvmat);
@@ -853,6 +871,8 @@ class GVAR(WhiteHead_26_Black): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_26_Serbian): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_26_Serbian);
     texture = QPATHTOF(data\serbian\WH26\m_homewood_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
     material = QPATHTOF(data\serbian\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\WH26\m_homewood_injury.rvmat);
@@ -860,6 +880,8 @@ class GVAR(WhiteHead_26_Serbian): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_26_USStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_26_USStripes);
     texture = QPATHTOF(data\usstripes\WH26\m_homewood_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
     material = QPATHTOF(data\usstripes\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\WH26\m_homewood_injury.rvmat);
@@ -867,6 +889,8 @@ class GVAR(WhiteHead_26_USStripes): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_26_USStains): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_26_USStains);
     texture = QPATHTOF(data\usstains\WH26\m_homewood_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
     material = QPATHTOF(data\usstains\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\WH26\m_homewood_injury.rvmat);
@@ -874,6 +898,8 @@ class GVAR(WhiteHead_26_USStains): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_26_USFlash): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_26_USFlash);
     texture = QPATHTOF(data\usflash\WH26\m_homewood_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
     material = QPATHTOF(data\usflash\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\WH26\m_homewood_injury.rvmat);
@@ -881,6 +907,8 @@ class GVAR(WhiteHead_26_USFlash): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_26_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_26_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH26\m_homewood_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
+    textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_4_co.paa";
     material = QPATHTOF(data\snowstripes\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH26\m_homewood_injury.rvmat);
@@ -960,6 +988,7 @@ class GVAR(WhiteHead_28_BWTarn): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_28_BWStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_28_BWStripes);
     texture = QPATHTOF(data\bwstripes\WH28\m_kingsly_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
     material = QPATHTOF(data\bwstripes\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\bwstripes\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\bwstripes\WH28\m_kingsly_injury.rvmat);
@@ -967,6 +996,7 @@ class GVAR(WhiteHead_28_BWStripes): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_28_Black): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_28_Black);
     texture = QPATHTOF(data\black\WH28\m_kingsly_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
     material = QPATHTOF(data\black\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\black\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\black\WH28\m_kingsly_injury.rvmat);
@@ -974,6 +1004,7 @@ class GVAR(WhiteHead_28_Black): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_28_Serbian): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_28_Serbian);
     texture = QPATHTOF(data\serbian\WH28\m_kingsly_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
     material = QPATHTOF(data\serbian\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\serbian\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\serbian\WH28\m_kingsly_injury.rvmat);
@@ -981,6 +1012,7 @@ class GVAR(WhiteHead_28_Serbian): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_28_USStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_28_USStripes);
     texture = QPATHTOF(data\usstripes\WH28\m_kingsly_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
     material = QPATHTOF(data\usstripes\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\usstripes\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstripes\WH28\m_kingsly_injury.rvmat);
@@ -988,6 +1020,7 @@ class GVAR(WhiteHead_28_USStripes): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_28_USStains): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_28_USStains);
     texture = QPATHTOF(data\usstains\WH28\m_kingsly_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
     material = QPATHTOF(data\usstains\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\usstains\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usstains\WH28\m_kingsly_injury.rvmat);
@@ -995,6 +1028,7 @@ class GVAR(WhiteHead_28_USStains): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_28_USFlash): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_28_USFlash);
     texture = QPATHTOF(data\usflash\WH28\m_kingsly_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
     material = QPATHTOF(data\usflash\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\usflash\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\usflash\WH28\m_kingsly_injury.rvmat);
@@ -1002,6 +1036,7 @@ class GVAR(WhiteHead_28_USFlash): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_28_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_28_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH28\m_kingsly_co.paa);
+    textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
     material = QPATHTOF(data\snowstripes\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH28\m_kingsly_injury.rvmat);
@@ -1305,4 +1340,48 @@ class GVAR(WhiteHead_23_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH23\m_white_22.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH23\m_white_22_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH23\m_white_22_injury.rvmat);
+};
+
+class GVAR(Sturrock_BWTarn): GVAR(WhiteHead_01_BWTarn) {
+    author = AUTHOR;
+    displayname = CSTRING(Sturrock_BWTarn);
+    texture = QPATHTOF(data\bwtarn\Sturrock\m_Sturrock_co.paa);
+    identityTypes[] = {};
+    material = QPATHTOF(data\bwtarn\Sturrock\m_Sturrock.rvmat);
+    disabled = 0;
+};
+class GVAR(Sturrock_BWStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(Sturrock_BWStripes);
+    texture = QPATHTOF(data\bwstripes\Sturrock\m_Sturrock_co.paa);
+    material = QPATHTOF(data\bwstripes\Sturrock\m_Sturrock.rvmat);
+};
+class GVAR(Sturrock_Black): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(Sturrock_Black);
+    texture = QPATHTOF(data\black\Sturrock\m_Sturrock_co.paa);
+    material = QPATHTOF(data\black\Sturrock\m_Sturrock.rvmat);
+};
+class GVAR(Sturrock_Serbian): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(Sturrock_Serbian);
+    texture = QPATHTOF(data\serbian\Sturrock\m_Sturrock_co.paa);
+    material = QPATHTOF(data\serbian\Sturrock\m_Sturrock.rvmat);
+};
+class GVAR(Sturrock_USStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(Sturrock_USStripes);
+    texture = QPATHTOF(data\usstripes\Sturrock\m_Sturrock_co.paa);
+    material = QPATHTOF(data\usstripes\Sturrock\m_Sturrock.rvmat);
+};
+class GVAR(Sturrock_USStains): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(Sturrock_USStains);
+    texture = QPATHTOF(data\usstains\Sturrock\m_Sturrock_co.paa);
+    material = QPATHTOF(data\usstains\Sturrock\m_Sturrock.rvmat);
+};
+class GVAR(Sturrock_USFlash): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(Sturrock_USFlash);
+    texture = QPATHTOF(data\usflash\Sturrock\m_Sturrock_co.paa);
+    material = QPATHTOF(data\usflash\Sturrock\m_Sturrock.rvmat);
+};
+class GVAR(Sturrock_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
+    displayname = CSTRING(Sturrock_SnowStripes);
+    texture = QPATHTOF(data\snowstripes\Sturrock\m_Sturrock_co.paa);
+    material = QPATHTOF(data\snowstripes\Sturrock\m_Sturrock.rvmat);
 };
