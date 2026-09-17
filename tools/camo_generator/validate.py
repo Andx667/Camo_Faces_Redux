@@ -2,7 +2,7 @@
 
 # CAMO GENERATOR - VALIDATION
 # ---------------------------
-# Two independent checks:
+# Three independent checks:
 #
 #   fit     Hold-one-out over every reference head: fit the paint layer on all the others,
 #           rebuild this one, and compare against the texture the mod actually ships. This is
@@ -13,8 +13,13 @@
 #   wiring  Cross-checks the three things that must agree or the mod breaks in-game:
 #           fnc_init.sqf's face lists <-> CfgFaces classes <-> texture files on disk.
 #
-#   python validate.py [fit|wiring]        (default: both)
+#   names   Checks every camo face is named after the head it belongs to. Nothing in the build
+#           catches this - five hand-written faces shipped under the wrong person's surname, so
+#           players saw a camo variant named after someone else entirely.
+#
+#   python validate.py [fit|wiring|names]        (default: all)
 
+import json
 import re
 import sys
 
@@ -22,7 +27,7 @@ import numpy as np
 
 from faces import NEW, SCHEME_NAMES, schemes_for
 from paintlayer import Fit, apply, load
-from paths import ADDON, DATA, REPO, WORK
+from paths import ADDON, DATA, REPO, TOOL_DATA, WORK
 
 
 def fit_check():
@@ -96,13 +101,36 @@ def wiring_check():
     return 1 if problems else 0
 
 
+def names_check():
+    names = json.loads((TOOL_DATA / "names.json").read_text(encoding="utf-8"))
+    st = (ADDON / "stringtable.xml").read_text(encoding="utf-8")
+
+    suffix_en = {s: en for s, (_, en, _) in SCHEME_NAMES.items()}
+    bad, checked = [], 0
+    for cls, person in sorted(names.items()):
+        for scheme, (suffix, _, _) in SCHEME_NAMES.items():
+            m = re.search(rf'<Key ID="STR_CFR_Faces_{re.escape(cls)}_{suffix}">\s*<English>(.*?)</English>', st)
+            if not m:
+                continue
+            checked += 1
+            want = f"{person['en']} {suffix_en[scheme]}"
+            if m.group(1) != want:
+                bad.append((f"{cls}_{suffix}", want, m.group(1)))
+
+    print(f"checked {checked} face names against the names the game gives those heads")
+    for key, want, got in bad[:20]:
+        print(f"  {key:34} expected {want!r}, found {got!r}")
+    print("OK - every camo face is named after its own head" if not bad else f"{len(bad)} WRONG NAMES")
+    return 1 if bad else 0
+
+
 if __name__ == "__main__":
-    which = sys.argv[1] if len(sys.argv) > 1 else "both"
-    rc = 0
-    if which in ("fit", "both"):
-        rc |= fit_check()
-    if which in ("wiring", "both"):
-        if which == "both":
-            print()
-        rc |= wiring_check()
+    which = sys.argv[1] if len(sys.argv) > 1 else "all"
+    rc, first = 0, True
+    for name, fn in (("fit", fit_check), ("wiring", wiring_check), ("names", names_check)):
+        if which in (name, "all"):
+            if not first:
+                print()
+            rc |= fn()
+            first = False
     sys.exit(rc)

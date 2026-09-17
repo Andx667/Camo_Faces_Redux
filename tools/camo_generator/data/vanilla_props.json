@@ -293,6 +293,13 @@
   "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
   "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
  },
+ "AsianHead_A3_01": {
+  "head": "AsianHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat"
+ },
  "GreekHead_A3_01": {
   "head": "GreekHead_A3",
   "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_3_co.paa",
@@ -306,12 +313,5 @@
   "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
   "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
   "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
- },
- "AsianHead_A3_01": {
-  "head": "AsianHead_A3",
-  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
-  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat",
-  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
-  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat"
  }
 }

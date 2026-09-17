@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Five camo faces were named after the wrong person. `GreekHead_A3_06` through `_09` and `WhiteHead_21` took their names from the heads whose textures they reuse rather than their own, so their camo variants appeared in the dialog under a different surname to the face itself — Gikas showed as Efthimiou, Christou as Fotiou, Kanelloupou as Georgiou, Savalas as Chatzis, and O'Sullivan as O'Smith
 - The dialog no longer offers the Vanilla category to a unit whose face has no vanilla camo variant, where it would previously open an empty pattern list. Vanilla's variants are Bohemia's own and exist only for the base game's original 39 faces
 
 ### Changed

@@ -42,6 +42,7 @@ python generate_materials.py  # write each head's .rvmat / _injury.rvmat
 python generate_config.py     # CfgFaces classes + stringtable entries
 hemtt ln sort                 # generate_config.py appends; this re-sorts the stringtable
 python validate.py wiring     # face lists <-> config classes <-> textures on disk
+python validate.py names      # every camo face is named after its own head
 hemtt build
 ```
 
@@ -54,7 +55,8 @@ idempotent against them — `git checkout -- addons/faces` before re-running.
 2. Add them to the DLC face list in `cfr_common`'s `fnc_init.sqf`, under the right App ID, so
    the `isDLCAvailable` gate covers them.
 3. Run `resolve_vanilla.py` (needs `CFR_CONFIG_DUMP`) to refresh `data/names.json` and
-   `data/vanilla_props.json`, then the pipeline above.
+   `data/vanilla_props.json`, then the pipeline above. `names.json` covers the hand-written heads
+   too, which is what lets `validate.py names` run offline.
 
 Three things are easy to get wrong, and all three are handled by the scripts rather than by
 assumption — worth knowing if you extend them:
@@ -80,7 +82,7 @@ assumption — worth knowing if you extend them:
 | `generate_materials.py` | Stage 3 — write the `.rvmat` files |
 | `generate_config.py` | Stage 4 — write the `CfgFaces` classes and stringtable entries |
 | `resolve_vanilla.py` | Refresh `data/` from the game (only needed when adding heads) |
-| `validate.py` | `fit` — is the model sound; `wiring` — do config and files agree |
+| `validate.py` | `fit` — is the model sound; `wiring` — do config and files agree; `names` — is each camo face named after its own head |
 
 ## Scope
 

@@ -5,8 +5,10 @@
 # Produces the two data files generate_config.py reads, both committed under data/ so the
 # normal pipeline needs neither the game's language PBOs nor a config dump:
 #
-#   data/names.json          each head's in-game surname (EN/DE), so CFR's face names follow
-#                            the mod's "Surname + Scheme" convention
+#   data/names.json          every head's in-game surname (EN/DE), so CFR's face names follow
+#                            the mod's "Surname + Scheme" convention. Covers the hand-written
+#                            heads as well as the generated ones, which lets `validate.py names`
+#                            check the shipped stringtable offline
 #   data/vanilla_props.json  each head's effective hairline/scalp properties. A CFR camo class
 #                            inherits its group's *first* face, so anything the real face
 #                            overrides has to be restated or it is silently lost - without
@@ -21,9 +23,18 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from faces import NEW, GROUP_BASE
-from paths import TOOL_DATA, WORK, arma3, config_dump, run
+from paths import REPO, TOOL_DATA, WORK, arma3, config_dump, run
 
 LANG_PBOS = [
+    # base game - where the original heads' surnames live
+    "Addons/language_f.pbo",
+    "Addons/language_f_beta.pbo",
+    "Addons/language_f_gamma.pbo",
+    "Addons/language_f_epa.pbo",
+    "Addons/language_f_epb.pbo",
+    "Addons/language_f_bootcamp.pbo",
+    # DLCs
+    "Mark/Addons/language_f_mark.pbo",
     "Expansion/Addons/language_f_exp.pbo",
     "Expansion/Addons/language_f_oldman.pbo",
     "Expansion/Addons/languagemissions_f_oldman.pbo",
@@ -91,19 +102,29 @@ def load_strings():
     return strings
 
 
+def every_face():
+    """Every head the mod covers, read straight out of fnc_init.sqf."""
+    init = (REPO / "addons/common/functions/fnc_init.sqf").read_text(encoding="utf-8")
+    faces = re.findall(r'"([^"]+)"', re.search(r"GVAR\(all_faces\)\s*=\s*\[(.*?)\];", init, re.S).group(1))
+    for _appid, body in re.findall(r"\[(\d{6,7}),\s*\[(.*?)\]\]", init, re.S):
+        faces += re.findall(r'"([^"]+)"', body)
+    return faces
+
+
 def main():
     classes = parse_classes(cfg_faces_block())
     strings = load_strings()
 
     names, props, missing = {}, {}, []
-    for key, f in NEW.items():
-        props[f.cls] = resolve(classes, f.cls, "props")
-        skey = resolve(classes, f.cls, "name")
+    for cls in every_face():
+        skey = resolve(classes, cls, "name")
         hit = strings.get((skey or "").lower())
         if hit:
-            names[f.cls] = {"en": hit[0], "de": hit[1]}
+            names[cls] = {"en": hit[0], "de": hit[1]}
         else:
-            missing.append(f"{f.cls} ({skey or 'no displayName'})")
+            missing.append(f"{cls} ({skey or 'no displayName'})")
+    for f in NEW.values():
+        props[f.cls] = resolve(classes, f.cls, "props")
     for base in set(GROUP_BASE.values()):
         props.setdefault(base, resolve(classes, base, "props"))
 
@@ -111,7 +132,7 @@ def main():
     (TOOL_DATA / "names.json").write_text(json.dumps(names, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     (TOOL_DATA / "vanilla_props.json").write_text(json.dumps(props, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    print(f"names: {len(names)}/{len(NEW)}   props: {len(props)}")
+    print(f"names: {len(names)} heads   props: {len(props)} heads")
     if missing:
         print("\nUNRESOLVED NAMES (add them to data/names.json by hand):")
         for m in missing:
