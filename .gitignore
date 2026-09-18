@@ -10,6 +10,7 @@ Exports/
 *.spp
 *.spp.painter_lock
 *.psd
+.camo_work/
 
 # Other
 *.biprivatekey

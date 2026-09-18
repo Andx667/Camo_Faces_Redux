@@ -68,4 +68,13 @@ The 8 core schemes' `pairs` are *derived* from `GVAR(all_faces)` (via `FACES_CLA
 
 There are four of those rows. `Vanilla` covers every base face, one `CamoHead_*` variant each. `VanillaArid`, `VanillaLush` and `VanillaSemiArid` are Marksmen's environment-specific faces, which BI authored for only three base faces — `PersianHead_A3_01`, `GreekHead_A3_02` and `WhiteHead_11`. They need a row each rather than one shared row because a scheme's `pairs` map a base face to exactly one camo face, so a single row can't offer one face three choices. Which base face each is painted over was determined by comparing the textures outside the painted area, not assumed.
 
-Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `fnc_handleRespawn` (on respawn) can reapply it.
+Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `cfr_dialog`'s `fnc_handleRespawn` (on respawn) can reapply it.
+
+## CBA Extended Loadout
+
+`XEH_postInit.sqf` also hooks CBA's Extended Loadout framework (`CBA_fnc_getLoadout`/`CBA_fnc_setLoadout`) so a unit's camo face rides along whenever something exports or imports a loadout through it (e.g. ACE Arsenal's loadout export, or a mission's own loadout persistence) - the unit-variable + reapply loop above only covers respawn/JIP on the *same* unit, not that round trip:
+
+- `CBA_loadoutGet` — writes `GVAR(face)` into the `extendedInfo` hashMap if the unit has a camo face applied
+- `CBA_loadoutSet` — reads it back and reapplies it via the same `cfr_common_setFace` networked event `fnc_setCamo`/`fnc_unsetCamo` use, rather than calling `setFace` directly
+
+Both are `CBA_fnc_localEvent`s fired by CBA's `addons/loadout` component, only on whichever machine actually calls `CBA_fnc_getLoadout`/`CBA_fnc_setLoadout` — no `requiredAddons` entry is needed for this, since listening to a CBA event doesn't require the firing component to be explicitly declared.
