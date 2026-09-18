@@ -20,6 +20,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Snow Stripes listed in the camo scheme table in the faces component documentation, which had been missing it
 
+## [0.9.4] - 2026-09-14
+
+### Added
+
+- SnowStripes camo scheme (green base with white diagonal stripes), replacing an unreleased EyeBlack prototype. Like the other schemes, it gets its own dedicated facepaint item and a top-level category in the dialog
+
+### Fixed
+
+- Applying or removing camo on a unit other than the local player (e.g. scripted onto AI from a unit's init field) incorrectly popped the "camo applied"/"camo removed" hint on the local player's own screen
+- A unit's camo could occasionally fail as "invalid face" if something called `fnc_setCamo`/`fnc_unsetCamo` before the mod had finished building its internal scheme list (e.g. another addon's own `preInit`, or a very early unit init). Scheme construction now happens in `preInit` instead of `postInit` so it's ready before any mission entity can run, with a one-frame self-defer left in both functions as a safety net for callers that still manage to run earlier than that
+
 ## [0.9.3] - 2026-09-13
 
 ### Changed
@@ -53,7 +64,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release (RC1)
 
 [Unreleased]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.10.0...HEAD
-[0.10.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.3...v0.10.0
+[0.10.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.4...v0.10.0
+[0.9.4]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.3...v0.9.4
 [0.9.3]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.2...v0.9.3
 [0.9.2]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.1...v0.9.2
 [0.9.1]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.0...v0.9.1
