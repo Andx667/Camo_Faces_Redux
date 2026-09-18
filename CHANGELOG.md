@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- A merge had left the CBA setting category variable (`_category`) commented out, which threw an undefined-variable error during `preInit` and broke the mod's initialization, and had misnamed the dialog's listbox base class `RscListbox` instead of the engine's `RscListBox`, breaking the country and camo-face list boxes
 - Snow Stripes listed in the camo scheme table in the faces component documentation, which had been missing it
 
 ## [0.9.4] - 2026-09-14
