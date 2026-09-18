@@ -1,6 +1,6 @@
 author = "Andx";
-name = "Camo Faces Redux [Beta]";
-description = "Camo Faces Redux [Beta] - Version {version}";
+name = "Camo Faces Redux";
+description = "Camo Faces Redux - Version {version}";
 overview = "Camo Faces Redux is a Rewrite of the Camo Faces Mod, which enables Players to camouflage their faces in Arma3";
 overviewPicture = "img\cfr_logo_ca.paa";
 picture = "img\cfr_logo_ca.paa";

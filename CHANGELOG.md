@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.10.0] - 2026-09-18
+## [1.0.0] - 2026-09-18
 
 ### Added
 
@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Marksmen's three environment-specific camo faces — arid, lush and semi-arid — are now selectable alongside the renamed "Vanilla Camouflage (Standard)" scheme. Bohemia authored these for only three faces, so they are offered to `PersianHead_A3_01`, `GreekHead_A3_02` and `WhiteHead_11` and hidden for everyone else
 - Configurable camo wear-off timer: a CBA setting (slider, 0 to 240 minutes, default 0/disabled) that automatically restores a unit's original face a set number of minutes after camo is applied, simulating it fading from rain, sweat, or time
 - Camo face now travels with a unit's loadout through CBA's Extended Loadout framework (`CBA_fnc_getLoadout`/`CBA_fnc_setLoadout`), so it survives round trips like ACE Arsenal's loadout export/import or a mission's own loadout persistence — previously only respawn/JIP reapplication on the same unit was covered
+
+### Changed
+
+- First stable release: dropped the "[Beta]" tag from the mod's display name and the beta disclaimer from the Steam Workshop description
 
 ### Fixed
 
@@ -63,8 +67,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release (RC1)
 
-[Unreleased]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.10.0...HEAD
-[0.10.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.4...v0.10.0
+[Unreleased]: https://github.com/Andx667/Camo_Faces_Redux/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.4...v1.0.0
 [0.9.4]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.3...v0.9.4
 [0.9.3]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.2...v0.9.3
 [0.9.2]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.1...v0.9.2
