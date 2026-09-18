@@ -21,3 +21,10 @@ Exports/
 # mkdocs
 site/
 .cache/
+
+# camo generator scratch (see tools/camo_generator)
+.camo_work/
+
+# Python
+__pycache__/
+*.pyc

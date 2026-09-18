@@ -183,6 +183,162 @@
             <English>Tung US Stripes</English>
             <German>Tung US Streifen</German>
         </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_BWStripes">
+            <English>Lee BW Stripes</English>
+            <German>Lee BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_BWTarn">
+            <English>Lee BW Camouflage</English>
+            <German>Lee BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_Black">
+            <English>Lee Black</English>
+            <German>Lee Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_Serbian">
+            <English>Lee Serbian</English>
+            <German>Lee Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_SnowStripes">
+            <English>Lee Snow Stripes</English>
+            <German>Lee Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_USFlash">
+            <English>Lee US Flash</English>
+            <German>Lee US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_USStains">
+            <English>Lee US Stains</English>
+            <German>Lee US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_04_USStripes">
+            <English>Lee US Stripes</English>
+            <German>Lee US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_BWStripes">
+            <English>Chan BW Stripes</English>
+            <German>Chan BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_BWTarn">
+            <English>Chan BW Camouflage</English>
+            <German>Chan BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_Black">
+            <English>Chan Black</English>
+            <German>Chan Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_Serbian">
+            <English>Chan Serbian</English>
+            <German>Chan Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_SnowStripes">
+            <English>Chan Snow Stripes</English>
+            <German>Chan Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_USFlash">
+            <English>Chan US Flash</English>
+            <German>Chan US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_USStains">
+            <English>Chan US Stains</English>
+            <German>Chan US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_05_USStripes">
+            <English>Chan US Stripes</English>
+            <German>Chan US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_BWStripes">
+            <English>Yeung BW Stripes</English>
+            <German>Yeung BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_BWTarn">
+            <English>Yeung BW Camouflage</English>
+            <German>Yeung BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_Black">
+            <English>Yeung Black</English>
+            <German>Yeung Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_Serbian">
+            <English>Yeung Serbian</English>
+            <German>Yeung Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_SnowStripes">
+            <English>Yeung Snow Stripes</English>
+            <German>Yeung Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_USFlash">
+            <English>Yeung US Flash</English>
+            <German>Yeung US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_USStains">
+            <English>Yeung US Stains</English>
+            <German>Yeung US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_06_USStripes">
+            <English>Yeung US Stripes</English>
+            <German>Yeung US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_BWStripes">
+            <English>Wong BW Stripes</English>
+            <German>Wong BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_BWTarn">
+            <English>Wong BW Camouflage</English>
+            <German>Wong BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_Black">
+            <English>Wong Black</English>
+            <German>Wong Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_Serbian">
+            <English>Wong Serbian</English>
+            <German>Wong Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_SnowStripes">
+            <English>Wong Snow Stripes</English>
+            <German>Wong Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_USFlash">
+            <English>Wong US Flash</English>
+            <German>Wong US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_USStains">
+            <English>Wong US Stains</English>
+            <German>Wong US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_AsianHead_A3_07_USStripes">
+            <English>Wong US Stripes</English>
+            <German>Wong US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_BWStripes">
+            <English>Barklem BW Stripes</English>
+            <German>Barklem BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_BWTarn">
+            <English>Barklem BW Camouflage</English>
+            <German>Barklem BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_Serbian">
+            <English>Barklem Serbian</English>
+            <German>Barklem Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_SnowStripes">
+            <English>Barklem Snow Stripes</English>
+            <German>Barklem Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_USFlash">
+            <English>Barklem US Flash</English>
+            <German>Barklem US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_USStains">
+            <English>Barklem US Stains</English>
+            <German>Barklem US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Barklem_USStripes">
+            <English>Barklem US Stripes</English>
+            <German>Barklem US Streifen</German>
+        </Key>
         <!-- Greek Heads -->
         <Key ID="STR_CFR_Faces_GreekHead_A3_01_BWStripes">
             <English>Athanasiadis BW Stripes</English>
@@ -345,132 +501,644 @@
             <German>Doukas US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWStripes">
-            <English>Efthimiou BW Stripes</English>
-            <German>Efthimiou BW Streifen</German>
+            <English>Gikas BW Stripes</English>
+            <German>Gikas BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_BWTarn">
-            <English>Efthimiou BW Camouflage</English>
-            <German>Efthimiou BW Tarn</German>
+            <English>Gikas BW Camouflage</English>
+            <German>Gikas BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Black">
-            <English>Efthimiou Black</English>
-            <German>Efthimiou Schwarz</German>
+            <English>Gikas Black</English>
+            <German>Gikas Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_Serbian">
-            <English>Efthimiou Serbian</English>
-            <German>Efthimiou Serbisch</German>
+            <English>Gikas Serbian</English>
+            <German>Gikas Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_SnowStripes">
-            <English>Efthimiou Snow Stripes</English>
-            <German>Efthimiou Schneestreifen</German>
+            <English>Gikas Snow Stripes</English>
+            <German>Gikas Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_USFlash">
-            <English>Efthimiou US Flash</English>
-            <German>Efthimiou US Sprüh</German>
+            <English>Gikas US Flash</English>
+            <German>Gikas US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_USStains">
-            <English>Efthimiou US Stains</English>
-            <German>Efthimiou US Flecken</German>
+            <English>Gikas US Stains</English>
+            <German>Gikas US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_06_USStripes">
-            <English>Efthimiou US Stripes</English>
-            <German>Efthimiou US Streifen</German>
+            <English>Gikas US Stripes</English>
+            <German>Gikas US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_BWStripes">
-            <English>Fotiou BW Stripes</English>
-            <German>Fotiou BW Streifen</German>
+            <English>Christou BW Stripes</English>
+            <German>Christou BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_BWTarn">
-            <English>Fotiou BW Camouflage</English>
-            <German>Fotiou BW Tarn</German>
+            <English>Christou BW Camouflage</English>
+            <German>Christou BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_Black">
-            <English>Fotiou Black</English>
-            <German>Fotiou Schwarz</German>
+            <English>Christou Black</English>
+            <German>Christou Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_Serbian">
-            <English>Fotiou Serbian</English>
-            <German>Fotiou Serbisch</German>
+            <English>Christou Serbian</English>
+            <German>Christou Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_SnowStripes">
-            <English>Fotiou Snow Stripes</English>
-            <German>Fotiou Schneestreifen</German>
+            <English>Christou Snow Stripes</English>
+            <German>Christou Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_USFlash">
-            <English>Fotiou US Flash</English>
-            <German>Fotiou US Sprüh</German>
+            <English>Christou US Flash</English>
+            <German>Christou US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_USStains">
-            <English>Fotiou US Stains</English>
-            <German>Fotiou US Flecken</German>
+            <English>Christou US Stains</English>
+            <German>Christou US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_07_USStripes">
-            <English>Fotiou US Stripes</English>
-            <German>Fotiou US Streifen</German>
+            <English>Christou US Stripes</English>
+            <German>Christou US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_BWStripes">
-            <English>Georgiou BW Stripes</English>
-            <German>Georgiou BW Streifen</German>
+            <English>Kanelloupou BW Stripes</English>
+            <German>Kanelloupou BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_BWTarn">
-            <English>Georgiou BW Camouflage</English>
-            <German>Georgiou BW Tarn</German>
+            <English>Kanelloupou BW Camouflage</English>
+            <German>Kanelloupou BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_Black">
-            <English>Georgiou Black</English>
-            <German>Georgiou Schwarz</German>
+            <English>Kanelloupou Black</English>
+            <German>Kanelloupou Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_Serbian">
-            <English>Georgiou Serbian</English>
-            <German>Georgiou Serbisch</German>
+            <English>Kanelloupou Serbian</English>
+            <German>Kanelloupou Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_SnowStripes">
-            <English>Georgiou Snow Stripes</English>
-            <German>Georgiou Schneestreifen</German>
+            <English>Kanelloupou Snow Stripes</English>
+            <German>Kanelloupou Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_USFlash">
-            <English>Georgiou US Flash</English>
-            <German>Georgiou US Sprüh</German>
+            <English>Kanelloupou US Flash</English>
+            <German>Kanelloupou US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_USStains">
-            <English>Georgiou US Stains</English>
-            <German>Georgiou US Flecken</German>
+            <English>Kanelloupou US Stains</English>
+            <German>Kanelloupou US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_08_USStripes">
-            <English>Georgiou US Stripes</English>
-            <German>Georgiou US Streifen</German>
+            <English>Kanelloupou US Stripes</English>
+            <German>Kanelloupou US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_BWStripes">
-            <English>Chatzis BW Stripes</English>
-            <German>Chatzis BW Streifen</German>
+            <English>Savalas BW Stripes</English>
+            <German>Savalas BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_BWTarn">
-            <English>Chatzis BW Camouflage</English>
-            <German>Chatzis BW Tarn</German>
+            <English>Savalas BW Camouflage</English>
+            <German>Savalas BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Black">
-            <English>Chatzis Black</English>
-            <German>Chatzis Schwarz</German>
+            <English>Savalas Black</English>
+            <German>Savalas Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_Serbian">
-            <English>Chatzis Serbian</English>
-            <German>Chatzis Serbisch</German>
+            <English>Savalas Serbian</English>
+            <German>Savalas Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_SnowStripes">
-            <English>Chatzis Snow Stripes</English>
-            <German>Chatzis Schneestreifen</German>
+            <English>Savalas Snow Stripes</English>
+            <German>Savalas Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_USFlash">
-            <English>Chatzis US Flash</English>
-            <German>Chatzis US Sprüh</German>
+            <English>Savalas US Flash</English>
+            <German>Savalas US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_USStains">
-            <English>Chatzis US Stains</English>
-            <German>Chatzis US Flecken</German>
+            <English>Savalas US Stains</English>
+            <German>Savalas US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_GreekHead_A3_09_USStripes">
-            <English>Chatzis US Stripes</English>
-            <German>Chatzis US Streifen</German>
+            <English>Savalas US Stripes</English>
+            <German>Savalas US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_BWStripes">
+            <English>Gavras BW Stripes</English>
+            <German>Gavras BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_BWTarn">
+            <English>Gavras BW Camouflage</English>
+            <German>Gavras BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_Black">
+            <English>Gavras Black</English>
+            <German>Gavras Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_Serbian">
+            <English>Gavras Serbian</English>
+            <German>Gavras Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_SnowStripes">
+            <English>Gavras Snow Stripes</English>
+            <German>Gavras Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_USFlash">
+            <English>Gavras US Flash</English>
+            <German>Gavras US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_USStains">
+            <English>Gavras US Stains</English>
+            <German>Gavras US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_11_USStripes">
+            <English>Gavras US Stripes</English>
+            <German>Gavras US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_BWStripes">
+            <English>Markos BW Stripes</English>
+            <German>Markos BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_BWTarn">
+            <English>Markos BW Camouflage</English>
+            <German>Markos BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_Black">
+            <English>Markos Black</English>
+            <German>Markos Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_Serbian">
+            <English>Markos Serbian</English>
+            <German>Markos Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_SnowStripes">
+            <English>Markos Snow Stripes</English>
+            <German>Markos Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_USFlash">
+            <English>Markos US Flash</English>
+            <German>Markos US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_USStains">
+            <English>Markos US Stains</English>
+            <German>Markos US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_12_USStripes">
+            <English>Markos US Stripes</English>
+            <German>Markos US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_BWStripes">
+            <English>Alexis BW Stripes</English>
+            <German>Alexis BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_BWTarn">
+            <English>Alexis BW Camouflage</English>
+            <German>Alexis BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_Black">
+            <English>Alexis Black</English>
+            <German>Alexis Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_Serbian">
+            <English>Alexis Serbian</English>
+            <German>Alexis Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_SnowStripes">
+            <English>Alexis Snow Stripes</English>
+            <German>Alexis Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_USFlash">
+            <English>Alexis US Flash</English>
+            <German>Alexis US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_USStains">
+            <English>Alexis US Stains</English>
+            <German>Alexis US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_13_USStripes">
+            <English>Alexis US Stripes</English>
+            <German>Alexis US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_BWStripes">
+            <English>Dimitrou BW Stripes</English>
+            <German>Dimitrou BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_BWTarn">
+            <English>Dimitrou BW Camouflage</English>
+            <German>Dimitrou BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_Black">
+            <English>Dimitrou Black</English>
+            <German>Dimitrou Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_Serbian">
+            <English>Dimitrou Serbian</English>
+            <German>Dimitrou Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_SnowStripes">
+            <English>Dimitrou Snow Stripes</English>
+            <German>Dimitrou Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_USFlash">
+            <English>Dimitrou US Flash</English>
+            <German>Dimitrou US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_USStains">
+            <English>Dimitrou US Stains</English>
+            <German>Dimitrou US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_GreekHead_A3_14_USStripes">
+            <English>Dimitrou US Stripes</English>
+            <German>Dimitrou US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_BWStripes">
+            <English>Ioannou BW Stripes</English>
+            <German>Ioannou BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_BWTarn">
+            <English>Ioannou BW Camouflage</English>
+            <German>Ioannou BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_Black">
+            <English>Ioannou Black</English>
+            <German>Ioannou Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_Serbian">
+            <English>Ioannou Serbian</English>
+            <German>Ioannou Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_SnowStripes">
+            <English>Ioannou Snow Stripes</English>
+            <German>Ioannou Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_USFlash">
+            <English>Ioannou US Flash</English>
+            <German>Ioannou US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_USStains">
+            <English>Ioannou US Stains</English>
+            <German>Ioannou US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Ioannou_USStripes">
+            <English>Ioannou US Stripes</English>
+            <German>Ioannou US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_BWStripes">
+            <English>Rabinowicz BW Stripes</English>
+            <German>Rabinowicz BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_BWTarn">
+            <English>Rabinowicz BW Camouflage</English>
+            <German>Rabinowicz BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_Black">
+            <English>Rabinowicz Black</English>
+            <German>Rabinowicz Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_Serbian">
+            <English>Rabinowicz Serbian</English>
+            <German>Rabinowicz Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_SnowStripes">
+            <English>Rabinowicz Snow Stripes</English>
+            <German>Rabinowicz Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_USFlash">
+            <English>Rabinowicz US Flash</English>
+            <German>Rabinowicz US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_USStains">
+            <English>Rabinowicz US Stains</English>
+            <German>Rabinowicz US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_10_USStripes">
+            <English>Rabinowicz US Stripes</English>
+            <German>Rabinowicz US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_BWStripes">
+            <English>Nowak BW Stripes</English>
+            <German>Nowak BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_BWTarn">
+            <English>Nowak BW Camouflage</English>
+            <German>Nowak BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_Black">
+            <English>Nowak Black</English>
+            <German>Nowak Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_Serbian">
+            <English>Nowak Serbian</English>
+            <German>Nowak Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_SnowStripes">
+            <English>Nowak Snow Stripes</English>
+            <German>Nowak Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_USFlash">
+            <English>Nowak US Flash</English>
+            <German>Nowak US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_USStains">
+            <English>Nowak US Stains</English>
+            <German>Nowak US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_1_USStripes">
+            <English>Nowak US Stripes</English>
+            <German>Nowak US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_BWStripes">
+            <English>Górecki BW Stripes</English>
+            <German>Górecki BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_BWTarn">
+            <English>Górecki BW Camouflage</English>
+            <German>Górecki BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_Black">
+            <English>Górecki Black</English>
+            <German>Górecki Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_Serbian">
+            <English>Górecki Serbian</English>
+            <German>Górecki Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_SnowStripes">
+            <English>Górecki Snow Stripes</English>
+            <German>Górecki Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_USFlash">
+            <English>Górecki US Flash</English>
+            <German>Górecki US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_USStains">
+            <English>Górecki US Stains</English>
+            <German>Górecki US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_2_USStripes">
+            <English>Górecki US Stripes</English>
+            <German>Górecki US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_BWStripes">
+            <English>Kowalski BW Stripes</English>
+            <German>Kowalski BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_BWTarn">
+            <English>Kowalski BW Camouflage</English>
+            <German>Kowalski BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_Black">
+            <English>Kowalski Black</English>
+            <German>Kowalski Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_Serbian">
+            <English>Kowalski Serbian</English>
+            <German>Kowalski Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_SnowStripes">
+            <English>Kowalski Snow Stripes</English>
+            <German>Kowalski Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_USFlash">
+            <English>Kowalski US Flash</English>
+            <German>Kowalski US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_USStains">
+            <English>Kowalski US Stains</English>
+            <German>Kowalski US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_3_USStripes">
+            <English>Kowalski US Stripes</English>
+            <German>Kowalski US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_BWStripes">
+            <English>Stolarski BW Stripes</English>
+            <German>Stolarski BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_BWTarn">
+            <English>Stolarski BW Camouflage</English>
+            <German>Stolarski BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_Black">
+            <English>Stolarski Black</English>
+            <German>Stolarski Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_Serbian">
+            <English>Stolarski Serbian</English>
+            <German>Stolarski Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_SnowStripes">
+            <English>Stolarski Snow Stripes</English>
+            <German>Stolarski Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_USFlash">
+            <English>Stolarski US Flash</English>
+            <German>Stolarski US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_USStains">
+            <English>Stolarski US Stains</English>
+            <German>Stolarski US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_4_USStripes">
+            <English>Stolarski US Stripes</English>
+            <German>Stolarski US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_BWStripes">
+            <English>Burak BW Stripes</English>
+            <German>Burak BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_BWTarn">
+            <English>Burak BW Camouflage</English>
+            <German>Burak BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_Black">
+            <English>Burak Black</English>
+            <German>Burak Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_Serbian">
+            <English>Burak Serbian</English>
+            <German>Burak Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_SnowStripes">
+            <English>Burak Snow Stripes</English>
+            <German>Burak Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_USFlash">
+            <English>Burak US Flash</English>
+            <German>Burak US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_USStains">
+            <English>Burak US Stains</English>
+            <German>Burak US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_5_USStripes">
+            <English>Burak US Stripes</English>
+            <German>Burak US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_BWStripes">
+            <English>Kawa BW Stripes</English>
+            <German>Kawa BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_BWTarn">
+            <English>Kawa BW Camouflage</English>
+            <German>Kawa BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_Black">
+            <English>Kawa Black</English>
+            <German>Kawa Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_Serbian">
+            <English>Kawa Serbian</English>
+            <German>Kawa Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_SnowStripes">
+            <English>Kawa Snow Stripes</English>
+            <German>Kawa Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_USFlash">
+            <English>Kawa US Flash</English>
+            <German>Kawa US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_USStains">
+            <English>Kawa US Stains</English>
+            <German>Kawa US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_6_USStripes">
+            <English>Kawa US Stripes</English>
+            <German>Kawa US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_BWStripes">
+            <English>Janowski BW Stripes</English>
+            <German>Janowski BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_BWTarn">
+            <English>Janowski BW Camouflage</English>
+            <German>Janowski BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_Black">
+            <English>Janowski Black</English>
+            <German>Janowski Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_Serbian">
+            <English>Janowski Serbian</English>
+            <German>Janowski Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_SnowStripes">
+            <English>Janowski Snow Stripes</English>
+            <German>Janowski Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_USFlash">
+            <English>Janowski US Flash</English>
+            <German>Janowski US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_USStains">
+            <English>Janowski US Stains</English>
+            <German>Janowski US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_7_USStripes">
+            <English>Janowski US Stripes</English>
+            <German>Janowski US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_BWStripes">
+            <English>Sternik BW Stripes</English>
+            <German>Sternik BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_BWTarn">
+            <English>Sternik BW Camouflage</English>
+            <German>Sternik BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_Black">
+            <English>Sternik Black</English>
+            <German>Sternik Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_Serbian">
+            <English>Sternik Serbian</English>
+            <German>Sternik Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_SnowStripes">
+            <English>Sternik Snow Stripes</English>
+            <German>Sternik Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_USFlash">
+            <English>Sternik US Flash</English>
+            <German>Sternik US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_USStains">
+            <English>Sternik US Stains</English>
+            <German>Sternik US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_8_USStripes">
+            <English>Sternik US Stripes</English>
+            <German>Sternik US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_BWStripes">
+            <English>Zieliński BW Stripes</English>
+            <German>Zieliński BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_BWTarn">
+            <English>Zieliński BW Camouflage</English>
+            <German>Zieliński BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_Black">
+            <English>Zieliński Black</English>
+            <German>Zieliński Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_Serbian">
+            <English>Zieliński Serbian</English>
+            <German>Zieliński Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_SnowStripes">
+            <English>Zieliński Snow Stripes</English>
+            <German>Zieliński Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_USFlash">
+            <English>Zieliński US Flash</English>
+            <German>Zieliński US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_USStains">
+            <English>Zieliński US Stains</English>
+            <German>Zieliński US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_LivonianHead_9_USStripes">
+            <English>Zieliński US Stripes</English>
+            <German>Zieliński US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_BWStripes">
+            <English>Mavros BW Stripes</English>
+            <German>Mavros BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_BWTarn">
+            <English>Mavros BW Camouflage</English>
+            <German>Mavros BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_Black">
+            <English>Mavros Black</English>
+            <German>Mavros Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_Serbian">
+            <English>Mavros Serbian</English>
+            <German>Mavros Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_SnowStripes">
+            <English>Mavros Snow Stripes</English>
+            <German>Mavros Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_USFlash">
+            <English>Mavros US Flash</English>
+            <German>Mavros US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_USStains">
+            <English>Mavros US Stains</English>
+            <German>Mavros US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Mavros_USStripes">
+            <English>Mavros US Stripes</English>
+            <German>Mavros US Streifen</German>
         </Key>
         <!-- Persian Heads -->
         <Key ID="STR_CFR_Faces_PersianHead_A3_01_BWStripes">
@@ -568,6 +1236,450 @@
         <Key ID="STR_CFR_Faces_PersianHead_A3_03_USStripes">
             <English>Sabet US Stripes</English>
             <German>Sabet US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_BWStripes">
+            <English>Ivanov BW Stripes</English>
+            <German>Ivanov BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_BWTarn">
+            <English>Ivanov BW Camouflage</English>
+            <German>Ivanov BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_Black">
+            <English>Ivanov Black</English>
+            <German>Ivanov Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_Serbian">
+            <English>Ivanov Serbian</English>
+            <German>Ivanov Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_SnowStripes">
+            <English>Ivanov Snow Stripes</English>
+            <German>Ivanov Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_USFlash">
+            <English>Ivanov US Flash</English>
+            <German>Ivanov US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_USStains">
+            <English>Ivanov US Stains</English>
+            <German>Ivanov US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_1_USStripes">
+            <English>Ivanov US Stripes</English>
+            <German>Ivanov US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_BWStripes">
+            <English>Petrenko BW Stripes</English>
+            <German>Petrenko BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_BWTarn">
+            <English>Petrenko BW Camouflage</English>
+            <German>Petrenko BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_Black">
+            <English>Petrenko Black</English>
+            <German>Petrenko Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_Serbian">
+            <English>Petrenko Serbian</English>
+            <German>Petrenko Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_SnowStripes">
+            <English>Petrenko Snow Stripes</English>
+            <German>Petrenko Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_USFlash">
+            <English>Petrenko US Flash</English>
+            <German>Petrenko US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_USStains">
+            <English>Petrenko US Stains</English>
+            <German>Petrenko US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_2_USStripes">
+            <English>Petrenko US Stripes</English>
+            <German>Petrenko US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_BWStripes">
+            <English>Krupin BW Stripes</English>
+            <German>Krupin BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_BWTarn">
+            <English>Krupin BW Camouflage</English>
+            <German>Krupin BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_Black">
+            <English>Krupin Black</English>
+            <German>Krupin Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_Serbian">
+            <English>Krupin Serbian</English>
+            <German>Krupin Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_SnowStripes">
+            <English>Krupin Snow Stripes</English>
+            <German>Krupin Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_USFlash">
+            <English>Krupin US Flash</English>
+            <German>Krupin US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_USStains">
+            <English>Krupin US Stains</English>
+            <German>Krupin US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_3_USStripes">
+            <English>Krupin US Stripes</English>
+            <German>Krupin US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_BWStripes">
+            <English>Adamovich BW Stripes</English>
+            <German>Adamovich BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_BWTarn">
+            <English>Adamovich BW Camouflage</English>
+            <German>Adamovich BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_Black">
+            <English>Adamovich Black</English>
+            <German>Adamovich Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_Serbian">
+            <English>Adamovich Serbian</English>
+            <German>Adamovich Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_SnowStripes">
+            <English>Adamovich Snow Stripes</English>
+            <German>Adamovich Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_USFlash">
+            <English>Adamovich US Flash</English>
+            <German>Adamovich US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_USStains">
+            <English>Adamovich US Stains</English>
+            <German>Adamovich US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_4_USStripes">
+            <English>Adamovich US Stripes</English>
+            <German>Adamovich US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_BWStripes">
+            <English>Yakhin BW Stripes</English>
+            <German>Yakhin BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_BWTarn">
+            <English>Yakhin BW Camouflage</English>
+            <German>Yakhin BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_Black">
+            <English>Yakhin Black</English>
+            <German>Yakhin Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_Serbian">
+            <English>Yakhin Serbian</English>
+            <German>Yakhin Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_SnowStripes">
+            <English>Yakhin Snow Stripes</English>
+            <German>Yakhin Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_USFlash">
+            <English>Yakhin US Flash</English>
+            <German>Yakhin US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_USStains">
+            <English>Yakhin US Stains</English>
+            <German>Yakhin US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_RussianHead_5_USStripes">
+            <English>Yakhin US Stripes</English>
+            <German>Yakhin US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_BWStripes">
+            <English>Sturrock BW Stripes</English>
+            <German>Sturrock BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_BWTarn">
+            <English>Sturrock BW Camouflage</English>
+            <German>Sturrock BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_Black">
+            <English>Sturrock Black</English>
+            <German>Sturrock Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_Serbian">
+            <English>Sturrock Serbian</English>
+            <German>Sturrock Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_SnowStripes">
+            <English>Sturrock Snow Stripes</English>
+            <German>Sturrock Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_USFlash">
+            <English>Sturrock US Flash</English>
+            <German>Sturrock US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_USStains">
+            <English>Sturrock US Stains</English>
+            <German>Sturrock US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_Sturrock_USStripes">
+            <English>Sturrock US Stripes</English>
+            <German>Sturrock US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_01_BWStripes">
+            <English>Simo BW Stripes</English>
+            <German>Simo BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_01_BWTarn">
+            <English>Simo BW Camouflage</English>
+            <German>Simo BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_01_Serbian">
+            <English>Simo Serbian</English>
+            <German>Simo Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_01_SnowStripes">
+            <English>Simo Snow Stripes</English>
+            <German>Simo Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_01_USFlash">
+            <English>Simo US Flash</English>
+            <German>Simo US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_01_USStains">
+            <English>Simo US Stains</English>
+            <German>Simo US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_01_USStripes">
+            <English>Simo US Stripes</English>
+            <German>Simo US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_02_BWStripes">
+            <English>Adnet BW Stripes</English>
+            <German>Adnet BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_02_BWTarn">
+            <English>Adnet BW Camouflage</English>
+            <German>Adnet BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_02_Serbian">
+            <English>Adnet Serbian</English>
+            <German>Adnet Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_02_SnowStripes">
+            <English>Adnet Snow Stripes</English>
+            <German>Adnet Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_02_USFlash">
+            <English>Adnet US Flash</English>
+            <German>Adnet US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_02_USStains">
+            <English>Adnet US Stains</English>
+            <German>Adnet US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_02_USStripes">
+            <English>Adnet US Stripes</English>
+            <German>Adnet US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_03_BWStripes">
+            <English>Cahun BW Stripes</English>
+            <German>Cahun BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_03_BWTarn">
+            <English>Cahun BW Camouflage</English>
+            <German>Cahun BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_03_Serbian">
+            <English>Cahun Serbian</English>
+            <German>Cahun Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_03_SnowStripes">
+            <English>Cahun Snow Stripes</English>
+            <German>Cahun Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_03_USFlash">
+            <English>Cahun US Flash</English>
+            <German>Cahun US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_03_USStains">
+            <English>Cahun US Stains</English>
+            <German>Cahun US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_03_USStripes">
+            <English>Cahun US Stripes</English>
+            <German>Cahun US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_04_BWStripes">
+            <English>Ganio BW Stripes</English>
+            <German>Ganio BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_04_BWTarn">
+            <English>Ganio BW Camouflage</English>
+            <German>Ganio BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_04_Serbian">
+            <English>Ganio Serbian</English>
+            <German>Ganio Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_04_SnowStripes">
+            <English>Ganio Snow Stripes</English>
+            <German>Ganio Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_04_USFlash">
+            <English>Ganio US Flash</English>
+            <German>Ganio US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_04_USStains">
+            <English>Ganio US Stains</English>
+            <German>Ganio US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_04_USStripes">
+            <English>Ganio US Stripes</English>
+            <German>Ganio US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_05_BWStripes">
+            <English>Malet BW Stripes</English>
+            <German>Malet BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_05_BWTarn">
+            <English>Malet BW Camouflage</English>
+            <German>Malet BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_05_Serbian">
+            <English>Malet Serbian</English>
+            <German>Malet Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_05_SnowStripes">
+            <English>Malet Snow Stripes</English>
+            <German>Malet Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_05_USFlash">
+            <English>Malet US Flash</English>
+            <German>Malet US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_05_USStains">
+            <English>Malet US Stains</English>
+            <German>Malet US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_05_USStripes">
+            <English>Malet US Stripes</English>
+            <German>Malet US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_06_BWStripes">
+            <English>Solé BW Stripes</English>
+            <German>Solé BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_06_BWTarn">
+            <English>Solé BW Camouflage</English>
+            <German>Solé BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_06_Serbian">
+            <English>Solé Serbian</English>
+            <German>Solé Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_06_SnowStripes">
+            <English>Solé Snow Stripes</English>
+            <German>Solé Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_06_USFlash">
+            <English>Solé US Flash</English>
+            <German>Solé US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_06_USStains">
+            <English>Solé US Stains</English>
+            <German>Solé US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_06_USStripes">
+            <English>Solé US Stripes</English>
+            <German>Solé US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_07_BWStripes">
+            <English>Mignard BW Stripes</English>
+            <German>Mignard BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_07_BWTarn">
+            <English>Mignard BW Camouflage</English>
+            <German>Mignard BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_07_Serbian">
+            <English>Mignard Serbian</English>
+            <German>Mignard Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_07_SnowStripes">
+            <English>Mignard Snow Stripes</English>
+            <German>Mignard Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_07_USFlash">
+            <English>Mignard US Flash</English>
+            <German>Mignard US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_07_USStains">
+            <English>Mignard US Stains</English>
+            <German>Mignard US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_07_USStripes">
+            <English>Mignard US Stripes</English>
+            <German>Mignard US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_08_BWStripes">
+            <English>Thibaud BW Stripes</English>
+            <German>Thibaud BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_08_BWTarn">
+            <English>Thibaud BW Camouflage</English>
+            <German>Thibaud BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_08_Serbian">
+            <English>Thibaud Serbian</English>
+            <German>Thibaud Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_08_SnowStripes">
+            <English>Thibaud Snow Stripes</English>
+            <German>Thibaud Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_08_USFlash">
+            <English>Thibaud US Flash</English>
+            <German>Thibaud US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_08_USStains">
+            <English>Thibaud US Stains</English>
+            <German>Thibaud US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_08_USStripes">
+            <English>Thibaud US Stripes</English>
+            <German>Thibaud US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_09_BWStripes">
+            <English>Old Man BW Stripes</English>
+            <German>Der alte Mann BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_09_BWTarn">
+            <English>Old Man BW Camouflage</English>
+            <German>Der alte Mann BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_09_Serbian">
+            <English>Old Man Serbian</English>
+            <German>Der alte Mann Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_09_SnowStripes">
+            <English>Old Man Snow Stripes</English>
+            <German>Der alte Mann Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_09_USFlash">
+            <English>Old Man US Flash</English>
+            <German>Der alte Mann US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_09_USStains">
+            <English>Old Man US Stains</English>
+            <German>Der alte Mann US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_TanoanHead_A3_09_USStripes">
+            <English>Old Man US Stripes</English>
+            <German>Der alte Mann US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_01_BWStripes">
             <English>Bayh BW Stripes</English>
@@ -1211,36 +2323,356 @@
             <German>Walsh US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_BWStripes">
-            <English>O'Smith BW Stripes</English>
-            <German>O'Smith BW Streifen</German>
+            <English>O'Sullivan BW Stripes</English>
+            <German>O'Sullivan BW Streifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_BWTarn">
-            <English>O'Smith BW Camouflage</English>
-            <German>O'Smith BW Tarn</German>
+            <English>O'Sullivan BW Camouflage</English>
+            <German>O'Sullivan BW Tarn</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_Black">
-            <English>O'Smith Black</English>
-            <German>O'Smith Schwarz</German>
+            <English>O'Sullivan Black</English>
+            <German>O'Sullivan Schwarz</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_Serbian">
-            <English>O'Smith Serbian</English>
-            <German>O'Smith Serbisch</German>
+            <English>O'Sullivan Serbian</English>
+            <German>O'Sullivan Serbisch</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_SnowStripes">
-            <English>O'Smith Snow Stripes</English>
-            <German>O'Smith Schneestreifen</German>
+            <English>O'Sullivan Snow Stripes</English>
+            <German>O'Sullivan Schneestreifen</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_USFlash">
-            <English>O'Smith US Flash</English>
-            <German>O'Smith US Sprüh</German>
+            <English>O'Sullivan US Flash</English>
+            <German>O'Sullivan US Sprüh</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_USStains">
-            <English>O'Smith US Stains</English>
-            <German>O'Smith US Flecken</German>
+            <English>O'Sullivan US Stains</English>
+            <German>O'Sullivan US Flecken</German>
         </Key>
         <Key ID="STR_CFR_Faces_WhiteHead_21_USStripes">
-            <English>O'Smith US Stripes</English>
-            <German>O'Smith US Streifen</German>
+            <English>O'Sullivan US Stripes</English>
+            <German>O'Sullivan US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_BWStripes">
+            <English>Nathan BW Stripes</English>
+            <German>Nathan BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_BWTarn">
+            <English>Nathan BW Camouflage</English>
+            <German>Nathan BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_Black">
+            <English>Nathan Black</English>
+            <German>Nathan Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_Serbian">
+            <English>Nathan Serbian</English>
+            <German>Nathan Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_SnowStripes">
+            <English>Nathan Snow Stripes</English>
+            <German>Nathan Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_USFlash">
+            <English>Nathan US Flash</English>
+            <German>Nathan US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_USStains">
+            <English>Nathan US Stains</English>
+            <German>Nathan US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_23_USStripes">
+            <English>Nathan US Stripes</English>
+            <German>Nathan US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_BWStripes">
+            <English>Čapek BW Stripes</English>
+            <German>Čapek BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_BWTarn">
+            <English>Čapek BW Camouflage</English>
+            <German>Čapek BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_Black">
+            <English>Čapek Black</English>
+            <German>Čapek Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_Serbian">
+            <English>Čapek Serbian</English>
+            <German>Čapek Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_SnowStripes">
+            <English>Čapek Snow Stripes</English>
+            <German>Čapek Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_USFlash">
+            <English>Čapek US Flash</English>
+            <German>Čapek US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_USStains">
+            <English>Čapek US Stains</English>
+            <German>Čapek US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_24_USStripes">
+            <English>Čapek US Stripes</English>
+            <German>Čapek US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_BWStripes">
+            <English>Dillon BW Stripes</English>
+            <German>Dillon BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_BWTarn">
+            <English>Dillon BW Camouflage</English>
+            <German>Dillon BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_Black">
+            <English>Dillon Black</English>
+            <German>Dillon Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_Serbian">
+            <English>Dillon Serbian</English>
+            <German>Dillon Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_SnowStripes">
+            <English>Dillon Snow Stripes</English>
+            <German>Dillon Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_USFlash">
+            <English>Dillon US Flash</English>
+            <German>Dillon US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_USStains">
+            <English>Dillon US Stains</English>
+            <German>Dillon US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_25_USStripes">
+            <English>Dillon US Stripes</English>
+            <German>Dillon US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_BWStripes">
+            <English>Homewood BW Stripes</English>
+            <German>Homewood BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_BWTarn">
+            <English>Homewood BW Camouflage</English>
+            <German>Homewood BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_Black">
+            <English>Homewood Black</English>
+            <German>Homewood Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_Serbian">
+            <English>Homewood Serbian</English>
+            <German>Homewood Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_SnowStripes">
+            <English>Homewood Snow Stripes</English>
+            <German>Homewood Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_USFlash">
+            <English>Homewood US Flash</English>
+            <German>Homewood US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_USStains">
+            <English>Homewood US Stains</English>
+            <German>Homewood US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_26_USStripes">
+            <English>Homewood US Stripes</English>
+            <German>Homewood US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_BWStripes">
+            <English>Kesson BW Stripes</English>
+            <German>Kesson BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_BWTarn">
+            <English>Kesson BW Camouflage</English>
+            <German>Kesson BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_Black">
+            <English>Kesson Black</English>
+            <German>Kesson Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_Serbian">
+            <English>Kesson Serbian</English>
+            <German>Kesson Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_SnowStripes">
+            <English>Kesson Snow Stripes</English>
+            <German>Kesson Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_USFlash">
+            <English>Kesson US Flash</English>
+            <German>Kesson US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_USStains">
+            <English>Kesson US Stains</English>
+            <German>Kesson US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_27_USStripes">
+            <English>Kesson US Stripes</English>
+            <German>Kesson US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_BWStripes">
+            <English>Kingsly BW Stripes</English>
+            <German>Kinglsy BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_BWTarn">
+            <English>Kingsly BW Camouflage</English>
+            <German>Kinglsy BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_Black">
+            <English>Kingsly Black</English>
+            <German>Kinglsy Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_Serbian">
+            <English>Kingsly Serbian</English>
+            <German>Kinglsy Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_SnowStripes">
+            <English>Kingsly Snow Stripes</English>
+            <German>Kinglsy Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_USFlash">
+            <English>Kingsly US Flash</English>
+            <German>Kinglsy US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_USStains">
+            <English>Kingsly US Stains</English>
+            <German>Kinglsy US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_28_USStripes">
+            <English>Kingsly US Stripes</English>
+            <German>Kinglsy US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_BWStripes">
+            <English>Severov BW Stripes</English>
+            <German>Severov BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_BWTarn">
+            <English>Severov BW Camouflage</English>
+            <German>Severov BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_Black">
+            <English>Severov Black</English>
+            <German>Severov Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_Serbian">
+            <English>Severov Serbian</English>
+            <German>Severov Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_SnowStripes">
+            <English>Severov Snow Stripes</English>
+            <German>Severov Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_USFlash">
+            <English>Severov US Flash</English>
+            <German>Severov US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_USStains">
+            <English>Severov US Stains</English>
+            <German>Severov US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_29_USStripes">
+            <English>Severov US Stripes</English>
+            <German>Severov US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_BWStripes">
+            <English>Smolko BW Stripes</English>
+            <German>Smolko BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_BWTarn">
+            <English>Smolko BW Camouflage</English>
+            <German>Smolko BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_Black">
+            <English>Smolko Black</English>
+            <German>Smolko Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_Serbian">
+            <English>Smolko Serbian</English>
+            <German>Smolko Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_SnowStripes">
+            <English>Smolko Snow Stripes</English>
+            <German>Smolko Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_USFlash">
+            <English>Smolko US Flash</English>
+            <German>Smolko US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_USStains">
+            <English>Smolko US Stains</English>
+            <German>Smolko US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_30_USStripes">
+            <English>Smolko US Stripes</English>
+            <German>Smolko US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_BWStripes">
+            <English>Stype BW Stripes</English>
+            <German>Stype BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_BWTarn">
+            <English>Stype BW Camouflage</English>
+            <German>Stype BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_Black">
+            <English>Stype Black</English>
+            <German>Stype Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_Serbian">
+            <English>Stype Serbian</English>
+            <German>Stype Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_SnowStripes">
+            <English>Stype Snow Stripes</English>
+            <German>Stype Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_USFlash">
+            <English>Stype US Flash</English>
+            <German>Stype US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_USStains">
+            <English>Stype US Stains</English>
+            <German>Stype US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_31_USStripes">
+            <English>Stype US Stripes</English>
+            <German>Stype US Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_BWStripes">
+            <English>Rudwell BW Stripes</English>
+            <German>Rudwell BW Streifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_BWTarn">
+            <English>Rudwell BW Camouflage</English>
+            <German>Rudwell BW Tarn</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_Black">
+            <English>Rudwell Black</English>
+            <German>Rudwell Schwarz</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_Serbian">
+            <English>Rudwell Serbian</English>
+            <German>Rudwell Serbisch</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_SnowStripes">
+            <English>Rudwell Snow Stripes</English>
+            <German>Rudwell Schneestreifen</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_USFlash">
+            <English>Rudwell US Flash</English>
+            <German>Rudwell US Sprüh</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_USStains">
+            <English>Rudwell US Stains</English>
+            <German>Rudwell US Flecken</German>
+        </Key>
+        <Key ID="STR_CFR_Faces_WhiteHead_32_USStripes">
+            <English>Rudwell US Stripes</English>
+            <German>Rudwell US Streifen</German>
         </Key>
     </Package>
 </Project>

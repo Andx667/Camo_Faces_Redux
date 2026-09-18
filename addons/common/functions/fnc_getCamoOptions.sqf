@@ -40,7 +40,9 @@ if (_face in GVAR(all_faces)) then {
     // The notebook's pattern list (this function) is narrow, so a couple of schemes get a shorter
     // label here than their shared GVAR(schemes) stringKey - which stays unshortened for other
     // consumers (ACE self-actions, ZEN context menu) that have more room to display it.
-    private _shortStringKeys = [["Serbian", "camo_serbian_short"], ["Vanilla", "camo_vanilla_short"]];
+    private _shortStringKeys = [["Serbian", "camo_serbian_short"], ["Vanilla", "camo_vanilla_short"],
+        ["VanillaArid", "camo_vanilla_arid_short"], ["VanillaLush", "camo_vanilla_lush_short"],
+        ["VanillaSemiArid", "camo_vanilla_semiarid_short"]];
 
     // "Black" isn't tied to one specific item like the others - it's offered under every country
     // selection so it's reachable with whichever facepaint item the player actually has equipped
@@ -48,7 +50,9 @@ if (_face in GVAR(all_faces)) then {
         case "bw_select": { ["BWTarn", "BWStripes", "Black"] };
         case "serbian_select": { ["Serbian", "Black"] };
         case "us_select": { ["USStripes", "USStains", "USFlash", "Black"] };
-        case "vanilla_select": { ["Vanilla"] };
+        // Vanilla's three environment variants only exist for three base faces; the pairs check
+        // below drops the ones the player's face has no variant for, so most faces see only "Vanilla"
+        case "vanilla_select": { ["Vanilla", "VanillaArid", "VanillaLush", "VanillaSemiArid"] };
         // SnowStripes - own category, own item (see fnc_getCountryOptions.sqf), only one color so
         // no "Black" fallback needed alongside it like the military categories above
         case "snow_select": { ["SnowStripes"] };
