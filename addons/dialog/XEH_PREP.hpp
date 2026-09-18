@@ -4,7 +4,6 @@ PREP(applyCamoLayer);
 PREP(canApplyScheme);
 PREP(canShowAction);
 PREP(closeDialog);
-PREP(handleRespawn);
 PREP(hasCamoApplied);
 PREP(initDialog);
 PREP(onLBCamoChanged);

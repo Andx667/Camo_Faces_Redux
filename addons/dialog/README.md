@@ -5,6 +5,7 @@ The graphical interface for choosing and applying camouflage. All textures used 
 ## Dependencies
 
 - `cfr_main`
+- `cfr_common`
 - `cfr_items`
 - `cfr_faces`
 
@@ -19,7 +20,6 @@ This addon offers two independent ways to reach the same underlying `cfr_common`
 5. `fnc_applyCamo` walks through the three layer buttons (each with a short delay via `CBA_fnc_waitAndExecute`); the final layer calls into `cfr_common`'s `fnc_setCamo`.
 6. `fnc_unsetCamo` (this addon) validates the current face before handing off to `cfr_common`'s `fnc_unsetCamo` to remove it.
 7. `fnc_closeDialog` cleans up the mirror camera when the dialog closes (`onunload`).
-8. `fnc_handleRespawn` (`Extended_Respawn_EventHandlers`) reapplies a unit's saved camo face after respawning.
 
 ## Flow (ACE actions)
 
@@ -41,7 +41,6 @@ This addon offers two independent ways to reach the same underlying `cfr_common`
 | `fnc_onLBCamoChanged` | `[listbox, index]` | Unlocks the first "apply layer" button once headgear/goggles/NV are all off |
 | `fnc_applyCamo` | `[level]` | Advances the 3-layer apply sequence (dialog); layer 3 actually calls `cfr_common`'s `fnc_setCamo` |
 | `fnc_unsetCamo` | `[unit, face]` (both optional, default to the player/its current face) | Validates the current face, then removes camo via `cfr_common`'s `fnc_unsetCamo` |
-| `fnc_handleRespawn` | `[unit]` | Reapplies a unit's saved camo face after it respawns |
 | `fnc_canApplyScheme` | `[schemeId]` | ACE self-action condition for one scheme: item/face/headgear preconditions, read from `cfr_common`'s `GVAR(schemes)` |
 | `fnc_applyCamoAction` | `[schemeId]` | ACE self-action statement: starts the dialog-free 3-layer progress bar sequence at layer 1 |
 | `fnc_applyCamoLayer` | `[schemeId, layer]` | Runs one `ace_common_fnc_progressBar` for the given layer, then recurses into the next layer or calls `cfr_common`'s `fnc_setCamo` after layer 3 |
