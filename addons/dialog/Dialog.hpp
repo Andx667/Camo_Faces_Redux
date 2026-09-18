@@ -1,5 +1,5 @@
 class RscPicture;
-class RscListbox;
+class RscListBox;
 class RscButton;
 class RscStructuredText;
 
@@ -29,7 +29,7 @@ class GVAR(Dialog) {
         h = 28 * (0.04);
         tooltip = "";
     };
-    class RscListbox_Country: RscListbox {
+    class RscListbox_Country: RscListBox {
         idc = IDC_LISTBOX_COUNTRY;
         text = "";
         x = (((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 8*(0.025));
@@ -52,7 +52,7 @@ class GVAR(Dialog) {
         colorSelectBackground2[] = {1,1,1,0};
         colorBackground[] = {0,0,0,0};
     };
-    class RscListbox_Camoface: RscListbox {
+    class RscListbox_Camoface: RscListBox {
         idc = IDC_LISTBOX_CAMOFACE;
         text = "";
         x = (((0 * (0.025)+ (0)+ 37 * (0.025))*0.8)+ 19*(0.025));

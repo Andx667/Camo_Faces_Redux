@@ -37,7 +37,7 @@ call FUNC(init);
     };
 }] call CBA_fnc_addEventHandler;
 
-// private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
+private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
 
 // isGlobal 1 (all clients share the same setting) - unlike cfr_dialog's/cfr_compat_zen's isGlobal 2
 // per-client UI preferences, how long camo takes to wear off is mission-balance state read locally
