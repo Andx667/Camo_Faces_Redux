@@ -13,10 +13,17 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 | `fnc_init` | none | Builds `GVAR(all_faces)`/`GVAR(schemes)` (see below); called from `XEH_preInit` so this data exists before any mission entity - and therefore before any unit's init field - runs (`fnc_setCamo`/`fnc_unsetCamo` also self-defer a frame via `CBA_fnc_waitAndExecute` if called before this has run, as a safety net) |
 | `fnc_getCountryOptions` | `[unit]` | Returns which camo schemes (BW / Serbian / US / Vanilla) a unit can use, based on which facepaint item(s) it's carrying |
 | `fnc_getCamoOptions` | `[scheme]` | Returns the specific camo patterns available within a scheme, for the calling player's current base face |
-| `fnc_setCamo` | `[unit, camo]` | Applies a camo face to a unit if the combination is valid, and hints the result |
+| `fnc_setCamo` | `[unit, camo]` | Applies a camo face to a unit if the combination is valid, and hints the result; also schedules automatic wear-off if enabled (see Settings below) |
 | `fnc_unsetCamo` | `[unit, face]` | Reverses whichever scheme the unit's current camo face belongs to, restoring its base face |
 | `fnc_isCamoFace` | `[face]` | Checks whether a face classname is one of this mod's camo variants, under any scheme — shared predicate used by `fnc_setCamo`, `cfr_dialog`'s `fnc_canShowAction`, and both `fnc_unsetCamo` files |
 | `fnc_getSchemeDisplayName` | `[schemeId]` | Returns a camo scheme's localized display name — used by `cfr_compat_zen`'s dynamic ZEN context menu |
+| `fnc_handleRespawn` | `[unit]` | `Extended_Respawn_EventHandlers` hook - reapplies a unit's saved camo (if any) after it respawns, via `fnc_setCamo` |
+
+## Settings
+
+A CBA setting, **Camo Wear-off Time (Minutes)** (slider, 0 to 240, default 0), controls whether camo automatically fades back to the unit's original face after a set number of minutes - simulating real-world wear from rain, sweat, and time. 0 disables it (the default). Unlike `cfr_dialog`'s/`cfr_compat_zen`'s per-client UI toggles, this is registered with `isGlobal` 1 so every client shares the same value, since `fnc_setCamo` reads it locally when scheduling the timer.
+
+The timer is a cancellable `CBA_fnc_addPerFrameHandler`, its ID stashed on the unit (`cfr_common_wearOffTimerId`), scheduled on whichever machine called `fnc_setCamo`. `fnc_unsetCamo` always cancels it first thing, so manually removing camo can never race with a stale timer clobbering it. A second timer also can't get stacked on top by re-applying: every scheme's pairs map from the same shared set of base faces, never from another scheme's camo face, so `fnc_setCamo` can't match a scheme for a unit already wearing camo and exits early - `fnc_unsetCamo` has to run first, which always cancels the existing timer. The applied scheme id is also stashed (`cfr_common_scheme`, cleared on removal) so respawn/JIP restore (`XEH_postInit.sqf`, `fnc_handleRespawn`) can just call `fnc_setCamo` again for units with active camo, getting a fresh timer along with the restored face rather than reapplying a face with no timer behind it.
 
 ## Networking
 
@@ -58,4 +65,4 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 The 7 core schemes' `pairs` are *derived* from `GVAR(all_faces)` (via `FACES_CLASS_PREFIX`, defined in `script_component.hpp`) rather than hand-maintained separately, so they can't drift out of sync with the base face list. The `Vanilla` row is different: BI's vanilla camo classnames don't follow a suffix pattern (`CamoHead_White_01_F`, not `WhiteHead_01_something`), so its pairs come from the explicit `GVAR(vanillaCamoFacePairs)` table instead — and the row is only appended to `GVAR(schemes)` at all if `isDLCAvailable 332350` (Marksmen) is true. Every consumer just reads `GVAR(schemes)`, so on a client without Marksmen, `Vanilla` is completely and automatically absent everywhere (dialog country list, ACE actions, apply/remove) with no DLC-specific logic anywhere else in the mod.
 
-Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `cfr_dialog`'s `fnc_handleRespawn` (on respawn) can reapply it.
+Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `fnc_handleRespawn` (on respawn) can reapply it.

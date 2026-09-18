@@ -1,6 +1,7 @@
 PREP(getCamoOptions);
 PREP(getCountryOptions);
 PREP(getSchemeDisplayName);
+PREP(handleRespawn);
 PREP(init);
 PREP(isCamoFace);
 PREP(setCamo);

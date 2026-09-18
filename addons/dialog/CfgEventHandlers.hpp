@@ -9,9 +9,3 @@ class Extended_PreInit_EventHandlers {
         init = QUOTE(call COMPILE_SCRIPT(XEH_preInit));
     };
 };
-
-class Extended_Respawn_EventHandlers {
-    class ADDON {
-        respawn = QUOTE(call FUNC(handleRespawn));
-    };
-};

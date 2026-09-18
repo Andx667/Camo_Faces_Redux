@@ -53,9 +53,21 @@
             <English>Camo</English>
             <German>Tarnung</German>
         </Key>
+        <Key ID="STR_CFR_Common_displayName">
+            <English>Camouflage</English>
+            <German>Tarnung</German>
+        </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>
             <German>Dieses Gesicht kann nicht getarnt werden</German>
+        </Key>
+        <Key ID="STR_CFR_Common_settingWearOffTime_name">
+            <English>Camo Wear-off Time (Minutes)</English>
+            <German>Tarnungs-Verfallszeit (Minuten)</German>
+        </Key>
+        <Key ID="STR_CFR_Common_settingWearOffTime_tooltip">
+            <English>How many minutes after being applied a camouflage face automatically wears off and reverts to the original face, simulating it fading from rain, sweat, or time. Set to 0 to disable - camo will never wear off on its own.</English>
+            <German>Wie viele Minuten nach dem Auftragen eine Tarnschminke automatisch verblasst und zum ursprünglichen Gesicht zurückkehrt - simuliert das Verblassen durch Regen, Schweiß oder Zeit. Auf 0 setzen, um zu deaktivieren - die Tarnung verblasst dann nie von selbst.</German>
         </Key>
     </Package>
 </Project>

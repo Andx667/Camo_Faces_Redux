@@ -55,13 +55,44 @@ if (_schemeIdx != -1) then {
 // player controlling the target unit
 private _hintOwner = _unit == player;
 
-if (_targetFace != "") then {
-    [QGVAR(setFace), [_unit, _targetFace]] call CBA_fnc_globalEvent;
-    _unit setVariable [QGVAR(face), _targetFace, true];
-    // public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
-    // setFace event above) - only fires on this machine, i.e. whichever client is applying its own camo
-    [QGVAR(camoApplied), [_unit, _camo, _face, _targetFace]] call CBA_fnc_localEvent;
-    if (_hintOwner) then { hint (localize LSTRING(camoApplied)); };
-} else {
+if (_targetFace == "") exitWith {
     if (_hintOwner) then { hint (localize LSTRING(invalidFace)); };
+};
+
+[QGVAR(setFace), [_unit, _targetFace]] call CBA_fnc_globalEvent;
+_unit setVariable [QGVAR(face), _targetFace, true];
+// remembered so respawn/JIP restore (XEH_postInit.sqf, fnc_handleRespawn.sqf) can just call this
+// function again instead of duplicating the wear-off scheduling below; cleared by fnc_unsetCamo.sqf
+// when camo is removed, so restore never reapplies camo that was taken off
+_unit setVariable [QGVAR(scheme), _camo, true];
+
+// public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
+// setFace event above) - only fires on this machine, i.e. whichever client is applying its own camo
+[QGVAR(camoApplied), [_unit, _camo, _face, _targetFace]] call CBA_fnc_localEvent;
+if (_hintOwner) then { hint (localize LSTRING(camoApplied)); };
+
+// Real camo paint wears off over time (rain, sweat, ...) - GVAR(wearOffTime) (CBA setting, see
+// XEH_preInit.sqf) is 0 by default, meaning disabled. Scheduled locally on this machine only (same
+// as the hint/event above), so it won't survive this machine disconnecting before expiry. Uses a
+// cancellable CBA_fnc_addPerFrameHandler (instead of CBA_fnc_waitAndExecute, which can't be
+// cancelled) so fnc_unsetCamo.sqf can kill this outright the moment camo comes off - a second timer
+// for this unit can never get created on top of it: every scheme's pairs (see fnc_init.sqf) map from
+// the same shared set of base faces, never from another scheme's camo face, so once _targetFace above
+// is a camo face, _pairs findIf above can't match it in any scheme and this function exits early
+// (line 58) until fnc_unsetCamo.sqf runs and restores a base face.
+private _wearOffMinutes = GVAR(wearOffTime);
+if (_wearOffMinutes > 0) then {
+    private _expiry = time + _wearOffMinutes * 60;
+    private _pfhId = [{
+        params ["_args", "_pfhId"];
+        _args params ["_unit", "_face", "_expiry"];
+        if (isNull _unit || {time >= _expiry}) then {
+            [_pfhId] call CBA_fnc_removePerFrameHandler;
+            if (!isNull _unit) then {
+                _unit setVariable [QGVAR(wearOffTimerId), -1];
+                [_unit, _face] call FUNC(unsetCamo);
+            };
+        };
+    }, 1, [_unit, _targetFace, _expiry]] call CBA_fnc_addPerFrameHandler;
+    _unit setVariable [QGVAR(wearOffTimerId), _pfhId];
 };

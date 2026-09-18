@@ -9,6 +9,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "cfr_main",
+            "cfr_common",
             "cfr_items",
             "cfr_faces",
         };
