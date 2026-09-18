@@ -1,8 +1,6 @@
-# Camo Faces Redux [Beta]
+# Camo Faces Redux
 
 **Camo Faces Redux** (CFR) lets players camouflage their faces during Arma 3 missions. It's a rewrite of the original [Camofaces](https://steamcommunity.com/sharedfiles/filedetails/?id=346665985) mod by Sk3y and Feldhobel.
-
-This is a **beta** release. Things are functional and tested, but expect rough edges and the occasional bug — please report anything you find on GitHub (link below).
 
 ## Requirements
 
