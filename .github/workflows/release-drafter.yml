@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   draft:
-    if: github.repository == 'Andx667/CamoFacesRedux'
+    if: github.repository == 'Andx667/Camo_Faces_Redux'
     permissions:
       # write permission is required to create a github release
       contents: write
