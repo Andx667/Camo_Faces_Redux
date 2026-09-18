@@ -84,6 +84,29 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOEF(common,data\UI\Icon_camoon_ca.paa);
                 };
+                // Marksmen's three environment variants. canApplyScheme drops them for any face
+                // BI made no variant of, which is every face but three.
+                class GVAR(Action_VanillaArid) {
+                    displayName = ECSTRING(common,camo_vanilla_arid);
+                    condition = QUOTE(['VanillaArid'] call FUNC(canApplyScheme));
+                    statement = QUOTE(['VanillaArid'] call FUNC(applyCamoAction));
+                    showDisabled = 0;
+                    icon = QPATHTOEF(common,data\UI\Icon_camoon_ca.paa);
+                };
+                class GVAR(Action_VanillaLush) {
+                    displayName = ECSTRING(common,camo_vanilla_lush);
+                    condition = QUOTE(['VanillaLush'] call FUNC(canApplyScheme));
+                    statement = QUOTE(['VanillaLush'] call FUNC(applyCamoAction));
+                    showDisabled = 0;
+                    icon = QPATHTOEF(common,data\UI\Icon_camoon_ca.paa);
+                };
+                class GVAR(Action_VanillaSemiArid) {
+                    displayName = ECSTRING(common,camo_vanilla_semiarid);
+                    condition = QUOTE(['VanillaSemiArid'] call FUNC(canApplyScheme));
+                    statement = QUOTE(['VanillaSemiArid'] call FUNC(applyCamoAction));
+                    showDisabled = 0;
+                    icon = QPATHTOEF(common,data\UI\Icon_camoon_ca.paa);
+                };
                 class GVAR(Action_Remove) {
                     displayName = CSTRING(removeCamoAction);
                     condition = QUOTE([] call FUNC(hasCamoApplied));

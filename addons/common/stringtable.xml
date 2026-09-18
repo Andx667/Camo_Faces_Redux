@@ -46,12 +46,36 @@
             <German>US Streifen</German>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla">
-            <English>Vanilla Camouflage</English>
-            <German>Original-Tarnung</German>
+            <English>Vanilla Camouflage (Standard)</English>
+            <German>Original-Tarnung (Standard)</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla_arid">
+            <English>Vanilla Camouflage (Arid)</English>
+            <German>Original-Tarnung (Trocken)</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla_arid_short">
+            <English>Camo (Arid)</English>
+            <German>Tarnung (Trocken)</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla_lush">
+            <English>Vanilla Camouflage (Lush)</English>
+            <German>Original-Tarnung (Grün)</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla_lush_short">
+            <English>Camo (Lush)</English>
+            <German>Tarnung (Grün)</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla_semiarid">
+            <English>Vanilla Camouflage (Semi-Arid)</English>
+            <German>Original-Tarnung (Halbtrocken)</German>
+        </Key>
+        <Key ID="STR_CFR_Common_camo_vanilla_semiarid_short">
+            <English>Camo (Semi-Arid)</English>
+            <German>Tarnung (Halbtrocken)</German>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_short">
-            <English>Camo</English>
-            <German>Tarnung</German>
+            <English>Camo (Standard)</English>
+            <German>Tarnung (Standard)</German>
         </Key>
         <Key ID="STR_CFR_Common_displayName">
             <English>Camouflage</English>

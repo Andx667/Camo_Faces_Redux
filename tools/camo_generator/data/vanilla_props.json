@@ -1,0 +1,352 @@
+{
+ "TanoanHead_A3_01": {
+  "head": "TanoanHead_A3",
+  "textureHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_02": {
+  "head": "TanoanHead_A3",
+  "textureHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_03": {
+  "head": "TanoanHead_A3",
+  "textureHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_04": {
+  "head": "TanoanHead_A3",
+  "textureHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_05": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_black_bald_co.paa",
+  "head": "TanoanHead_A3",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_06": {
+  "head": "TanoanHead_A3",
+  "textureHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_07": {
+  "head": "TanoanHead_A3",
+  "textureHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_08": {
+  "head": "TanoanHead_A3",
+  "textureHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat",
+  "textureHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_co.paa",
+  "materialHL2": "A3\\Characters_F_Exp\\Heads\\Data\\hl_tanoan_bald_muscular.rvmat"
+ },
+ "TanoanHead_A3_09": {
+  "textureHL": "A3\\Characters_F_Oldman\\Heads\\Data\\hl_old_man_co.paa",
+  "materialHL": "A3\\Characters_F_Oldman\\Heads\\Data\\hl_old_man.rvmat",
+  "textureHL2": "A3\\Characters_F_Oldman\\Heads\\Data\\hl_old_man_co.paa",
+  "materialHL2": "A3\\Characters_F_Oldman\\Heads\\Data\\hl_old_man.rvmat",
+  "head": "TanoanHead_A3"
+ },
+ "AsianHead_A3_04": {
+  "materialHL2": "\\A3\\Characters_F_Exp\\Heads\\Data\\hl_asian_02_bald_muscular.rvmat",
+  "head": "AsianHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa"
+ },
+ "AsianHead_A3_05": {
+  "materialHL2": "\\A3\\Characters_F_Exp\\Heads\\Data\\hl_asian_02_bald_muscular.rvmat",
+  "head": "AsianHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa"
+ },
+ "AsianHead_A3_06": {
+  "materialHL2": "\\A3\\Characters_F_Exp\\Heads\\Data\\hl_asian_02_bald_muscular.rvmat",
+  "head": "AsianHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa"
+ },
+ "AsianHead_A3_07": {
+  "materialHL2": "\\A3\\Characters_F_Exp\\Heads\\Data\\hl_asian_02_bald_muscular.rvmat",
+  "head": "AsianHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa"
+ },
+ "WhiteHead_24": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_3_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_3_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_25": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_26": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_27": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_28": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_29": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_30": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_31": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "WhiteHead_32": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_1": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_2": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_3": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_4": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_5": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_6": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_5_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_5_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_7": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_8": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_5_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_5_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_9": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_3_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_3_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "LivonianHead_10": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "RussianHead_1": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_5_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_5_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "RussianHead_2": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "RussianHead_3": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_4_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_4_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "RussianHead_4": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "RussianHead_5": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_5_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_5_co.paa",
+  "head": "NATOHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "GreekHead_A3_11": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "head": "GreekHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat"
+ },
+ "GreekHead_A3_12": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "head": "GreekHead_A3",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat"
+ },
+ "GreekHead_A3_13": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_4_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat",
+  "head": "GreekHead_A3"
+ },
+ "GreekHead_A3_14": {
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_4_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_4_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "head": "GreekHead_A3"
+ },
+ "WhiteHead_23": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "Barklem": {
+  "head": "BlackHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_black_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_black_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_black_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_black_bald_muscular.rvmat"
+ },
+ "Mavros": {
+  "head": "GreekHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_3_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_3_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat"
+ },
+ "Sturrock": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ },
+ "Ioannou": {
+  "head": "GreekHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_3_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_3_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat"
+ },
+ "GreekHead_A3_01": {
+  "head": "GreekHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_3_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_hairy_3_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_hairy_muscular.rvmat"
+ },
+ "AsianHead_A3_01": {
+  "head": "AsianHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_asian_bald_muscular.rvmat"
+ },
+ "AfricanHead_01": {
+  "head": "BlackHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_black_bald_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_black_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_black_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_black_bald_muscular.rvmat"
+ },
+ "WhiteHead_01": {
+  "head": "NATOHead_A3",
+  "textureHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_1_co.paa",
+  "materialHL": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat",
+  "textureHL2": "\\A3\\Characters_F\\Heads\\Data\\hl_White_bald_co.paa",
+  "materialHL2": "A3\\Characters_F\\Heads\\Data\\hl_White_bald_muscular.rvmat"
+ }
+}

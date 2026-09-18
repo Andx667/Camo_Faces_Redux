@@ -1,0 +1,342 @@
+{
+ "PersianHead_A3_01": {
+  "en": "Bahadur",
+  "de": "Bahadur"
+ },
+ "PersianHead_A3_02": {
+  "en": "Jalali",
+  "de": "Jalali"
+ },
+ "PersianHead_A3_03": {
+  "en": "Sabet",
+  "de": "Sabet"
+ },
+ "AsianHead_A3_01": {
+  "en": "Ximi",
+  "de": "Ximi"
+ },
+ "AsianHead_A3_02": {
+  "en": "Jeong",
+  "de": "Jeong"
+ },
+ "AsianHead_A3_03": {
+  "en": "Tung",
+  "de": "Tung"
+ },
+ "AfricanHead_01": {
+  "en": "Williams",
+  "de": "Williams"
+ },
+ "AfricanHead_02": {
+  "en": "Hasan",
+  "de": "Hasan"
+ },
+ "AfricanHead_03": {
+  "en": "Jesus",
+  "de": "Jesus"
+ },
+ "GreekHead_A3_01": {
+  "en": "Athanasiadis",
+  "de": "Athanasiadis"
+ },
+ "GreekHead_A3_02": {
+  "en": "Baros",
+  "de": "Baros"
+ },
+ "GreekHead_A3_03": {
+  "en": "Constantinou",
+  "de": "Constantinou"
+ },
+ "GreekHead_A3_04": {
+  "en": "Costas",
+  "de": "Costas"
+ },
+ "GreekHead_A3_05": {
+  "en": "Doukas",
+  "de": "Doukas"
+ },
+ "GreekHead_A3_06": {
+  "en": "Gikas",
+  "de": "Gikas"
+ },
+ "GreekHead_A3_07": {
+  "en": "Christou",
+  "de": "Christou"
+ },
+ "GreekHead_A3_08": {
+  "en": "Kanelloupou",
+  "de": "Kanelloupou"
+ },
+ "GreekHead_A3_09": {
+  "en": "Savalas",
+  "de": "Savalas"
+ },
+ "WhiteHead_01": {
+  "en": "Bayh",
+  "de": "Bayh"
+ },
+ "WhiteHead_02": {
+  "en": "Burr",
+  "de": "Burr"
+ },
+ "WhiteHead_03": {
+  "en": "Coburn",
+  "de": "Coburn"
+ },
+ "WhiteHead_04": {
+  "en": "Collins",
+  "de": "Collins"
+ },
+ "WhiteHead_05": {
+  "en": "Campbell",
+  "de": "Campbell"
+ },
+ "WhiteHead_06": {
+  "en": "Dayton",
+  "de": "Dayton"
+ },
+ "WhiteHead_07": {
+  "en": "Dorgan",
+  "de": "Dorgan"
+ },
+ "WhiteHead_08": {
+  "en": "Halliwell",
+  "de": "Halliwell"
+ },
+ "WhiteHead_09": {
+  "en": "Johnson",
+  "de": "Johnson"
+ },
+ "WhiteHead_10": {
+  "en": "Martinez",
+  "de": "Martinez"
+ },
+ "WhiteHead_11": {
+  "en": "Kirby",
+  "de": "Kirby"
+ },
+ "WhiteHead_12": {
+  "en": "Reed",
+  "de": "Reed"
+ },
+ "WhiteHead_13": {
+  "en": "Santorum",
+  "de": "Santorum"
+ },
+ "WhiteHead_14": {
+  "en": "Smith",
+  "de": "Smith"
+ },
+ "WhiteHead_15": {
+  "en": "Snowe",
+  "de": "Snowe"
+ },
+ "WhiteHead_16": {
+  "en": "Kelly",
+  "de": "Kelly"
+ },
+ "WhiteHead_17": {
+  "en": "O'Connor",
+  "de": "O'Connor"
+ },
+ "WhiteHead_18": {
+  "en": "Byrne",
+  "de": "Byrne"
+ },
+ "WhiteHead_19": {
+  "en": "O'Brien",
+  "de": "O'Brien"
+ },
+ "WhiteHead_20": {
+  "en": "Walsh",
+  "de": "Walsh"
+ },
+ "WhiteHead_21": {
+  "en": "O'Sullivan",
+  "de": "O'Sullivan"
+ },
+ "TanoanHead_A3_01": {
+  "en": "Simo",
+  "de": "Simo"
+ },
+ "TanoanHead_A3_02": {
+  "en": "Adnet",
+  "de": "Adnet"
+ },
+ "TanoanHead_A3_03": {
+  "en": "Cahun",
+  "de": "Cahun"
+ },
+ "TanoanHead_A3_04": {
+  "en": "Ganio",
+  "de": "Ganio"
+ },
+ "TanoanHead_A3_05": {
+  "en": "Malet",
+  "de": "Malet"
+ },
+ "TanoanHead_A3_06": {
+  "en": "Solé",
+  "de": "Solé"
+ },
+ "TanoanHead_A3_07": {
+  "en": "Mignard",
+  "de": "Mignard"
+ },
+ "TanoanHead_A3_08": {
+  "en": "Thibaud",
+  "de": "Thibaud"
+ },
+ "TanoanHead_A3_09": {
+  "en": "Old Man",
+  "de": "Der alte Mann"
+ },
+ "AsianHead_A3_04": {
+  "en": "Lee",
+  "de": "Lee"
+ },
+ "AsianHead_A3_05": {
+  "en": "Chan",
+  "de": "Chan"
+ },
+ "AsianHead_A3_06": {
+  "en": "Yeung",
+  "de": "Yeung"
+ },
+ "AsianHead_A3_07": {
+  "en": "Wong",
+  "de": "Wong"
+ },
+ "WhiteHead_24": {
+  "en": "Čapek",
+  "de": "Čapek"
+ },
+ "WhiteHead_25": {
+  "en": "Dillon",
+  "de": "Dillon"
+ },
+ "WhiteHead_26": {
+  "en": "Homewood",
+  "de": "Homewood"
+ },
+ "WhiteHead_27": {
+  "en": "Kesson",
+  "de": "Kesson"
+ },
+ "WhiteHead_28": {
+  "en": "Kingsly",
+  "de": "Kinglsy"
+ },
+ "WhiteHead_29": {
+  "en": "Severov",
+  "de": "Severov"
+ },
+ "WhiteHead_30": {
+  "en": "Smolko",
+  "de": "Smolko"
+ },
+ "WhiteHead_31": {
+  "en": "Stype",
+  "de": "Stype"
+ },
+ "WhiteHead_32": {
+  "en": "Rudwell",
+  "de": "Rudwell"
+ },
+ "LivonianHead_1": {
+  "en": "Nowak",
+  "de": "Nowak"
+ },
+ "LivonianHead_2": {
+  "en": "Górecki",
+  "de": "Górecki"
+ },
+ "LivonianHead_3": {
+  "en": "Kowalski",
+  "de": "Kowalski"
+ },
+ "LivonianHead_4": {
+  "en": "Stolarski",
+  "de": "Stolarski"
+ },
+ "LivonianHead_5": {
+  "en": "Burak",
+  "de": "Burak"
+ },
+ "LivonianHead_6": {
+  "en": "Kawa",
+  "de": "Kawa"
+ },
+ "LivonianHead_7": {
+  "en": "Janowski",
+  "de": "Janowski"
+ },
+ "LivonianHead_8": {
+  "en": "Sternik",
+  "de": "Sternik"
+ },
+ "LivonianHead_9": {
+  "en": "Zieliński",
+  "de": "Zieliński"
+ },
+ "LivonianHead_10": {
+  "en": "Rabinowicz",
+  "de": "Rabinowicz"
+ },
+ "RussianHead_1": {
+  "en": "Ivanov",
+  "de": "Ivanov"
+ },
+ "RussianHead_2": {
+  "en": "Petrenko",
+  "de": "Petrenko"
+ },
+ "RussianHead_3": {
+  "en": "Krupin",
+  "de": "Krupin"
+ },
+ "RussianHead_4": {
+  "en": "Adamovich",
+  "de": "Adamovich"
+ },
+ "RussianHead_5": {
+  "en": "Yakhin",
+  "de": "Yakhin"
+ },
+ "GreekHead_A3_11": {
+  "en": "Gavras",
+  "de": "Gavras"
+ },
+ "GreekHead_A3_12": {
+  "en": "Markos",
+  "de": "Markos"
+ },
+ "GreekHead_A3_13": {
+  "en": "Alexis",
+  "de": "Alexis"
+ },
+ "GreekHead_A3_14": {
+  "en": "Dimitrou",
+  "de": "Dimitrou"
+ },
+ "WhiteHead_23": {
+  "en": "Nathan",
+  "de": "Nathan"
+ },
+ "Barklem": {
+  "en": "Barklem",
+  "de": "Barklem"
+ },
+ "Mavros": {
+  "en": "Mavros",
+  "de": "Mavros"
+ },
+ "Sturrock": {
+  "en": "Sturrock",
+  "de": "Sturrock"
+ },
+ "Ioannou": {
+  "en": "Ioannou",
+  "de": "Ioannou"
+ }
+}
