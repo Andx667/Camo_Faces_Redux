@@ -5,4 +5,5 @@ PREP(handleRespawn);
 PREP(init);
 PREP(isCamoFace);
 PREP(setCamo);
+PREP(startWearOff);
 PREP(unsetCamo);

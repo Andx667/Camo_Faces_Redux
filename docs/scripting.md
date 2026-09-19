@@ -18,7 +18,7 @@ Mission makers and scripters can apply or remove camouflage directly from a scri
 
 If the unit's current face doesn't have a variant under that scheme, nothing happens — no error, just a hint explaining why (on the calling machine).
 
-If the **Camo Wear-off Time** CBA setting (see [Common](components/common.md)) is enabled, this also schedules automatic removal after the configured number of minutes — no extra argument needed, it just works the same as applying camo any other way.
+If the **Camo Wear-off Time** CBA setting (see [Common](components/common.md)) is enabled, this also schedules automatic removal after the configured number of minutes — no extra argument needed, it just works the same as applying camo any other way. Only player-controlled units wear off; camo applied to an AI unit stays until removed, since AI can't reapply it themselves.
 
 ## Removing camouflage
 
