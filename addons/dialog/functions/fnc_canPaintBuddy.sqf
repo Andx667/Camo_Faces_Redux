@@ -2,9 +2,11 @@
 /*
  * Authors: Andx
  * ACE interaction condition for the "Paint Face" entry on another unit: the target is valid
- * (fnc_canTargetBuddy), the player carries at least one facepaint item, and the target's face is one
- * this mod can camouflage. Which schemes are then offered, and whether they can be applied right now,
- * is decided per scheme by fnc_getBuddyActions and fnc_canApplyScheme.
+ * (fnc_canTargetBuddy) and at least one registered scheme is both unlocked by a facepaint item the
+ * player carries and has a variant for the target's face. That is the same test fnc_getBuddyActions
+ * uses to build the entry's children, so the entry is never shown with nothing under it - a face can
+ * be registered without every scheme (or every scheme the player has paint for) covering it. Whether a
+ * listed scheme can be applied right now is decided per scheme by fnc_canApplyScheme.
  *
  * Arguments:
  * 0: Target <OBJECT>
@@ -20,6 +22,13 @@
 
 params [["_target", objNull, [objNull]]];
 
+private _painterItems = uniformItems ACE_player;
+private _face = face _target;
+
 ([_target] call FUNC(canTargetBuddy))
-&& {(EGVAR(common,itemClasses) findIf {_x in uniformItems ACE_player}) != -1}
-&& {face _target in EGVAR(common,all_faces)}
+&& {
+    EGVAR(common,schemes) findIf {
+        _x params ["", "_pairs", "_itemClasses"];
+        (_itemClasses findIf {_x in _painterItems}) != -1 && {(_pairs findIf {(_x select 0) == _face}) != -1}
+    } != -1
+}

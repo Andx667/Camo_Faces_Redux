@@ -4,7 +4,8 @@
  * ACE insertChildren for the "Paint Face" entry on another unit (see CfgVehicles.hpp): one child per
  * registered camo scheme the player carries a facepaint item for and that has a variant for the
  * target's face - like fnc_getSchemeActions, built from cfr_common's GVAR(schemes) each time the menu
- * opens, so schemes added by other addons show up here too. Each child stays visible but greyed out
+ * opens, so schemes added by other addons show up here too (fnc_canPaintBuddy uses the same test to
+ * decide whether there is anything to show at all). Each child stays visible but greyed out
  * while fnc_canApplyScheme says no, which is what tells the painter that the target still has
  * headgear, goggles or night vision on (nobody can take another player's off).
  *
