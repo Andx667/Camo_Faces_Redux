@@ -44,9 +44,9 @@ if (count _applicable == 1) then {
         _x params ["_schemeId", "_pairs", "_itemClasses"];
         if ((_pairs findIf {(_x select 0) == _face}) != -1) then {
             // Use the unlocking item's own inventory icon so each scheme is visually distinct
-            // instead of every entry sharing ICON_CAMOUFLAGE. For the 6 core schemes itemClasses
-            // has exactly one entry; Vanilla's 3-item row just picks the first (BW) as a stand-in
-            // since it isn't tied to a single item.
+            // instead of every entry sharing ICON_CAMOUFLAGE. Most schemes have exactly one
+            // itemClasses entry; Black and the Vanilla rows list all three facepaint items since
+            // they aren't tied to a single one, so those just pick the first (BW) as a stand-in.
             private _icon = getText (configFile >> "CfgWeapons" >> (_itemClasses select 0) >> "picture");
             if (_icon == "") then {_icon = ICON_CAMOUFLAGE};
 

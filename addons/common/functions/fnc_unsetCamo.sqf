@@ -67,6 +67,8 @@ if (_timerId != -1) then {
 _unit setVariable [QGVAR(face), _baseFace, true];
 // no camo active any more - respawn/JIP restore (see fnc_setCamo.sqf) must not reapply it
 _unit setVariable [QGVAR(scheme), "", true];
+// invalidates any wear-off timer still running on another machine (see fnc_setCamo.sqf)
+_unit setVariable [QGVAR(camoId), "", true];
 
 // public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
 // setFace event above) - same shape/scope as camoApplied in fnc_setCamo.sqf

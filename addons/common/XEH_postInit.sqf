@@ -5,6 +5,11 @@
     _unit setFace _face;
 }] call CBA_fnc_addEventHandler;
 
+// targeted at the unit's owner by fnc_setCamo - see fnc_startWearOff.sqf
+[QGVAR(startWearOff), {
+    _this call FUNC(startWearOff);
+}] call CBA_fnc_addEventHandler;
+
 // Reapply each unit's saved face (e.g. after respawn/persistence) - needs units to actually exist,
 // unlike GVAR(schemes) construction itself, which now happens in XEH_preInit (see fnc_init.sqf).
 // A unit with an active camo scheme goes through fnc_setCamo itself rather than a bare setFace, so it
