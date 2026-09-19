@@ -65,6 +65,11 @@ _unit setVariable [QGVAR(face), _targetFace, true];
 // function again instead of duplicating the wear-off scheduling below; cleared by fnc_unsetCamo.sqf
 // when camo is removed, so restore never reapplies camo that was taken off
 _unit setVariable [QGVAR(scheme), _camo, true];
+// identifies THIS application of camo (machine + time), synced so every machine sees it - lets a
+// wear-off timer below detect it has gone stale (camo removed or reapplied from another machine,
+// which can't cancel this machine's local timer directly) and stand down instead of clobbering it
+private _camoId = format ["%1_%2", clientOwner, diag_tickTime];
+_unit setVariable [QGVAR(camoId), _camoId, true];
 
 // public API event - see README.md. [unit, schemeId, oldFace, newFace], local-only (unlike the
 // setFace event above) - only fires on this machine, i.e. whichever client is applying its own camo
@@ -79,20 +84,27 @@ if (_hintOwner) then { hint (localize LSTRING(camoApplied)); };
 // for this unit can never get created on top of it: every scheme's pairs (see fnc_init.sqf) map from
 // the same shared set of base faces, never from another scheme's camo face, so once _targetFace above
 // is a camo face, _pairs findIf above can't match it in any scheme and this function exits early
-// (line 58) until fnc_unsetCamo.sqf runs and restores a base face.
+// until fnc_unsetCamo.sqf runs and restores a base face. That cancellation only reaches timers on
+// the machine running fnc_unsetCamo though, so the timer also checks GVAR(camoId) itself (below).
 private _wearOffMinutes = GVAR(wearOffTime);
 if (_wearOffMinutes > 0) then {
     private _expiry = time + _wearOffMinutes * 60;
     private _pfhId = [{
         params ["_args", "_pfhId"];
-        _args params ["_unit", "_face", "_expiry"];
-        if (isNull _unit || {time >= _expiry}) then {
+        _args params ["_unit", "_face", "_expiry", "_camoId"];
+        if (isNull _unit) exitWith {
             [_pfhId] call CBA_fnc_removePerFrameHandler;
-            if (!isNull _unit) then {
-                _unit setVariable [QGVAR(wearOffTimerId), -1];
-                [_unit, _face] call FUNC(unsetCamo);
-            };
         };
-    }, 1, [_unit, _targetFace, _expiry]] call CBA_fnc_addPerFrameHandler;
+        // stale: this camo was already removed or replaced, possibly from another machine (e.g.
+        // a second Zeus) - don't touch the unit's current state, just drop the timer
+        if (_unit getVariable [QGVAR(camoId), ""] != _camoId) exitWith {
+            [_pfhId] call CBA_fnc_removePerFrameHandler;
+        };
+        if (time >= _expiry) then {
+            [_pfhId] call CBA_fnc_removePerFrameHandler;
+            _unit setVariable [QGVAR(wearOffTimerId), -1];
+            [_unit, _face] call FUNC(unsetCamo);
+        };
+    }, 1, [_unit, _targetFace, _expiry, _camoId]] call CBA_fnc_addPerFrameHandler;
     _unit setVariable [QGVAR(wearOffTimerId), _pfhId];
 };
