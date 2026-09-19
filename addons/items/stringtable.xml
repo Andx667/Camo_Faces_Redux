@@ -3,71 +3,360 @@
     <Package name="Items">
         <Key ID="STR_CFR_Items_box_displayname">
             <English>Box of Facepaint</English>
+            <Czech>Bedna s barvou na obličej</Czech>
+            <French>Caisse de peinture faciale</French>
+            <Spanish>Caja de pintura facial</Spanish>
+            <Italian>Cassa di pittura per il viso</Italian>
+            <Polish>Skrzynia z farbą do twarzy</Polish>
+            <Portuguese>Caixa de tinta facial</Portuguese>
+            <Russian>Ящик с гримом</Russian>
             <German>Kiste mit Tarnschminke</German>
+            <Korean>얼굴 페인트 상자</Korean>
+            <Japanese>フェイスペイントの箱</Japanese>
+            <Chinese>臉部油彩箱</Chinese>
+            <Chinesesimp>脸部油彩箱</Chinesesimp>
+            <Turkish>Yüz boyası kutusu</Turkish>
+            <Slovak>Debna s farbou na tvár</Slovak>
+            <Hungarian>Arcfesték-láda</Hungarian>
+            <Ukrainian>Ящик із гримом</Ukrainian>
+            <Bulgarian>Кутия с боя за лице</Bulgarian>
+            <Latin>Caja de pintura facial</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaint_descriptionshort">
             <English>Used by the German Armed Forces (legacy item, unlimited uses)</English>
+            <Czech>Používají německé ozbrojené síly (starší předmět, neomezené použití)</Czech>
+            <French>Utilisé par les forces armées allemandes (ancien objet, utilisations illimitées)</French>
+            <Spanish>Usado por las Fuerzas Armadas alemanas (objeto antiguo, usos ilimitados)</Spanish>
+            <Italian>Usato dalle forze armate tedesche (oggetto obsoleto, usi illimitati)</Italian>
+            <Polish>Używane przez Siły Zbrojne Niemiec (przestarzały przedmiot, nieograniczona liczba użyć)</Polish>
+            <Portuguese>Usado pelas Forças Armadas alemãs (item antigo, utilizações ilimitadas)</Portuguese>
+            <Russian>Используется вооружёнными силами Германии (устаревший предмет, неограниченное число применений)</Russian>
             <German>Benutzt von der Bundeswehr (Altbestand, unbegrenzte Anwendungen)</German>
+            <Korean>독일군이 사용합니다 (구형 아이템, 무제한 사용)</Korean>
+            <Japanese>ドイツ軍が使用 (旧アイテム、使用回数無制限)</Japanese>
+            <Chinese>德國軍隊使用 (舊版物品，無限次使用)</Chinese>
+            <Chinesesimp>德国军队使用 (旧版物品，无限次使用)</Chinesesimp>
+            <Turkish>Alman Silahlı Kuvvetleri tarafından kullanılır (eski öğe, sınırsız kullanım)</Turkish>
+            <Slovak>Používajú nemecké ozbrojené sily (starší predmet, neobmedzené použitia)</Slovak>
+            <Hungarian>A német fegyveres erők használják (régi tárgy, korlátlan használat)</Hungarian>
+            <Ukrainian>Використовується збройними силами Німеччини (застарілий предмет, необмежена кількість використань)</Ukrainian>
+            <Bulgarian>Използва се от германските въоръжени сили (стар предмет, неограничени употреби)</Bulgarian>
+            <Latin>Usado por las Fuerzas Armadas alemanas (objeto antiguo, usos ilimitados)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaint_displayname">
             <English>BW Facepaint</English>
+            <Czech>BW barva na obličej</Czech>
+            <French>Peinture faciale BW</French>
+            <Spanish>Pintura facial BW</Spanish>
+            <Italian>Pittura per il viso BW</Italian>
+            <Polish>Farba do twarzy BW</Polish>
+            <Portuguese>Tinta facial BW</Portuguese>
+            <Russian>Грим BW</Russian>
             <German>BW Tarnschminke</German>
+            <Korean>BW 얼굴 페인트</Korean>
+            <Japanese>BW フェイスペイント</Japanese>
+            <Chinese>BW 臉部油彩</Chinese>
+            <Chinesesimp>BW 脸部油彩</Chinesesimp>
+            <Turkish>BW yüz boyası</Turkish>
+            <Slovak>Farba na tvár BW</Slovak>
+            <Hungarian>BW arcfesték</Hungarian>
+            <Ukrainian>Грим BW</Ukrainian>
+            <Bulgarian>Боя за лице BW</Bulgarian>
+            <Latin>Pintura facial BW</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaintstick_descriptionshort">
             <English>Used by the German Armed Forces. 10 uses</English>
+            <Czech>Používají německé ozbrojené síly. 10 použití</Czech>
+            <French>Utilisé par les forces armées allemandes. 10 utilisations</French>
+            <Spanish>Usado por las Fuerzas Armadas alemanas. 10 usos</Spanish>
+            <Italian>Usato dalle forze armate tedesche. 10 usi</Italian>
+            <Polish>Używane przez Siły Zbrojne Niemiec. 10 użyć</Polish>
+            <Portuguese>Usado pelas Forças Armadas alemãs. 10 utilizações</Portuguese>
+            <Russian>Используется вооружёнными силами Германии. 10 применений</Russian>
             <German>Benutzt von der Bundeswehr. 10 Anwendungen</German>
+            <Korean>독일군이 사용합니다. 10회 사용 가능</Korean>
+            <Japanese>ドイツ軍が使用。使用回数10回</Japanese>
+            <Chinese>德國軍隊使用。可使用 10 次</Chinese>
+            <Chinesesimp>德国军队使用。可使用 10 次</Chinesesimp>
+            <Turkish>Alman Silahlı Kuvvetleri tarafından kullanılır. 10 kullanım</Turkish>
+            <Slovak>Používajú nemecké ozbrojené sily. 10 použití</Slovak>
+            <Hungarian>A német fegyveres erők használják. 10 használat</Hungarian>
+            <Ukrainian>Використовується збройними силами Німеччини. 10 використань</Ukrainian>
+            <Bulgarian>Използва се от германските въоръжени сили. 10 употреби</Bulgarian>
+            <Latin>Usado por las Fuerzas Armadas alemanas. 10 usos</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaintstick_displayname">
             <English>BW Facepaint Stick</English>
+            <Czech>BW tyčinka barvy na obličej</Czech>
+            <French>Bâton de peinture faciale BW</French>
+            <Spanish>Barra de pintura facial BW</Spanish>
+            <Italian>Stick di pittura per il viso BW</Italian>
+            <Polish>Sztyft farby do twarzy BW</Polish>
+            <Portuguese>Bastão de tinta facial BW</Portuguese>
+            <Russian>Стик грима BW</Russian>
             <German>BW-Tarnschminkstift</German>
+            <Korean>BW 얼굴 페인트 스틱</Korean>
+            <Japanese>BW フェイスペイントスティック</Japanese>
+            <Chinese>BW 臉部油彩棒</Chinese>
+            <Chinesesimp>BW 脸部油彩棒</Chinesesimp>
+            <Turkish>BW yüz boyası çubuğu</Turkish>
+            <Slovak>Tyčinka farby na tvár BW</Slovak>
+            <Hungarian>BW arcfesték-rúd</Hungarian>
+            <Ukrainian>Стик гриму BW</Ukrainian>
+            <Bulgarian>Стик боя за лице BW</Bulgarian>
+            <Latin>Barra de pintura facial BW</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_descriptionshort">
             <English>Used by the Serbian Armed Forces (legacy item, unlimited uses)</English>
+            <Czech>Používají srbské ozbrojené síly (starší předmět, neomezené použití)</Czech>
+            <French>Utilisé par les forces armées serbes (ancien objet, utilisations illimitées)</French>
+            <Spanish>Usado por las Fuerzas Armadas serbias (objeto antiguo, usos ilimitados)</Spanish>
+            <Italian>Usato dalle forze armate serbe (oggetto obsoleto, usi illimitati)</Italian>
+            <Polish>Używane przez Siły Zbrojne Serbii (przestarzały przedmiot, nieograniczona liczba użyć)</Polish>
+            <Portuguese>Usado pelas Forças Armadas sérvias (item antigo, utilizações ilimitadas)</Portuguese>
+            <Russian>Используется вооружёнными силами Сербии (устаревший предмет, неограниченное число применений)</Russian>
             <German>Benutzt von den Serbischen Streitkräften (Altbestand, unbegrenzte Anwendungen)</German>
+            <Korean>세르비아군이 사용합니다 (구형 아이템, 무제한 사용)</Korean>
+            <Japanese>セルビア軍が使用 (旧アイテム、使用回数無制限)</Japanese>
+            <Chinese>塞爾維亞軍隊使用 (舊版物品，無限次使用)</Chinese>
+            <Chinesesimp>塞尔维亚军队使用 (旧版物品，无限次使用)</Chinesesimp>
+            <Turkish>Sırp Silahlı Kuvvetleri tarafından kullanılır (eski öğe, sınırsız kullanım)</Turkish>
+            <Slovak>Používajú srbské ozbrojené sily (starší predmet, neobmedzené použitia)</Slovak>
+            <Hungarian>A szerb fegyveres erők használják (régi tárgy, korlátlan használat)</Hungarian>
+            <Ukrainian>Використовується збройними силами Сербії (застарілий предмет, необмежена кількість використань)</Ukrainian>
+            <Bulgarian>Използва се от сръбските въоръжени сили (стар предмет, неограничени употреби)</Bulgarian>
+            <Latin>Usado por las Fuerzas Armadas serbias (objeto antiguo, usos ilimitados)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_displayname">
             <English>Serbian Facepaint</English>
+            <Czech>Srbská barva na obličej</Czech>
+            <French>Peinture faciale serbe</French>
+            <Spanish>Pintura facial serbia</Spanish>
+            <Italian>Pittura per il viso serba</Italian>
+            <Polish>Serbska farba do twarzy</Polish>
+            <Portuguese>Tinta facial sérvia</Portuguese>
+            <Russian>Сербский грим</Russian>
             <German>Serbische Tarnschminke</German>
+            <Korean>세르비아 얼굴 페인트</Korean>
+            <Japanese>セルビア フェイスペイント</Japanese>
+            <Chinese>塞爾維亞臉部油彩</Chinese>
+            <Chinesesimp>塞尔维亚脸部油彩</Chinesesimp>
+            <Turkish>Sırp yüz boyası</Turkish>
+            <Slovak>Srbská farba na tvár</Slovak>
+            <Hungarian>Szerb arcfesték</Hungarian>
+            <Ukrainian>Сербський грим</Ukrainian>
+            <Bulgarian>Сръбска боя за лице</Bulgarian>
+            <Latin>Pintura facial serbia</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaintstick_descriptionshort">
             <English>Used by the Serbian Armed Forces. 10 uses</English>
+            <Czech>Používají srbské ozbrojené síly. 10 použití</Czech>
+            <French>Utilisé par les forces armées serbes. 10 utilisations</French>
+            <Spanish>Usado por las Fuerzas Armadas serbias. 10 usos</Spanish>
+            <Italian>Usato dalle forze armate serbe. 10 usi</Italian>
+            <Polish>Używane przez Siły Zbrojne Serbii. 10 użyć</Polish>
+            <Portuguese>Usado pelas Forças Armadas sérvias. 10 utilizações</Portuguese>
+            <Russian>Используется вооружёнными силами Сербии. 10 применений</Russian>
             <German>Benutzt von den Serbischen Streitkräften. 10 Anwendungen</German>
+            <Korean>세르비아군이 사용합니다. 10회 사용 가능</Korean>
+            <Japanese>セルビア軍が使用。使用回数10回</Japanese>
+            <Chinese>塞爾維亞軍隊使用。可使用 10 次</Chinese>
+            <Chinesesimp>塞尔维亚军队使用。可使用 10 次</Chinesesimp>
+            <Turkish>Sırp Silahlı Kuvvetleri tarafından kullanılır. 10 kullanım</Turkish>
+            <Slovak>Používajú srbské ozbrojené sily. 10 použití</Slovak>
+            <Hungarian>A szerb fegyveres erők használják. 10 használat</Hungarian>
+            <Ukrainian>Використовується збройними силами Сербії. 10 використань</Ukrainian>
+            <Bulgarian>Използва се от сръбските въоръжени сили. 10 употреби</Bulgarian>
+            <Latin>Usado por las Fuerzas Armadas serbias. 10 usos</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaintstick_displayname">
             <English>Serbian Facepaint Stick</English>
+            <Czech>Srbská tyčinka barvy na obličej</Czech>
+            <French>Bâton de peinture faciale serbe</French>
+            <Spanish>Barra de pintura facial serbia</Spanish>
+            <Italian>Stick di pittura per il viso serba</Italian>
+            <Polish>Serbski sztyft farby do twarzy</Polish>
+            <Portuguese>Bastão de tinta facial sérvia</Portuguese>
+            <Russian>Стик сербского грима</Russian>
             <German>Serbischer Tarnschminkstift</German>
+            <Korean>세르비아 얼굴 페인트 스틱</Korean>
+            <Japanese>セルビア フェイスペイントスティック</Japanese>
+            <Chinese>塞爾維亞臉部油彩棒</Chinese>
+            <Chinesesimp>塞尔维亚脸部油彩棒</Chinesesimp>
+            <Turkish>Sırp yüz boyası çubuğu</Turkish>
+            <Slovak>Srbská tyčinka farby na tvár</Slovak>
+            <Hungarian>Szerb arcfesték-rúd</Hungarian>
+            <Ukrainian>Стик сербського гриму</Ukrainian>
+            <Bulgarian>Стик сръбска боя за лице</Bulgarian>
+            <Latin>Barra de pintura facial serbia</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaint_descriptionshort">
             <English>A stick of white/green grease paint (legacy item, unlimited uses)</English>
+            <Czech>Tyčinka bílo-zelené mastné barvy (starší předmět, neomezené použití)</Czech>
+            <French>Un bâton de peinture grasse blanche/verte (ancien objet, utilisations illimitées)</French>
+            <Spanish>Una barra de pintura grasa blanca/verde (objeto antiguo, usos ilimitados)</Spanish>
+            <Italian>Uno stick di pittura grassa bianca/verde (oggetto obsoleto, usi illimitati)</Italian>
+            <Polish>Sztyft biało-zielonej farby tłustej (przestarzały przedmiot, nieograniczona liczba użyć)</Polish>
+            <Portuguese>Um bastão de tinta gordurosa branca/verde (item antigo, utilizações ilimitadas)</Portuguese>
+            <Russian>Стик бело-зелёного жирового грима (устаревший предмет, неограниченное число применений)</Russian>
             <German>Ein Stift weiß-grüne Schminke (Altbestand, unbegrenzte Anwendungen)</German>
+            <Korean>흰색/녹색 유성 페인트 스틱 (구형 아이템, 무제한 사용)</Korean>
+            <Japanese>白/緑のグリースペイントのスティック (旧アイテム、使用回数無制限)</Japanese>
+            <Chinese>一根白綠色油彩棒 (舊版物品，無限次使用)</Chinese>
+            <Chinesesimp>一根白绿色油彩棒 (旧版物品，无限次使用)</Chinesesimp>
+            <Turkish>Bir çubuk beyaz/yeşil yağlı boya (eski öğe, sınırsız kullanım)</Turkish>
+            <Slovak>Tyčinka bielo-zelenej mastnej farby (starší predmet, neobmedzené použitia)</Slovak>
+            <Hungarian>Egy rúd fehér/zöld zsíros festék (régi tárgy, korlátlan használat)</Hungarian>
+            <Ukrainian>Стик біло-зеленого жирового гриму (застарілий предмет, необмежена кількість використань)</Ukrainian>
+            <Bulgarian>Стик бяло-зелена мазна боя (стар предмет, неограничени употреби)</Bulgarian>
+            <Latin>Una barra de pintura grasa blanca/verde (objeto antiguo, usos ilimitados)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaint_displayname">
             <English>Snow Stripes Facepaint</English>
+            <Czech>Barva na obličej – sněhové pruhy</Czech>
+            <French>Peinture faciale rayures neige</French>
+            <Spanish>Pintura facial rayas de nieve</Spanish>
+            <Italian>Pittura per il viso strisce neve</Italian>
+            <Polish>Farba do twarzy – śnieżne pasy</Polish>
+            <Portuguese>Tinta facial listras de neve</Portuguese>
+            <Russian>Грим «Снежные полосы»</Russian>
             <German>Schneestreifen-Tarnschminke</German>
+            <Korean>눈 줄무늬 얼굴 페인트</Korean>
+            <Japanese>スノーストライプ フェイスペイント</Japanese>
+            <Chinese>雪地條紋臉部油彩</Chinese>
+            <Chinesesimp>雪地条纹脸部油彩</Chinesesimp>
+            <Turkish>Kar şeritli yüz boyası</Turkish>
+            <Slovak>Farba na tvár – snehové pruhy</Slovak>
+            <Hungarian>Havas csíkos arcfesték</Hungarian>
+            <Ukrainian>Грим «Снігові смуги»</Ukrainian>
+            <Bulgarian>Боя за лице „Снежни ивици“</Bulgarian>
+            <Latin>Pintura facial rayas de nieve</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaintstick_descriptionshort">
             <English>A stick of white/green grease paint. 10 uses</English>
+            <Czech>Tyčinka bílo-zelené mastné barvy. 10 použití</Czech>
+            <French>Un bâton de peinture grasse blanche/verte. 10 utilisations</French>
+            <Spanish>Una barra de pintura grasa blanca/verde. 10 usos</Spanish>
+            <Italian>Uno stick di pittura grassa bianca/verde. 10 usi</Italian>
+            <Polish>Sztyft biało-zielonej farby tłustej. 10 użyć</Polish>
+            <Portuguese>Um bastão de tinta gordurosa branca/verde. 10 utilizações</Portuguese>
+            <Russian>Стик бело-зелёного жирового грима. 10 применений</Russian>
             <German>Ein Stift weiß-grüne Schminke. 10 Anwendungen</German>
+            <Korean>흰색/녹색 유성 페인트 스틱. 10회 사용 가능</Korean>
+            <Japanese>白/緑のグリースペイントのスティック。使用回数10回</Japanese>
+            <Chinese>一根白綠色油彩棒。可使用 10 次</Chinese>
+            <Chinesesimp>一根白绿色油彩棒。可使用 10 次</Chinesesimp>
+            <Turkish>Bir çubuk beyaz/yeşil yağlı boya. 10 kullanım</Turkish>
+            <Slovak>Tyčinka bielo-zelenej mastnej farby. 10 použití</Slovak>
+            <Hungarian>Egy rúd fehér/zöld zsíros festék. 10 használat</Hungarian>
+            <Ukrainian>Стик біло-зеленого жирового гриму. 10 використань</Ukrainian>
+            <Bulgarian>Стик бяло-зелена мазна боя. 10 употреби</Bulgarian>
+            <Latin>Una barra de pintura grasa blanca/verde. 10 usos</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaintstick_displayname">
             <English>Snow Stripes Facepaint Stick</English>
+            <Czech>Tyčinka barvy na obličej – sněhové pruhy</Czech>
+            <French>Bâton de peinture faciale rayures neige</French>
+            <Spanish>Barra de pintura facial rayas de nieve</Spanish>
+            <Italian>Stick di pittura per il viso strisce neve</Italian>
+            <Polish>Sztyft farby do twarzy – śnieżne pasy</Polish>
+            <Portuguese>Bastão de tinta facial listras de neve</Portuguese>
+            <Russian>Стик грима «Снежные полосы»</Russian>
             <German>Schneestreifen-Tarnschminkstift</German>
+            <Korean>눈 줄무늬 얼굴 페인트 스틱</Korean>
+            <Japanese>スノーストライプ フェイスペイントスティック</Japanese>
+            <Chinese>雪地條紋臉部油彩棒</Chinese>
+            <Chinesesimp>雪地条纹脸部油彩棒</Chinesesimp>
+            <Turkish>Kar şeritli yüz boyası çubuğu</Turkish>
+            <Slovak>Tyčinka farby na tvár – snehové pruhy</Slovak>
+            <Hungarian>Havas csíkos arcfesték-rúd</Hungarian>
+            <Ukrainian>Стик гриму «Снігові смуги»</Ukrainian>
+            <Bulgarian>Стик боя за лице „Снежни ивици“</Bulgarian>
+            <Latin>Barra de pintura facial rayas de nieve</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_descriptionshort">
             <English>Used by the US Armed Forces (legacy item, unlimited uses)</English>
+            <Czech>Používají americké ozbrojené síly (starší předmět, neomezené použití)</Czech>
+            <French>Utilisé par les forces armées américaines (ancien objet, utilisations illimitées)</French>
+            <Spanish>Usado por las Fuerzas Armadas de EE. UU. (objeto antiguo, usos ilimitados)</Spanish>
+            <Italian>Usato dalle forze armate statunitensi (oggetto obsoleto, usi illimitati)</Italian>
+            <Polish>Używane przez Siły Zbrojne USA (przestarzały przedmiot, nieograniczona liczba użyć)</Polish>
+            <Portuguese>Usado pelas Forças Armadas dos EUA (item antigo, utilizações ilimitadas)</Portuguese>
+            <Russian>Используется вооружёнными силами США (устаревший предмет, неограниченное число применений)</Russian>
             <German>Benutzt von den US Streitkräften (Altbestand, unbegrenzte Anwendungen)</German>
+            <Korean>미군이 사용합니다 (구형 아이템, 무제한 사용)</Korean>
+            <Japanese>米軍が使用 (旧アイテム、使用回数無制限)</Japanese>
+            <Chinese>美國軍隊使用 (舊版物品，無限次使用)</Chinese>
+            <Chinesesimp>美国军队使用 (旧版物品，无限次使用)</Chinesesimp>
+            <Turkish>ABD Silahlı Kuvvetleri tarafından kullanılır (eski öğe, sınırsız kullanım)</Turkish>
+            <Slovak>Používajú americké ozbrojené sily (starší predmet, neobmedzené použitia)</Slovak>
+            <Hungarian>Az amerikai fegyveres erők használják (régi tárgy, korlátlan használat)</Hungarian>
+            <Ukrainian>Використовується збройними силами США (застарілий предмет, необмежена кількість використань)</Ukrainian>
+            <Bulgarian>Използва се от въоръжените сили на САЩ (стар предмет, неограничени употреби)</Bulgarian>
+            <Latin>Usado por las Fuerzas Armadas de EE. UU. (objeto antiguo, usos ilimitados)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_displayname">
             <English>US Facepaint</English>
+            <Czech>US barva na obličej</Czech>
+            <French>Peinture faciale US</French>
+            <Spanish>Pintura facial US</Spanish>
+            <Italian>Pittura per il viso US</Italian>
+            <Polish>Farba do twarzy US</Polish>
+            <Portuguese>Tinta facial US</Portuguese>
+            <Russian>Грим US</Russian>
             <German>US Tarnschminke</German>
+            <Korean>US 얼굴 페인트</Korean>
+            <Japanese>US フェイスペイント</Japanese>
+            <Chinese>US 臉部油彩</Chinese>
+            <Chinesesimp>US 脸部油彩</Chinesesimp>
+            <Turkish>US yüz boyası</Turkish>
+            <Slovak>Farba na tvár US</Slovak>
+            <Hungarian>US arcfesték</Hungarian>
+            <Ukrainian>Грим US</Ukrainian>
+            <Bulgarian>Боя за лице US</Bulgarian>
+            <Latin>Pintura facial US</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaintstick_descriptionshort">
             <English>Used by the US Armed Forces. 10 uses</English>
+            <Czech>Používají americké ozbrojené síly. 10 použití</Czech>
+            <French>Utilisé par les forces armées américaines. 10 utilisations</French>
+            <Spanish>Usado por las Fuerzas Armadas de EE. UU.. 10 usos</Spanish>
+            <Italian>Usato dalle forze armate statunitensi. 10 usi</Italian>
+            <Polish>Używane przez Siły Zbrojne USA. 10 użyć</Polish>
+            <Portuguese>Usado pelas Forças Armadas dos EUA. 10 utilizações</Portuguese>
+            <Russian>Используется вооружёнными силами США. 10 применений</Russian>
             <German>Benutzt von den US Streitkräften. 10 Anwendungen</German>
+            <Korean>미군이 사용합니다. 10회 사용 가능</Korean>
+            <Japanese>米軍が使用。使用回数10回</Japanese>
+            <Chinese>美國軍隊使用。可使用 10 次</Chinese>
+            <Chinesesimp>美国军队使用。可使用 10 次</Chinesesimp>
+            <Turkish>ABD Silahlı Kuvvetleri tarafından kullanılır. 10 kullanım</Turkish>
+            <Slovak>Používajú americké ozbrojené sily. 10 použití</Slovak>
+            <Hungarian>Az amerikai fegyveres erők használják. 10 használat</Hungarian>
+            <Ukrainian>Використовується збройними силами США. 10 використань</Ukrainian>
+            <Bulgarian>Използва се от въоръжените сили на САЩ. 10 употреби</Bulgarian>
+            <Latin>Usado por las Fuerzas Armadas de EE. UU.. 10 usos</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaintstick_displayname">
             <English>US Facepaint Stick</English>
+            <Czech>US tyčinka barvy na obličej</Czech>
+            <French>Bâton de peinture faciale US</French>
+            <Spanish>Barra de pintura facial US</Spanish>
+            <Italian>Stick di pittura per il viso US</Italian>
+            <Polish>Sztyft farby do twarzy US</Polish>
+            <Portuguese>Bastão de tinta facial US</Portuguese>
+            <Russian>Стик грима US</Russian>
             <German>US-Tarnschminkstift</German>
+            <Korean>US 얼굴 페인트 스틱</Korean>
+            <Japanese>US フェイスペイントスティック</Japanese>
+            <Chinese>US 臉部油彩棒</Chinese>
+            <Chinesesimp>US 脸部油彩棒</Chinesesimp>
+            <Turkish>US yüz boyası çubuğu</Turkish>
+            <Slovak>Tyčinka farby na tvár US</Slovak>
+            <Hungarian>US arcfesték-rúd</Hungarian>
+            <Ukrainian>Стик гриму US</Ukrainian>
+            <Bulgarian>Стик боя за лице US</Bulgarian>
+            <Latin>Barra de pintura facial US</Latin>
         </Key>
     </Package>
 </Project>

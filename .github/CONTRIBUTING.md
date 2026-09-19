@@ -23,3 +23,4 @@ A code change isn't done until its supporting files are updated in the same PR. 
 - **[CHANGELOG.md](../CHANGELOG.md)** — add an entry under `[Unreleased]` (Keep a Changelog format).
 - **[docs/](../docs)** — update the relevant page if the change affects installation, settings, or usage.
 - **PR label** — apply the matching `changelog/*` label so release-drafter groups it correctly.
+- **Translations** — new or changed user-facing strings go into the addon's `stringtable.xml` in every language Arma 3 ships (see [docs/contributing.md](../docs/contributing.md#translations)); untranslated ones fall back to English in the game.

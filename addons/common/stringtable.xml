@@ -3,115 +3,591 @@
     <Package name="Common">
         <Key ID="STR_CFR_Common_camoApplied">
             <English>Camouflage applied</English>
+            <Czech>Kamufláž nanesena</Czech>
+            <French>Camouflage appliqué</French>
+            <Spanish>Camuflaje aplicado</Spanish>
+            <Italian>Mimetizzazione applicata</Italian>
+            <Polish>Kamuflaż nałożony</Polish>
+            <Portuguese>Camuflagem aplicada</Portuguese>
+            <Russian>Камуфляж нанесён</Russian>
             <German>Tarnung aufgelegt</German>
+            <Korean>위장이 적용되었습니다</Korean>
+            <Japanese>カモフラージュを施しました</Japanese>
+            <Chinese>已塗上偽裝</Chinese>
+            <Chinesesimp>已涂上伪装</Chinesesimp>
+            <Turkish>Kamuflaj uygulandı</Turkish>
+            <Slovak>Kamufláž nanesená</Slovak>
+            <Hungarian>Álcázás felhordva</Hungarian>
+            <Ukrainian>Камуфляж нанесено</Ukrainian>
+            <Bulgarian>Камуфлажът е нанесен</Bulgarian>
+            <Latin>Camuflaje aplicado</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camoFading">
             <English>Your camouflage is starting to fade</English>
+            <Czech>Tvoje kamufláž začíná blednout</Czech>
+            <French>Votre camouflage commence à s'estomper</French>
+            <Spanish>Tu camuflaje empieza a desvanecerse</Spanish>
+            <Italian>La tua mimetizzazione inizia a sbiadire</Italian>
+            <Polish>Twój kamuflaż zaczyna blaknąć</Polish>
+            <Portuguese>A tua camuflagem está a começar a desvanecer</Portuguese>
+            <Russian>Ваш камуфляж начинает стираться</Russian>
             <German>Deine Tarnung beginnt zu verblassen</German>
+            <Korean>위장이 흐려지기 시작합니다</Korean>
+            <Japanese>カモフラージュが薄れ始めています</Japanese>
+            <Chinese>你的偽裝開始褪色</Chinese>
+            <Chinesesimp>你的伪装开始褪色</Chinesesimp>
+            <Turkish>Kamuflajın solmaya başlıyor</Turkish>
+            <Slovak>Tvoja kamufláž začína blednúť</Slovak>
+            <Hungarian>Az álcázásod kezd elhalványulni</Hungarian>
+            <Ukrainian>Ваш камуфляж починає стиратися</Ukrainian>
+            <Bulgarian>Камуфлажът ти започва да избледнява</Bulgarian>
+            <Latin>Tu camuflaje empieza a desvanecerse</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camoRemoved">
             <English>Camouflage removed</English>
+            <Czech>Kamufláž odstraněna</Czech>
+            <French>Camouflage retiré</French>
+            <Spanish>Camuflaje retirado</Spanish>
+            <Italian>Mimetizzazione rimossa</Italian>
+            <Polish>Kamuflaż usunięty</Polish>
+            <Portuguese>Camuflagem removida</Portuguese>
+            <Russian>Камуфляж снят</Russian>
             <German>Tarnung abgelegt</German>
+            <Korean>위장이 제거되었습니다</Korean>
+            <Japanese>カモフラージュを落としました</Japanese>
+            <Chinese>已移除偽裝</Chinese>
+            <Chinesesimp>已移除伪装</Chinesesimp>
+            <Turkish>Kamuflaj kaldırıldı</Turkish>
+            <Slovak>Kamufláž odstránená</Slovak>
+            <Hungarian>Álcázás eltávolítva</Hungarian>
+            <Ukrainian>Камуфляж знято</Ukrainian>
+            <Bulgarian>Камуфлажът е премахнат</Bulgarian>
+            <Latin>Camuflaje retirado</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_black">
             <English>Night Camouflage</English>
+            <Czech>Noční kamufláž</Czech>
+            <French>Camouflage de nuit</French>
+            <Spanish>Camuflaje nocturno</Spanish>
+            <Italian>Mimetizzazione notturna</Italian>
+            <Polish>Kamuflaż nocny</Polish>
+            <Portuguese>Camuflagem noturna</Portuguese>
+            <Russian>Ночной камуфляж</Russian>
             <German>Nacht Tarnung</German>
+            <Korean>야간 위장</Korean>
+            <Japanese>夜間迷彩</Japanese>
+            <Chinese>夜間偽裝</Chinese>
+            <Chinesesimp>夜间伪装</Chinesesimp>
+            <Turkish>Gece kamuflajı</Turkish>
+            <Slovak>Nočná kamufláž</Slovak>
+            <Hungarian>Éjszakai álcázás</Hungarian>
+            <Ukrainian>Нічний камуфляж</Ukrainian>
+            <Bulgarian>Нощен камуфлаж</Bulgarian>
+            <Latin>Camuflaje nocturno</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_bwstripes">
             <English>BW Stripes</English>
+            <Czech>BW pruhy</Czech>
+            <French>BW rayures</French>
+            <Spanish>BW rayas</Spanish>
+            <Italian>BW strisce</Italian>
+            <Polish>BW pasy</Polish>
+            <Portuguese>BW listras</Portuguese>
+            <Russian>BW полосы</Russian>
             <German>BW Streifen</German>
+            <Korean>BW 줄무늬</Korean>
+            <Japanese>BW ストライプ</Japanese>
+            <Chinese>BW 條紋</Chinese>
+            <Chinesesimp>BW 条纹</Chinesesimp>
+            <Turkish>BW şeritler</Turkish>
+            <Slovak>BW pruhy</Slovak>
+            <Hungarian>BW csíkok</Hungarian>
+            <Ukrainian>BW смуги</Ukrainian>
+            <Bulgarian>BW ивици</Bulgarian>
+            <Latin>BW rayas</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_bwtarn">
             <English>BW Camouflage</English>
+            <Czech>BW kamufláž</Czech>
+            <French>BW camouflage</French>
+            <Spanish>BW camuflaje</Spanish>
+            <Italian>BW mimetica</Italian>
+            <Polish>BW kamuflaż</Polish>
+            <Portuguese>BW camuflagem</Portuguese>
+            <Russian>BW камуфляж</Russian>
             <German>BW Tarnung</German>
+            <Korean>BW 위장</Korean>
+            <Japanese>BW 迷彩</Japanese>
+            <Chinese>BW 偽裝</Chinese>
+            <Chinesesimp>BW 伪装</Chinesesimp>
+            <Turkish>BW kamuflaj</Turkish>
+            <Slovak>BW kamufláž</Slovak>
+            <Hungarian>BW álcázás</Hungarian>
+            <Ukrainian>BW камуфляж</Ukrainian>
+            <Bulgarian>BW камуфлаж</Bulgarian>
+            <Latin>BW camuflaje</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_serbian">
             <English>Serbian Camouflage</English>
+            <Czech>Srbská kamufláž</Czech>
+            <French>Camouflage serbe</French>
+            <Spanish>Camuflaje serbio</Spanish>
+            <Italian>Mimetizzazione serba</Italian>
+            <Polish>Kamuflaż serbski</Polish>
+            <Portuguese>Camuflagem sérvia</Portuguese>
+            <Russian>Сербский камуфляж</Russian>
             <German>Serbische Tarnung</German>
+            <Korean>세르비아 위장</Korean>
+            <Japanese>セルビア迷彩</Japanese>
+            <Chinese>塞爾維亞偽裝</Chinese>
+            <Chinesesimp>塞尔维亚伪装</Chinesesimp>
+            <Turkish>Sırp kamuflajı</Turkish>
+            <Slovak>Srbská kamufláž</Slovak>
+            <Hungarian>Szerb álcázás</Hungarian>
+            <Ukrainian>Сербський камуфляж</Ukrainian>
+            <Bulgarian>Сръбски камуфлаж</Bulgarian>
+            <Latin>Camuflaje serbio</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_serbian_short">
             <English>Serbian Camo</English>
+            <Czech>Srbská kamufláž</Czech>
+            <French>Camo serbe</French>
+            <Spanish>Camuflaje serbio</Spanish>
+            <Italian>Mimetica serba</Italian>
+            <Polish>Kamuflaż serbski</Polish>
+            <Portuguese>Camuflagem sérvia</Portuguese>
+            <Russian>Сербский камуфляж</Russian>
             <German>Serb. Tarnung</German>
+            <Korean>세르비아 위장</Korean>
+            <Japanese>セルビア迷彩</Japanese>
+            <Chinese>塞爾維亞偽裝</Chinese>
+            <Chinesesimp>塞尔维亚伪装</Chinesesimp>
+            <Turkish>Sırp kamuflajı</Turkish>
+            <Slovak>Srbská kamufláž</Slovak>
+            <Hungarian>Szerb álcázás</Hungarian>
+            <Ukrainian>Сербський камуфляж</Ukrainian>
+            <Bulgarian>Сръбски камуфлаж</Bulgarian>
+            <Latin>Camuflaje serbio</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_snowstripes">
             <English>Snow Stripes</English>
+            <Czech>Sněhové pruhy</Czech>
+            <French>Rayures neige</French>
+            <Spanish>Rayas de nieve</Spanish>
+            <Italian>Strisce neve</Italian>
+            <Polish>Śnieżne pasy</Polish>
+            <Portuguese>Listras de neve</Portuguese>
+            <Russian>Снежные полосы</Russian>
             <German>Schneestreifen</German>
+            <Korean>눈 줄무늬</Korean>
+            <Japanese>スノーストライプ</Japanese>
+            <Chinese>雪地條紋</Chinese>
+            <Chinesesimp>雪地条纹</Chinesesimp>
+            <Turkish>Kar şeritleri</Turkish>
+            <Slovak>Snehové pruhy</Slovak>
+            <Hungarian>Havas csíkok</Hungarian>
+            <Ukrainian>Снігові смуги</Ukrainian>
+            <Bulgarian>Снежни ивици</Bulgarian>
+            <Latin>Rayas de nieve</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_usflash">
             <English>US Flash</English>
+            <Czech>US záblesk</Czech>
+            <French>US flash</French>
+            <Spanish>US destellos</Spanish>
+            <Italian>US flash</Italian>
+            <Polish>US błysk</Polish>
+            <Portuguese>US flash</Portuguese>
+            <Russian>US вспышка</Russian>
             <German>US Sprüh</German>
+            <Korean>US 플래시</Korean>
+            <Japanese>US フラッシュ</Japanese>
+            <Chinese>US 閃光</Chinese>
+            <Chinesesimp>US 闪光</Chinesesimp>
+            <Turkish>US flaş</Turkish>
+            <Slovak>US záblesk</Slovak>
+            <Hungarian>US villanás</Hungarian>
+            <Ukrainian>US спалах</Ukrainian>
+            <Bulgarian>US светкавица</Bulgarian>
+            <Latin>US destellos</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_usstains">
             <English>US Stains</English>
+            <Czech>US skvrny</Czech>
+            <French>US taches</French>
+            <Spanish>US manchas</Spanish>
+            <Italian>US macchie</Italian>
+            <Polish>US plamy</Polish>
+            <Portuguese>US manchas</Portuguese>
+            <Russian>US пятна</Russian>
             <German>US Flecken</German>
+            <Korean>US 얼룩</Korean>
+            <Japanese>US ステイン</Japanese>
+            <Chinese>US 斑點</Chinese>
+            <Chinesesimp>US 斑点</Chinesesimp>
+            <Turkish>US lekeler</Turkish>
+            <Slovak>US škvrny</Slovak>
+            <Hungarian>US foltok</Hungarian>
+            <Ukrainian>US плями</Ukrainian>
+            <Bulgarian>US петна</Bulgarian>
+            <Latin>US manchas</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_usstripes">
             <English>US Stripes</English>
+            <Czech>US pruhy</Czech>
+            <French>US rayures</French>
+            <Spanish>US rayas</Spanish>
+            <Italian>US strisce</Italian>
+            <Polish>US pasy</Polish>
+            <Portuguese>US listras</Portuguese>
+            <Russian>US полосы</Russian>
             <German>US Streifen</German>
+            <Korean>US 줄무늬</Korean>
+            <Japanese>US ストライプ</Japanese>
+            <Chinese>US 條紋</Chinese>
+            <Chinesesimp>US 条纹</Chinesesimp>
+            <Turkish>US şeritler</Turkish>
+            <Slovak>US pruhy</Slovak>
+            <Hungarian>US csíkok</Hungarian>
+            <Ukrainian>US смуги</Ukrainian>
+            <Bulgarian>US ивици</Bulgarian>
+            <Latin>US rayas</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla">
             <English>Vanilla Camouflage (Standard)</English>
+            <Czech>Původní kamufláž (standardní)</Czech>
+            <French>Camouflage d'origine (standard)</French>
+            <Spanish>Camuflaje original (estándar)</Spanish>
+            <Italian>Mimetizzazione originale (standard)</Italian>
+            <Polish>Oryginalny kamuflaż (standardowy)</Polish>
+            <Portuguese>Camuflagem original (padrão)</Portuguese>
+            <Russian>Оригинальный камуфляж (стандартный)</Russian>
             <German>Original-Tarnung (Standard)</German>
+            <Korean>기본 위장 (표준)</Korean>
+            <Japanese>オリジナル迷彩 (標準)</Japanese>
+            <Chinese>原版偽裝 (標準)</Chinese>
+            <Chinesesimp>原版伪装 (标准)</Chinesesimp>
+            <Turkish>Orijinal kamuflaj (standart)</Turkish>
+            <Slovak>Pôvodná kamufláž (štandardná)</Slovak>
+            <Hungarian>Eredeti álcázás (normál)</Hungarian>
+            <Ukrainian>Оригінальний камуфляж (стандартний)</Ukrainian>
+            <Bulgarian>Оригинален камуфлаж (стандартен)</Bulgarian>
+            <Latin>Camuflaje original (estándar)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_arid">
             <English>Vanilla Camouflage (Arid)</English>
+            <Czech>Původní kamufláž (aridní)</Czech>
+            <French>Camouflage d'origine (aride)</French>
+            <Spanish>Camuflaje original (árido)</Spanish>
+            <Italian>Mimetizzazione originale (arido)</Italian>
+            <Polish>Oryginalny kamuflaż (suchy)</Polish>
+            <Portuguese>Camuflagem original (árido)</Portuguese>
+            <Russian>Оригинальный камуфляж (пустынный)</Russian>
             <German>Original-Tarnung (Trocken)</German>
+            <Korean>기본 위장 (건조)</Korean>
+            <Japanese>オリジナル迷彩 (乾燥)</Japanese>
+            <Chinese>原版偽裝 (乾旱)</Chinese>
+            <Chinesesimp>原版伪装 (干旱)</Chinesesimp>
+            <Turkish>Orijinal kamuflaj (kurak)</Turkish>
+            <Slovak>Pôvodná kamufláž (aridná)</Slovak>
+            <Hungarian>Eredeti álcázás (száraz)</Hungarian>
+            <Ukrainian>Оригінальний камуфляж (пустельний)</Ukrainian>
+            <Bulgarian>Оригинален камуфлаж (пустинен)</Bulgarian>
+            <Latin>Camuflaje original (árido)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_arid_short">
             <English>Camo (Arid)</English>
+            <Czech>Kamufláž (aridní)</Czech>
+            <French>Camo (aride)</French>
+            <Spanish>Camuflaje (árido)</Spanish>
+            <Italian>Mimetica (arido)</Italian>
+            <Polish>Kamuflaż (suchy)</Polish>
+            <Portuguese>Camuflagem (árido)</Portuguese>
+            <Russian>Камуфляж (пустынный)</Russian>
             <German>Tarnung (Trocken)</German>
+            <Korean>위장 (건조)</Korean>
+            <Japanese>迷彩 (乾燥)</Japanese>
+            <Chinese>偽裝 (乾旱)</Chinese>
+            <Chinesesimp>伪装 (干旱)</Chinesesimp>
+            <Turkish>Kamuflaj (kurak)</Turkish>
+            <Slovak>Kamufláž (aridná)</Slovak>
+            <Hungarian>Álcázás (száraz)</Hungarian>
+            <Ukrainian>Камуфляж (пустельний)</Ukrainian>
+            <Bulgarian>Камуфлаж (пустинен)</Bulgarian>
+            <Latin>Camuflaje (árido)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_lush">
             <English>Vanilla Camouflage (Lush)</English>
+            <Czech>Původní kamufláž (bujná)</Czech>
+            <French>Camouflage d'origine (luxuriant)</French>
+            <Spanish>Camuflaje original (frondoso)</Spanish>
+            <Italian>Mimetizzazione originale (rigoglioso)</Italian>
+            <Polish>Oryginalny kamuflaż (bujny)</Polish>
+            <Portuguese>Camuflagem original (exuberante)</Portuguese>
+            <Russian>Оригинальный камуфляж (лесной)</Russian>
             <German>Original-Tarnung (Grün)</German>
+            <Korean>기본 위장 (무성)</Korean>
+            <Japanese>オリジナル迷彩 (緑豊か)</Japanese>
+            <Chinese>原版偽裝 (茂密)</Chinese>
+            <Chinesesimp>原版伪装 (茂密)</Chinesesimp>
+            <Turkish>Orijinal kamuflaj (gür)</Turkish>
+            <Slovak>Pôvodná kamufláž (bujná)</Slovak>
+            <Hungarian>Eredeti álcázás (buja)</Hungarian>
+            <Ukrainian>Оригінальний камуфляж (лісовий)</Ukrainian>
+            <Bulgarian>Оригинален камуфлаж (буен)</Bulgarian>
+            <Latin>Camuflaje original (frondoso)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_lush_short">
             <English>Camo (Lush)</English>
+            <Czech>Kamufláž (bujná)</Czech>
+            <French>Camo (luxuriant)</French>
+            <Spanish>Camuflaje (frondoso)</Spanish>
+            <Italian>Mimetica (rigoglioso)</Italian>
+            <Polish>Kamuflaż (bujny)</Polish>
+            <Portuguese>Camuflagem (exuberante)</Portuguese>
+            <Russian>Камуфляж (лесной)</Russian>
             <German>Tarnung (Grün)</German>
+            <Korean>위장 (무성)</Korean>
+            <Japanese>迷彩 (緑豊か)</Japanese>
+            <Chinese>偽裝 (茂密)</Chinese>
+            <Chinesesimp>伪装 (茂密)</Chinesesimp>
+            <Turkish>Kamuflaj (gür)</Turkish>
+            <Slovak>Kamufláž (bujná)</Slovak>
+            <Hungarian>Álcázás (buja)</Hungarian>
+            <Ukrainian>Камуфляж (лісовий)</Ukrainian>
+            <Bulgarian>Камуфлаж (буен)</Bulgarian>
+            <Latin>Camuflaje (frondoso)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_semiarid">
             <English>Vanilla Camouflage (Semi-Arid)</English>
+            <Czech>Původní kamufláž (polosuchá)</Czech>
+            <French>Camouflage d'origine (semi-aride)</French>
+            <Spanish>Camuflaje original (semiárido)</Spanish>
+            <Italian>Mimetizzazione originale (semi-arido)</Italian>
+            <Polish>Oryginalny kamuflaż (półsuchy)</Polish>
+            <Portuguese>Camuflagem original (semiárido)</Portuguese>
+            <Russian>Оригинальный камуфляж (полупустынный)</Russian>
             <German>Original-Tarnung (Halbtrocken)</German>
+            <Korean>기본 위장 (반건조)</Korean>
+            <Japanese>オリジナル迷彩 (半乾燥)</Japanese>
+            <Chinese>原版偽裝 (半乾旱)</Chinese>
+            <Chinesesimp>原版伪装 (半干旱)</Chinesesimp>
+            <Turkish>Orijinal kamuflaj (yarı kurak)</Turkish>
+            <Slovak>Pôvodná kamufláž (polosuchá)</Slovak>
+            <Hungarian>Eredeti álcázás (félszáraz)</Hungarian>
+            <Ukrainian>Оригінальний камуфляж (напівпустельний)</Ukrainian>
+            <Bulgarian>Оригинален камуфлаж (полупустинен)</Bulgarian>
+            <Latin>Camuflaje original (semiárido)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_semiarid_short">
             <English>Camo (Semi-Arid)</English>
+            <Czech>Kamufláž (polosuchá)</Czech>
+            <French>Camo (semi-aride)</French>
+            <Spanish>Camuflaje (semiárido)</Spanish>
+            <Italian>Mimetica (semi-arido)</Italian>
+            <Polish>Kamuflaż (półsuchy)</Polish>
+            <Portuguese>Camuflagem (semiárido)</Portuguese>
+            <Russian>Камуфляж (полупустынный)</Russian>
             <German>Tarnung (Halbtrocken)</German>
+            <Korean>위장 (반건조)</Korean>
+            <Japanese>迷彩 (半乾燥)</Japanese>
+            <Chinese>偽裝 (半乾旱)</Chinese>
+            <Chinesesimp>伪装 (半干旱)</Chinesesimp>
+            <Turkish>Kamuflaj (yarı kurak)</Turkish>
+            <Slovak>Kamufláž (polosuchá)</Slovak>
+            <Hungarian>Álcázás (félszáraz)</Hungarian>
+            <Ukrainian>Камуфляж (напівпустельний)</Ukrainian>
+            <Bulgarian>Камуфлаж (полупустинен)</Bulgarian>
+            <Latin>Camuflaje (semiárido)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_short">
             <English>Camo (Standard)</English>
+            <Czech>Kamufláž (standardní)</Czech>
+            <French>Camo (standard)</French>
+            <Spanish>Camuflaje (estándar)</Spanish>
+            <Italian>Mimetica (standard)</Italian>
+            <Polish>Kamuflaż (standardowy)</Polish>
+            <Portuguese>Camuflagem (padrão)</Portuguese>
+            <Russian>Камуфляж (стандартный)</Russian>
             <German>Tarnung (Standard)</German>
+            <Korean>위장 (표준)</Korean>
+            <Japanese>迷彩 (標準)</Japanese>
+            <Chinese>偽裝 (標準)</Chinese>
+            <Chinesesimp>伪装 (标准)</Chinesesimp>
+            <Turkish>Kamuflaj (standart)</Turkish>
+            <Slovak>Kamufláž (štandardná)</Slovak>
+            <Hungarian>Álcázás (normál)</Hungarian>
+            <Ukrainian>Камуфляж (стандартний)</Ukrainian>
+            <Bulgarian>Камуфлаж (стандартен)</Bulgarian>
+            <Latin>Camuflaje (estándar)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_displayName">
             <English>Camouflage</English>
+            <Czech>Kamufláž</Czech>
+            <French>Camouflage</French>
+            <Spanish>Camuflaje</Spanish>
+            <Italian>Mimetizzazione</Italian>
+            <Polish>Kamuflaż</Polish>
+            <Portuguese>Camuflagem</Portuguese>
+            <Russian>Камуфляж</Russian>
             <German>Tarnung</German>
+            <Korean>위장</Korean>
+            <Japanese>カモフラージュ</Japanese>
+            <Chinese>偽裝</Chinese>
+            <Chinesesimp>伪装</Chinesesimp>
+            <Turkish>Kamuflaj</Turkish>
+            <Slovak>Kamufláž</Slovak>
+            <Hungarian>Álcázás</Hungarian>
+            <Ukrainian>Камуфляж</Ukrainian>
+            <Bulgarian>Камуфлаж</Bulgarian>
+            <Latin>Camuflaje</Latin>
         </Key>
         <Key ID="STR_CFR_Common_facepaintUseLeft">
             <English>Facepaint: 1 use left</English>
+            <Czech>Barva na obličej: zbývá 1 použití</Czech>
+            <French>Peinture faciale : 1 utilisation restante</French>
+            <Spanish>Pintura facial: queda 1 uso</Spanish>
+            <Italian>Pittura per il viso: 1 uso rimasto</Italian>
+            <Polish>Farba do twarzy: pozostało 1 użycie</Polish>
+            <Portuguese>Tinta facial: resta 1 utilização</Portuguese>
+            <Russian>Грим: осталось 1 применение</Russian>
             <German>Tarnschminke: noch 1 Anwendung</German>
+            <Korean>얼굴 페인트: 1회 남음</Korean>
+            <Japanese>フェイスペイント: 残り1回</Japanese>
+            <Chinese>臉部油彩：剩餘 1 次</Chinese>
+            <Chinesesimp>脸部油彩：剩余 1 次</Chinesesimp>
+            <Turkish>Yüz boyası: 1 kullanım kaldı</Turkish>
+            <Slovak>Farba na tvár: zostáva 1 použitie</Slovak>
+            <Hungarian>Arcfesték: 1 használat maradt</Hungarian>
+            <Ukrainian>Грим: залишилося 1 використання</Ukrainian>
+            <Bulgarian>Боя за лице: остава 1 употреба</Bulgarian>
+            <Latin>Pintura facial: queda 1 uso</Latin>
         </Key>
         <Key ID="STR_CFR_Common_facepaintUsedUp">
             <English>Facepaint used up</English>
+            <Czech>Barva na obličej je spotřebována</Czech>
+            <French>Peinture faciale épuisée</French>
+            <Spanish>Pintura facial agotada</Spanish>
+            <Italian>Pittura per il viso esaurita</Italian>
+            <Polish>Farba do twarzy zużyta</Polish>
+            <Portuguese>Tinta facial esgotada</Portuguese>
+            <Russian>Грим закончился</Russian>
             <German>Tarnschminke aufgebraucht</German>
+            <Korean>얼굴 페인트를 모두 사용했습니다</Korean>
+            <Japanese>フェイスペイントを使い切りました</Japanese>
+            <Chinese>臉部油彩已用完</Chinese>
+            <Chinesesimp>脸部油彩已用完</Chinesesimp>
+            <Turkish>Yüz boyası bitti</Turkish>
+            <Slovak>Farba na tvár je spotrebovaná</Slovak>
+            <Hungarian>Az arcfesték elfogyott</Hungarian>
+            <Ukrainian>Грим закінчився</Ukrainian>
+            <Bulgarian>Бояжията за лице свърши</Bulgarian>
+            <Latin>Pintura facial agotada</Latin>
         </Key>
         <Key ID="STR_CFR_Common_facepaintUsesLeft">
             <English>Facepaint: %1 uses left</English>
+            <Czech>Barva na obličej: zbývá %1 použití</Czech>
+            <French>Peinture faciale : %1 utilisations restantes</French>
+            <Spanish>Pintura facial: quedan %1 usos</Spanish>
+            <Italian>Pittura per il viso: %1 usi rimasti</Italian>
+            <Polish>Farba do twarzy: pozostało %1 użyć</Polish>
+            <Portuguese>Tinta facial: restam %1 utilizações</Portuguese>
+            <Russian>Грим: осталось %1 применений</Russian>
             <German>Tarnschminke: noch %1 Anwendungen</German>
+            <Korean>얼굴 페인트: %1회 남음</Korean>
+            <Japanese>フェイスペイント: 残り%1回</Japanese>
+            <Chinese>臉部油彩：剩餘 %1 次</Chinese>
+            <Chinesesimp>脸部油彩：剩余 %1 次</Chinesesimp>
+            <Turkish>Yüz boyası: %1 kullanım kaldı</Turkish>
+            <Slovak>Farba na tvár: zostáva %1 použití</Slovak>
+            <Hungarian>Arcfesték: %1 használat maradt</Hungarian>
+            <Ukrainian>Грим: залишилося %1 використань</Ukrainian>
+            <Bulgarian>Боя за лице: остават %1 употреби</Bulgarian>
+            <Latin>Pintura facial: quedan %1 usos</Latin>
         </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>
+            <Czech>Tento obličej nelze zamaskovat</Czech>
+            <French>Ce visage ne peut pas être camouflé</French>
+            <Spanish>Esta cara no se puede camuflar</Spanish>
+            <Italian>Questo volto non può essere mimetizzato</Italian>
+            <Polish>Tej twarzy nie można pomalować kamuflażem</Polish>
+            <Portuguese>Este rosto não pode ser camuflado</Portuguese>
+            <Russian>Это лицо нельзя камуфлировать</Russian>
             <German>Dieses Gesicht kann nicht getarnt werden</German>
+            <Korean>이 얼굴은 위장할 수 없습니다</Korean>
+            <Japanese>この顔にはカモフラージュできません</Japanese>
+            <Chinese>此臉部無法偽裝</Chinese>
+            <Chinesesimp>此脸部无法伪装</Chinesesimp>
+            <Turkish>Bu yüz kamufle edilemez</Turkish>
+            <Slovak>Túto tvár nemožno zamaskovať</Slovak>
+            <Hungarian>Ezt az arcot nem lehet álcázni</Hungarian>
+            <Ukrainian>Це обличчя не можна камуфлювати</Ukrainian>
+            <Bulgarian>Това лице не може да бъде камуфлирано</Bulgarian>
+            <Latin>Esta cara no se puede camuflar</Latin>
         </Key>
         <Key ID="STR_CFR_Common_noFacepaint">
             <English>No usable facepaint left</English>
+            <Czech>Nezbývá žádná použitelná barva na obličej</Czech>
+            <French>Plus de peinture faciale utilisable</French>
+            <Spanish>No queda pintura facial utilizable</Spanish>
+            <Italian>Nessuna pittura per il viso utilizzabile rimasta</Italian>
+            <Polish>Brak użytecznej farby do twarzy</Polish>
+            <Portuguese>Já não há tinta facial utilizável</Portuguese>
+            <Russian>Не осталось пригодного грима</Russian>
             <German>Keine verwendbare Tarnschminke mehr</German>
+            <Korean>사용 가능한 얼굴 페인트가 없습니다</Korean>
+            <Japanese>使用できるフェイスペイントがありません</Japanese>
+            <Chinese>沒有可用的臉部油彩了</Chinese>
+            <Chinesesimp>没有可用的脸部油彩了</Chinesesimp>
+            <Turkish>Kullanılabilir yüz boyası kalmadı</Turkish>
+            <Slovak>Nezostala žiadna použiteľná farba na tvár</Slovak>
+            <Hungarian>Nincs több használható arcfesték</Hungarian>
+            <Ukrainian>Не залишилося придатного гриму</Ukrainian>
+            <Bulgarian>Не е останала използваема боя за лице</Bulgarian>
+            <Latin>No queda pintura facial utilizable</Latin>
         </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_name">
             <English>Camo Wear-off Time (Minutes)</English>
+            <Czech>Doba, než kamufláž vyblednou (minuty)</Czech>
+            <French>Durée avant estompage du camouflage (minutes)</French>
+            <Spanish>Tiempo hasta que se desvanece el camuflaje (minutos)</Spanish>
+            <Italian>Tempo prima che la mimetizzazione sbiadisca (minuti)</Italian>
+            <Polish>Czas do zblaknięcia kamuflażu (minuty)</Polish>
+            <Portuguese>Tempo até a camuflagem desvanecer (minutos)</Portuguese>
+            <Russian>Время до стирания камуфляжа (минуты)</Russian>
             <German>Tarnungs-Verfallszeit (Minuten)</German>
+            <Korean>위장이 지워지는 시간 (분)</Korean>
+            <Japanese>カモフラージュが薄れるまでの時間 (分)</Japanese>
+            <Chinese>偽裝褪色時間 (分鐘)</Chinese>
+            <Chinesesimp>伪装褪色时间 (分钟)</Chinesesimp>
+            <Turkish>Kamuflajın solma süresi (dakika)</Turkish>
+            <Slovak>Čas do vyblednutia kamufláže (minúty)</Slovak>
+            <Hungarian>Az álcázás elhalványulásának ideje (perc)</Hungarian>
+            <Ukrainian>Час до стирання камуфляжу (хвилини)</Ukrainian>
+            <Bulgarian>Време до избледняване на камуфлажа (минути)</Bulgarian>
+            <Latin>Tiempo hasta que se desvanece el camuflaje (minutos)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_tooltip">
             <English>How many minutes after being applied a camouflage face automatically wears off and reverts to the original face, simulating it fading from rain, sweat, or time. Each application varies a little (roughly +/- 10 minutes) so players don't all lose it at once, and the wearer gets a warning about a minute before it goes. Only player-controlled units wear off; AI keep their camo until it is cleaned. Set to 0 to disable - camo will never wear off on its own.</English>
+            <Czech>Kolik minut po nanesení kamufláž na obličeji sama vybledne a vrátí se původní obličej, čímž se simuluje vyblednutí vlivem deště, potu nebo času. Každé nanesení se mírně liší (zhruba o +/- 10 minut), aby o kamufláž nepřišli všichni hráči najednou, a nositel je asi minutu předem varován. Blednou jen jednotky ovládané hráči; AI si kamufláž ponechá, dokud není smyta. Nastavením na 0 tuto funkci vypnete – kamufláž pak sama nikdy nevybledne.</Czech>
+            <French>Nombre de minutes après l'application au bout desquelles un visage camouflé s'estompe automatiquement et retrouve son aspect d'origine, ce qui simule l'effet de la pluie, de la sueur ou du temps. Chaque application varie un peu (environ +/- 10 minutes) afin que tous les joueurs ne le perdent pas en même temps, et le porteur est prévenu environ une minute avant. Seules les unités contrôlées par des joueurs s'estompent ; l'IA garde son camouflage jusqu'à ce qu'il soit nettoyé. Mettre à 0 pour désactiver : le camouflage ne s'estompera alors jamais de lui-même.</French>
+            <Spanish>Minutos tras aplicarlo que tarda un camuflaje facial en desvanecerse automáticamente y volver a la cara original, simulando el efecto de la lluvia, el sudor o el paso del tiempo. Cada aplicación varía un poco (aproximadamente +/- 10 minutos) para que no todos los jugadores lo pierdan a la vez, y el portador recibe un aviso aproximadamente un minuto antes. Solo se desvanece en las unidades controladas por jugadores; la IA conserva su camuflaje hasta que se limpie. Pon 0 para desactivarlo: el camuflaje nunca se desvanecerá por sí solo.</Spanish>
+            <Italian>Quanti minuti dopo l'applicazione una mimetizzazione del viso sbiadisce automaticamente e torna al volto originale, simulando l'effetto di pioggia, sudore o tempo. Ogni applicazione varia leggermente (circa +/- 10 minuti) in modo che non tutti i giocatori la perdano nello stesso momento, e chi la indossa riceve un avviso circa un minuto prima. Sbiadiscono solo le unità controllate dai giocatori; l'IA mantiene la mimetizzazione finché non viene ripulita. Imposta 0 per disattivare: la mimetizzazione non sbiadirà mai da sola.</Italian>
+            <Polish>Po ilu minutach od nałożenia kamuflaż na twarzy blaknie automatycznie i przywraca oryginalną twarz, symulując wpływ deszczu, potu lub czasu. Każde nałożenie różni się nieco (mniej więcej +/- 10 minut), aby nie wszyscy gracze tracili kamuflaż jednocześnie, a nosiciel dostaje ostrzeżenie około minutę wcześniej. Blakną tylko jednostki sterowane przez graczy; AI zachowuje kamuflaż, dopóki nie zostanie zmyty. Ustaw 0, aby wyłączyć – kamuflaż nigdy nie zniknie wtedy sam.</Polish>
+            <Portuguese>Quantos minutos depois de aplicado um rosto camuflado desvanece automaticamente e volta ao rosto original, simulando o efeito da chuva, do suor ou do tempo. Cada aplicação varia um pouco (cerca de +/- 10 minutos) para que nem todos os jogadores a percam ao mesmo tempo, e o utilizador é avisado cerca de um minuto antes. Só desvanece nas unidades controladas por jogadores; a IA mantém a camuflagem até ser limpa. Define 0 para desativar: a camuflagem nunca desvanecerá por si só.</Portuguese>
+            <Russian>Через сколько минут после нанесения камуфляж на лице автоматически стирается и возвращается исходное лицо, имитируя действие дождя, пота или времени. Каждое нанесение немного отличается (примерно +/- 10 минут), чтобы не все игроки теряли камуфляж одновременно, а владельца предупреждают примерно за минуту. Стирается только у юнитов под управлением игроков; ИИ сохраняет камуфляж, пока его не смоют. Установите 0, чтобы отключить: камуфляж никогда не сотрётся сам.</Russian>
             <German>Wie viele Minuten nach dem Auftragen eine Tarnschminke automatisch verblasst und zum ursprünglichen Gesicht zurückkehrt - simuliert das Verblassen durch Regen, Schweiß oder Zeit. Jede Anwendung weicht etwas ab (etwa +/- 10 Minuten), damit nicht alle Spieler ihre Tarnung gleichzeitig verlieren, und der Träger wird etwa eine Minute vorher gewarnt. Nur von Spielern gesteuerte Einheiten verblassen; KI behalten ihre Tarnung, bis sie gereinigt wird. Auf 0 setzen, um zu deaktivieren - die Tarnung verblasst dann nie von selbst.</German>
+            <Korean>적용 후 몇 분이 지나면 얼굴 위장이 저절로 지워져 원래 얼굴로 돌아오는지 정합니다. 비, 땀, 시간에 의해 지워지는 것을 모사합니다. 모든 플레이어가 동시에 위장을 잃지 않도록 적용마다 조금씩(대략 +/- 10분) 달라지며, 착용자는 약 1분 전에 경고를 받습니다. 플레이어가 조종하는 유닛만 지워지며, AI는 씻어내기 전까지 위장을 유지합니다. 0으로 설정하면 비활성화되어 위장이 저절로 지워지지 않습니다.</Korean>
+            <Japanese>適用してから何分後に、顔のカモフラージュが自動的に薄れて元の顔に戻るかを設定します。雨や汗、時間の経過で落ちていく様子を再現します。全員が同時に失わないよう、適用ごとに少しずつ (約 +/- 10 分) ばらつきがあり、着用者には約 1 分前に警告が表示されます。薄れるのはプレイヤーが操作するユニットのみで、AI は洗い落とされるまでカモフラージュを保ちます。0 にすると無効になり、カモフラージュは自然には薄れません。</Japanese>
+            <Chinese>套用後經過多少分鐘，臉上的偽裝會自動褪色並恢復為原本的臉，模擬因雨水、汗水或時間而褪去的效果。每次套用都會略有差異（約 +/- 10 分鐘），避免所有玩家同時失去偽裝，且配戴者會在約一分鐘前收到警告。只有由玩家控制的單位會褪色；AI 會保留偽裝直到被清除。設為 0 即停用，偽裝將不會自行褪色。</Chinese>
+            <Chinesesimp>应用后经过多少分钟，脸上的伪装会自动褪色并恢复为原本的脸，模拟因雨水、汗水或时间而褪去的效果。每次应用都会略有差异（约 +/- 10 分钟），避免所有玩家同时失去伪装，并且佩戴者会在约一分钟前收到警告。只有由玩家控制的单位会褪色；AI 会保留伪装直到被清除。设为 0 即禁用，伪装将不会自行褪色。</Chinesesimp>
+            <Turkish>Uygulandıktan kaç dakika sonra yüzdeki kamuflajın kendiliğinden solup orijinal yüze döneceği; yağmur, ter veya zamanın etkisini simüle eder. Her uygulama biraz farklılık gösterir (yaklaşık +/- 10 dakika), böylece tüm oyuncular kamuflajını aynı anda kaybetmez ve takan kişi yaklaşık bir dakika önceden uyarılır. Yalnızca oyuncular tarafından kontrol edilen birimlerde solar; yapay zeka kamuflajını temizlenene kadar korur. Devre dışı bırakmak için 0 yapın – kamuflaj bu durumda kendiliğinden hiç solmaz.</Turkish>
+            <Slovak>Za koľko minút po nanesení kamufláž na tvári sama vybledne a vráti sa pôvodná tvár, čím sa simuluje vyblednutie vplyvom dažďa, potu alebo času. Každé nanesenie sa mierne líši (približne o +/- 10 minút), aby o kamufláž neprišli všetci hráči naraz, a nositeľ je asi minútu vopred varovaný. Blednú iba jednotky ovládané hráčmi; AI si kamufláž ponechá, kým nie je zmytá. Nastavením na 0 túto funkciu vypnete – kamufláž potom sama nikdy nevybledne.</Slovak>
+            <Hungarian>Hány perccel a felhordás után halványul el magától az arcra festett álcázás, és tér vissza az eredeti arc, az eső, az izzadság vagy az idő hatását szimulálva. Minden felhordás kicsit eltér (nagyjából +/- 10 perc), hogy ne minden játékos veszítse el egyszerre, és a viselő nagyjából egy perccel előtte figyelmeztetést kap. Csak a játékosok által irányított egységeknél halványul el; a MI megtartja az álcázását, amíg le nem mossák. 0-ra állítva kikapcsol – az álcázás ilyenkor soha nem halványul el magától.</Hungarian>
+            <Ukrainian>Через скільки хвилин після нанесення камуфляж на обличчі автоматично стирається й повертається початкове обличчя, імітуючи дію дощу, поту чи часу. Кожне нанесення трохи відрізняється (приблизно +/- 10 хвилин), щоб не всі гравці втрачали камуфляж одночасно, а власника попереджають приблизно за хвилину. Стирається лише в юнітів під керуванням гравців; ШІ зберігає камуфляж, доки його не змиють. Встановіть 0, щоб вимкнути: камуфляж ніколи не зітреться сам.</Ukrainian>
+            <Bulgarian>След колко минути от нанасянето камуфлажът на лицето избледнява автоматично и се връща оригиналното лице, като имитира действието на дъжд, пот или време. Всяко нанасяне се различава малко (приблизно +/- 10 минути), за да не губят всички играчи камуфлажа си едновременно, а носещият получава предупреждение около минута преди това. Избледняват само единиците, управлявани от играчи; изкуственият интелект запазва камуфлажа си, докато не бъде почистен. Задайте 0, за да изключите: камуфлажът никога няма да избледнее сам.</Bulgarian>
+            <Latin>Minutos tras aplicarlo que tarda un camuflaje facial en desvanecerse automáticamente y volver a la cara original, simulando el efecto de la lluvia, el sudor o el paso del tiempo. Cada aplicación varía un poco (aproximadamente +/- 10 minutos) para que no todos los jugadores lo pierdan a la vez, y el portador recibe un aviso aproximadamente un minuto antes. Solo se desvanece en las unidades controladas por jugadores; la IA conserva su camuflaje hasta que se limpie. Pon 0 para desactivarlo: el camuflaje nunca se desvanecerá por sí solo.</Latin>
         </Key>
     </Package>
 </Project>

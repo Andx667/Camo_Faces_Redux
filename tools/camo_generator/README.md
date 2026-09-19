@@ -41,6 +41,7 @@ python generate_textures.py   # fit each scheme, composite onto the new heads, w
 python generate_materials.py  # write each head's .rvmat / _injury.rvmat
 python generate_config.py     # CfgFaces classes + stringtable entries
 python generate_registry.py   # register the faces with cfr_common (CfgCamoRegistry.hpp)
+python generate_languages.py  # every face name in every language the game ships
 hemtt ln sort                 # generate_config.py appends; this re-sorts the stringtable
 python validate.py wiring     # registry <-> config classes <-> textures on disk
 python validate.py names      # every camo face is named after its own head
@@ -89,6 +90,8 @@ assumption — worth knowing if you extend them:
 | `generate_textures.py` | Stage 2 — fit each scheme and composite onto the new heads |
 | `generate_materials.py` | Stage 3 — write the `.rvmat` files |
 | `generate_config.py` | Stage 4 — write the `CfgFaces` classes and stringtable entries |
+| `generate_languages.py` | Stage 6 — give every face name a translation in each Arma 3 language (surnames from `data/names_i18n.json`, scheme labels from `i18n.py`); safe to re-run |
+| `i18n.py` | The languages Arma 3 ships and the translated scheme labels the face names are built from |
 | `resolve_vanilla.py` | Refresh `data/` from the game (only needed when adding heads) |
 | `validate.py` | `fit` — is the model sound; `wiring` — do config and files agree; `names` — is each camo face named after its own head |
 

@@ -3,35 +3,171 @@
     <Package name="Compat_Zen">
         <Key ID="STR_CFR_Compat_Zen_applyRandom">
             <English>Apply Random Camouflage</English>
+            <Czech>Použít náhodnou kamufláž</Czech>
+            <French>Appliquer un camouflage aléatoire</French>
+            <Spanish>Aplicar camuflaje aleatorio</Spanish>
+            <Italian>Applica mimetizzazione casuale</Italian>
+            <Polish>Nałóż losowy kamuflaż</Polish>
+            <Portuguese>Aplicar camuflagem aleatória</Portuguese>
+            <Russian>Нанести случайный камуфляж</Russian>
             <German>Zufällige Tarnung auftragen</German>
+            <Korean>무작위 위장 적용</Korean>
+            <Japanese>ランダムなカモフラージュを施す</Japanese>
+            <Chinese>套用隨機偽裝</Chinese>
+            <Chinesesimp>应用随机伪装</Chinesesimp>
+            <Turkish>Rastgele kamuflaj uygula</Turkish>
+            <Slovak>Použiť náhodnú kamufláž</Slovak>
+            <Hungarian>Véletlenszerű álcázás felhordása</Hungarian>
+            <Ukrainian>Нанести випадковий камуфляж</Ukrainian>
+            <Bulgarian>Нанасяне на случаен камуфлаж</Bulgarian>
+            <Latin>Aplicar camuflaje aleatorio</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_menuName">
             <English>Camouflage</English>
+            <Czech>Kamufláž</Czech>
+            <French>Camouflage</French>
+            <Spanish>Camuflaje</Spanish>
+            <Italian>Mimetizzazione</Italian>
+            <Polish>Kamuflaż</Polish>
+            <Portuguese>Camuflagem</Portuguese>
+            <Russian>Камуфляж</Russian>
             <German>Tarnung</German>
+            <Korean>위장</Korean>
+            <Japanese>カモフラージュ</Japanese>
+            <Chinese>偽裝</Chinese>
+            <Chinesesimp>伪装</Chinesesimp>
+            <Turkish>Kamuflaj</Turkish>
+            <Slovak>Kamufláž</Slovak>
+            <Hungarian>Álcázás</Hungarian>
+            <Ukrainian>Камуфляж</Ukrainian>
+            <Bulgarian>Камуфлаж</Bulgarian>
+            <Latin>Camuflaje</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_randomApplied">
             <English>Applied random camouflage to %1/%2 unit(s)</English>
+            <Czech>Náhodná kamufláž použita u %1/%2 jednotek</Czech>
+            <French>Camouflage aléatoire appliqué à %1/%2 unité(s)</French>
+            <Spanish>Camuflaje aleatorio aplicado a %1/%2 unidad(es)</Spanish>
+            <Italian>Mimetizzazione casuale applicata a %1/%2 unità</Italian>
+            <Polish>Losowy kamuflaż nałożono na %1/%2 jednostek</Polish>
+            <Portuguese>Camuflagem aleatória aplicada a %1/%2 unidade(s)</Portuguese>
+            <Russian>Случайный камуфляж нанесён на %1/%2 юнит(ов)</Russian>
             <German>Zufällige Tarnung auf %1/%2 Einheit(en) aufgetragen</German>
+            <Korean>무작위 위장을 %1/%2 유닛에 적용했습니다</Korean>
+            <Japanese>%1/%2 ユニットにランダムなカモフラージュを施しました</Japanese>
+            <Chinese>已對 %1/%2 個單位套用隨機偽裝</Chinese>
+            <Chinesesimp>已对 %1/%2 个单位应用随机伪装</Chinesesimp>
+            <Turkish>Rastgele kamuflaj %1/%2 birime uygulandı</Turkish>
+            <Slovak>Náhodná kamufláž použitá u %1/%2 jednotiek</Slovak>
+            <Hungarian>Véletlenszerű álcázás felhordva %1/%2 egységre</Hungarian>
+            <Ukrainian>Випадковий камуфляж нанесено на %1/%2 юніт(ів)</Ukrainian>
+            <Bulgarian>Случаен камуфлаж е нанесен на %1/%2 единици</Bulgarian>
+            <Latin>Camuflaje aleatorio aplicado a %1/%2 unidad(es)</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_removeApplied">
             <English>Removed camouflage from %1 unit(s)</English>
+            <Czech>Kamufláž odstraněna z %1 jednotek</Czech>
+            <French>Camouflage retiré de %1 unité(s)</French>
+            <Spanish>Camuflaje retirado de %1 unidad(es)</Spanish>
+            <Italian>Mimetizzazione rimossa da %1 unità</Italian>
+            <Polish>Usunięto kamuflaż z %1 jednostek</Polish>
+            <Portuguese>Camuflagem removida de %1 unidade(s)</Portuguese>
+            <Russian>Камуфляж снят с %1 юнит(ов)</Russian>
             <German>Tarnung von %1 Einheit(en) entfernt</German>
+            <Korean>%1 유닛에서 위장을 제거했습니다</Korean>
+            <Japanese>%1 ユニットからカモフラージュを落としました</Japanese>
+            <Chinese>已移除 %1 個單位的偽裝</Chinese>
+            <Chinesesimp>已移除 %1 个单位的伪装</Chinesesimp>
+            <Turkish>%1 birimden kamuflaj kaldırıldı</Turkish>
+            <Slovak>Kamufláž odstránená z %1 jednotiek</Slovak>
+            <Hungarian>Álcázás eltávolítva %1 egységről</Hungarian>
+            <Ukrainian>Камуфляж знято з %1 юніт(ів)</Ukrainian>
+            <Bulgarian>Камуфлажът е премахнат от %1 единици</Bulgarian>
+            <Latin>Camuflaje retirado de %1 unidad(es)</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_removeCamo">
             <English>Remove Camouflage</English>
+            <Czech>Odstranit kamufláž</Czech>
+            <French>Retirer le camouflage</French>
+            <Spanish>Retirar camuflaje</Spanish>
+            <Italian>Rimuovi mimetizzazione</Italian>
+            <Polish>Usuń kamuflaż</Polish>
+            <Portuguese>Remover camuflagem</Portuguese>
+            <Russian>Снять камуфляж</Russian>
             <German>Tarnung entfernen</German>
+            <Korean>위장 제거</Korean>
+            <Japanese>カモフラージュを落とす</Japanese>
+            <Chinese>移除偽裝</Chinese>
+            <Chinesesimp>移除伪装</Chinesesimp>
+            <Turkish>Kamuflajı kaldır</Turkish>
+            <Slovak>Odstrániť kamufláž</Slovak>
+            <Hungarian>Álcázás eltávolítása</Hungarian>
+            <Ukrainian>Зняти камуфляж</Ukrainian>
+            <Bulgarian>Премахване на камуфлажа</Bulgarian>
+            <Latin>Retirar camuflaje</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_settingCategory">
             <English>Zeus Enhanced</English>
+            <Czech>Zeus Enhanced</Czech>
+            <French>Zeus Enhanced</French>
+            <Spanish>Zeus Enhanced</Spanish>
+            <Italian>Zeus Enhanced</Italian>
+            <Polish>Zeus Enhanced</Polish>
+            <Portuguese>Zeus Enhanced</Portuguese>
+            <Russian>Zeus Enhanced</Russian>
             <German>Zeus Enhanced</German>
+            <Korean>Zeus Enhanced</Korean>
+            <Japanese>Zeus Enhanced</Japanese>
+            <Chinese>Zeus Enhanced</Chinese>
+            <Chinesesimp>Zeus Enhanced</Chinesesimp>
+            <Turkish>Zeus Enhanced</Turkish>
+            <Slovak>Zeus Enhanced</Slovak>
+            <Hungarian>Zeus Enhanced</Hungarian>
+            <Ukrainian>Zeus Enhanced</Ukrainian>
+            <Bulgarian>Zeus Enhanced</Bulgarian>
+            <Latin>Zeus Enhanced</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_settingEnabled_name">
             <English>Enable Camouflage Context Actions</English>
+            <Czech>Povolit kontextové akce kamufláže</Czech>
+            <French>Activer les actions contextuelles de camouflage</French>
+            <Spanish>Activar acciones contextuales de camuflaje</Spanish>
+            <Italian>Abilita le azioni contestuali di mimetizzazione</Italian>
+            <Polish>Włącz akcje kontekstowe kamuflażu</Polish>
+            <Portuguese>Ativar ações de contexto de camuflagem</Portuguese>
+            <Russian>Включить контекстные действия камуфляжа</Russian>
             <German>Tarnungs-Kontextaktionen aktivieren</German>
+            <Korean>위장 컨텍스트 동작 활성화</Korean>
+            <Japanese>カモフラージュのコンテキストアクションを有効にする</Japanese>
+            <Chinese>啟用偽裝右鍵選單動作</Chinese>
+            <Chinesesimp>启用伪装右键菜单动作</Chinesesimp>
+            <Turkish>Kamuflaj bağlam eylemlerini etkinleştir</Turkish>
+            <Slovak>Povoliť kontextové akcie kamufláže</Slovak>
+            <Hungarian>Álcázás helyi menüműveleteinek engedélyezése</Hungarian>
+            <Ukrainian>Увімкнути контекстні дії камуфляжу</Ukrainian>
+            <Bulgarian>Включване на контекстните действия за камуфлаж</Bulgarian>
+            <Latin>Activar acciones contextuales de camuflaje</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_settingEnabled_tooltip">
             <English>When enabled, a "Camouflage" entry is added to ZEN's context menu for applying/removing camo on selected units. Only affects your own Zeus interface.</English>
+            <Czech>Je-li zapnuto, přidá se do kontextové nabídky ZEN položka „Kamufláž“ pro použití/odstranění kamufláže na vybraných jednotkách. Týká se pouze vašeho vlastního rozhraní Zeuse.</Czech>
+            <French>Si activé, une entrée « Camouflage » est ajoutée au menu contextuel de ZEN pour appliquer/retirer le camouflage sur les unités sélectionnées. N'affecte que votre propre interface Zeus.</French>
+            <Spanish>Si está activado, se añade una entrada «Camuflaje» al menú contextual de ZEN para aplicar o retirar el camuflaje de las unidades seleccionadas. Solo afecta a tu propia interfaz de Zeus.</Spanish>
+            <Italian>Se attivo, nel menu contestuale di ZEN viene aggiunta la voce «Mimetizzazione» per applicare/rimuovere la mimetizzazione alle unità selezionate. Riguarda solo la tua interfaccia Zeus.</Italian>
+            <Polish>Po włączeniu w menu kontekstowym ZEN pojawia się pozycja „Kamuflaż” do nakładania/usuwania kamuflażu na zaznaczonych jednostkach. Dotyczy tylko Twojego interfejsu Zeusa.</Polish>
+            <Portuguese>Se ativado, é adicionada uma entrada «Camuflagem» ao menu de contexto do ZEN para aplicar/remover a camuflagem das unidades selecionadas. Afeta apenas a tua própria interface de Zeus.</Portuguese>
+            <Russian>Если включено, в контекстное меню ZEN добавляется пункт «Камуфляж» для нанесения/снятия камуфляжа с выбранных юнитов. Влияет только на ваш собственный интерфейс Зевса.</Russian>
             <German>Wenn aktiviert, wird dem Kontextmenü von ZEN ein Eintrag "Tarnung" hinzugefügt, um bei ausgewählten Einheiten Tarnung aufzutragen/zu entfernen. Betrifft nur deine eigene Zeus-Oberfläche.</German>
+            <Korean>활성화하면 ZEN 컨텍스트 메뉴에 선택한 유닛의 위장을 적용/제거하는 "위장" 항목이 추가됩니다. 자신의 Zeus 인터페이스에만 영향을 줍니다.</Korean>
+            <Japanese>有効にすると、ZEN のコンテキストメニューに、選択したユニットへカモフラージュを施す/落とすための「カモフラージュ」項目が追加されます。自分の Zeus インターフェースにのみ影響します。</Japanese>
+            <Chinese>啟用後，ZEN 的右鍵選單會新增「偽裝」項目，可對所選單位套用或移除偽裝。只會影響你自己的 Zeus 介面。</Chinese>
+            <Chinesesimp>启用后，ZEN 的右键菜单会新增“伪装”项目，可对所选单位应用或移除伪装。只会影响你自己的 Zeus 界面。</Chinesesimp>
+            <Turkish>Etkinleştirildiğinde ZEN'in bağlam menüsüne, seçili birimlere kamuflaj uygulamak/kaldırmak için bir "Kamuflaj" girdisi eklenir. Yalnızca kendi Zeus arayüzünüzü etkiler.</Turkish>
+            <Slovak>Ak je zapnuté, do kontextovej ponuky ZEN sa pridá položka „Kamufláž“ na použitie/odstránenie kamufláže na vybraných jednotkách. Týka sa iba vášho vlastného rozhrania Zeusa.</Slovak>
+            <Hungarian>Bekapcsolva a ZEN helyi menüjébe bekerül egy „Álcázás” elem, amellyel a kijelölt egységekre álcázás vihető fel vagy távolítható el. Csak a saját Zeus felületedet érinti.</Hungarian>
+            <Ukrainian>Якщо ввімкнено, до контекстного меню ZEN додається пункт «Камуфляж» для нанесення/зняття камуфляжу з вибраних юнітів. Впливає лише на ваш власний інтерфейс Зевса.</Ukrainian>
+            <Bulgarian>Когато е включено, в контекстното меню на ZEN се добавя елемент „Камуфлаж“ за нанасяне/премахване на камуфлаж на избраните единици. Засяга само вашия собствен интерфейс на Зевс.</Bulgarian>
+            <Latin>Si está activado, se añade una entrada «Camuflaje» al menú contextual de ZEN para aplicar o retirar el camuflaje de las unidades seleccionadas. Solo afecta a tu propia interfaz de Zeus.</Latin>
         </Key>
     </Package>
 </Project>

@@ -3,87 +3,444 @@
     <Package name="Dialog">
         <Key ID="STR_CFR_Dialog_Action">
             <English>Camo Faces</English>
+            <Czech>Camo Faces</Czech>
+            <French>Camo Faces</French>
+            <Spanish>Camo Faces</Spanish>
+            <Italian>Camo Faces</Italian>
+            <Polish>Camo Faces</Polish>
+            <Portuguese>Camo Faces</Portuguese>
+            <Russian>Camo Faces</Russian>
             <German>Camo Faces</German>
+            <Korean>Camo Faces</Korean>
+            <Japanese>Camo Faces</Japanese>
+            <Chinese>Camo Faces</Chinese>
+            <Chinesesimp>Camo Faces</Chinesesimp>
+            <Turkish>Camo Faces</Turkish>
+            <Slovak>Camo Faces</Slovak>
+            <Hungarian>Camo Faces</Hungarian>
+            <Ukrainian>Camo Faces</Ukrainian>
+            <Bulgarian>Camo Faces</Bulgarian>
+            <Latin>Camo Faces</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_applyingLayer1">
             <English>Applying layer one...</English>
+            <Czech>Nanáším první vrstvu...</Czech>
+            <French>Application de la première couche...</French>
+            <Spanish>Aplicando la primera capa...</Spanish>
+            <Italian>Applicazione del primo strato...</Italian>
+            <Polish>Nakładanie pierwszej warstwy...</Polish>
+            <Portuguese>A aplicar a primeira camada...</Portuguese>
+            <Russian>Наношу первый слой...</Russian>
             <German>Trage Schicht eins auf...</German>
+            <Korean>첫 번째 층을 바르는 중...</Korean>
+            <Japanese>1層目を塗っています...</Japanese>
+            <Chinese>正在塗上第一層...</Chinese>
+            <Chinesesimp>正在涂上第一层...</Chinesesimp>
+            <Turkish>Birinci kat uygulanıyor...</Turkish>
+            <Slovak>Nanášam prvú vrstvu...</Slovak>
+            <Hungarian>Az első réteg felvitele...</Hungarian>
+            <Ukrainian>Наношу перший шар...</Ukrainian>
+            <Bulgarian>Нанасям първия слой...</Bulgarian>
+            <Latin>Aplicando la primera capa...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_applyingLayer2">
             <English>Applying layer two...</English>
+            <Czech>Nanáším druhou vrstvu...</Czech>
+            <French>Application de la deuxième couche...</French>
+            <Spanish>Aplicando la segunda capa...</Spanish>
+            <Italian>Applicazione del secondo strato...</Italian>
+            <Polish>Nakładanie drugiej warstwy...</Polish>
+            <Portuguese>A aplicar a segunda camada...</Portuguese>
+            <Russian>Наношу второй слой...</Russian>
             <German>Trage Schicht zwei auf...</German>
+            <Korean>두 번째 층을 바르는 중...</Korean>
+            <Japanese>2層目を塗っています...</Japanese>
+            <Chinese>正在塗上第二層...</Chinese>
+            <Chinesesimp>正在涂上第二层...</Chinesesimp>
+            <Turkish>İkinci kat uygulanıyor...</Turkish>
+            <Slovak>Nanášam druhú vrstvu...</Slovak>
+            <Hungarian>A második réteg felvitele...</Hungarian>
+            <Ukrainian>Наношу другий шар...</Ukrainian>
+            <Bulgarian>Нанасям втория слой...</Bulgarian>
+            <Latin>Aplicando la segunda capa...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_applyingLayer3">
             <English>Applying layer three...</English>
+            <Czech>Nanáším třetí vrstvu...</Czech>
+            <French>Application de la troisième couche...</French>
+            <Spanish>Aplicando la tercera capa...</Spanish>
+            <Italian>Applicazione del terzo strato...</Italian>
+            <Polish>Nakładanie trzeciej warstwy...</Polish>
+            <Portuguese>A aplicar a terceira camada...</Portuguese>
+            <Russian>Наношу третий слой...</Russian>
             <German>Trage Schicht drei auf...</German>
+            <Korean>세 번째 층을 바르는 중...</Korean>
+            <Japanese>3層目を塗っています...</Japanese>
+            <Chinese>正在塗上第三層...</Chinese>
+            <Chinesesimp>正在涂上第三层...</Chinesesimp>
+            <Turkish>Üçüncü kat uygulanıyor...</Turkish>
+            <Slovak>Nanášam tretiu vrstvu...</Slovak>
+            <Hungarian>A harmadik réteg felvitele...</Hungarian>
+            <Ukrainian>Наношу третій шар...</Ukrainian>
+            <Bulgarian>Нанасям третия слой...</Bulgarian>
+            <Latin>Aplicando la tercera capa...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyCleanAction">
             <English>Clean Face</English>
+            <Czech>Vyčistit obličej</Czech>
+            <French>Nettoyer le visage</French>
+            <Spanish>Limpiar la cara</Spanish>
+            <Italian>Pulisci il viso</Italian>
+            <Polish>Zmyj twarz</Polish>
+            <Portuguese>Limpar o rosto</Portuguese>
+            <Russian>Очистить лицо</Russian>
             <German>Gesicht reinigen</German>
+            <Korean>얼굴 닦기</Korean>
+            <Japanese>顔を洗う</Japanese>
+            <Chinese>清潔臉部</Chinese>
+            <Chinesesimp>清洁脸部</Chinesesimp>
+            <Turkish>Yüzü temizle</Turkish>
+            <Slovak>Vyčistiť tvár</Slovak>
+            <Hungarian>Arc megtisztítása</Hungarian>
+            <Ukrainian>Очистити обличчя</Ukrainian>
+            <Bulgarian>Почистване на лицето</Bulgarian>
+            <Latin>Limpiar la cara</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyCleanedOther">
             <English>You cleaned %1's face</English>
+            <Czech>Obličej jednotky %1 vyčištěn</Czech>
+            <French>Vous avez nettoyé le visage de %1</French>
+            <Spanish>Has limpiado la cara de %1</Spanish>
+            <Italian>Hai pulito il viso di %1</Italian>
+            <Polish>Zmyto twarz jednostki %1</Polish>
+            <Portuguese>Limpaste o rosto de %1</Portuguese>
+            <Russian>Вы очистили лицо: %1</Russian>
             <German>Du hast das Gesicht von %1 gereinigt</German>
+            <Korean>%1의 얼굴을 닦았습니다</Korean>
+            <Japanese>%1 の顔を洗いました</Japanese>
+            <Chinese>你清潔了 %1 的臉</Chinese>
+            <Chinesesimp>你清洁了 %1 的脸</Chinesesimp>
+            <Turkish>%1 adlı kişinin yüzünü temizledin</Turkish>
+            <Slovak>Tvár jednotky %1 vyčistená</Slovak>
+            <Hungarian>Megtisztítottad %1 arcát</Hungarian>
+            <Ukrainian>Ви очистили обличчя: %1</Ukrainian>
+            <Bulgarian>Почисти лицето на %1</Bulgarian>
+            <Latin>Has limpiado la cara de %1</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyCleanedYou">
             <English>%1 cleaned your face</English>
+            <Czech>Tvůj obličej byl vyčištěn jednotkou %1</Czech>
+            <French>%1 a nettoyé votre visage</French>
+            <Spanish>%1 te ha limpiado la cara</Spanish>
+            <Italian>%1 ti ha pulito il viso</Italian>
+            <Polish>Twoja twarz została zmyta przez %1</Polish>
+            <Portuguese>%1 limpou o teu rosto</Portuguese>
+            <Russian>Вам очистили лицо: %1</Russian>
             <German>%1 hat dein Gesicht gereinigt</German>
+            <Korean>%1이(가) 당신의 얼굴을 닦았습니다</Korean>
+            <Japanese>%1 があなたの顔を洗いました</Japanese>
+            <Chinese>%1 清潔了你的臉</Chinese>
+            <Chinesesimp>%1 清洁了你的脸</Chinesesimp>
+            <Turkish>%1 yüzünü temizledi</Turkish>
+            <Slovak>Tvoja tvár bola vyčistená jednotkou %1</Slovak>
+            <Hungarian>%1 megtisztította az arcodat</Hungarian>
+            <Ukrainian>Вам очистили обличчя: %1</Ukrainian>
+            <Bulgarian>%1 ти почисти лицето</Bulgarian>
+            <Latin>%1 te ha limpiado la cara</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyInterrupted">
             <English>Interrupted - stay close, and their headgear, goggles and night vision must be off</English>
+            <Czech>Přerušeno – zůstaň blízko a jeho helma, brýle a noktovizor musí být sundané</Czech>
+            <French>Interrompu - restez proche, et son couvre-chef, ses lunettes et sa vision nocturne doivent être retirés</French>
+            <Spanish>Interrumpido: quédate cerca, y su casco, gafas y visión nocturna deben estar quitados</Spanish>
+            <Italian>Interrotto - resta vicino, e copricapo, occhiali e visore notturno devono essere rimossi</Italian>
+            <Polish>Przerwano – zostań blisko, a jego nakrycie głowy, gogle i noktowizor muszą być zdjęte</Polish>
+            <Portuguese>Interrompido - fica perto, e o capacete, os óculos e a visão noturna dele têm de estar retirados</Portuguese>
+            <Russian>Прервано — оставайтесь рядом, и с него должны быть сняты головной убор, очки и ПНВ</Russian>
             <German>Unterbrochen - bleib in der Nähe, und Kopfbedeckung, Brille und Nachtsichtgerät müssen abgelegt sein</German>
+            <Korean>중단됨 - 가까이 있어야 하며, 상대의 헬멧, 고글, 야시경을 벗어야 합니다</Korean>
+            <Japanese>中断しました - 近くにいてください。相手のヘッドギア、ゴーグル、暗視装置を外す必要があります</Japanese>
+            <Chinese>已中斷 - 請保持靠近，且對方必須摘下頭盔、護目鏡和夜視裝置</Chinese>
+            <Chinesesimp>已中断 - 请保持靠近，且对方必须摘下头盔、护目镜和夜视装置</Chinesesimp>
+            <Turkish>Kesildi - yakın dur; başlığı, gözlüğü ve gece görüş cihazı çıkarılmış olmalı</Turkish>
+            <Slovak>Prerušené – zostaň blízko a jeho prilba, okuliare a nočné videnie musia byť dole</Slovak>
+            <Hungarian>Megszakadt – maradj közel, és a sapkájának, szemüvegének és éjjellátójának levéve kell lennie</Hungarian>
+            <Ukrainian>Перервано — залишайтеся поруч, і з нього мають бути зняті головний убір, окуляри та ПНБ</Ukrainian>
+            <Bulgarian>Прекъснато — стой наблизо, а каската, очилата и уредът за нощно виждане трябва да са свалени</Bulgarian>
+            <Latin>Interrumpido: quédate cerca, y su casco, gafas y visión nocturna deben estar quitados</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyPaintAction">
             <English>Paint Face</English>
+            <Czech>Nanést kamufláž na obličej</Czech>
+            <French>Peindre le visage</French>
+            <Spanish>Pintar la cara</Spanish>
+            <Italian>Dipingi il viso</Italian>
+            <Polish>Pomaluj twarz</Polish>
+            <Portuguese>Pintar o rosto</Portuguese>
+            <Russian>Нанести грим на лицо</Russian>
             <German>Gesicht schminken</German>
+            <Korean>얼굴 칠하기</Korean>
+            <Japanese>顔にペイントする</Japanese>
+            <Chinese>塗抹臉部</Chinese>
+            <Chinesesimp>涂抹脸部</Chinesesimp>
+            <Turkish>Yüzü boya</Turkish>
+            <Slovak>Nanies kamufláž na tvár</Slovak>
+            <Hungarian>Arc befestése</Hungarian>
+            <Ukrainian>Нанести грим на обличчя</Ukrainian>
+            <Bulgarian>Нанасяне на боя на лицето</Bulgarian>
+            <Latin>Pintar la cara</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyPaintedOther">
             <English>You painted %1's face</English>
+            <Czech>Kamufláž na obličej jednotky %1 nanesena</Czech>
+            <French>Vous avez peint le visage de %1</French>
+            <Spanish>Has pintado la cara de %1</Spanish>
+            <Italian>Hai dipinto il viso di %1</Italian>
+            <Polish>Pomalowano twarz jednostki %1</Polish>
+            <Portuguese>Pintaste o rosto de %1</Portuguese>
+            <Russian>Вы нанесли грим на лицо: %1</Russian>
             <German>Du hast das Gesicht von %1 geschminkt</German>
+            <Korean>%1의 얼굴을 칠했습니다</Korean>
+            <Japanese>%1 の顔にペイントしました</Japanese>
+            <Chinese>你為 %1 塗抹了臉部</Chinese>
+            <Chinesesimp>你为 %1 涂抹了脸部</Chinesesimp>
+            <Turkish>%1 adlı kişinin yüzünü boyadın</Turkish>
+            <Slovak>Kamufláž na tvár jednotky %1 nanesená</Slovak>
+            <Hungarian>Befestetted %1 arcát</Hungarian>
+            <Ukrainian>Ви нанесли грим на обличчя: %1</Ukrainian>
+            <Bulgarian>Нанесе боя на лицето на %1</Bulgarian>
+            <Latin>Has pintado la cara de %1</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyPaintedYou">
             <English>%1 painted your face</English>
+            <Czech>Kamufláž na tvůj obličej nanesena jednotkou %1</Czech>
+            <French>%1 a peint votre visage</French>
+            <Spanish>%1 te ha pintado la cara</Spanish>
+            <Italian>%1 ti ha dipinto il viso</Italian>
+            <Polish>Twoja twarz została pomalowana przez %1</Polish>
+            <Portuguese>%1 pintou o teu rosto</Portuguese>
+            <Russian>Вам нанесли грим на лицо: %1</Russian>
             <German>%1 hat dein Gesicht geschminkt</German>
+            <Korean>%1이(가) 당신의 얼굴을 칠했습니다</Korean>
+            <Japanese>%1 があなたの顔にペイントしました</Japanese>
+            <Chinese>%1 為你塗抹了臉部</Chinese>
+            <Chinesesimp>%1 为你涂抹了脸部</Chinesesimp>
+            <Turkish>%1 yüzünü boyadı</Turkish>
+            <Slovak>Kamufláž na tvoju tvár nanesená jednotkou %1</Slovak>
+            <Hungarian>%1 befestette az arcodat</Hungarian>
+            <Ukrainian>Вам нанесли грим на обличчя: %1</Ukrainian>
+            <Bulgarian>%1 нанесе боя на лицето ти</Bulgarian>
+            <Latin>%1 te ha pintado la cara</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_cleaningFace">
             <English>Cleaning face...</English>
+            <Czech>Čistím obličej...</Czech>
+            <French>Nettoyage du visage...</French>
+            <Spanish>Limpiando la cara...</Spanish>
+            <Italian>Pulizia del viso...</Italian>
+            <Polish>Zmywanie twarzy...</Polish>
+            <Portuguese>A limpar o rosto...</Portuguese>
+            <Russian>Очищаю лицо...</Russian>
             <German>Reinige Gesicht...</German>
+            <Korean>얼굴을 닦는 중...</Korean>
+            <Japanese>顔を洗っています...</Japanese>
+            <Chinese>正在清潔臉部...</Chinese>
+            <Chinesesimp>正在清洁脸部...</Chinesesimp>
+            <Turkish>Yüz temizleniyor...</Turkish>
+            <Slovak>Čistím tvár...</Slovak>
+            <Hungarian>Arc tisztítása...</Hungarian>
+            <Ukrainian>Очищаю обличчя...</Ukrainian>
+            <Bulgarian>Почиствам лицето...</Bulgarian>
+            <Latin>Limpiando la cara...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_displayName">
             <English>Interaction Method</English>
+            <Czech>Způsob interakce</Czech>
+            <French>Méthode d'interaction</French>
+            <Spanish>Método de interacción</Spanish>
+            <Italian>Metodo di interazione</Italian>
+            <Polish>Metoda interakcji</Polish>
+            <Portuguese>Método de interação</Portuguese>
+            <Russian>Способ взаимодействия</Russian>
             <German>Interaktionsmethode</German>
+            <Korean>상호작용 방식</Korean>
+            <Japanese>操作方法</Japanese>
+            <Chinese>互動方式</Chinese>
+            <Chinesesimp>交互方式</Chinesesimp>
+            <Turkish>Etkileşim yöntemi</Turkish>
+            <Slovak>Spôsob interakcie</Slovak>
+            <Hungarian>Interakció módja</Hungarian>
+            <Ukrainian>Спосіб взаємодії</Ukrainian>
+            <Bulgarian>Начин на взаимодействие</Bulgarian>
+            <Latin>Método de interacción</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_layerDone">
             <English>Done!</English>
+            <Czech>Hotovo!</Czech>
+            <French>Terminé !</French>
+            <Spanish>¡Hecho!</Spanish>
+            <Italian>Fatto!</Italian>
+            <Polish>Gotowe!</Polish>
+            <Portuguese>Concluído!</Portuguese>
+            <Russian>Готово!</Russian>
             <German>Fertig!</German>
+            <Korean>완료!</Korean>
+            <Japanese>完了!</Japanese>
+            <Chinese>完成！</Chinese>
+            <Chinesesimp>完成！</Chinesesimp>
+            <Turkish>Bitti!</Turkish>
+            <Slovak>Hotovo!</Slovak>
+            <Hungarian>Kész!</Hungarian>
+            <Ukrainian>Готово!</Ukrainian>
+            <Bulgarian>Готово!</Bulgarian>
+            <Latin>¡Hecho!</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_noCamoApplied">
             <English>No camo face applied</English>
+            <Czech>Není nanesena žádná kamufláž</Czech>
+            <French>Aucun camouflage appliqué</French>
+            <Spanish>No hay ningún camuflaje aplicado</Spanish>
+            <Italian>Nessuna mimetizzazione applicata</Italian>
+            <Polish>Brak nałożonego kamuflażu</Polish>
+            <Portuguese>Nenhuma camuflagem aplicada</Portuguese>
+            <Russian>Камуфляж не нанесён</Russian>
             <German>Keine Tarnung aufgetragen</German>
+            <Korean>적용된 위장이 없습니다</Korean>
+            <Japanese>カモフラージュは施されていません</Japanese>
+            <Chinese>尚未套用偽裝</Chinese>
+            <Chinesesimp>尚未应用伪装</Chinesesimp>
+            <Turkish>Uygulanmış kamuflaj yok</Turkish>
+            <Slovak>Nie je nanesená žiadna kamufláž</Slovak>
+            <Hungarian>Nincs álcázás felhordva</Hungarian>
+            <Ukrainian>Камуфляж не нанесено</Ukrainian>
+            <Bulgarian>Няма нанесен камуфлаж</Bulgarian>
+            <Latin>No hay ningún camuflaje aplicado</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_noOption">
             <English>No Option</English>
+            <Czech>Žádná možnost</Czech>
+            <French>Aucune option</French>
+            <Spanish>Sin opciones</Spanish>
+            <Italian>Nessuna opzione</Italian>
+            <Polish>Brak opcji</Polish>
+            <Portuguese>Sem opções</Portuguese>
+            <Russian>Нет вариантов</Russian>
             <German>Keine Option</German>
+            <Korean>옵션 없음</Korean>
+            <Japanese>選択肢なし</Japanese>
+            <Chinese>沒有選項</Chinese>
+            <Chinesesimp>没有选项</Chinesesimp>
+            <Turkish>Seçenek yok</Turkish>
+            <Slovak>Žiadna možnosť</Slovak>
+            <Hungarian>Nincs lehetőség</Hungarian>
+            <Ukrainian>Немає варіантів</Ukrainian>
+            <Bulgarian>Няма опции</Bulgarian>
+            <Latin>Sin opciones</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_removeCamoAction">
             <English>Remove Camo Face Paint</English>
+            <Czech>Odstranit kamufláž z obličeje</Czech>
+            <French>Retirer la peinture de camouflage du visage</French>
+            <Spanish>Quitar la pintura de camuflaje de la cara</Spanish>
+            <Italian>Rimuovi la pittura mimetica dal viso</Italian>
+            <Polish>Usuń kamuflaż z twarzy</Polish>
+            <Portuguese>Remover a pintura de camuflagem do rosto</Portuguese>
+            <Russian>Смыть камуфляжный грим с лица</Russian>
             <German>Tarnschminke entfernen</German>
+            <Korean>얼굴 위장 페인트 제거</Korean>
+            <Japanese>顔のカモフラージュペイントを落とす</Japanese>
+            <Chinese>移除臉部偽裝油彩</Chinese>
+            <Chinesesimp>移除脸部伪装油彩</Chinesesimp>
+            <Turkish>Yüzdeki kamuflaj boyasını kaldır</Turkish>
+            <Slovak>Odstrániť kamufláž z tváre</Slovak>
+            <Hungarian>Álcázó arcfesték eltávolítása</Hungarian>
+            <Ukrainian>Змити камуфляжний грим з обличчя</Ukrainian>
+            <Bulgarian>Премахване на камуфлажната боя от лицето</Bulgarian>
+            <Latin>Quitar la pintura de camuflaje de la cara</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingAllowPaintingOthers_name">
             <English>Allow Painting Other Units</English>
+            <Czech>Povolit malování ostatním jednotkám</Czech>
+            <French>Autoriser à peindre d'autres unités</French>
+            <Spanish>Permitir pintar a otras unidades</Spanish>
+            <Italian>Consenti di dipingere altre unità</Italian>
+            <Polish>Zezwalaj na malowanie innych jednostek</Polish>
+            <Portuguese>Permitir pintar outras unidades</Portuguese>
+            <Russian>Разрешить наносить грим другим юнитам</Russian>
             <German>Andere Einheiten schminken erlauben</German>
+            <Korean>다른 유닛 칠하기 허용</Korean>
+            <Japanese>他のユニットへのペイントを許可</Japanese>
+            <Chinese>允許為其他單位塗抹</Chinese>
+            <Chinesesimp>允许为其他单位涂抹</Chinesesimp>
+            <Turkish>Diğer birimleri boyamaya izin ver</Turkish>
+            <Slovak>Povoliť maľovanie ostatným jednotkám</Slovak>
+            <Hungarian>Más egységek festésének engedélyezése</Hungarian>
+            <Ukrainian>Дозволити наносити грим іншим юнітам</Ukrainian>
+            <Bulgarian>Разрешаване на боядисване на други единици</Bulgarian>
+            <Latin>Permitir pintar a otras unidades</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingAllowPaintingOthers_tooltip">
             <English>Lets players paint camouflage on, or wipe it off, the face of a friendly unit (player or AI) standing next to them, using the ACE interaction menu. Shared by all clients. The painter still needs facepaint to paint; cleaning needs nothing.</English>
+            <Czech>Umožní hráčům nanést kamufláž na obličej přátelské jednotky (hráče nebo AI) stojící vedle nich, nebo ji setřít, pomocí interakční nabídky ACE. Sdíleno všemi klienty. K malování je stále potřeba barva na obličej; čištění nic nevyžaduje.</Czech>
+            <French>Permet aux joueurs de peindre un camouflage sur le visage d'une unité amie (joueur ou IA) placée à côté d'eux, ou de l'essuyer, via le menu d'interaction ACE. Partagé par tous les clients. Il faut toujours de la peinture faciale pour peindre ; le nettoyage n'exige rien.</French>
+            <Spanish>Permite a los jugadores pintar camuflaje en la cara de una unidad aliada (jugador o IA) que tengan al lado, o limpiarlo, mediante el menú de interacción de ACE. Compartido por todos los clientes. Sigue haciendo falta pintura facial para pintar; limpiar no requiere nada.</Spanish>
+            <Italian>Permette ai giocatori di dipingere la mimetizzazione sul viso di un'unità amica (giocatore o IA) accanto a loro, o di cancellarla, tramite il menu di interazione ACE. Condiviso da tutti i client. Per dipingere serve comunque la pittura per il viso; per pulire non serve nulla.</Italian>
+            <Polish>Pozwala graczom malować kamuflaż na twarzy przyjaznej jednostki (gracza lub AI) stojącej obok nich albo go zmywać, za pomocą menu interakcji ACE. Wspólne dla wszystkich klientów. Do malowania nadal potrzebna jest farba do twarzy; zmywanie niczego nie wymaga.</Polish>
+            <Portuguese>Permite que os jogadores pintem camuflagem no rosto de uma unidade amiga (jogador ou IA) ao seu lado, ou a limpem, através do menu de interação do ACE. Partilhado por todos os clientes. Continua a ser necessária tinta facial para pintar; limpar não requer nada.</Portuguese>
+            <Russian>Позволяет игрокам наносить камуфляж на лицо дружественного юнита (игрока или ИИ), стоящего рядом, или стирать его через меню взаимодействия ACE. Общая для всех клиентов настройка. Для нанесения по-прежнему нужен грим; для очистки ничего не требуется.</Russian>
             <German>Erlaubt Spielern, mit dem ACE-Interaktionsmenü Tarnung auf das Gesicht einer befreundeten Einheit (Spieler oder KI) neben ihnen aufzutragen oder abzuwischen. Gilt für alle Clients. Zum Schminken wird weiterhin Tarnschminke benötigt; zum Reinigen nicht.</German>
+            <Korean>플레이어가 ACE 상호작용 메뉴로 옆에 있는 아군 유닛(플레이어 또는 AI)의 얼굴에 위장을 칠하거나 닦아낼 수 있게 합니다. 모든 클라이언트가 공유합니다. 칠하려면 여전히 얼굴 페인트가 필요하며, 닦는 데는 아무것도 필요하지 않습니다.</Korean>
+            <Japanese>ACE のインタラクションメニューで、隣にいる味方ユニット (プレイヤーまたは AI) の顔にカモフラージュをペイントしたり、拭き取ったりできるようにします。全クライアントで共有されます。ペイントにはフェイスペイントが必要で、拭き取りには何も必要ありません。</Japanese>
+            <Chinese>允許玩家使用 ACE 互動選單，為身旁的友方單位（玩家或 AI）的臉部塗抹偽裝，或將其擦除。所有用戶端共用此設定。塗抹仍需要臉部油彩；清潔則不需要任何物品。</Chinese>
+            <Chinesesimp>允许玩家使用 ACE 交互菜单，为身旁的友方单位（玩家或 AI）的脸部涂抹伪装，或将其擦除。所有客户端共享此设置。涂抹仍需要脸部油彩；清洁则不需要任何物品。</Chinesesimp>
+            <Turkish>Oyuncuların ACE etkileşim menüsünü kullanarak yanlarında duran dost bir birimin (oyuncu veya yapay zeka) yüzüne kamuflaj boyamasına veya silmesine izin verir. Tüm istemciler arasında paylaşılır. Boyamak için yine de yüz boyası gerekir; temizlemek için hiçbir şey gerekmez.</Turkish>
+            <Slovak>Umožňuje hráčom nanášať kamufláž na tvár priateľskej jednotky (hráča alebo AI) stojacej vedľa nich, alebo ju zotrieť, pomocou interakčnej ponuky ACE. Zdieľané všetkými klientmi. Na maľovanie je stále potrebná farba na tvár; čistenie nič nevyžaduje.</Slovak>
+            <Hungarian>Lehetővé teszi a játékosoknak, hogy az ACE interakciós menüjével álcázást fessenek egy mellettük álló baráti egység (játékos vagy MI) arcára, vagy letöröljék azt. Minden kliensen közös. A festéshez továbbra is arcfesték kell; a tisztításhoz nem kell semmi.</Hungarian>
+            <Ukrainian>Дозволяє гравцям наносити камуфляж на обличчя дружнього юніта (гравця чи ШІ), що стоїть поруч, або стирати його через меню взаємодії ACE. Спільне налаштування для всіх клієнтів. Для нанесення, як і раніше, потрібен грим; для очищення нічого не потрібно.</Ukrainian>
+            <Bulgarian>Позволява на играчите да нанасят камуфлаж върху лицето на приятелска единица (играч или изкуствен интелект), стояща до тях, или да го изтриват, чрез менюто за взаимодействие на ACE. Споделено от всички клиенти. За нанасяне все още е нужна боя за лице; почистването не изисква нищо.</Bulgarian>
+            <Latin>Permite a los jugadores pintar camuflaje en la cara de una unidad aliada (jugador o IA) que tengan al lado, o limpiarlo, mediante el menú de interacción de ACE. Compartido por todos los clientes. Sigue haciendo falta pintura facial para pintar; limpiar no requiere nada.</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingUseAceActions_name">
             <English>Use ACE Actions Instead of Dialog</English>
+            <Czech>Použít akce ACE místo dialogu</Czech>
+            <French>Utiliser les actions ACE au lieu de la boîte de dialogue</French>
+            <Spanish>Usar acciones de ACE en lugar del diálogo</Spanish>
+            <Italian>Usa le azioni ACE invece della finestra di dialogo</Italian>
+            <Polish>Używaj akcji ACE zamiast okna dialogowego</Polish>
+            <Portuguese>Usar ações do ACE em vez do diálogo</Portuguese>
+            <Russian>Использовать действия ACE вместо диалога</Russian>
             <German>ACE-Aktionen statt Dialog verwenden</German>
+            <Korean>대화 상자 대신 ACE 동작 사용</Korean>
+            <Japanese>ダイアログの代わりに ACE アクションを使用</Japanese>
+            <Chinese>使用 ACE 動作取代對話框</Chinese>
+            <Chinesesimp>使用 ACE 动作代替对话框</Chinesesimp>
+            <Turkish>Diyalog yerine ACE eylemlerini kullan</Turkish>
+            <Slovak>Použiť akcie ACE namiesto dialógu</Slovak>
+            <Hungarian>ACE-műveletek használata párbeszédablak helyett</Hungarian>
+            <Ukrainian>Використовувати дії ACE замість діалогу</Ukrainian>
+            <Bulgarian>Използване на действията на ACE вместо диалога</Bulgarian>
+            <Latin>Usar acciones de ACE en lugar del diálogo</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingUseAceActions_tooltip">
             <English>When enabled, applying and removing camo face paint is done through individual ACE self-interaction actions instead of opening the Camo Faces dialog.</English>
+            <Czech>Je-li zapnuto, nanášení a odstraňování kamufláže probíhá pomocí jednotlivých vlastních interakčních akcí ACE místo otevření dialogu Camo Faces.</Czech>
+            <French>Si activé, l'application et le retrait du camouflage se font via des actions d'auto-interaction ACE individuelles au lieu d'ouvrir la boîte de dialogue Camo Faces.</French>
+            <Spanish>Si está activado, aplicar y quitar el camuflaje se hace mediante acciones de autointeracción de ACE individuales en lugar de abrir el diálogo de Camo Faces.</Spanish>
+            <Italian>Se attivo, l'applicazione e la rimozione della mimetizzazione avvengono tramite singole azioni di autointerazione ACE invece di aprire la finestra di Camo Faces.</Italian>
+            <Polish>Po włączeniu nakładanie i usuwanie kamuflażu odbywa się za pomocą pojedynczych akcji własnej interakcji ACE zamiast otwierania okna Camo Faces.</Polish>
+            <Portuguese>Se ativado, aplicar e remover a camuflagem é feito através de ações individuais de autointeração do ACE em vez de abrir o diálogo do Camo Faces.</Portuguese>
+            <Russian>Если включено, нанесение и снятие камуфляжа выполняется отдельными действиями самовзаимодействия ACE вместо открытия диалога Camo Faces.</Russian>
             <German>Wenn aktiviert, wird Tarnschminke über einzelne ACE-Eigeninteraktionen statt über den Camo-Faces-Dialog aufgetragen und entfernt.</German>
+            <Korean>활성화하면 Camo Faces 대화 상자를 여는 대신 개별 ACE 자기 상호작용 동작으로 위장을 적용하고 제거합니다.</Korean>
+            <Japanese>有効にすると、Camo Faces ダイアログを開く代わりに、個別の ACE セルフインタラクションアクションでカモフラージュを施したり落としたりします。</Japanese>
+            <Chinese>啟用後，套用與移除偽裝將透過個別的 ACE 自身互動動作進行，而不是開啟 Camo Faces 對話框。</Chinese>
+            <Chinesesimp>启用后，应用与移除伪装将通过单独的 ACE 自身交互动作进行，而不是打开 Camo Faces 对话框。</Chinesesimp>
+            <Turkish>Etkinleştirildiğinde kamuflaj uygulama ve kaldırma, Camo Faces diyaloğunu açmak yerine tek tek ACE kendi kendine etkileşim eylemleriyle yapılır.</Turkish>
+            <Slovak>Ak je zapnuté, nanášanie a odstraňovanie kamufláže prebieha pomocou jednotlivých akcií vlastnej interakcie ACE namiesto otvorenia dialógu Camo Faces.</Slovak>
+            <Hungarian>Bekapcsolva az álcázás felvitele és eltávolítása külön ACE öninterakciós műveletekkel történik a Camo Faces párbeszédablak megnyitása helyett.</Hungarian>
+            <Ukrainian>Якщо ввімкнено, нанесення та зняття камуфляжу виконується окремими діями самовзаємодії ACE замість відкриття діалогу Camo Faces.</Ukrainian>
+            <Bulgarian>Когато е включено, нанасянето и премахването на камуфлаж става чрез отделни действия за самовзаимодействие на ACE вместо чрез отваряне на диалога Camo Faces.</Bulgarian>
+            <Latin>Si está activado, aplicar y quitar el camuflaje se hace mediante acciones de autointeracción de ACE individuales en lugar de abrir el diálogo de Camo Faces.</Latin>
         </Key>
     </Package>
 </Project>

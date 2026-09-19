@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Translations for every language Arma 3 ships, on top of English and German: Czech, French, Spanish, Latin American Spanish, Italian, Polish, Portuguese, Russian, Ukrainian, Bulgarian, Slovak, Hungarian, Turkish, Korean, Japanese, Traditional Chinese and Simplified Chinese. This covers every setting, menu entry, message and item name, and all 667 camo face names (which use the game's own spelling of each head's surname). The translations were written by an AI assistant rather than native speakers, so corrections are welcome
+- `tools/camo_generator/generate_languages.py` and `i18n.py`, which give new faces a name in every language, and `data/names_i18n.json` with each head's surname in every language
 - Consumable facepaint: the BW, Serbian, US and Snow Stripes facepaint are now sticks with 10 uses each (`cfr_items_*_FacepaintStick`, modelled on KAT Advanced Medical's Penthrox inhaler). Applying camo through the dialog or the ACE actions - your own face or a teammate's - spends one use of the painter's stick, you're told how many are left, and the stick is removed when it is empty. Sticks can be carried anywhere in the uniform, vest or backpack. Cleaning a face is free, and so is anything done by a Zeus or a script (`cfr_common_fnc_setCamo`)
 
 ### Changed
@@ -16,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The Box of Facepaint now holds 10 of each facepaint stick instead of 30 of each plain item
 - The original plain facepaint items (`cfr_items_BW_Facepaint`, `cfr_items_Serbian_Facepaint`, `cfr_items_US_Facepaint`, `cfr_items_SnowStripes_Facepaint`) still work and never run out, so existing missions and loadouts are unaffected, but they are hidden from the arsenal and editor. Facepaint is now recognised in the vest and backpack as well as the uniform
 - A scheme's or category's `items[]` may list either kind of item: a magazine-type entry is used up, a plain-item entry is not
+
+### Fixed
+
+- The unused `STR_CFR_Main_Name` string still carried the "[Beta]" tag dropped from the mod's name in 1.0.0
 
 ## [2.0.0] - 2026-09-19
 

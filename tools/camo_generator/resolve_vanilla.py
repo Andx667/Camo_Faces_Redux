@@ -2,13 +2,15 @@
 
 # CAMO GENERATOR - VANILLA LOOKUPS
 # --------------------------------
-# Produces the two data files generate_config.py reads, both committed under data/ so the
+# Produces the data files generate_config.py and generate_languages.py read, both committed under data/ so the
 # normal pipeline needs neither the game's language PBOs nor a config dump:
 #
 #   data/names.json          every head's in-game surname (EN/DE), so CFR's face names follow
 #                            the mod's "Surname + Scheme" convention. Covers the hand-written
 #                            heads as well as the generated ones, which lets `validate.py names`
 #                            check the shipped stringtable offline
+#   data/names_i18n.json     the same surnames in every other language the game ships (i18n.LANG_TAGS),
+#                            spelled the way Bohemia spells them, for generate_languages.py
 #   data/vanilla_props.json  each head's effective hairline/scalp properties. A CFR camo class
 #                            inherits its group's *first* face, so anything the real face
 #                            overrides has to be restated or it is silently lost - without
@@ -23,6 +25,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from faces import NEW, GROUP_BASE
+from i18n import LANG_TAGS
 from paths import REPO, TOOL_DATA, WORK, arma3, config_dump, run
 
 LANG_PBOS = [
@@ -83,11 +86,12 @@ def resolve(classes, cls, index):
 
 
 def load_strings():
+    """Every game string as {lowercased key: {language tag: text}}, over every stringtable tag."""
     a3 = arma3()
     strings = {}
     for rel in LANG_PBOS:
         dest = WORK / "lang" / Path(rel).stem
-        if not dest.exists():
+        if not dest.exists() or not any(dest.iterdir()):
             run("utils", "pbo", "unpack", str(a3 / rel), str(dest))
         for xml in dest.rglob("stringtable.xml"):
             try:
@@ -96,14 +100,17 @@ def load_strings():
                 continue
             for key in root.iter("Key"):
                 kid = (key.get("ID") or "").lower()
-                en = key.find("English")
-                if en is None or not en.text:        # campaign tables use <Original>
-                    en = key.find("Original")
-                de = key.find("German")
-                if kid and en is not None and en.text:
-                    strings[kid] = (en.text.strip(),
-                                    (de.text or en.text).strip() if de is not None else en.text.strip())
+                if kid:
+                    strings[kid] = {c.tag: (c.text or "").strip() for c in key}
     return strings
+
+
+def english_german(entry):
+    """(English, German) of a game string; campaign tables use <Original> instead of <English>."""
+    en = entry.get("English") or entry.get("Original")
+    if not en:
+        return None
+    return en, entry.get("German") or en
 
 
 def every_face():
@@ -119,12 +126,15 @@ def main():
     classes = parse_classes(cfg_faces_block())
     strings = load_strings()
 
-    names, props, missing = {}, {}, []
+    names, names_i18n, props, missing = {}, {}, {}, []
     for cls in every_face():
         skey = resolve(classes, cls, "name")
-        hit = strings.get((skey or "").lower())
+        entry = strings.get((skey or "").lower(), {})
+        hit = english_german(entry)
         if hit:
             names[cls] = {"en": hit[0], "de": hit[1]}
+            # a language the game leaves blank falls back to English, like the game does itself
+            names_i18n[cls] = {tag: entry.get(tag) or hit[0] for tag in LANG_TAGS}
         else:
             missing.append(f"{cls} ({skey or 'no displayName'})")
     for f in NEW.values():
@@ -134,6 +144,7 @@ def main():
 
     TOOL_DATA.mkdir(exist_ok=True)
     (TOOL_DATA / "names.json").write_text(json.dumps(names, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    (TOOL_DATA / "names_i18n.json").write_text(json.dumps(names_i18n, indent=1, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     (TOOL_DATA / "vanilla_props.json").write_text(json.dumps(props, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print(f"names: {len(names)} heads   props: {len(props)} heads")
