@@ -97,7 +97,10 @@ if (_wearOffMinutes > 0) then {
         };
         if (_unit getVariable [QGVAR(camoId), ""] != _camoId) exitWith {
             [_pfhId] call CBA_fnc_removePerFrameHandler;
-            _unit setVariable [QGVAR(wearOffTimerId), -1];
+            // only clear the id if it is still this timer's - a newer timer on this machine may have replaced it
+            if (_unit getVariable [QGVAR(wearOffTimerId), -1] == _pfhId) then {
+                _unit setVariable [QGVAR(wearOffTimerId), -1];
+            };
         };
         if (time >= _expiry) then {
             [_pfhId] call CBA_fnc_removePerFrameHandler;
