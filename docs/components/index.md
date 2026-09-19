@@ -5,7 +5,7 @@ Camo Faces Redux follows the standard ACE-style addon layout: functionality is s
 | Component | PBO | Purpose |
 | --- | --- | --- |
 | [Main](main.md) | `cfr_main` | Shared macros, mod metadata, and editor category |
-| [Common](common.md) | `cfr_common` | Core logic: face lists, applying/removing camo |
+| [Common](common.md) | `cfr_common` | Core logic: the face and scheme registry, applying/removing camo |
 | [Dialog](dialog.md) | `cfr_dialog` | The in-game UI for choosing and applying camo |
 | [Faces](faces.md) | `cfr_faces` | The camouflaged face variants and textures |
 | [Items](items.md) | `cfr_items` | The facepaint inventory items and their box |

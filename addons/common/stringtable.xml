@@ -94,8 +94,8 @@
             <German>Tarnungs-Verfallszeit (Minuten)</German>
         </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_tooltip">
-            <English>How many minutes after being applied a camouflage face automatically wears off and reverts to the original face, simulating it fading from rain, sweat, or time. Set to 0 to disable - camo will never wear off on its own.</English>
-            <German>Wie viele Minuten nach dem Auftragen eine Tarnschminke automatisch verblasst und zum ursprünglichen Gesicht zurückkehrt - simuliert das Verblassen durch Regen, Schweiß oder Zeit. Auf 0 setzen, um zu deaktivieren - die Tarnung verblasst dann nie von selbst.</German>
+            <English>How many minutes after being applied a camouflage face automatically wears off and reverts to the original face, simulating it fading from rain, sweat, or time. Each application varies a little (roughly +/- 10 minutes) so players don't all lose it at once, and the wearer gets a warning about a minute before it goes. Only player-controlled units wear off; AI keep their camo until it is cleaned. Set to 0 to disable - camo will never wear off on its own.</English>
+            <German>Wie viele Minuten nach dem Auftragen eine Tarnschminke automatisch verblasst und zum ursprünglichen Gesicht zurückkehrt - simuliert das Verblassen durch Regen, Schweiß oder Zeit. Jede Anwendung weicht etwas ab (etwa +/- 10 Minuten), damit nicht alle Spieler ihre Tarnung gleichzeitig verlieren, und der Träger wird etwa eine Minute vorher gewarnt. Nur von Spielern gesteuerte Einheiten verblassen; KI behalten ihre Tarnung, bis sie gereinigt wird. Auf 0 setzen, um zu deaktivieren - die Tarnung verblasst dann nie von selbst.</German>
         </Key>
     </Package>
 </Project>

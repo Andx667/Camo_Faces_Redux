@@ -41,7 +41,7 @@ Other addons can register further schemes and faces through config, which then w
 
 ## Reacting to camo changes
 
-Other mods/missions can hook into two CBA events, raised only on the machine that actually applied or removed the camo (typically whichever client called the function above for its own unit):
+Other mods/missions can hook into two CBA events, raised only on the machine that actually ran the apply or removal - the client calling the function for its own unit, the painter's machine when a player paints or cleans a teammate, or a Zeus's machine when using the Zeus menu. A camo that wears off fires `cfr_common_camoRemoved` on the wearer's own machine:
 
 | Event | Payload | Raised by |
 | --- | --- | --- |
