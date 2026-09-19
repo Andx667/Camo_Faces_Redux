@@ -41,7 +41,7 @@
             <Hungarian>Az első réteg felvitele...</Hungarian>
             <Ukrainian>Наношу перший шар...</Ukrainian>
             <Bulgarian>Нанасям първия слой...</Bulgarian>
-            <Latin>Aplicando la primera capa...</Latin>
+            <Latin>Primum stratum induco...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_applyingLayer2">
             <English>Applying layer two...</English>
@@ -62,7 +62,7 @@
             <Hungarian>A második réteg felvitele...</Hungarian>
             <Ukrainian>Наношу другий шар...</Ukrainian>
             <Bulgarian>Нанасям втория слой...</Bulgarian>
-            <Latin>Aplicando la segunda capa...</Latin>
+            <Latin>Secundum stratum induco...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_applyingLayer3">
             <English>Applying layer three...</English>
@@ -83,7 +83,7 @@
             <Hungarian>A harmadik réteg felvitele...</Hungarian>
             <Ukrainian>Наношу третій шар...</Ukrainian>
             <Bulgarian>Нанасям третия слой...</Bulgarian>
-            <Latin>Aplicando la tercera capa...</Latin>
+            <Latin>Tertium stratum induco...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyCleanAction">
             <English>Clean Face</English>
@@ -104,7 +104,7 @@
             <Hungarian>Arc megtisztítása</Hungarian>
             <Ukrainian>Очистити обличчя</Ukrainian>
             <Bulgarian>Почистване на лицето</Bulgarian>
-            <Latin>Limpiar la cara</Latin>
+            <Latin>Faciem purgare</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyCleanedOther">
             <English>You cleaned %1's face</English>
@@ -125,7 +125,7 @@
             <Hungarian>Megtisztítottad %1 arcát</Hungarian>
             <Ukrainian>Ви очистили обличчя: %1</Ukrainian>
             <Bulgarian>Почисти лицето на %1</Bulgarian>
-            <Latin>Has limpiado la cara de %1</Latin>
+            <Latin>Facies unitatis %1 purgata est</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyCleanedYou">
             <English>%1 cleaned your face</English>
@@ -146,7 +146,7 @@
             <Hungarian>%1 megtisztította az arcodat</Hungarian>
             <Ukrainian>Вам очистили обличчя: %1</Ukrainian>
             <Bulgarian>%1 ти почисти лицето</Bulgarian>
-            <Latin>%1 te ha limpiado la cara</Latin>
+            <Latin>Facies tua a %1 purgata est</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyInterrupted">
             <English>Interrupted - stay close, and their headgear, goggles and night vision must be off</English>
@@ -167,7 +167,7 @@
             <Hungarian>Megszakadt – maradj közel, és a sapkájának, szemüvegének és éjjellátójának levéve kell lennie</Hungarian>
             <Ukrainian>Перервано — залишайтеся поруч, і з нього мають бути зняті головний убір, окуляри та ПНБ</Ukrainian>
             <Bulgarian>Прекъснато — стой наблизо, а каската, очилата и уредът за нощно виждане трябва да са свалени</Bulgarian>
-            <Latin>Interrumpido: quédate cerca, y su casco, gafas y visión nocturna deben estar quitados</Latin>
+            <Latin>Interruptum – prope mane, et galea, perspicilla visioque nocturna eius remota esse debent</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyPaintAction">
             <English>Paint Face</English>
@@ -188,7 +188,7 @@
             <Hungarian>Arc befestése</Hungarian>
             <Ukrainian>Нанести грим на обличчя</Ukrainian>
             <Bulgarian>Нанасяне на боя на лицето</Bulgarian>
-            <Latin>Pintar la cara</Latin>
+            <Latin>Faciem pingere</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyPaintedOther">
             <English>You painted %1's face</English>
@@ -209,7 +209,7 @@
             <Hungarian>Befestetted %1 arcát</Hungarian>
             <Ukrainian>Ви нанесли грим на обличчя: %1</Ukrainian>
             <Bulgarian>Нанесе боя на лицето на %1</Bulgarian>
-            <Latin>Has pintado la cara de %1</Latin>
+            <Latin>Facies unitatis %1 picta est</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_buddyPaintedYou">
             <English>%1 painted your face</English>
@@ -230,7 +230,7 @@
             <Hungarian>%1 befestette az arcodat</Hungarian>
             <Ukrainian>Вам нанесли грим на обличчя: %1</Ukrainian>
             <Bulgarian>%1 нанесе боя на лицето ти</Bulgarian>
-            <Latin>%1 te ha pintado la cara</Latin>
+            <Latin>Facies tua a %1 picta est</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_cleaningFace">
             <English>Cleaning face...</English>
@@ -251,7 +251,7 @@
             <Hungarian>Arc tisztítása...</Hungarian>
             <Ukrainian>Очищаю обличчя...</Ukrainian>
             <Bulgarian>Почиствам лицето...</Bulgarian>
-            <Latin>Limpiando la cara...</Latin>
+            <Latin>Faciem purgo...</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_displayName">
             <English>Interaction Method</English>
@@ -272,7 +272,7 @@
             <Hungarian>Interakció módja</Hungarian>
             <Ukrainian>Спосіб взаємодії</Ukrainian>
             <Bulgarian>Начин на взаимодействие</Bulgarian>
-            <Latin>Método de interacción</Latin>
+            <Latin>Modus interactionis</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_layerDone">
             <English>Done!</English>
@@ -293,7 +293,7 @@
             <Hungarian>Kész!</Hungarian>
             <Ukrainian>Готово!</Ukrainian>
             <Bulgarian>Готово!</Bulgarian>
-            <Latin>¡Hecho!</Latin>
+            <Latin>Factum!</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_noCamoApplied">
             <English>No camo face applied</English>
@@ -314,7 +314,7 @@
             <Hungarian>Nincs álcázás felhordva</Hungarian>
             <Ukrainian>Камуфляж не нанесено</Ukrainian>
             <Bulgarian>Няма нанесен камуфлаж</Bulgarian>
-            <Latin>No hay ningún camuflaje aplicado</Latin>
+            <Latin>Nulla dissimulatio inducta</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_noOption">
             <English>No Option</English>
@@ -335,7 +335,7 @@
             <Hungarian>Nincs lehetőség</Hungarian>
             <Ukrainian>Немає варіантів</Ukrainian>
             <Bulgarian>Няма опции</Bulgarian>
-            <Latin>Sin opciones</Latin>
+            <Latin>Nulla optio</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_removeCamoAction">
             <English>Remove Camo Face Paint</English>
@@ -356,7 +356,7 @@
             <Hungarian>Álcázó arcfesték eltávolítása</Hungarian>
             <Ukrainian>Змити камуфляжний грим з обличчя</Ukrainian>
             <Bulgarian>Премахване на камуфлажната боя от лицето</Bulgarian>
-            <Latin>Quitar la pintura de camuflaje de la cara</Latin>
+            <Latin>Fucum dissimulationis a facie removere</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingAllowPaintingOthers_name">
             <English>Allow Painting Other Units</English>
@@ -377,7 +377,7 @@
             <Hungarian>Más egységek festésének engedélyezése</Hungarian>
             <Ukrainian>Дозволити наносити грим іншим юнітам</Ukrainian>
             <Bulgarian>Разрешаване на боядисване на други единици</Bulgarian>
-            <Latin>Permitir pintar a otras unidades</Latin>
+            <Latin>Alias unitates pingere permittere</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingAllowPaintingOthers_tooltip">
             <English>Lets players paint camouflage on, or wipe it off, the face of a friendly unit (player or AI) standing next to them, using the ACE interaction menu. Shared by all clients. The painter still needs facepaint to paint; cleaning needs nothing.</English>
@@ -398,7 +398,7 @@
             <Hungarian>Lehetővé teszi a játékosoknak, hogy az ACE interakciós menüjével álcázást fessenek egy mellettük álló baráti egység (játékos vagy MI) arcára, vagy letöröljék azt. Minden kliensen közös. A festéshez továbbra is arcfesték kell; a tisztításhoz nem kell semmi.</Hungarian>
             <Ukrainian>Дозволяє гравцям наносити камуфляж на обличчя дружнього юніта (гравця чи ШІ), що стоїть поруч, або стирати його через меню взаємодії ACE. Спільне налаштування для всіх клієнтів. Для нанесення, як і раніше, потрібен грим; для очищення нічого не потрібно.</Ukrainian>
             <Bulgarian>Позволява на играчите да нанасят камуфлаж върху лицето на приятелска единица (играч или изкуствен интелект), стояща до тях, или да го изтриват, чрез менюто за взаимодействие на ACE. Споделено от всички клиенти. За нанасяне все още е нужна боя за лице; почистването не изисква нищо.</Bulgarian>
-            <Latin>Permite a los jugadores pintar camuflaje en la cara de una unidad aliada (jugador o IA) que tengan al lado, o limpiarlo, mediante el menú de interacción de ACE. Compartido por todos los clientes. Sigue haciendo falta pintura facial para pintar; limpiar no requiere nada.</Latin>
+            <Latin>Lusoribus permittit ut, per menu interactionis ACE, dissimulationem in facie unitatis amicae (lusoris vel IA) iuxta stantis pingant vel abstergeant. Inter omnes clientes communicatur. Pictor adhuc fuco faciei eget ad pingendum; purgatio nihil requirit.</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingUseAceActions_name">
             <English>Use ACE Actions Instead of Dialog</English>
@@ -419,7 +419,7 @@
             <Hungarian>ACE-műveletek használata párbeszédablak helyett</Hungarian>
             <Ukrainian>Використовувати дії ACE замість діалогу</Ukrainian>
             <Bulgarian>Използване на действията на ACE вместо диалога</Bulgarian>
-            <Latin>Usar acciones de ACE en lugar del diálogo</Latin>
+            <Latin>Actiones ACE pro dialogo adhibere</Latin>
         </Key>
         <Key ID="STR_CFR_Dialog_settingUseAceActions_tooltip">
             <English>When enabled, applying and removing camo face paint is done through individual ACE self-interaction actions instead of opening the Camo Faces dialog.</English>
@@ -440,7 +440,7 @@
             <Hungarian>Bekapcsolva az álcázás felvitele és eltávolítása külön ACE öninterakciós műveletekkel történik a Camo Faces párbeszédablak megnyitása helyett.</Hungarian>
             <Ukrainian>Якщо ввімкнено, нанесення та зняття камуфляжу виконується окремими діями самовзаємодії ACE замість відкриття діалогу Camo Faces.</Ukrainian>
             <Bulgarian>Когато е включено, нанасянето и премахването на камуфлаж става чрез отделни действия за самовзаимодействие на ACE вместо чрез отваряне на диалога Camo Faces.</Bulgarian>
-            <Latin>Si está activado, aplicar y quitar el camuflaje se hace mediante acciones de autointeracción de ACE individuales en lugar de abrir el diálogo de Camo Faces.</Latin>
+            <Latin>Si activatum est, dissimulatio inducitur et removetur per singulas actiones ACE sui-interactionis, non aperiendo dialogum Camo Faces.</Latin>
         </Key>
     </Package>
 </Project>

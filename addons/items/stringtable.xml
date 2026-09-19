@@ -20,7 +20,7 @@
             <Hungarian>Arcfesték-láda</Hungarian>
             <Ukrainian>Ящик із гримом</Ukrainian>
             <Bulgarian>Кутия с боя за лице</Bulgarian>
-            <Latin>Caja de pintura facial</Latin>
+            <Latin>Arca fuci faciei</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaint_descriptionshort">
             <English>Used by the German Armed Forces (legacy item, unlimited uses)</English>
@@ -41,7 +41,7 @@
             <Hungarian>A német fegyveres erők használják (régi tárgy, korlátlan használat)</Hungarian>
             <Ukrainian>Використовується збройними силами Німеччини (застарілий предмет, необмежена кількість використань)</Ukrainian>
             <Bulgarian>Използва се от германските въоръжени сили (стар предмет, неограничени употреби)</Bulgarian>
-            <Latin>Usado por las Fuerzas Armadas alemanas (objeto antiguo, usos ilimitados)</Latin>
+            <Latin>Ab Copiis Armatis Germaniae adhibetur (res vetus, usus infiniti)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaint_displayname">
             <English>BW Facepaint</English>
@@ -62,7 +62,7 @@
             <Hungarian>BW arcfesték</Hungarian>
             <Ukrainian>Грим BW</Ukrainian>
             <Bulgarian>Боя за лице BW</Bulgarian>
-            <Latin>Pintura facial BW</Latin>
+            <Latin>Fucus faciei BW</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaintstick_descriptionshort">
             <English>Used by the German Armed Forces. 10 uses</English>
@@ -83,7 +83,7 @@
             <Hungarian>A német fegyveres erők használják. 10 használat</Hungarian>
             <Ukrainian>Використовується збройними силами Німеччини. 10 використань</Ukrainian>
             <Bulgarian>Използва се от германските въоръжени сили. 10 употреби</Bulgarian>
-            <Latin>Usado por las Fuerzas Armadas alemanas. 10 usos</Latin>
+            <Latin>Ab Copiis Armatis Germaniae adhibetur. 10 usus</Latin>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaintstick_displayname">
             <English>BW Facepaint Stick</English>
@@ -104,7 +104,7 @@
             <Hungarian>BW arcfesték-rúd</Hungarian>
             <Ukrainian>Стик гриму BW</Ukrainian>
             <Bulgarian>Стик боя за лице BW</Bulgarian>
-            <Latin>Barra de pintura facial BW</Latin>
+            <Latin>Bacillum fuci faciei BW</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_descriptionshort">
             <English>Used by the Serbian Armed Forces (legacy item, unlimited uses)</English>
@@ -125,7 +125,7 @@
             <Hungarian>A szerb fegyveres erők használják (régi tárgy, korlátlan használat)</Hungarian>
             <Ukrainian>Використовується збройними силами Сербії (застарілий предмет, необмежена кількість використань)</Ukrainian>
             <Bulgarian>Използва се от сръбските въоръжени сили (стар предмет, неограничени употреби)</Bulgarian>
-            <Latin>Usado por las Fuerzas Armadas serbias (objeto antiguo, usos ilimitados)</Latin>
+            <Latin>Ab Copiis Armatis Serbiae adhibetur (res vetus, usus infiniti)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_displayname">
             <English>Serbian Facepaint</English>
@@ -146,7 +146,7 @@
             <Hungarian>Szerb arcfesték</Hungarian>
             <Ukrainian>Сербський грим</Ukrainian>
             <Bulgarian>Сръбска боя за лице</Bulgarian>
-            <Latin>Pintura facial serbia</Latin>
+            <Latin>Fucus faciei Serbicus</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaintstick_descriptionshort">
             <English>Used by the Serbian Armed Forces. 10 uses</English>
@@ -167,7 +167,7 @@
             <Hungarian>A szerb fegyveres erők használják. 10 használat</Hungarian>
             <Ukrainian>Використовується збройними силами Сербії. 10 використань</Ukrainian>
             <Bulgarian>Използва се от сръбските въоръжени сили. 10 употреби</Bulgarian>
-            <Latin>Usado por las Fuerzas Armadas serbias. 10 usos</Latin>
+            <Latin>Ab Copiis Armatis Serbiae adhibetur. 10 usus</Latin>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaintstick_displayname">
             <English>Serbian Facepaint Stick</English>
@@ -188,7 +188,7 @@
             <Hungarian>Szerb arcfesték-rúd</Hungarian>
             <Ukrainian>Стик сербського гриму</Ukrainian>
             <Bulgarian>Стик сръбска боя за лице</Bulgarian>
-            <Latin>Barra de pintura facial serbia</Latin>
+            <Latin>Bacillum fuci faciei Serbicum</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaint_descriptionshort">
             <English>A stick of white/green grease paint (legacy item, unlimited uses)</English>
@@ -209,7 +209,7 @@
             <Hungarian>Egy rúd fehér/zöld zsíros festék (régi tárgy, korlátlan használat)</Hungarian>
             <Ukrainian>Стик біло-зеленого жирового гриму (застарілий предмет, необмежена кількість використань)</Ukrainian>
             <Bulgarian>Стик бяло-зелена мазна боя (стар предмет, неограничени употреби)</Bulgarian>
-            <Latin>Una barra de pintura grasa blanca/verde (objeto antiguo, usos ilimitados)</Latin>
+            <Latin>Bacillum fuci pinguis albi viridisque (res vetus, usus infiniti)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaint_displayname">
             <English>Snow Stripes Facepaint</English>
@@ -230,7 +230,7 @@
             <Hungarian>Havas csíkos arcfesték</Hungarian>
             <Ukrainian>Грим «Снігові смуги»</Ukrainian>
             <Bulgarian>Боя за лице „Снежни ивици“</Bulgarian>
-            <Latin>Pintura facial rayas de nieve</Latin>
+            <Latin>Fucus faciei (virgae nivales)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaintstick_descriptionshort">
             <English>A stick of white/green grease paint. 10 uses</English>
@@ -251,7 +251,7 @@
             <Hungarian>Egy rúd fehér/zöld zsíros festék. 10 használat</Hungarian>
             <Ukrainian>Стик біло-зеленого жирового гриму. 10 використань</Ukrainian>
             <Bulgarian>Стик бяло-зелена мазна боя. 10 употреби</Bulgarian>
-            <Latin>Una barra de pintura grasa blanca/verde. 10 usos</Latin>
+            <Latin>Bacillum fuci pinguis albi viridisque. 10 usus</Latin>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaintstick_displayname">
             <English>Snow Stripes Facepaint Stick</English>
@@ -272,7 +272,7 @@
             <Hungarian>Havas csíkos arcfesték-rúd</Hungarian>
             <Ukrainian>Стик гриму «Снігові смуги»</Ukrainian>
             <Bulgarian>Стик боя за лице „Снежни ивици“</Bulgarian>
-            <Latin>Barra de pintura facial rayas de nieve</Latin>
+            <Latin>Bacillum fuci faciei (virgae nivales)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_descriptionshort">
             <English>Used by the US Armed Forces (legacy item, unlimited uses)</English>
@@ -293,7 +293,7 @@
             <Hungarian>Az amerikai fegyveres erők használják (régi tárgy, korlátlan használat)</Hungarian>
             <Ukrainian>Використовується збройними силами США (застарілий предмет, необмежена кількість використань)</Ukrainian>
             <Bulgarian>Използва се от въоръжените сили на САЩ (стар предмет, неограничени употреби)</Bulgarian>
-            <Latin>Usado por las Fuerzas Armadas de EE. UU. (objeto antiguo, usos ilimitados)</Latin>
+            <Latin>Ab Copiis Armatis Americae adhibetur (res vetus, usus infiniti)</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_displayname">
             <English>US Facepaint</English>
@@ -314,7 +314,7 @@
             <Hungarian>US arcfesték</Hungarian>
             <Ukrainian>Грим US</Ukrainian>
             <Bulgarian>Боя за лице US</Bulgarian>
-            <Latin>Pintura facial US</Latin>
+            <Latin>Fucus faciei US</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaintstick_descriptionshort">
             <English>Used by the US Armed Forces. 10 uses</English>
@@ -335,7 +335,7 @@
             <Hungarian>Az amerikai fegyveres erők használják. 10 használat</Hungarian>
             <Ukrainian>Використовується збройними силами США. 10 використань</Ukrainian>
             <Bulgarian>Използва се от въоръжените сили на САЩ. 10 употреби</Bulgarian>
-            <Latin>Usado por las Fuerzas Armadas de EE. UU.. 10 usos</Latin>
+            <Latin>Ab Copiis Armatis Americae adhibetur. 10 usus</Latin>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaintstick_displayname">
             <English>US Facepaint Stick</English>
@@ -356,7 +356,7 @@
             <Hungarian>US arcfesték-rúd</Hungarian>
             <Ukrainian>Стик гриму US</Ukrainian>
             <Bulgarian>Стик боя за лице US</Bulgarian>
-            <Latin>Barra de pintura facial US</Latin>
+            <Latin>Bacillum fuci faciei US</Latin>
         </Key>
     </Package>
 </Project>

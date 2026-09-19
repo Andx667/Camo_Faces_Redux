@@ -29,7 +29,7 @@ Includes a compatibility addon for Zeus Enhanced to apply camo faces to players 
 
 Addon authors can register their own faces and camo schemes through config; they show up in the dialog, the ACE actions and the Zeus menu automatically.
 
-Translated into every language Arma 3 ships: English, German, Czech, French, Spanish (Spain and Latin America), Italian, Polish, Portuguese, Russian, Ukrainian, Bulgarian, Slovak, Hungarian, Turkish, Korean, Japanese and Chinese (Traditional and Simplified). The translations are machine-assisted, so corrections from native speakers are welcome on GitHub.
+Translated into every language Arma 3 ships: English, German, Czech, French, Spanish, Latin, Italian, Polish, Portuguese, Russian, Ukrainian, Bulgarian, Slovak, Hungarian, Turkish, Korean, Japanese and Chinese (Traditional and Simplified). The translations are machine-assisted, so corrections from native speakers are welcome on GitHub.
 
 ## How to Use
 

@@ -46,7 +46,7 @@ Docs: <https://andx667.github.io/Camo_Faces_Redux/>
 - Optional wear-off: camo can fade after a configurable time, with a warning shortly before it goes
 - Optional [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) integration for applying/removing camo as a curator
 - Extensible: other addons can register their own faces and camo schemes through config, and they appear in the dialog, the ACE actions and the Zeus menu
-- Translated into every language Arma 3 ships: English, German, Czech, French, Spanish (Spain and Latin America), Italian, Polish, Portuguese, Russian, Ukrainian, Bulgarian, Slovak, Hungarian, Turkish, Korean, Japanese and Chinese (Traditional and Simplified)
+- Translated into every language Arma 3 ships: English, German, Czech, French, Spanish, Latin, Italian, Polish, Portuguese, Russian, Ukrainian, Bulgarian, Slovak, Hungarian, Turkish, Korean, Japanese and Chinese (Traditional and Simplified)
 
 ## Contributing
 

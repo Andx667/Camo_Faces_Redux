@@ -20,7 +20,7 @@
             <Hungarian>Véletlenszerű álcázás felhordása</Hungarian>
             <Ukrainian>Нанести випадковий камуфляж</Ukrainian>
             <Bulgarian>Нанасяне на случаен камуфлаж</Bulgarian>
-            <Latin>Aplicar camuflaje aleatorio</Latin>
+            <Latin>Dissimulationem fortuitam inducere</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_menuName">
             <English>Camouflage</English>
@@ -41,7 +41,7 @@
             <Hungarian>Álcázás</Hungarian>
             <Ukrainian>Камуфляж</Ukrainian>
             <Bulgarian>Камуфлаж</Bulgarian>
-            <Latin>Camuflaje</Latin>
+            <Latin>Dissimulatio</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_randomApplied">
             <English>Applied random camouflage to %1/%2 unit(s)</English>
@@ -62,7 +62,7 @@
             <Hungarian>Véletlenszerű álcázás felhordva %1/%2 egységre</Hungarian>
             <Ukrainian>Випадковий камуфляж нанесено на %1/%2 юніт(ів)</Ukrainian>
             <Bulgarian>Случаен камуфлаж е нанесен на %1/%2 единици</Bulgarian>
-            <Latin>Camuflaje aleatorio aplicado a %1/%2 unidad(es)</Latin>
+            <Latin>Dissimulatio fortuita %1/%2 unitatibus inducta</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_removeApplied">
             <English>Removed camouflage from %1 unit(s)</English>
@@ -83,7 +83,7 @@
             <Hungarian>Álcázás eltávolítva %1 egységről</Hungarian>
             <Ukrainian>Камуфляж знято з %1 юніт(ів)</Ukrainian>
             <Bulgarian>Камуфлажът е премахнат от %1 единици</Bulgarian>
-            <Latin>Camuflaje retirado de %1 unidad(es)</Latin>
+            <Latin>Dissimulatio %1 unitatibus remota</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_removeCamo">
             <English>Remove Camouflage</English>
@@ -104,7 +104,7 @@
             <Hungarian>Álcázás eltávolítása</Hungarian>
             <Ukrainian>Зняти камуфляж</Ukrainian>
             <Bulgarian>Премахване на камуфлажа</Bulgarian>
-            <Latin>Retirar camuflaje</Latin>
+            <Latin>Dissimulationem removere</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_settingCategory">
             <English>Zeus Enhanced</English>
@@ -146,7 +146,7 @@
             <Hungarian>Álcázás helyi menüműveleteinek engedélyezése</Hungarian>
             <Ukrainian>Увімкнути контекстні дії камуфляжу</Ukrainian>
             <Bulgarian>Включване на контекстните действия за камуфлаж</Bulgarian>
-            <Latin>Activar acciones contextuales de camuflaje</Latin>
+            <Latin>Actiones contextuales dissimulationis activare</Latin>
         </Key>
         <Key ID="STR_CFR_Compat_Zen_settingEnabled_tooltip">
             <English>When enabled, a "Camouflage" entry is added to ZEN's context menu for applying/removing camo on selected units. Only affects your own Zeus interface.</English>
@@ -167,7 +167,7 @@
             <Hungarian>Bekapcsolva a ZEN helyi menüjébe bekerül egy „Álcázás” elem, amellyel a kijelölt egységekre álcázás vihető fel vagy távolítható el. Csak a saját Zeus felületedet érinti.</Hungarian>
             <Ukrainian>Якщо ввімкнено, до контекстного меню ZEN додається пункт «Камуфляж» для нанесення/зняття камуфляжу з вибраних юнітів. Впливає лише на ваш власний інтерфейс Зевса.</Ukrainian>
             <Bulgarian>Когато е включено, в контекстното меню на ZEN се добавя елемент „Камуфлаж“ за нанасяне/премахване на камуфлаж на избраните единици. Засяга само вашия собствен интерфейс на Зевс.</Bulgarian>
-            <Latin>Si está activado, se añade una entrada «Camuflaje» al menú contextual de ZEN para aplicar o retirar el camuflaje de las unidades seleccionadas. Solo afecta a tu propia interfaz de Zeus.</Latin>
+            <Latin>Si activatum est, elementum «Dissimulatio» in menu contextuali ZEN additur ad dissimulationem in unitatibus delectis inducendam vel removendam. Solam tuam interfaciem Zei afficit.</Latin>
         </Key>
     </Package>
 </Project>

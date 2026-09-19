@@ -20,7 +20,7 @@
             <Hungarian>Álcázás felhordva</Hungarian>
             <Ukrainian>Камуфляж нанесено</Ukrainian>
             <Bulgarian>Камуфлажът е нанесен</Bulgarian>
-            <Latin>Camuflaje aplicado</Latin>
+            <Latin>Dissimulatio inducta</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camoFading">
             <English>Your camouflage is starting to fade</English>
@@ -41,7 +41,7 @@
             <Hungarian>Az álcázásod kezd elhalványulni</Hungarian>
             <Ukrainian>Ваш камуфляж починає стиратися</Ukrainian>
             <Bulgarian>Камуфлажът ти започва да избледнява</Bulgarian>
-            <Latin>Tu camuflaje empieza a desvanecerse</Latin>
+            <Latin>Dissimulatio tua evanescere incipit</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camoRemoved">
             <English>Camouflage removed</English>
@@ -62,7 +62,7 @@
             <Hungarian>Álcázás eltávolítva</Hungarian>
             <Ukrainian>Камуфляж знято</Ukrainian>
             <Bulgarian>Камуфлажът е премахнат</Bulgarian>
-            <Latin>Camuflaje retirado</Latin>
+            <Latin>Dissimulatio remota</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_black">
             <English>Night Camouflage</English>
@@ -83,7 +83,7 @@
             <Hungarian>Éjszakai álcázás</Hungarian>
             <Ukrainian>Нічний камуфляж</Ukrainian>
             <Bulgarian>Нощен камуфлаж</Bulgarian>
-            <Latin>Camuflaje nocturno</Latin>
+            <Latin>Dissimulatio nocturna</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_bwstripes">
             <English>BW Stripes</English>
@@ -104,7 +104,7 @@
             <Hungarian>BW csíkok</Hungarian>
             <Ukrainian>BW смуги</Ukrainian>
             <Bulgarian>BW ивици</Bulgarian>
-            <Latin>BW rayas</Latin>
+            <Latin>BW virgae</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_bwtarn">
             <English>BW Camouflage</English>
@@ -125,7 +125,7 @@
             <Hungarian>BW álcázás</Hungarian>
             <Ukrainian>BW камуфляж</Ukrainian>
             <Bulgarian>BW камуфлаж</Bulgarian>
-            <Latin>BW camuflaje</Latin>
+            <Latin>BW dissimulatio</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_serbian">
             <English>Serbian Camouflage</English>
@@ -146,7 +146,7 @@
             <Hungarian>Szerb álcázás</Hungarian>
             <Ukrainian>Сербський камуфляж</Ukrainian>
             <Bulgarian>Сръбски камуфлаж</Bulgarian>
-            <Latin>Camuflaje serbio</Latin>
+            <Latin>Dissimulatio Serbica</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_serbian_short">
             <English>Serbian Camo</English>
@@ -167,7 +167,7 @@
             <Hungarian>Szerb álcázás</Hungarian>
             <Ukrainian>Сербський камуфляж</Ukrainian>
             <Bulgarian>Сръбски камуфлаж</Bulgarian>
-            <Latin>Camuflaje serbio</Latin>
+            <Latin>Dissimulatio Serbica</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_snowstripes">
             <English>Snow Stripes</English>
@@ -188,7 +188,7 @@
             <Hungarian>Havas csíkok</Hungarian>
             <Ukrainian>Снігові смуги</Ukrainian>
             <Bulgarian>Снежни ивици</Bulgarian>
-            <Latin>Rayas de nieve</Latin>
+            <Latin>Virgae nivales</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_usflash">
             <English>US Flash</English>
@@ -209,7 +209,7 @@
             <Hungarian>US villanás</Hungarian>
             <Ukrainian>US спалах</Ukrainian>
             <Bulgarian>US светкавица</Bulgarian>
-            <Latin>US destellos</Latin>
+            <Latin>US fulgur</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_usstains">
             <English>US Stains</English>
@@ -230,7 +230,7 @@
             <Hungarian>US foltok</Hungarian>
             <Ukrainian>US плями</Ukrainian>
             <Bulgarian>US петна</Bulgarian>
-            <Latin>US manchas</Latin>
+            <Latin>US maculae</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_usstripes">
             <English>US Stripes</English>
@@ -251,7 +251,7 @@
             <Hungarian>US csíkok</Hungarian>
             <Ukrainian>US смуги</Ukrainian>
             <Bulgarian>US ивици</Bulgarian>
-            <Latin>US rayas</Latin>
+            <Latin>US virgae</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla">
             <English>Vanilla Camouflage (Standard)</English>
@@ -272,7 +272,7 @@
             <Hungarian>Eredeti álcázás (normál)</Hungarian>
             <Ukrainian>Оригінальний камуфляж (стандартний)</Ukrainian>
             <Bulgarian>Оригинален камуфлаж (стандартен)</Bulgarian>
-            <Latin>Camuflaje original (estándar)</Latin>
+            <Latin>Dissimulatio originalis (regularis)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_arid">
             <English>Vanilla Camouflage (Arid)</English>
@@ -293,7 +293,7 @@
             <Hungarian>Eredeti álcázás (száraz)</Hungarian>
             <Ukrainian>Оригінальний камуфляж (пустельний)</Ukrainian>
             <Bulgarian>Оригинален камуфлаж (пустинен)</Bulgarian>
-            <Latin>Camuflaje original (árido)</Latin>
+            <Latin>Dissimulatio originalis (arida)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_arid_short">
             <English>Camo (Arid)</English>
@@ -314,7 +314,7 @@
             <Hungarian>Álcázás (száraz)</Hungarian>
             <Ukrainian>Камуфляж (пустельний)</Ukrainian>
             <Bulgarian>Камуфлаж (пустинен)</Bulgarian>
-            <Latin>Camuflaje (árido)</Latin>
+            <Latin>Dissimulatio (arida)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_lush">
             <English>Vanilla Camouflage (Lush)</English>
@@ -335,7 +335,7 @@
             <Hungarian>Eredeti álcázás (buja)</Hungarian>
             <Ukrainian>Оригінальний камуфляж (лісовий)</Ukrainian>
             <Bulgarian>Оригинален камуфлаж (буен)</Bulgarian>
-            <Latin>Camuflaje original (frondoso)</Latin>
+            <Latin>Dissimulatio originalis (luxurians)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_lush_short">
             <English>Camo (Lush)</English>
@@ -356,7 +356,7 @@
             <Hungarian>Álcázás (buja)</Hungarian>
             <Ukrainian>Камуфляж (лісовий)</Ukrainian>
             <Bulgarian>Камуфлаж (буен)</Bulgarian>
-            <Latin>Camuflaje (frondoso)</Latin>
+            <Latin>Dissimulatio (luxurians)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_semiarid">
             <English>Vanilla Camouflage (Semi-Arid)</English>
@@ -377,7 +377,7 @@
             <Hungarian>Eredeti álcázás (félszáraz)</Hungarian>
             <Ukrainian>Оригінальний камуфляж (напівпустельний)</Ukrainian>
             <Bulgarian>Оригинален камуфлаж (полупустинен)</Bulgarian>
-            <Latin>Camuflaje original (semiárido)</Latin>
+            <Latin>Dissimulatio originalis (semiarida)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_semiarid_short">
             <English>Camo (Semi-Arid)</English>
@@ -398,7 +398,7 @@
             <Hungarian>Álcázás (félszáraz)</Hungarian>
             <Ukrainian>Камуфляж (напівпустельний)</Ukrainian>
             <Bulgarian>Камуфлаж (полупустинен)</Bulgarian>
-            <Latin>Camuflaje (semiárido)</Latin>
+            <Latin>Dissimulatio (semiarida)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_camo_vanilla_short">
             <English>Camo (Standard)</English>
@@ -419,7 +419,7 @@
             <Hungarian>Álcázás (normál)</Hungarian>
             <Ukrainian>Камуфляж (стандартний)</Ukrainian>
             <Bulgarian>Камуфлаж (стандартен)</Bulgarian>
-            <Latin>Camuflaje (estándar)</Latin>
+            <Latin>Dissimulatio (regularis)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_displayName">
             <English>Camouflage</English>
@@ -440,7 +440,7 @@
             <Hungarian>Álcázás</Hungarian>
             <Ukrainian>Камуфляж</Ukrainian>
             <Bulgarian>Камуфлаж</Bulgarian>
-            <Latin>Camuflaje</Latin>
+            <Latin>Dissimulatio</Latin>
         </Key>
         <Key ID="STR_CFR_Common_facepaintUseLeft">
             <English>Facepaint: 1 use left</English>
@@ -461,7 +461,7 @@
             <Hungarian>Arcfesték: 1 használat maradt</Hungarian>
             <Ukrainian>Грим: залишилося 1 використання</Ukrainian>
             <Bulgarian>Боя за лице: остава 1 употреба</Bulgarian>
-            <Latin>Pintura facial: queda 1 uso</Latin>
+            <Latin>Fucus faciei: usus unus superest</Latin>
         </Key>
         <Key ID="STR_CFR_Common_facepaintUsedUp">
             <English>Facepaint used up</English>
@@ -482,7 +482,7 @@
             <Hungarian>Az arcfesték elfogyott</Hungarian>
             <Ukrainian>Грим закінчився</Ukrainian>
             <Bulgarian>Бояжията за лице свърши</Bulgarian>
-            <Latin>Pintura facial agotada</Latin>
+            <Latin>Fucus faciei consumptus</Latin>
         </Key>
         <Key ID="STR_CFR_Common_facepaintUsesLeft">
             <English>Facepaint: %1 uses left</English>
@@ -503,7 +503,7 @@
             <Hungarian>Arcfesték: %1 használat maradt</Hungarian>
             <Ukrainian>Грим: залишилося %1 використань</Ukrainian>
             <Bulgarian>Боя за лице: остават %1 употреби</Bulgarian>
-            <Latin>Pintura facial: quedan %1 usos</Latin>
+            <Latin>Fucus faciei: %1 usus supersunt</Latin>
         </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>
@@ -524,7 +524,7 @@
             <Hungarian>Ezt az arcot nem lehet álcázni</Hungarian>
             <Ukrainian>Це обличчя не можна камуфлювати</Ukrainian>
             <Bulgarian>Това лице не може да бъде камуфлирано</Bulgarian>
-            <Latin>Esta cara no se puede camuflar</Latin>
+            <Latin>Haec facies dissimulari non potest</Latin>
         </Key>
         <Key ID="STR_CFR_Common_noFacepaint">
             <English>No usable facepaint left</English>
@@ -545,7 +545,7 @@
             <Hungarian>Nincs több használható arcfesték</Hungarian>
             <Ukrainian>Не залишилося придатного гриму</Ukrainian>
             <Bulgarian>Не е останала използваема боя за лице</Bulgarian>
-            <Latin>No queda pintura facial utilizable</Latin>
+            <Latin>Nullus fucus faciei utilis superest</Latin>
         </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_name">
             <English>Camo Wear-off Time (Minutes)</English>
@@ -566,7 +566,7 @@
             <Hungarian>Az álcázás elhalványulásának ideje (perc)</Hungarian>
             <Ukrainian>Час до стирання камуфляжу (хвилини)</Ukrainian>
             <Bulgarian>Време до избледняване на камуфлажа (минути)</Bulgarian>
-            <Latin>Tiempo hasta que se desvanece el camuflaje (minutos)</Latin>
+            <Latin>Tempus evanescendi dissimulationis (minuta)</Latin>
         </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_tooltip">
             <English>How many minutes after being applied a camouflage face automatically wears off and reverts to the original face, simulating it fading from rain, sweat, or time. Each application varies a little (roughly +/- 10 minutes) so players don't all lose it at once, and the wearer gets a warning about a minute before it goes. Only player-controlled units wear off; AI keep their camo until it is cleaned. Set to 0 to disable - camo will never wear off on its own.</English>
@@ -587,7 +587,7 @@
             <Hungarian>Hány perccel a felhordás után halványul el magától az arcra festett álcázás, és tér vissza az eredeti arc, az eső, az izzadság vagy az idő hatását szimulálva. Minden felhordás kicsit eltér (nagyjából +/- 10 perc), hogy ne minden játékos veszítse el egyszerre, és a viselő nagyjából egy perccel előtte figyelmeztetést kap. Csak a játékosok által irányított egységeknél halványul el; a MI megtartja az álcázását, amíg le nem mossák. 0-ra állítva kikapcsol – az álcázás ilyenkor soha nem halványul el magától.</Hungarian>
             <Ukrainian>Через скільки хвилин після нанесення камуфляж на обличчі автоматично стирається й повертається початкове обличчя, імітуючи дію дощу, поту чи часу. Кожне нанесення трохи відрізняється (приблизно +/- 10 хвилин), щоб не всі гравці втрачали камуфляж одночасно, а власника попереджають приблизно за хвилину. Стирається лише в юнітів під керуванням гравців; ШІ зберігає камуфляж, доки його не змиють. Встановіть 0, щоб вимкнути: камуфляж ніколи не зітреться сам.</Ukrainian>
             <Bulgarian>След колко минути от нанасянето камуфлажът на лицето избледнява автоматично и се връща оригиналното лице, като имитира действието на дъжд, пот или време. Всяко нанасяне се различава малко (приблизно +/- 10 минути), за да не губят всички играчи камуфлажа си едновременно, а носещият получава предупреждение около минута преди това. Избледняват само единиците, управлявани от играчи; изкуственият интелект запазва камуфлажа си, докато не бъде почистен. Задайте 0, за да изключите: камуфлажът никога няма да избледнее сам.</Bulgarian>
-            <Latin>Minutos tras aplicarlo que tarda un camuflaje facial en desvanecerse automáticamente y volver a la cara original, simulando el efecto de la lluvia, el sudor o el paso del tiempo. Cada aplicación varía un poco (aproximadamente +/- 10 minutos) para que no todos los jugadores lo pierdan a la vez, y el portador recibe un aviso aproximadamente un minuto antes. Solo se desvanece en las unidades controladas por jugadores; la IA conserva su camuflaje hasta que se limpie. Pon 0 para desactivarlo: el camuflaje nunca se desvanecerá por sí solo.</Latin>
+            <Latin>Quot minutis post inductionem dissimulatio faciei sponte evanescat et facies prior restituatur, imitans effectum pluviae, sudoris vel temporis. Singulae inductiones paulum variant (circiter +/- 10 minuta), ne omnes lusores eam simul amittant, et gestor circiter minuto ante monetur. Solae unitates a lusoribus ductae evanescunt; IA dissimulationem retinet donec abluatur. Pone 0 ut hoc inhibeas: dissimulatio numquam sponte evanescet.</Latin>
         </Key>
     </Package>
 </Project>
