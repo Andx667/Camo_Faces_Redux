@@ -107,12 +107,12 @@ def load_strings():
 
 
 def every_face():
-    """Every head the mod covers, read straight out of fnc_init.sqf."""
-    init = (REPO / "addons/common/functions/fnc_init.sqf").read_text(encoding="utf-8")
-    faces = re.findall(r'"([^"]+)"', re.search(r"GVAR\(all_faces\)\s*=\s*\[(.*?)\];", init, re.S).group(1))
-    for _appid, body in re.findall(r"\[(\d{6,7}),\s*\[(.*?)\]\]", init, re.S):
-        faces += re.findall(r'"([^"]+)"', body)
-    return faces
+    """Every head the mod covers: those already registered in CfgCamoRegistry.hpp, plus the ones
+    in NEW that generate_registry.py hasn't registered yet."""
+    reg = (REPO / "addons/faces/CfgCamoRegistry.hpp").read_text(encoding="utf-8")
+    base_block = reg.split("class CfgCamoSchemes {", 1)[0].split("class CfgCamoBaseFaces {", 1)[1]
+    faces = re.findall(r"class (\w+) \{", base_block)
+    return faces + [f.cls for f in NEW.values() if f.cls not in faces]
 
 
 def main():

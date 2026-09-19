@@ -4,7 +4,7 @@
  * onLBSelChanged handler for the country listbox (Dialog.hpp). Repopulates the camo-pattern
  * listbox with whatever cfr_common's fnc_getCamoOptions returns for the newly selected
  * country/group. Also swaps the paint-box picture to the SnowStripes white-swatch texture when
- * "snow_select" is what's newly selected (and back to the default brown one otherwise) - keyed
+ * a whiteBox category (CfgCamoCategories, i.e. snow) is what's newly selected (and back to the default brown one otherwise) - keyed
  * off the actual selection rather than just whether the player happens to be carrying the item,
  * so having multiple facepaint items at once doesn't leave the wrong box showing while a
  * different scheme is selected.
@@ -37,9 +37,10 @@ lbClear _lbCamo;
 // fill with camo options available for the selected country
 private _camoOptions = [_selectId] call EFUNC(common,getCamoOptions);
 
-// SnowStripes white-swatch box (see header comment above)
+// white-swatch box for a category flagged whiteBox in CfgCamoCategories (see header comment above)
 private _box = _display displayCtrl IDC_PICTURE_BOX;
-_box ctrlSetText (if (_selectId == "snow_select") then {
+private _whiteBox = (EGVAR(common,categories) findIf {(_x select 0) == _selectId && {_x select 3}}) != -1;
+_box ctrlSetText (if (_whiteBox) then {
     [QPATHTOF2(data\UI\box_snow.paa), QPATHTOF2(data\UI\box_snow_night.paa)] select GVAR(isNight)
 } else {
     [QPATHTOF2(data\UI\box.paa), QPATHTOF2(data\UI\box_night.paa)] select GVAR(isNight)

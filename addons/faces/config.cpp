@@ -8,7 +8,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cfr_main"
+            "cfr_main",
+            "cfr_common"
         };
         units[] = {};
         weapons[] = {};
@@ -17,3 +18,4 @@ class CfgPatches {
 };
 
 #include "CfgFaces.hpp"
+#include "CfgCamoRegistry.hpp"

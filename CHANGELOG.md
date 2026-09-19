@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Other addons can now add camouflage faces and whole new schemes purely through config (`CfgCamoBaseFaces`, `CfgCamoSchemes`, `CfgCamoCategories`), and they show up in the dialog, the ACE self-actions and the Zeus menu with no changes to this mod. The mod's own faces and schemes are registered through the same mechanism. See "Extending the mod" in `cfr_common`'s README
+
+### Changed
+
+- Everything that lists camo schemes (face lists, DLC gates, dialog categories, ACE self-actions) is now read from that config registry instead of being hardcoded in several places. The per-scheme ACE self-actions are built when the menu opens rather than declared one by one
+- The Snow Stripes facepaint alone now shows the camo action when carried; it was previously missing from the list of items that unlock the menu entry
+
 ## [1.0.0] - 2026-09-18
 
 ### Added

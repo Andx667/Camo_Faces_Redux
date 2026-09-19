@@ -8,8 +8,8 @@
 # GkHA3=Greek, PHA3=Persian) and add TnHA3=Tanoan, LvH=Livonian, RuH=Russian. Texture
 # basenames keep the vanilla filename, as the rest of the mod already does.
 #
-# To cover further heads, add them to NEW and to the DLC face list in cfr_common's
-# fnc_init.sqf, then run the pipeline described in README.md.
+# To cover further heads, add them to NEW (and its DLC's App ID to APPID), then run the pipeline
+# described in README.md - generate_registry.py registers them with cfr_common.
 
 from collections import namedtuple
 
@@ -27,7 +27,8 @@ DLC_PBO = {
     "EPB": "Addons/characters_f_epb.pbo",
 }
 
-# Steam App IDs, used by the isDLCAvailable gate in cfr_common's fnc_init.sqf. Old Man
+# Steam App IDs, written as requiredDLC by generate_registry.py and enforced with isDLCAvailable
+# by cfr_common's fnc_init.sqf. Old Man
 # declares no App ID of its own and ships inside Apex's folder, so it rides Apex's gate.
 APPID = {"Expansion": 395180, "Oldman": 395180, "Enoch": 1021790, "Orange": 571710,
          "Tacops": 744950, "Tank": 798390}

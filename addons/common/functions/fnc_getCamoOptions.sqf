@@ -1,20 +1,20 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * Returns the camo schemes available under a given country/group selection (see
- * fnc_getCountryOptions.sqf) that the player's current base face actually has a variant for, as
- * [displayName, schemeId] pairs for the dialog's camo-pattern listbox. Only offers options while
+ * Returns the camo schemes listed under a given category (see fnc_getCountryOptions.sqf) that the
+ * player's current base face actually has a variant for, as [displayName, schemeId] pairs for the
+ * dialog's camo-pattern listbox. Only offers options while
  * the player's face is a known, un-camo'd base face - switching camo schemes directly isn't
  * supported, the current one has to be removed first.
  *
  * Arguments:
- * 0: Selected Country/Group <STRING>
+ * 0: Selected category id, e.g. "bw" (a CfgCamoCategories class) <STRING>
  *
  * Return Value:
  * List of available Camos <ARRAY>
  *
  * Example:
- * ["bw_select"] call cfr_common_fnc_getCamoOptions
+ * ["bw"] call cfr_common_fnc_getCamoOptions
  *
  * Public: No
  */
@@ -24,55 +24,24 @@ TRACE_1("fnc_getCamoOptions",_this);
 
 private _selected = [];
 private _face = face player;
+private _uniformItems = uniformItems player;
 
 // only offer options while the player's current face is an un-camo'd base face - switching camo
 // schemes directly isn't supported, remove the current one first (matches existing behavior)
 if (_face in GVAR(all_faces)) then {
-    // "STR_cfr_common_" - built once via the same DOUBLES/QUOTE macros LSTRING uses internally, so a
-    // scheme's stringKey can be localized without a compile-time-fixed LSTRING(x) call. HEMTT's
-    // stringtable linter can't trace this concatenation back to a static key and will warn about it
-    // (L-L02M, "missing keys in use") - every stringKey in GVAR(schemes) is a real, verified key in
-    // stringtable.xml (camo_bwtarn, camo_black, camo_bwstripes, camo_serbian, camo_usstripes,
-    // camo_usstains, camo_usflash, camo_vanilla, camo_serbian_short, camo_vanilla_short,
-    // camo_snowstripes); this is a false positive, not a real missing key.
-    private _strPrefix = QUOTE(DOUBLES(STR,ADDON)) + "_";
-
-    // The notebook's pattern list (this function) is narrow, so a couple of schemes get a shorter
-    // label here than their shared GVAR(schemes) stringKey - which stays unshortened for other
-    // consumers (ACE self-actions, ZEN context menu) that have more room to display it.
-    private _shortStringKeys = [["Serbian", "camo_serbian_short"], ["Vanilla", "camo_vanilla_short"],
-        ["VanillaArid", "camo_vanilla_arid_short"], ["VanillaLush", "camo_vanilla_lush_short"],
-        ["VanillaSemiArid", "camo_vanilla_semiarid_short"]];
-
-    // "Black" isn't tied to one specific item like the others - it's offered under every country
-    // selection so it's reachable with whichever facepaint item the player actually has equipped
-    private _schemeIds = switch (_select) do {
-        case "bw_select": { ["BWTarn", "BWStripes", "Black"] };
-        case "serbian_select": { ["Serbian", "Black"] };
-        case "us_select": { ["USStripes", "USStains", "USFlash", "Black"] };
-        // Vanilla's three environment variants only exist for three base faces; the pairs check
-        // below drops the ones the player's face has no variant for, so most faces see only "Vanilla"
-        case "vanilla_select": { ["Vanilla", "VanillaArid", "VanillaLush", "VanillaSemiArid"] };
-        // SnowStripes - own category, own item (see fnc_getCountryOptions.sqf), only one color so
-        // no "Black" fallback needed alongside it like the military categories above
-        case "snow_select": { ["SnowStripes"] };
-        default { [] };
-    };
-
+    // GVAR(schemes) is in config order, which is also the order the options are listed in. A scheme
+    // with no pair for this face isn't offered - that is how e.g. Black is skipped on very dark skin,
+    // and why Vanilla's environment variants show up for only three faces. shortName is the narrower
+    // label meant for this list (it is just displayName for schemes that don't define one).
     {
-        private _schemeId = _x;
-        private _schemeIdx = GVAR(schemes) findIf {(_x select 0) == _schemeId};
-        if (_schemeIdx != -1) then {
-            (GVAR(schemes) select _schemeIdx) params ["", "_pairs", "", "_stringKey"];
+        _x params ["_schemeId", "_pairs", "_itemClasses", "", "_shortName", "", "_categories"];
 
-            private _shortKeyIdx = _shortStringKeys findIf {(_x select 0) == _schemeId};
-            if (_shortKeyIdx != -1) then {_stringKey = (_shortStringKeys select _shortKeyIdx) select 1;};
-
-            if ((_pairs findIf {(_x select 0) == _face}) != -1) then {
-                _selected pushBack [localize (_strPrefix + _stringKey), _schemeId];
-            };
+        // the scheme's own items gate it, not just the category's: a category can list schemes that
+        // different facepaints unlock, and the dialog's apply path doesn't re-check items later
+        if ((_categories findIf {_x == _select}) != -1 && {(_itemClasses findIf {_x in _uniformItems}) != -1} && {(_pairs findIf {(_x select 0) == _face}) != -1}) then {
+            _selected pushBack [_shortName, _schemeId];
         };
-    } forEach _schemeIds;
+    } forEach GVAR(schemes);
 };
 
 //return value
