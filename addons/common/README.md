@@ -11,8 +11,8 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 | Function | Arguments | Description |
 | --- | --- | --- |
 | `fnc_init` | none | Reads the config registry (`CfgCamoBaseFaces`/`CfgCamoSchemes`/`CfgCamoCategories`, see "Extending the mod" below) into `GVAR(all_faces)`/`GVAR(schemes)`/`GVAR(categories)`/`GVAR(itemClasses)`; called from `XEH_preInit` so this data exists before any mission entity - and therefore before any unit's init field - runs (`fnc_setCamo`/`fnc_unsetCamo` also self-defer a frame via `CBA_fnc_waitAndExecute` if called before this has run, as a safety net) |
-| `fnc_getCountryOptions` | `[unit]` | Returns which categories (`CfgCamoCategories` - by default BW / Serbian / US / Snow Stripes / Vanilla) a unit can use: it carries one of the category's items and at least one scheme in it has a variant for the unit's face |
-| `fnc_getCamoOptions` | `[category]` | Returns the specific camo patterns available within a category, for the calling player's current base face |
+| `fnc_getCountryOptions` | `[unit]` | Returns which categories (`CfgCamoCategories` - by default BW / Serbian / US / Snow Stripes / Vanilla) a unit can use: it carries one of the category's items and at least one scheme in it is unlocked by the unit's items and has a variant for the unit's face |
+| `fnc_getCamoOptions` | `[category]` | Returns the specific camo patterns available within a category, for the calling player's current base face and carried items |
 | `fnc_setCamo` | `[unit, camo]` | Applies a camo face to a unit if the combination is valid, and hints the result; also schedules automatic wear-off if enabled (see Settings below) |
 | `fnc_unsetCamo` | `[unit, face]` | Reverses whichever scheme the unit's current camo face belongs to, restoring its base face |
 | `fnc_isCamoFace` | `[face]` | Checks whether a face classname is one of this mod's camo variants, under any scheme — shared predicate used by `fnc_setCamo`, `cfr_dialog`'s `fnc_canShowAction`, and both `fnc_unsetCamo` files |
@@ -80,7 +80,7 @@ Faces and schemes are registered entirely through config, so another addon can a
 
 - `CfgCamoBaseFaces` — one class per face that can be camouflaged, named after its `CfgFaces` class. Optional `requiredDLC = <Steam App ID>;` hides the face from anyone who doesn't own that DLC.
 - `CfgCamoSchemes` — one class per scheme: `displayName` (a `$STR_` key or plain text), optional `shortName`, `icon`, `items[]` (facepaint items that unlock it), `categories[]` (which dialog categories list it), optional `requiredDLC`, and `class Faces { <baseFace> = "<camoFace>"; };` — the pairs. A scheme with no pair for a face is never offered for it.
-- `CfgCamoCategories` — the dialog's first list: `displayName`, `items[]` (a category is offered when the unit carries one of them and at least one scheme in it covers the unit's face) and an optional `whiteBox = 1;` for the white-swatch paint box.
+- `CfgCamoCategories` — the dialog's first list: `displayName`, `items[]` (a category is offered when the unit carries one of them and at least one scheme in it is unlocked by an item the unit carries and covers the unit's face — schemes are gated by their own `items[]`, so a category and its schemes don't have to share the same items) and an optional `whiteBox = 1;` for the white-swatch paint box.
 
 **Give an existing scheme more faces** (e.g. a face pack) — ship your own `CfgFaces` camo classes and textures, then:
 

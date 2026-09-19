@@ -7,7 +7,8 @@
 // cfr_faces, through exactly the same config extension any other addon would use.
 
 // What the dialog's first list shows. A category is offered when the unit carries one of its items
-// AND at least one of its schemes has a variant for the unit's current face.
+// AND at least one of its schemes is unlocked by an item the unit carries (each scheme's own items[])
+// and has a variant for the unit's current face.
 class CfgCamoCategories {
     class bw {
         displayName = ECSTRING(items,bw_facepaint_displayname);
