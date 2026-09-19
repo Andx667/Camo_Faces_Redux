@@ -11,7 +11,7 @@ The project is entirely open-source and any contributions are welcome — see [C
 
 ## Core Features
 
-- Adds camo face variants of many base game faces, in multiple schemes:
+- Adds camo face variants of the base game's faces, and of those added by Apex, Contact, Laws of War, Tac-Ops Mission Pack and Tanks, in multiple schemes:
     - Bundeswehr Camouflage
     - Bundeswehr Stripes
     - Serbian Camouflage
@@ -19,8 +19,13 @@ The project is entirely open-source and any contributions are welcome — see [C
     - US Stripes
     - US Flash
     - US Stains
-- Adds an inventory item needed to camouflage your face
+    - Snow Stripes
+    - Bohemia's own Marksmen DLC camo faces (if you own the DLC)
+- Adds facepaint inventory items needed to camouflage your face, and a supply box stocked with them
+- Camouflage yourself through a dialog or ACE self-actions, or [paint and clean a teammate's face](usage.md#painting-a-teammate)
+- Optional wear-off of applied camo after a configurable time, with a warning shortly before it goes
 - Optional [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) integration for applying/removing camo as a curator
+- Other addons can register their own faces and camo schemes through config - see [Scripting & API](scripting.md#scheme-ids)
 
 ## Getting Started
 

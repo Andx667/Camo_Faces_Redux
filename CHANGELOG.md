@@ -7,16 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-09-19
+
 ### Added
 
 - Buddy painting: players can paint camouflage on, or clean it off, the face of a friendly unit (player or AI) standing next to them, through the ACE interaction menu on that unit's head. Painting needs facepaint in the painter's uniform and the target's helmet, goggles and night vision off; cleaning needs nothing. New CBA setting **Allow Painting Other Units** (on by default, shared by all clients) turns it off. Painting doesn't use up any facepaint yet
-- A hint warns the wearer a minute before their camouflage wears off, since the wear-off time is randomised and can't be predicted from the setting
 - Other addons can now add camouflage faces and whole new schemes purely through config (`CfgCamoBaseFaces`, `CfgCamoSchemes`, `CfgCamoCategories`), and they show up in the dialog, the ACE self-actions and the Zeus menu with no changes to this mod. The mod's own faces and schemes are registered through the same mechanism. See "Extending the mod" in `cfr_common`'s README
+- Each camo application's wear-off duration is now randomised with the configured **Camo Wear-off Time** as the most likely value, typically within about 10 minutes either side, so players who applied camo together don't all lose it at the same moment. The spread is fixed rather than a setting, and a duration is never shorter than a minute
+- A hint warns the wearer a minute before their camouflage wears off, since the randomised wear-off time can't be predicted from the setting
 
 ### Changed
 
-- Everything that lists camo schemes (face lists, DLC gates, dialog categories, ACE self-actions) is now read from that config registry instead of being hardcoded in several places. The per-scheme ACE self-actions are built when the menu opens rather than declared one by one
+- **Breaking for scripters and addon authors:** everything that lists camo schemes (face lists, DLC gates, dialog categories, ACE self-actions) is now read from the config registry instead of being hardcoded in several places. `cfr_common`'s internal data changed shape as a result: `GVAR(schemes)` rows are now `[schemeId, pairs, itemClasses, displayName, shortName, icon, categories]` (the fourth entry is an already-localized name, no longer a stringtable key), and `GVAR(faces_noBlack)`, `GVAR(vanillaCamoFacePairs)` and `GVAR(markCamoFaceSchemes)` are gone. The public functions and the `cfr_common_camoApplied`/`cfr_common_camoRemoved` events are unchanged. The per-scheme ACE self-actions are built when the menu opens rather than declared one by one, so the `cfr_dialog_Action_<Scheme>` classes no longer exist in config
+- The wear-off timer now runs on the machine that owns the unit rather than on whichever machine applied the camo, so a Zeus applying camo to a player no longer leaves the timer on the curator's machine (where it would die with them). As a result the "camouflage removed" hint and `cfr_common_camoRemoved` fire on the wearer's machine. AI units no longer wear off - they can't reapply camo themselves, so wearing it off would only strip it for good; camo on an AI unit stays until it is cleaned or removed
+
+### Fixed
+
+- Camo removed or reapplied from another machine (for example by a second Zeus) is no longer stripped early by a stale wear-off timer left over from an earlier application
 - The Snow Stripes facepaint alone now shows the camo action when carried; it was previously missing from the list of items that unlock the menu entry
+- The README, Steam Workshop description and documentation site feature lists were out of date: they now cover Snow Stripes and its facepaint item, the DLC faces, the Marksmen camo faces, wear-off, buddy painting and the extension mechanism
 
 ## [1.0.0] - 2026-09-18
 
@@ -79,7 +88,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release (RC1)
 
-[Unreleased]: https://github.com/Andx667/Camo_Faces_Redux/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Andx667/Camo_Faces_Redux/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.4...v1.0.0
 [0.9.4]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.3...v0.9.4
 [0.9.3]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.2...v0.9.3

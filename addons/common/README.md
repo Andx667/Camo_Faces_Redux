@@ -1,6 +1,6 @@
 # Common (`cfr_common`)
 
-Core, UI-independent logic for applying and removing camouflage: building the lists of known faces, resolving which camo options are available to a unit, and actually changing (and networking) a unit's face. `cfr_dialog` is the only consumer of these functions, so the UI stays a thin layer over this shared logic.
+Core, UI-independent logic for applying and removing camouflage: building the lists of known faces, resolving which camo options are available to a unit, and actually changing (and networking) a unit's face. `cfr_dialog` (and the optional `cfr_compat_zen`) are consumers of these functions, so each UI stays a thin layer over this shared logic.
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 ## Public API events
 
-`fnc_setCamo`/`fnc_unsetCamo` raise two CBA events for other mods/missions to hook into, both only on a successful apply/removal (never on a rejected attempt), both via `CBA_fnc_localEvent` — i.e. only on the machine that actually ran `fnc_setCamo`/`fnc_unsetCamo` (typically whichever client is applying/removing its own camo), unlike the internal `cfr_common_setFace` event above, which is a `CBA_fnc_globalEvent` broadcast to every machine:
+`fnc_setCamo`/`fnc_unsetCamo` raise two CBA events for other mods/missions to hook into, both only on a successful apply/removal (never on a rejected attempt), both via `CBA_fnc_localEvent` — i.e. only on the machine that actually ran `fnc_setCamo`/`fnc_unsetCamo`: the client applying/removing its own camo, the painter's machine when a player paints or cleans a teammate (`cfr_dialog`), a Zeus's machine for the ZEN menu, or - for a camo wearing off - the wearer's own machine, where the timer runs, unlike the internal `cfr_common_setFace` event above, which is a `CBA_fnc_globalEvent` broadcast to every machine:
 
 - `cfr_common_camoApplied` — `[unit, schemeId, oldFace, newFace]`, raised by `fnc_setCamo` after a camo face is applied
 - `cfr_common_camoRemoved` — `[unit, schemeId, oldFace, newFace]`, raised by `fnc_unsetCamo` after a camo face is removed, restoring the base face
@@ -72,7 +72,7 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 There are four Vanilla rows. `Vanilla` covers every base face, one BI-authored `CamoHead_*` variant each. `VanillaArid`, `VanillaLush` and `VanillaSemiArid` are Marksmen's environment-specific faces, which BI authored for only three base faces — `PersianHead_A3_01`, `GreekHead_A3_02` and `WhiteHead_11`. They need a row each rather than one shared row because a scheme's `pairs` map a base face to exactly one camo face, so a single row can't offer one face three choices. Which base face each is painted over was determined by comparing the textures outside the painted area, not assumed.
 
-Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `cfr_dialog`'s `fnc_handleRespawn` (on respawn) can reapply it.
+Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `fnc_handleRespawn` (on respawn) can reapply it.
 
 ## Extending the mod
 

@@ -16,9 +16,10 @@ Adds the inventory items needed to camouflage your face, and a supply box to dis
 | BW Facepaint | `cfr_items_BW_Facepaint` | Used by the German Armed Forces |
 | Serbian Facepaint | `cfr_items_Serbian_Facepaint` | Used by the Serbian Armed Forces |
 | US Facepaint | `cfr_items_US_Facepaint` | Used by the US Armed Forces |
+| Snow Stripes Facepaint | `cfr_items_SnowStripes_Facepaint` | White/green paint that unlocks the Snow Stripes scheme; reuses the BW model and icon as a placeholder |
 | Box of Facepaint | `cfr_items_box` | A `Box_NATO_Support_F`-based supply crate stocked with 30 of each facepaint item above |
 
-All three facepaint items are `ACE_ItemCore`-based (`CfgWeapons.hpp`), with `Serbian_Facepaint` and `BW_Facepaint` inheriting their `ItemInfo`/mass from `US_Facepaint`. `cfr_common`'s `fnc_getCountryOptions` checks a unit's `uniformItems` for these exact classnames to decide which camo schemes it can offer.
+All four facepaint items are `ACE_ItemCore`-based (`CfgWeapons.hpp`), with `Serbian_Facepaint`, `BW_Facepaint` and `SnowStripes_Facepaint` inheriting their `ItemInfo`/mass from `US_Facepaint`. Which item unlocks which scheme is not decided here: each scheme lists its unlocking items in `cfr_common`'s `CfgCamoSchemes` registry (`items[]`), and other addons can add their own items the same way.
 
 ## Known issues / future work
 
