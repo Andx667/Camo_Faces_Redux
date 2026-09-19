@@ -24,18 +24,17 @@
 params ["_unit"];
 TRACE_1("fnc_getCountryOptions",_this);
 
-private _uniformItems = uniformItems _unit;
 private _face = face _unit;
 private _camolist = [];
 
 {
     _x params ["_categoryId", "_displayName", "_itemClasses"];
 
-    if ((_itemClasses findIf {_x in _uniformItems}) != -1) then {
+    if ([_unit, _itemClasses] call FUNC(hasFacepaint)) then {
         private _offered = GVAR(schemes) findIf {
             _x params ["", "_pairs", "_schemeItems", "", "", "", "_categories"];
             (_categories findIf {_x == _categoryId}) != -1
-            && {(_schemeItems findIf {_x in _uniformItems}) != -1}
+            && {[_unit, _schemeItems] call FUNC(hasFacepaint)}
             && {(_pairs findIf {(_x select 0) == _face}) != -1}
         };
 

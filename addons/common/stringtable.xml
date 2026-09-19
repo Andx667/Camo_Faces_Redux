@@ -85,9 +85,25 @@
             <English>Camouflage</English>
             <German>Tarnung</German>
         </Key>
+        <Key ID="STR_CFR_Common_facepaintUseLeft">
+            <English>Facepaint: 1 use left</English>
+            <German>Tarnschminke: noch 1 Anwendung</German>
+        </Key>
+        <Key ID="STR_CFR_Common_facepaintUsedUp">
+            <English>Facepaint used up</English>
+            <German>Tarnschminke aufgebraucht</German>
+        </Key>
+        <Key ID="STR_CFR_Common_facepaintUsesLeft">
+            <English>Facepaint: %1 uses left</English>
+            <German>Tarnschminke: noch %1 Anwendungen</German>
+        </Key>
         <Key ID="STR_CFR_Common_invalidFace">
             <English>This face cannot be camouflaged</English>
             <German>Dieses Gesicht kann nicht getarnt werden</German>
+        </Key>
+        <Key ID="STR_CFR_Common_noFacepaint">
+            <English>No usable facepaint left</English>
+            <German>Keine verwendbare Tarnschminke mehr</German>
         </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_name">
             <English>Camo Wear-off Time (Minutes)</English>

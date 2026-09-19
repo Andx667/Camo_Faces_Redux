@@ -12,26 +12,27 @@
 class CfgCamoCategories {
     class bw {
         displayName = ECSTRING(items,bw_facepaint_displayname);
-        items[] = {QEGVAR(items,BW_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,BW_Facepaint)};
     };
     class serbian {
         displayName = ECSTRING(items,serbian_facepaint_displayname);
-        items[] = {QEGVAR(items,Serbian_Facepaint)};
+        items[] = {QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,Serbian_Facepaint)};
     };
     class us {
         displayName = ECSTRING(items,us_facepaint_displayname);
-        items[] = {QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,US_FacepaintStick), QEGVAR(items,US_Facepaint)};
     };
     // whiteBox: the dialog shows the white-swatch paint box instead of the shared brown one
     class snow {
         displayName = ECSTRING(items,snowstripes_facepaint_displayname);
-        items[] = {QEGVAR(items,SnowStripes_Facepaint)};
+        items[] = {QEGVAR(items,SnowStripes_FacepaintStick), QEGVAR(items,SnowStripes_Facepaint)};
         whiteBox = 1;
     };
     // not tied to one item - any of the three facepaints unlocks it
     class vanilla {
         displayName = CSTRING(camo_vanilla);
-        items[] = {QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
+            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
     };
 };
 
@@ -45,7 +46,9 @@ class CfgCamoBaseFaces {};
 //   displayName  - shown in the ACE self-actions and the ZEN menu
 //   shortName    - optional shorter label for the dialog's narrow pattern list (defaults to displayName)
 //   icon         - ACE self-action icon (defaults to the generic camo icon)
-//   items[]      - facepaint items that unlock the scheme (carrying any one is enough)
+//   items[]      - facepaint items that unlock the scheme (carrying any one is enough). A magazine-type
+//                  class (CfgMagazines, like cfr_items' facepaint sticks) is used up - one round per
+//                  application - while a plain item (CfgWeapons) is not
 //   categories[] - CfgCamoCategories entries the dialog lists it under
 //   requiredDLC  - Steam App ID that must be owned for the scheme to exist at all (0 = none)
 //   class Faces  - "<base face> = <camo face>;" pairs. A scheme without a pair for a face is never
@@ -55,52 +58,53 @@ class CfgCamoSchemes {
     class BWTarn {
         displayName = CSTRING(camo_bwtarn);
         icon = QPATHTOF(data\UI\Icon_bwtarn_ca.paa);
-        items[] = {QEGVAR(items,BW_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,BW_Facepaint)};
         categories[] = {"bw"};
     };
     class BWStripes {
         displayName = CSTRING(camo_bwstripes);
         icon = QPATHTOF(data\UI\Icon_bwstripes_ca.paa);
-        items[] = {QEGVAR(items,BW_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,BW_Facepaint)};
         categories[] = {"bw"};
     };
     // a pure colour shift, not tied to a pattern - any facepaint unlocks it, under every military category
     class Black {
         displayName = CSTRING(camo_black);
         icon = QPATHTOF(data\UI\Icon_black_ca.paa);
-        items[] = {QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
+            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
         categories[] = {"bw", "serbian", "us"};
     };
     class Serbian {
         displayName = CSTRING(camo_serbian);
         shortName = CSTRING(camo_serbian_short);
         icon = QPATHTOF(data\UI\Icon_serbian_ca.paa);
-        items[] = {QEGVAR(items,Serbian_Facepaint)};
+        items[] = {QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,Serbian_Facepaint)};
         categories[] = {"serbian"};
     };
     class USStripes {
         displayName = CSTRING(camo_usstripes);
         icon = QPATHTOF(data\UI\Icon_usstripes_ca.paa);
-        items[] = {QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,US_FacepaintStick), QEGVAR(items,US_Facepaint)};
         categories[] = {"us"};
     };
     class USStains {
         displayName = CSTRING(camo_usstains);
         icon = QPATHTOF(data\UI\Icon_usstains_ca.paa);
-        items[] = {QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,US_FacepaintStick), QEGVAR(items,US_Facepaint)};
         categories[] = {"us"};
     };
     class USFlash {
         displayName = CSTRING(camo_usflash);
         icon = QPATHTOF(data\UI\Icon_usflash_ca.paa);
-        items[] = {QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,US_FacepaintStick), QEGVAR(items,US_Facepaint)};
         categories[] = {"us"};
     };
     // own item and own category; reuses the Black icon as a placeholder, no dedicated icon yet
     class SnowStripes {
         displayName = CSTRING(camo_snowstripes);
         icon = QPATHTOF(data\UI\Icon_black_ca.paa);
-        items[] = {QEGVAR(items,SnowStripes_Facepaint)};
+        items[] = {QEGVAR(items,SnowStripes_FacepaintStick), QEGVAR(items,SnowStripes_Facepaint)};
         categories[] = {"snow"};
     };
     // Bohemia's own Marksmen DLC camo faces (332350) - see cfr_faces for the pairs. A CamoHead_*
@@ -112,7 +116,8 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla);
         shortName = CSTRING(camo_vanilla_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
+            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };
@@ -122,7 +127,8 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla_arid);
         shortName = CSTRING(camo_vanilla_arid_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
+            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };
@@ -130,7 +136,8 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla_lush);
         shortName = CSTRING(camo_vanilla_lush_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
+            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };
@@ -138,7 +145,8 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla_semiarid);
         shortName = CSTRING(camo_vanilla_semiarid_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
+            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };

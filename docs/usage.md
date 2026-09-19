@@ -2,7 +2,7 @@
 
 ## Applying camouflage
 
-1. Equip one of the facepaint items (BW, Serbian, US or Snow Stripes Facepaint) in your uniform. These are stocked in the **Box of Facepaint** placed by mission makers, or can be added to a loadout directly.
+1. Carry one of the facepaint sticks (BW, Serbian, US or Snow Stripes) in your uniform, vest or backpack. These are stocked in the **Box of Facepaint** placed by mission makers, or can be added to a loadout directly. Each stick has 10 uses; every application spends one, and you're told how many are left.
 2. Remove your helmet, goggles, and night vision — camouflage can only be applied to a bare face.
 3. Open your ACE self-interaction menu and select **Camo Faces** to open the camouflage dialog.
 4. Pick a country/scheme from the left list, then a specific camo pattern from the right list.
@@ -10,7 +10,7 @@
 
 ## Painting a teammate
 
-You can paint a friendly unit's face too - a player or an AI teammate standing next to you. Have facepaint in your own uniform, make sure they've taken off their helmet, goggles and night vision, open the ACE interaction menu on their head (get within about a metre and a half and look at their face) and pick **Head -> Paint Face**, then the pattern. Stay next to them until the three layers are done; if they walk off or put headgear back on, it's cancelled. They'll see a message that you painted them. (The pattern entries are greyed out while their headgear is still on.)
+You can paint a friendly unit's face too - a player or an AI teammate standing next to you. Carry a facepaint stick yourself (it's your stick that gets used, one use per teammate painted), make sure they've taken off their helmet, goggles and night vision, open the ACE interaction menu on their head (get within about a metre and a half and look at their face) and pick **Head -> Paint Face**, then the pattern. Stay next to them until the three layers are done; if they walk off or put headgear back on, it's cancelled. They'll see a message that you painted them. (The pattern entries are greyed out while their headgear is still on.)
 
 ## Removing camouflage
 

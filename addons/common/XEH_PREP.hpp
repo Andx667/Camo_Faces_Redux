@@ -1,9 +1,12 @@
+PREP(facepaintUsesText);
 PREP(getCamoOptions);
 PREP(getCountryOptions);
 PREP(getSchemeDisplayName);
+PREP(hasFacepaint);
 PREP(handleRespawn);
 PREP(init);
 PREP(isCamoFace);
 PREP(setCamo);
 PREP(startWearOff);
 PREP(unsetCamo);
+PREP(useFacepaint);

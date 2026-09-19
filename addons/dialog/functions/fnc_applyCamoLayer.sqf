@@ -40,12 +40,30 @@ private _onFinish = if (_layer >= 3) then {
     {
         params ["_args"];
         _args params ["_camo", "_layer", "_target"];
+
+        // the painter's facepaint pays for it - one use of a stick per application, at the very end
+        // (legacy plain items cost nothing). fnc_setCamo itself never spends any, so Zeus and scripts stay free
+        private _left = [ACE_player, _camo] call EFUNC(common,useFacepaint);
+        // -2: no usable facepaint any more (it was moved or used up while the bars ran); anything else
+        // negative (except -1, "nothing to report") is a scheme that doesn't exist
+        if (_left < -1) exitWith {
+            hint (localize ([ELSTRING(common,invalidFace), ELSTRING(common,noFacepaint)] select (_left == -2)));
+        };
+
         [_target, _camo] call EFUNC(common,setCamo);
+        private _usesText = [_left] call EFUNC(common,facepaintUsesText);
 
         // fnc_setCamo only hints the machine's own player, so when painting someone else the painter
-        // and (if a player) the target have to be told separately
-        if (_target != ACE_player) then {
-            hint format [localize LSTRING(buddyPaintedOther), name _target];
+        // and (if a player) the target have to be told separately. The uses left are added to whichever
+        // message the painter sees
+        if (_target == ACE_player) then {
+            if (_usesText != "") then {
+                hint ((localize ELSTRING(common,camoApplied)) + "\n" + _usesText);
+            };
+        } else {
+            private _text = format [localize LSTRING(buddyPaintedOther), name _target];
+            if (_usesText != "") then {_text = _text + "\n" + _usesText};
+            hint _text;
             if (isPlayer _target) then {
                 [QGVAR(notifyTarget), [LSTRING(buddyPaintedYou), name ACE_player], _target] call CBA_fnc_targetEvent;
             };

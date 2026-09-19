@@ -39,7 +39,11 @@ Players can paint or clean the face of a **friendly** unit standing next to them
 
 `fnc_setCamo`/`fnc_unsetCamo` only hint the machine's own player, so both flows tell the painter themselves and send a `cfr_dialog_notifyTarget` targeted event (`[stringKey, painterName]`) to the target's machine when the target is a player. Nothing else needed networking: the face change is the existing `cfr_common_setFace` global event, and the wear-off timer (players only) is started on the target's own machine by `fnc_setCamo`. Painted AI keep their camo until someone cleans it.
 
-Not yet done: painting doesn't use up any facepaint (planned for later, together with limited uses per item).
+Painting spends one use of the *painter's* facepaint stick (see "Facepaint uses" below); cleaning costs nothing.
+
+## Facepaint uses
+
+The facepaint items are consumable sticks (see `cfr_items`): the dialog flow and both ACE flows spend exactly one use per successful application, at the very last step and just before `cfr_common`'s `fnc_setCamo`, through `cfr_common`'s `fnc_useFacepaint` (`fnc_applyCamo`'s third layer for the dialog, `fnc_applyCamoLayer`'s last layer for the ACE self-action and buddy painting). If that returns "no usable facepaint" (only possible if it vanished in the last frame - `fnc_canApplyScheme` re-checks it every frame of the bars) nothing is applied and the painter is told "No usable facepaint left" (not the unrelated "this face cannot be camouflaged"). Otherwise the painter is told how many uses are left, appended to the "applied" message, via `fnc_facepaintUsesText`. Every "does the player carry facepaint" check goes through `cfr_common`'s `fnc_hasFacepaint`, which counts a stick only while it has a use left and a legacy plain item always, anywhere in uniform, vest or backpack. `fnc_setCamo` never spends anything, which is what keeps Zeus, scripts and respawn/loadout restore free.
 
 ## Functions
 

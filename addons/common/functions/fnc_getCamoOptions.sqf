@@ -24,7 +24,6 @@ TRACE_1("fnc_getCamoOptions",_this);
 
 private _selected = [];
 private _face = face player;
-private _uniformItems = uniformItems player;
 
 // only offer options while the player's current face is an un-camo'd base face - switching camo
 // schemes directly isn't supported, remove the current one first (matches existing behavior)
@@ -38,7 +37,7 @@ if (_face in GVAR(all_faces)) then {
 
         // the scheme's own items gate it, not just the category's: a category can list schemes that
         // different facepaints unlock, and the dialog's apply path doesn't re-check items later
-        if ((_categories findIf {_x == _select}) != -1 && {(_itemClasses findIf {_x in _uniformItems}) != -1} && {(_pairs findIf {(_x select 0) == _face}) != -1}) then {
+        if ((_categories findIf {_x == _select}) != -1 && {[player, _itemClasses] call FUNC(hasFacepaint)} && {(_pairs findIf {(_x select 0) == _face}) != -1}) then {
             _selected pushBack [_shortName, _schemeId];
         };
     } forEach GVAR(schemes);

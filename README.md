@@ -41,7 +41,7 @@ Docs: <https://andx667.github.io/Camo_Faces_Redux/>
   - US Stains
   - Snow Stripes
   - Bohemia's own Marksmen DLC camo faces, if you own it
-- Adds facepaint inventory items needed to camouflage your face, and a supply box stocked with them
+- Adds consumable facepaint sticks (10 uses each) needed to camouflage your face, and a supply box stocked with them
 - Camouflage yourself through a dialog or through ACE self-actions, or paint (and clean) the face of a friendly teammate or AI unit through the ACE interaction menu on their head
 - Optional wear-off: camo can fade after a configurable time, with a warning shortly before it goes
 - Optional [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) integration for applying/removing camo as a curator
