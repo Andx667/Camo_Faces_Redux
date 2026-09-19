@@ -10,13 +10,13 @@
 
 ## Painting a teammate
 
-You can paint a friendly unit's face too - a player or an AI teammate standing next to you. Have facepaint in your own uniform, make sure they've taken off their helmet, goggles and night vision, open the ACE interaction menu on them and pick **Interactions -> Paint Face**, then the pattern. Stay next to them until the three layers are done; if they walk off or put headgear back on, it's cancelled. They'll see a message that you painted them. (The pattern entries are greyed out while their headgear is still on.)
+You can paint a friendly unit's face too - a player or an AI teammate standing next to you. Have facepaint in your own uniform, make sure they've taken off their helmet, goggles and night vision, open the ACE interaction menu on their head (get within about a metre and a half and look at their face) and pick **Head -> Paint Face**, then the pattern. Stay next to them until the three layers are done; if they walk off or put headgear back on, it's cancelled. They'll see a message that you painted them. (The pattern entries are greyed out while their headgear is still on.)
 
 ## Removing camouflage
 
 Open the dialog again (the self-action also shows while camo is currently applied) and use the **remove camo** button to revert to your original face.
 
-To wipe camo off a friendly unit's face, open the ACE interaction menu on them and pick **Interactions -> Clean Face**. This needs no facepaint item.
+To wipe camo off a friendly unit's face, open the ACE interaction menu on them and pick **Head -> Clean Face**. This needs no facepaint item.
 
 Mission makers can switch painting other units off with the **Allow Painting Other Units** setting.
 

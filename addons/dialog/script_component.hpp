@@ -113,8 +113,10 @@
 #define ST_HORIZONTAL     0
 
 // how far away (metres) the painter may be from the unit whose face they are painting or cleaning,
-// checked again every frame of the progress bar so walking away cancels it
-#define BUDDY_MAX_DISTANCE 3
+// checked again every frame of the progress bar so walking away cancels it. Slightly more than the
+// 1.5 m ACE_Head's interaction point reaches (the entries are on it, see CfgVehicles.hpp), since this
+// measures between the two units rather than to the head and so has to allow for a lying or kneeling target
+#define BUDDY_MAX_DISTANCE 2.5
 
 // Listbox styles
 #define LB_TEXTURES       0x10

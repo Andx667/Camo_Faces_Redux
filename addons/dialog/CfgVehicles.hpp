@@ -2,9 +2,11 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         // interactions on ANOTHER unit (buddy painting) - the ACE interaction menu on a friendly man.
-        // ACE_MainActions is ACE's own "Interactions" submenu, re-opened here just to add to it.
+        // ACE_Head is ACE's own head interaction point (ace_interaction: selection "pilot", 1.5 m -
+        // the same one ACE medical hangs its head treatments on), re-opened here just to add to it.
+        // Painting a face belongs there rather than on ACE_MainActions, which sits at the pelvis.
         class ACE_Actions {
-            class ACE_MainActions {
+            class ACE_Head {
                 class GVAR(BuddyPaint) {
                     displayName = CSTRING(buddyPaintAction);
                     condition = QUOTE([_target] call FUNC(canPaintBuddy));
