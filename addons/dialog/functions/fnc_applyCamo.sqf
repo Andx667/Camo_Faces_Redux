@@ -53,8 +53,9 @@ switch (_level) do {
             // one use of the player's facepaint stick pays for it (legacy plain items cost nothing);
             // fnc_setCamo itself never spends any, so Zeus and scripts stay free
             private _left = [player, _scheme] call EFUNC(common,useFacepaint);
-            if (_left == -2) then {
-                hint (localize ELSTRING(common,invalidFace));
+            if (_left < -1) then {
+                // -2: the stick was moved or used up during the delay; otherwise the scheme doesn't exist
+                hint (localize ([ELSTRING(common,invalidFace), ELSTRING(common,noFacepaint)] select (_left == -2)));
             } else {
                 [player, _scheme] call EFUNC(common,setCamo);
 

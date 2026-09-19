@@ -101,6 +101,10 @@
             <English>This face cannot be camouflaged</English>
             <German>Dieses Gesicht kann nicht getarnt werden</German>
         </Key>
+        <Key ID="STR_CFR_Common_noFacepaint">
+            <English>No usable facepaint left</English>
+            <German>Keine verwendbare Tarnschminke mehr</German>
+        </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_name">
             <English>Camo Wear-off Time (Minutes)</English>
             <German>Tarnungs-Verfallszeit (Minuten)</German>
