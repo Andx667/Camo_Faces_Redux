@@ -1,9 +1,14 @@
 PREP(applyCamo);
 PREP(applyCamoAction);
 PREP(applyCamoLayer);
+PREP(canCleanBuddy);
 PREP(canApplyScheme);
+PREP(canPaintBuddy);
 PREP(canShowAction);
+PREP(canTargetBuddy);
+PREP(cleanBuddy);
 PREP(closeDialog);
+PREP(getBuddyActions);
 PREP(getSchemeActions);
 PREP(hasCamoApplied);
 PREP(initDialog);
