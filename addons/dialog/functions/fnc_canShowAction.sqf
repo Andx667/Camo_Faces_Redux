@@ -4,7 +4,7 @@
  * ACE self-action condition for the "Camo Faces" menu entry (see CfgVehicles.hpp). Shows if the
  * unit's current face is either a known un-camo'd base face or one of this mod's camo faces
  * (so the action stays available to remove camo too), and the unit has at least one of the
- * facepaint items (GVAR(itemClasses)) equipped.
+ * facepaint items (any item that unlocks a registered scheme, cfr_common's GVAR(itemClasses)) equipped.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -24,7 +24,7 @@ TRACE_1("fnc_canShowAction",_this);
 private _face = face _player;
 
 private _faceKnown = (_face in EGVAR(common,all_faces)) || ([_face] call EFUNC(common,isCamoFace));
-private _hasItem = (GVAR(itemClasses) findIf {_x in uniformItems _player}) != -1;
+private _hasItem = (EGVAR(common,itemClasses) findIf {_x in uniformItems _player}) != -1;
 
 if (_faceKnown && _hasItem) exitWith {true};
 

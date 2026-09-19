@@ -40,8 +40,9 @@ python validate.py fit        # confirm the model still reconstructs the shipped
 python generate_textures.py   # fit each scheme, composite onto the new heads, write PAAs
 python generate_materials.py  # write each head's .rvmat / _injury.rvmat
 python generate_config.py     # CfgFaces classes + stringtable entries
+python generate_registry.py   # register the faces with cfr_common (CfgCamoRegistry.hpp)
 hemtt ln sort                 # generate_config.py appends; this re-sorts the stringtable
-python validate.py wiring     # face lists <-> config classes <-> textures on disk
+python validate.py wiring     # registry <-> config classes <-> textures on disk
 python validate.py names      # every camo face is named after its own head
 hemtt build
 ```
@@ -53,8 +54,8 @@ after adding more heads to `NEW` without reverting `addons/faces` first.
 ## Adding more heads
 
 1. Add them to `NEW` in `faces.py`.
-2. Add them to the DLC face list in `cfr_common`'s `fnc_init.sqf`, under the right App ID, so
-   the `isDLCAvailable` gate covers them.
+2. Make sure `APPID` in `faces.py` has their DLC's App ID, so `generate_registry.py` gates them
+   with `requiredDLC`. (A head with no `NO_BLACK` entry gets all 8 schemes; add it there to skip Black.)
 3. Run `resolve_vanilla.py` (needs `CFR_CONFIG_DUMP`) to refresh `data/names.json` and
    `data/vanilla_props.json`, then the pipeline above. `names.json` covers the hand-written heads
    too, which is what lets `validate.py names` run offline. If a head is a named campaign persona

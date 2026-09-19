@@ -42,7 +42,7 @@ Barklem, Mavros, Sturrock and Ioannou are named campaign personas rather than ge
 
 Note that the `Vanilla` scheme cannot cover them: its pairs are BI's own `CamoHead_*` faces, which exist only for the base game's original 39 heads.
 
-[`cfr_common`](../common/README.md) is the sole consumer of these classnames — its `fnc_init` derives its per-scheme lookup lists directly from this addon's `cfr_faces_<BaseFace>_<Scheme>` naming convention (via `FACES_CLASS_PREFIX`), so the two stay in sync.
+[`cfr_common`](../common/README.md) is the sole consumer of these classnames, and learns about them through a config registry rather than any list of its own: `CfgCamoRegistry.hpp` here declares every base face (with its `requiredDLC` gate, if any) and, per scheme, which of this addon's `cfr_faces_<BaseFace>_<Scheme>` classes each face maps to. It is generated from the classes in `Faces_*.hpp` by `tools/camo_generator/generate_registry.py` (`validate.py wiring` fails if the two drift apart), so adding a head means generating its classes and re-running that script. A scheme's absence for a face - Black on the African and Tanoan heads and Barklem - is simply a missing entry. `CfgCamoVanilla.hpp` is the hand-written counterpart for Bohemia's own Marksmen camo faces. This is the same extension mechanism other addons use to register their own faces - see "Extending the mod" in `cfr_common`'s README.
 
 ## Credits
 

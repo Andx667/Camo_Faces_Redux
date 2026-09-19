@@ -11,7 +11,7 @@
 #           fraction of a level. The rest sit at the compression noise floor, around 2-3.
 #
 #   wiring  Cross-checks the three things that must agree or the mod breaks in-game:
-#           fnc_init.sqf's face lists <-> CfgFaces classes <-> texture files on disk.
+#           the config registry (CfgCamoRegistry.hpp) <-> CfgFaces classes <-> texture files on disk.
 #
 #   names   Checks every camo face is named after the head it belongs to. Nothing in the build
 #           catches this - five hand-written faces shipped under the wrong person's surname, so
@@ -25,7 +25,7 @@ import sys
 
 import numpy as np
 
-from faces import NEW, SCHEME_NAMES, schemes_for
+from faces import NEW, NO_BLACK, SCHEME_NAMES, schemes_for
 from paintlayer import Fit, apply, load
 from paths import ADDON, DATA, REPO, TOOL_DATA, WORK
 
@@ -61,28 +61,50 @@ def fit_check():
 
 
 def wiring_check():
-    init = (REPO / "addons/common/functions/fnc_init.sqf").read_text(encoding="utf-8")
+    reg = (ADDON / "CfgCamoRegistry.hpp").read_text(encoding="utf-8")
+    base_block, scheme_block = reg.split("class CfgCamoSchemes {", 1)
+    base_block = base_block.split("class CfgCamoBaseFaces {", 1)[1]
+    base = re.findall(r"class (\w+) \{", base_block)
+    dlc = {}
+    for face, appid in re.findall(r"class (\w+) \{ requiredDLC = (\d+); \};", base_block):
+        dlc.setdefault(appid, []).append(face)
 
-    def arr(name):
-        m = re.search(rf"GVAR\({name}\)\s*=\s*\[(.*?)\];", init, re.S)
-        return re.findall(r'"([^"]+)"', m.group(1)) if m else []
-
-    base, no_black = arr("all_faces"), arr("faces_noBlack")
-    dlc = {a: re.findall(r'"([^"]+)"', b) for a, b in re.findall(r"\[(\d{6,7}),\s*\[(.*?)\]\]", init, re.S)}
-    all_faces = base + [f for v in dlc.values() for f in v]
+    # scheme suffix -> {base face: camo class}
+    registered = {}
+    for suffix, body in re.findall(r"class (\w+) \{\s*class Faces \{(.*?)\};", scheme_block, re.S):
+        registered[suffix] = dict(re.findall(r"(\w+) = QGVAR\((\w+)\);", body))
 
     defined = set()
     for h in ADDON.glob("Faces_*.hpp"):
-        defined |= set(re.findall(r"class GVAR\((\w+)\)", h.read_text(encoding="utf-8")))
+        defined |= set(re.findall(r"^class GVAR\((\w+)\)", h.read_text(encoding="utf-8"), re.M))
+
+    # heads with no Black variant: what faces.py says, plus the three vanilla African heads
+    no_black = set(NO_BLACK) | {"AfricanHead_01", "AfricanHead_02", "AfricanHead_03"}
+    no_black = {NEW[k].cls if k in NEW else k for k in no_black}
 
     problems, expected = [], 0
-    for face in all_faces:
+    for face in base:
         for scheme, (suffix, _, _) in SCHEME_NAMES.items():
-            if suffix == "Black" and face in no_black:
+            cls = f"{face}_{suffix}"
+            skipped_black = suffix == "Black" and face in no_black
+            expected += 0 if skipped_black else 1
+            if skipped_black:
+                if face in registered.get(suffix, {}):
+                    problems.append(f"UNEXPECTED     {cls} is registered")
                 continue
-            expected += 1
-            if f"{face}_{suffix}" not in defined:
-                problems.append(f"MISSING CLASS   {face}_{suffix}")
+            if cls not in defined:
+                problems.append(f"MISSING CLASS   {cls}")
+            if registered.get(suffix, {}).get(face) != cls:
+                problems.append(f"NOT REGISTERED  {face} -> {cls}")
+    for suffix, pairs in registered.items():
+        for face, cls in pairs.items():
+            if face not in base:
+                problems.append(f"NO BASE FACE    {face} ({cls})")
+            if cls not in defined:
+                problems.append(f"UNDEFINED CLASS {cls}")
+    for cls in defined:
+        if not any(cls in pairs.values() for pairs in registered.values()):
+            problems.append(f"UNREGISTERED    {cls} - rerun generate_registry.py")
 
     tex_re = re.compile(r"class GVAR\((\w+)\).*?texture = QPATHTOF\(data\\(\w+)\\(\w+)\\([\w.]+)\)", re.S)
     for h in ADDON.glob("Faces_*.hpp"):
@@ -90,7 +112,7 @@ def wiring_check():
             if not (DATA / scheme / code / fname).exists():
                 problems.append(f"MISSING TEXTURE {scheme}/{code}/{fname} (class {cls})")
 
-    print(f"faces: {len(base)} base + {sum(len(v) for v in dlc.values())} dlc = {len(all_faces)}")
+    print(f"faces: {len(base)} registered, {sum(len(v) for v in dlc.values())} of them DLC-gated")
     for appid, v in sorted(dlc.items()):
         print(f"  appId {appid}: {len(v)}")
     print(f"classes expected {expected}, defined {len(defined)}; "

@@ -21,9 +21,5 @@ TRACE_1("fnc_getSchemeDisplayName",_this);
 private _schemeIdx = GVAR(schemes) findIf {(_x select 0) == _schemeId};
 if (_schemeIdx == -1) exitWith {""};
 
-(GVAR(schemes) select _schemeIdx) params ["", "", "", "_stringKey"];
-
-// see fnc_getCamoOptions.sqf for why this can't be a compile-time LSTRING(x) call
-private _strPrefix = QUOTE(DOUBLES(STR,ADDON)) + "_";
-
-localize (_strPrefix + _stringKey);
+// already localized when the registry was read (see fnc_init.sqf)
+(GVAR(schemes) select _schemeIdx) select 3;

@@ -35,7 +35,9 @@ Restores whichever base face the given camo face pairs with.
 
 ## Scheme IDs
 
-`"BWTarn"`, `"Black"`, `"BWStripes"`, `"Serbian"`, `"USStripes"`, `"USStains"`, `"USFlash"`, or `"Vanilla"` (only available with the Marksmen DLC — see [Installation](installation.md)).
+`"BWTarn"`, `"Black"`, `"BWStripes"`, `"Serbian"`, `"USStripes"`, `"USStains"`, `"USFlash"`, `"SnowStripes"`, or `"Vanilla"`, `"VanillaArid"`, `"VanillaLush"`, `"VanillaSemiArid"` (the Vanilla ones are only available with the Marksmen DLC — see [Installation](installation.md)).
+
+Other addons can register further schemes and faces through config, which then work with every function on this page under their own ids — see [Extending the mod](https://github.com/Andx667/Camo_Faces_Redux/blob/main/addons/common/README.md#extending-the-mod) for addon authors.
 
 ## Reacting to camo changes
 
