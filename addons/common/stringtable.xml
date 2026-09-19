@@ -5,6 +5,10 @@
             <English>Camouflage applied</English>
             <German>Tarnung aufgelegt</German>
         </Key>
+        <Key ID="STR_CFR_Common_camoFading">
+            <English>Your camouflage is starting to fade</English>
+            <German>Deine Tarnung beginnt zu verblassen</German>
+        </Key>
         <Key ID="STR_CFR_Common_camoRemoved">
             <English>Camouflage removed</English>
             <German>Tarnung abgelegt</German>

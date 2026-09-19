@@ -14,6 +14,10 @@
  * removed or reapplied from anywhere, e.g. a Zeus), so the timer also checks the unit's synced
  * GVAR(camoId) against the one it was started for, and stands down if they no longer match.
  *
+ * WEAR_OFF_WARNING_SECONDS before it expires the player gets a "starting to fade" hint - the
+ * duration is randomised, so otherwise nobody can tell when camo is about to go. Skipped when the
+ * whole duration is no longer than the warning, where it would fire the moment camo is applied.
+ *
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Camo face the unit was given <STRING>
@@ -44,9 +48,12 @@ if (WEAR_OFF_VARIATION_MINUTES > 0) then {
 };
 
 private _expiry = time + _minutes * 60;
+// -1 = no warning (duration too short for one, or already given); _args is the same array on every
+// tick, so the handler can mark the warning as given by overwriting this slot
+private _warnAt = if (_minutes * 60 > WEAR_OFF_WARNING_SECONDS) then {_expiry - WEAR_OFF_WARNING_SECONDS} else {-1};
 private _pfhId = [{
     params ["_args", "_pfhId"];
-    _args params ["_unit", "_face", "_expiry", "_camoId"];
+    _args params ["_unit", "_face", "_expiry", "_camoId", "_warnAt"];
     if (isNull _unit) exitWith {
         [_pfhId] call CBA_fnc_removePerFrameHandler;
     };
@@ -57,10 +64,15 @@ private _pfhId = [{
             _unit setVariable [QGVAR(wearOffTimerId), -1];
         };
     };
+    if (_warnAt != -1 && {time >= _warnAt}) then {
+        _args set [4, -1];
+        // hint is feedback for the wearer only - same guard as fnc_setCamo.sqf's _hintOwner
+        if (_unit == player) then { hint (localize LSTRING(camoFading)); };
+    };
     if (time >= _expiry) then {
         [_pfhId] call CBA_fnc_removePerFrameHandler;
         _unit setVariable [QGVAR(wearOffTimerId), -1];
         [_unit, _face] call FUNC(unsetCamo);
     };
-}, 1, [_unit, _face, _expiry, _camoId]] call CBA_fnc_addPerFrameHandler;
+}, 1, [_unit, _face, _expiry, _camoId, _warnAt]] call CBA_fnc_addPerFrameHandler;
 _unit setVariable [QGVAR(wearOffTimerId), _pfhId];

@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- A hint warns the wearer a minute before their camouflage wears off, since the wear-off time is randomised and can't be predicted from the setting
 - Other addons can now add camouflage faces and whole new schemes purely through config (`CfgCamoBaseFaces`, `CfgCamoSchemes`, `CfgCamoCategories`), and they show up in the dialog, the ACE self-actions and the Zeus menu with no changes to this mod. The mod's own faces and schemes are registered through the same mechanism. See "Extending the mod" in `cfr_common`'s README
 
 ### Changed

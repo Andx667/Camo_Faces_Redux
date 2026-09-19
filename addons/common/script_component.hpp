@@ -14,3 +14,7 @@
 // how many minutes either side of the configured wear-off time a single camo application's wear-off
 // timer can vary - see fnc_startWearOff.sqf. Fixed rather than a CBA setting on purpose; 0 disables
 #define WEAR_OFF_VARIATION_MINUTES 10
+
+// how long before camo wears off the player is warned that it is fading - see fnc_startWearOff.sqf.
+// The wear-off time is randomised, so without this nobody can tell when it is about to go
+#define WEAR_OFF_WARNING_SECONDS 60
