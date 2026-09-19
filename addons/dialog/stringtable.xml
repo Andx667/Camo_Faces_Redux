@@ -17,6 +17,38 @@
             <English>Applying layer three...</English>
             <German>Trage Schicht drei auf...</German>
         </Key>
+        <Key ID="STR_CFR_Dialog_buddyCleanAction">
+            <English>Clean Face</English>
+            <German>Gesicht reinigen</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_buddyCleanedOther">
+            <English>You cleaned %1's face</English>
+            <German>Du hast das Gesicht von %1 gereinigt</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_buddyCleanedYou">
+            <English>%1 cleaned your face</English>
+            <German>%1 hat dein Gesicht gereinigt</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_buddyInterrupted">
+            <English>Interrupted - stay close, and their headgear, goggles and night vision must be off</English>
+            <German>Unterbrochen - bleib in der Nähe, und Kopfbedeckung, Brille und Nachtsichtgerät müssen abgelegt sein</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_buddyPaintAction">
+            <English>Paint Face</English>
+            <German>Gesicht schminken</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_buddyPaintedOther">
+            <English>You painted %1's face</English>
+            <German>Du hast das Gesicht von %1 geschminkt</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_buddyPaintedYou">
+            <English>%1 painted your face</English>
+            <German>%1 hat dein Gesicht geschminkt</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_cleaningFace">
+            <English>Cleaning face...</English>
+            <German>Reinige Gesicht...</German>
+        </Key>
         <Key ID="STR_CFR_Dialog_displayName">
             <English>Interaction Method</English>
             <German>Interaktionsmethode</German>
@@ -36,6 +68,14 @@
         <Key ID="STR_CFR_Dialog_removeCamoAction">
             <English>Remove Camo Face Paint</English>
             <German>Tarnschminke entfernen</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_settingAllowPaintingOthers_name">
+            <English>Allow Painting Other Units</English>
+            <German>Andere Einheiten schminken erlauben</German>
+        </Key>
+        <Key ID="STR_CFR_Dialog_settingAllowPaintingOthers_tooltip">
+            <English>Lets players paint camouflage on, or wipe it off, the face of a friendly unit (player or AI) standing next to them, using the ACE interaction menu. Shared by all clients. The painter still needs facepaint to paint; cleaning needs nothing.</English>
+            <German>Erlaubt Spielern, mit dem ACE-Interaktionsmenü Tarnung auf das Gesicht einer befreundeten Einheit (Spieler oder KI) neben ihnen aufzutragen oder abzuwischen. Gilt für alle Clients. Zum Schminken wird weiterhin Tarnschminke benötigt; zum Reinigen nicht.</German>
         </Key>
         <Key ID="STR_CFR_Dialog_settingUseAceActions_name">
             <English>Use ACE Actions Instead of Dialog</English>

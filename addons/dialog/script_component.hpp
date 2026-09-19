@@ -112,6 +112,10 @@
 #define ST_VERTICAL       0x01
 #define ST_HORIZONTAL     0
 
+// how far away (metres) the painter may be from the unit whose face they are painting or cleaning,
+// checked again every frame of the progress bar so walking away cancels it
+#define BUDDY_MAX_DISTANCE 3
+
 // Listbox styles
 #define LB_TEXTURES       0x10
 #define LB_MULTI          0x20
