@@ -10,3 +10,7 @@
 
 // classname prefix used by cfr_faces for its CfgFaces entries (PREFIX_COMPONENT_ pattern - see cfr_faces/script_component.hpp)
 #define FACES_CLASS_PREFIX "cfr_faces_"
+
+// how many minutes either side of the configured wear-off time a single camo application's wear-off
+// timer can vary - see fnc_startWearOff.sqf. Fixed rather than a CBA setting on purpose; 0 disables
+#define WEAR_OFF_VARIATION_MINUTES 10

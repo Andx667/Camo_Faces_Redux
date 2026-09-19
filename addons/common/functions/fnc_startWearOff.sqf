@@ -33,7 +33,17 @@ TRACE_1("fnc_startWearOff",_this);
 
 if (isNull _unit) exitWith {};
 
-private _expiry = time + GVAR(wearOffTime) * 60;
+// so every player doesn't lose their camo at the same instant, the duration is rolled per application
+// on a bell curve centered on the configured time: random [min, mid, max] is Gaussian, with min/max
+// the wear-off time minus/plus WEAR_OFF_VARIATION_MINUTES. Rolled here on the unit's owner rather than
+// by fnc_setCamo's caller, so each player's timer gets its own roll. The floor keeps the variation
+// on a short wear-off time from reaching zero or below, which would remove camo the moment it's applied
+private _minutes = GVAR(wearOffTime);
+if (WEAR_OFF_VARIATION_MINUTES > 0) then {
+    _minutes = (random [_minutes - WEAR_OFF_VARIATION_MINUTES, _minutes, _minutes + WEAR_OFF_VARIATION_MINUTES]) max 1;
+};
+
+private _expiry = time + _minutes * 60;
 private _pfhId = [{
     params ["_args", "_pfhId"];
     _args params ["_unit", "_face", "_expiry", "_camoId"];
