@@ -95,10 +95,9 @@ if (_wearOffMinutes > 0) then {
         if (isNull _unit) exitWith {
             [_pfhId] call CBA_fnc_removePerFrameHandler;
         };
-        // stale: this camo was already removed or replaced, possibly from another machine (e.g.
-        // a second Zeus) - don't touch the unit's current state, just drop the timer
         if (_unit getVariable [QGVAR(camoId), ""] != _camoId) exitWith {
             [_pfhId] call CBA_fnc_removePerFrameHandler;
+            _unit setVariable [QGVAR(wearOffTimerId), -1];
         };
         if (time >= _expiry) then {
             [_pfhId] call CBA_fnc_removePerFrameHandler;
