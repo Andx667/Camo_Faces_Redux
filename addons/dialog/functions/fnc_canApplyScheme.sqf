@@ -35,7 +35,7 @@ private _schemeIdx = EGVAR(common,schemes) findIf {(_x select 0) == _camoSuffix}
 if (_schemeIdx != -1) then {
     (EGVAR(common,schemes) select _schemeIdx) params ["", "_pairs", "_itemClasses"];
     _result = (
-        (_itemClasses findIf {_x in uniformItems ACE_player}) != -1
+        [ACE_player, _itemClasses] call EFUNC(common,hasFacepaint)
     ) && (
         (_pairs findIf {(_x select 0) == _face}) != -1
     ) && (

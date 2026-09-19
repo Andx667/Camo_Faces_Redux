@@ -1,10 +1,14 @@
+// These plain items are the original, unlimited facepaint. They stay so missions and loadouts that already
+// hold them keep working (and still unlock every scheme, without being used up), but they are
+// scope 1 so they no longer show up in the arsenal or editor - new content uses the consumable
+// facepaint sticks in CfgMagazines.hpp instead.
 class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
     class GVAR(US_Facepaint): ACE_ItemCore  {
         author = AUTHOR;
-        scope = 2;
+        scope = 1;
         displayName = CSTRING(US_Facepaint_DisplayName);
         descriptionShort = CSTRING(US_Facepaint_descriptionShort);
         picture = QPATHTOF(data\UI\gear_US_Facepaint.paa);

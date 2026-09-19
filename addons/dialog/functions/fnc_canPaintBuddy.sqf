@@ -22,13 +22,12 @@
 
 params [["_target", objNull, [objNull]]];
 
-private _painterItems = uniformItems ACE_player;
 private _face = face _target;
 
 ([_target] call FUNC(canTargetBuddy))
 && {
     EGVAR(common,schemes) findIf {
         _x params ["", "_pairs", "_itemClasses"];
-        (_itemClasses findIf {_x in _painterItems}) != -1 && {(_pairs findIf {(_x select 0) == _face}) != -1}
+        ([ACE_player, _itemClasses] call EFUNC(common,hasFacepaint)) && {(_pairs findIf {(_x select 0) == _face}) != -1}
     } != -1
 }

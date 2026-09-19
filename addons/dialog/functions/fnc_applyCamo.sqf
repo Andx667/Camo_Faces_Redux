@@ -48,7 +48,22 @@ switch (_level) do {
         hint (localize LSTRING(applyingLayer3));
         [{
             private _lbCamo = (findDisplay IDD_DIALOG) displayCtrl IDC_LISTBOX_CAMOFACE;
-            [player, (_lbCamo lbData (lbCurSel _lbCamo))] call EFUNC(common,setCamo);
+            private _scheme = _lbCamo lbData (lbCurSel _lbCamo);
+
+            // one use of the player's facepaint stick pays for it (legacy plain items cost nothing);
+            // fnc_setCamo itself never spends any, so Zeus and scripts stay free
+            private _left = [player, _scheme] call EFUNC(common,useFacepaint);
+            if (_left == -2) then {
+                hint (localize ELSTRING(common,invalidFace));
+            } else {
+                [player, _scheme] call EFUNC(common,setCamo);
+
+                // the uses left go on top of fnc_setCamo's own "camouflage applied" hint
+                private _usesText = [_left] call EFUNC(common,facepaintUsesText);
+                if (_usesText != "") then {
+                    hint ((localize ELSTRING(common,camoApplied)) + "\n" + _usesText);
+                };
+            };
 
             ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER1) ctrlEnable false;
             ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable false;

@@ -6,36 +6,68 @@
             <German>Kiste mit Tarnschminke</German>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaint_descriptionshort">
-            <English>Used by the German Armed Forces</English>
-            <German>Benutzt von der Bundeswehr</German>
+            <English>Used by the German Armed Forces (legacy item, unlimited uses)</English>
+            <German>Benutzt von der Bundeswehr (Altbestand, unbegrenzte Anwendungen)</German>
         </Key>
         <Key ID="STR_CFR_Items_bw_facepaint_displayname">
             <English>BW Facepaint</English>
             <German>BW Tarnschminke</German>
         </Key>
+        <Key ID="STR_CFR_Items_bw_facepaintstick_descriptionshort">
+            <English>Used by the German Armed Forces. 10 uses</English>
+            <German>Benutzt von der Bundeswehr. 10 Anwendungen</German>
+        </Key>
+        <Key ID="STR_CFR_Items_bw_facepaintstick_displayname">
+            <English>BW Facepaint Stick</English>
+            <German>BW-Tarnschminkstift</German>
+        </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_descriptionshort">
-            <English>Used by the Serbian Armed Forces</English>
-            <German>Benutzt von den Serbischen Streitkräften</German>
+            <English>Used by the Serbian Armed Forces (legacy item, unlimited uses)</English>
+            <German>Benutzt von den Serbischen Streitkräften (Altbestand, unbegrenzte Anwendungen)</German>
         </Key>
         <Key ID="STR_CFR_Items_serbian_facepaint_displayname">
             <English>Serbian Facepaint</English>
             <German>Serbische Tarnschminke</German>
         </Key>
+        <Key ID="STR_CFR_Items_serbian_facepaintstick_descriptionshort">
+            <English>Used by the Serbian Armed Forces. 10 uses</English>
+            <German>Benutzt von den Serbischen Streitkräften. 10 Anwendungen</German>
+        </Key>
+        <Key ID="STR_CFR_Items_serbian_facepaintstick_displayname">
+            <English>Serbian Facepaint Stick</English>
+            <German>Serbischer Tarnschminkstift</German>
+        </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaint_descriptionshort">
-            <English>A stick of white/green grease paint</English>
-            <German>Ein Stift weiß-grüne Schminke</German>
+            <English>A stick of white/green grease paint (legacy item, unlimited uses)</English>
+            <German>Ein Stift weiß-grüne Schminke (Altbestand, unbegrenzte Anwendungen)</German>
         </Key>
         <Key ID="STR_CFR_Items_snowstripes_facepaint_displayname">
             <English>Snow Stripes Facepaint</English>
             <German>Schneestreifen-Tarnschminke</German>
         </Key>
+        <Key ID="STR_CFR_Items_snowstripes_facepaintstick_descriptionshort">
+            <English>A stick of white/green grease paint. 10 uses</English>
+            <German>Ein Stift weiß-grüne Schminke. 10 Anwendungen</German>
+        </Key>
+        <Key ID="STR_CFR_Items_snowstripes_facepaintstick_displayname">
+            <English>Snow Stripes Facepaint Stick</English>
+            <German>Schneestreifen-Tarnschminkstift</German>
+        </Key>
         <Key ID="STR_CFR_Items_us_facepaint_descriptionshort">
-            <English>Used by the US Armed Forces</English>
-            <German>Benutzt von den US Streikräften</German>
+            <English>Used by the US Armed Forces (legacy item, unlimited uses)</English>
+            <German>Benutzt von den US Streikräften (Altbestand, unbegrenzte Anwendungen)</German>
         </Key>
         <Key ID="STR_CFR_Items_us_facepaint_displayname">
             <English>US Facepaint</English>
             <German>US Tarnschminke</German>
+        </Key>
+        <Key ID="STR_CFR_Items_us_facepaintstick_descriptionshort">
+            <English>Used by the US Armed Forces. 10 uses</English>
+            <German>Benutzt von den US Streikräften. 10 Anwendungen</German>
+        </Key>
+        <Key ID="STR_CFR_Items_us_facepaintstick_displayname">
+            <English>US Facepaint Stick</English>
+            <German>US-Tarnschminkstift</German>
         </Key>
     </Package>
 </Project>

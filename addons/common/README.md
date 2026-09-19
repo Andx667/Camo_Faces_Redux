@@ -13,6 +13,9 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 | `fnc_init` | none | Reads the config registry (`CfgCamoBaseFaces`/`CfgCamoSchemes`/`CfgCamoCategories`, see "Extending the mod" below) into `GVAR(all_faces)`/`GVAR(schemes)`/`GVAR(categories)`/`GVAR(itemClasses)`; called from `XEH_preInit` so this data exists before any mission entity - and therefore before any unit's init field - runs (`fnc_setCamo`/`fnc_unsetCamo` also self-defer a frame via `CBA_fnc_waitAndExecute` if called before this has run, as a safety net) |
 | `fnc_getCountryOptions` | `[unit]` | Returns which categories (`CfgCamoCategories` - by default BW / Serbian / US / Snow Stripes / Vanilla) a unit can use: it carries one of the category's items and at least one scheme in it is unlocked by the unit's items and has a variant for the unit's face |
 | `fnc_getCamoOptions` | `[category]` | Returns the specific camo patterns available within a category, for the calling player's current base face and carried items |
+| `fnc_hasFacepaint` | `[unit, itemClasses]` | Does the unit carry usable facepaint out of these item classes: a plain (legacy) item anywhere in uniform/vest/backpack, or a magazine-type stick that still has a use left |
+| `fnc_useFacepaint` | `[unit, schemeId]` | Spends one use for that scheme: one round of a carried stick (through ACE's `adjustMagazineAmmo`), else a legacy plain item for free. Returns the uses left (0 = now empty), -1 if nothing was spent, -2 if no usable facepaint. Called by `cfr_dialog` just before `fnc_setCamo`, which itself never spends anything |
+| `fnc_facepaintUsesText` | `[usesLeft]` | The line shown after applying camo: "Facepaint: N uses left" / "used up", empty for legacy items |
 | `fnc_setCamo` | `[unit, camo]` | Applies a camo face to a unit if the combination is valid, and hints the result; also schedules automatic wear-off if enabled (see Settings below) |
 | `fnc_unsetCamo` | `[unit, face]` | Reverses whichever scheme the unit's current camo face belongs to, restoring its base face |
 | `fnc_isCamoFace` | `[face]` | Checks whether a face classname is one of this mod's camo variants, under any scheme — shared predicate used by `fnc_setCamo`, `cfr_dialog`'s `fnc_canShowAction`, and both `fnc_unsetCamo` files |
@@ -63,7 +66,7 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 - `schemeId` — e.g. `"BWTarn"`, `"Vanilla"` — the string passed to `fnc_setCamo`/`fnc_canApplyScheme` and used as ACE action/dialog data
 - `pairs` — `[[baseFace, camoFace], ...]`, which base face becomes which camo face under this scheme. A scheme simply has no pair for a face it doesn't cover, which is how "not offered for this face" works everywhere (e.g. Black on the very dark African and Tanoan heads, or Vanilla's environment variants on all but three faces)
-- `itemClasses` — facepaint item classname(s) that unlock this scheme, carrying any one is enough
+- `itemClasses` — facepaint item classname(s) that unlock this scheme, carrying any one is enough. An entry may be a magazine-type class (`CfgMagazines`, e.g. `cfr_items`' facepaint sticks: each round is a use, and `fnc_useFacepaint` spends one) or a plain item (`CfgWeapons`, the legacy facepaint: never used up)
 - `displayName` / `shortName` — already localized; `shortName` is the narrower label the dialog's pattern list uses, and is just `displayName` for schemes that don't define one
 - `icon` — the ACE self-action icon
 - `categories` — the `CfgCamoCategories` ids the dialog lists the scheme under

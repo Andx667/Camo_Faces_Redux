@@ -49,7 +49,10 @@ if (count _applicable == 1) then {
             // they aren't tied to a single one, so those just pick the first (BW) as a stand-in.
             private _icon = "";
             if (_itemClasses isNotEqualTo []) then {
-                _icon = getText (configFile >> "CfgWeapons" >> (_itemClasses select 0) >> "picture");
+                // an item is a CfgMagazines stick or a CfgWeapons legacy item, so look in both
+                private _itemClass = _itemClasses select 0;
+                _icon = getText (configFile >> "CfgMagazines" >> _itemClass >> "picture");
+                if (_icon == "") then {_icon = getText (configFile >> "CfgWeapons" >> _itemClass >> "picture")};
             };
             if (_icon == "") then {_icon = ICON_CAMOUFLAGE};
 

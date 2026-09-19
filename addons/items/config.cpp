@@ -9,6 +9,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "cfr_main",
+            "A3_Data_F",
             "A3_Weapons_F",
             "ace_common",
             "cba_common"
@@ -22,9 +23,16 @@ class CfgPatches {
             QGVAR(SERBIAN_Facepaint),
             QGVAR(SnowStripes_Facepaint),
         };
+        magazines[] = {
+            QGVAR(US_FacepaintStick),
+            QGVAR(BW_FacepaintStick),
+            QGVAR(Serbian_FacepaintStick),
+            QGVAR(SnowStripes_FacepaintStick),
+        };
         VERSION_CONFIG;
     };
 };
 
 #include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"

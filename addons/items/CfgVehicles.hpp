@@ -7,12 +7,13 @@ class CfgVehicles {
         editorSubcategory = QEGVAR(main,cfr);
 
         class TransportWeapons {};
-        class TransportMagazines {};
-        class TransportItems {
-            MACRO_ADDITEM(GVAR(US_Facepaint),30);
-            MACRO_ADDITEM(GVAR(BW_Facepaint),30);
-            MACRO_ADDITEM(GVAR(SERBIAN_Facepaint),30);
-            MACRO_ADDITEM(GVAR(SnowStripes_Facepaint),30);
+        // facepaint sticks, 10 uses each - not the unlimited legacy items
+        class TransportMagazines {
+            MACRO_ADDMAGAZINE(GVAR(US_FacepaintStick),10);
+            MACRO_ADDMAGAZINE(GVAR(BW_FacepaintStick),10);
+            MACRO_ADDMAGAZINE(GVAR(Serbian_FacepaintStick),10);
+            MACRO_ADDMAGAZINE(GVAR(SnowStripes_FacepaintStick),10);
         };
+        class TransportItems {};
     };
 };
