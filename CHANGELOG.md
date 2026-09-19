@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Buddy painting: players can paint camouflage on, or clean it off, the face of a friendly unit (player or AI) standing next to them, through the ACE interaction menu on that unit's head. Painting needs facepaint in the painter's uniform and the target's helmet, goggles and night vision off; cleaning needs nothing. New CBA setting **Allow Painting Other Units** (on by default, shared by all clients) turns it off. Painting doesn't use up any facepaint yet
 - Other addons can now add camouflage faces and whole new schemes purely through config (`CfgCamoBaseFaces`, `CfgCamoSchemes`, `CfgCamoCategories`), and they show up in the dialog, the ACE self-actions and the Zeus menu with no changes to this mod. The mod's own faces and schemes are registered through the same mechanism. See "Extending the mod" in `cfr_common`'s README
-- Each camo application's wear-off duration is now randomised on a bell curve, typically within about 10 minutes either side of the configured **Camo Wear-off Time**, so players who applied camo together don't all lose it at the same moment. The spread is fixed rather than a setting, and a duration is never shorter than a minute
+- Each camo application's wear-off duration is now randomised with the configured **Camo Wear-off Time** as the most likely value, typically within about 10 minutes either side, so players who applied camo together don't all lose it at the same moment. The spread is fixed rather than a setting, and a duration is never shorter than a minute
 - A hint warns the wearer a minute before their camouflage wears off, since the randomised wear-off time can't be predicted from the setting
 
 ### Changed
