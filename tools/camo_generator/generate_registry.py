@@ -16,14 +16,14 @@
 
 import re
 
-from faces import APPID, NEW, SCHEME_NAMES, UNGATED
+from faces import APPID, NEW, SCHEME_NAMES
 from paths import ADDON
 
 # longest first, so "USStripes" is never mistaken for a face called "US" + "Stripes"
 SUFFIXES = sorted((suffix for suffix, _, _ in SCHEME_NAMES.values()), key=len, reverse=True)
 CLASS_RE = re.compile(r"^class GVAR\((\w+)\)", re.M)
 
-DLC_OF = {f.cls: APPID[f.dlc] for f in NEW.values() if f.cls not in UNGATED}
+DLC_OF = {f.cls: APPID[f.dlc] for f in NEW.values()}
 
 
 def split(name):
