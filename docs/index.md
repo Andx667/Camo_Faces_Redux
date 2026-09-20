@@ -26,6 +26,7 @@ The project is entirely open-source and any contributions are welcome — see [C
 - Optional wear-off of applied camo after a configurable time, with a warning shortly before it goes
 - Optional [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) integration for applying/removing camo as a curator
 - Other addons can register their own faces and camo schemes through config - see [Scripting & API](scripting.md#scheme-ids)
+- Translated into every language Arma 3 ships (see [Contributing](contributing.md#translations))
 
 ## Getting Started
 

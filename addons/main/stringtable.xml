@@ -2,8 +2,25 @@
 <Project name="CFR">
     <Package name="Main">
         <Key ID="STR_CFR_Main_Name">
-            <English>Camo Faces Redux [Beta]</English>
-            <German>Camo Faces Redux [Beta]</German>
+            <English>Camo Faces Redux</English>
+            <Czech>Camo Faces Redux</Czech>
+            <French>Camo Faces Redux</French>
+            <Spanish>Camo Faces Redux</Spanish>
+            <Italian>Camo Faces Redux</Italian>
+            <Polish>Camo Faces Redux</Polish>
+            <Portuguese>Camo Faces Redux</Portuguese>
+            <Russian>Camo Faces Redux</Russian>
+            <German>Camo Faces Redux</German>
+            <Korean>Camo Faces Redux</Korean>
+            <Japanese>Camo Faces Redux</Japanese>
+            <Chinese>Camo Faces Redux</Chinese>
+            <Chinesesimp>Camo Faces Redux</Chinesesimp>
+            <Turkish>Camo Faces Redux</Turkish>
+            <Slovak>Camo Faces Redux</Slovak>
+            <Hungarian>Camo Faces Redux</Hungarian>
+            <Ukrainian>Camo Faces Redux</Ukrainian>
+            <Bulgarian>Camo Faces Redux</Bulgarian>
+            <Latin>Camo Faces Redux</Latin>
         </Key>
         <Key ID="STR_CFR_Main_url">
             <English>https://github.com/Andx667/CamoFacesRedux</English>
@@ -20,6 +37,11 @@
             <Chinese>https://github.com/Andx667/CamoFacesRedux</Chinese>
             <Chinesesimp>https://github.com/Andx667/CamoFacesRedux</Chinesesimp>
             <Turkish>https://github.com/Andx667/CamoFacesRedux</Turkish>
+            <Slovak>https://github.com/Andx667/CamoFacesRedux</Slovak>
+            <Hungarian>https://github.com/Andx667/CamoFacesRedux</Hungarian>
+            <Ukrainian>https://github.com/Andx667/CamoFacesRedux</Ukrainian>
+            <Bulgarian>https://github.com/Andx667/CamoFacesRedux</Bulgarian>
+            <Latin>https://github.com/Andx667/CamoFacesRedux</Latin>
         </Key>
     </Package>
 </Project>
