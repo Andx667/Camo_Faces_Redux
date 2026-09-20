@@ -10,3 +10,4 @@ PREP(setCamo);
 PREP(startWearOff);
 PREP(unsetCamo);
 PREP(useFacepaint);
+PREP(washOff);

@@ -18,3 +18,7 @@
 // how long before camo wears off the player is warned that it is fading - see fnc_startWearOff.sqf.
 // The wear-off time is randomised, so without this nobody can tell when it is about to go
 #define WEAR_OFF_WARNING_SECONDS 60
+
+// how often the local player is checked for swimming, which washes camo off - see fnc_washOff.sqf.
+// Deliberately not every frame: a quick dip may leave camo intact, a short grace period, not a guarantee
+#define WASH_OFF_CHECK_SECONDS 3

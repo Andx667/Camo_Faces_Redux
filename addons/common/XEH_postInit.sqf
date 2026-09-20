@@ -29,3 +29,14 @@
         };
     };
 } forEach (allUnits + allDead);
+
+// Swimming or diving washes camo off (see fnc_washOff.sqf). Checked every WASH_OFF_CHECK_SECONDS on the local
+// player's current unit only - never every unit in the mission - and the check is a string compare on
+// the animation state first, so it costs next to nothing while the player is on dry land. Polled
+// like ACE does for swimming (advanced_fatigue, goggles) instead of hooking AnimChanged, which would
+// need re-attaching on every respawn and unit switch.
+if (hasInterface) then {
+    [{
+        [player] call FUNC(washOff);
+    }, WASH_OFF_CHECK_SECONDS] call CBA_fnc_addPerFrameHandler;
+};
