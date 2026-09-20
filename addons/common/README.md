@@ -10,7 +10,7 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 
 | Function | Arguments | Description |
 | --- | --- | --- |
-| `fnc_init` | none | Reads the config registry (`CfgCamoBaseFaces`/`CfgCamoSchemes`/`CfgCamoCategories`, see "Extending the mod" below) into `GVAR(all_faces)`/`GVAR(schemes)`/`GVAR(categories)`/`GVAR(itemClasses)`; called from `XEH_preInit` so this data exists before any mission entity - and therefore before any unit's init field - runs (`fnc_setCamo`/`fnc_unsetCamo` also self-defer a frame via `CBA_fnc_waitAndExecute` if called before this has run, as a safety net) |
+| `fnc_init` | none | Reads the config registry (`CfgCamoBaseFaces`/`CfgCamoSchemes`/`CfgCamoCategories`, see [Extending the mod](../../docs/scripting.md#extending-the-mod)) into `GVAR(all_faces)`/`GVAR(schemes)`/`GVAR(categories)`/`GVAR(itemClasses)`; called from `XEH_preInit` so this data exists before any mission entity - and therefore before any unit's init field - runs (`fnc_setCamo`/`fnc_unsetCamo` also self-defer a frame via `CBA_fnc_waitAndExecute` if called before this has run, as a safety net) |
 | `fnc_getCountryOptions` | `[unit]` | Returns which categories (`CfgCamoCategories` - by default BW / Serbian / US / Snow Stripes / Vanilla) a unit can use: it carries one of the category's items and at least one scheme in it is unlocked by the unit's items and has a variant for the unit's face |
 | `fnc_getCamoOptions` | `[category]` | Returns the specific camo patterns available within a category, for the calling player's current base face and carried items |
 | `fnc_hasFacepaint` | `[unit, itemClasses]` | Does the unit carry usable facepaint out of these item classes: a plain (legacy) item anywhere in uniform/vest/backpack, or a magazine-type stick that still has a use left |
@@ -79,57 +79,7 @@ Each unit's active camo face is also stored on the unit itself, via `_unit setVa
 
 ## Extending the mod
 
-Faces and schemes are registered entirely through config, so another addon can add either without touching this mod — and this mod's own faces (`cfr_faces`) are registered exactly the same way. Three config classes make up the registry (`CfgCamo.hpp` defines this mod's own metadata and is the best reference):
-
-- `CfgCamoBaseFaces` — one class per face that can be camouflaged, named after its `CfgFaces` class. Optional `requiredDLC = <Steam App ID>;` hides the face from anyone who doesn't own that DLC.
-- `CfgCamoSchemes` — one class per scheme: `displayName` (a `$STR_` key or plain text), optional `shortName`, `icon`, `items[]` (facepaint items that unlock it), `categories[]` (which dialog categories list it), optional `requiredDLC`, and `class Faces { <baseFace> = "<camoFace>"; };` — the pairs. A scheme with no pair for a face is never offered for it.
-- `CfgCamoCategories` — the dialog's first list: `displayName`, `items[]` (a category is offered when the unit carries one of them and at least one scheme in it is unlocked by an item the unit carries and covers the unit's face — schemes are gated by their own `items[]`, so a category and its schemes don't have to share the same items) and an optional `whiteBox = 1;` for the white-swatch paint box.
-
-**Give an existing scheme more faces** (e.g. a face pack) — ship your own `CfgFaces` camo classes and textures, then:
-
-```cpp
-class CfgPatches {
-    class my_camo_pack {
-        requiredAddons[] = {"cfr_common"};   // so the registry classes exist to extend
-        // ...
-    };
-};
-
-class CfgCamoBaseFaces {
-    class MyMod_Face_01 {};
-};
-class CfgCamoSchemes {
-    class BWTarn {
-        class Faces {
-            MyMod_Face_01 = "mymod_Face_01_BWTarn";
-        };
-    };
-};
-```
-
-**Add a whole new scheme** — it appears in the dialog, the ACE self-actions and the ZEN menu with no other changes, as long as its `categories[]` names a category:
-
-```cpp
-class CfgCamoSchemes {
-    class MyDesert {
-        displayName = "Desert Stripes";
-        icon = "\my_mod\data\icon_ca.paa";
-        items[] = {"my_mod_Facepaint"};        // your own CfgWeapons item, or one of CFR's
-        categories[] = {"my_category"};
-        class Faces {
-            GreekHead_A3_01 = "mymod_Greek01_Desert";
-        };
-    };
-};
-class CfgCamoCategories {
-    class my_category {
-        displayName = "My Camo";
-        items[] = {"my_mod_Facepaint"};
-    };
-};
-```
-
-Your addon has to ship the camo faces themselves (`CfgFaces` classes with their textures) — registering only tells this mod which face maps to which. Nothing needs to be loaded before yours besides `cfr_common`; options are listed in config load order, so yours follow this mod's own.
+Faces and schemes are registered through three config classes (`CfgCamoBaseFaces`, `CfgCamoSchemes`, `CfgCamoCategories`; `CfgCamo.hpp` here defines this mod's own), so another addon can add either without touching this mod. The addon-author guide, with examples, lives in the docs: [Extending the mod](../../docs/scripting.md#extending-the-mod).
 
 ## CBA Extended Loadout
 

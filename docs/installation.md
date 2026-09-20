@@ -13,7 +13,7 @@ Optionally, [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?
 
 ## Players
 
-1. Subscribe to the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=MOD_ID), or download a release from the [Releases](https://github.com/Andx667/CamoFacesRedux/releases) page.
+1. Subscribe to the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3799682446), or download a release from the [Releases](https://github.com/Andx667/CamoFacesRedux/releases) page.
 2. Make sure CBA_A3 and ACE3 are also installed and enabled.
 3. Enable **Camo Faces Redux**, CBA_A3, and ACE3 in your mod launcher.
 

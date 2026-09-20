@@ -50,7 +50,7 @@ Camo Faces Redux is fully open-source. Bug reports, feature requests, and contri
 
 [GitHub Repository](https://github.com/Andx667/CamoFacesRedux)  
 [Report an Issue](https://github.com/Andx667/CamoFacesRedux/issues)  
-[Documentation](https://andx667.github.io/CamoFacesRedux/)  
+[Documentation](https://andx667.github.io/Camo_Faces_Redux/)  
 [Discord](https://discord.gg/ag4v6kxYAa)
 
 Licensed under [APL-ND](https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE).
