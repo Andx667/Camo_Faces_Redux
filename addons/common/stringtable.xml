@@ -547,6 +547,48 @@
             <Bulgarian>Не е останала използваема боя за лице</Bulgarian>
             <Latin>Nullus fucus faciei utilis superest</Latin>
         </Key>
+        <Key ID="STR_CFR_Common_settingWashOff_name">
+            <English>Will Camo Wash Off in Water</English>
+            <Czech>Smyje se kamufláž ve vodě</Czech>
+            <French>Le camouflage part-il à l'eau</French>
+            <Spanish>¿Se quita el camuflaje con el agua?</Spanish>
+            <Italian>La mimetizzazione si lava via in acqua</Italian>
+            <Polish>Czy kamuflaż zmywa się w wodzie</Polish>
+            <Portuguese>A camuflagem sai com a água</Portuguese>
+            <Russian>Смывается ли камуфляж в воде</Russian>
+            <German>Tarnung wird im Wasser abgewaschen</German>
+            <Korean>물속에서 위장이 씻겨 나감</Korean>
+            <Japanese>水中でカモフラージュが落ちる</Japanese>
+            <Chinese>偽裝在水中會被洗掉</Chinese>
+            <Chinesesimp>伪装在水中会被洗掉</Chinesesimp>
+            <Turkish>Kamuflaj suda yıkanıp gider</Turkish>
+            <Slovak>Zmyje sa kamufláž vo vode</Slovak>
+            <Hungarian>Lemosódik az álcázás vízben</Hungarian>
+            <Ukrainian>Чи змивається камуфляж у воді</Ukrainian>
+            <Bulgarian>Измива ли се камуфлажът във вода</Bulgarian>
+            <Latin>Num dissimulatio in aqua abluatur</Latin>
+        </Key>
+        <Key ID="STR_CFR_Common_settingWashOff_tooltip">
+            <English>When enabled, a player's camouflage face is washed off the moment they dive underwater, and they return to their original face. Swimming on the surface does not wash it off. Only player-controlled units are affected; AI keep their camo until it is cleaned. Disable it to let camo survive diving, e.g. for naval missions.</English>
+            <Czech>Je-li zapnuto, kamufláž na obličeji hráče se smyje v okamžiku, kdy se ponoří pod vodu, a vrátí se původní obličej. Plavání na hladině ji nesmyje. Týká se jen jednotek ovládaných hráči; AI si kamufláž ponechá, dokud není smyta. Vypnutím kamufláž potápění přečká, např. v námořních misích.</Czech>
+            <French>Si activé, le camouflage du visage d'un joueur est lavé dès qu'il plonge sous l'eau et il retrouve son visage d'origine. Nager à la surface ne le lave pas. Seules les unités contrôlées par des joueurs sont concernées ; l'IA garde son camouflage jusqu'à ce qu'il soit nettoyé. Désactivez-le pour que le camouflage résiste à la plongée, par exemple pour des missions navales.</French>
+            <Spanish>Si está activado, el camuflaje facial de un jugador se lava en cuanto se sumerge bajo el agua y recupera su cara original. Nadar en la superficie no lo lava. Solo afecta a las unidades controladas por jugadores; la IA conserva su camuflaje hasta que se limpie. Desactívalo para que el camuflaje resista el buceo, por ejemplo en misiones navales.</Spanish>
+            <Italian>Se attivo, la mimetizzazione del viso di un giocatore viene lavata via nel momento in cui si immerge sott'acqua, e torna al volto originale. Nuotare in superficie non la lava via. Riguarda solo le unità controllate dai giocatori; l'IA mantiene la mimetizzazione finché non viene ripulita. Disattivalo perché la mimetizzazione resista all'immersione, ad esempio nelle missioni navali.</Italian>
+            <Polish>Po włączeniu kamuflaż na twarzy gracza zostaje zmyty w chwili zanurkowania i wraca oryginalna twarz. Pływanie po powierzchni go nie zmywa. Dotyczy tylko jednostek sterowanych przez graczy; AI zachowuje kamuflaż, dopóki nie zostanie zmyty. Wyłącz, aby kamuflaż przetrwał nurkowanie, np. w misjach morskich.</Polish>
+            <Portuguese>Se ativado, a camuflagem facial de um jogador é lavada assim que mergulha e volta ao rosto original. Nadar à superfície não a lava. Só afeta as unidades controladas por jogadores; a IA mantém a camuflagem até ser limpa. Desativa para que a camuflagem sobreviva ao mergulho, por exemplo em missões navais.</Portuguese>
+            <Russian>Если включено, камуфляж на лице игрока смывается, как только он погружается под воду, и возвращается исходное лицо. Плавание на поверхности его не смывает. Затрагивает только юнитов под управлением игроков; ИИ сохраняет камуфляж, пока его не смоют. Отключите, чтобы камуфляж переживал погружение, например в морских миссиях.</Russian>
+            <German>Wenn aktiviert, wird die Tarnschminke eines Spielers abgewaschen, sobald er abtaucht, und er bekommt sein ursprüngliches Gesicht zurück. Schwimmen an der Oberfläche wäscht sie nicht ab. Betrifft nur von Spielern gesteuerte Einheiten; KI behalten ihre Tarnung, bis sie gereinigt wird. Deaktivieren, damit die Tarnung das Tauchen übersteht, z. B. für Marine-Missionen.</German>
+            <Korean>켜면 플레이어가 물속으로 잠수하는 순간 얼굴 위장이 씻겨 나가 원래 얼굴로 돌아옵니다. 수면 위에서 수영하는 것으로는 씻겨 나가지 않습니다. 플레이어가 조종하는 유닛에만 적용되며, AI는 씻어내기 전까지 위장을 유지합니다. 해상 임무 등에서 잠수해도 위장이 유지되게 하려면 끄세요.</Korean>
+            <Japanese>有効にすると、プレイヤーが水中に潜った瞬間に顔のカモフラージュが洗い流され、元の顔に戻ります。水面を泳ぐだけでは落ちません。プレイヤーが操作するユニットのみが対象で、AI は洗い落とされるまでカモフラージュを保ちます。海上ミッションなどで潜っても落ちないようにするには無効にしてください。</Japanese>
+            <Chinese>啟用後，玩家一潛入水中，臉上的偽裝就會被洗掉並恢復為原本的臉。在水面游泳不會洗掉。只影響由玩家控制的單位；AI 會保留偽裝直到被清除。停用後偽裝可在潛水後保留，例如用於海上任務。</Chinese>
+            <Chinesesimp>启用后，玩家一潜入水中，脸上的伪装就会被洗掉并恢复为原本的脸。在水面游泳不会洗掉。只影响由玩家控制的单位；AI 会保留伪装直到被清除。禁用后伪装可在潜水后保留，例如用于海上任务。</Chinesesimp>
+            <Turkish>Etkinleştirildiğinde, bir oyuncunun yüzündeki kamuflaj suya daldığı anda yıkanıp gider ve orijinal yüzüne döner. Su yüzeyinde yüzmek onu yıkamaz. Yalnızca oyuncular tarafından kontrol edilen birimleri etkiler; yapay zeka kamuflajını temizlenene kadar korur. Kamuflajın dalıştan sonra da kalması için (ör. deniz görevleri) devre dışı bırakın.</Turkish>
+            <Slovak>Ak je zapnuté, kamufláž na tvári hráča sa zmyje v okamihu, keď sa ponorí pod vodu, a vráti sa pôvodná tvár. Plávanie na hladine ju nezmyje. Týka sa len jednotiek ovládaných hráčmi; AI si kamufláž ponechá, kým nie je zmytá. Vypnutím kamufláž potápanie prežije, napr. v námorných misiách.</Slovak>
+            <Hungarian>Bekapcsolva a játékos arcán lévő álcázás lemosódik abban a pillanatban, amikor víz alá merül, és visszatér az eredeti arc. A felszínen úszás nem mossa le. Csak a játékosok által irányított egységeket érinti; a MI megtartja az álcázását, amíg le nem mossák. Kikapcsolva az álcázás túléli a merülést, pl. tengeri küldetéseknél.</Hungarian>
+            <Ukrainian>Якщо ввімкнено, камуфляж на обличчі гравця змивається, щойно він занурюється під воду, і повертається початкове обличчя. Плавання на поверхні його не змиває. Стосується лише юнітів під керуванням гравців; ШІ зберігає камуфляж, доки його не змиють. Вимкніть, щоб камуфляж витримував занурення, наприклад у морських місіях.</Ukrainian>
+            <Bulgarian>Когато е включено, камуфлажът на лицето на играча се измива в момента, в който се потопи под вода, и се връща оригиналното лице. Плуването по повърхността не го измива. Засяга само единиците, управлявани от играчи; изкуственият интелект запазва камуфлажа си, докато не бъде почистен. Изключете, за да оцелява камуфлажът при гмуркане, напр. във военноморски мисии.</Bulgarian>
+            <Latin>Si activum est, dissimulatio faciei lusoris abluitur simul atque sub aquam mergitur, et facies prior restituitur. Natare in superficie eam non abluit. Solas unitates a lusoribus ductas afficit; IA dissimulationem retinet donec abluatur. Inhibe ut dissimulatio urinationem superet, e.g. in missionibus navalibus.</Latin>
+        </Key>
         <Key ID="STR_CFR_Common_settingWearOffTime_name">
             <English>Camo Wear-off Time (Minutes)</English>
             <Czech>Doba, než kamufláž vyblednou (minuty)</Czech>

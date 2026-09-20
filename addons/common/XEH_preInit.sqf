@@ -50,3 +50,13 @@ private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
     [0, 240, 0, 0],
     1
 ] call CBA_fnc_addSetting;
+
+// isGlobal 1 for the same reason as the wear-off time above: it's mission rules (a naval mission may
+// want divers to keep their camo), and every client reads it locally in fnc_handleAnimChanged.sqf
+[
+    QGVAR(washOffInWater), "CHECKBOX",
+    [LLSTRING(settingWashOff_name), LLSTRING(settingWashOff_tooltip)],
+    _category,
+    true,
+    1
+] call CBA_fnc_addSetting;

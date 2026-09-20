@@ -29,3 +29,22 @@
         };
     };
 } forEach (allUnits + allDead);
+
+// Diving washes camo off (see fnc_handleAnimChanged.sqf). AnimChanged is only listened to on the local
+// player's current unit - never every unit in the mission - so this costs one string check per player
+// animation change and nothing while idle. The "unit" player event fires for the initial unit and again
+// on respawn or a unit switch (e.g. Zeus), where the old unit's handler is dropped and the new one gets its own.
+if (hasInterface) then {
+    ["unit", {
+        params ["_unit", "_oldUnit"];
+
+        if (!isNull _oldUnit) then {
+            _oldUnit removeEventHandler ["AnimChanged", _oldUnit getVariable [QGVAR(animChangedEH), -1]];
+            _oldUnit setVariable [QGVAR(animChangedEH), nil];
+        };
+
+        if (!isNull _unit && {isNil {_unit getVariable QGVAR(animChangedEH)}}) then {
+            _unit setVariable [QGVAR(animChangedEH), _unit addEventHandler ["AnimChanged", {call FUNC(handleAnimChanged)}]];
+        };
+    }, true] call CBA_fnc_addPlayerEventHandler;
+};

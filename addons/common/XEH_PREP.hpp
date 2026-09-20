@@ -3,6 +3,7 @@ PREP(getCamoOptions);
 PREP(getCountryOptions);
 PREP(getSchemeDisplayName);
 PREP(hasFacepaint);
+PREP(handleAnimChanged);
 PREP(handleRespawn);
 PREP(init);
 PREP(isCamoFace);
