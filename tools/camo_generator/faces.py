@@ -67,6 +67,11 @@ _add("Mavros", "Mavros", "Mavros", "m_Mavros", "Tacops", "Greek")
 _add("Sturrock", "Sturrock", "Sturrock", "m_Sturrock", "Tacops", "White")
 _add("Ioannou", "Ioannou", "Ioannou", "m_Ioannou", "Tank", "Greek")
 
+# Named campaign personas are not DLC-gated: their faces are ordinary heads that any mission can put a
+# unit in whoever owns the DLC, so camo for them has to be offered to everyone (see docs/components/faces.md).
+# generate_registry.py leaves requiredDLC off these.
+UNGATED = {"Barklem", "Mavros", "Sturrock", "Ioannou"}
+
 # Black paint on skin this dark reads as almost nothing, which is why the mod ships no Black
 # variant for AfricanHead_01-03 either. Barklem shares AfricanHead_01's skin tone.
 NO_BLACK = {k for k in NEW if k.startswith("TanoanHead")} | {"Barklem"}

@@ -56,7 +56,8 @@ after adding more heads to `NEW` without reverting `addons/faces` first.
 
 1. Add them to `NEW` in `faces.py`.
 2. Make sure `APPID` in `faces.py` has their DLC's App ID, so `generate_registry.py` gates them
-   with `requiredDLC`. (A head with no `NO_BLACK` entry gets all 8 schemes; add it there to skip Black.)
+   with `requiredDLC` (unless the head is in `UNGATED`, which is for named campaign personas that any
+   mission can use whoever owns the DLC). (A head with no `NO_BLACK` entry gets all 8 schemes; add it there to skip Black.)
 3. Run `resolve_vanilla.py` (needs `CFR_CONFIG_DUMP`) to refresh `data/names.json` and
    `data/vanilla_props.json`, then the pipeline above. `names.json` covers the hand-written heads
    too, which is what lets `validate.py names` run offline. If a head is a named campaign persona

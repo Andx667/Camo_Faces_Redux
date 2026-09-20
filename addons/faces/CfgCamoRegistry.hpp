@@ -6,7 +6,7 @@ class CfgCamoBaseFaces {
     class AfricanHead_01 {};
     class AfricanHead_02 {};
     class AfricanHead_03 {};
-    class Barklem { requiredDLC = 744950; };
+    class Barklem {};
     class AsianHead_A3_01 {};
     class AsianHead_A3_02 {};
     class AsianHead_A3_03 {};
@@ -27,8 +27,8 @@ class CfgCamoBaseFaces {
     class GreekHead_A3_12 { requiredDLC = 571710; };
     class GreekHead_A3_13 { requiredDLC = 571710; };
     class GreekHead_A3_14 { requiredDLC = 571710; };
-    class Mavros { requiredDLC = 744950; };
-    class Ioannou { requiredDLC = 798390; };
+    class Mavros {};
+    class Ioannou {};
     class LivonianHead_1 { requiredDLC = 1021790; };
     class LivonianHead_2 { requiredDLC = 1021790; };
     class LivonianHead_3 { requiredDLC = 1021790; };
@@ -87,7 +87,7 @@ class CfgCamoBaseFaces {
     class WhiteHead_31 { requiredDLC = 1021790; };
     class WhiteHead_32 { requiredDLC = 1021790; };
     class WhiteHead_23 { requiredDLC = 571710; };
-    class Sturrock { requiredDLC = 744950; };
+    class Sturrock {};
 };
 
 class CfgCamoSchemes {

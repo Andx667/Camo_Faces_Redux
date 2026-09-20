@@ -13,7 +13,7 @@ This addon offers two independent ways to reach the same underlying `cfr_common`
 
 ## Flow (dialog)
 
-1. `fnc_canShowAction` gates an ACE self-action, **Camo Faces** (`CfgVehicles.hpp`), on the player having a compatible base/camo face and a facepaint item equipped.
+1. `fnc_canShowAction` gates an ACE self-action, **Camo Faces** (`CfgVehicles.hpp`), on the player wearing a camo face (so camo can always be removed, even once the last stick is used up), or a compatible base face plus a facepaint item.
 2. `fnc_startDialog` opens the dialog (`GVAR(Dialog)`, `Dialog.hpp`); `fnc_initDialog` sets it up — checking equipped headgear/goggles/NV, populating the country listbox via `cfr_common`'s `fnc_getCountryOptions` (the registered `CfgCamoCategories` - by default BW, Serbian, US, Snow Stripes and Vanilla - that the player's facepaint items and current face unlock), and starting a live mirror camera.
 3. Selecting a country (`fnc_onLBCountryChanged`) populates the camo-pattern listbox via `cfr_common`'s `fnc_getCamoOptions`.
 4. Selecting a camo pattern (`fnc_onLBCamoChanged`) unlocks the first "apply layer" button, once all headgear is removed.
@@ -49,7 +49,7 @@ The facepaint items are consumable sticks (see `cfr_items`): the dialog flow and
 
 | Function | Arguments | Description |
 | --- | --- | --- |
-| `fnc_canShowAction` | `[unit]` | Self-action condition: is the unit's face camo-able and does it have a facepaint item equipped? |
+| `fnc_canShowAction` | `[unit]` | Self-action condition: is the unit wearing camo, or wearing a camo-able base face while carrying facepaint? |
 | `fnc_startDialog` | none | Opens the dialog |
 | `fnc_closeDialog` | none | Deletes the mirror camera created by `fnc_initDialog` |
 | `fnc_initDialog` | `[display]` | Sets initial dialog state: day/night textures, headgear/goggles/NV indicators, country listbox, mirror camera |

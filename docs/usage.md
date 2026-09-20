@@ -14,7 +14,7 @@ You can paint a friendly unit's face too - a player or an AI teammate standing n
 
 ## Removing camouflage
 
-Open the dialog again (the self-action also shows while camo is currently applied) and use the **remove camo** button to revert to your original face.
+Open the dialog again (the self-action stays available while camo is applied, even after your last facepaint stick is used up) and use the **remove camo** button to revert to your original face.
 
 To wipe camo off a friendly unit's face, open the ACE interaction menu on them and pick **Head -> Clean Face**. This needs no facepaint item.
 
