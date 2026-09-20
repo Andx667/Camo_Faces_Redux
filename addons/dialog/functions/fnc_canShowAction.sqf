@@ -1,10 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx, Sk3y
- * ACE self-action condition for the "Camo Faces" menu entry (see CfgVehicles.hpp). Shows if the
- * unit's current face is either a known un-camo'd base face or one of this mod's camo faces
- * (so the action stays available to remove camo too), and the unit has at least one of the
- * facepaint items (any item that unlocks a registered scheme, cfr_common's GVAR(itemClasses)) equipped.
+ * ACE self-action condition for the "Camo Faces" menu entry (see CfgVehicles.hpp). Shows while the
+ * unit is wearing one of this mod's camo faces, whether or not it still carries facepaint - a stick is
+ * removed when its last use is spent, and camo must stay removable after that. Otherwise it shows for a
+ * known un-camo'd base face when the unit carries at least one of the facepaint items (any item that
+ * unlocks a registered scheme, cfr_common's GVAR(itemClasses)).
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -23,9 +24,7 @@ TRACE_1("fnc_canShowAction",_this);
 
 private _face = face _player;
 
-private _faceKnown = (_face in EGVAR(common,all_faces)) || ([_face] call EFUNC(common,isCamoFace));
-private _hasItem = [_player, EGVAR(common,itemClasses)] call EFUNC(common,hasFacepaint);
+// camo can always be taken off; putting it on needs a base face and facepaint
+if ([_face] call EFUNC(common,isCamoFace)) exitWith {true};
 
-if (_faceKnown && _hasItem) exitWith {true};
-
-false;
+(_face in EGVAR(common,all_faces)) && {[_player, EGVAR(common,itemClasses)] call EFUNC(common,hasFacepaint)};

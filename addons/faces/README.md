@@ -38,7 +38,7 @@ Adds the actual camouflaged face variants: a `CfgFaces` entry, texture, and mate
 
 Alongside the base game's 39 heads, the mod covers 46 heads added by later DLCs — Apex (Tanoan, plus Asian 04-07), Contact (Livonian, Russian, White 24-32), Laws of War (Greek 11-14, White 23), Tac-Ops Mission Pack (Barklem, Mavros, Sturrock) and Tanks (Ioannou). Their `CfgFaces` classes are defined unconditionally, exactly as the Vanilla scheme already references BI's Marksmen `CamoHead_*` faces; ownership is enforced at runtime instead, by the `isDLCAvailable` gate in [`cfr_common`](../common/README.md)'s `fnc_init`, so a player without a given DLC never sees those faces offered anywhere.
 
-Barklem, Mavros, Sturrock and Ioannou are named campaign personas rather than generic soldiers, but their `CfgFaces` classes are ordinary, non-disabled heads underneath — a mission can put any unit in one of these faces regardless of who owns the DLC, so they get camo like every other head.
+Barklem, Mavros, Sturrock and Ioannou are named campaign personas rather than generic soldiers, but their `CfgFaces` classes are ordinary, non-disabled heads underneath, so they get camo like every other head. They are gated by their DLC (Tac-Ops Mission Pack `744950`, Tanks `798390`) exactly like the other DLC heads.
 
 Note that the `Vanilla` scheme cannot cover them: its pairs are BI's own `CamoHead_*` faces, which exist only for the base game's original 39 heads.
 

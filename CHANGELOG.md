@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Camo could not be removed once the last use of the facepaint stick was spent: the stick is removed when empty, and the "Camo Faces" self-action (and its Remove entry) only showed while you carried facepaint. It now always shows while you are wearing camo
 - The unused `STR_CFR_Main_Name` string still carried the "[Beta]" tag dropped from the mod's name in 1.0.0
 
 ## [2.0.0] - 2026-09-19
