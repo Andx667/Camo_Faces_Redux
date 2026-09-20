@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The Box of Facepaint now holds 10 of each facepaint stick instead of 30 of each plain item
 - The original plain facepaint items (`cfr_items_BW_Facepaint`, `cfr_items_Serbian_Facepaint`, `cfr_items_US_Facepaint`, `cfr_items_SnowStripes_Facepaint`) still work and never run out, so existing missions and loadouts are unaffected, but they are hidden from the arsenal and editor. Facepaint is now recognised in the vest and backpack as well as the uniform
 - A scheme's or category's `items[]` may list either kind of item: a magazine-type entry is used up, a plain-item entry is not
+- The addon-author guide "Extending the mod" moved from `cfr_common`'s README to the Scripting & API page of the documentation site
 
 ### Fixed
 
