@@ -18,12 +18,12 @@ GVAR(mirrorCam) = nil;
 // Only played standing (the moves here start from a standing idle), never swimming, in a vehicle or
 // in the air, and only if the move exists.
 GVAR(animations) = createHashMapFromArray [
-    // ACE field rations' unarmed standing drink move: weapon holstered whatever is carried
-    ["self_rifle", "ace_field_rations_drinkStand"],
-    ["self_pistol", "ace_field_rations_drinkStand"],
-    ["self_launcher", "ace_field_rations_drinkStand"],
-    ["self_none", "ace_field_rations_drinkStand"],
-    // unarmed, erect standing idle: weapon holstered whatever is carried
+    // your own face: no fitting move yet, so none is played
+    ["self_rifle", ""],
+    ["self_pistol", ""],
+    ["self_launcher", ""],
+    ["self_none", ""],
+    // buddy painting - unarmed, erect standing idle: weapon holstered whatever is carried
     ["other_rifle", "InBaseMoves_assemblingVehicleErc"],
     ["other_pistol", "InBaseMoves_assemblingVehicleErc"],
     ["other_launcher", "InBaseMoves_assemblingVehicleErc"],

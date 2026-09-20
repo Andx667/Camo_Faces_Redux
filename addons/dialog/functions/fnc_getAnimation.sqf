@@ -49,5 +49,7 @@ private _who = ["other", "self"] select (isNull _target || {_target == _painter}
 
 private _animation = GVAR(animations) getOrDefault [format ["%1_%2", _who, _kind], ""];
 
-// a move that isn't there (ACE without its field rations component) would just not play
+if (_animation == "") exitWith {""};
+
+// a move that isn't there (a mod that provides it isn't loaded) would just not play
 ["", _animation] select isClass (configFile >> "CfgMovesMaleSdr" >> "States" >> _animation)
