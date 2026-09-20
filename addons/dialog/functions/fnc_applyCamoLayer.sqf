@@ -13,6 +13,9 @@
  * headgear back on mid-sequence cancels it instead of silently continuing regardless. When painting
  * someone else that also covers them leaving reach or ceasing to be a valid target.
  *
+ * If GVAR(animations) has a move for the situation the painter plays it for the whole sequence
+ * (fnc_startAnimation at layer 1, fnc_stopAnimation when the last bar finishes or any is cancelled).
+ *
  * Arguments:
  * 0: Camo scheme suffix, e.g. "BWTarn" <STRING>
  * 1: Layer number, 1-3 <NUMBER>
@@ -36,10 +39,18 @@ private _titleKey = switch (_layer) do {
     default { LSTRING(applyingLayer3) };
 };
 
+// one animation spans all three bars: started here at layer 1, ended by whichever bar finishes the
+// sequence or is cancelled (fnc_stopAnimation is a no-op if nothing was started)
+if (_layer == 1) then {
+    [ACE_player, _target] call FUNC(startAnimation);
+};
+
 private _onFinish = if (_layer >= 3) then {
     {
         params ["_args"];
         _args params ["_camo", "_layer", "_target"];
+
+        [ACE_player] call FUNC(stopAnimation);
 
         // the painter's facepaint pays for it - one use of a stick per application, at the very end
         // (legacy plain items cost nothing). fnc_setCamo itself never spends any, so Zeus and scripts stay free
@@ -86,6 +97,7 @@ private _onFinish = if (_layer >= 3) then {
         // likely means they walked off or put headgear back on
         params ["_args"];
         _args params ["", "", "_target"];
+        [ACE_player] call FUNC(stopAnimation);
         hint (localize ([LSTRING(buddyInterrupted), ELSTRING(common,invalidFace)] select (_target == ACE_player)));
     },
     localize _titleKey,
