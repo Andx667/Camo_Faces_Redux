@@ -2,7 +2,7 @@
 /*
  * Authors: Andx
  * Washes camo off a unit that is swimming or diving, if the "Will Camo Wash Off in Water" setting is
- * on. Called about once a second on the local player by the per-frame handler in XEH_postInit.sqf.
+ * on. Called every WASH_OFF_CHECK_SECONDS on the local player by the per-frame handler in XEH_postInit.sqf.
  *
  * Swimming is ace_common_fnc_isSwimming: the surface-swim and dive animation sets, so wading and
  * vehicles never count. Only a camo face is touched (checked by face rather than the synced scheme
