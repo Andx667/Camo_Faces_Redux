@@ -18,7 +18,7 @@ Mission makers and scripters can apply or remove camouflage directly from a scri
 
 This never uses up any facepaint - only applying camo through the dialog or the ACE actions does - and needs no item in the unit's inventory.
 
-If the unit's current face doesn't have a variant under that scheme, nothing happens — no error, just a hint explaining why (on the calling machine).
+If the unit's current face doesn't have a variant under that scheme, nothing happens — no error. If the unit is the local player, they also get a hint explaining why; for any other unit (e.g. an AI) it fails silently.
 
 If the **Camo Wear-off Time** CBA setting (see [Common](components/common.md)) is enabled, this also schedules automatic removal after the configured number of minutes — no extra argument needed, it just works the same as applying camo any other way. Only player-controlled units wear off; camo applied to an AI unit stays until removed, since AI can't reapply it themselves.
 
