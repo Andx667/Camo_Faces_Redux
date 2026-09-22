@@ -1,4 +1,5 @@
 PREP(facepaintUsesText);
+PREP(getCamoFace);
 PREP(getCamoOptions);
 PREP(getCountryOptions);
 PREP(getSchemeDisplayName);

@@ -37,7 +37,7 @@ if (_schemeIdx != -1) then {
     _result = (
         [ACE_player, _itemClasses] call EFUNC(common,hasFacepaint)
     ) && (
-        (_pairs findIf {(_x select 0) == _face}) != -1
+        ([_pairs, _face] call EFUNC(common,getCamoFace)) != ""
     ) && (
         headgear _target == "" && goggles _target == "" && hmd _target == ""
     ) && (

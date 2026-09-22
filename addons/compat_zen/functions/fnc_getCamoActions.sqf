@@ -42,7 +42,7 @@ if (count _applicable == 1) then {
 
     {
         _x params ["_schemeId", "_pairs", "_itemClasses"];
-        if ((_pairs findIf {(_x select 0) == _face}) != -1) then {
+        if (([_pairs, _face] call EFUNC(common,getCamoFace)) != "") then {
             // Use the unlocking item's own inventory icon so each scheme is visually distinct
             // instead of every entry sharing ICON_CAMOUFLAGE. Most schemes have exactly one
             // itemClasses entry; Black and the Vanilla rows list all three facepaint items since
