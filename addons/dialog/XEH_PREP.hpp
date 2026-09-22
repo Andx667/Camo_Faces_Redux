@@ -8,6 +8,7 @@ PREP(canShowAction);
 PREP(canTargetBuddy);
 PREP(cleanBuddy);
 PREP(closeDialog);
+PREP(finishApplyCamo);
 PREP(getBuddyActions);
 PREP(getSchemeActions);
 PREP(hasCamoApplied);

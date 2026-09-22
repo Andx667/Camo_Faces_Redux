@@ -51,20 +51,10 @@ switch (_level) do {
             private _lbCamo = _display displayCtrl IDC_LISTBOX_CAMOFACE;
             private _scheme = _lbCamo lbData (lbCurSel _lbCamo);
 
-            // one use of the player's facepaint stick pays for it (legacy plain items cost nothing);
-            // fnc_setCamo itself never spends any, so Zeus and scripts stay free
-            private _left = [player, _scheme] call EFUNC(common,useFacepaint);
-            if (_left < -1) then {
-                // -2: the stick was moved or used up during the delay; otherwise the scheme doesn't exist
-                hint (localize ([ELSTRING(common,invalidFace), ELSTRING(common,noFacepaint)] select (_left == -2)));
-            } else {
-                [player, _scheme] call EFUNC(common,setCamo);
-
-                // the uses left go on top of fnc_setCamo's own "camouflage applied" hint
-                private _usesText = [_left] call EFUNC(common,facepaintUsesText);
-                if (_usesText != "") then {
-                    hint ((localize ELSTRING(common,camoApplied)) + "\n" + _usesText);
-                };
+            private _usesText = [player, player, _scheme] call FUNC(finishApplyCamo);
+            // the uses left go on top of fnc_setCamo's own "camouflage applied" hint
+            if (!(_usesText isEqualTo false) && {_usesText != ""}) then {
+                hint ((localize ELSTRING(common,camoApplied)) + "\n" + _usesText);
             };
 
             {(_display displayCtrl _x) ctrlEnable false} forEach [IDC_BUTTON_LAYER1, IDC_BUTTON_LAYER2, IDC_BUTTON_LAYER3];
