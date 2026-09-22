@@ -53,7 +53,7 @@ switch (_level) do {
 
             private _usesText = [player, player, _scheme] call FUNC(finishApplyCamo);
             // the uses left go on top of fnc_setCamo's own "camouflage applied" hint
-            if (!(_usesText isEqualTo false) && {_usesText != ""}) then {
+            if (_usesText isEqualType "" && {_usesText != ""}) then {
                 hint ((localize ELSTRING(common,camoApplied)) + "\n" + _usesText);
             };
 
