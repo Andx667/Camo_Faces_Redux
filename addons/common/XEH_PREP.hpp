@@ -1,4 +1,5 @@
 PREP(facepaintUsesText);
+PREP(findBaseFace);
 PREP(getCamoFace);
 PREP(getCamoOptions);
 PREP(getCountryOptions);
