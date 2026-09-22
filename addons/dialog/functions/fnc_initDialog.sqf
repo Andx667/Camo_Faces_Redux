@@ -43,9 +43,8 @@ private _button1 = _display displayCtrl IDC_BUTTON_LAYER1;
 private _button2 = _display displayCtrl IDC_BUTTON_LAYER2;
 private _button3 = _display displayCtrl IDC_BUTTON_LAYER3;
 
-_button1 ctrlEnable false; // as long as not all items are unequipped and options are choosen
-_button2 ctrlEnable false; // as long as not all items are unequipped and options are choosen
-_button3 ctrlEnable false; // as long as not all items are unequipped and options are choosen
+// as long as not all items are unequipped and options are choosen
+{_x ctrlEnable false} forEach [_button1, _button2, _button3];
 
 /*
     picture color and button function
