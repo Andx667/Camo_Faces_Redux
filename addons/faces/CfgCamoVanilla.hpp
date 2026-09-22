@@ -53,24 +53,12 @@ class Vanilla {
 
 // Marksmen also ships three environment-specific heads, but only as variants of three base faces.
 // Which base face each is painted over was confirmed by comparing the textures outside the painted area.
-class VanillaArid {
-    class Faces {
-        PersianHead_A3_01 = "PersianHead_A3_04_a";
-        GreekHead_A3_02 = "GreekHead_A3_10_a";
-        WhiteHead_11 = "WhiteHead_22_a";
+#define ENV_VARIANT(suffix) \
+    class Faces { \
+        PersianHead_A3_01 = QUOTE(PersianHead_A3_04_##suffix); \
+        GreekHead_A3_02 = QUOTE(GreekHead_A3_10_##suffix); \
+        WhiteHead_11 = QUOTE(WhiteHead_22_##suffix); \
     };
-};
-class VanillaLush {
-    class Faces {
-        PersianHead_A3_01 = "PersianHead_A3_04_l";
-        GreekHead_A3_02 = "GreekHead_A3_10_l";
-        WhiteHead_11 = "WhiteHead_22_l";
-    };
-};
-class VanillaSemiArid {
-    class Faces {
-        PersianHead_A3_01 = "PersianHead_A3_04_sa";
-        GreekHead_A3_02 = "GreekHead_A3_10_sa";
-        WhiteHead_11 = "WhiteHead_22_sa";
-    };
-};
+class VanillaArid { ENV_VARIANT(a) };
+class VanillaLush { ENV_VARIANT(l) };
+class VanillaSemiArid { ENV_VARIANT(sa) };
