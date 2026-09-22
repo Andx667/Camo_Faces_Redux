@@ -32,7 +32,7 @@ private _actions = [];
 {
     _x params ["_schemeId", "_pairs", "_itemClasses", "_displayName", "", "_icon"];
 
-    if ([ACE_player, _itemClasses] call EFUNC(common,hasFacepaint) && {(_pairs findIf {(_x select 0) == _face}) != -1}) then {
+    if ([ACE_player, _itemClasses] call EFUNC(common,hasFacepaint) && {([_pairs, _face] call EFUNC(common,getCamoFace)) != ""}) then {
         private _action = [
             format ["%1_Buddy_%2", QUOTE(ADDON), _schemeId],
             _displayName,

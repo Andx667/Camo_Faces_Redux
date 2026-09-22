@@ -1,6 +1,9 @@
 PREP(facepaintUsesText);
+PREP(findBaseFace);
+PREP(getCamoFace);
 PREP(getCamoOptions);
 PREP(getCountryOptions);
+PREP(getScheme);
 PREP(getSchemeDisplayName);
 PREP(hasFacepaint);
 PREP(handleRespawn);

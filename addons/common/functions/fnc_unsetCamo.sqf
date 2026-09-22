@@ -32,20 +32,7 @@ if (isNil QGVAR(schemes)) exitWith {
     [FUNC(unsetCamo), _this] call CBA_fnc_execNextFrame;
 };
 
-// reverse lookup: find whichever scheme's pairs has a camo value matching the current face, and
-// return its paired base face - no string/suffix manipulation needed since GVAR(schemes) already
-// stores both ends of the pair
-private _baseFace = "";
-private _schemeId = "";
-
-{
-    _x params ["_id", "_pairs"];
-    private _pairIdx = _pairs findIf {(_x select 1) == _face};
-    if (_pairIdx != -1) exitWith {
-        _baseFace = (_pairs select _pairIdx) select 0;
-        _schemeId = _id;
-    };
-} forEach GVAR(schemes);
+([_face] call FUNC(findBaseFace)) params ["_schemeId", "_baseFace"];
 
 // see fnc_setCamo.sqf's _hintOwner for why this guard exists - without it, unsetting camo on a
 // non-player unit (e.g. AI from a script) would pop the hint on this machine's own player instead

@@ -11,8 +11,7 @@ class CfgMagazines {
         scope = 2;
         displayName = CSTRING(US_FacepaintStick_DisplayName);
         descriptionShort = CSTRING(US_FacepaintStick_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_US_Facepaint.paa);
-        model = QPATHTOF(data\US_Facepaint.p3d);
+        FACEPAINT_ART(US);
 
         ammo = "";
         count = 10;
@@ -25,20 +24,17 @@ class CfgMagazines {
     class GVAR(Serbian_FacepaintStick): GVAR(US_FacepaintStick) {
         displayName = CSTRING(Serbian_FacepaintStick_DisplayName);
         descriptionShort = CSTRING(Serbian_FacepaintStick_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_SERBIAN_Facepaint.paa);
-        model = QPATHTOF(data\SERBIAN_Facepaint.p3d);
+        FACEPAINT_ART(SERBIAN);
     };
     class GVAR(BW_FacepaintStick): GVAR(US_FacepaintStick) {
         displayName = CSTRING(BW_FacepaintStick_DisplayName);
         descriptionShort = CSTRING(BW_FacepaintStick_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_BW_Facepaint.paa);
-        model = QPATHTOF(data\BW_Facepaint.p3d);
+        FACEPAINT_ART(BW);
     };
     // reuses the BW model/icon as a placeholder, like the SnowStripes_Facepaint item it replaces
     class GVAR(SnowStripes_FacepaintStick): GVAR(US_FacepaintStick) {
         displayName = CSTRING(SnowStripes_FacepaintStick_DisplayName);
         descriptionShort = CSTRING(SnowStripes_FacepaintStick_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_BW_Facepaint.paa);
-        model = QPATHTOF(data\BW_Facepaint.p3d);
+        FACEPAINT_ART(BW);
     };
 };

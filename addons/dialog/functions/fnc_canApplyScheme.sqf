@@ -28,21 +28,13 @@
 params ["_camoSuffix", ["_target", ACE_player, [objNull]]];
 TRACE_1("fnc_canApplyScheme",_this);
 
+private _scheme = [_camoSuffix] call EFUNC(common,getScheme);
+if (_scheme isEqualTo []) exitWith {false};
+
+_scheme params ["", "_pairs", "_itemClasses"];
 private _face = face _target;
-private _result = false;
 
-private _schemeIdx = EGVAR(common,schemes) findIf {(_x select 0) == _camoSuffix};
-if (_schemeIdx != -1) then {
-    (EGVAR(common,schemes) select _schemeIdx) params ["", "_pairs", "_itemClasses"];
-    _result = (
-        [ACE_player, _itemClasses] call EFUNC(common,hasFacepaint)
-    ) && (
-        (_pairs findIf {(_x select 0) == _face}) != -1
-    ) && (
-        headgear _target == "" && goggles _target == "" && hmd _target == ""
-    ) && (
-        _target == ACE_player || {[_target] call FUNC(canTargetBuddy)}
-    );
-};
-
-_result;
+([ACE_player, _itemClasses] call EFUNC(common,hasFacepaint))
+&& {([_pairs, _face] call EFUNC(common,getCamoFace)) != ""}
+&& {headgear _target == "" && goggles _target == "" && hmd _target == ""}
+&& {_target == ACE_player || {[_target] call FUNC(canTargetBuddy)}}

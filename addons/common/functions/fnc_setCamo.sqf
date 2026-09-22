@@ -39,13 +39,9 @@ if (isNil QGVAR(schemes)) exitWith {
 private _face = face _unit;
 private _targetFace = "";
 
-private _schemeIdx = GVAR(schemes) findIf {(_x select 0) == _camo};
-if (_schemeIdx != -1) then {
-    (GVAR(schemes) select _schemeIdx) params ["", "_pairs"];
-    private _pairIdx = _pairs findIf {(_x select 0) == _face};
-    if (_pairIdx != -1) then {
-        _targetFace = (_pairs select _pairIdx) select 1;
-    };
+private _scheme = [_camo] call FUNC(getScheme);
+if (_scheme isNotEqualTo []) then {
+    _targetFace = [_scheme select 1, _face] call FUNC(getCamoFace);
 };
 
 // hint is feedback for whoever just changed their OWN face (the only way this mod's own dialog/ACE

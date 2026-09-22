@@ -118,6 +118,9 @@
 // measures between the two units rather than to the head and so has to allow for a lying or kneeling target
 #define BUDDY_MAX_DISTANCE 2.5
 
+// day or night variant of a UI texture, based on GVAR(isNight) (set in fnc_initDialog.sqf)
+#define DAY_NIGHT_TEX(day,night) ([QPATHTOF2(day), QPATHTOF2(night)] select GVAR(isNight))
+
 // Listbox styles
 #define LB_TEXTURES       0x10
 #define LB_MULTI          0x20
