@@ -41,9 +41,9 @@ private _camoOptions = [_selectId] call EFUNC(common,getCamoOptions);
 private _box = _display displayCtrl IDC_PICTURE_BOX;
 private _whiteBox = (EGVAR(common,categories) findIf {(_x select 0) == _selectId && {_x select 3}}) != -1;
 _box ctrlSetText (if (_whiteBox) then {
-    [QPATHTOF2(data\UI\box_snow.paa), QPATHTOF2(data\UI\box_snow_night.paa)] select GVAR(isNight)
+    DAY_NIGHT_TEX(data\UI\box_snow.paa, data\UI\box_snow_night.paa)
 } else {
-    [QPATHTOF2(data\UI\box.paa), QPATHTOF2(data\UI\box_night.paa)] select GVAR(isNight)
+    DAY_NIGHT_TEX(data\UI\box.paa, data\UI\box_night.paa)
 });
 
 {

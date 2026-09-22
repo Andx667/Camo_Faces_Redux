@@ -35,8 +35,8 @@ GVAR(isNight) = _hour > 21 || _hour < 6;
 // white-swatch box swap, which is keyed off the selected country/scheme, not just whether the
 // player happens to be carrying the item), so the box starts on the default brown texture
 // regardless of what the player is carrying
-_box ctrlSetText ([QPATHTOF2(data\UI\box.paa), QPATHTOF2(data\UI\box_night.paa)] select GVAR(isNight));
-_notepad ctrlSetText ([QPATHTOF2(data\UI\notepad.paa), QPATHTOF2(data\UI\notepad_night.paa)] select GVAR(isNight));
+_box ctrlSetText DAY_NIGHT_TEX(data\UI\box.paa, data\UI\box_night.paa);
+_notepad ctrlSetText DAY_NIGHT_TEX(data\UI\notepad.paa, data\UI\notepad_night.paa);
 
 // deactivate button
 private _button1 = _display displayCtrl IDC_BUTTON_LAYER1;
