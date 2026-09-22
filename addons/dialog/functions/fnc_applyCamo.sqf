@@ -47,7 +47,8 @@ switch (_level) do {
     case 3: {
         hint (localize LSTRING(applyingLayer3));
         [{
-            private _lbCamo = (findDisplay IDD_DIALOG) displayCtrl IDC_LISTBOX_CAMOFACE;
+            private _display = findDisplay IDD_DIALOG;
+            private _lbCamo = _display displayCtrl IDC_LISTBOX_CAMOFACE;
             private _scheme = _lbCamo lbData (lbCurSel _lbCamo);
 
             // one use of the player's facepaint stick pays for it (legacy plain items cost nothing);
@@ -66,9 +67,7 @@ switch (_level) do {
                 };
             };
 
-            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER1) ctrlEnable false;
-            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER2) ctrlEnable false;
-            ((findDisplay IDD_DIALOG) displayCtrl IDC_BUTTON_LAYER3) ctrlEnable false;
+            {(_display displayCtrl _x) ctrlEnable false} forEach [IDC_BUTTON_LAYER1, IDC_BUTTON_LAYER2, IDC_BUTTON_LAYER3];
         }, [], 2] call CBA_fnc_waitAndExecute;
     };
 };
