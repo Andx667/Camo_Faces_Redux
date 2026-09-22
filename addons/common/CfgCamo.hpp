@@ -31,8 +31,7 @@ class CfgCamoCategories {
     // not tied to one item - any of the three facepaints unlocks it
     class vanilla {
         displayName = CSTRING(camo_vanilla);
-        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
-            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = ALL_FACEPAINT_ITEMS;
     };
 };
 
@@ -71,8 +70,7 @@ class CfgCamoSchemes {
     class Black {
         displayName = CSTRING(camo_black);
         icon = QPATHTOF(data\UI\Icon_black_ca.paa);
-        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
-            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = ALL_FACEPAINT_ITEMS;
         categories[] = {"bw", "serbian", "us"};
     };
     class Serbian {
@@ -116,8 +114,7 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla);
         shortName = CSTRING(camo_vanilla_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
-            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = ALL_FACEPAINT_ITEMS;
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };
@@ -127,8 +124,7 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla_arid);
         shortName = CSTRING(camo_vanilla_arid_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
-            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = ALL_FACEPAINT_ITEMS;
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };
@@ -136,8 +132,7 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla_lush);
         shortName = CSTRING(camo_vanilla_lush_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
-            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = ALL_FACEPAINT_ITEMS;
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };
@@ -145,8 +140,7 @@ class CfgCamoSchemes {
         displayName = CSTRING(camo_vanilla_semiarid);
         shortName = CSTRING(camo_vanilla_semiarid_short);
         icon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
-        items[] = {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick),
-            QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)};
+        items[] = ALL_FACEPAINT_ITEMS;
         categories[] = {"vanilla"};
         requiredDLC = 332350;
     };
