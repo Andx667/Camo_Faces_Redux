@@ -18,8 +18,8 @@
 params ["_schemeId"];
 TRACE_1("fnc_getSchemeDisplayName",_this);
 
-private _schemeIdx = GVAR(schemes) findIf {(_x select 0) == _schemeId};
-if (_schemeIdx == -1) exitWith {""};
+private _scheme = [_schemeId] call FUNC(getScheme);
+if (_scheme isEqualTo []) exitWith {""};
 
 // already localized when the registry was read (see fnc_init.sqf)
-(GVAR(schemes) select _schemeIdx) select 3;
+_scheme select 3;
