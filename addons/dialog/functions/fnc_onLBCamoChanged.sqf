@@ -24,7 +24,7 @@ TRACE_1("fnc_onLBCamoChanged",_this);
 disableSerialization;
 
 // only allow starting to apply camo once all headgear is removed and the face is one we can camo
-private _face = (face player);
+private _face = (face ACE_player);
 
 if (!GVAR(hasHelmet) && !GVAR(hasGoggles) && !GVAR(hasNV) && _face in EGVAR(common,all_faces)) then {
     // allow first button

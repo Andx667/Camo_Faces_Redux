@@ -49,7 +49,8 @@ if (_scheme isNotEqualTo []) then {
 // this function, so without this guard, scripting fnc_setCamo onto other units (e.g. AI from a unit's
 // init field) would incorrectly pop the hint on that machine's own player, not the (non-existent)
 // player controlling the target unit
-private _hintOwner = _unit == player;
+// ACE_player as well: a remote-controlled unit (Zeus) is the one this machine is painting as
+private _hintOwner = _unit in [player, ACE_player];
 
 if (_targetFace == "") exitWith {
     if (_hintOwner) then { hint (localize LSTRING(invalidFace)); };
