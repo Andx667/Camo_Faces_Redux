@@ -35,7 +35,7 @@ private _camolist = [];
             _x params ["", "_pairs", "_schemeItems", "", "", "", "_categories"];
             (_categories findIf {_x == _categoryId}) != -1
             && {[_unit, _schemeItems] call FUNC(hasFacepaint)}
-            && {(_pairs findIf {(_x select 0) == _face}) != -1}
+            && {([_pairs, _face] call FUNC(getCamoFace)) != ""}
         };
 
         if (_offered != -1) then {

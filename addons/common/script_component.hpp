@@ -22,3 +22,8 @@
 // how often the local player is checked for swimming, which washes camo off - see fnc_washOff.sqf.
 // Deliberately not every frame: a quick dip may leave camo intact, a short grace period, not a guarantee
 #define WASH_OFF_CHECK_SECONDS 3
+
+// every facepaint item across every faction - used by CfgCamo.hpp for schemes/categories not tied
+// to one faction's item (Black, Vanilla and its environment variants, and the vanilla category)
+#define ALL_FACEPAINT_ITEMS {QEGVAR(items,BW_FacepaintStick), QEGVAR(items,Serbian_FacepaintStick), QEGVAR(items,US_FacepaintStick), \
+    QEGVAR(items,BW_Facepaint), QEGVAR(items,Serbian_Facepaint), QEGVAR(items,US_Facepaint)}

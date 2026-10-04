@@ -38,41 +38,5 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
-#define WEAP_XX(WEAP, COUNT) class DOUBLES(_xx,WEAP) { \
-    weapon = QUOTE(WEAP); \
-    count = COUNT; \
-}
-
-#define MAG_XX(MAG, COUNT) class DOUBLES(_xx,MAG) { \
-    magazine = QUOTE(MAG); \
-    count = COUNT; \
-}
-
-#define ITEM_XX(ITEM, COUNT) class DOUBLES(_xx,ITEM) { \
-    name = QUOTE(ITEM); \
-    count = COUNT; \
-}
-
-// ACE Cargo
-#define CARGO_XX(ITEM, COUNT) class ITEM { \
-    type = QUOTE(ITEM); \
-    amount = COUNT; \
-}
-
-#define MAG_CSW(var1,var2) class DOUBLES(var1,csw): var1 { \
-    scope = var2; \
-    type = TYPE_MAGAZINE_PRIMARY_AND_THROW; \
-}
-
-// Debug textures, mainly for testing hiddenSelections
-#define DBUG_TEX_RED "#(rgb,8,8,3)color(1,0,0,1)"
-#define DBUG_TEX_GRN "#(rgb,8,8,3)color(0,1,0,1)"
-#define DBUG_TEX_BLU "#(rgb,8,8,3)color(0,0,1,1)"
-#define DBUG_TEX_PUR "#(rgb,8,8,3)color(1,0,1,1)"
-#define DBUG_TEX_YEL "#(rgb,8,8,3)color(1,1,0,1)"
-
-// Statements and conditions
-#define CLAMP(var1,lower,upper) (lower max (var1 min upper))
-
 // Weapon/magazine/item TYPE_* constants (TYPE_WEAPON_PRIMARY, TYPE_MAGAZINE_PRIMARY_AND_THROW, etc.)
 // are provided by ACE3's own script_macros.hpp - ACE is authoritative for these, not redefined here.

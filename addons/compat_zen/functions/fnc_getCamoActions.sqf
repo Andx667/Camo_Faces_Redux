@@ -42,7 +42,7 @@ if (count _applicable == 1) then {
 
     {
         _x params ["_schemeId", "_pairs", "_itemClasses"];
-        if ((_pairs findIf {(_x select 0) == _face}) != -1) then {
+        if (([_pairs, _face] call EFUNC(common,getCamoFace)) != "") then {
             // Use the unlocking item's own inventory icon so each scheme is visually distinct
             // instead of every entry sharing ICON_CAMOUFLAGE. Most schemes have exactly one
             // itemClasses entry; Black and the Vanilla rows list all three facepaint items since
@@ -68,23 +68,23 @@ if (count _applicable == 1) then {
             _actions pushBack [_action, [], 0];
         };
     } forEach EGVAR(common,schemes);
-} else {
-    if (count _applicable > 1) then {
-        // _args here IS the units array (one single argument), unlike the per-scheme action above where
-        // _args is itself a params array ([_unit, _schemeId]) - so it has to be wrapped in one more
-        // array at the call site, or fnc_applyRandomCamo's own "params [\"_units\"]" would unpack the
-        // array's first element (a unit object) as _units instead of the whole array
-        private _action = [
-            "RandomCamo",
-            localize LSTRING(applyRandom),
-            ICON_CAMOUFLAGE,
-            {[_args] call FUNC(applyRandomCamo)},
-            {true},
-            _applicable
-        ] call zen_context_menu_fnc_createAction;
+};
 
-        _actions pushBack [_action, [], 0];
-    };
+if (count _applicable > 1) then {
+    // _args here IS the units array (one single argument), unlike the per-scheme action above where
+    // _args is itself a params array ([_unit, _schemeId]) - so it has to be wrapped in one more
+    // array at the call site, or fnc_applyRandomCamo's own "params [\"_units\"]" would unpack the
+    // array's first element (a unit object) as _units instead of the whole array
+    private _action = [
+        "RandomCamo",
+        localize LSTRING(applyRandom),
+        ICON_CAMOUFLAGE,
+        {[_args] call FUNC(applyRandomCamo)},
+        {true},
+        _applicable
+    ] call zen_context_menu_fnc_createAction;
+
+    _actions pushBack [_action, [], 0];
 };
 
 private _camoUnits = _units select {[face _x] call EFUNC(common,isCamoFace)};

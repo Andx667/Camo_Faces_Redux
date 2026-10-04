@@ -23,7 +23,7 @@ private _applied = 0;
 
 {
     private _face = face _x;
-    private _schemeIds = (EGVAR(common,schemes) select {(_x select 1) findIf {(_x select 0) == _face} != -1}) apply {_x select 0};
+    private _schemeIds = (EGVAR(common,schemes) select {([_x select 1, _face] call EFUNC(common,getCamoFace)) != ""}) apply {_x select 0};
 
     if (_schemeIds isNotEqualTo []) then {
         [_x, selectRandom _schemeIds] call EFUNC(common,setCamo);
