@@ -35,7 +35,7 @@ private _selectId = _lbCountry lbData _selItem;
 lbClear _lbCamo;
 
 // fill with camo options available for the selected country
-private _camoOptions = [_selectId] call EFUNC(common,getCamoOptions);
+private _camoOptions = [_selectId, ACE_player] call EFUNC(common,getCamoOptions);
 
 // white-swatch box for a category flagged whiteBox in CfgCamoCategories (see header comment above)
 private _box = _display displayCtrl IDC_PICTURE_BOX;

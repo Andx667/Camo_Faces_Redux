@@ -36,7 +36,8 @@ if (isNil QGVAR(schemes)) exitWith {
 
 // see fnc_setCamo.sqf's _hintOwner for why this guard exists - without it, unsetting camo on a
 // non-player unit (e.g. AI from a script) would pop the hint on this machine's own player instead
-private _hintOwner = _unit == player;
+// ACE_player as well: a remote-controlled unit (Zeus) is the one this machine is painting as
+private _hintOwner = _unit in [player, ACE_player];
 
 if (_baseFace == "") exitWith {
     if (_hintOwner) then { hint (localize LSTRING(invalidFace)); };

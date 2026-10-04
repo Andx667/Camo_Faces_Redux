@@ -66,9 +66,9 @@ private _fnc_gearIndicator = {
     _equipped
 };
 
-GVAR(hasHelmet) = [_backHelmet, headgear player != ""] call _fnc_gearIndicator;
-GVAR(hasGoggles) = [_backGoggles, goggles player != ""] call _fnc_gearIndicator;
-GVAR(hasNV) = [_backNV, hmd player != ""] call _fnc_gearIndicator;
+GVAR(hasHelmet) = [_backHelmet, headgear ACE_player != ""] call _fnc_gearIndicator;
+GVAR(hasGoggles) = [_backGoggles, goggles ACE_player != ""] call _fnc_gearIndicator;
+GVAR(hasNV) = [_backNV, hmd ACE_player != ""] call _fnc_gearIndicator;
 
 /*
     fill first listbox
@@ -76,7 +76,7 @@ GVAR(hasNV) = [_backNV, hmd player != ""] call _fnc_gearIndicator;
 private _listBox_Side = _display displayCtrl IDC_LISTBOX_COUNTRY;
 lbClear _listBox_Side;
 
-private _camolist = [player] call EFUNC(common,getCountryOptions);
+private _camolist = [ACE_player] call EFUNC(common,getCountryOptions);
 
 // proof return value
 // no option
@@ -101,7 +101,7 @@ GVAR(mirrorCam) = "camera" camCreate [0,0,0];
 GVAR(mirrorCam) cameraEffect ["Internal", "Back", "camofacesmirror"];
 
 // attach to the player's head so it mirrors the current face
-GVAR(mirrorCam) attachTo [player, [-0.05,0.4,0.1], "head"];
+GVAR(mirrorCam) attachTo [ACE_player, [-0.05,0.4,0.1], "head"];
 // vectorDir/vectorUp: face the camera back at the player
 GVAR(mirrorCam) setVectorDirAndUp [[0,-1,0], [0,0,1]];
 // zoom in slightly so the face fills the mirror

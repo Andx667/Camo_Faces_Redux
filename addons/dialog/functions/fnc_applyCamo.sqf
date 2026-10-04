@@ -51,7 +51,7 @@ switch (_level) do {
             private _lbCamo = _display displayCtrl IDC_LISTBOX_CAMOFACE;
             private _scheme = _lbCamo lbData (lbCurSel _lbCamo);
 
-            ([player, player, _scheme] call FUNC(finishApplyCamo)) params ["", "_usesText"];
+            ([ACE_player, ACE_player, _scheme] call FUNC(finishApplyCamo)) params ["", "_usesText"];
             // the uses left go on top of fnc_setCamo's own "camouflage applied" hint
             if (_usesText != "") then {
                 hint ((localize ELSTRING(common,camoApplied)) + "\n" + _usesText);

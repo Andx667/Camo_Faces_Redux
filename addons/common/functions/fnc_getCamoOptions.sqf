@@ -9,6 +9,7 @@
  *
  * Arguments:
  * 0: Selected category id, e.g. "bw" (a CfgCamoCategories class) <STRING>
+ * 1: Unit whose face and facepaint items are checked (default: player) <OBJECT>
  *
  * Return Value:
  * List of available Camos <ARRAY>
@@ -19,11 +20,11 @@
  * Public: No
  */
 
-params ["_select"];
+params ["_select", ["_unit", player, [objNull]]];
 TRACE_1("fnc_getCamoOptions",_this);
 
 private _selected = [];
-private _face = face player;
+private _face = face _unit;
 
 // only offer options while the player's current face is an un-camo'd base face - switching camo
 // schemes directly isn't supported, remove the current one first (matches existing behavior)
@@ -37,7 +38,7 @@ if (_face in GVAR(all_faces)) then {
 
         // the scheme's own items gate it, not just the category's: a category can list schemes that
         // different facepaints unlock, and the dialog's apply path doesn't re-check items later
-        if ((_categories findIf {_x == _select}) != -1 && {[player, _itemClasses] call FUNC(hasFacepaint)} && {([_pairs, _face] call FUNC(getCamoFace)) != ""}) then {
+        if ((_categories findIf {_x == _select}) != -1 && {[_unit, _itemClasses] call FUNC(hasFacepaint)} && {([_pairs, _face] call FUNC(getCamoFace)) != ""}) then {
             _selected pushBack [_shortName, _schemeId];
         };
     } forEach GVAR(schemes);
