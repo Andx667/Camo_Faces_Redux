@@ -15,7 +15,7 @@ jobs:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "Camo Faces Redux - Release Bot"
           avatar_url: ""
-          content: ""
+          content: "||<@&1556219251327762533>||"
           footer_title: "Camo Faces Redux"
           footer_icon_url: ""
           footer_timestamp: true
