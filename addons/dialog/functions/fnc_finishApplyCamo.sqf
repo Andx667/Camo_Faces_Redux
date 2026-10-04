@@ -12,8 +12,9 @@
  * 2: Camo scheme id, e.g. "BWTarn" <STRING>
  *
  * Return Value:
- * Uses-left text (possibly "") once applied, or false if there was nothing usable to apply, already
- * hinted to the painter <STRING|BOOLEAN>
+ * 0: Whether the camo was applied - false if there was nothing usable to apply, already hinted to
+ *    the painter <BOOLEAN>
+ * 1: Uses-left text (possibly "", always "" when not applied) <STRING>
  *
  * Example:
  * [ACE_player, ACE_player, "BWTarn"] call cfr_dialog_fnc_finishApplyCamo
@@ -31,8 +32,8 @@ private _left = [_painter, _camo] call EFUNC(common,useFacepaint);
 // negative (except -1, "nothing to report") is a scheme that doesn't exist
 if (_left < -1) exitWith {
     hint (localize ([ELSTRING(common,invalidFace), ELSTRING(common,noFacepaint)] select (_left == -2)));
-    false
+    [false, ""]
 };
 
 [_target, _camo] call EFUNC(common,setCamo);
-[_left] call EFUNC(common,facepaintUsesText);
+[true, [_left] call EFUNC(common,facepaintUsesText)];

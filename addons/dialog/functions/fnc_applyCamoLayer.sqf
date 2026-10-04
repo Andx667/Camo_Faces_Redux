@@ -41,8 +41,8 @@ private _onFinish = if (_layer >= 3) then {
         params ["_args"];
         _args params ["_camo", "_layer", "_target"];
 
-        private _usesText = [ACE_player, _target, _camo] call FUNC(finishApplyCamo);
-        if (_usesText isEqualTo false) exitWith {};
+        ([ACE_player, _target, _camo] call FUNC(finishApplyCamo)) params ["_applied", "_usesText"];
+        if (!_applied) exitWith {};
 
         // fnc_setCamo only hints the machine's own player, so when painting someone else the painter
         // and (if a player) the target have to be told separately. The uses left are added to whichever

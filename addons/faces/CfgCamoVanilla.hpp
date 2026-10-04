@@ -62,3 +62,4 @@ class Vanilla {
 class VanillaArid { ENV_VARIANT(a) };
 class VanillaLush { ENV_VARIANT(l) };
 class VanillaSemiArid { ENV_VARIANT(sa) };
+#undef ENV_VARIANT

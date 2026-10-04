@@ -25,10 +25,10 @@
  * Public: No
  */
 
-params ["_camoSuffix", ["_target", ACE_player, [objNull]]];
+params ["_schemeId", ["_target", ACE_player, [objNull]]];
 TRACE_1("fnc_canApplyScheme",_this);
 
-private _scheme = [_camoSuffix] call EFUNC(common,getScheme);
+private _scheme = [_schemeId] call EFUNC(common,getScheme);
 if (_scheme isEqualTo []) exitWith {false};
 
 _scheme params ["", "_pairs", "_itemClasses"];
