@@ -1,0 +1,7 @@
+author = "Andx";
+onLoadName = "Camo Faces Redux - Test";
+onLoadMission = "Two riflemen facing each other, facepaint sticks in the uniform, nothing on their heads.";
+briefingName = "Camo Faces Redux - Test";
+overviewText = "Test mission for Camo Faces Redux: self-painting (dialog / ACE actions) and buddy painting.";
+
+enableDebugConsole = 2;

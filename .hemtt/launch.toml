@@ -10,3 +10,8 @@ dlc = []
 optionals = []
 parameters = []
 #file_patching = false # temporarily disabled to rule out file-patching shadowing the binarized PBO — see TODO-p3d.md
+
+# `hemtt launch test` - straight into the VR test mission (.hemtt/missions/cfr_test.VR)
+[test]
+extends = "default"
+mission = "cfr_test.VR"

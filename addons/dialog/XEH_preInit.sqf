@@ -9,25 +9,25 @@ GVAR(hasGoggles) = false;
 GVAR(hasNV) = false;
 GVAR(mirrorCam) = nil;
 
-// The painter's animation while camo is applied through the ACE actions (fnc_getAnimation picks from
-// this, fnc_startAnimation/fnc_stopAnimation play and end it). Keys are "<who>_<weapon in hand>":
-// "self" = your own face, "other" = buddy painting; rifle / pistol / launcher / none = the selected
-// weapon. Fill in an animation class per entry; "" = no animation for that case, the progress bar
-// just runs. A move from an armed animation set (Wrfl, Wpst, Wlnr) only suits that weapon, so use one
-// per weapon; a move from the unarmed set (Wnon) holsters whatever is carried, so it can be shared.
-// Only played standing (the moves here start from a standing idle), never swimming, in a vehicle or
-// in the air, and only if the move exists.
+// The painter's animation for each layer of camo - one dab of paint per layer, in the dialog and the
+// ACE actions alike (fnc_getAnimation picks from this, fnc_startAnimation plays it, fnc_stopAnimation
+// cuts it short on cancel). Keys are "<who>_<weapon in hand>": "self" = your own face, "other" = buddy
+// painting; rifle / pistol / launcher / none = the selected weapon. Each entry is an action
+// (CfgMovesBasic >> ManActions) played with ACE's doGesture - the game resolves it for the painter's
+// stance and weapon - and should be shorter than a layer (2 s); "" = no animation for that case. Never
+// played prone, swimming, in a vehicle or in the air, and only if the action exists.
 GVAR(animations) = createHashMapFromArray [
-    // your own face: no fitting move yet, so none is played
-    ["self_rifle", ""],
-    ["self_pistol", ""],
-    ["self_launcher", ""],
-    ["self_none", ""],
-    // buddy painting - unarmed, erect standing idle: weapon holstered whatever is carried
-    ["other_rifle", "InBaseMoves_assemblingVehicleErc"],
-    ["other_pistol", "InBaseMoves_assemblingVehicleErc"],
-    ["other_launcher", "InBaseMoves_assemblingVehicleErc"],
-    ["other_none", "InBaseMoves_assemblingVehicleErc"]
+    // your own face: ACE goggles' wipe-face gesture (only with ace_goggles loaded). ACE itself only
+    // plays it with a rifle (it is posed around one); used here for every weapon - see how it looks
+    ["self_rifle", "GestureWipeFace"],
+    ["self_pistol", "GestureWipeFace"],
+    ["self_launcher", "GestureWipeFace"],
+    ["self_none", "GestureWipeFace"],
+    // buddy painting: the short reach-forward "put down" move, with whatever is in hand
+    ["other_rifle", "PutDown"],
+    ["other_pistol", "PutDown"],
+    ["other_launcher", "PutDown"],
+    ["other_none", "PutDown"]
 ];
 
 private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];

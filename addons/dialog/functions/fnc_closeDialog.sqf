@@ -1,7 +1,8 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Andx
- * Cleans up the mirror camera created by fnc_initDialog when the dialog closes.
+ * Cleans up the mirror camera created by fnc_initDialog when the dialog closes, and cuts short a
+ * layer animation still playing (fnc_applyCamo).
  *
  * Arguments:
  * None
@@ -22,3 +23,5 @@ if (!isNil QGVAR(mirrorCam)) then {
     deleteVehicle GVAR(mirrorCam);
     GVAR(mirrorCam) = nil;
 };
+
+[ACE_player] call FUNC(stopAnimation);
