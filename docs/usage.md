@@ -2,7 +2,7 @@
 
 ## Applying camouflage
 
-1. Carry one of the facepaint sticks (BW, Serbian, US or Snow Stripes) in your uniform, vest or backpack. These are stocked in the **Box of Facepaint** placed by mission makers, or can be added to a loadout directly. Each stick has 10 uses; every application spends one, and you're told how many are left.
+1. Carry one of the facepaint sticks (BW, Serbian or US) in your uniform, vest or backpack. These are stocked in the **Box of Facepaint** placed by mission makers, or can be added to a loadout directly. Each stick has 10 uses; every application spends one, and you're told how many are left.
 2. Remove your helmet, goggles, and night vision — camouflage can only be applied to a bare face.
 3. Open your ACE self-interaction menu and select **Camo Faces** to open the camouflage dialog.
 4. Pick a country/scheme from the left list, then a specific camo pattern from the right list.

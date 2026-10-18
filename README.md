@@ -39,7 +39,6 @@ Docs: <https://andx667.github.io/Camo_Faces_Redux/>
   - US Stripes
   - US Flash
   - US Stains
-  - Snow Stripes
   - Bohemia's own Marksmen DLC camo faces, if you own it
 - Adds consumable facepaint sticks (10 uses each) needed to camouflage your face, and a supply box stocked with them
 - Camouflage yourself through a dialog or through ACE self-actions, or paint (and clean) the face of a friendly teammate or AI unit through the ACE interaction menu on their head

@@ -37,7 +37,7 @@ Restores whichever base face the given camo face pairs with.
 
 ## Scheme IDs
 
-`"BWTarn"`, `"Black"`, `"BWStripes"`, `"Serbian"`, `"USStripes"`, `"USStains"`, `"USFlash"`, `"SnowStripes"`, or `"Vanilla"`, `"VanillaArid"`, `"VanillaLush"`, `"VanillaSemiArid"` (the Vanilla ones are only available with the Marksmen DLC — see [Installation](installation.md)).
+`"BWTarn"`, `"Black"`, `"BWStripes"`, `"Serbian"`, `"USStripes"`, `"USStains"`, `"USFlash"`, or `"Vanilla"`, `"VanillaArid"`, `"VanillaLush"`, `"VanillaSemiArid"` (the Vanilla ones are only available with the Marksmen DLC — see [Installation](installation.md)). `"SnowStripes"` comes back once that scheme is finished; until then it is hidden (`scope = 1`) and not accepted.
 
 Other addons can register further schemes and faces through config, which then work with every function on this page under their own ids — see [Extending the mod](#extending-the-mod) below for addon authors.
 
