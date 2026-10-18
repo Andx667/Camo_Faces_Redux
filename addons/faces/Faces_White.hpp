@@ -34,6 +34,7 @@ class GVAR(WhiteHead_01_USFlash): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_01_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_01_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH01\m_white_01_co.paa);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_02_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -623,82 +624,102 @@ class GVAR(WhiteHead_21_USFlash): GVAR(WhiteHead_01_BWTarn) {
 class GVAR(WhiteHead_02_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_02_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH02\m_white_02_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_03_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_03_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH03\m_white_03_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_04_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_04_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH04\m_white_04_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_05_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_05_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH05\m_white_05_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_06_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_06_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH06\m_white_06_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_07_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_07_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH07\m_white_07_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_08_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_08_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH08\m_white_08_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_09_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_09_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH09\m_white_09_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_10_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_10_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH10\m_white_10_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_11_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_11_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH11\m_white_11_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_12_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_12_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH12\m_white_12_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_13_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_13_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH13\m_white_13_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_14_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_14_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH14\m_white_14_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_15_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_15_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH15\m_white_15_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_16_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_16_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH16\m_white_16_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_17_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_17_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH17\m_white_17_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_18_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_18_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH18\m_white_18_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_19_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_19_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH19\m_white_19_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_20_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_20_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH20\m_white_20_co.paa);
+    disabled = 1;
 };
 class GVAR(WhiteHead_21_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(WhiteHead_21_SnowStripes);
     texture = QPATHTOF(data\snowstripes\WH21\m_white_21_co.paa);
+    disabled = 1;
 };
 
 // White heads added by DLCs
@@ -776,6 +797,7 @@ class GVAR(WhiteHead_24_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH24\m_capek.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH24\m_capek_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH24\m_capek_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_25_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -836,6 +858,7 @@ class GVAR(WhiteHead_25_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH25\m_dillon.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH25\m_dillon_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH25\m_dillon_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_26_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -912,6 +935,7 @@ class GVAR(WhiteHead_26_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH26\m_homewood.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH26\m_homewood_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH26\m_homewood_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_27_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -972,6 +996,7 @@ class GVAR(WhiteHead_27_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH27\m_kesson.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH27\m_kesson_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH27\m_kesson_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_28_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -1040,6 +1065,7 @@ class GVAR(WhiteHead_28_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH28\m_kingsly.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH28\m_kingsly_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH28\m_kingsly_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_29_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -1100,6 +1126,7 @@ class GVAR(WhiteHead_29_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH29\m_kruglikov.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH29\m_kruglikov_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH29\m_kruglikov_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_30_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -1160,6 +1187,7 @@ class GVAR(WhiteHead_30_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH30\m_smolko.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH30\m_smolko_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH30\m_smolko_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_31_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -1220,6 +1248,7 @@ class GVAR(WhiteHead_31_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH31\m_stype.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH31\m_stype_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH31\m_stype_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_32_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -1280,6 +1309,7 @@ class GVAR(WhiteHead_32_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH32\m_rudwell.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH32\m_rudwell_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH32\m_rudwell_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(WhiteHead_23_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -1340,6 +1370,7 @@ class GVAR(WhiteHead_23_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\WH23\m_white_22.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\WH23\m_white_22_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\WH23\m_white_22_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(Sturrock_BWTarn): GVAR(WhiteHead_01_BWTarn) {
@@ -1384,4 +1415,5 @@ class GVAR(Sturrock_SnowStripes): GVAR(WhiteHead_01_BWTarn) {
     displayname = CSTRING(Sturrock_SnowStripes);
     texture = QPATHTOF(data\snowstripes\Sturrock\m_Sturrock_co.paa);
     material = QPATHTOF(data\snowstripes\Sturrock\m_Sturrock.rvmat);
+    disabled = 1;
 };

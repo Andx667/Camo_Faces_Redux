@@ -31,8 +31,10 @@ class CfgMagazines {
         descriptionShort = CSTRING(BW_FacepaintStick_descriptionShort);
         FACEPAINT_ART(BW);
     };
-    // reuses the BW model/icon as a placeholder, like the SnowStripes_Facepaint item it replaces
+    // reuses the BW model/icon as a placeholder, like the SnowStripes_Facepaint item it replaces.
+    // scope 1 until the SnowStripes scheme is finished (see cfr_common's CfgCamo.hpp)
     class GVAR(SnowStripes_FacepaintStick): GVAR(US_FacepaintStick) {
+        scope = 1;
         displayName = CSTRING(SnowStripes_FacepaintStick_DisplayName);
         descriptionShort = CSTRING(SnowStripes_FacepaintStick_descriptionShort);
         FACEPAINT_ART(BW);
