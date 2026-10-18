@@ -92,6 +92,11 @@ GROUP_FILE = {
 # BWTarn first: it is the variant every other scheme's class inherits from.
 ORDER = ["bwtarn", "bwstripes", "black", "serbian", "usstripes", "usstains", "usflash", "snowstripes"]
 
+# Schemes still in progress: their face classes are emitted with disabled = 1 so the arsenal's
+# identity list doesn't show them (CfgFaces has no scope). Pairs with scope = 1 on the scheme in
+# CfgCamo.hpp. Drop a scheme from here once it is finished.
+HIDDEN = {"snowstripes"}
+
 # scheme folder -> (CfgFaces suffix, english, german), matching the shipped stringtable
 SCHEME_NAMES = {
     "bwtarn":      ("BWTarn", "BW Camouflage", "BW Tarn"),

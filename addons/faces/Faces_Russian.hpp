@@ -58,6 +58,7 @@ class GVAR(RussianHead_1_SnowStripes): GVAR(RussianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\RuH01\m_russianHead_1.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\RuH01\m_russianHead_1_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\RuH01\m_russianHead_1_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(RussianHead_2_BWTarn): GVAR(RussianHead_1_BWTarn) {
@@ -134,6 +135,7 @@ class GVAR(RussianHead_2_SnowStripes): GVAR(RussianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\RuH02\m_russianHead_2.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\RuH02\m_russianHead_2_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\RuH02\m_russianHead_2_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(RussianHead_3_BWTarn): GVAR(RussianHead_1_BWTarn) {
@@ -210,6 +212,7 @@ class GVAR(RussianHead_3_SnowStripes): GVAR(RussianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\RuH03\m_russianHead_3.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\RuH03\m_russianHead_3_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\RuH03\m_russianHead_3_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(RussianHead_4_BWTarn): GVAR(RussianHead_1_BWTarn) {
@@ -286,6 +289,7 @@ class GVAR(RussianHead_4_SnowStripes): GVAR(RussianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\RuH04\m_russianHead_4.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\RuH04\m_russianHead_4_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\RuH04\m_russianHead_4_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(RussianHead_5_BWTarn): GVAR(RussianHead_1_BWTarn) {
@@ -362,4 +366,5 @@ class GVAR(RussianHead_5_SnowStripes): GVAR(RussianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\RuH05\m_russianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\RuH05\m_russianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\RuH05\m_russianHead_5_injury.rvmat);
+    disabled = 1;
 };

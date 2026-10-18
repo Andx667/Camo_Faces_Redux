@@ -158,6 +158,7 @@ class GVAR(AsianHead_A3_01_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\AsHA301\m_asian_01.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\AsHA301\m_asian_01_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\AsHA301\m_asian_01_injury.rvmat);
+    disabled = 1;
 };
 class GVAR(AsianHead_A3_02_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_02_SnowStripes);
@@ -165,6 +166,7 @@ class GVAR(AsianHead_A3_02_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\AsHA302\m_asian_02.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\AsHA302\m_asian_02_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\AsHA302\m_asian_02_injury.rvmat);
+    disabled = 1;
 };
 class GVAR(AsianHead_A3_03_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     displayname = CSTRING(AsianHead_A3_03_SnowStripes);
@@ -172,6 +174,7 @@ class GVAR(AsianHead_A3_03_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\AsHA303\m_asian_03.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\AsHA303\m_asian_03_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\AsHA303\m_asian_03_injury.rvmat);
+    disabled = 1;
 };
 
 // Asian heads added by DLCs
@@ -241,6 +244,7 @@ class GVAR(AsianHead_A3_04_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\AsHA304\m_asian_04.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\AsHA304\m_asian_04_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\AsHA304\m_asian_04_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(AsianHead_A3_05_BWTarn): GVAR(AsianHead_A3_01_BWTarn) {
@@ -309,6 +313,7 @@ class GVAR(AsianHead_A3_05_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\AsHA305\m_asian_05.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\AsHA305\m_asian_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\AsHA305\m_asian_05_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(AsianHead_A3_06_BWTarn): GVAR(AsianHead_A3_01_BWTarn) {
@@ -377,6 +382,7 @@ class GVAR(AsianHead_A3_06_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\AsHA306\m_asian_06.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\AsHA306\m_asian_06_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\AsHA306\m_asian_06_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(AsianHead_A3_07_BWTarn): GVAR(AsianHead_A3_01_BWTarn) {
@@ -445,4 +451,5 @@ class GVAR(AsianHead_A3_07_SnowStripes): GVAR(AsianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\AsHA307\m_asian_07.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\AsHA307\m_asian_07_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\AsHA307\m_asian_07_injury.rvmat);
+    disabled = 1;
 };

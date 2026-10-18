@@ -30,6 +30,7 @@ class GVAR(TanoanHead_A3_01_USFlash): GVAR(TanoanHead_A3_01_BWTarn) {
 class GVAR(TanoanHead_A3_01_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     displayname = CSTRING(TanoanHead_A3_01_SnowStripes);
     texture = QPATHTOF(data\snowstripes\TnHA301\m_tanoan_01_co.paa);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_02_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -83,6 +84,7 @@ class GVAR(TanoanHead_A3_02_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA302\m_tanoan_02.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA302\m_tanoan_02_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA302\m_tanoan_02_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_03_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -136,6 +138,7 @@ class GVAR(TanoanHead_A3_03_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA303\m_tanoan_03.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA303\m_tanoan_03_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA303\m_tanoan_03_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_04_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -189,6 +192,7 @@ class GVAR(TanoanHead_A3_04_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA304\m_tanoan_04.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA304\m_tanoan_04_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA304\m_tanoan_04_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_05_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -249,6 +253,7 @@ class GVAR(TanoanHead_A3_05_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA305\m_tanoan_05.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA305\m_tanoan_05_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA305\m_tanoan_05_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_06_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -302,6 +307,7 @@ class GVAR(TanoanHead_A3_06_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA306\m_tanoan_06.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA306\m_tanoan_06_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA306\m_tanoan_06_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_07_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -355,6 +361,7 @@ class GVAR(TanoanHead_A3_07_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA307\m_tanoan_07.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA307\m_tanoan_07_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA307\m_tanoan_07_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_08_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -408,6 +415,7 @@ class GVAR(TanoanHead_A3_08_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA308\m_tanoan_08.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA308\m_tanoan_08_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA308\m_tanoan_08_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(TanoanHead_A3_09_BWTarn): GVAR(TanoanHead_A3_01_BWTarn) {
@@ -489,4 +497,5 @@ class GVAR(TanoanHead_A3_09_SnowStripes): GVAR(TanoanHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\TnHA309\m_old_man.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\TnHA309\m_old_man_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\TnHA309\m_old_man_injury.rvmat);
+    disabled = 1;
 };
