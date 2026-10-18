@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-10-18
+
 ### Added
 
 - Translations for every language Arma 3 ships, on top of English and German: Czech, French, Spanish, Latin, Italian, Polish, Portuguese, Russian, Ukrainian, Bulgarian, Slovak, Hungarian, Turkish, Korean, Japanese, Traditional Chinese and Simplified Chinese. This covers every setting, menu entry, message and item name, and all 667 camo face names (which use the game's own spelling of each head's surname). The translations were written by an AI assistant rather than native speakers, so corrections are welcome
@@ -14,10 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Consumable facepaint: the BW, Serbian, US and Snow Stripes facepaint are now sticks with 10 uses each (`cfr_items_*_FacepaintStick`, modelled on KAT Advanced Medical's Penthrox inhaler). Applying camo through the dialog or the ACE actions - your own face or a teammate's - spends one use of the painter's stick, you're told how many are left, and the stick is removed when it is empty. Sticks can be carried anywhere in the uniform, vest or backpack. Cleaning a face is free, and so is anything done by a Zeus or a script (`cfr_common_fnc_setCamo`)
 - Camo washes off in water: a player who swims or dives loses their camouflage and gets their original face back. AI keep their camo. New CBA setting **Will Camo Wash Off in Water** (on by default, shared by all clients) turns it off, for example for naval missions
 - Painting animations: every layer of camo now plays a short animation that other players see. Painting or cleaning a teammate's face turns you towards them and plays a reach-forward "put down" move with whatever is in your hands; painting your own face, through the dialog or the ACE actions, plays ACE's wipe-face gesture (needs `ace_goggles`). Nothing plays prone, swimming or in a vehicle, and a cancelled layer stops its animation. New CBA setting **Enable Painting Animations** (on by default, each player's own choice unless the server or mission forces it) turns them off
+- For addon authors: a camo scheme in `CfgCamoSchemes` can set `scope = 1` to stay hidden everywhere (dialog, ACE actions, Zeus menu) - the usual Arma meaning, for work that ships but isn't finished
 
 ### Changed
 
-- The Box of Facepaint now holds 10 of each facepaint stick instead of 30 of each plain item
+- The Box of Facepaint now holds 10 each of the BW, Serbian and US facepaint sticks instead of 30 of each plain item
+- Snow Stripes is hidden until it is finished: the scheme isn't offered in the dialog, the ACE actions or the Zeus menu, its faces are hidden from the arsenal, and its facepaint stick from the arsenal, the editor and the Box of Facepaint. A Snow Stripes face set by a mission script isn't treated as camo while it's hidden, so the mod can't remove or wash it off
 - The original plain facepaint items (`cfr_items_BW_Facepaint`, `cfr_items_Serbian_Facepaint`, `cfr_items_US_Facepaint`, `cfr_items_SnowStripes_Facepaint`) still work and never run out, so existing missions and loadouts are unaffected, but they are hidden from the arsenal and editor. Facepaint is now recognised in the vest and backpack as well as the uniform
 - A scheme's or category's `items[]` may list either kind of item: a magazine-type entry is used up, a plain-item entry is not
 - The addon-author guide "Extending the mod" moved from `cfr_common`'s README to the Scripting & API page of the documentation site
@@ -25,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Camo could not be removed once the last use of the facepaint stick was spent: the stick is removed when empty, and the "Camo Faces" self-action (and its Remove entry) only showed while you carried facepaint. It now always shows while you are wearing camo
+- While a Zeus remote-controlled a unit, the camo dialog looked at the Zeus's own body instead of the controlled unit: its face, headgear, goggles and night vision, the mirror preview and the camo options all came from the wrong unit
 - The unused `STR_CFR_Main_Name` string still carried the "[Beta]" tag dropped from the mod's name in 1.0.0
 
 ## [2.0.0] - 2026-09-19
@@ -108,7 +113,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release (RC1)
 
-[Unreleased]: https://github.com/Andx667/Camo_Faces_Redux/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/Andx667/Camo_Faces_Redux/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.4...v1.0.0
 [0.9.4]: https://github.com/Andx667/Camo_Faces_Redux/compare/v0.9.3...v0.9.4

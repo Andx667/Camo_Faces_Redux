@@ -18,7 +18,6 @@ Adds camo face variants for the base game's faces, and for those added by Apex, 
 - US Stripes
 - US Flash
 - US Stains
-- Snow Stripes
 - Bohemia's own Marksmen DLC camo faces, if you own it
 
 Includes consumable facepaint sticks (10 uses each) needed to apply each camo scheme, and a supply box stocked with all four.
