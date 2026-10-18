@@ -13,10 +13,17 @@
  * headgear back on mid-sequence cancels it instead of silently continuing regardless. When painting
  * someone else that also covers them leaving reach or ceasing to be a valid target.
  *
+ * If GVAR(animations) has an animation for the situation the painter plays it once per layer
+ * (fnc_startAnimation at the start of every bar; fnc_stopAnimation cuts it short if a bar is
+ * cancelled). The painter is carried through the bars' args rather than re-read from ACE_player,
+ * which has already changed by the time ACE cancels a bar for that reason (e.g. Zeus ending remote
+ * control).
+ *
  * Arguments:
  * 0: Camo scheme suffix, e.g. "BWTarn" <STRING>
  * 1: Layer number, 1-3 <NUMBER>
  * 2: Unit whose face is painted (default: ACE_player) <OBJECT>
+ * 3: Painter (default: ACE_player) <OBJECT>
  *
  * Return Value:
  * None
@@ -27,7 +34,7 @@
  * Public: No
  */
 
-params ["_camo", "_layer", ["_target", ACE_player, [objNull]]];
+params ["_camo", "_layer", ["_target", ACE_player, [objNull]], ["_painter", ACE_player, [objNull]]];
 TRACE_1("fnc_applyCamoLayer",_this);
 
 private _titleKey = switch (_layer) do {
@@ -36,18 +43,21 @@ private _titleKey = switch (_layer) do {
     default { LSTRING(applyingLayer3) };
 };
 
+// one dab of paint per layer - shorter than the bar, so it has ended by the time the bar finishes
+[_painter, _target] call FUNC(startAnimation);
+
 private _onFinish = if (_layer >= 3) then {
     {
         params ["_args"];
-        _args params ["_camo", "_layer", "_target"];
+        _args params ["_camo", "_layer", "_target", "_painter"];
 
-        ([ACE_player, _target, _camo] call FUNC(finishApplyCamo)) params ["_applied", "_usesText"];
+        ([_painter, _target, _camo] call FUNC(finishApplyCamo)) params ["_applied", "_usesText"];
         if (!_applied) exitWith {};
 
         // fnc_setCamo only hints the machine's own player, so when painting someone else the painter
         // and (if a player) the target have to be told separately. The uses left are added to whichever
         // message the painter sees
-        if (_target == ACE_player) then {
+        if (_target == _painter) then {
             if (_usesText != "") then {
                 hint ((localize ELSTRING(common,camoApplied)) + "\n" + _usesText);
             };
@@ -56,28 +66,29 @@ private _onFinish = if (_layer >= 3) then {
             if (_usesText != "") then {_text = _text + "\n" + _usesText};
             hint _text;
             if (isPlayer _target) then {
-                [QGVAR(notifyTarget), [LSTRING(buddyPaintedYou), name ACE_player], _target] call CBA_fnc_targetEvent;
+                [QGVAR(notifyTarget), [LSTRING(buddyPaintedYou), name _painter], _target] call CBA_fnc_targetEvent;
             };
         };
     }
 } else {
     {
         params ["_args"];
-        _args params ["_camo", "_layer", "_target"];
-        [_camo, _layer + 1, _target] call FUNC(applyCamoLayer);
+        _args params ["_camo", "_layer", "_target", "_painter"];
+        [_camo, _layer + 1, _target, _painter] call FUNC(applyCamoLayer);
     }
 };
 
 [
     2,
-    [_camo, _layer, _target],
+    [_camo, _layer, _target, _painter],
     _onFinish,
     {
         // cancelled: "can't camouflage this face" for one's own face, but for someone else's it most
         // likely means they walked off or put headgear back on
         params ["_args"];
-        _args params ["", "", "_target"];
-        hint (localize ([LSTRING(buddyInterrupted), ELSTRING(common,invalidFace)] select (_target == ACE_player)));
+        _args params ["", "", "_target", "_painter"];
+        [_painter] call FUNC(stopAnimation);
+        hint (localize ([LSTRING(buddyInterrupted), ELSTRING(common,invalidFace)] select (_target == _painter)));
     },
     localize _titleKey,
     { params ["_args"]; [_args select 0, _args select 2] call FUNC(canApplyScheme); }

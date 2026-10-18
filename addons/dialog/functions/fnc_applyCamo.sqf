@@ -2,7 +2,8 @@
 /*
  * Authors: Andx, Sk3y
  * Drives one step of the dialog's layered "apply camo" button sequence (see Dialog.hpp /
- * fnc_initDialog.sqf). Layers 1 and 2 just hint and, after a short non-blocking delay, unlock the
+ * fnc_initDialog.sqf). Each layer plays the painter's animation (fnc_startAnimation) once.
+ * Layers 1 and 2 just hint and, after a short non-blocking delay, unlock the
  * next layer's button; layer 3 calls cfr_common's fnc_setCamo with the pattern selected in the
  * camo-pattern listbox, then locks all three buttons again.
  *
@@ -27,6 +28,11 @@ disableSerialization;
 // regardless of its "_dialog" argument - it cannot be used while GVAR(Dialog) stays open, so the
 // dialog flow keeps its original blind CBA_fnc_waitAndExecute delay (button "action" code runs
 // unscheduled, so a blocking sleep is not legal here) instead of a visible progress bar.
+
+// one dab of paint per layer, like the ACE-action flow - visible in the dialog's mirror camera.
+// Closing the dialog mid-layer cuts it short (fnc_closeDialog)
+[ACE_player] call FUNC(startAnimation);
+
 switch (_level) do {
     case 1: {
         hint (localize LSTRING(applyingLayer1));
