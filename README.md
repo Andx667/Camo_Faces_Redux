@@ -43,7 +43,9 @@ Docs: <https://andx667.github.io/Camo_Faces_Redux/>
   - Bohemia's own Marksmen DLC camo faces, if you own it
 - Adds consumable facepaint sticks (10 uses each) needed to camouflage your face, and a supply box stocked with them
 - Camouflage yourself through a dialog or through ACE self-actions, or paint (and clean) the face of a friendly teammate or AI unit through the ACE interaction menu on their head
+- Short painting animations for every layer, visible to other players (can be turned off)
 - Optional wear-off: camo can fade after a configurable time, with a warning shortly before it goes
+- Camo washes off when you swim or dive (can be turned off)
 - Optional [Zeus Enhanced](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631) integration for applying/removing camo as a curator
 - Extensible: other addons can register their own faces and camo schemes through config, and they appear in the dialog, the ACE actions and the Zeus menu
 - Translated into every language Arma 3 ships: English, German, Czech, French, Spanish, Latin, Italian, Polish, Portuguese, Russian, Ukrainian, Bulgarian, Slovak, Hungarian, Turkish, Korean, Japanese and Chinese (Traditional and Simplified)

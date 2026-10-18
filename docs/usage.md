@@ -6,17 +6,17 @@
 2. Remove your helmet, goggles, and night vision — camouflage can only be applied to a bare face.
 3. Open your ACE self-interaction menu and select **Camo Faces** to open the camouflage dialog.
 4. Pick a country/scheme from the left list, then a specific camo pattern from the right list.
-5. Click the three layer buttons in order to build up the camouflage. Each layer has a short delay before the next one unlocks; the final layer applies the chosen face.
+5. Click the three layer buttons in order to build up the camouflage. Each layer has a short delay before the next one unlocks; the final layer applies the chosen face. With every layer your character wipes paint across their face - you can watch it in the dialog's mirror preview, and other players see it too.
 
 ## Painting a teammate
 
-You can paint a friendly unit's face too - a player or an AI teammate standing next to you. Carry a facepaint stick yourself (it's your stick that gets used, one use per teammate painted), make sure they've taken off their helmet, goggles and night vision, open the ACE interaction menu on their head (get within about a metre and a half and look at their face) and pick **Head -> Paint Face**, then the pattern. Stay next to them until the three layers are done; if they walk off or put headgear back on, it's cancelled. They'll see a message that you painted them. (The pattern entries are greyed out while their headgear is still on.)
+You can paint a friendly unit's face too - a player or an AI teammate standing next to you. Carry a facepaint stick yourself (it's your stick that gets used, one use per teammate painted), make sure they've taken off their helmet, goggles and night vision, open the ACE interaction menu on their head (get within about a metre and a half and look at their face) and pick **Head -> Paint Face**, then the pattern. You turn to face them and reach forward to dab on each of the three layers. Stay next to them until all three are done; if they walk off or put headgear back on, it's cancelled. They'll see a message that you painted them. (The pattern entries are greyed out while their headgear is still on.)
 
 ## Removing camouflage
 
 Open the dialog again (the self-action stays available while camo is applied, even after your last facepaint stick is used up) and use the **remove camo** button to revert to your original face.
 
-To wipe camo off a friendly unit's face, open the ACE interaction menu on them and pick **Head -> Clean Face**. This needs no facepaint item.
+To wipe camo off a friendly unit's face, open the ACE interaction menu on them and pick **Head -> Clean Face**: you reach forward and wipe it off. This needs no facepaint item.
 
 Mission makers can switch painting other units off with the **Allow Painting Other Units** setting.
 
@@ -27,7 +27,7 @@ Mission makers can switch painting other units off with the **Allow Painting Oth
 - Camouflage covers the base game's faces plus those added by Apex, Contact, Laws of War, Tac-Ops Mission Pack and Tanks. DLC faces only show up if you own that DLC, so which patterns you're offered depends on the face you're wearing — see [Faces](components/faces.md).
 - If the mission maker or server admin has enabled the **Camo Wear-off Time** setting, applied camo automatically fades back to your original face after that many minutes, simulating it wearing off from rain, sweat, or time — see [Common](components/common.md).
 - If the **Will Camo Wash Off in Water** setting is on (the default), swimming or diving washes your camo off and returns your original face.
-- Each layer of camo plays a short animation that other players can see: a face wipe on your own face, a reach forward when you paint or clean a teammate. Turn it off with the **Enable Painting Animations** setting.
+- Each layer of camo plays a short animation that other players can see: a face wipe on your own face (this one needs ACE's goggles component), a reach forward when you paint or clean a teammate. Nothing plays while you're prone, swimming or in a vehicle. Don't want them? Turn off the **Enable Painting Animations** setting - it's your own choice unless the server or mission forces it.
 
 ## As Zeus (optional)
 
