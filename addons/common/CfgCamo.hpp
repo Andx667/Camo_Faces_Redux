@@ -50,6 +50,8 @@ class CfgCamoBaseFaces {};
 //                  application - while a plain item (CfgWeapons) is not
 //   categories[] - CfgCamoCategories entries the dialog lists it under
 //   requiredDLC  - Steam App ID that must be owned for the scheme to exist at all (0 = none)
+//   scope        - optional; below 2 the scheme isn't registered at all, the usual Arma "hidden"
+//                  meaning - for work in progress that ships but mustn't be offered yet (default 2)
 //   class Faces  - "<base face> = <camo face>;" pairs. A scheme without a pair for a face is never
 //                  offered for it, which is how e.g. Black skips faces where black paint is invisible
 // The order here is the order options are listed in.
@@ -98,8 +100,11 @@ class CfgCamoSchemes {
         items[] = {QEGVAR(items,US_FacepaintStick), QEGVAR(items,US_Facepaint)};
         categories[] = {"us"};
     };
-    // own item and own category; reuses the Black icon as a placeholder, no dedicated icon yet
+    // own item and own category; reuses the Black icon as a placeholder, no dedicated icon yet.
+    // scope 1 until it is finished: hidden from the dialog, ACE actions and ZEN menu (and so is the
+    // snow category, which has no other scheme); its faces and items are hidden to match
     class SnowStripes {
+        scope = 1;
         displayName = CSTRING(camo_snowstripes);
         icon = QPATHTOF(data\UI\Icon_black_ca.paa);
         items[] = {QEGVAR(items,SnowStripes_FacepaintStick), QEGVAR(items,SnowStripes_Facepaint)};

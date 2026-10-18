@@ -58,6 +58,7 @@ class GVAR(LivonianHead_1_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH01\m_livonianHead_1.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH01\m_livonianHead_1_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH01\m_livonianHead_1_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_2_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -118,6 +119,7 @@ class GVAR(LivonianHead_2_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH02\m_livonianHead_2.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH02\m_livonianHead_2_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH02\m_livonianHead_2_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_3_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -178,6 +180,7 @@ class GVAR(LivonianHead_3_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH03\m_livonianHead_3.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH03\m_livonianHead_3_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH03\m_livonianHead_3_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_4_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -238,6 +241,7 @@ class GVAR(LivonianHead_4_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH04\m_livonianHead_4.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH04\m_livonianHead_4_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH04\m_livonianHead_4_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_5_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -306,6 +310,7 @@ class GVAR(LivonianHead_5_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH05\m_livonianHead_5.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH05\m_livonianHead_5_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH05\m_livonianHead_5_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_6_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -382,6 +387,7 @@ class GVAR(LivonianHead_6_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH06\m_livonianHead_6.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH06\m_livonianHead_6_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH06\m_livonianHead_6_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_7_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -442,6 +448,7 @@ class GVAR(LivonianHead_7_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH07\m_livonianHead_7.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH07\m_livonianHead_7_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH07\m_livonianHead_7_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_8_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -518,6 +525,7 @@ class GVAR(LivonianHead_8_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH08\m_livonianHead_8.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH08\m_livonianHead_8_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH08\m_livonianHead_8_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_9_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -594,6 +602,7 @@ class GVAR(LivonianHead_9_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH09\m_livonianHead_9.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH09\m_livonianHead_9_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH09\m_livonianHead_9_injury.rvmat);
+    disabled = 1;
 };
 
 class GVAR(LivonianHead_10_BWTarn): GVAR(LivonianHead_1_BWTarn) {
@@ -654,4 +663,5 @@ class GVAR(LivonianHead_10_SnowStripes): GVAR(LivonianHead_1_BWTarn) {
     material = QPATHTOF(data\snowstripes\LvH10\m_livonianHead_10.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\LvH10\m_livonianHead_10_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\LvH10\m_livonianHead_10_injury.rvmat);
+    disabled = 1;
 };
