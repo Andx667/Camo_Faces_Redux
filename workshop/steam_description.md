@@ -39,6 +39,8 @@ There's also a CBA setting to switch to a leaner, dialog-free flow: enable it an
 
 You can also paint a friendly teammate or AI unit: with a facepaint stick on you and their helmet, goggles and night vision off, open the ACE interaction menu on their head and pick Paint Face (or Clean Face to wipe camo off, which needs no facepaint). Mission makers can turn this off with the "Allow Painting Other Units" setting.
 
+Every layer of camo plays a short painting animation that other players see. The "Enable Painting Animations" setting turns it off.
+
 ## Credits
 
 - Original mod: Sk3y, Feldhobel

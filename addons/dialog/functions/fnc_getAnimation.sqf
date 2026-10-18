@@ -6,7 +6,8 @@
  * "other" for buddy painting) and per weapon in hand, so a case can be given its own animation or
  * none at all.
  *
- * Returns "" - no animation, the layer just runs - when the table has no entry for the situation,
+ * Returns "" - no animation, the layer just runs - when the Enable Painting Animations setting
+ * (GVAR(enableAnimations)) is off, the table has no entry for the situation,
  * the action isn't in the game's config (e.g. ace_goggles, which adds GestureWipeFace, isn't loaded),
  * or the painter isn't in a state it suits: in a vehicle, off the ground (parachute), prone or
  * swimming (where `stance` reports "UNDEFINED"), unconscious, or holding something that isn't a
@@ -29,7 +30,8 @@ params ["_painter", ["_target", objNull, [objNull]]];
 TRACE_2("fnc_getAnimation",_painter,_target);
 
 if (
-    !isNull objectParent _painter
+    !GVAR(enableAnimations)
+    || {!isNull objectParent _painter}
     || {!isTouchingGround _painter}
     || {!(stance _painter in ["STAND", "CROUCH"])}
     || {_painter getVariable ["ACE_isUnconscious", false]}

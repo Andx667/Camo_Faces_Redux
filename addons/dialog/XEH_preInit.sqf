@@ -51,6 +51,17 @@ private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
     1
 ] call CBA_fnc_addSetting;
 
+// isGlobal 0 (each client its own, a server or mission can still force it) - the painting animations
+// are cosmetic, so whether to play them is a personal preference unless a mission decides otherwise.
+// Checked by fnc_getAnimation, which every animation goes through
+[
+    QGVAR(enableAnimations), "CHECKBOX",
+    [LLSTRING(settingEnableAnimations_name), LLSTRING(settingEnableAnimations_tooltip)],
+    _category,
+    true,
+    0
+] call CBA_fnc_addSetting;
+
 // "<name> painted your face" and friends, sent to the target's machine by fnc_applyCamoLayer.sqf and
 // fnc_cleanBuddy.sqf - the painter's own machine can't hint someone else's player
 [QGVAR(notifyTarget), {

@@ -400,6 +400,48 @@
             <Bulgarian>Позволява на играчите да нанасят камуфлаж върху лицето на приятелска единица (играч или изкуствен интелект), стояща до тях, или да го изтриват, чрез менюто за взаимодействие на ACE. Споделено от всички клиенти. За нанасяне все още е нужна боя за лице; почистването не изисква нищо.</Bulgarian>
             <Latin>Lusoribus permittit ut, per menu interactionis ACE, dissimulationem in facie unitatis amicae (lusoris vel IA) iuxta stantis pingant vel abstergeant. Inter omnes clientes communicatur. Pictor adhuc fuco faciei eget ad pingendum; purgatio nihil requirit.</Latin>
         </Key>
+        <Key ID="STR_CFR_Dialog_settingEnableAnimations_name">
+            <English>Enable Painting Animations</English>
+            <Czech>Povolit animace malování</Czech>
+            <French>Activer les animations de peinture</French>
+            <Spanish>Activar animaciones de pintura</Spanish>
+            <Italian>Abilita animazioni di pittura</Italian>
+            <Polish>Włącz animacje malowania</Polish>
+            <Portuguese>Ativar animações de pintura</Portuguese>
+            <Russian>Включить анимации нанесения грима</Russian>
+            <German>Schmink-Animationen aktivieren</German>
+            <Korean>칠하기 애니메이션 사용</Korean>
+            <Japanese>ペイントアニメーションを有効化</Japanese>
+            <Chinese>啟用塗抹動畫</Chinese>
+            <Chinesesimp>启用涂抹动画</Chinesesimp>
+            <Turkish>Boyama animasyonlarını etkinleştir</Turkish>
+            <Slovak>Povoliť animácie maľovania</Slovak>
+            <Hungarian>Festési animációk engedélyezése</Hungarian>
+            <Ukrainian>Увімкнути анімації нанесення гриму</Ukrainian>
+            <Bulgarian>Включване на анимации при боядисване</Bulgarian>
+            <Latin>Animationes pingendi admittere</Latin>
+        </Key>
+        <Key ID="STR_CFR_Dialog_settingEnableAnimations_tooltip">
+            <English>Plays a short animation for every layer of camo you paint or wipe: a face wipe on your own face, a reach-forward move on a teammate's. Other players see it. Each player sets this for themselves; a server or mission can force it.</English>
+            <Czech>Při každé vrstvě kamufláže, kterou nanášíte nebo stíráte, přehraje krátkou animaci: setření obličeje u vlastního obličeje, pohyb vpřed u obličeje spoluhráče. Ostatní hráči ji vidí. Každý hráč si to nastavuje sám; server nebo mise to může vynutit.</Czech>
+            <French>Joue une courte animation pour chaque couche de camouflage que vous appliquez ou essuyez : un geste d'essuyage sur votre propre visage, un mouvement vers l'avant sur celui d'un coéquipier. Les autres joueurs la voient. Chaque joueur le règle pour lui-même ; un serveur ou une mission peut l'imposer.</French>
+            <Spanish>Reproduce una breve animación por cada capa de camuflaje que aplicas o limpias: un gesto de limpiarse la cara en tu propio rostro y un movimiento hacia delante en el de un compañero. Los demás jugadores la ven. Cada jugador lo ajusta por su cuenta; un servidor o una misión puede forzarlo.</Spanish>
+            <Italian>Riproduce una breve animazione per ogni strato di mimetizzazione che applichi o rimuovi: un gesto di pulizia sul tuo viso, un movimento in avanti su quello di un compagno. Gli altri giocatori la vedono. Ogni giocatore lo imposta per sé; un server o una missione può imporlo.</Italian>
+            <Polish>Odtwarza krótką animację przy każdej warstwie kamuflażu, którą nakładasz lub zmywasz: przetarcie twarzy przy własnej twarzy, ruch do przodu przy twarzy towarzysza. Inni gracze ją widzą. Każdy gracz ustawia to dla siebie; serwer lub misja może to wymusić.</Polish>
+            <Portuguese>Reproduz uma breve animação por cada camada de camuflagem que aplica ou limpa: um gesto de limpar a cara no seu próprio rosto, um movimento para a frente no de um colega. Os outros jogadores veem-na. Cada jogador define isto para si; um servidor ou uma missão pode impô-lo.</Portuguese>
+            <Russian>Проигрывает короткую анимацию для каждого слоя камуфляжа, который вы наносите или стираете: жест протирания лица — для своего лица, движение вперёд — для лица товарища. Другие игроки её видят. Каждый игрок настраивает это сам; сервер или миссия могут задать это принудительно.</Russian>
+            <German>Spielt für jede Tarnschicht, die du aufträgst oder abwischst, eine kurze Animation ab: ein Wischen übers Gesicht beim eigenen Gesicht, eine Bewegung nach vorn beim Gesicht eines Kameraden. Andere Spieler sehen sie. Jeder Spieler stellt das selbst ein; ein Server oder eine Mission kann es erzwingen.</German>
+            <Korean>위장을 칠하거나 닦을 때마다 각 층에 짧은 애니메이션을 재생합니다. 자신의 얼굴에는 얼굴을 닦는 동작, 아군의 얼굴에는 앞으로 손을 뻗는 동작입니다. 다른 플레이어도 볼 수 있습니다. 각 플레이어가 직접 설정하며, 서버나 미션이 강제할 수 있습니다.</Korean>
+            <Japanese>カモフラージュを塗る・拭き取るたびに、各層で短いアニメーションを再生します。自分の顔では顔を拭う動作、味方の顔では前に手を伸ばす動作です。他のプレイヤーにも見えます。各プレイヤーが個別に設定し、サーバーやミッションで強制することもできます。</Japanese>
+            <Chinese>每塗抹或擦除一層偽裝時播放一段短動畫：塗自己的臉時為擦臉動作，塗隊友的臉時為向前伸手的動作。其他玩家也看得到。每位玩家各自設定；伺服器或任務可強制設定。</Chinese>
+            <Chinesesimp>每涂抹或擦除一层伪装时播放一段短动画：涂自己的脸时为擦脸动作，涂队友的脸时为向前伸手的动作。其他玩家也看得到。每位玩家各自设置；服务器或任务可强制设置。</Chinesesimp>
+            <Turkish>Sürdüğünüz veya sildiğiniz her kamuflaj katmanı için kısa bir animasyon oynatır: kendi yüzünüzde yüz silme hareketi, bir takım arkadaşınızın yüzünde öne uzanma hareketi. Diğer oyuncular bunu görür. Her oyuncu bunu kendisi ayarlar; bir sunucu veya görev bunu zorunlu kılabilir.</Turkish>
+            <Slovak>Pri každej vrstve kamufláže, ktorú nanášate alebo zotierate, prehrá krátku animáciu: zotretie tváre pri vlastnej tvári, pohyb dopredu pri tvári spoluhráča. Ostatní hráči ju vidia. Každý hráč si to nastavuje sám; server alebo misia to môže vynútiť.</Slovak>
+            <Hungarian>Minden felvitt vagy letörölt álcázási réteghez rövid animációt játszik le: a saját arcodnál arctörlő mozdulatot, egy bajtársad arcánál előrenyúló mozdulatot. A többi játékos is látja. Minden játékos maga állítja be; a szerver vagy a küldetés kikényszerítheti.</Hungarian>
+            <Ukrainian>Відтворює коротку анімацію для кожного шару камуфляжу, який ви наносите або стираєте: жест витирання обличчя — для свого обличчя, рух уперед — для обличчя товариша. Інші гравці її бачать. Кожен гравець налаштовує це сам; сервер або місія можуть задати це примусово.</Ukrainian>
+            <Bulgarian>Възпроизвежда кратка анимация за всеки слой камуфлаж, който нанасяте или изтривате: жест на избърсване на лицето за собственото ви лице, движение напред за лицето на съотборник. Другите играчи я виждат. Всеки играч задава това за себе си; сървър или мисия може да го наложи.</Bulgarian>
+            <Latin>Brevem animationem agit pro unoquoque strato dissimulationis quod pingis vel abstergis: gestum faciem tergendi in tua facie, motum porrectum in facie commilitonis. Ceteri lusores eam vident. Quisque lusor hoc sibi ipse statuit; servitor vel missio id imponere potest.</Latin>
+        </Key>
         <Key ID="STR_CFR_Dialog_settingUseAceActions_name">
             <English>Use ACE Actions Instead of Dialog</English>
             <Czech>Použít akce ACE místo dialogu</Czech>
