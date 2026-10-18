@@ -79,7 +79,10 @@ private _defaultIcon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
     private _schemeCfg = _x;
     private _schemeId = configName _schemeCfg;
 
-    if (_schemeCfg call _fnc_dlcOk) then {
+    // scope < 2 hides a scheme that isn't finished yet; unset means public
+    private _scopeOk = !isNumber (_schemeCfg >> "scope") || {getNumber (_schemeCfg >> "scope") >= 2};
+
+    if (_scopeOk && {_schemeCfg call _fnc_dlcOk}) then {
         private _pairs = [];
         {
             private _baseFace = configName _x;

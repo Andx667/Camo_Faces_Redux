@@ -82,14 +82,17 @@ class GVAR(AfricanHead_03_USFlash): GVAR(AfricanHead_01_BWTarn) {
 class GVAR(AfricanHead_01_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_01_SnowStripes);
     texture = QPATHTOF(data\snowstripes\AH01\m_african_01_co.paa);
+    disabled = 1;
 };
 class GVAR(AfricanHead_02_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_02_SnowStripes);
     texture = QPATHTOF(data\snowstripes\AH02\m_african_02_co.paa);
+    disabled = 1;
 };
 class GVAR(AfricanHead_03_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(AfricanHead_03_SnowStripes);
     texture = QPATHTOF(data\snowstripes\AH03\m_african_03_co.paa);
+    disabled = 1;
 };
 
 // African heads added by DLCs
@@ -130,4 +133,5 @@ class GVAR(Barklem_SnowStripes): GVAR(AfricanHead_01_BWTarn) {
     displayname = CSTRING(Barklem_SnowStripes);
     texture = QPATHTOF(data\snowstripes\Barklem\m_Barklem_co.paa);
     material = QPATHTOF(data\snowstripes\Barklem\m_Barklem.rvmat);
+    disabled = 1;
 };

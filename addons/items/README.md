@@ -16,7 +16,7 @@ Adds the inventory items needed to camouflage your face, and a supply box to dis
 | BW Facepaint Stick | `cfr_items_BW_FacepaintStick` | Used by the German Armed Forces. 10 uses |
 | Serbian Facepaint Stick | `cfr_items_Serbian_FacepaintStick` | Used by the Serbian Armed Forces. 10 uses |
 | US Facepaint Stick | `cfr_items_US_FacepaintStick` | Used by the US Armed Forces. 10 uses |
-| Snow Stripes Facepaint Stick | `cfr_items_SnowStripes_FacepaintStick` | White/green paint that unlocks the Snow Stripes scheme; reuses the BW model and icon as a placeholder. 10 uses |
+| Snow Stripes Facepaint Stick | `cfr_items_SnowStripes_FacepaintStick` | White/green paint that unlocks the Snow Stripes scheme; reuses the BW model and icon as a placeholder. 10 uses. Hidden (`scope = 1`, not in the supply box) until the scheme is finished |
 | Box of Facepaint | `cfr_items_box` | A `Box_NATO_Support_F`-based supply crate stocked with 10 of each facepaint stick above |
 | BW / Serbian / US / Snow Stripes Facepaint | `cfr_items_BW_Facepaint`, `cfr_items_Serbian_Facepaint`, `cfr_items_US_Facepaint`, `cfr_items_SnowStripes_Facepaint` | **Legacy** plain items, kept so existing missions and loadouts still work. They never run out and still unlock the same schemes, but are hidden from the arsenal and editor (`scope = 1`) |
 

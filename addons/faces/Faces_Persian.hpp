@@ -159,6 +159,7 @@ class GVAR(PersianHead_A3_01_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\PHA301\m_persian_01.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\PHA301\m_persian_01_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\PHA301\m_persian_01_injury.rvmat);
+    disabled = 1;
 };
 class GVAR(PersianHead_A3_02_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
     displayname = CSTRING(PersianHead_A3_02_SnowStripes);
@@ -166,6 +167,7 @@ class GVAR(PersianHead_A3_02_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\PHA302\m_persian_02.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\PHA302\m_persian_02_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\PHA302\m_persian_02_injury.rvmat);
+    disabled = 1;
 };
 class GVAR(PersianHead_A3_03_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
     displayname = CSTRING(PersianHead_A3_03_SnowStripes);
@@ -173,4 +175,5 @@ class GVAR(PersianHead_A3_03_SnowStripes): GVAR(PersianHead_A3_01_BWTarn) {
     material = QPATHTOF(data\snowstripes\PHA303\m_persian_03.rvmat);
     materialWounded1 = QPATHTOF(data\snowstripes\PHA303\m_persian_03_injury.rvmat);
     materialWounded2 = QPATHTOF(data\snowstripes\PHA303\m_persian_03_injury.rvmat);
+    disabled = 1;
 };

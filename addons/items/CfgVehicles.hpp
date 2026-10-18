@@ -12,7 +12,7 @@ class CfgVehicles {
             MACRO_ADDMAGAZINE(GVAR(US_FacepaintStick),10);
             MACRO_ADDMAGAZINE(GVAR(BW_FacepaintStick),10);
             MACRO_ADDMAGAZINE(GVAR(Serbian_FacepaintStick),10);
-            MACRO_ADDMAGAZINE(GVAR(SnowStripes_FacepaintStick),10);
+            // MACRO_ADDMAGAZINE(GVAR(SnowStripes_FacepaintStick),10); // back in once SnowStripes is finished
         };
         class TransportItems {};
     };

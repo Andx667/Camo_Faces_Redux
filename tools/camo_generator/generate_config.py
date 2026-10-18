@@ -16,7 +16,7 @@
 import json
 import sys
 
-from faces import NEW, GROUP_BASE, GROUP_FILE, SCHEME_NAMES, schemes_for
+from faces import NEW, GROUP_BASE, GROUP_FILE, HIDDEN, SCHEME_NAMES, schemes_for
 from paths import ADDON, DATA, TOOL_DATA
 
 names = json.loads((TOOL_DATA / "names.json").read_text(encoding="utf-8"))
@@ -99,7 +99,7 @@ def main():
             out.append("    identityTypes[] = {};")
             out += [f'    {k} = "{v}";' for k, v in carried(f.cls, group).items()]
             out += materials(f, first)
-            out.append("    disabled = 0;")
+            out.append(f"    disabled = {int(first in HIDDEN)};")
             out.append("};")
             if root is None:
                 root = me                          # later heads in the group hang off this one
@@ -116,6 +116,8 @@ def main():
                 # class above) would revert to TanoanHead_A3_01's bald scalp on every other scheme.
                 out += [f'    {k} = "{v}";' for k, v in carried(f.cls, group).items()]
                 out += materials(f, scheme)
+                if scheme in HIDDEN:
+                    out.append("    disabled = 1;")
                 out.append("};")
             out.append("")
 
