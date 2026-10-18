@@ -26,6 +26,7 @@ Mission makers can switch painting other units off with the **Allow Painting Oth
 - Your applied camo face is remembered per-unit and reapplied automatically on respawn, and it travels with your loadout when something exports or imports it through CBA (e.g. ACE Arsenal's loadout export).
 - Camouflage covers the base game's faces plus those added by Apex, Contact, Laws of War, Tac-Ops Mission Pack and Tanks. DLC faces only show up if you own that DLC, so which patterns you're offered depends on the face you're wearing — see [Faces](components/faces.md).
 - If the mission maker or server admin has enabled the **Camo Wear-off Time** setting, applied camo automatically fades back to your original face after that many minutes, simulating it wearing off from rain, sweat, or time — see [Common](components/common.md).
+- If the **Will Camo Wash Off in Water** setting is on (the default), swimming or diving washes your camo off and returns your original face.
 
 ## As Zeus (optional)
 

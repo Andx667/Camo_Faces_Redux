@@ -36,6 +36,12 @@ private _fnc_getText = {
     _text
 };
 
+// Whether a config entry's requiredDLC (0 = none) is owned on this machine
+private _fnc_dlcOk = {
+    private _dlc = getNumber (_this >> "requiredDLC");
+    _dlc == 0 || {isDLCAvailable _dlc}
+};
+
 // Faces that can be camouflaged and that this machine may use. requiredDLC is checked through the
 // same isDLCAvailable gate the Vanilla scheme uses: a client without the DLC never gets those faces
 // into GVAR(all_faces), so they vanish from every consumer at once with no DLC-specific logic
@@ -43,8 +49,7 @@ private _fnc_getText = {
 // runtime concern.)
 GVAR(all_faces) = [];
 {
-    private _dlc = getNumber (_x >> "requiredDLC");
-    if (_dlc == 0 || {isDLCAvailable _dlc}) then {
+    if (_x call _fnc_dlcOk) then {
         GVAR(all_faces) pushBack configName _x;
     };
 } forEach configProperties [configFile >> "CfgCamoBaseFaces", "isClass _x"];
@@ -73,9 +78,8 @@ private _defaultIcon = QPATHTOF(data\UI\Icon_camoon_ca.paa);
 {
     private _schemeCfg = _x;
     private _schemeId = configName _schemeCfg;
-    private _dlc = getNumber (_schemeCfg >> "requiredDLC");
 
-    if (_dlc == 0 || {isDLCAvailable _dlc}) then {
+    if (_schemeCfg call _fnc_dlcOk) then {
         private _pairs = [];
         {
             private _baseFace = configName _x;

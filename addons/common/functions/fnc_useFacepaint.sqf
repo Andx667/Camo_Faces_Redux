@@ -28,10 +28,10 @@
 params [["_unit", objNull, [objNull]], ["_schemeId", "", [""]]];
 TRACE_1("fnc_useFacepaint",_this);
 
-private _schemeIdx = GVAR(schemes) findIf {(_x select 0) == _schemeId};
-if (isNull _unit || {_schemeIdx == -1}) exitWith {-3};
+private _scheme = [_schemeId] call FUNC(getScheme);
+if (isNull _unit || {_scheme isEqualTo []}) exitWith {-3};
 
-private _itemClasses = (GVAR(schemes) select _schemeIdx) select 2;
+private _itemClasses = _scheme select 2;
 
 // the magazine-type items among them (the sticks), with the ammo left in the least-used carried stick
 // of each - what ACE would take the next round from

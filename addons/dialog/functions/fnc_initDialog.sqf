@@ -35,17 +35,16 @@ GVAR(isNight) = _hour > 21 || _hour < 6;
 // white-swatch box swap, which is keyed off the selected country/scheme, not just whether the
 // player happens to be carrying the item), so the box starts on the default brown texture
 // regardless of what the player is carrying
-_box ctrlSetText ([QPATHTOF2(data\UI\box.paa), QPATHTOF2(data\UI\box_night.paa)] select GVAR(isNight));
-_notepad ctrlSetText ([QPATHTOF2(data\UI\notepad.paa), QPATHTOF2(data\UI\notepad_night.paa)] select GVAR(isNight));
+_box ctrlSetText DAY_NIGHT_TEX(data\UI\box.paa,data\UI\box_night.paa);
+_notepad ctrlSetText DAY_NIGHT_TEX(data\UI\notepad.paa,data\UI\notepad_night.paa);
 
 // deactivate button
 private _button1 = _display displayCtrl IDC_BUTTON_LAYER1;
 private _button2 = _display displayCtrl IDC_BUTTON_LAYER2;
 private _button3 = _display displayCtrl IDC_BUTTON_LAYER3;
 
-_button1 ctrlEnable false; // as long as not all items are unequipped and options are choosen
-_button2 ctrlEnable false; // as long as not all items are unequipped and options are choosen
-_button3 ctrlEnable false; // as long as not all items are unequipped and options are choosen
+// as long as not all items are unequipped and options are chosen
+{_x ctrlEnable false} forEach [_button1, _button2, _button3];
 
 /*
     picture color and button function
@@ -60,29 +59,16 @@ private _red = [1, 0, 0, 0.6];
 private _green = [0, 1, 0, 0.6];
 
 // check if player has helmet, googles, nv equipped
-if (headgear player == "") then {
-    _backHelmet ctrlSetBackgroundColor _green;
-    GVAR(hasHelmet) = false; //ToDo Maybe these should not be global variables and instead be set on the unit
-} else {
-    _backHelmet ctrlSetBackgroundColor _red;
-    GVAR(hasHelmet) = true;
+//ToDo Maybe these should not be global variables and instead be set on the unit
+private _fnc_gearIndicator = {
+    params ["_ctrl", "_equipped"];
+    _ctrl ctrlSetBackgroundColor ([_green, _red] select _equipped);
+    _equipped
 };
 
-if (goggles player == "") then {
-    _backGoggles ctrlSetBackgroundColor _green;
-    GVAR(hasGoggles) = false;
-} else {
-    _backGoggles ctrlSetBackgroundColor _red;
-    GVAR(hasGoggles) = true;
-};
-
-if (hmd player == "") then {
-    _backNV ctrlSetBackgroundColor _green;
-    GVAR(hasNV) = false;
-} else {
-    _backNV ctrlSetBackgroundColor _red;
-    GVAR(hasNV) = true;
-};
+GVAR(hasHelmet) = [_backHelmet, headgear ACE_player != ""] call _fnc_gearIndicator;
+GVAR(hasGoggles) = [_backGoggles, goggles ACE_player != ""] call _fnc_gearIndicator;
+GVAR(hasNV) = [_backNV, hmd ACE_player != ""] call _fnc_gearIndicator;
 
 /*
     fill first listbox
@@ -90,7 +76,7 @@ if (hmd player == "") then {
 private _listBox_Side = _display displayCtrl IDC_LISTBOX_COUNTRY;
 lbClear _listBox_Side;
 
-private _camolist = [player] call EFUNC(common,getCountryOptions);
+private _camolist = [ACE_player] call EFUNC(common,getCountryOptions);
 
 // proof return value
 // no option
@@ -115,7 +101,7 @@ GVAR(mirrorCam) = "camera" camCreate [0,0,0];
 GVAR(mirrorCam) cameraEffect ["Internal", "Back", "camofacesmirror"];
 
 // attach to the player's head so it mirrors the current face
-GVAR(mirrorCam) attachTo [player, [-0.05,0.4,0.1], "head"];
+GVAR(mirrorCam) attachTo [ACE_player, [-0.05,0.4,0.1], "head"];
 // vectorDir/vectorUp: face the camera back at the player
 GVAR(mirrorCam) setVectorDirAndUp [[0,-1,0], [0,0,1]];
 // zoom in slightly so the face fills the mirror

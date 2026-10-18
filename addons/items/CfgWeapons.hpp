@@ -11,8 +11,7 @@ class CfgWeapons {
         scope = 1;
         displayName = CSTRING(US_Facepaint_DisplayName);
         descriptionShort = CSTRING(US_Facepaint_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_US_Facepaint.paa);
-        model = QPATHTOF(data\US_Facepaint.p3d);
+        FACEPAINT_ART(US);
 
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
@@ -21,14 +20,12 @@ class CfgWeapons {
     class GVAR(Serbian_Facepaint): GVAR(US_Facepaint) {
         displayName = CSTRING(Serbian_Facepaint_DisplayName);
         descriptionShort = CSTRING(Serbian_Facepaint_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_SERBIAN_Facepaint.paa);
-        model = QPATHTOF(data\SERBIAN_Facepaint.p3d);
+        FACEPAINT_ART(SERBIAN);
     };
     class GVAR(BW_Facepaint): GVAR(US_Facepaint) {
         displayName = CSTRING(BW_FacePaint_DisplayName);
         descriptionShort = CSTRING(BW_FacePaint_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_BW_Facepaint.paa);
-        model = QPATHTOF(data\BW_Facepaint.p3d);
+        FACEPAINT_ART(BW);
     };
     // SnowStripes gets its own item (see GVAR(schemes) in cfr_common/functions/fnc_init.sqf)
     // rather than piggybacking on an existing one - reuses the BW model/icon as a placeholder, no
@@ -36,7 +33,6 @@ class CfgWeapons {
     class GVAR(SnowStripes_Facepaint): GVAR(US_Facepaint) {
         displayName = CSTRING(SnowStripes_Facepaint_DisplayName);
         descriptionShort = CSTRING(SnowStripes_Facepaint_descriptionShort);
-        picture = QPATHTOF(data\UI\gear_BW_Facepaint.paa);
-        model = QPATHTOF(data\BW_Facepaint.p3d);
+        FACEPAINT_ART(BW);
     };
 };

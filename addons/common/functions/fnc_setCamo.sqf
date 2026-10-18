@@ -39,13 +39,9 @@ if (isNil QGVAR(schemes)) exitWith {
 private _face = face _unit;
 private _targetFace = "";
 
-private _schemeIdx = GVAR(schemes) findIf {(_x select 0) == _camo};
-if (_schemeIdx != -1) then {
-    (GVAR(schemes) select _schemeIdx) params ["", "_pairs"];
-    private _pairIdx = _pairs findIf {(_x select 0) == _face};
-    if (_pairIdx != -1) then {
-        _targetFace = (_pairs select _pairIdx) select 1;
-    };
+private _scheme = [_camo] call FUNC(getScheme);
+if (_scheme isNotEqualTo []) then {
+    _targetFace = [_scheme select 1, _face] call FUNC(getCamoFace);
 };
 
 // hint is feedback for whoever just changed their OWN face (the only way this mod's own dialog/ACE
@@ -53,7 +49,8 @@ if (_schemeIdx != -1) then {
 // this function, so without this guard, scripting fnc_setCamo onto other units (e.g. AI from a unit's
 // init field) would incorrectly pop the hint on that machine's own player, not the (non-existent)
 // player controlling the target unit
-private _hintOwner = _unit == player;
+// ACE_player as well: a remote-controlled unit (Zeus) is the one this machine is painting as
+private _hintOwner = _unit in [player, ACE_player];
 
 if (_targetFace == "") exitWith {
     if (_hintOwner) then { hint (localize LSTRING(invalidFace)); };

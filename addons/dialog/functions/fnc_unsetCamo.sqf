@@ -6,7 +6,7 @@
  * camo faces, per cfr_common's fnc_isCamoFace.
  *
  * Arguments:
- * 0: Unit (default: player) <OBJECT>
+ * 0: Unit (default: ACE_player) <OBJECT>
  * 1: Camoface <STRING>
  *
  * Return Value:
@@ -19,8 +19,8 @@
  */
 
 params [
-    ["_unit", player, [player]],
-    ["_face", face player, [""]]
+    ["_unit", ACE_player, [objNull]],
+    ["_face", face ACE_player, [""]]
 ];
 TRACE_1("fnc_unsetCamo",_this);
 
