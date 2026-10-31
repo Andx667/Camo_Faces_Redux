@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<title>camo-faces-redux</title>
+<rect width="512" height="512" rx="0" fill="#161A1F"/>
+<g transform="translate(56.00 56.00) scale(2.00000)" color="#FFFFFF" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><circle cx="100" cy="100" r="92"/>
+<defs>
+  <clipPath id="cf-face"><path d="M100 34 C78 34 64 50 64 76 C64 92 66 104 72 116 C78 128 88 138 100 140 C112 138 122 128 128 116 C134 104 136 92 136 76 C136 50 122 34 100 34 Z" stroke="none"/></clipPath>
+  <mask id="cf-eye" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+    <rect width="200" height="200" fill="#fff" stroke="none"/>
+    <path d="M127 81 C120 82 112 84 105 86 C110 89 118 89 124 86 Z" fill="#000" stroke="none"/>
+  </mask>
+</defs>
+<rect x="100" y="0" width="100" height="200" fill="currentColor" stroke="none"
+      clip-path="url(#cf-face)" mask="url(#cf-eye)"/>
+<path d="M100 34 C78 34 64 50 64 76 C64 92 66 104 72 116 C78 128 88 138 100 140 C112 138 122 128 128 116 C134 104 136 92 136 76 C136 50 122 34 100 34 Z"/>
+<path d="M65 80 C56 79 55 98 67 99 M135 80 C144 79 145 98 133 99"/>
+<path d="M73 81 C80 82 88 84 95 86 C90 89 82 89 76 86 Z" fill="currentColor" stroke="none"/>
+</g>
+</svg>

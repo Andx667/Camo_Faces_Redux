@@ -10,7 +10,7 @@ theme:
   variant: classic
   language: en
   logo: assets/logo.png
-  favicon: assets/logo.png
+  favicon: assets/icon.png
   icon:
     repo: fontawesome/brands/github
   palette:
