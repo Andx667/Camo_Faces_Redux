@@ -1,7 +1,7 @@
 # Camo Faces Redux
 
 <p align="center">
-    <img src="https://github.com/Andx667/Camo_Faces_Redux/blob/main/img/cfr_logo.png" alt="Camo Faces Redux Logo">
+    <img src="https://github.com/Andx667/Camo_Faces_Redux/blob/main/img/logo.png" alt="Camo Faces Redux Logo">
 </p>
 
 <p align="center">
