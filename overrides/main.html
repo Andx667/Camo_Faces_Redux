@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{#- Favicons. theme.favicon in mkdocs.yml is the SVG, which follows the browser's light/dark theme.
+    Here: the ICO fallback for browsers without SVG favicons (sizes="32x32" stops Chrome preferring it),
+    the SVG again with its type so browsers that take the last icon still pick it, and the iOS icon. -#}
+{% block extrahead %}
+  {{ super() }}
+  <link rel="icon" href="{{ 'assets/favicon.ico' | url }}" sizes="32x32">
+  <link rel="icon" href="{{ 'assets/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ 'assets/apple-touch-icon.png' | url }}">
+{% endblock %}
