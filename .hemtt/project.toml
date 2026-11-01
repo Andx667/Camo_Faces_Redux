@@ -15,10 +15,8 @@ changelog = "CHANGELOG.md"
 include = [
     "mod.cpp",
     "meta.cpp",
-    "img/cfr_icon.png",
-    "img/cfr_icon_ca.paa",
-    "img/cfr_logo.png",
-    "img/cfr_logo_ca.paa",
+    "img/icon_ca.paa",
+    "img/logo_ca.paa",
     "LICENSE",
     "README.md",
     "authors.txt",
