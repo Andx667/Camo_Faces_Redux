@@ -10,7 +10,7 @@ theme:
   custom_dir: overrides
   variant: classic
   language: en
-  logo: assets/logo.png
+  logo: assets/icon.png
   favicon: assets/favicon.svg
   icon:
     repo: fontawesome/brands/github
