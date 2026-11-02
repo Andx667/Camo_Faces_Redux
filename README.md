@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/Andx667/CamoFacesRedux/issues">
+    <a href="https://github.com/Andx667/Camo_Faces_Redux/issues">
         <img src="https://img.shields.io/github/issues-raw/Andx667/Camo_Faces_Redux.svg?style=flat-square&label=Issues" alt="Camo Faces Redux Issues">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3799682446">

@@ -1,30 +1,29 @@
 # HEMTT
-hemtt.exe
-.hemtt/missions/~*
 .hemttout/
-releases/
+.hemtt/missions/~*
 .hemttprivatekey
+*.hemttprivatekey
+*.biprivatekey
+hemtt
+hemtt.exe
+releases/
 
-# Textures
+# Build output
+*.pbo
+*.sqfc
+*.zip
+
+# Docs
+site/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+
+# Camo Faces Redux
 Exports/
 *.spp
 *.spp.painter_lock
 *.psd
 .camo_work/
-
-# Other
-*.biprivatekey
-*.zip
-*.pbo
-*.sqfc
-
-# mkdocs
-site/
-.cache/
-
-# camo generator scratch (see tools/camo_generator)
-.camo_work/
-
-# Python
-__pycache__/
-*.pyc

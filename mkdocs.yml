@@ -1,8 +1,8 @@
 site_name: Camo Faces Redux
 site_description: An Arma 3 mod that lets players camouflage their faces during missions.
 site_url: https://andx667.github.io/Camo_Faces_Redux/
-repo_name: Andx667/CamoFacesRedux
-repo_url: https://github.com/Andx667/CamoFacesRedux
+repo_name: Andx667/Camo_Faces_Redux
+repo_url: https://github.com/Andx667/Camo_Faces_Redux
 edit_uri: edit/main/docs/
 
 theme:

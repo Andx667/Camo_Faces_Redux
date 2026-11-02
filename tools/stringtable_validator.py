@@ -13,10 +13,41 @@ import xml.etree.ElementTree as ET
 #   - English as first translation.
 #   - no Original translation.
 #   - duplicated entries and languages.
+#   - package names that match the addon folder and PACKAGE_NAME_STYLE.
+#
+# Keys are named STR_<PROJECT_NAME>_<Package name>_<name>. CBA's LSTRING/CSTRING macros build them from the
+# `#define COMPONENT` of an addon, so the Package name has to be written like COMPONENT. Changing one
+# without the other breaks the runtime lookup of the string.
 
 
 ######## GLOBALS #########
 PROJECT_NAME = "CFR"
+
+# "lower": Package names are lowercase (the addon folder name), "title": Package names are titlecase
+PACKAGE_NAME_STYLE = "title"
+
+# Languages every key is expected to be translated into, besides English. Missing translations are only
+# reported (see report_coverage), they do not fail the validation, as untranslated keys fall back to English
+TRANSLATIONS = [
+    "German",
+    "French",
+    "Spanish",
+    "Polish",
+    "Russian",
+    "Italian",
+    "Czech",
+    "Portuguese",
+    "Chinese",
+    "Chinesesimp",
+    "Japanese",
+    "Korean",
+    "Ukrainian",
+    "Turkish",
+    "Hungarian",
+    "Slovak",
+    "Bulgarian",
+    "Latin",
+]
 ##########################
 
 
@@ -49,13 +80,16 @@ def check_stringtable(filepath):
     else:
         package_name = package.get("name")
 
-        if package_name.islower():
-            print("  ERROR: Package name attribute '{}' is all lowercase, should be in titlecase.".format(package_name))
-            errors += 1
-
         component_folder = os.path.basename(os.path.dirname(filepath))
         if package_name.lower() != component_folder:
             print("  ERROR: Package name attribute '{}' does not match the component folder name.".format(package_name))
+            errors += 1
+
+        if PACKAGE_NAME_STYLE == "lower" and package_name != package_name.lower():
+            print("  ERROR: Package name attribute '{}' should be all lowercase.".format(package_name))
+            errors += 1
+        elif PACKAGE_NAME_STYLE == "title" and package_name.islower():
+            print("  ERROR: Package name attribute '{}' is all lowercase, should be in titlecase.".format(package_name))
             errors += 1
 
         # Get all keys contained in the stringtable
@@ -142,6 +176,43 @@ def check_stringtable(filepath):
     return errors
 
 
+def report_coverage(filepaths, root_dir):
+    # Count the keys translated into each language and list the keys that are not
+    totals = {language: 0 for language in TRANSLATIONS}
+    key_count = 0
+    missing = []
+
+    for filepath in filepaths:
+        try:
+            package = ET.parse(filepath).getroot().find("Package")
+        except Exception:
+            continue
+
+        if package is None:
+            continue
+
+        for key in package.findall("Key"):
+            key_count += 1
+            languages = [entry.tag for entry in key]
+
+            for language in TRANSLATIONS:
+                if language in languages:
+                    totals[language] += 1
+                else:
+                    missing.append((os.path.relpath(filepath, root_dir), key.get("ID"), language))
+
+    print("Translation coverage ({} keys)".format(key_count))
+    print("-----------------------")
+
+    for language in TRANSLATIONS:
+        print("  {:<8} {}/{}".format(language, totals[language], key_count))
+
+    for filepath, key_id, language in missing:
+        print("  WARNING: {} has no {} translation in {}.".format(key_id, language, filepath))
+
+    print()
+
+
 def main():
     print("Validating Stringtables")
     print("-----------------------")
@@ -173,6 +244,8 @@ def main():
             bad_count += 1
 
     print()
+
+    report_coverage(stringtable_files, root_dir)
 
     if bad_count == 0:
         print("Stringtable Validation PASSED")
