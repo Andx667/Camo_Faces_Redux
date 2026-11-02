@@ -1,16 +1,24 @@
-/* Camo Faces Redux brand color: olive/khaki. */
+/* Camo Faces Redux brand color: olive/khaki. Two tones: a dark olive for the
+   header and for links on the light page, and a brighter khaki for links on
+   the dark slate page. All text pairings pass WCAG AA (4.5:1). */
 :root {
   --md-primary-fg-color: #6B6600;
   --md-primary-fg-color--light: #A8A000;
   --md-primary-fg-color--dark: #383500;
 }
 
-/* Darker in light mode (reads on a near-white page), brighter khaki in
-   dark mode (reads against the dark slate background). */
 [data-md-color-scheme="default"] {
   --md-accent-fg-color: #6B6600;
 }
 
 [data-md-color-scheme="slate"] {
   --md-accent-fg-color: #C9C24D;
+  /* Content links default to the primary color, which is too dark on slate. */
+  --md-typeset-a-color: #C9C24D;
+}
+
+/* Inactive tabs default to 70% opacity (3.84:1 on olive); 90% is 5.18:1 and
+   still reads as dimmer than the active tab. */
+.md-tabs__link:not(.md-tabs__link--active):not(:hover):not(:focus) {
+  opacity: 0.9;
 }
