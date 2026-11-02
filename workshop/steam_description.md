@@ -4,8 +4,8 @@
 
 ## Requirements
 
-- [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
-- [ACE3](https://steamcommunity.com/workshop/filedetails/?id=463939057)
+- [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
+- [ACE3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
 ## Features
 
@@ -49,12 +49,12 @@ Every layer of camo plays a short painting animation that other players see. The
 
 Camo Faces Redux is fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
-[GitHub Repository](https://github.com/Andx667/CamoFacesRedux)  
-[Report an Issue](https://github.com/Andx667/CamoFacesRedux/issues)  
+[GitHub Repository](https://github.com/Andx667/Camo_Faces_Redux)  
+[Report an Issue](https://github.com/Andx667/Camo_Faces_Redux/issues)  
 [Documentation](https://andx667.github.io/Camo_Faces_Redux/)  
 [Discord](https://discord.gg/ag4v6kxYAa)
 
-Licensed under [APL-ND](https://github.com/Andx667/CamoFacesRedux/blob/main/LICENSE).
+Licensed under [APL-ND](https://github.com/Andx667/Camo_Faces_Redux/blob/main/LICENSE).
 
 ---
 

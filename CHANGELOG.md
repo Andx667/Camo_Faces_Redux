@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- The launcher entry shows the version of the mod in its name, and the GitHub link points to the renamed repository
+
 ## [2.1.1] - 2026-11-01
 
 ### Changed

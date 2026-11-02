@@ -11,7 +11,7 @@
 
 3. Build the mod with `hemtt build`, or validate it without building via `hemtt check`.
 
-Feel free to add yourself to the list of [Authors](https://github.com/Andx667/CamoFacesRedux/blob/main/authors.txt) in your PR.
+Feel free to add yourself to the list of [Authors](https://github.com/Andx667/Camo_Faces_Redux/blob/main/authors.txt) in your PR.
 
 ## Translations
 
