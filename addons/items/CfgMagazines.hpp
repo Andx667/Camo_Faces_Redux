@@ -1,5 +1,5 @@
 // The consumable facepaint: each stick is a magazine whose rounds are its uses (the same trick KAT
-// Advanced Medical's Penthrox inhaler uses), so 10 rounds = 10 applications. ACE_asItem makes ACE's
+// Advanced Medical's Penthrox inhaler uses), so 12 rounds = 12 applications. ACE_asItem makes ACE's
 // arsenal and inventory treat it as an ordinary item rather than ammunition; ACE's own
 // adjustMagazineAmmo spends a use and deletes the stick once it is empty (see cfr_common's
 // fnc_useFacepaint). The CfgWeapons facepaint items are kept as unlimited legacy versions.
@@ -14,7 +14,7 @@ class CfgMagazines {
         FACEPAINT_ART(US);
 
         ammo = "";
-        count = 10;
+        count = 12;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;

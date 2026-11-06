@@ -20,7 +20,7 @@ Adds camo face variants for the base game's faces, and for those added by Apex, 
 - US Stains
 - Bohemia's own Marksmen DLC camo faces, if you own it
 
-Includes consumable facepaint sticks (10 uses each) needed to apply each camo scheme, and a supply box stocked with all four.
+Includes consumable facepaint sticks (12 uses each) needed to apply each camo scheme, and a supply box stocked with all four.
 
 Camo can optionally wear off after a configurable time, with a warning shortly before it goes.
 
@@ -32,7 +32,7 @@ Translated into every language Arma 3 ships: English, German, Czech, French, Spa
 
 ## How to Use
 
-Carry a facepaint stick (each has 10 uses), then use ACE's self-interaction menu on yourself to open the Camo Faces dialog and apply or remove camouflage.
+Carry a facepaint stick (each has 12 uses), then use ACE's self-interaction menu on yourself to open the Camo Faces dialog and apply or remove camouflage.
 
 There's also a CBA setting to switch to a leaner, dialog-free flow: enable it and the self-interaction menu instead expands directly into one action per camo scheme, plus a remove action — no dialog required.
 
