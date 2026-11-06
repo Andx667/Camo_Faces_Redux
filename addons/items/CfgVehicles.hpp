@@ -7,7 +7,7 @@ class CfgVehicles {
         editorSubcategory = QEGVAR(main,cfr);
 
         class TransportWeapons {};
-        // facepaint sticks, 10 uses each - not the unlimited legacy items
+        // facepaint sticks, 12 uses each - not the unlimited legacy items
         class TransportMagazines {
             MACRO_ADDMAGAZINE(GVAR(US_FacepaintStick),10);
             MACRO_ADDMAGAZINE(GVAR(BW_FacepaintStick),10);

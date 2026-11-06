@@ -20,7 +20,7 @@ The project is entirely open-source and any contributions are welcome — see [C
     - US Flash
     - US Stains
     - Bohemia's own Marksmen DLC camo faces (if you own the DLC)
-- Adds consumable facepaint sticks (10 uses each) needed to camouflage your face, and a supply box stocked with them
+- Adds consumable facepaint sticks (12 uses each) needed to camouflage your face, and a supply box stocked with them
 - Camouflage yourself through a dialog or ACE self-actions, or [paint and clean a teammate's face](usage.md#painting-a-teammate)
 - Short painting animations for every layer, visible to other players (can be turned off)
 - Optional wear-off of applied camo after a configurable time, with a warning shortly before it goes

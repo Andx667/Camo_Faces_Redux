@@ -13,16 +13,16 @@ Adds the inventory items needed to camouflage your face, and a supply box to dis
 
 | Item | Classname | Description |
 | --- | --- | --- |
-| BW Facepaint Stick | `cfr_items_BW_FacepaintStick` | Used by the German Armed Forces. 10 uses |
-| Serbian Facepaint Stick | `cfr_items_Serbian_FacepaintStick` | Used by the Serbian Armed Forces. 10 uses |
-| US Facepaint Stick | `cfr_items_US_FacepaintStick` | Used by the US Armed Forces. 10 uses |
-| Snow Stripes Facepaint Stick | `cfr_items_SnowStripes_FacepaintStick` | White/green paint that unlocks the Snow Stripes scheme; reuses the BW model and icon as a placeholder. 10 uses. Hidden (`scope = 1`, not in the supply box) until the scheme is finished |
+| BW Facepaint Stick | `cfr_items_BW_FacepaintStick` | Used by the German Armed Forces. 12 uses |
+| Serbian Facepaint Stick | `cfr_items_Serbian_FacepaintStick` | Used by the Serbian Armed Forces. 12 uses |
+| US Facepaint Stick | `cfr_items_US_FacepaintStick` | Used by the US Armed Forces. 12 uses |
+| Snow Stripes Facepaint Stick | `cfr_items_SnowStripes_FacepaintStick` | White/green paint that unlocks the Snow Stripes scheme; reuses the BW model and icon as a placeholder. 12 uses. Hidden (`scope = 1`, not in the supply box) until the scheme is finished |
 | Box of Facepaint | `cfr_items_box` | A `Box_NATO_Support_F`-based supply crate stocked with 10 of each facepaint stick above |
 | BW / Serbian / US / Snow Stripes Facepaint | `cfr_items_BW_Facepaint`, `cfr_items_Serbian_Facepaint`, `cfr_items_US_Facepaint`, `cfr_items_SnowStripes_Facepaint` | **Legacy** plain items, kept so existing missions and loadouts still work. They never run out and still unlock the same schemes, but are hidden from the arsenal and editor (`scope = 1`) |
 
 ## Consumable sticks
 
-The sticks are `CfgMagazines` classes (`CfgMagazines.hpp`) with `count = 10`, marked `ACE_asItem = 1` so ACE's arsenal and inventory treat them as ordinary items - the same approach KAT Advanced Medical uses for its Penthrox inhaler. The magazine's remaining rounds *are* its uses, so partly used sticks survive loadouts, the arsenal, respawn and persistence with no extra code. Applying camo through the dialog or an ACE action (self or buddy painting, see `cfr_dialog`) spends one use of the painter's stick through `cfr_common`'s `fnc_useFacepaint`, which uses ACE's own `ace_common_fnc_adjustMagazineAmmo`: it finishes the most-used stick first and removes a stick once it is empty. The stick can be carried anywhere - uniform, vest or backpack. Cleaning a face costs nothing, and neither do Zeus, scripts (`fnc_setCamo`) or respawn/loadout restore.
+The sticks are `CfgMagazines` classes (`CfgMagazines.hpp`) with `count = 12`, marked `ACE_asItem = 1` so ACE's arsenal and inventory treat them as ordinary items - the same approach KAT Advanced Medical uses for its Penthrox inhaler. The magazine's remaining rounds *are* its uses, so partly used sticks survive loadouts, the arsenal, respawn and persistence with no extra code. Applying camo through the dialog or an ACE action (self or buddy painting, see `cfr_dialog`) spends one use of the painter's stick through `cfr_common`'s `fnc_useFacepaint`, which uses ACE's own `ace_common_fnc_adjustMagazineAmmo`: it finishes the most-used stick first and removes a stick once it is empty. The stick can be carried anywhere - uniform, vest or backpack. Cleaning a face costs nothing, and neither do Zeus, scripts (`fnc_setCamo`) or respawn/loadout restore.
 
 The legacy items are `ACE_ItemCore`-based (`CfgWeapons.hpp`), with `Serbian_Facepaint`, `BW_Facepaint` and `SnowStripes_Facepaint` inheriting their `ItemInfo`/mass from `US_Facepaint`.
 
