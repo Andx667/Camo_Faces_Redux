@@ -20,7 +20,7 @@ class CfgPatches {
         weapons[] = {
             QGVAR(US_Facepaint),
             QGVAR(BW_Facepaint),
-            QGVAR(SERBIAN_Facepaint),
+            QGVAR(Serbian_Facepaint),
             QGVAR(SnowStripes_Facepaint),
         };
         magazines[] = {
