@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-* Common - Fix camo not coming back after respawn (#72) by Andx
+- Common - Fix camo not coming back after respawn (#72) by Andx
 
 ## [2.1.1] - 2026-11-01
 
