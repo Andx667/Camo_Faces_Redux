@@ -23,7 +23,7 @@
  * Public: No
  */
 
-params ["_target"];
+params [["_target", objNull, [objNull]]];
 TRACE_1("fnc_getBuddyActions",_this);
 
 private _face = face _target;

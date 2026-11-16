@@ -29,7 +29,7 @@ TRACE_1("fnc_init",_this);
 // Text from a config property, localized if it is a "$STR_..." key (as CSTRING() produces) and
 // left alone otherwise, so an addon can just as well write a plain string
 private _fnc_getText = {
-    params ["_cfg", "_default"];
+    params [["_cfg", configNull, [configNull]], ["_default", "", [""]]];
     private _text = getText _cfg;
     if (_text == "") exitWith {_default};
     if (_text select [0, 1] == "$") then {_text = localize (_text select [1])};

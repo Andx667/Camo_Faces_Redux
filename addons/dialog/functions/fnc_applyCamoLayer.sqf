@@ -34,7 +34,7 @@
  * Public: No
  */
 
-params ["_camo", "_layer", ["_target", ACE_player, [objNull]], ["_painter", ACE_player, [objNull]]];
+params [["_camo", "", [""]], ["_layer", 1, [0]], ["_target", ACE_player, [objNull]], ["_painter", ACE_player, [objNull]]];
 TRACE_1("fnc_applyCamoLayer",_this);
 
 private _titleKey = switch (_layer) do {

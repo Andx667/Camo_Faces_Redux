@@ -21,7 +21,7 @@
  * Public: No
  */
 
-params ["_target"];
+params [["_target", objNull, [objNull]]];
 TRACE_1("fnc_getSchemeActions",_this);
 
 private _actions = [];

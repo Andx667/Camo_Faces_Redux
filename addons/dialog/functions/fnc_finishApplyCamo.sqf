@@ -22,7 +22,7 @@
  * Public: No
  */
 
-params ["_painter", "_target", "_camo"];
+params [["_painter", objNull, [objNull]], ["_target", objNull, [objNull]], ["_camo", "", [""]]];
 TRACE_1("fnc_finishApplyCamo",_this);
 
 // one use of the painter's facepaint stick pays for it (legacy plain items cost nothing);

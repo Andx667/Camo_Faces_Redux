@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_face"];
+params [["_face", "", [""]]];
 TRACE_1("fnc_isCamoFace",_this);
 
 (([_face] call FUNC(findBaseFace)) select 1) != "";

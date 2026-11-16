@@ -53,7 +53,7 @@ private _sticks = [];
 _sticks sort true;
 
 private _fnc_usesLeft = {
-    params ["_unit", "_itemClasses"];
+    params [["_unit", objNull, [objNull]], ["_itemClasses", [], [[]]]];
 
     private _left = 0;
     {

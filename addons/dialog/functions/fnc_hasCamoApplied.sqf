@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params [["_unit", ACE_player, [ACE_player]]];
+params [["_unit", ACE_player, [objNull]]];
 TRACE_1("fnc_hasCamoApplied",_this);
 
 [face _unit] call EFUNC(common,isCamoFace);

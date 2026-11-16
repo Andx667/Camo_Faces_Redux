@@ -21,7 +21,7 @@
  * Public: No
  */
 
-params ["_unit"];
+params [["_unit", objNull, [objNull]]];
 TRACE_1("fnc_getCountryOptions",_this);
 
 private _face = face _unit;
