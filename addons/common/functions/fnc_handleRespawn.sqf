@@ -23,15 +23,18 @@
 params ["_unit"];
 TRACE_1("fnc_handleRespawn",_this);
 
-waitUntil {alive _unit};
+// the respawn handler runs unscheduled, so it can't suspend with waitUntil
+[{alive (_this select 0)}, {
+    params ["_unit"];
 
-private _scheme = _unit getVariable [QGVAR(scheme), ""];
+    private _scheme = _unit getVariable [QGVAR(scheme), ""];
 
-if (_scheme != "") then {
-    [_unit, _scheme] call FUNC(setCamo);
-} else {
-    private _face = _unit getVariable [QGVAR(face), ""];
-    if (_face != "") then {
-        [QGVAR(setFace), [_unit, _face]] call CBA_fnc_globalEvent;
+    if (_scheme != "") then {
+        [_unit, _scheme] call FUNC(setCamo);
+    } else {
+        private _face = _unit getVariable [QGVAR(face), ""];
+        if (_face != "") then {
+            [QGVAR(setFace), [_unit, _face]] call CBA_fnc_globalEvent;
+        };
     };
-};
+}, [_unit]] call CBA_fnc_waitUntilAndExecute;
