@@ -19,7 +19,7 @@
  * Public: No
  */
 
-params ["_player"];
+params [["_player", objNull, [objNull]]];
 TRACE_1("fnc_canShowAction",_this);
 
 private _face = face _player;

@@ -26,7 +26,7 @@
  * Public: No
  */
 
-params ["_painter", ["_target", objNull, [objNull]]];
+params [["_painter", objNull, [objNull]], ["_target", objNull, [objNull]]];
 TRACE_2("fnc_getAnimation",_painter,_target);
 
 if (

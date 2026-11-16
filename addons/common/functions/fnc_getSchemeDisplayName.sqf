@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_schemeId"];
+params [["_schemeId", "", [""]]];
 TRACE_1("fnc_getSchemeDisplayName",_this);
 
 private _scheme = [_schemeId] call FUNC(getScheme);

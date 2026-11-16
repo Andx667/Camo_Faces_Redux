@@ -22,7 +22,7 @@
  * Public: No
  */
 
-params ["_objects", "_groups"];
+params [["_objects", [], [[]]], ["_groups", [], [[]]]];
 TRACE_1("fnc_getCamoActions",_this);
 
 private _groupUnits = [];

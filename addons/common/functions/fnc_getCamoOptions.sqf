@@ -20,7 +20,7 @@
  * Public: No
  */
 
-params ["_select", ["_unit", player, [objNull]]];
+params [["_select", "", [""]], ["_unit", player, [objNull]]];
 TRACE_1("fnc_getCamoOptions",_this);
 
 private _selected = [];

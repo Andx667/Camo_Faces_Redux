@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_units"];
+params [["_units", [], [[]]]];
 TRACE_1("fnc_removeCamo",_this);
 
 {
