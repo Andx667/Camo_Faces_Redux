@@ -87,7 +87,7 @@ class GVAR(Dialog) {
         y = (4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
         w = (8.5 * (1.2)) * (0.025);
         h = (3.5 * (1.2)) * (0.04);
-        tooltip = "red means you still wear a helmet";
+        tooltip = CSTRING(tooltipHelmet);
     };
     class RscSTRucturedText_Brille: RscStructuredText {
         idc = IDC_TEXT_GOGGLES;
@@ -104,7 +104,7 @@ class GVAR(Dialog) {
         y = (4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
         w = (8.5 * (1.2)) * (0.025);
         h = (3.5 * (1.2)) * (0.04);
-        tooltip = "red means you still wear glasses";
+        tooltip = CSTRING(tooltipGoggles);
     };
     class RscSTRucturedText_NV: RscStructuredText {
         idc = IDC_TEXT_NV;
@@ -121,7 +121,7 @@ class GVAR(Dialog) {
         y = (4.3 * (1.2)) * (0.04)+ (0)+ (5 * (0.04)+ (0));
         w = (8.5 * (1.2)) * (0.025);
         h = (3.5 * (1.2)) * (0.04);
-        tooltip = "red means you still use a night vision gear";
+        tooltip = CSTRING(tooltipNV);
     };
     class RscButton_MakeUp_Layer1: RscButton {
         idc = IDC_BUTTON_LAYER1;
@@ -134,7 +134,7 @@ class GVAR(Dialog) {
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;
-        tooltip = "apply first layer of chosen camo face";
+        tooltip = CSTRING(tooltipLayer1);
         colorText[] = {1,1,1,1};
         colorDisabled[] = {0,1,0,0};
         colorBackground[] = {0,1,0,0.1};
@@ -155,7 +155,7 @@ class GVAR(Dialog) {
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;
-        tooltip = "apply second layer of chosen camo face";
+        tooltip = CSTRING(tooltipLayer2);
         colorText[] = {1,1,1,1};
         colorDisabled[] = {0.32,0.16,0.05,0.3};
         colorBackground[] = {0.32,0.16,0.05,0.3};
@@ -176,7 +176,7 @@ class GVAR(Dialog) {
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;
-        tooltip = "apply third layer of chosen camo face";
+        tooltip = CSTRING(tooltipLayer3);
         colorText[] = {1,1,1,1};
         colorDisabled[] = {0.18,0.17,0.16,0.3};
         colorBackground[] = {0.18,0.17,0.16,0.3};
@@ -197,7 +197,7 @@ class GVAR(Dialog) {
         sizeEx = 0.05;
         font = "PuristaBold";
         shadow = 0;
-        tooltip = "remove camo face";
+        tooltip = CSTRING(tooltipRemove);
         colorText[] = {1,1,1,1};
         colorDisabled[] = {0,0,0,0};
         colorBackground[] = {0,0,0,0};
