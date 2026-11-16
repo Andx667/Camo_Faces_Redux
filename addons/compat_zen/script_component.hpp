@@ -9,4 +9,4 @@
 #include "\z\cfr\addons\main\script_macros.hpp"
 
 // reused for every generated ZEN context menu entry - a real facepaint icon already shipped by cfr_items
-#define ICON_CAMOUFLAGE "\z\cfr\addons\items\data\UI\gear_US_Facepaint.paa"
+#define ICON_CAMOUFLAGE QPATHTOEF(items,data\UI\gear_US_Facepaint.paa)
