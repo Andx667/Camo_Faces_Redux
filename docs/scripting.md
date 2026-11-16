@@ -3,7 +3,7 @@
 Mission makers and scripters can apply or remove camouflage directly from a script or the editor's init field, without going through the in-game dialog, ACE self-actions, or the Zeus context menu — and can react to camo being applied or removed by other means too. This page is the complete reference, including how addons can register their own faces and schemes; no repository access needed.
 
 !!! warning "Don't build the classname yourself"
-    Some camo face mods let you build the target face classname yourself (e.g. `(face this) + "_some_suffix"`) and call `setFace` directly. That doesn't work here — this mod's camo classnames aren't a simple suffix on the base face classname. A plain `setFace` call also only changes the face locally: it won't sync to other players or survive a respawn. Always go through the functions below instead.
+    Some camo face mods let you build the target face classname yourself (e.g. `(face this) + "_some_suffix"`) and call `setFace` directly. That doesn't work here — this mod's camo classnames aren't a simple suffix on the base face classname. A plain `setFace` call also only changes the face locally: it won't sync to other players or join-in-progress clients. Always go through the functions below instead.
 
 ## Applying camouflage
 

@@ -20,7 +20,7 @@ Core, UI-independent logic for applying and removing camouflage: building the li
 | `fnc_unsetCamo` | `[unit, face]` | Reverses whichever scheme the unit's current camo face belongs to, restoring its base face |
 | `fnc_isCamoFace` | `[face]` | Checks whether a face classname is one of this mod's camo variants, under any scheme — shared predicate used by `fnc_setCamo`, `cfr_dialog`'s `fnc_canShowAction`, and both `fnc_unsetCamo` files |
 | `fnc_getSchemeDisplayName` | `[schemeId]` | Returns a camo scheme's localized display name — used by `cfr_compat_zen`'s dynamic ZEN context menu |
-| `fnc_handleRespawn` | `[unit]` | `Extended_Respawn_EventHandlers` hook - reapplies a unit's saved camo (if any) after it respawns, via `fnc_setCamo` |
+| `fnc_handleRespawn` | `[unit]` | `Extended_Respawn_EventHandlers` hook - tries to reapply a unit's saved camo (if any) after it respawns, via `fnc_setCamo`. Known issue: this doesn't stick yet, the respawned unit ends up with its normal face anyway (deferring by a frame didn't help) |
 | `fnc_startWearOff` | `[unit, face, camoId]` | Starts the wear-off timer on the unit's owner; raised by `fnc_setCamo` via the `cfr_common_startWearOff` targeted event |
 | `fnc_washOff` | `[unit]` | Washes camo off a swimming or diving unit if **Will Camo Wash Off in Water** is on; called every 3 seconds on the local player |
 
@@ -78,7 +78,7 @@ Applying or removing a face is synchronized across the network through a `cfr_co
 
 There are four Vanilla rows. `Vanilla` covers every base face, one BI-authored `CamoHead_*` variant each. `VanillaArid`, `VanillaLush` and `VanillaSemiArid` are Marksmen's environment-specific faces, which BI authored for only three base faces — `PersianHead_A3_01`, `GreekHead_A3_02` and `WhiteHead_11`. They need a row each rather than one shared row because a scheme's `pairs` map a base face to exactly one camo face, so a single row can't offer one face three choices. Which base face each is painted over was determined by comparing the textures outside the painted area, not assumed.
 
-Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `fnc_handleRespawn` (on respawn) can reapply it.
+Each unit's active camo face is also stored on the unit itself, via `_unit setVariable [QGVAR(face), <faceString>, true]`, so `XEH_postInit` (on mission start, after units exist - see `fnc_init.sqf`) and `fnc_handleRespawn` (on respawn) can reapply it. The respawn path currently doesn't work in practice (see `fnc_handleRespawn` above).
 
 ## Extending the mod
 
