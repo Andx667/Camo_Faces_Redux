@@ -3,6 +3,9 @@ options.banned = [
     "spawn", # Scheduled should be avoided whenever possible
     "execVM", # Script files should never be run directly, they should be functions
     "remoteExec", # CBA events should be used for networking
+    "publicVariable", # CBA events should be used for networking
+    "publicVariableServer", # CBA events should be used for networking
+    "publicVariableClient", # CBA events should be used for networking
 ]
 
 [config.math_could_be_unquoted]

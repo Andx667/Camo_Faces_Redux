@@ -95,7 +95,7 @@ A behaviour change without matching docs updates is incomplete.
 ## Changelog and versioning
 
 - `CHANGELOG.md` follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [SemVer](https://semver.org/).
-- Every user-visible PR adds a line under `## [Unreleased]`: `* Component - Fix … (#<PR>) by <author>`. The section matches the label.
+- Every user-visible PR adds a line under `## [Unreleased]`: `- Component - Fix … (#<PR>) by <author>`. The section matches the label.
 - **Major**: removing or renaming public functions, events, settings, mission-used classnames. **Minor**: new features, public API, settings, deprecations. **Patch**: fixes without contract changes.
 - Don't bump the version in feature PRs unless asked.
 

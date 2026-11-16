@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- The launcher entry shows the version of the mod in its name, and the GitHub link points to the renamed repository
-- Facepaint sticks now have 12 uses instead of 10, in preparation for layered camo where every layer costs one use (#69). Sticks already in a saved loadout keep the uses they had left
+- Main - Change the launcher entry to show the mod's version, and the GitHub link to point to the renamed repository (#67) by Andx
+- Items - Change facepaint sticks to 12 uses instead of 10, in preparation for layered camo (#69) where every layer costs one use. Sticks already in a saved loadout keep the uses they had left (#70) by Andx
 
 ## [2.1.1] - 2026-11-01
 

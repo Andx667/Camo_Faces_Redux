@@ -7,7 +7,7 @@
 
 - [ ] If the contribution affects [the documentation](../docs), please include your changes in this pull request.
 - [ ] [Development Guidelines](https://github.com/Andx667/Camo_Faces_Redux/blob/main/.github/CONTRIBUTING.md) are read, understood and applied.
-- [ ] Title of this PR uses our standard template `Component - Add|Fix|Improve|Change|Remove {changes}`.
+- [ ] Title of this PR uses our standard template `Component - Add|Fix|Change|Remove {changes}`.
 
 <!-- Known issues that need to be addressed -->
 ## Known Issues
