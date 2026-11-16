@@ -19,7 +19,7 @@
  * Public: No
  */
 
-params ["_display"];
+params [["_display", displayNull, [displayNull]]];
 TRACE_1("fnc_initDialog",_this);
 
 disableSerialization;
@@ -61,7 +61,7 @@ private _green = [0, 1, 0, 0.6];
 // check if player has helmet, googles, nv equipped
 //ToDo Maybe these should not be global variables and instead be set on the unit
 private _fnc_gearIndicator = {
-    params ["_ctrl", "_equipped"];
+    params [["_ctrl", controlNull, [controlNull]], ["_equipped", false, [false]]];
     _ctrl ctrlSetBackgroundColor ([_green, _red] select _equipped);
     _equipped
 };

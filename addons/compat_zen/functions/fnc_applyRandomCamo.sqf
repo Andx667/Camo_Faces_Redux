@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_units"];
+params [["_units", [], [[]]]];
 TRACE_1("fnc_applyRandomCamo",_this);
 
 private _applied = 0;

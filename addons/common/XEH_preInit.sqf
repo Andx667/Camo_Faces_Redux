@@ -19,7 +19,7 @@ call FUNC(init);
 // Both events are CBA_fnc_localEvent, same as fnc_setCamo/fnc_unsetCamo's public API events - they
 // only fire on whichever machine actually calls CBA_fnc_getLoadout/CBA_fnc_setLoadout.
 ["CBA_loadoutGet", {
-    params ["_unit", "", "_extendedInfo"];
+    params [["_unit", objNull, [objNull]], "", ["_extendedInfo", createHashMap, [createHashMap]]];
     private _face = _unit getVariable [QGVAR(face), ""];
     if (_face != "") then {
         _extendedInfo set [QGVAR(face), _face];
@@ -27,7 +27,7 @@ call FUNC(init);
 }] call CBA_fnc_addEventHandler;
 
 ["CBA_loadoutSet", {
-    params ["_unit", "", "_extendedInfo"];
+    params [["_unit", objNull, [objNull]], "", ["_extendedInfo", createHashMap, [createHashMap]]];
     private _face = _extendedInfo getOrDefault [QGVAR(face), ""];
     if (_face != "") then {
         // networked the same way fnc_setCamo/fnc_unsetCamo apply a face, rather than calling

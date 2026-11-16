@@ -19,7 +19,7 @@
  * Public: No
  */
 
-params ["_level"];
+params [["_level", 0, [0]]];
 TRACE_1("fnc_applyCamo",_this);
 
 disableSerialization;

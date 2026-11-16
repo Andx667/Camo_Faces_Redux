@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_camo", ["_target", ACE_player, [objNull]]];
+params [["_camo", "", [""]], ["_target", ACE_player, [objNull]]];
 TRACE_1("fnc_applyCamoAction",_this);
 
 [_camo, 1, _target] call FUNC(applyCamoLayer);

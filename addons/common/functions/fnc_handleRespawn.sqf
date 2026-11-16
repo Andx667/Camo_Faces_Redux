@@ -20,7 +20,7 @@
  * Public: No
  */
 
-params ["_unit"];
+params [["_unit", objNull, [objNull]]];
 TRACE_1("fnc_handleRespawn",_this);
 
 // the respawn handler runs unscheduled, so it can't suspend with waitUntil

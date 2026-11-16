@@ -22,7 +22,7 @@
  * Public: No
  */
 
-params ["_lbCountry", "_selItem"];
+params [["_lbCountry", controlNull, [controlNull]], ["_selItem", -1, [0]]];
 TRACE_1("fnc_onLBCountryChanged",_this);
 
 disableSerialization;

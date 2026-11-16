@@ -32,7 +32,7 @@
  * Public: No
  */
 
-params ["_unit", "_face", "_camoId"];
+params [["_unit", objNull, [objNull]], ["_face", "", [""]], ["_camoId", "", [""]]];
 TRACE_1("fnc_startWearOff",_this);
 
 if (isNull _unit) exitWith {};
