@@ -21,7 +21,7 @@
  * Public: No
  */
 
-params ["_unit"];
+params [["_unit", objNull, [objNull]]];
 
 if (!GVAR(washOffInWater) || {!alive _unit} || {!(_unit call ace_common_fnc_isSwimming)}) exitWith {};
 

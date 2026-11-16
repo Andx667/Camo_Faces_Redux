@@ -19,7 +19,7 @@
  * Public: No
  */
 
-params ["_painter"];
+params [["_painter", objNull, [objNull]]];
 TRACE_1("fnc_stopAnimation",_painter);
 
 if (diag_tickTime >= _painter getVariable [QGVAR(animating), 0]) exitWith {};

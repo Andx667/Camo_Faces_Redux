@@ -484,5 +484,152 @@
             <Bulgarian>Когато е включено, нанасянето и премахването на камуфлаж става чрез отделни действия за самовзаимодействие на ACE вместо чрез отваряне на диалога Camo Faces.</Bulgarian>
             <Latin>Si activatum est, dissimulatio inducitur et removetur per singulas actiones ACE sui-interactionis, non aperiendo dialogum Camo Faces.</Latin>
         </Key>
+        <Key ID="STR_CFR_Dialog_tooltipGoggles">
+            <English>Red means you are still wearing glasses</English>
+            <Czech>Červená znamená, že máte stále nasazené brýle</Czech>
+            <French>Rouge signifie que vous portez encore des lunettes</French>
+            <Spanish>Rojo significa que todavía llevas gafas</Spanish>
+            <Italian>Rosso significa che indossi ancora gli occhiali</Italian>
+            <Polish>Czerwony oznacza, że nadal masz założone okulary</Polish>
+            <Portuguese>Vermelho significa que você ainda está usando óculos</Portuguese>
+            <Russian>Красный цвет означает, что на вас всё ещё очки</Russian>
+            <German>Rot bedeutet, dass du noch eine Brille trägst</German>
+            <Korean>빨간색은 아직 안경을 착용하고 있다는 뜻입니다</Korean>
+            <Japanese>赤は、まだ眼鏡を着用していることを示します</Japanese>
+            <Chinese>紅色表示你仍戴著眼鏡</Chinese>
+            <Chinesesimp>红色表示你仍戴着眼镜</Chinesesimp>
+            <Turkish>Kırmızı, hâlâ gözlük taktığınız anlamına gelir</Turkish>
+            <Slovak>Červená znamená, že máte stále nasadené okuliare</Slovak>
+            <Hungarian>A piros azt jelenti, hogy még szemüveget viselsz</Hungarian>
+            <Ukrainian>Червоний колір означає, що на вас усе ще окуляри</Ukrainian>
+            <Bulgarian>Червено означава, че все още носите очила</Bulgarian>
+            <Latin>Ruber significat te adhuc perspicilla gerere</Latin>
+        </Key>
+        <Key ID="STR_CFR_Dialog_tooltipHelmet">
+            <English>Red means you are still wearing a helmet</English>
+            <Czech>Červená znamená, že máte stále nasazenou helmu</Czech>
+            <French>Rouge signifie que vous portez encore un casque</French>
+            <Spanish>Rojo significa que todavía llevas casco</Spanish>
+            <Italian>Rosso significa che indossi ancora l'elmetto</Italian>
+            <Polish>Czerwony oznacza, że nadal masz założony hełm</Polish>
+            <Portuguese>Vermelho significa que você ainda está usando capacete</Portuguese>
+            <Russian>Красный цвет означает, что на вас всё ещё шлем</Russian>
+            <German>Rot bedeutet, dass du noch einen Helm trägst</German>
+            <Korean>빨간색은 아직 헬멧을 착용하고 있다는 뜻입니다</Korean>
+            <Japanese>赤は、まだヘルメットを着用していることを示します</Japanese>
+            <Chinese>紅色表示你仍戴著頭盔</Chinese>
+            <Chinesesimp>红色表示你仍戴着头盔</Chinesesimp>
+            <Turkish>Kırmızı, hâlâ kask taktığınız anlamına gelir</Turkish>
+            <Slovak>Červená znamená, že máte stále nasadenú prilbu</Slovak>
+            <Hungarian>A piros azt jelenti, hogy még sisakot viselsz</Hungarian>
+            <Ukrainian>Червоний колір означає, що на вас усе ще шолом</Ukrainian>
+            <Bulgarian>Червено означава, че все още носите каска</Bulgarian>
+            <Latin>Ruber significat te adhuc galeam gerere</Latin>
+        </Key>
+        <Key ID="STR_CFR_Dialog_tooltipLayer1">
+            <English>Apply the first layer of the chosen camo</English>
+            <Czech>Nanést první vrstvu zvolené kamufláže</Czech>
+            <French>Appliquer la première couche du camouflage choisi</French>
+            <Spanish>Aplicar la primera capa del camuflaje elegido</Spanish>
+            <Italian>Applica il primo strato della mimetizzazione scelta</Italian>
+            <Polish>Nałóż pierwszą warstwę wybranego kamuflażu</Polish>
+            <Portuguese>Aplicar a primeira camada da camuflagem escolhida</Portuguese>
+            <Russian>Нанести первый слой выбранного камуфляжа</Russian>
+            <German>Erste Schicht der gewählten Tarnung auftragen</German>
+            <Korean>선택한 위장의 첫 번째 층 바르기</Korean>
+            <Japanese>選択したカモフラージュの1層目を塗る</Japanese>
+            <Chinese>塗上所選偽裝的第一層</Chinese>
+            <Chinesesimp>涂上所选伪装的第一层</Chinesesimp>
+            <Turkish>Seçilen kamuflajın ilk katını uygula</Turkish>
+            <Slovak>Naniesť prvú vrstvu zvolenej kamufláže</Slovak>
+            <Hungarian>A választott álcázás első rétegének felvitele</Hungarian>
+            <Ukrainian>Нанести перший шар вибраного камуфляжу</Ukrainian>
+            <Bulgarian>Нанасяне на първия слой от избрания камуфлаж</Bulgarian>
+            <Latin>Primum stratum dissimulationis electae inducere</Latin>
+        </Key>
+        <Key ID="STR_CFR_Dialog_tooltipLayer2">
+            <English>Apply the second layer of the chosen camo</English>
+            <Czech>Nanést druhou vrstvu zvolené kamufláže</Czech>
+            <French>Appliquer la deuxième couche du camouflage choisi</French>
+            <Spanish>Aplicar la segunda capa del camuflaje elegido</Spanish>
+            <Italian>Applica il secondo strato della mimetizzazione scelta</Italian>
+            <Polish>Nałóż drugą warstwę wybranego kamuflażu</Polish>
+            <Portuguese>Aplicar a segunda camada da camuflagem escolhida</Portuguese>
+            <Russian>Нанести второй слой выбранного камуфляжа</Russian>
+            <German>Zweite Schicht der gewählten Tarnung auftragen</German>
+            <Korean>선택한 위장의 두 번째 층 바르기</Korean>
+            <Japanese>選択したカモフラージュの2層目を塗る</Japanese>
+            <Chinese>塗上所選偽裝的第二層</Chinese>
+            <Chinesesimp>涂上所选伪装的第二层</Chinesesimp>
+            <Turkish>Seçilen kamuflajın ikinci katını uygula</Turkish>
+            <Slovak>Naniesť druhú vrstvu zvolenej kamufláže</Slovak>
+            <Hungarian>A választott álcázás második rétegének felvitele</Hungarian>
+            <Ukrainian>Нанести другий шар вибраного камуфляжу</Ukrainian>
+            <Bulgarian>Нанасяне на втория слой от избрания камуфлаж</Bulgarian>
+            <Latin>Secundum stratum dissimulationis electae inducere</Latin>
+        </Key>
+        <Key ID="STR_CFR_Dialog_tooltipLayer3">
+            <English>Apply the third layer of the chosen camo</English>
+            <Czech>Nanést třetí vrstvu zvolené kamufláže</Czech>
+            <French>Appliquer la troisième couche du camouflage choisi</French>
+            <Spanish>Aplicar la tercera capa del camuflaje elegido</Spanish>
+            <Italian>Applica il terzo strato della mimetizzazione scelta</Italian>
+            <Polish>Nałóż trzecią warstwę wybranego kamuflażu</Polish>
+            <Portuguese>Aplicar a terceira camada da camuflagem escolhida</Portuguese>
+            <Russian>Нанести третий слой выбранного камуфляжа</Russian>
+            <German>Dritte Schicht der gewählten Tarnung auftragen</German>
+            <Korean>선택한 위장의 세 번째 층 바르기</Korean>
+            <Japanese>選択したカモフラージュの3層目を塗る</Japanese>
+            <Chinese>塗上所選偽裝的第三層</Chinese>
+            <Chinesesimp>涂上所选伪装的第三层</Chinesesimp>
+            <Turkish>Seçilen kamuflajın üçüncü katını uygula</Turkish>
+            <Slovak>Naniesť tretiu vrstvu zvolenej kamufláže</Slovak>
+            <Hungarian>A választott álcázás harmadik rétegének felvitele</Hungarian>
+            <Ukrainian>Нанести третій шар вибраного камуфляжу</Ukrainian>
+            <Bulgarian>Нанасяне на третия слой от избрания камуфлаж</Bulgarian>
+            <Latin>Tertium stratum dissimulationis electae inducere</Latin>
+        </Key>
+        <Key ID="STR_CFR_Dialog_tooltipNV">
+            <English>Red means you are still wearing night vision</English>
+            <Czech>Červená znamená, že máte stále nasazené noční vidění</Czech>
+            <French>Rouge signifie que vous portez encore une vision nocturne</French>
+            <Spanish>Rojo significa que todavía llevas visión nocturna</Spanish>
+            <Italian>Rosso significa che indossi ancora il visore notturno</Italian>
+            <Polish>Czerwony oznacza, że nadal masz założony noktowizor</Polish>
+            <Portuguese>Vermelho significa que você ainda está usando visão noturna</Portuguese>
+            <Russian>Красный цвет означает, что на вас всё ещё прибор ночного видения</Russian>
+            <German>Rot bedeutet, dass du noch ein Nachtsichtgerät trägst</German>
+            <Korean>빨간색은 아직 야간투시경을 착용하고 있다는 뜻입니다</Korean>
+            <Japanese>赤は、まだ暗視装置を着用していることを示します</Japanese>
+            <Chinese>紅色表示你仍戴著夜視裝置</Chinese>
+            <Chinesesimp>红色表示你仍戴着夜视仪</Chinesesimp>
+            <Turkish>Kırmızı, hâlâ gece görüş cihazı taktığınız anlamına gelir</Turkish>
+            <Slovak>Červená znamená, že máte stále nasadené nočné videnie</Slovak>
+            <Hungarian>A piros azt jelenti, hogy még éjjellátót viselsz</Hungarian>
+            <Ukrainian>Червоний колір означає, що на вас усе ще прилад нічного бачення</Ukrainian>
+            <Bulgarian>Червено означава, че все още носите уред за нощно виждане</Bulgarian>
+            <Latin>Ruber significat te adhuc instrumentum nocturnae visionis gerere</Latin>
+        </Key>
+        <Key ID="STR_CFR_Dialog_tooltipRemove">
+            <English>Remove the camo face paint</English>
+            <Czech>Odstranit kamuflážní barvu z obličeje</Czech>
+            <French>Retirer le maquillage de camouflage</French>
+            <Spanish>Quitar la pintura de camuflaje facial</Spanish>
+            <Italian>Rimuovi la pittura mimetica dal viso</Italian>
+            <Polish>Usuń farbę maskującą z twarzy</Polish>
+            <Portuguese>Remover a pintura de camuflagem do rosto</Portuguese>
+            <Russian>Смыть камуфляжную краску с лица</Russian>
+            <German>Tarnschminke entfernen</German>
+            <Korean>위장 페이스 페인트 지우기</Korean>
+            <Japanese>フェイスペイントを落とす</Japanese>
+            <Chinese>移除臉部偽裝油彩</Chinese>
+            <Chinesesimp>移除脸部伪装油彩</Chinesesimp>
+            <Turkish>Kamuflaj yüz boyasını çıkar</Turkish>
+            <Slovak>Odstrániť maskovaciu farbu z tváre</Slovak>
+            <Hungarian>Az álcafesték eltávolítása</Hungarian>
+            <Ukrainian>Змити камуфляжну фарбу з обличчя</Ukrainian>
+            <Bulgarian>Премахване на камуфлажната боя от лицето</Bulgarian>
+            <Latin>Pigmentum dissimulationis a facie removere</Latin>
+        </Key>
     </Package>
 </Project>

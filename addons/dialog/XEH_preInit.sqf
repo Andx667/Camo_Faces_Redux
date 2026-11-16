@@ -65,6 +65,6 @@ private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
 // "<name> painted your face" and friends, sent to the target's machine by fnc_applyCamoLayer.sqf and
 // fnc_cleanBuddy.sqf - the painter's own machine can't hint someone else's player
 [QGVAR(notifyTarget), {
-    params ["_stringKey", "_painterName"];
+    params [["_stringKey", "", [""]], ["_painterName", "", [""]]];
     hint format [localize _stringKey, _painterName];
 }] call CBA_fnc_addEventHandler;

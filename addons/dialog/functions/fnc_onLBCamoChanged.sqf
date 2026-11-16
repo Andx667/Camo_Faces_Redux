@@ -18,7 +18,7 @@
  * Public: No
  */
 
-params ["_lbCamo","_selItem"];
+params [["_lbCamo", controlNull, [controlNull]], ["_selItem", -1, [0]]];
 TRACE_1("fnc_onLBCamoChanged",_this);
 
 disableSerialization;
